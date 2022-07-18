@@ -4,3 +4,7 @@
 - map：地图原版
 
 通过 HWM （hke W3M Modifier）分析后的 map 文件为 map_data 里的数据。翻译后重打包即可。
+
+## 已翻译文件
+
+－ `units/campaignabilitystrings.txt`

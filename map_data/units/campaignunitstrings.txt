@@ -9,215 +9,215 @@ Awakentip=Revive |cffffcc00F|rar Seer
 [nhef]
 Name=High Elf
 [n02D]
-Name="Ancient Protector"
+Name="远古守护者"
 Hotkey=Z
-Tip="Build Ancient Protector [|cffffcc00Z|r]"
-Ubertip="|cffFFAC00Base Defense|r:|nThis is a tower to protect key positions.|n|n|cffFFFF80Attack Type:|cffFFFF00 Siege|n|cffFFFF80Range:|cffFFFF00 700|n|cffFFFF80Average DPS:|cffFFFF00 70|r|n|n|cffFFFF80Abilities:|r|n-Bash|n-Splash Damage"
+Tip="建造远古守护者 [|cffffcc00Z|r]"
+Ubertip="|cffFFAC00基地防御|r:|n这是一座保护重要位置的防御塔。|n|n|cffFFFF80伤害类型:|cffFFFF00 攻城|n|cffFFFF80射程:|cffFFFF00 700|n|cffFFFF80平均每秒伤害:|cffFFFF00 70|r|n|n|cffFFFF80技能:|r|n-重击|n-范围伤害"
 [n02C]
-Name="Spider Egg Sack"
+Name="蜘蛛卵囊"
 Hotkey=Q
-Tip="Build Spider Egg Sack [|cffffcc00Q|r]"
-Ubertip="|cffFFFF80Trains: |cffFFFF00Forest Spider|n|cffFFFF80Upgrades: |cffFFFF003|n|n|cffFFAC00Forest Spider |r|n|cffFFFF80Attack:|r Pierce (|cffFFFF00melee|r,|cffFFFF00 15|r dps)|n|cffFFFF80Armor:|r Unarmored (|cffFFFF000|r)|n|cffFFFF80Hitpoints: |cffFFFF00150|r"
+Tip="建造蜘蛛卵囊 [|cffffcc00Q|r]"
+Ubertip="|cffFFFF80训练: |cffFFFF00森林蜘蛛|n|cffFFFF80升级: |cffFFFF003|n|n|cffFFAC00森林蜘蛛 |r|n|cffFFFF80伤害:|r 穿刺(|cffFFFF00近战|r,|cffFFFF00 15|r 每秒伤害)|n|cffFFFF80护甲:|r 无护甲(|cffFFFF000|r)|n|cffFFFF80生命值: |cffFFFF00150|r"
 [n01Z]
-Name="Assassin"
-Ubertip="|n|cffFFFF80Attack:|r Pierce (|cffFFFF00melee|r,|cffFFFF00 30|r dps)|n|cffFFFF80Armor:|r Medium (|cffFFFF001|r)|n|cffFFFF80Hitpoints: |cffFFFF00375|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Evade|r|n15% chance to evade an attack|n|n|cff80FF00Feedback|r|nEach attack burns up to 40 mana dealing 170% of the burned mana as damage|n|n|cff80FF00Backstab|r|nThe assassin hides and tries backstab a caster unit for 150 additional damage. Runs 30% faster while in stealth|n|cff8080FFMana cost: |r50"
+Name="刺客"
+Ubertip="|n|cffFFFF80伤害:|r 穿刺(|cffFFFF00近战|r,|cffFFFF00 30|r 每秒伤害)|n|cffFFFF80护甲:|r 中型(|cffFFFF001|r)|n|cffFFFF80生命值: |cffFFFF00375|r|n|cffFFFF80技能:|r|n|n|cff80FF00闪避|r|n15% 几率躲避攻击|n|n|cff80FF00反馈|r|n每次攻击最多燃烧 40 点法力值，造成 170% 已燃烧法力值的伤害|n|n|cff80FF00背刺|r|n刺客隐藏并尝试背刺施法者单位，造成 150 额外伤害。隐身时移动速度增加 30%|n|cff8080FF魔法消耗: |r50"
 Hotkey=Q
-Tip="Trains Assassin"
+Tip="训练刺客"
 [n022]
-Name="Archer "
-Tip="Trains Archer "
+Name="弓箭手"
+Tip="训练弓箭手"
 Hotkey=Q
-Ubertip="|n|cffFFFF80Attack:|r Pierce (|cffFFFF00450|r rng,|cffFFFF00 28|r dps)|n|cffFFFF80Armor:|r Unarmored (|cffFFFF002|r)|n|cffFFFF80Hitpoints: |cffFFFF00320|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Headshot|r|n10% chance on each attack to stun for 0.5 seconds and deal 50 extra damage|n|n|cff80FF00Evade|r|n15% chance to evade an attack"
+Ubertip="|n|cffFFFF80伤害:|r 穿刺(|cffFFFF00450|r 射程,|cffFFFF00 28|r 每秒伤害)|n|cffFFFF80护甲:|r 无护甲(|cffFFFF002|r)|n|cffFFFF80生命值: |cffFFFF00320|r|n|cffFFFF80技能:|r|n|n|cff80FF00爆头|r|n每次攻击有 10% 几率使目标眩晕 0.5 秒并造成 50 点额外伤害|n|n|cff80FF00闪避|r|n15% 几率躲避攻击"
 [n023]
-Name="Master Archer"
-Tip="Trains Master Archer"
+Name="弓箭手大师"
+Tip="训练弓箭手大师"
 Hotkey=Q
-Ubertip="|n|cffFFFF80Attack:|r Pierce (|cffFFFF00500|r rng,|cffFFFF00 84|r dps)|n|cffFFFF80Armor:|r Unarmored (|cffFFFF004|r)|n|cffFFFF80Hitpoints: |cffFFFF00525|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Headshot|r|n20% chance on each attack to stun for 0.5 seconds and deal 125 extra damage.|n|n|cff80FF00Evade|r|n20% chance to evade an attack"
+Ubertip="|n|cffFFFF80伤害:|r 穿刺(|cffFFFF00500|r 射程,|cffFFFF00 84|r 每秒伤害)|n|cffFFFF80护甲:|r 无护甲 (|cffFFFF004|r)|n|cffFFFF80生命值: |cffFFFF00525|r|n|cffFFFF80技能:|r|n|n|cff80FF00爆头|r|n每次攻击有 20% 几率眩晕 0.5 秒并造成 125 额外伤害。|n|n|cff80FF00闪避|r|n20% 几率躲避攻击"
 [n020]
-Name="Royal Assassin"
-Ubertip="|n|cffFFFF80Attack:|r Pierce (|cffFFFF00melee|r,|cffFFFF00 60|r dps)|n|cffFFFF80Armor:|r Medium (|cffFFFF002|r)|n|cffFFFF80Hitpoints: |cffFFFF00575|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Evade|r|n25% chance to evade an attack|n|n|cff80FF00Feedback|r|nEach attack burns up to 60 mana dealing 220% of the burned mana as damage|n|n|cff80FF00Backstab|r|nThe assassin hides and tries backstab a caster unit for 300 additional damage. Runs 45% faster while in stealth|n|cff8080FFMana cost: |r50"
+Name="皇家刺客"
+Ubertip="|n|cffFFFF80伤害:|r 穿刺(|cffFFFF00近战|r,|cffFFFF00 60|r 每秒伤害)|n|cffFFFF80护甲:|r 中型(|cffFFFF002|r)|n|cffFFFF80生命值: |cffFFFF00575|r|n|cffFFFF80技能:|r|n|n|cff80FF00闪避|r|n25% 几率躲避攻击|n|n|cff80FF00反馈|r|n每次攻击最多燃烧 60 点法力值，造成 220% 已燃烧法力值的伤害|n|n|cff80FF00背刺|r|n刺客隐藏并尝试背刺施法者单位，造成 300 额外伤害。隐身时移动速度增加 45%|n|cff8080FF魔法消耗: |r50"
 Hotkey=Q
-Tip="Trains Royal Assassin"
+Tip="训练皇家刺客"
 [n00I]
-Name="Murloc Warrior"
+Name="鱼人战士"
 Hotkey=Q
-Tip="Trains Murloc Warrior"
-Ubertip="|n|cffFFFF80Attack:|r Normal (|cffFFFF00melee|r,|cffFFFF00 24|r dps)|n|cffFFFF80Armor:|r Unarmored (|cffFFFF004|r)|n|cffFFFF80Hitpoints: |cffFFFF00325|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Critical Strike|r|n10% chance on each attack to deal 2 times the normal damage"
+Tip="训练鱼人战士"
+Ubertip="|n|cffFFFF80伤害:|r 普通(|cffFFFF00近战|r,|cffFFFF00 24|r 每秒伤害)|n|cffFFFF80护甲:|r 无护甲 (|cffFFFF004|r)|n|cffFFFF80生命值: |cffFFFF00325|r|n|cffFFFF80技能:|r|n|n|cff80FF00致命一击|r|n10% 几率造成 2 倍伤害"
 [n00H]
-Name="Winged Serpent"
+Name="翼蛇"
 Hotkey=Q
-Tip="Trains Winged Serpent"
-Ubertip="|n|cffFFFF80Attack:|r Magic (|cffFFFF00420|r rng,|cffFFFF00 33|r dps)|n|cffFFFF80Armor:|r Light (|cffFFFF002|r)|n|cffFFFF80Hitpoints: |cffFFFF00450|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Flying|r|nThis unit is flying|n|n|cff80FF00Bouncing Attack|r|nThis unit's attacks can hit up to 3 enemies, dealing 30% less damage on each bounce"
+Tip="训练翼蛇"
+Ubertip="|n|cffFFFF80伤害:|r 魔法(|cffFFFF00420|r 射程,|cffFFFF00 33|r 每秒伤害)|n|cffFFFF80护甲:|r 轻型(|cffFFFF002|r)|n|cffFFFF80生命值: |cffFFFF00450|r|n|cffFFFF80技能:|r|n|n|cff80FF00飞行|r|n该单位为飞行单位|n|n|cff80FF00弹射攻击|r|n该单位的攻击最多可攻击 3 个敌方单位，每次弹跳伤害降低 30%"
 [n00K]
-Name="Murloc Assassin"
+Name="鱼人刺客"
 Hotkey=Q
-Tip="Trains Murloc Assassin"
-Ubertip="|n|cffFFFF80Attack:|r Normal (|cffFFFF00melee|r,|cffFFFF00 50|r dps)|n|cffFFFF80Armor:|r Unarmored (|cffFFFF008|r)|n|cffFFFF80Hitpoints: |cffFFFF00750|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Bash|r|n15% chance on each attack to stun for 2 seconds and deal 25 extra damage|n|n|cff80FF00Critical Strike|r|n20% chance on each attack to hit for 2 times of the normal damage|n|n|cff80FF00Evade|r|n15% chance to evade an attack|n|n|cff80FF00Feedback|r|nEach attack burns up to 25 mana dealing the same amount of damage|n|n|cff80FF00Cleaving Attack|r|nEach hit deals 30% of the normal damage to all enemies in 200 range in front of this unit"
+Tip="训练鱼人刺客"
+Ubertip="|n|cffFFFF80伤害:|r 普通(|cffFFFF00近战|r,|cffFFFF00 50|r 每秒伤害)|n|cffFFFF80护甲:|r 无护甲 (|cffFFFF008|r)|n|cffFFFF80生命值: |cffFFFF00750|r|n|cffFFFF80技能:|r|n|n|cff80FF00重击|r|n每次攻击有 15% 几率眩晕 2 秒并造成 25 额外伤害|n|n|cff80FF00致命一击|r|n每次攻击有 20% 几率造成 2 倍正常伤害|n|n|cff80FF00闪避|r|n15% 几率躲避攻击|n|n|cff80FF00反馈|r|n每次攻击最多燃烧 25 点法力值，造成相同数量的伤害|n|n|cff80FF00分裂攻击|r|n每次命中对本单位前方 200 范围内的所有敌人造成 30% 的正常伤害"
 [n00J]
-Name="Murloc Champion"
+Name="鱼人冠军"
 Hotkey=Q
-Tip="Trains Murloc Champion"
-Ubertip="|n|cffFFFF80Attack:|r Normal (|cffFFFF00melee|r,|cffFFFF00 36|r dps)|n|cffFFFF80Armor:|r Unarmored (|cffFFFF006|r)|n|cffFFFF80Hitpoints: |cffFFFF00520|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Cleaving Attack|r|nEach hit deals 25% of the normal damage to all enemies in 175 range in front of this unit|n|n|cff80FF00Evade|r|n8% chance to evade an attack|n|n|cff80FF00Bash|r|n15% chance on each attack to stun for 2 seconds and deal 25 extra damage|n|n|cff80FF00Critical Strike|r|n10% chance on each attack to deal 2 times the normal damage"
+Tip="训练鱼人冠军"
+Ubertip="|n|cffFFFF80伤害:|r 普通(|cffFFFF00近战|r,|cffFFFF00 36|r 每秒伤害)|n|cffFFFF80护甲:|r 无护甲 (|cffFFFF006|r)|n|cffFFFF80生命值: |cffFFFF00520|r|n|cffFFFF80技能:|r|n|n|cff80FF00分裂攻击|r|n每次命中对本单位前方 175 范围内的所有敌人造成 25% 的正常伤害t|n|n|cff80FF00闪避|r|n8% 几率躲避攻击|n|n|cff80FF00重击|r|n每次攻击有 15% 几率眩晕 2 秒并造成 25 额外伤害|n|n|cff80FF00致命一击|r|n每次攻击有 10% 几率造成 2 倍正常伤害"
 [n00E]
-Name="Flesh Golem "
-Ubertip="|n|cffFFFF80Attack:|r Siege (|cffFFFF00melee|r,|cffFFFF00 65|r dps)|n|cffFFFF80Armor:|r Medium (|cffFFFF008|r)|n|cffFFFF80Hitpoints: |cffFFFF001200|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Demolish|r|nThis unit deals 150% damage against buildings|n|n|cff80FF00Pulverize|r|nGrants a 35% chance on each attack to hit all enemies in 150 range for 125 damage and all units in 250 for half of the damage"
+Name="血肉魔像"
+Ubertip="|n|cffFFFF80伤害:|r 攻城(|cffFFFF00近战|r,|cffFFFF00 65|r 每秒伤害)|n|cffFFFF80护甲:|r 中型(|cffFFFF008|r)|n|cffFFFF80生命值: |cffFFFF001200|r|n|cffFFFF80技能:|r|n|n|cff80FF00拆迁|r|n该单位对建筑物造成 150% 的伤害，你的房子危险了！|n|n|cff80FF00粉碎|r|n每次攻击有 35% 的几率对 150 范围内的所有敌人造成 125 点伤害，对 250 范围内的所有单位造成一半伤害"
 Hotkey=Q
-Tip="Trains Flesh Golem "
+Tip="训练血肉魔像"
 [n006]
-Name="Blademaster"
+Name="刀剑大师"
 Hotkey=Q
-Tip="Trains Blademaster"
-Ubertip="|n|cffFFFF80Attack:|r Normal (|cffFFFF00melee|r,|cffFFFF00 39|r dps)|n|cffFFFF80Armor:|r Heavy (|cffFFFF007|r)|n|cffFFFF80Hitpoints: |cffFFFF00450|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Evade|r|n15% chance to evade an attack|n|n|cff80FF00Critical Strike|r|n25% chance on each attack to hit for 2.5 times of the normal damage|n|n|cff80FF00Spell Resistance|r|nSpell damage done to this unit is reduced by 15%"
+Tip="训练刀剑大师"
+Ubertip="|n|cffFFFF80伤害:|r 普通(|cffFFFF00近战|r,|cffFFFF00 39|r 每秒伤害)|n|cffFFFF80护甲:|r 重型(|cffFFFF007|r)|n|cffFFFF80生命值: |cffFFFF00450|r|n|cffFFFF80技能:|r|n|n|cff80FF00闪避|r|n15% 躲避攻击|n|n|cff80FF00致命一击|r|n25% chance on each attack to hit for 2.5 times of the normal damage|n|n|cff80FF00Spell Resistance|r|nSpell damage done to this unit is reduced by 15%"
 [n007]
 Name="Dragon Turtle "
 Hotkey=Q
 Tip="Trains Dragon Turtle "
-Ubertip="|n|cffFFFF80Attack:|r Siege (|cffFFFF00550|r rng,|cffFFFF00 50|r dps)|n|cffFFFF80Armor:|r Heavy (|cffFFFF008|r)|n|cffFFFF80Hitpoints: |cffFFFF00600|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Bash|r|n15% chance on each attack to stun for 2 seconds and deal 25 extra damage|n|n|cff80FF00Thornshell|r|nReflects 60% of the melee damage dealt to the Turtle back to the attacker. Also reduces all damage dealt to 80%"
+Ubertip="|n|cffFFFF80伤害:|r Siege (|cffFFFF00550|r 射程,|cffFFFF00 50|r 每秒伤害)|n|cffFFFF80护甲:|r Heavy (|cffFFFF008|r)|n|cffFFFF80生命值: |cffFFFF00600|r|n|cffFFFF80技能:|r|n|n|cff80FF00Bash|r|n15% chance on each attack to stun for 2 seconds and deal 25 extra damage|n|n|cff80FF00Thornshell|r|nReflects 60% of the 近战 damage dealt to the Turtle back to the attacker. Also reduces all damage dealt to 80%"
 [n004]
 Name="Suumpmolk"
 Tip="Trains Suumpmolk"
-Ubertip="|n|cffFFFF80Attack:|r Normal (|cffFFFF00325|r rng,|cffFFFF00 27|r dps)|n|cffFFFF80Armor:|r Medium (|cffFFFF003|r)|n|cffFFFF80Hitpoints: |cffFFFF00380|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Poison Attack|r|nDeals 4 damage per second and slows attack and movementspeed by 35%. Lasts 2 seconds"
+Ubertip="|n|cffFFFF80伤害:|r Normal (|cffFFFF00325|r 射程,|cffFFFF00 27|r 每秒伤害)|n|cffFFFF80护甲:|r Medium (|cffFFFF003|r)|n|cffFFFF80生命值: |cffFFFF00380|r|n|cffFFFF80技能:|r|n|n|cff80FF00Poison Attack|r|nDeals 4 damage per second and slows attack and movementspeed by 35%. Lasts 2 seconds"
 Hotkey=Q
 [n002]
 Name="Naga Guardian"
 Tip="Trains Naga Guardian"
-Ubertip="|n|cffFFFF80Attack:|r Pierce (|cffFFFF00melee|r,|cffFFFF00 51|r dps)|n|cffFFFF80Armor:|r Heavy (|cffFFFF006|r)|n|cffFFFF80Hitpoints: |cffFFFF00625|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Cleaving Attack|r|nEach hit deals 35% of the normal damage to all enemies in 230 range in front of this unit"
+Ubertip="|n|cffFFFF80伤害:|r Pierce (|cffFFFF00近战|r,|cffFFFF00 51|r 每秒伤害)|n|cffFFFF80护甲:|r Heavy (|cffFFFF006|r)|n|cffFFFF80生命值: |cffFFFF00625|r|n|cffFFFF80技能:|r|n|n|cff80FF00Cleaving Attack|r|nEach hit deals 35% of the normal damage to all enemies in 230 range in front of this unit"
 Hotkey=Q
 [n003]
 Name="Murloc"
 Hotkey=Q
 Tip="Trains Murloc"
-Ubertip="|n|cffFFFF80Attack:|r Normal (|cffFFFF00melee|r,|cffFFFF00 12|r dps)|n|cffFFFF80Armor:|r Unarmored (|cffFFFF002|r)|n|cffFFFF80Hitpoints: |cffFFFF00180|r"
+Ubertip="|n|cffFFFF80伤害:|r Normal (|cffFFFF00近战|r,|cffFFFF00 12|r 每秒伤害)|n|cffFFFF80护甲:|r 无护甲 (|cffFFFF002|r)|n|cffFFFF80生命值: |cffFFFF00180|r"
 [n01J]
 Name="Corrupted Protector"
 Hotkey=Y
 Tip="Build Corrupted Protector [|cffffcc00Y|r]"
-Ubertip="|cffFFAC00Base Defense|r:|nThis is a tower to protect key positions.|n|n|cffFFFF80Attack Type:|cffFFFF00 Chaos|n|cffFFFF80Range:|cffFFFF00 800|n|cffFFFF80Average DPS:|cffFFFF00 43|r|n|n|cffFFFF80Abilities:|r|n-Splash Damage"
+Ubertip="|cffFFAC00Base Defense|r:|nThis is a tower to protect key positions.|n|n|cffFFFF80Attack Type:|cffFFFF00 Chaos|n|cffFFFF80Range:|cffFFFF00 800|n|cffFFFF80Average 每秒伤害:|cffFFFF00 43|r|n|n|cffFFFF80技能:|r|n-Splash Damage"
 [n00X]
 Name="Naga Royal Guard "
 Tip="Trains Naga Royal Guard "
-Ubertip="|n|cffFFFF80Attack:|r Pierce (|cffFFFF00melee|r,|cffFFFF00 78|r dps)|n|cffFFFF80Armor:|r Heavy (|cffFFFF009|r)|n|cffFFFF80Hitpoints: |cffFFFF001100|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Critical Strike|r|n10% chance on each attack to deal 2 times the normal damage|n|n|cff80FF00Cleaving Attack|r|nEach hit deals 25% of the normal damage to all enemies in 260 range in front of this unit"
+Ubertip="|n|cffFFFF80伤害:|r Pierce (|cffFFFF00近战|r,|cffFFFF00 78|r 每秒伤害)|n|cffFFFF80护甲:|r Heavy (|cffFFFF009|r)|n|cffFFFF80生命值: |cffFFFF001100|r|n|cffFFFF80技能:|r|n|n|cff80FF00Critical Strike|r|n10% chance on each attack to deal 2 times the normal damage|n|n|cff80FF00Cleaving Attack|r|nEach hit deals 25% of the normal damage to all enemies in 260 range in front of this unit"
 Hotkey=Q
 [n00Y]
 Name="Elder Blademaster"
 Hotkey=Q
 Tip="Trains Elder Blademaster"
-Ubertip="|n|cffFFFF80Attack:|r Normal (|cffFFFF00melee|r,|cffFFFF00 90|r dps)|n|cffFFFF80Armor:|r Heavy (|cffFFFF0010|r)|n|cffFFFF80Hitpoints: |cffFFFF00750|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Critical Strike|r|n30% chance on each attack to hit for 3 times of the normal damage|n|n|cff80FF00Evade|r|n20% chance to evade an attack|n|n|cff80FF00Feedback|r|nEach attack burns up to 25 mana dealing the same amount of damage|n|n|cff80FF00Spell Resistance|r|nSpell damage done to this unit is reduced by 25%"
+Ubertip="|n|cffFFFF80伤害:|r Normal (|cffFFFF00近战|r,|cffFFFF00 90|r 每秒伤害)|n|cffFFFF80护甲:|r Heavy (|cffFFFF0010|r)|n|cffFFFF80生命值: |cffFFFF00750|r|n|cffFFFF80技能:|r|n|n|cff80FF00Critical Strike|r|n30% chance on each attack to hit for 3 times of the normal damage|n|n|cff80FF00Evade|r|n20% chance to evade an attack|n|n|cff80FF00Feedback|r|nEach attack burns up to 25 mana dealing the same amount of damage|n|n|cff80FF00Spell Resistance|r|nSpell damage done to this unit is reduced by 25%"
 [n014]
 Name="Ice Queen"
 Tip="Trains Ice Queen"
 Hotkey=Q
-Ubertip="|n|cffFFFF80Attack:|r Chaos (|cffFFFF00450|r rng,|cffFFFF00 56|r dps)|n|cffFFFF80Armor:|r Unarmored (|cffFFFF004|r)|n|cffFFFF80Hitpoints: |cffFFFF00650|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Frost Nova|r|nCasts a frost explosion onto an enemy, dealing 150 damage to the target and additionally 75 damage to all enemies in a 300 AoE around the target. All targets hit get chilled for 6 seconds|n|cff8080FFCooldown: |r10|n|cff8080FFMana cost: |r80|n|n|cff80FF00Frost Attack|r|nEach attack against ground units and buildings has a 20% chance to freeze the target to the ground for 8 seconds, dealing 30 damage per second|n|n|cff80FF00Crystal Aura|r|nAdds 0.5 mana per second to allies in 800 range"
+Ubertip="|n|cffFFFF80伤害:|r Chaos (|cffFFFF00450|r 射程,|cffFFFF00 56|r 每秒伤害)|n|cffFFFF80护甲:|r 无护甲 (|cffFFFF004|r)|n|cffFFFF80生命值: |cffFFFF00650|r|n|cffFFFF80技能:|r|n|n|cff80FF00Frost Nova|r|nCasts a frost explosion onto an enemy, dealing 150 damage to the target and additionally 75 damage to all enemies in a 300 AoE around the target. All targets hit get chilled for 6 seconds|n|cff8080FFCooldown: |r10|n|cff8080FFMana cost: |r80|n|n|cff80FF00Frost Attack|r|nEach attack against ground units and buildings has a 20% chance to freeze the target to the ground for 8 seconds, dealing 30 damage per second|n|n|cff80FF00Crystal Aura|r|nAdds 0.5 mana per second to allies in 800 range"
 [n00S]
 Name="Naga Siren"
 Hotkey=Q
 Tip="Trains Naga Siren"
-Ubertip="|n|cffFFFF80Attack:|r Chaos (|cffFFFF00400|r rng,|cffFFFF00 50|r dps)|n|cffFFFF80Armor:|r Unarmored (|cffFFFF003|r)|n|cffFFFF80Hitpoints: |cffFFFF00550|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Purge|r|nPurges an enemy removing all buffs from it and slowing it down for 10 seconds|n|cff8080FFCooldown: |r10|n|cff8080FFMana cost: |r30|n|n|cff80FF00Summon Lobsters|r|nSummons 2 Lobsters which last for 45 seconds. Lobsters have Critical Strike (10%, x3) and the Hard Shell ability which grants a 50% chance to reduce incoming attack damage by 35|n|cff8080FFCooldown: |r60|n|cff8080FFMana cost: |r70"
+Ubertip="|n|cffFFFF80伤害:|r Chaos (|cffFFFF00400|r 射程,|cffFFFF00 50|r 每秒伤害)|n|cffFFFF80护甲:|r 无护甲 (|cffFFFF003|r)|n|cffFFFF80生命值: |cffFFFF00550|r|n|cffFFFF80技能:|r|n|n|cff80FF00Purge|r|nPurges an enemy removing all buffs from it and slowing it down for 10 seconds|n|cff8080FFCooldown: |r10|n|cff8080FFMana cost: |r30|n|n|cff80FF00Summon Lobsters|r|nSummons 2 Lobsters which last for 45 seconds. Lobsters have Critical Strike (10%, x3) and the Hard Shell ability which grants a 50% chance to reduce incoming attack damage by 35|n|cff8080FFCooldown: |r60|n|cff8080FFMana cost: |r70"
 Casterupgradename=
 Casterupgradetip=
 [o00D]
 Name="Elemental Of Wind"
-Ubertip="|n|cffFFFF80Attack:|r Pierce (|cffFFFF00450|r rng|r,|cffFFFF00 52|r dps)|n|cffFFFF80Armor:|r Unarmored (|cffFFFF004|r)|n|cffFFFF80Hitpoints: |cffFFFF00675|r|n|cffFFFF80Abilities:|r|n|cff80FF00Flying|r|nThis unit is flying|n|cff80FF00Gale|r|nReduces attack and movement speed of enemy air units by 20% in 500 range"
+Ubertip="|n|cffFFFF80伤害:|r Pierce (|cffFFFF00450|r 射程|r,|cffFFFF00 52|r 每秒伤害)|n|cffFFFF80护甲:|r 无护甲 (|cffFFFF004|r)|n|cffFFFF80生命值: |cffFFFF00675|r|n|cffFFFF80技能:|r|n|cff80FF00Flying|r|nThis unit is flying|n|cff80FF00Gale|r|nReduces attack and movement speed of enemy air units by 20% in 500 range"
 Hotkey=Q
 Tip="Trains Elemental Of Wind"
 [o00C]
 Name="Lesser Elemental Of Wind"
-Ubertip="|n|cffFFFF80Attack:|r Pierce (|cffFFFF00400|r rng|r,|cffFFFF00 30|r dps)|n|cffFFFF80Armor:|r Unarmored (|cffFFFF002|r)|n|cffFFFF80Hitpoints: |cffFFFF00325|r|n|cffFFFF80Abilities:|r|n|cff80FF00Flying|r|nThis unit is flying|n|cff80FF00Air Only|r|nThis unit can't attack ground enemies|n"
+Ubertip="|n|cffFFFF80伤害:|r Pierce (|cffFFFF00400|r 射程|r,|cffFFFF00 30|r 每秒伤害)|n|cffFFFF80护甲:|r 无护甲 (|cffFFFF002|r)|n|cffFFFF80生命值: |cffFFFF00325|r|n|cffFFFF80技能:|r|n|cff80FF00Flying|r|nThis unit is flying|n|cff80FF00Air Only|r|nThis unit can't attack ground enemies|n"
 Hotkey=Q
 Tip="Trains Lesser Elemental Of Wind"
 [o00E]
 Name="Greater Elemental Of Wind"
-Ubertip="|n|cffFFFF80Attack: |r Pierce (|cffFFFF00500|r rng|r,|cffFFFF00 70|r dps)|n|cffFFFF80Armor:|r Unarmored (|cffFFFF006|r)|n|cffFFFF80Hitpoints: |cffFFFF001400|r|n|cffFFFF80Abilities:|r|n|cff80FF00Flying|r|nThis unit is flying|n|cff80FF00Gale|r|nReduces attack and movement speed of enemy air units by 35% in 500 range"
+Ubertip="|n|cffFFFF80伤害: |r Pierce (|cffFFFF00500|r 射程|r,|cffFFFF00 70|r 每秒伤害)|n|cffFFFF80护甲:|r 无护甲 (|cffFFFF006|r)|n|cffFFFF80生命值: |cffFFFF001400|r|n|cffFFFF80技能:|r|n|cff80FF00Flying|r|nThis unit is flying|n|cff80FF00Gale|r|nReduces attack and movement speed of enemy air units by 35% in 500 range"
 Hotkey=Q
 Tip="Trains Greater Elemental Of Wind"
 [z000]
 Name="Quill Demon"
 Hotkey=Q
 Tip="Trains Quill Demon"
-Ubertip="|n|cffFFFF80Attack:|r Normal (|cffFFFF00310|r rng,|cffFFFF00 57|r dps)|n|cffFFFF80Armor:|r Light (|cffFFFF004|r)|n|cffFFFF80Hitpoints: |cffFFFF00750|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Bouncing Attack|r|nThis unit's attacks can hit up to 2 enemies, dealing 50% less damage on each bounce|n|n|cff80FF00Quill Aura|r|nAll friendly units in 350 range gain a damage shield that reflects 35% melee damage"
+Ubertip="|n|cffFFFF80伤害:|r Normal (|cffFFFF00310|r 射程,|cffFFFF00 57|r 每秒伤害)|n|cffFFFF80护甲:|r Light (|cffFFFF004|r)|n|cffFFFF80生命值: |cffFFFF00750|r|n|cffFFFF80技能:|r|n|n|cff80FF00Bouncing Attack|r|nThis unit's attacks can hit up to 2 enemies, dealing 50% less damage on each bounce|n|n|cff80FF00Quill Aura|r|nAll friendly units in 350 range gain a damage shield that reflects 35% 近战 damage"
 [z003]
 Name="Flamegunner Sergeant"
 Hotkey=Q
 Tip="Trains Flamegunner Sergeant"
-Ubertip="|n|cffFFFF80Attack:|r Chaos (|cffFFFF0070|r rng,|cffFFFF00 66|r dps)|n|cffFFFF80Armor:|r Light (|cffFFFF007|r)|n|cffFFFF80Hitpoints: |cffFFFF00700|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Ground Only|r|nThis unit can't attack flying enemies|n|n|cff80FF00Line Damage|r|nThis unit's attacks hit all units in 150.0 range behind its target|n|n|cff80FF00Astral Grenade|r|nLaunches a grenade that deals 30 damage and burns up to 100 mana dealing the same amount of damage. In addition it slows units by 80% for 0.5 seconds. Area of Effect: 300"
+Ubertip="|n|cffFFFF80伤害:|r Chaos (|cffFFFF0070|r 射程,|cffFFFF00 66|r 每秒伤害)|n|cffFFFF80护甲:|r Light (|cffFFFF007|r)|n|cffFFFF80生命值: |cffFFFF00700|r|n|cffFFFF80技能:|r|n|n|cff80FF00Ground Only|r|nThis unit can't attack flying enemies|n|n|cff80FF00Line Damage|r|nThis unit's attacks hit all units in 150.0 range behind its target|n|n|cff80FF00Astral Grenade|r|nLaunches a grenade that deals 30 damage and burns up to 100 mana dealing the same amount of damage. In addition it slows units by 80% for 0.5 seconds. Area of Effect: 300"
 [z002]
 Name="Flamegunner"
 Hotkey=Q
 Tip="Trains Flamegunner"
-Ubertip="|n|cffFFFF80Attack:|r Chaos (|cffFFFF0070|r rng,|cffFFFF00 37|r dps)|n|cffFFFF80Armor:|r Light (|cffFFFF004|r)|n|cffFFFF80Hitpoints: |cffFFFF00500|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Ground Only|r|nThis unit can't attack flying enemies|n|n|cff80FF00Line Damage|r|nThis unit's attacks hit all units in 150.0 range behind its target"
+Ubertip="|n|cffFFFF80伤害:|r Chaos (|cffFFFF0070|r 射程,|cffFFFF00 37|r 每秒伤害)|n|cffFFFF80护甲:|r Light (|cffFFFF004|r)|n|cffFFFF80生命值: |cffFFFF00500|r|n|cffFFFF80技能:|r|n|n|cff80FF00Ground Only|r|nThis unit can't attack flying enemies|n|n|cff80FF00Line Damage|r|nThis unit's attacks hit all units in 150.0 range behind its target"
 [u009]
 Name="Mighty Necromancer"
-Ubertip="|n|cffFFFF80Attack:|r Magic (|cffFFFF00400|r rng,|cffFFFF00 46|r dps)|n|cffFFFF80Armor:|r Unarmored (|cffFFFF003|r)|n|cffFFFF80Hitpoints: |cffFFFF00550|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Carrion Swarm|r|nGrants a 25% chance on each attack to release a carrion swarm that deals 70 damage to all enemies in a cone|n|n|cff80FF00Raise Greater Dead|r|nRaises a skeleton. Can also raise greater skeletons and Heros but no Generals|n|cff8080FFCooldown: |r30|n|cff8080FFMana cost: |r75"
+Ubertip="|n|cffFFFF80伤害:|r Magic (|cffFFFF00400|r 射程,|cffFFFF00 46|r 每秒伤害)|n|cffFFFF80护甲:|r 无护甲 (|cffFFFF003|r)|n|cffFFFF80生命值: |cffFFFF00550|r|n|cffFFFF80技能:|r|n|n|cff80FF00Carrion Swarm|r|nGrants a 25% chance on each attack to release a carrion swarm that deals 70 damage to all enemies in a cone|n|n|cff80FF00Raise Greater Dead|r|nRaises a skeleton. Can also raise greater skeletons and Heros but no Generals|n|cff8080FFCooldown: |r30|n|cff8080FFMana cost: |r75"
 Hotkey=Q
 Tip="Trains Mighty Necromancer"
 [u001]
 Name="Banshee"
-Ubertip="|n|cffFFFF80Attack:|r Magic (|cffFFFF00350|r rng,|cffFFFF00 48|r dps)|n|cffFFFF80Armor:|r Divine (|cffFFFF002|r)|n|cffFFFF80Hitpoints: |cffFFFF00310|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Fear Aura|r|nDecreases the damage output of all enemies in 450 range by 15%|n|n|cff80FF00Astral Chains|r|nReduces movement and attack speed of target enemy by 30% for 15 seconds|n|cff8080FFCooldown: |r8|n|cff8080FFMana cost: |r25"
+Ubertip="|n|cffFFFF80伤害:|r Magic (|cffFFFF00350|r 射程,|cffFFFF00 48|r 每秒伤害)|n|cffFFFF80护甲:|r Divine (|cffFFFF002|r)|n|cffFFFF80生命值: |cffFFFF00310|r|n|cffFFFF80技能:|r|n|n|cff80FF00Fear Aura|r|nDecreases the damage output of all enemies in 450 range by 15%|n|n|cff80FF00Astral Chains|r|nReduces movement and attack speed of target enemy by 30% for 15 seconds|n|cff8080FFCooldown: |r8|n|cff8080FFMana cost: |r25"
 Hotkey=Q
 Tip="Trains Banshee"
 [n02I]
 Name="Gnoll Ambusher's hut"
 Hotkey=W
 Tip="Upgrade to Ambusher's Hut[|cffffcc00W|r]"
-Ubertip="|cffFFFF80Trains: |cffFFFF00Gnoll|-Ambushern|n|cffFFAC00Gnoll-Ambusher:|r|n|cffFFFF80Attack:|r Normal (|cffFFFF00500|r rng,|cffFFFF00 50|r dps)|n|cffFFFF80Armor:|r Light (|cffFFFF003|r)|n|cffFFFF80Hitpoints: |cffFFFF00520|r|n|cffFFFF80Abilities:|r|n-Poisoned bolt|r|n-Ambush|n-Critical shot|n-Fowlhunter"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Gnoll|-Ambushern|n|cffFFAC00Gnoll-Ambusher:|r|n|cffFFFF80伤害:|r Normal (|cffFFFF00500|r 射程,|cffFFFF00 50|r 每秒伤害)|n|cffFFFF80护甲:|r Light (|cffFFFF003|r)|n|cffFFFF80生命值: |cffFFFF00520|r|n|cffFFFF80技能:|r|n-Poisoned bolt|r|n-Ambush|n-Critical shot|n-Fowlhunter"
 [n02J]
 Name="Quillboar's  burrow"
 Hotkey=Q
 Tip="Build Quillboar's Burrow[|cffffcc00Q|r]"
-Ubertip="|cffFFFF80Trains: |cffFFFF00Quillboar|n|n|cffFFAC00Quillboar:|r|n|cffFFFF80Attack:|r Pierce, ground (|cffFFFF00Melee|r,|cffFFFF00 27|r dps)|n|cffFFFF80Armor:|r Unarmored (|cffFFFF003|r)|n|cffFFFF80Hitpoints: |cffFFFF00360|r|n|cffFFFF80Abilities:|r|n-Quills"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Quillboar|n|n|cffFFAC00Quillboar:|r|n|cffFFFF80伤害:|r Pierce, ground (|cffFFFF00近战|r,|cffFFFF00 27|r 每秒伤害)|n|cffFFFF80护甲:|r 无护甲 (|cffFFFF003|r)|n|cffFFFF80生命值: |cffFFFF00360|r|n|cffFFFF80技能:|r|n-Quills"
 [n02K]
 Name="Harpy's nest"
 Hotkey=E
 Tip="Build Harpies' Nest[|cffffcc00E|r]"
-Ubertip="|cffFFFF80Trains: |cffFFFF00Harpy|n|n|cffFFAC00Harpy:|r|n|cffFFFF80Attack:|r Pierce(|cffFFFF00280|r rng,|cffFFFF00 37|r dps)|n|cffFFFF80Armor:|r Unarmored (|cffFFFF001|r)|n|cffFFFF80Hitpoints: |cffFFFF00420|r|n|cffFFFF80Abilities:|r|n-Flying|r|n-Agile"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Harpy|n|n|cffFFAC00Harpy:|r|n|cffFFFF80伤害:|r Pierce(|cffFFFF00280|r 射程,|cffFFFF00 37|r 每秒伤害)|n|cffFFFF80护甲:|r 无护甲 (|cffFFFF001|r)|n|cffFFFF80生命值: |cffFFFF00420|r|n|cffFFFF80技能:|r|n-Flying|r|n-Agile"
 [n02L]
 Name="Ogre's den"
 Hotkey=A
 Tip="Build Ogre's Den[|cffffcc00A|r]"
-Ubertip="|cffFFFF80Trains: |cffFFFF00Ogre|n|n|cffFFAC00Ogre:|r|n|cffFFFF80Attack:|r Siege, ground (|cffFFFF00Melee|r,|cffFFFF00 56|r dps)|n|cffFFFF80Armor:|r Heavy (|cffFFFF005|r)|n|cffFFFF80Hitpoints: |cffFFFF00650|r|n|cffFFFF80Abilities:|r|n-Heavy club|r|n-Spell resistant|n-Small splash"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Ogre|n|n|cffFFAC00Ogre:|r|n|cffFFFF80伤害:|r Siege, ground (|cffFFFF00近战|r,|cffFFFF00 56|r 每秒伤害)|n|cffFFFF80护甲:|r Heavy (|cffFFFF005|r)|n|cffFFFF80生命值: |cffFFFF00650|r|n|cffFFFF80技能:|r|n-Heavy club|r|n-Spell resistant|n-Small splash"
 [n02M]
 Name="Salamander's hatchery"
 Hotkey=S
 Tip="Build Salamander's Hatchery[|cffffcc00S|r]"
-Ubertip="|cffFFFF80Trains: |cffFFFF00Salamander|n|n|cffFFAC00Salamander:|r|n|cffFFFF80Attack:|r Chaos (|cffFFFF00375|r range,|cffFFFF00 47|r dps)|n|cffFFFF80Armor:|r Heavy (|cffFFFF006|r)|n|cffFFFF80Hitpoints: |cffFFFF00850|r|n|cffFFFF80Abilities:|r|n-Salamander's poison|n-Magical creature"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Salamander|n|n|cffFFAC00Salamander:|r|n|cffFFFF80伤害:|r Chaos (|cffFFFF00375|r range,|cffFFFF00 47|r 每秒伤害)|n|cffFFFF80护甲:|r Heavy (|cffFFFF006|r)|n|cffFFFF80生命值: |cffFFFF00850|r|n|cffFFFF80技能:|r|n-Salamander's poison|n-Magical creature"
 [n02O]
 Name="Gnoll's tent"
 Hotkey=W
 Tip="Build Gnoll's Tent[|cffffcc00W|r]"
-Ubertip="|cffFFFF80Trains: |cffFFFF00Gnoll|n|n|cffFFAC00Gnoll:|r|n|cffFFFF80Attack:|r Normal (|cffFFFF00420|r rng,|cffFFFF00 25|r dps)|n|cffFFFF80Armor:|r Light (|cffFFFF002|r)|n|cffFFFF80Hitpoints: |cffFFFF00340|r|n|cffFFFF80Abilities:|r|n-Minor poison|n-Fowlhunter"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Gnoll|n|n|cffFFAC00Gnoll:|r|n|cffFFFF80伤害:|r Normal (|cffFFFF00420|r 射程,|cffFFFF00 25|r 每秒伤害)|n|cffFFFF80护甲:|r Light (|cffFFFF002|r)|n|cffFFFF80生命值: |cffFFFF00340|r|n|cffFFFF80技能:|r|n-Minor poison|n-Fowlhunter"
 [n02P]
 Name="Sandkin's hide"
 Hotkey=R
 Tip="Build Sandkin's Hide[|cffffcc00R|r]"
-Ubertip="|cffFFFF80Trains: |cffFFFF00Sandkin|n|n|cffFFAC00Sandkin:|r|n|cffFFFF80Attack:|r Magic, ground (|cffFFFF00250|r range,|cffFFFF00 37|r dps)|n|cffFFFF80Armor:|r Normal (|cffFFFF005|r)|n|cffFFFF80Hitpoints: |cffFFFF00550|r|n|cffFFFF80Abilities:|r|n-Sandcloud"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Sandkin|n|n|cffFFAC00Sandkin:|r|n|cffFFFF80伤害:|r Magic, ground (|cffFFFF00250|r range,|cffFFFF00 37|r 每秒伤害)|n|cffFFFF80护甲:|r Normal (|cffFFFF005|r)|n|cffFFFF80生命值: |cffFFFF00550|r|n|cffFFFF80技能:|r|n-Sandcloud"
 [n02N]
 Name="Razormane's  burrow"
 Hotkey=Q
 Tip="Upgrade to Razormane's  Burrow[|cffffcc00Q|r]"
-Ubertip="|cffFFFF80Trains: |cffFFFF00Razormane|n|n|cffFFAC00Razormane:|r|n|cffFFFF80Attack:|r Pierce, ground (|cffFFFF00Melee|r,|cffFFFF00 63|r dps)|n|cffFFFF80Armor:|r Unarmored (|cffFFFF007|r)|n|cffFFFF80Hitpoints: |cffFFFF00750|r|n|cffFFFF80Abilities:|r|n-Bristleback"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Razormane|n|n|cffFFAC00Razormane:|r|n|cffFFFF80伤害:|r Pierce, ground (|cffFFFF00近战|r,|cffFFFF00 63|r 每秒伤害)|n|cffFFFF80护甲:|r 无护甲 (|cffFFFF007|r)|n|cffFFFF80生命值: |cffFFFF00750|r|n|cffFFFF80技能:|r|n-Bristleback"
 [n02R]
 Name="Ogre Lord's den"
 Hotkey=M
 Tip="Upgrade to Ogre Lord's Den[|cffffcc00F|r]"
-Ubertip="|cffFFFF80Trains: |cffFFFF00Ogre-Lord|n|n|cffFFAC00Ogre-Lord:|r|n|cffFFFF80Attack:|r Siege, ground (|cffFFFF00Melee|r,|cffFFFF00 84|r dps)|n|cffFFFF80Armor:|r Heavy (|cffFFFF008|r)|n|cffFFFF80Hitpoints: |cffFFFF001250|r|n|cffFFFF80Abilities:|r|n-Club mastery|n-Spell resistant|n-Splash"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Ogre-Lord|n|n|cffFFAC00Ogre-Lord:|r|n|cffFFFF80伤害:|r Siege, ground (|cffFFFF00近战|r,|cffFFFF00 84|r 每秒伤害)|n|cffFFFF80护甲:|r Heavy (|cffFFFF008|r)|n|cffFFFF80生命值: |cffFFFF001250|r|n|cffFFFF80技能:|r|n-Club mastery|n-Spell resistant|n-Splash"
 [n02V]
 Name="Quillboar"
 Description="***"
 Tip="Trains Quillboar (|cffffcc00Q|r)"
-Ubertip="|n|cffFFFF80Attack:|r Pierce (|cffFFFF00Melee|r,|cffFFFF00 27|r dps)|n|cffFFFF80Armor:|r Unarmored (|cffFFFF003|r)|n|cffFFFF80Hitpoints: |cffFFFF00360|r|n|n|cffFFFF80Abilities:|r|n|n|cff80FF00Quills|r|n|n40% of melee damage is returned to the attacker."
+Ubertip="|n|cffFFFF80伤害:|r Pierce (|cffFFFF00近战|r,|cffFFFF00 27|r 每秒伤害)|n|cffFFFF80护甲:|r 无护甲 (|cffFFFF003|r)|n|cffFFFF80生命值: |cffFFFF00360|r|n|n|cffFFFF80技能:|r|n|n|cff80FF00Quills|r|n|n40% of 近战 damage is returned to the attacker."
 Hotkey=Q
 [n031]
 Name="Harpy Witch's nest"
 Hotkey=E
 Tip="Upgrade to Witch's Nest[|cffffcc00E|r]"
-Ubertip="|cffFFFF80Trains: |cffFFFF00Harpy-Witch|n|n|cffFFAC00Harpy-Witch:|r|n|cffFFFF80Attack:|r Pierce(|cffFFFF00320|r rng,|cffFFFF00 50|r dps)|n|cffFFFF80Armor:|r Unarmored (|cffFFFF002|r)|n|cffFFFF80Hitpoints: |cffFFFF00700|r|n|cffFFFF80Abilities:|r|n-Flying|r|n-Steal life|r|n-Blind|r|n-Agile"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Harpy-Witch|n|n|cffFFAC00Harpy-Witch:|r|n|cffFFFF80伤害:|r Pierce(|cffFFFF00320|r 射程,|cffFFFF00 50|r 每秒伤害)|n|cffFFFF80护甲:|r 无护甲 (|cffFFFF002|r)|n|cffFFFF80生命值: |cffFFFF00700|r|n|cffFFFF80技能:|r|n-Flying|r|n-Steal life|r|n-Blind|r|n-Agile"
 [n033]
 Name="Harpies' Matriarch's nest"
 Hotkey=E
 Tip="Upgrade to Harpies' Matriarch's Nest[|cffffcc00E|r]"
-Ubertip="|cffFF8204Legendary Building|r|n|cffFFFF80Trains: |cffFFFF00Matriarch of Harpies|n|n|cffFFAC00Matriarch:|r|n|cffFFFF80Attack:|r Hero(|cffFFFF00450|r rng,|cffFFFF00 95|r dps)|n|cffFFFF80Armor:|r Unarmored (|cffFFFF006|r)|n|cffFFFF80Hitpoints: |cffFFFF001250|r|n|cffFFFF80Abilities:|r|n-Flying|n-Rain of stones|n-Call of harpies"
+Ubertip="|cffFF8204Legendary Building|r|n|cffFFFF80Trains: |cffFFFF00Matriarch of Harpies|n|n|cffFFAC00Matriarch:|r|n|cffFFFF80伤害:|r Hero(|cffFFFF00450|r 射程,|cffFFFF00 95|r 每秒伤害)|n|cffFFFF80护甲:|r 无护甲 (|cffFFFF006|r)|n|cffFFFF80生命值: |cffFFFF001250|r|n|cffFFFF80技能:|r|n-Flying|n-Rain of stones|n-Call of harpies"
 [n036]
 Name="Monstrous Sandkin's hide"
 Hotkey=R
 Tip="Upgrade to Monstrous Sandkin's Hide[|cffffcc00R|r]"
-Ubertip="|cffFFFF80Trains: |cffFFFF00MonstrousSandkin|n|n|cffFFAC00Sandkin:|r|n|cffFFFF80Attack:|r Magic, ground (|cffFFFF00320|r range,|cffFFFF00 65|r dps)|n|cffFFFF80Armor:|r Normal (|cffFFFF008|r)|n|cffFFFF80Hitpoints: |cffFFFF00900|r|n|cffFFFF80Abilities:|r|n-Sandcloud|n-Critical strike|n-Sandshield|n-Ground Only"
+Ubertip="|cffFFFF80Trains: |cffFFFF00MonstrousSandkin|n|n|cffFFAC00Sandkin:|r|n|cffFFFF80伤害:|r Magic, ground (|cffFFFF00320|r range,|cffFFFF00 65|r 每秒伤害)|n|cffFFFF80护甲:|r Normal (|cffFFFF008|r)|n|cffFFFF80生命值: |cffFFFF00900|r|n|cffFFFF80技能:|r|n-Sandcloud|n-Critical strike|n-Sandshield|n-Ground Only"
