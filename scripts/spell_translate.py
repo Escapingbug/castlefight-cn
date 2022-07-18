@@ -1,31 +1,41 @@
 import asyncio
 import logging
+import re
 from typing import Any, Iterable, List, Tuple
 import tomli
 from pathlib import Path
 from glob import glob
 from configparser import ConfigParser
-from googletrans import Translator  # type: ignore
 import concurrent.futures
+import httpx
+import json
+# must use v2, or else we will get pretty bad result
+from translatepy.translators.google import GoogleTranslateV2
+
+# see: https://github.com/encode/httpx/issues/914
+import platform
+
+if platform.system() == 'Windows':
+    asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
 
 logging.basicConfig()
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.DEBUG)
 
+F_SID_KEY_RE = re.compile('FdrFJe":"(.*?)"')
+BL_KEY_RE = re.compile('cfb2h":"(.*?)"')
+
 
 class AsyncTranslator:
     def __init__(self, max_workers: int = 8):
-        self.googletrans = Translator()
         self.executor = concurrent.futures.ThreadPoolExecutor(max_workers=max_workers)
+        self.translator = GoogleTranslateV2()
 
     async def translate(self, text: str) -> str:
-        logger.debug(f"translating {text}")
+        def do_translate():
+            return self.translator.translate(text, 'zh-CN', 'en').result
 
-        def do_translate(text: str) -> str:
-            return self.googletrans.translate(text, src="en", dest="zh-CN").text  # type: ignore
-
-        loop = asyncio.get_running_loop()
-        return await loop.run_in_executor(self.executor, lambda: do_translate(text))
+        return await asyncio.get_running_loop().run_in_executor(self.executor, do_translate)
 
 
 translator = AsyncTranslator()
@@ -146,6 +156,7 @@ class StringsFile:
                             asyncio.create_task(self.translate_by_parts(section[key])),
                         )
                     )
+            break
         for section_name, key, task in set_task:
             result = await task
             logger.debug(f"translation {section_name}[{key}] result {result}")
