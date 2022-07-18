@@ -9,13 +9,14 @@ from configparser import ConfigParser
 import concurrent.futures
 import httpx
 import json
+
 # must use v2, or else we will get pretty bad result
 from translatepy.translators.google import GoogleTranslateV2
 
 # see: https://github.com/encode/httpx/issues/914
 import platform
 
-if platform.system() == 'Windows':
+if platform.system() == "Windows":
     asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
 
 logging.basicConfig()
@@ -33,9 +34,11 @@ class AsyncTranslator:
 
     async def translate(self, text: str) -> str:
         def do_translate():
-            return self.translator.translate(text, 'zh-CN', 'en').result
+            return self.translator.translate(text, "zh-CN", "en").result
 
-        return await asyncio.get_running_loop().run_in_executor(self.executor, do_translate)
+        return await asyncio.get_running_loop().run_in_executor(
+            self.executor, do_translate
+        )
 
 
 translator = AsyncTranslator()
@@ -148,7 +151,9 @@ class StringsFile:
             for key in section.keys():
                 logger.debug(f"key {key}")
                 if key in self.translation_keys:
-                    logger.debug(f"pending translation({section}[{key}]): {section[key]}")
+                    logger.debug(
+                        f"pending translation({section}[{key}]): {section[key]}"
+                    )
                     set_task.append(
                         (
                             section_name,
