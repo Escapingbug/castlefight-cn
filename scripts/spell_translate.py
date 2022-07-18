@@ -51,8 +51,10 @@ class Template:
 
 
 class StringsFile:
-    def __init__(self, path: Path | str, translation_keys: Iterable[str]) -> None:
-        self.path = path
+    def __init__(self, path: Path | str, out_dir: Path | str, translation_keys: Iterable[str]) -> None:
+        self.path: Path = path if type(path) is Path else Path(path)
+        out_d: Path = out_dir if type(out_dir) is Path else Path(out_dir)
+        self.out_path = out_d.joinpath(self.path.name)
         self.parser = ConfigParser(interpolation=None)
         self.parser.optionxform = lambda option: option  # type: ignore
         self.parser.read(path, encoding="utf8")
@@ -161,11 +163,14 @@ class StringsFile:
                             asyncio.create_task(self.translate_by_parts(section[key])),
                         )
                     )
-            break
         for section_name, key, task in set_task:
             result = await task
             logger.debug(f"translation {section_name}[{key}] result {result}")
             self.parser[section_name][key] = result
+
+    def save(self):
+        with open(self.out_path, "w") as f:
+            self.parser.write(f)
 
 
 class MapDir:
@@ -178,8 +183,9 @@ mapdir = MapDir(Path(__file__).parent.parent.joinpath("map_data"))
 
 
 def main():
-    test = StringsFile("./map_data/units/humanunitstrings.txt", ["Name", "Ubertip"])
+    test = StringsFile("./map_data/units/humanunitstrings.txt", "./translate_out", ["Name", "Ubertip"])
     asyncio.run(test.translate())
+    test.save()
     """
     for sec in test.parser.sections():
         section = test.parser[sec]
