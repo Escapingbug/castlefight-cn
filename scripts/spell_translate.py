@@ -1,14 +1,12 @@
 import asyncio
 import logging
 import re
-from typing import Any, Iterable, List, Tuple
+from typing import Any, Callable, Iterable, List, Tuple
 import tomli
 from pathlib import Path
 from glob import glob
 from configparser import ConfigParser
 import concurrent.futures
-import httpx
-import json
 
 # must use v2, or else we will get pretty bad result
 from translatepy.translators.google import GoogleTranslateV2
@@ -44,23 +42,10 @@ class AsyncTranslator:
 translator = AsyncTranslator()
 
 
-class Template:
-    def __init__(self, path: Path) -> None:
-        with open(path, "rb") as f:
-            self.data = tomli.load(f)
 
-
-class StringsFile:
-    def __init__(self, path: Path | str, out_dir: Path | str, translation_keys: Iterable[str]) -> None:
-        self.path: Path = path if type(path) is Path else Path(path)
-        out_d: Path = out_dir if type(out_dir) is Path else Path(out_dir)
-        self.out_path = out_d.joinpath(self.path.name)
-        self.parser = ConfigParser(interpolation=None)
-        self.parser.optionxform = lambda option: option  # type: ignore
-        self.parser.read(path, encoding="utf8")
-        self.translation_keys = set(translation_keys)
-
-    async def translate_by_parts(self, string: str) -> str:
+class GoogleTranslator:
+    @staticmethod
+    async def translate(string: str) -> str:
         """
         A single line might contain several escape chars such as |n or |cXXXX that could
         interfere the translation.
@@ -142,16 +127,122 @@ class StringsFile:
         result: List[str] = [await task for task in result_tasks]
         return "|n".join(result)
 
+
+class ShortcutAdjust:
+    """
+    Adjusts the shortcut hint format.
+
+    Some of the descriptions in English might use the colored letter
+    to tell one the shortcut of such item/spell, etc.
+
+    Such as, **B**uild (** means colored).
+    In this case, during the translation, it should be re-formatted into
+    Build (**B**) to allow automatic translation work properly.
+
+    To check if this case happans, we use two rules:
+
+    1. the colored letter is a single letter
+    2. the colored letter is not a single token (no space wrapping it)
+    """
+    shortcut_hint_regex = re.compile("\\|c[0-9a-f]{8}([a-zA-Z0-9])\\|r")
+
+    @staticmethod
+    def not_wrapped_by_space(string: str, start: int, end: int):
+        return start >= 1 and end < len(string) - 1 and (string[start] != ' ' or string[end] != ' ')
+
+    @staticmethod
+    def find_shortcut_hint(string: str) -> re.Match | None:
+        returns = None
+        for possible_hint in ShortcutAdjust.shortcut_hint_regex.finditer(string):
+            if ShortcutAdjust.not_wrapped_by_space(string, possible_hint.start(), possible_hint.end()):
+                assert returns is None, f"should not contain two possible shortcut hint: {string}"
+                returns = possible_hint
+        return returns
+
+    @staticmethod
+    def adjust(string: str) -> str:
+        matched = ShortcutAdjust.find_shortcut_hint(string)
+        if matched is None:
+            return string
+        clean_word_pieces = []
+        original_word_pieces = []
+        if matched.start() > 1 and string[matched.start() - 1] != ' ':
+            pre_piece = string[:matched.start()].rsplit(maxsplit=1)[1]
+            clean_word_pieces.append(pre_piece)
+            original_word_pieces.append(pre_piece)
+        clean_word_pieces.append(matched.group(1))
+        original_word_pieces.append(matched.group(0))
+        if matched.end() < len(string) - 1 and string[matched.end() + 1] != ' ':
+            post_piece = string[matched.end():].split(maxsplit=1)[0]
+            clean_word_pieces.append(post_piece)
+            original_word_pieces.append(post_piece)
+
+        original_word = ''.join(original_word_pieces)
+        clean_word = ''.join(clean_word_pieces)
+
+        # "[]" gives much better result in google translation (avoid semantic problem)
+        return string.replace(original_word, f"[{matched.group(0)}] {clean_word} ")
+
+
+class TemplateTranslator:
+
+    def __init__(self) -> None:
+        with open(Path(__file__).parent.joinpath("template.toml"), "rb") as f:
+            self.template = tomli.load(f)
+
+    def translate(self, string: str, key: str) -> str | None:
+        # TODO
+        pass
+
+    def rewrite(self, string: str, key: str) -> str:
+        # TODO
+        pass
+
+class TranslationPipeline:
+
+    def __init__(self) -> None:
+        self.shortcut_adjust = ShortcutAdjust
+        self.google_translator = GoogleTranslator
+        self.template_translator = TemplateTranslator()
+
+    async def translate(self, string: str, key: str) -> str:
+        # Interestingly, the exported ini file got some fields wrapped
+        # with quotes but some not.
+        # During translation, the quotes are being respected,
+        # so we deal with that by stripping then adding in the end.
+        quoting: Callable[[str], str] = (lambda x: f'"{x}"') if string[0] == '"' else lambda x: x
+        string = string.strip('"')
+        string = self.shortcut_adjust.adjust(string)
+        result = self.template_translator.translate(string, key)
+        if result:
+            quoting(result)
+        string = self.template_translator.rewrite(string, key)
+        logger.debug(f"adjusted {string}")
+        result = await self.google_translator.translate(string)
+        return quoting(result)
+        
+        
+
+TRANSLATION_PIPELINE = TranslationPipeline()
+
+class StringsFile:
+    def __init__(self, path: Path | str, out_dir: Path | str, translation_keys: Iterable[str]) -> None:
+        self.path: Path = path if type(path) is Path else Path(path)
+        out_d: Path = out_dir if type(out_dir) is Path else Path(out_dir)
+        self.out_path = out_d.joinpath(self.path.name)
+        self.parser = ConfigParser(interpolation=None)
+        self.parser.optionxform = lambda option: option  # type: ignore
+        self.parser.read(path, encoding="utf8")
+        self.translation_keys = set(translation_keys)
+
     async def translate(self):
         logger.debug(f"begin translating {self.path}")
         set_task: List[
             Tuple[str, str, asyncio.Task[str]]
         ] = []  # (section_name, key, task)
         for section_name in self.parser.sections():
-            logger.debug(f"section {section_name}")
             section = self.parser[section_name]
             for key in section.keys():
-                logger.debug(f"key {key}")
                 if key in self.translation_keys:
                     logger.debug(
                         f"pending translation({section}[{key}]): {section[key]}"
@@ -160,7 +251,7 @@ class StringsFile:
                         (
                             section_name,
                             key,
-                            asyncio.create_task(self.translate_by_parts(section[key])),
+                            asyncio.create_task(TRANSLATION_PIPELINE.translate(section[key], key)),
                         )
                     )
         for section_name, key, task in set_task:
@@ -169,7 +260,7 @@ class StringsFile:
             self.parser[section_name][key] = result
 
     def save(self):
-        with open(self.out_path, "w") as f:
+        with open(self.out_path, "w", encoding="utf8") as f:
             self.parser.write(f)
 
 
@@ -183,7 +274,7 @@ mapdir = MapDir(Path(__file__).parent.parent.joinpath("map_data"))
 
 
 def main():
-    test = StringsFile("./map_data/units/humanunitstrings.txt", "./translate_out", ["Name", "Ubertip"])
+    test = StringsFile("./map_data/units/humanunitstrings.txt", "./translate_out", ["Name", "Ubertip", "Tip"])
     asyncio.run(test.translate())
     test.save()
     """
