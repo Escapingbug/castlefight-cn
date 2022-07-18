@@ -1,0 +1,362 @@
+[AIat]
+Name=Item Damage Bonus
+[AIde]
+Name=Item Armor Bonus
+[AIhe]
+Name=Item Healing
+[AIha]
+Name=Item Area Healing
+[AIvi]
+Name=Item Temporary Invisibility
+[AIma]
+Name=Item Mana Regain
+[AIra]
+Name=Item Area Heal/Mana Regain
+[AIda]
+Name=Item Temporary Area Armor Bonus
+[AIta]
+Name=Item Area Detection
+[AIfi]
+Name=Item Firebolt
+[AIil]
+Name=Item Illusions
+[BIil]
+Bufftip=Illusion
+Buffubertip="This unit is an illusion; it takes extra damage from enemies."
+[AIfb]
+Name=Item Attack Fire Bonus
+[AIpb]
+Name=Item Attack Poison Bonus
+[AIcb]
+Name=Item Attack Corruption Bonus
+[BIcb]
+Bufftip=Corruption
+Buffubertip="This unit was hit by an Orb of Corruption; its armor is temporarily reduced."
+[AItp]
+Name=Item Town Portal
+[AImi]
+Name=Item Permanent Life Gain
+[AIab]
+Name=Item Hero Stat Bonus
+[AIml]
+Name=Item Life Bonus
+[Arel]
+Name=Item Life Regeneration
+[Aami]
+Name=Item Anti-Magic Shell
+[AImm]
+Name=Item Mana Bonus
+[AIas]
+Name=Item Attack Speed Bonus
+[AIaa]
+Name=Item Attack Damage Gain
+[AImi]
+Name=Item Life Gain
+[AIt9]
+Name=Item Damage Bonus
+[AId2]
+Name=Item Armor Bonus
+[AId3]
+Name=Item Armor Bonus
+[AId7]
+Name=Item Armor Bonus
+[AIh1]
+Name=Item Healing
+[AIm1]
+Name=Item Mana Regain
+[AIfc]
+Name=Flying Carpet
+[AIrl]
+Name=Healing Salve
+[BIrl]
+Bufftip=Regeneration
+Buffubertip="This unit has Regeneration on it; its hit points will regenerate over time."
+[AIpl]
+Name=Lesser Clarity Potion
+[BIrm]
+Bufftip=Clarity Potion
+Buffubertip="This unit drank a Clarity Potion; its mana will regenerate over time."
+[AIsl]
+Name=Scroll of Regeneration
+[BIrg]
+Bufftip=Rejuvenation
+Buffubertip="This unit will regenerate health and mana over time."
+[Ablp]
+Name=Blight Placement
+[AIct]
+Name=Change Time of Day
+[AIsr]
+Name=Spell Damage Reduction
+[AIbl]
+Name=Build Tiny Castle
+[AIbg]
+Name=Build Tiny Great Hall
+[AIbt]
+Name=Build Tiny Scout Tower
+[Ashs]
+Name=Wand of Shadowsight
+[Bshs]
+Bufftip=Wand of Shadowsight
+Buffubertip="This unit was hit by a Wand of Shadowsight; it is revealed to an enemy player."
+[ANpr]
+Name=Staff of Preservation
+[Amec]
+Name=Mechanical Critter
+[Bmec]
+Bufftip=Mechanical Critter
+Buffubertip="Summoned units take damage from dispels."
+[ANss]
+Name=Spell Shield
+[BNss]
+Bufftip=Spell Shield
+Buffubertip="A protective shield that blocks a spell."
+[Aspb]
+Name=Spell Book
+[AIrd]
+Name=Raise Dead (Item)
+[ANsa]
+Name=Staff of Sanctuary
+[BNsa]
+Bufftip=Sanctuary
+Buffubertip="This unit is under the effects of a Staff of Sanctuary; its hit points will regenerate over time, but it cannot move, attack or cast spells."
+[AIsa]
+Name=Scroll of Haste
+[AItb]
+Name=Dust of Appearance
+[Bdet]
+Bufftip=Dust of Appearance
+Buffubertip="The Dust of Appearance reveals invisible units to enemy players."
+[AIsb]
+Name=Orb of Slow
+[AIll]
+Name=Orb of Lightning (new)
+[AIxs]
+Name=Item Anti-Magic Shell
+[AIpg]
+Name=Item Purge
+[AIdd]
+Name=Defend
+[AIdd]
+Name=Passive Defense
+[Btrv]
+EditorName=Teleport Reveal
+[A0EQ]
+Name="NOT WORKING"
+[A0D6]
+Name="ELE: Enchant(Rock Shield)"
+[A0DB]
+Name="ELE: Elemental Guard Tower(boulder)"
+Tip="Has a 65% chance to stun unit for 3 seconds and deal 100 additional damage."
+[A0BV]
+Name="spellresist 99"
+[A0C7]
+Name=Item Life Regeneration
+[A0C6]
+Name=Item Life Regeneration
+[A0C9]
+Name=Spell Book
+[A0C8]
+Name=Item Damage Bonus
+[A0CC]
+Name=Item Armor Bonus
+[A0CB]
+Name=Item Armor Bonus
+[A0CF]
+Name="spellresist 50"
+[A0CD]
+Name=Item Armor Bonus
+[A0CH]
+Name="ELE: Elemental Of Lightning (orb)"
+[A0CI]
+Name="ELE: Greater Elemental Of Lightning (orb)"
+[A0CM]
+Name="ELE: Greater Elemental Of Fire (firebreath orb)"
+[A0AY]
+Name="spellresist 15"
+[A0AZ]
+Name="spellresist 20"
+[A0BB]
+Name="NAT: Emerald Dragon (armor reduce)"
+[A0C2]
+Name="NAT: Furbolg Elder Shaman (manaburn orb)"
+[A0A9]
+Name=Melee Lightning Damage Bonus
+[A0A5]
+Name=Spell Book
+Ubertip="Order owning player to buy an item."
+Tip="Issue buy order"
+[A0AN]
+Name="spell resist 25%"
+[A0AM]
+Name="Build Tech Tent"
+[A0AL]
+Name="spell resist 15"
+[A0AI]
+Name="spellresist 90"
+[A0AH]
+Name="spellresist 70"
+[A0AC]
+Name=Orb of Lightning (new)
+[A05N]
+Name="UND: Mighty Necromancer (carrion swarm)"
+[A06T]
+Name=Item Life Bonus
+[A06U]
+Name=Item Damage Bonus
+[A06Z]
+Name=Spell Shield
+[A07S]
+Name="Build Nuke Silo"
+[A088]
+Name=Item Damage Bonus
+[A089]
+Name=Item Armor Bonus
+[A08C]
+Name="NEL: Obelisk Of Wilderness (spell resist 40)"
+[A08A]
+Name=Item Temporary Area Armor Bonus
+[A08K]
+Name="spellresist 90"
+[A08L]
+Name="Def+4"
+[A08O]
+Name="spellresist 70"
+[A093]
+Name="spellresist 30"
+[A09C]
+Name=Item Attack Speed Bonus
+[A09Q]
+Name="Mech shield armor"
+[A09M]
+Name="Stacking Life Bonus"
+[A00Z]
+Name="HEL: Wizard (Lightning)"
+[A00J]
+Name=Spell Book
+[A01B]
+Name=Melee Lightning Damage Bonus
+[A03B]
+Name=Item Attack Speed Bonus
+[A03A]
+Name=Item Damage Bonus
+[A035]
+Name="ORC: Offensive Kodo (damage aura)"
+[A02H]
+Name=Chain Lightning
+[A02G]
+Name="Scroll Heal"
+[A02F]
+Name="Damage Add 30"
+[A046]
+Name="Freeze20p"
+[A048]
+Name=Melee Lightning Damage Bonus
+[A049]
+Name=Melee Lightning Damage Bonus
+[A03X]
+Name=Melee Lightning Damage Bonus
+[A03L]
+Name=Item Life Bonus
+[A03E]
+Name="Quad Damage"
+Ubertip="Gives friendly nearby units a <AIrr,DataA1,%>% bonus to damage. |nLasts <AIrr,Dur1> seconds."
+[A03D]
+Name=Item Life Bonus
+[A03F]
+Name="Double Damage"
+Ubertip="Gives friendly nearby units a <AIrr,DataA1,%>% bonus to damage. |nLasts <AIrr,Dur1> seconds."
+[A04W]
+Name=Orb of Lightning (new)
+[A04P]
+Name=Orb of Lightning (new)
+[A04N]
+Name=Orb of Lightning (new)
+[A054]
+Name=Orb of Lightning (new)
+[A04S]
+Name="COR: Eye of Corruption"
+[A0F3]
+Name=Spell Book
+[A0FF]
+Name="Throw boulder 35p"
+[A0FG]
+Name="Air Shield a"
+[A0FH]
+Name="Fire Shield a"
+[A0FI]
+Name="Earth Shield a"
+[A0FL]
+Name="Emerald drake Armor -4"
+[A0FM]
+Name="ELE: Boulder tower"
+[A0FN]
+Name="MECH: Energy burst tower"
+Ubertip="The attacks of this unit bounce 2 times, dealing 0.3 less damage after each bounce. Energy burst could deal additional damage (80 to the first target, jumps 4 times)"
+Tip="Energy tower"
+[A0FR]
+Name="Illusion"
+[A0FS]
+Name="Illusion"
+[A0FT]
+Name="Cast illusion (lesser)"
+[A0FU]
+Name="Cast illusion (greater)"
+[A0G0]
+Name="ELE: Cast WW"
+[A0G5]
+Name="DST: Blind 16%"
+[A0GG]
+Name="Def-3"
+[A0H7]
+Name=Spell Shield
+[A0H8]
+Name="Golems SR"
+[A0GJ]
+Name="Damage Add 45"
+[A0HE]
+Name="Damage Add 60"
+[A0HF]
+Name="Damage Add 75"
+[A0HG]
+Name="Damage Add 90"
+[A0HJ]
+Name="-100% Spellresist"
+[A0HN]
+Name="Double Damage"
+Ubertip="Gives friendly nearby units a <AIrr,DataA1,%>% bonus to damage. |nLasts <AIrr,Dur1> seconds."
+[A0HO]
+Name="DevStrike"
+Ubertip="Gives friendly nearby units a <AIrr,DataA1,%>% bonus to damage. |nLasts <AIrr,Dur1> seconds."
+[A0HX]
+Name="DST: salamanders"
+[A03G]
+Name="spell resist 50%"
+[A0I1]
+Name="Prayer: heal+mana"
+[A0I2]
+Name="Prayer: +dmg +armor"
+Ubertip="Gives friendly nearby units a <AIrr,DataA1,%>% bonus to damage. |nLasts <AIrr,Dur1> seconds."
+[A0IJ]
+Name="Freeze (leg)"
+[B01Q]
+Bufftip=Fragrance of Shadows
+Buffubertip=This unit has its armor reduced
+[B01C]
+Bufftip=Scroll of Stone
+Buffubertip=This unit has its armor increased.
+[B016]
+Bufftip=Moonshine Blessing
+Buffubertip=This unit has its armor increased.
+[B02E]
+Bufftip=Earth shield
+Buffubertip=+35% to throw boulder|n+10 armor
+[B02G]
+Bufftip=Fire shield
+Buffubertip=Burns random nearby enemy for 15dps.
+[B02H]
+Bufftip=Air shield
+Buffubertip=+30% IAS +20%MS|n+30%spell and damage resistance|n50% chance to deflect magic attack
+[B02K]
+Bufftip=Life drain
+Buffubertip=Victim of Lich
+EditorName=Life drain

@@ -1,0 +1,1932 @@
+[Hblm]
+Name=Blood Mage
+Propernames=Eldin Sunstrider,Tanin Hawkwing,Lorn Bloodseeker,Aldos Firestar,Gilaras Drakeson,Hale Magefire,Kath'ranis Remar,Tyoril Sunchaser,Sylvos Windrunner,Tenris Mirkblood,Marakanis Starfury,Geldor Earthfire,Halendor Burnkin,Kelen the Destroyer'
+Hotkey=B
+Tip=Summon |cffffcc00B|rlood Mage
+Ubertip="Mystical Hero, adept at controlling magic and ranged assaults. Can learn Flame Strike, Banish, Siphon Mana and Phoenix. |n|n|cffffcc00Attacks land and air units.|r"
+Revivetip=Revive |cffffcc00B|rlood Mage
+Awakentip=Revive |cffffcc00B|rlood Mage
+[halt]
+Name=Altar of Kings
+Hotkey=A
+Tip=Build |cffffcc00A|rltar of Kings
+Ubertip="Summons Heroes. Revives slain Heroes."
+[Hamg]
+Name=Archmage
+Propernames=Tenn Flamecaster,Nilas Arcanister,Andromath,Shal Lightbinder,Aran Spellweaver,Manath Magesinger,Landazar,Doril Magefont,Peril Spellbinder,Conjurus Rex,Fordred Aran,Dalar Dawnweaver,Kelen the Seeker
+Hotkey=A
+Tip=Summon |cffffcc00A|rrchmage
+Ubertip="Mystical Hero, adept at ranged assaults. Can learn Blizzard, Summon Water Elemental, Brilliance Aura and Mass Teleport. |n|n|cffffcc00Attacks land and air units.|r"
+Revivetip=Revive |cffffcc00A|rrchmage
+Awakentip=Revive |cffffcc00A|rrchmage
+[harm]
+Name=Workshop
+Hotkey=W
+Tip=Build |cffffcc00W|rorkshop
+Ubertip="Produces Siege Engines, Flying Machines, and Mortar Teams. |nAlso contains the Flare, Fragmentation Shards, Barrage, Flying Machine Bombs, and Flak Cannons upgrades."
+[hars]
+Name=Arcane Sanctum
+Hotkey=R
+Tip=Build A|cffffcc00r|rcane Sanctum
+Ubertip="Trains Priests, Sorceresses, and Spell Breakers. |nAlso contains spell upgrades for Priests and Sorceresses, Control Magic, and Magic Sentry."
+[hbar]
+Name=Barracks
+Hotkey=B
+Tip=Build |cffffcc00B|rarracks
+Ubertip="Primary troop production building. Trains Footmen, Riflemen and Knights. |nAlso contains the Defend, Long Rifles, and Animal War Training upgrades."
+[hbla]
+Name=Blacksmith
+Hotkey=S
+Tip=Build Black|cffffcc00s|rmith
+Ubertip="Contains upgrades for improved armor, weaponry and gunpowder."
+[hcas]
+Name=Castle
+Hotkey=U
+Tip=|cffffcc00U|rpgrade to Castle
+Ubertip="Upgrade to Castle to enable the production of additional types of structures and units."
+[hdhw]
+Name=Dragonhawk Rider
+Hotkey=D
+Tip=Train |cffffcc00D|rragonhawk Rider
+Ubertip="Swift flying unit, mounted by an Elven warrior. Has the Aerial Shackles ability, which allows it to immobilize and disarm enemy air units temporarily. Can learn Animal War Training, and the Cloud ability. |n|n|cffffcc00Attacks land and air units.|r"
+[hhou]
+Name=Farm
+Hotkey=F
+Tip=Build |cffffcc00F|rarm
+Ubertip="Provides food, which increases the maximum number of units that can be trained."
+[hfoo]
+Name=Footman
+Hotkey=F
+Tip=Train |cffffcc00F|rootman
+Ubertip="Versatile foot soldier. Can learn the Defend ability. |n|n|cffffcc00Attacks land units.|r"
+[hgra]
+Name=Gryphon Aviary
+Hotkey=G
+Tip=Build |cffffcc00G|rryphon Aviary
+Ubertip="Trains Gryphon Riders, and Dragonhawk Riders. |nAlso contains the Storm Hammers and Cloud upgrades."
+[hctw]
+Name=Cannon Tower
+Hotkey=C
+Tip=Upgrade to |cffffcc00C|rannon Tower
+Ubertip="Heavy defensive structure. Particularly effective against clusters of troops. Can learn the Magic Sentry ability. |n|n|cffffcc00Attacks land units and trees.|r"
+[hgtw]
+Name=Guard Tower
+Hotkey=G
+Tip=Upgrade to |cffffcc00G|ruard Tower
+Ubertip="Primary defensive structure. Can learn the Magic Sentry ability. |n|n|cffffcc00Attacks land and air units.|r"
+[hwtw]
+Name=Scout Tower
+Hotkey=T
+Tip=Build Scout |cffffcc00T|rower
+Ubertip="Basic observation tower. Has no attack, but can be upgraded into a Guard Tower, an Arcane Tower, or a Cannon Tower. Can learn the Magic Sentry ability."
+[hatw]
+Name=Arcane Tower
+Hotkey=N
+Tip=Upgrade to Arca|cffffcc00n|re Tower
+Ubertip="Magical defensive tower. Particularly effective against enemy Heroes and spellcasters. Has the Feedback ability, which causes its attacks to destroy mana, dealing extra damage equal to the mana destroyed. Can learn the Magic Sentry ability. |n|n|cffffcc00Attacks land and air units."
+[hvlt]
+Name=Arcane Vault
+Hotkey=V
+Tip=Build Arcane |cffffcc00V|rault
+Ubertip="Creates a shop with purchasable items. The items available depend upon what level of upgrade your Town Hall has (Town Hall, Keep, or Castle) and which buildings you have."
+[hgyr]
+Name=Flying Machine
+Hotkey=F
+Tip=Train |cffffcc00F|rlying Machine
+Ubertip="Fast moving flying machine. Excellent at scouting, and effective against air units. Can learn the Flying Machine Bombs and Flak Cannons upgrades. |nCan see invisible units. |n|n|cffffcc00Attacks air units.|r"
+[hkee]
+Name=Keep
+Hotkey=U
+Tip=|cffffcc00U|rpgrade to Keep
+Ubertip="Upgrade to Keep to enable the production of additional types of structures and units."
+[hkni]
+Name=Knight
+Hotkey=K
+Tip=Train |cffffcc00K|rnight
+Ubertip="Powerful mounted warrior. Can learn Animal War Training. |n|n|cffffcc00Attacks land units.|r"
+[hlum]
+Name=Lumber Mill
+Hotkey=L
+Tip=Build |cffffcc00L|rumber Mill
+Ubertip="Serves as a drop-off point for harvested lumber. |nAlso contains the upgrades for Lumber Harvesting and Masonry."
+[Hmkg]
+Name=Mountain King
+Propernames=Bor Stonebreaker,Munin Ironcliff,Thorgas Broadaxe,Kelv Sternhammer,Grim Thunderbrew,Buri Frostbeard,Huginn Ironcliff,Thordin Rockbeard,Bandis Forgefire,Gar Doomforge,Beazel Bludstone,Modi Stonesmith,Aggronor the Mighty
+Hotkey=M
+Tip=Summon |cffffcc00M|rountain King
+UberTip="Warrior Hero, adept at offensive combat and disrupting enemy troops. Can learn Storm Bolt, Thunder Clap, Bash and Avatar. |n|n|cffffcc00Attacks land units.|r"
+Revivetip=Revive |cffffcc00M|rountain King
+Awakentip=Revive |cffffcc00M|rountain King
+[hmpr]
+Name=Priest
+Hotkey=P
+Tip=Train |cffffcc00P|rriest
+Ubertip="Supporting spellcaster. Can initially cast Heal, which increases the life of wounded units. Can also learn Dispel Magic and Inner Fire. |n|n|cffffcc00Attacks land and air units.|r"
+Casterupgradename=Initiate, Adept, Master
+Casterupgradetip="- Heal","- Heal|n- Dispel Magic","- Heal|n- Dispel Magic|n- Inner Fire"
+[hmtm]
+Name=Mortar Team
+Hotkey=M
+Tip=Train |cffffcc00M|rortar Team
+Ubertip="Long-range siege weaponry. Exceptional damage versus buildings, but slow and vulnerable. Can learn the Fragmentation Shards and Flare abilities. |n|n|cffffcc00Attacks land units and trees.|r"
+[Hpal]
+Name=Paladin
+Propernames=Granis Darkhammer,Jorn the Redeemer,Sage Truthbearer,Malak the Avenger,Gavinrad the Dire,Morlune the Mighty,Agamand the True,Ballador the Bright,Manadar the Healer,Zann the Defender,Arius the Seeker,Aurrius the Pure,Karnwield the Seeker,Buzan the Fearless
+Hotkey=L
+Tip=Summon Pa|cffffcc00l|radin
+Ubertip="Warrior Hero, exceptional at defense and augmenting nearby friendly troops. Can learn Holy Light, Divine Shield, Devotion Aura and Resurrection. |n|n|cffffcc00Attacks land units.|r"
+Revivetip=Revive Pa|cffffcc00l|radin
+Awakentip=Revive Pa|cffffcc00l|radin
+[hpea]
+Name=Peasant
+Hotkey=P
+Tip=Train |cffffcc00P|reasant
+Ubertip="Basic worker unit. Can harvest gold and lumber, build structures and Repair. Can become Militia. |n|n|cffffcc00Attacks land units and trees.|r"
+[hrif]
+Name=Rifleman
+Hotkey=R
+Tip=Train |cffffcc00R|rifleman
+Ubertip="Highly skilled sharpshooter, effective against air units. Can gain the Long Rifles upgrade. |n|n|cffffcc00Attacks land and air units.|r"
+[hsor]
+Name=Sorceress
+Hotkey=S
+Tip=Train |cffffcc00S|rorceress
+Ubertip="Versatile spellcaster. Can initially cast Slow, which decreases movement and attack speed on enemy units. Can also learn Invisibility and Polymorph. |n|n|cffffcc00Attacks land and air units.|r"
+Casterupgradename=Initiate, Adept, Master
+Casterupgradetip="- Slow","- Slow|n- Invisibility","- Slow|n- Invisibility|n- Polymorph"
+[hspt]
+Name=Spell Breaker
+Hotkey=B
+Tip=Train Spell |cffffcc00B|rreaker
+Ubertip="Elven warrior trained to destroy spellcasters. Initially has Spell Steal, which manipulates buffs to your advantage, Spell Immunity and Feedback. Can also learn Control Magic. |n|n|cffffcc00Attacks land units.|r"
+[hmtt]
+Name=Siege Engine
+Hotkey=E
+Tip=Train Siege |cffffcc00E|rngine
+Ubertip="Heavily armored vehicle, effective at destroying buildings. Can be upgraded with the Barrage ability. |n|n|cffffcc00Attacks buildings.|r"
+[hrtt]
+Name=Siege Engine
+Hotkey=E
+Tip=Train Siege |cffffcc00E|rngine
+Ubertip="Heavily armored vehicle, effective at destroying buildings. Has the Barrage ability, which fires rockets at nearby enemy air units. |n|n|cffffcc00Attacks buildings.|r"
+[htow]
+Name=Town Hall
+Hotkey=H
+Tip=Build Town |cffffcc00H|rall
+Ubertip="Primary structure, used to train Peasants and receive gathered resources. Can be upgraded to Keep and then Castle to enable the production of additional types of structures and units."
+[hwat]
+Name=Water Elemental
+[hwt2]
+Name=Water Elemental
+[hwt3]
+Name=Water Elemental
+[hgry]
+Name=Gryphon Rider
+Hotkey=G
+Tip=Train |cffffcc00G|rryphon Rider
+Ubertip="Powerful flying creature, mounted by a Dwarven hammer-thrower. Can learn Animal War Training, and the Storm Hammers ability. |n|n|cffffcc00Attacks land and air units.|r"
+[hphx]
+Name=Phoenix
+[hpxe]
+Name=Phoenix Egg
+[h0AY]
+Name="Tech Hall"
+Hotkey=S
+Tip="Research Tech 3"
+Ubertip="Contains upgrades for improved armor, weaponry and gunpowder."
+[h09R]
+Name="Spare Part Heap: Gobbo"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h09Q]
+Name="GrenadeDummy"
+Hotkey=P
+Tip=Train |cffffcc00P|rriest
+Ubertip="Supporting spellcaster. Can initially cast Heal, which increases the life of wounded units. Can also learn Dispel Magic and Inner Fire. |n|n|cffffcc00Attacks land and air units.|r"
+Casterupgradename=Initiate, Adept, Master
+Casterupgradetip="- Heal","- Heal|n- Dispel Magic","- Heal|n- Dispel Magic|n- Inner Fire"
+[h09T]
+Name="Power Plant"
+Hotkey=D
+Tip="Build Power Plant [|cffffcc00D|r]"
+Ubertip="|cffFFFF80Ability:|cffFFFF00 Power Buildings|r|nPowers all buildings in 180 range giving them +2 armor. In addition, towers gain +50% damage and special buildings gain +0.25 mana/sec. Creep producing strucutres train stronger creeps:|n-100 bonus HP|n-2 bonus armor|n-20% bonus damage"
+[h09V]
+Name="Power Plant: Teleport"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h09U]
+Name="Power Plant: Fence"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h09X]
+Name="School of Wizardry"
+Hotkey=S
+Tip="Build School of Wizardry [|cffffcc00S|r]"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Sorceress|n|cffFFFF80Upgrades: |cffFFFF001|n|n|cffFFAC00Sorceress:|r|n|cffFFFF80Attack:|r Magic (|cffFFFF00500|r rng,|cffFFFF00 27|r dps)|n|cffFFFF80Armor:|r Unarmored (|cffFFFF002|r)|n|cffFFFF80Hitpoints: |cffFFFF00550|r|n|cffFFFF80Abilities:|r|n-Healing Wave (|cffFFFF00150hp, 2 targets|r)|n-Chain Lightning (|cffFFFF0025%, 150dmg|r)"
+[h09W]
+Name="Race Ban"
+Hotkey=K
+Tip=Train |cffffcc00K|rnight
+Ubertip="Powerful mounted warrior. Can learn Animal War Training. |n|n|cffffcc00Attacks land units.|r"
+[h09Z]
+Name="Corrupted"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h09Y]
+Name="Corrupted Ancient of Annihilation"
+Hotkey=R
+Tip="Upgrade to Corrupted Ancient of Annihilation [|cffffcc00R|r]"
+Ubertip="|cffFF8204Legendary Building|r|n|cffFFFF80Trains: |cffFFFF00Corrupted Annihilator|n|n|cffFFAC00Corrupted Annihilator:|r|n|cffFFFF80Attack:|r Normal (|cffFFFF00melee|r,|cffFFFF00 120|r dps)|n|cffFFFF80Armor:|r Heavy (|cffFFFF007|r)|n|cffFFFF80Hitpoints: |cffFFFF001800|r|n|cffFFFF80Abilities:|r|n-Legendary Spell Resistance (|cffFFFF0070%|r)|n-Immune|n-Cleaving Attack (|cffFFFF0040%|r)|n-Critical Strike (|cffFFFF0015%, x2|r)|n-Weakening Attack (|cffFFFF00-100% dmg|r)|n-Fan of Spikes (|cffFFFF00250dmg, 3.5sec stun|r)|n|n|cffFF0000You must turn off unit production before you can upgrade!|r"
+[h0A2]
+Name="Heavy Gunner"
+Hotkey=Q
+Tip="Trains Heavy Gunner"
+Ubertip="|n|cffFFFF80Attack:|r Pierce (|cffFFFF00550|r rng,|cffFFFF00 47|r dps)|n|cffFFFF80Armor:|r Medium (|cffFFFF003|r)|n|cffFFFF80Hitpoints: |cffFFFF00500|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Ground Only|r|nThis unit can't attack flying enemies|n|n|cff80FF00Splash Damage|r|nThis unit's attacks hit all units in a 180 AoE around its target. Units farther away from the target receive less damage|n|n|cff80FF00Critical Strike|r|n20% chance on each attack to hit for 2 times of the normal damage"
+[h0A1]
+Name="Marksmen's Encampment"
+Hotkey=R
+Tip="Upgrade to Marksmen's Encampment [|cffffcc00R|r]"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Marksman|n|n|cffFFAC00Marksman:|r|n|cffFFFF80Attack:|r Pierce (|cffFFFF00800|r rng,|cffFFFF00 69|r dps)|n|cffFFFF80Attack:|r Pierce (|cffFFFF00500|r rng,|cffFFFF00 28|r dps)|n|cffFFFF80Armor:|r Medium (|cffFFFF001|r)|n|cffFFFF80Hitpoints: |cffFFFF00450|r|n|cffFFFF80Abilities:|r|n-Can't attack Ground|n-Air Critical Strike (|cffFFFF0040%, 3x|r)|n|n|cffFF0000You must turn off unit production before you can upgrade!|r"
+[h0A0]
+Name="Human BUild"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h0AX]
+Name="Tech House"
+Hotkey=S
+Tip="Research Tech 2"
+Ubertip="Contains upgrades for improved armor, weaponry and gunpowder."
+[h0AW]
+Name="Tech Tent"
+Hotkey=S
+Tip=Build Black|cffffcc00s|rmith
+Ubertip="Contains upgrades for improved armor, weaponry and gunpowder."
+[h0AT]
+Name="Tech Hut"
+Hotkey=S
+Tip="Research Tech 1"
+Ubertip="Researches Tech Level 1 allowing you to build more creep buildings, a tower (if your race has one) and some cheap specials."
+[h02O]
+Name="Stasis Totem"
+Hotkey=X
+Tip="Build Stasis Totem [|cffffcc00X|r]"
+Ubertip="|cffFF8204Legendary Building|r|n|n|cffFFFF80Ability:|cffFFFF00 Global Stasis|r|nStuns all enemy units for 4.5 seconds.|n|n|cffFFFF80Cooldown:|cffFFFF00 35-45 |rseconds"
+[h030]
+Name="Greater Elemental Of Fire"
+Ubertip="|n|cffFFFF80Attack:|r Chaos (|cffFFFF00400|r rng|r,|cffFFFF00 65|r dps)|n|cffFFFF80Armor:|r Medium (|cffFFFF005|r)|n|cffFFFF80Hitpoints: |cffFFFF00850|r|n|cffFFFF80Abilities:|r|n|cff80FF00Fire Breath|r|nHas 15% chance to cast Fire Breath on attack(125 damage to enemies in cone area)"
+Hotkey=Q
+Tip="Trains Greater Fire Elemental"
+[h02N]
+Name="Serpent Rock"
+Hotkey=D
+Tip="Build Serpent Rock [|cffffcc00D|r]"
+Ubertip="|cffFFFF80Ability:|cffFFFF00 Poison Area|r|nSpits poison onto an area near a random enemy unit. All units that get hit by this poison get their armor reduced by 5, their attack and movement speed reduced by 20% and take damage over time. The poison lasts 5 seconds and deals 30 damage every second.|n|n|cffFFFF80Cooldown:|cffFFFF00 12 |rseconds"
+[h032]
+Name="Royal Spawning Grounds"
+Hotkey=R
+Tip="Upgrade to Royal Spawning Grounds [|cffffcc00R|r]"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Naga Royal Guard |n|n|cffFFAC00Naga Royal Guard :|r|n|cffFFFF80Attack:|r Pierce (|cffFFFF00melee|r,|cffFFFF00 78|r dps)|n|cffFFFF80Armor:|r Heavy (|cffFFFF009|r)|n|cffFFFF80Hitpoints: |cffFFFF001100|r|n|cffFFFF80Abilities:|r|n-Critical Strike (|cffFFFF0010%, x2|r)|n-Cleaving Attack (|cffFFFF0025%|r)|n|n|cffFF0000You must turn off unit production before you can upgrade!|r"
+[h02Q]
+Name="Furbolg Hut"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h031]
+Name="Superior Fighters' Hall"
+Hotkey=R
+Tip="Upgrade to Superior Fighters' Hall [|cffffcc00R|r]"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Axemaster|n|n|cffFFAC00Axemaster:|r|n|cffFFFF80Attack:|r Normal (|cffFFFF00melee|r,|cffFFFF00 65|r dps)|n|cffFFFF80Armor:|r Heavy (|cffFFFF0010|r)|n|cffFFFF80Hitpoints: |cffFFFF001000|r|n|cffFFFF80Abilities:|r|n-Critical Strike (|cffFFFF0030%, 3x|r)|n-Pulverize (|cffFFFF0035%, 130 dmg|r)|n|n|cffFF0000You must turn off unit production before you can upgrade!|r"
+[h02P]
+Name="Wyvern-Clan Encampment"
+Hotkey=R
+Tip="Build Wyvern-Clan Encampment [|cffffcc00R|r]"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Wyvern Rider|n|n|cffFFAC00Wyvern Rider:|r|n|cffFFFF80Attack:|r Pierce (|cffFFFF00400|r rng,|cffFFFF00 30|r dps)|n|cffFFFF80Armor:|r Unarmored (|cffFFFF002|r)|n|cffFFFF80Hitpoints: |cffFFFF00440|r|n|cffFFFF80Abilities:|r|n-Flying|n-Minor Poison Attack (|cffFFFF0020% slow|r)"
+[h02K]
+Name="Kodo Farm"
+Hotkey=A
+Tip="Build Kodo Farm [|cffffcc00A|r]"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Kodo|n|cffFFFF80Upgrades: |cffFFFF003|n|n|cffFFAC00Kodo:|r|n|cffFFFF80Attack:|r Pierce (|cffFFFF00melee|r,|cffFFFF00 24|r dps)|n|cffFFFF80Armor:|r Light (|cffFFFF004|r)|n|cffFFFF80Hitpoints: |cffFFFF001000|r"
+[h02J]
+Name="Spider Egg: Rock Base"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h02M]
+Name="Ancient of Hibernation: Owl"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h02L]
+Name="Ancient of Hibernation: Roots"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h038]
+Name="Church"
+Hotkey=R
+Tip="Upgrade to Church [|cffffcc00R|r]"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Paladin|n|n|cffFFAC00Paladin:|r|n|cffFFFF80Attack:|r Hero (|cffFFFF00melee|r,|cffFFFF00 67|r dps)|n|cffFFFF80Armor:|r Heavy (|cffFFFF009|r)|n|cffFFFF80Hitpoints: |cffFFFF00850|r|n|cffFFFF80Abilities:|r|n-Cleaving Attack (|cffFFFF0025%|r)|n-Bash (|cffFFFF0020%, 25dmg, 2sec|r)|n-Resurrection|n-Blessing (|cffFFFF00+6 armor, +20 hp/sec|r)|n-Armor Aura (|cffFFFF00+4)|n|n|cffFF0000You must turn off unit production before you can upgrade!|r"
+[h02W]
+Name="Lesser Elemental Of Water"
+Ubertip="|n|cffFFFF80Attack: 1|r Normal (|cffFFFF0030|r rng|r,|cffFFFF00 28|r dps)|n|cffFFFF80Attack: 2|r Pierce (|cffFFFF00300|r rng|r,|cffFFFF00 18|r dps)|n|cffFFFF80Armor:|r Medium (|cffFFFF001|r)|n|cffFFFF80Hitpoints: |cffFFFF00350|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Liquid Body|r|nIn 40% of cases attack pass through Water Elemental's body without dealing any damage"
+Hotkey=Q
+Tip="Trains Lesser Water Elemental"
+[h037]
+Name="Chapel"
+Hotkey=A
+Tip="Build Chapel [|cffffcc00A|r]"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Crusader|n|cffFFFF80Upgrades: |cffFFFF001|n|n|cffFFAC00Crusader:|r|n|cffFFFF80Attack:|r Hero (|cffFFFF00melee|r,|cffFFFF00 42|r dps)|n|cffFFFF80Armor:|r Heavy (|cffFFFF006|r)|n|cffFFFF80Hitpoints: |cffFFFF00600|r|n|cffFFFF80Abilities:|r|n-Cleaving Attack (|cffFFFF0025%|r)|n-Bash (|cffFFFF0020%, 25dmg, 2sec|r)|n-Blessing (|cffFFFF00+6 armor, +16 hp/sec|r)"
+[h02V]
+Name=Blacksmith
+Hotkey=S
+Tip=""
+Ubertip=""
+[h02Y]
+Name="Greater Elemental Of Water"
+Ubertip="|n|cffFFFF80Attack:|r Normal (|cffFFFF00450|r rng|r,|cffFFFF00 45|r dps)|n|cffFFFF80Armor:|r Light (|cffFFFF007|r)|n|cffFFFF80Hitpoints: |cffFFFF00550|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Liquid Body|r|nIn 40% of  attacks pass through Water Elemental's body dealing no damage|n|cff80FF00Great llusionist|r|nInCreates an illusion of enemy's unit. Illusion deals 33% and takes 250% of the damage.|n|cff80FF00Minor splash damage|r."
+Hotkey=Q
+Tip="Trains Greater Water Elemental"
+[h039]
+Name="Stronghold"
+Hotkey=R
+Tip="Upgrade to Stronghold [|cffffcc00R|r]"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Defender|n|n|cffFFAC00Defender:|r|n|cffFFFF80Attack:|r Normal (|cffFFFF00melee|r,|cffFFFF00 38|r dps)|n|cffFFFF80Armor:|r Heavy (|cffFFFF007|r)|n|cffFFFF80Hitpoints: |cffFFFF00575|r|n|cffFFFF80Abilities:|r|n-Defend|n|n|cffFF0000You must turn off unit production before you can upgrade!|r"
+[h02X]
+Name="Elemental Of Water"
+Ubertip="|n|cffFFFF80Attack: |r Normal (|cffFFFF00400|r rng|r,|cffFFFF00 28|r dps)|n|cffFFFF80Armor:|r Light (|cffFFFF003|r)|n|cffFFFF80Hitpoints: |cffFFFF00300|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Liquid Body|r|n25% of attacks pass through Water Elemental's body dealing no damage|n|cff80FF00llusionist|r|nCreates an illusion of enemy's unit. Illusion deals 25% and takes 300% of the damage.|n|cff80FF00Minor splash damage|r. "
+Hotkey=Q
+Tip="Trains Water Elemental"
+[h02S]
+Name="Monolith: Bush"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h034]
+Name="Elemental Of Earth"
+Ubertip="|n|cffFFFF80Attack:|r Siege (|cffFFFF00melee|r,|cffFFFF00 50|r dps)|n|cffFFFF80Armor:|r Unarmored (|cffFFFF004|r)|n|cffFFFF80Hitpoints: |cffFFFF00700|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Pulverize|r|nDeals 60 damage in 80 AoE"
+Hotkey=Q
+Tip="Trains Elemental Of Earth"
+[h033]
+Name="Race Chooser"
+Hotkey=K
+Tip=Train |cffffcc00K|rnight
+Ubertip="Powerful mounted warrior. Can learn Animal War Training. |n|n|cffffcc00Attacks land units.|r"
+[h02R]
+Name="Ceremonial Totem"
+Hotkey=F
+Tip="Build Ceremonial Totem [|cffffcc00F|r]"
+Ubertip="|cffFFFF80Ability:|cffFFFF00 Tribal Blessing|r|nGives a random friendly unit permanently +20 damage, +20% attackspeed, 3 armor and 200 hitpoints. Also gives one of the following:|n- Demolish (x1.5)|n- Critical Strike (25%, x2)|n- Evasion (30%)|n|n|cffFFFF80Cooldown:|cffFFFF00 10 |rseconds"
+[h036]
+Name="Defensive Kodo Farm"
+Hotkey=E
+Tip="Upgrade to Defensive Kodo Farm [|cffffcc00E|r]"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Defensive Kodo Rider|n|n|cffFFAC00Defensive Kodo Rider:|r|n|cffFFFF80Attack:|r Pierce (|cffFFFF00320|r rng,|cffFFFF00 33|r dps)|n|cffFFFF80Armor:|r Light (|cffFFFF005|r)|n|cffFFFF80Hitpoints: |cffFFFF001200|r|n|cffFFFF80Abilities:|r|n-Armor Aura (|cffFFFF00+4|r)|n|n|cffFF0000You must turn off unit production before you can upgrade!|r"
+[h02U]
+Name="Advanced Fighters' Hall"
+Hotkey=R
+Tip="Upgrade to Advanced Fighters' Hall [|cffffcc00R|r]"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Veteran Grunt|n|cffFFFF80Upgrades: |cffFFFF001|n|n|cffFFAC00Veteran Grunt:|r|n|cffFFFF80Attack:|r Normal (|cffFFFF00melee|r,|cffFFFF00 30|r dps)|n|cffFFFF80Armor:|r Heavy (|cffFFFF006|r)|n|cffFFFF80Hitpoints: |cffFFFF00575|r|n|cffFFFF80Abilities:|r|n-Critical Strike (|cffFFFF0025%, 2x|r)|n|n|cffFF0000You must turn off unit production before you can upgrade!|r"
+[h035]
+Name="Offensive Kodo Farm"
+Hotkey=W
+Tip="Upgrade to Offensive Kodo Farm [|cffffcc00W|r]"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Offensive Kodo Rider|n|n|cffFFAC00Offensive Kodo Rider:|r|n|cffFFFF80Attack:|r Pierce (|cffFFFF00320|r rng,|cffFFFF00 33|r dps)|n|cffFFFF80Armor:|r Light (|cffFFFF005|r)|n|cffFFFF80Hitpoints: |cffFFFF001200|r|n|cffFFFF80Abilities:|r|n-Melee Damage Aura (|cffFFFF00+30%|r)|n|n|cffFF0000You must turn off unit production before you can upgrade!|r"
+[h02T]
+Name="Monolith: Rocks"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h03A]
+Name="Defender"
+Hotkey=Q
+Tip="Trains Defender"
+Ubertip="|n|cffFFFF80Attack:|r Normal (|cffFFFF00melee|r,|cffFFFF00 38|r dps)|n|cffFFFF80Armor:|r Heavy (|cffFFFF007|r)|n|cffFFFF80Hitpoints: |cffFFFF00575|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Defend|r|n50% chance to reflect some types of ranged attacks. Also reduces the damage taken from ranged attacks to 40% and the damage from spells to 50%"
+[h03B]
+Name="Crusader"
+Hotkey=Q
+Tip="Trains Crusader"
+Ubertip="|n|cffFFFF80Attack:|r Hero (|cffFFFF00melee|r,|cffFFFF00 42|r dps)|n|cffFFFF80Armor:|r Heavy (|cffFFFF006|r)|n|cffFFFF80Hitpoints: |cffFFFF00600|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Cleaving Attack|r|nEach hit deals 25% of the normal damage to all enemies in 175 range in front of this unit|n|n|cff80FF00Bash|r|n20% chance on each attack to stun for 2 seconds and deal 25 extra damage|n|n|cff80FF00Blessing|r|nIncreases an ally's armor by 4 and his life regeneration by 16 hp/sec|n|cff8080FFCooldown: |r7|n|cff8080FFMana cost: |r33"
+[h02Z]
+Name="Elemental Of Fire"
+Ubertip="|n|cffFFFF80Attack:|r Chaos (|cffFFFF00400|r rng|r,|cffFFFF00 38|r dps)|n|cffFFFF80Armor:|r Medium (|cffFFFF003|r)|n|cffFFFF80Hitpoints: |cffFFFF00465|r"
+Hotkey=Q
+Tip="Trains Fire Elemental"
+[h03G]
+Name="Greater Chaos Citadel"
+Hotkey=R
+Tip="Upgrade to Greater Chaos Citadel [|cffffcc00R|r]"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Chaos Champion|n|n|cffFFAC00Chaos Champion:|r|n|cffFFFF80Attack:|r Normal (|cffFFFF00melee|r,|cffFFFF00 59|r dps)|n|cffFFFF80Armor:|r Medium (|cffFFFF008|r)|n|cffFFFF80Hitpoints: |cffFFFF00850|r|n|cffFFFF80Abilities:|r|n-Critical Strike (|cffFFFF0010%, x2|r)|n-Roar (|cffFFFF00+25% dmg|r)|n-Cleaving Attack (|cffFFFF0035%|r)|n|n|cffFF0000You must turn off unit production before you can upgrade!|r"
+[h03I]
+Name="Azure Nest"
+Hotkey=A
+Tip="Build Azure Nest [|cffffcc00A|r]"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Azure Drake|n|n|cffFFAC00Azure Drake:|r|n|cffFFFF80Attack:|r Chaos (|cffFFFF00250|r rng,|cffFFFF00 33|r dps)|n|cffFFFF80Armor:|r Heavy (|cffFFFF004|r)|n|cffFFFF80Hitpoints: |cffFFFF00650|r|n|cffFFFF80Abilities:|r|n-Flying|n-Splash Damage|n-Chilling Attack"
+[h03J]
+Name="Ice Troll Voodoo Lounge"
+Hotkey=R
+Tip="Upgrade to Ice Troll Voodoo Lounge [|cffffcc00R|r]"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Ice Troll Witch Doctor|n|n|cffFFAC00Ice Troll Witch Doctor:|r|n|cffFFFF80Attack:|r Magic (|cffFFFF00370|r rng,|cffFFFF00 48|r dps)|n|cffFFFF80Armor:|r Light (|cffFFFF003|r)|n|cffFFFF80Hitpoints: |cffFFFF00650|r|n|cffFFFF80Abilities:|r|n-Chilling Attack|n-Frost Attack (|cffFFFF0010%, 10sec, 20dps|r)|n-Frost Armor (|cffFFFF00+7|r)|n|n|cffFF0000You must turn off unit production before you can upgrade!|r"
+[h03C]
+Name="Paladin"
+Hotkey=Q
+Tip="Trains Paladin"
+Ubertip="|n|cffFFFF80Attack:|r Hero (|cffFFFF00melee|r,|cffFFFF00 67|r dps)|n|cffFFFF80Armor:|r Heavy (|cffFFFF009|r)|n|cffFFFF80Hitpoints: |cffFFFF00850|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Cleaving Attack|r|nEach hit deals 25% of the normal damage to all enemies in 175 range in front of this unit|n|n|cff80FF00Bash|r|n20% chance on each attack to stun for 2 seconds and deal 25 extra damage|n|n|cff80FF00Resurrection|r|nBrings an allied non-legendary unit back to life|n|cff8080FFCooldown: |r40|n|cff8080FFMana cost: |r103|n|n|cff80FF00Blessing|r|nIncreases an ally's armor by 6, life regeneration by 20 hp/sec |n|cff8080FFCooldown: |r8|n|cff8080FFMana cost: |r50|n|n|cff80FF00Armor Aura|r|nIncreases the armor of allies in 300 range by 4"
+[h03D]
+Name="Ranger's Hall"
+Hotkey=R
+Tip="Upgrade to Ranger's Hall [|cffffcc00R|r]"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Ranger|n|cffFFFF80Upgrades: |cffFFFF001|n|n|cffFFAC00Ranger:|r|n|cffFFFF80Attack:|r Pierce (|cffFFFF00425|r rng,|cffFFFF00 50|r dps)|n|cffFFFF80Armor:|r Light (|cffFFFF003|r)|n|cffFFFF80Hitpoints: |cffFFFF00500|r|n|cffFFFF80Abilities:|r|n-Multi Shot (|cffFFFF003 targets|r)|n-Evade (|cffFFFF0015%|r)|n|n|cffFF0000You must turn off unit production before you can upgrade!|r"
+[h03E]
+Name="Amazon's Hall"
+Hotkey=R
+Tip="Upgrade to Amazon's Hall [|cffffcc00R|r]"
+Ubertip="|cffFF8204Legendary Building|r|n|cffFFFF80Trains: |cffFFFF00Amazon|n|n|cffFFAC00Amazon:|r|n|cffFFFF80Attack:|r Pierce (|cffFFFF00460|r rng,|cffFFFF00 100|r dps)|n|cffFFFF80Armor:|r Light (|cffFFFF005|r)|n|cffFFFF80Hitpoints: |cffFFFF00900|r|n|cffFFFF80Abilities:|r|n-Immune|n-Legendary Spell Resistance (|cffFFFF0070%|r)|n-Multi Shot (|cffFFFF007 targets|r)|n-Evade (|cffFFFF0025%|r)|n|n|cffFF0000You must turn off unit production before you can upgrade!|r"
+[h03F]
+Name="Hall of the Eldest"
+Hotkey=R
+Tip="Upgrade to Hall of the Eldest [|cffffcc00R|r]"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Elder Blademaster|n|n|cffFFAC00Elder Blademaster:|r|n|cffFFFF80Attack:|r Normal (|cffFFFF00melee|r,|cffFFFF00 90|r dps)|n|cffFFFF80Armor:|r Heavy (|cffFFFF0010|r)|n|cffFFFF80Hitpoints: |cffFFFF00750|r|n|cffFFFF80Abilities:|r|n-Critical Strike (|cffFFFF0030%, 3x|r)|n-Evade (|cffFFFF0020%|r)|n-Feedback (|cffFFFF0025 mana|r)|n-Spell Resist (|cffFFFF0025%|r)|n|n|cffFF0000You must turn off unit production before you can upgrade!|r"
+[h021]
+Name="Murloc Village"
+Hotkey=R
+Tip="Upgrade to Murloc Village [|cffffcc00R|r]"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Murloc Champion|n|cffFFFF80Upgrades: |cffFFFF001|n|n|cffFFAC00Murloc Champion:|r|n|cffFFFF00Two Murlocs get trained at once|r|n|cffFFFF80Attack:|r Normal (|cffFFFF00melee|r,|cffFFFF00 36|r dps)|n|cffFFFF80Armor:|r Unarmored (|cffFFFF006|r)|n|cffFFFF80Hitpoints: |cffFFFF00520|r|n|cffFFFF80Abilities:|r|n-Cleaving Attack (|cffFFFF0025%|r)|n-Evade (|cffFFFF008%|r)|n-Bash (|cffFFFF0015%, 25dmg, 2sec|r)|n-Critical Strike (|cffFFFF0010%, x2|r)|n|n|cffFF0000You must turn off unit production before you can upgrade!|r"
+[h01P]
+Name="Skull Pile"
+Hotkey=F
+Tip="Build Skull Pile [|cffffcc00F|r]"
+Ubertip="|cffFFFF80Upgrades: |cffFFFF001|r|n|n|cffFFFF80Ability:|cffFFFF00 Raise Dead|r|nRaises a Skeleton from a random corpse.|nChance to raise greater Skeleton: 5%|n|n|cffFFFF80Cooldown:|cffFFFF00 12 |rseconds"
+[h020]
+Name="Murloc Camp"
+Hotkey=Q
+Tip="Build Murloc Camp [|cffffcc00Q|r]"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Murloc Warrior|n|cffFFFF80Upgrades: |cffFFFF002|n|n|cffFFAC00Murloc Warrior:|r|n|cffFFFF00Two Murlocs get trained at once|r|n|cffFFFF80Attack:|r Normal (|cffFFFF00melee|r,|cffFFFF00 24|r dps)|n|cffFFFF80Armor:|r Unarmored (|cffFFFF004|r)|n|cffFFFF80Hitpoints: |cffFFFF00325|r|n|cffFFFF80Abilities:|r|n-Critical Strike (|cffFFFF0010%, x2|r)|n|n|cffFF0000You must turn off unit production before you can upgrade!|r"
+[h01O]
+Name="Turret of Souls"
+Hotkey=Y
+Tip="Build Turret of Souls [|cffffcc00Y|r]"
+Ubertip="|cffFFAC00Base Defense|r:|nThis is a tower to protect key positions.|n|n|cffFFFF80Attack Type:|cffFFFF00 Chaos|n|cffFFFF80Range:|cffFFFF00 800|n|cffFFFF80Average DPS:|cffFFFF00 75|r|n|n|cffFFFF80Abilities:|r|n-Soul Steal (|cffFFFF005% chance|r)|n-Weaken Soul (|cffFFFF00-3 armor|r)"
+[h01N]
+Name="Crypt"
+Hotkey=E
+Tip="Build Crypt [|cffffcc00E|r]"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Vampire|n|cffFFFF80Upgrades: |cffFFFF001|n|n|cffFFAC00Vampire:|r|n|cffFFFF80Attack:|r Pierce (|cffFFFF00melee|r,|cffFFFF00 35|r dps)|n|cffFFFF80Armor:|r Hero (|cffFFFF003|r)|n|cffFFFF80Hitpoints: |cffFFFF00425|r|n|cffFFFF80Abilities:|r|n-Raise Lesser Vampire|n-Vampiric Aura (|cffFFFF0030%|r)|n-Vampire Attack (|cffFFFF0070%|r)"
+[h01M]
+Name="Eraser (Level 1)"
+Hotkey=D
+Tip="Build Eraser (Level 1) [|cffffcc00D|r]"
+Ubertip="|cffFF8204Legendary Building|r|n|cffFFFF80Upgrades: |cffFFFF002|r|n|n|cffFFFF80Ability:|cffFFFF00 Erase|r|nKills 90% of the units that belong to the enemy and have same type.|n|n|cffFFFF80Cooldown:|cffFFFF00 50 |rseconds |cffFFFF00-10|r seconds per upgrade."
+[h01L]
+Name="Haunted Mine"
+Hotkey=R
+Tip="Build Haunted Mine [|cffffcc00R|r]"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Banshee|n|n|cffFFAC00Banshee:|r|n|cffFFFF80Attack:|r Magic (|cffFFFF00350|r rng,|cffFFFF00 48|r dps)|n|cffFFFF80Armor:|r Divine (|cffFFFF002|r)|n|cffFFFF80Hitpoints: |cffFFFF00310|r|n|cffFFFF80Abilities:|r|n-Fear Aura (|cffFFFF00-15% dmg|r)|n-Astral Chains (|cffFFFF0030% slow|r)"
+[h01K]
+Name="Temple of Bone"
+Hotkey=W
+Tip="Build Temple of Bone [|cffffcc00W|r]"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Necromancer|n|cffFFFF80Upgrades: |cffFFFF002|n|n|cffFFAC00Necromancer:|r|n|cffFFFF80Attack:|r Magic (|cffFFFF00380|r rng,|cffFFFF00 30|r dps)|n|cffFFFF80Armor:|r Unarmored (|cffFFFF001|r)|n|cffFFFF80Hitpoints: |cffFFFF00300|r|n|cffFFFF80Abilities:|r|n-Raise Dead"
+[h01J]
+Name="Ancient of Eternity"
+Hotkey=R
+Tip="Build Ancient of Eternity [|cffffcc00R|r]"
+Ubertip="|cffFF8204Legendary Building|r|n|cffFFFF80Trains: |cffFFFF00Ancient Keeper |n|n|cffFFAC00Ancient Keeper |r|n|cffFFFF80Attack:|r Chaos (|cffFFFF00550|r rng|r,|cffFFFF00 69|r dps)|n|cffFFFF80Armor:|r Medium (|cffFFFF005|r)|n|cffFFFF80Hitpoints: |cffFFFF001000|r|n|cffFFFF80Abilities:|r|n-Treant Sprout|n-Incorporeal|n-Natures Aura (|cffFFFF0010-15hp/sec|r)|n|n|cffFF0000You must turn off unit production before you can upgrade!|r"
+[h01I]
+Name="Lesser Demon Cage"
+Hotkey=Q
+Tip="Build Lesser Demon Cage [|cffffcc00Q|r]"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Satyr |n|cffFFFF80Upgrades: |cffFFFF001|n|n|cffFFAC00Satyr :|r|n|cffFFFF80Attack:|r Normal (|cffFFFF00275|r rng,|cffFFFF00 20|r dps)|n|cffFFFF80Armor:|r Light (|cffFFFF003|r)|n|cffFFFF80Hitpoints: |cffFFFF00250|r"
+[h029]
+Name="Fighters' Hall"
+Hotkey=Q
+Tip="Build Fighters' Hall [|cffffcc00Q|r]"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Grunt|n|cffFFFF80Upgrades: |cffFFFF002|n|n|cffFFAC00Grunt:|r|n|cffFFFF80Attack:|r Normal (|cffFFFF00melee|r,|cffFFFF00 18|r dps)|n|cffFFFF80Armor:|r Heavy (|cffFFFF004|r)|n|cffFFFF80Hitpoints: |cffFFFF00325|r"
+[h01X]
+Name="Eraser (Level 3)"
+Hotkey=R
+Tip="Upgrade to Eraser (Level 3) [|cffffcc00R|r]"
+Ubertip="|cffFF8204Legendary Building|r|n|n|cffFFFF80Ability:|cffFFFF00 Erase|r|nKills 90% of the units that belong to the enemy and have same type|n|n|cffFFFF80Cooldown:|cffFFFF00 50 |rseconds |cffFFFF00-10|r seconds per upgrade."
+[h028]
+Name="Monolith"
+Hotkey=S
+Tip="Build Monolith [|cffffcc00S|r]"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Mountain Giant |n|n|cffFFAC00Mountain Giant |r|n|cffFFFF80Attack:|r Normal (|cffFFFF00melee|r,|cffFFFF00 83|r dps)|n|cffFFFF80Armor:|r Fortified (|cffFFFF008|r)|n|cffFFFF80Hitpoints: |cffFFFF001050|r|n|cffFFFF80Abilities:|r|n-Grab Tree|n-Taunt|n-Hardened Skin|n-Resistant Skin|n-Pulverize (|cffFFFF0030%, 200dmg, 175 AoE|r)"
+[h01W]
+Name="Eraser (Level 2)"
+Hotkey=R
+Tip="Upgrade to Eraser (Level 2) [|cffffcc00R|r]"
+Ubertip="|cffFF8204Legendary Building|r|n|cffFFFF80Upgrades: |cffFFFF001|r|n|n|cffFFFF80Ability:|cffFFFF00 Erase|r|nKills 90% of the units that belong to the enemy and have same type|n|n|cffFFFF80Cooldown:|cffFFFF00 50 |rseconds |cffFFFF00-10|r seconds per upgrade."
+[h027]
+Name="Emerald Dragon Roost"
+Hotkey=A
+Tip="Build Emerald Dragon Roost [|cffffcc00A|r]"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Emerald Dragon |n|n|cffFFAC00Emerald Dragon |r|n|cffFFFF80Attack:|r Chaos (|cffFFFF00250|r rng|r,|cffFFFF00 46|r dps)|n|cffFFFF80Armor:|r Heavy (|cffFFFF004|r)|n|cffFFFF80Hitpoints: |cffFFFF00700|r|n|cffFFFF80Abilities:|r|n-Splash|n-Regeneration"
+[h01V]
+Name="Lesser Vampire"
+Hotkey=F
+Tip=Train |cffffcc00F|rootman
+Ubertip="Weak melee unit."
+[h026]
+Name="Greater Demon Cage"
+Hotkey=R
+Tip="Upgrade to Greater Demon Cage [|cffffcc00R|r]"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Quill Demon|n|n|cffFFAC00Quill Demon:|r|n|cffFFFF80Attack:|r Normal (|cffFFFF00310|r rng,|cffFFFF00 57|r dps)|n|cffFFFF80Armor:|r Light (|cffFFFF004|r)|n|cffFFFF80Hitpoints: |cffFFFF00750|r|n|cffFFFF80Abilities:|r|n-Bouncing Attack (|cffFFFF002 targets|r)|n-Quill Aura (|cffFFFF0035%|r)|n|n|cffFF0000You must turn off unit production before you can upgrade!|r"
+[h01U]
+Name="Vampire"
+Hotkey=Q
+Tip="Trains Vampire"
+Ubertip="|n|cffFFFF80Attack:|r Pierce (|cffFFFF00melee|r,|cffFFFF00 35|r dps)|n|cffFFFF80Armor:|r Hero (|cffFFFF003|r)|n|cffFFFF80Hitpoints: |cffFFFF00425|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Raise Lesser Vampire|r|nWhenever the Vampire kills a living unit it will spawn a Lesser Vampire from it.|n|n|cff80FF00Vampiric Aura|r|nAllied melee units in 900 range gain 30% life steal|n|n|cff80FF00Vampire Attack|r|nRegains 70% of its attack damage"
+[h025]
+Name="Fountain of Blood"
+Hotkey=R
+Tip="Build Fountain of Blood [|cffffcc00R|r]"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Blood Fiend|n|n|cffFFAC00Blood Fiend:|r|n|cffFFFF80Attack:|r Chaos (|cffFFFF00melee|r,|cffFFFF00 45|r dps)|n|cffFFFF80Armor:|r Differs (|cffFFFF006|r)|n|cffFFFF80Hitpoints: |cffFFFF00570|r|n|cffFFFF80Abilities:|r|n-Present of Chaos"
+[h01T]
+Name="Slaughter House"
+Hotkey=A
+Tip="Build Slaughter House [|cffffcc00A|r]"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Flesh Golem |n|n|cffFFAC00Flesh Golem :|r|n|cffFFFF80Attack:|r Siege (|cffFFFF00melee|r,|cffFFFF00 78|r dps)|n|cffFFFF80Armor:|r Medium (|cffFFFF009|r)|n|cffFFFF80Hitpoints: |cffFFFF001200|r|n|cffFFFF80Abilities:|r|n-Demolish (|cffFFFF00x1.5|r)|n-Pulverize (|cffFFFF0035%, 125 dmg|r)"
+[h024]
+Name="Den of the Great Bear"
+Hotkey=R
+Tip="Build Den of the Great Bear [|cffffcc00R|r]"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Great Bear |n|n|cffFFAC00Great Bear |r|n|cffFFFF80Attack:|r Normal (|cffFFFF00melee|r,|cffFFFF00 57|r dps)|n|cffFFFF80Armor:|r Unarmored (|cffFFFF008|r)|n|cffFFFF80Hitpoints: |cffFFFF001100|r|n|cffFFFF80Abilities:|r|n-Feral Rage|n-Cleave (|cffFFFF0035%|r)|n-Critical Strike (|cffFFFF0030%, 2x|r)|n-Bash (|cffFFFF0030%, 1sec, 65dmg|r)|n|n|cffFF0000You must turn off unit production before you can upgrade!|r"
+[h01S]
+Name="Dragon Cemetery"
+Hotkey=S
+Tip="Build Dragon Cemetery [|cffffcc00S|r]"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Frost Wyrm|n|n|cffFFAC00Frost Wyrm:|r|n|cffFFFF80Attack:|r Normal (|cffFFFF00325|r rng,|cffFFFF00 77|r dps)|n|cffFFFF80Armor:|r Light (|cffFFFF004|r)|n|cffFFFF80Hitpoints: |cffFFFF001200|r|n|cffFFFF80Abilities:|r|n-Flying|n-Splash Damage|n-Chilling Attack"
+[h023]
+Name="Den of the Forest Bear"
+Hotkey=R
+Tip="Build Den of the Forest Bear[|cffffcc00R|r]"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Forest Bear|n|cffFFFF80Upgrades: |cffFFFF001|n|n|cffFFAC00Great Bear |r|n|cffFFFF80Attack:|r Normal (|cffFFFF00melee|r,|cffFFFF00 48|r dps)|n|cffFFFF80Armor:|r Unarmored (|cffFFFF005|r)|n|cffFFFF80Hitpoints: |cffFFFF00680|r|n|cffFFFF80Abilities:|r|n-Feral Rage|n-Cleave (|cffFFFF0030%|r)|n-Critical Strike (|cffFFFF0020%, 2x|r)|n-Bash (|cffFFFF0015%, 0.5sec, 50dmg|r)"
+[h01R]
+Name="Rotting Hay Cart"
+Hotkey=Q
+Tip="Build Rotting Hay Cart [|cffffcc00Q|r]"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Zombie|n|cffFFFF80Upgrades: |cffFFFF002|n|n|cffFFAC00Zombie:|r|n|cffFFFF80Attack:|r Chaos (|cffFFFF00melee|r,|cffFFFF00 15|r dps)|n|cffFFFF80Armor:|r Medium (|cffFFFF003|r)|n|cffFFFF80Hitpoints: |cffFFFF00265|r|n|cffFFFF80Abilities:|r|n-Rot (|cffFFFF008 dps|r)"
+[h022]
+Name="Murloc Fortress"
+Hotkey=R
+Tip="Upgrade to Murloc Fortress [|cffffcc00R|r]"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Murloc Assassin|n|n|cffFFAC00Murloc Assassin:|r|n|cffFFFF00Two Murlocs get trained at once|r|n|cffFFFF80Attack:|r Normal (|cffFFFF00melee|r,|cffFFFF00 50|r dps)|n|cffFFFF80Armor:|r Unarmored (|cffFFFF008|r)|n|cffFFFF80Hitpoints: |cffFFFF00750|r|n|cffFFFF80Abilities:|r|n-Bash (|cffFFFF0015%, 25dmg, 2sec|r)|n-Critical Strike (|cffFFFF0020%, 2x|r)|n-Evade (|cffFFFF0015%|r)|n-Feedback (|cffFFFF0025 mana|r)|n-Cleaving Attack (|cffFFFF0030%|r)|n|n|cffFF0000You must turn off unit production before you can upgrade!|r"
+[h01Q]
+Name="Sanctum of Decay"
+Hotkey=X
+Tip="Build Sanctum of Decay [|cffffcc00X|r]"
+Ubertip="|cffFFFF80Ability:|cffFFFF00 Decay|r|nDeals 8 damage per second to all non mechanical enemy units. Does not stack, so don't build twice!"
+[h02A]
+Name="Ancient of Gale"
+Hotkey=F
+Tip="Build Ancient of Gale [|cffffcc00F|r]"
+Ubertip="|cffFFFF80Ability:|cffFFFF00 Cyclone|r|nSummons a wandering tornado near a random enemy unit that slows for 25% movement and attack speed and deals 30 dps in 250 AoE for 7 seconds. Buildings take 50% of damage.|n|n|cffFFFF80Cooldown:|cffFFFF00 14 |rseconds"
+[h01Y]
+Name="Temple of Snakes"
+Hotkey=E
+Tip="Build Temple of Snakes [|cffffcc00E|r]"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Winged Serpent|n|n|cffFFAC00Winged Serpent:|r|n|cffFFFF80Attack:|r Magic (|cffFFFF00420|r rng,|cffFFFF00 33|r dps)|n|cffFFFF80Armor:|r Light (|cffFFFF002|r)|n|cffFFFF80Hitpoints: |cffFFFF00450|r|n|cffFFFF80Abilities:|r|n-Flying|n-Bouncing Attack (|cffFFFF003 targets|r)"
+[h01Z]
+Name="Naga Spring"
+Hotkey=S
+Tip="Build Naga Spring [|cffffcc00S|r]"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Naga Siren|n|n|cffFFAC00Naga Siren:|r|n|cffFFFF80Attack:|r Chaos (|cffFFFF00400|r rng,|cffFFFF00 50|r dps)|n|cffFFFF80Armor:|r Unarmored (|cffFFFF003|r)|n|cffFFFF80Hitpoints: |cffFFFF00550|r|n|cffFFFF80Abilities:|r|n-Purge|n-Summon Lobsters"
+[h02H]
+Name="Troll Hut"
+Hotkey=E
+Tip="Build Troll Hut [|cffffcc00E|r]"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Troll Berserker|n|cffFFFF80Upgrades: |cffFFFF001|n|n|cffFFAC00Troll Berserker:|r|n|cffFFFF80Attack:|r Normal (|cffFFFF00300|r rng,|cffFFFF00 30|r dps)|n|cffFFFF80Armor:|r Medium (|cffFFFF003|r)|n|cffFFFF80Hitpoints: |cffFFFF00450|r|n|cffFFFF80Abilities:|r|n-Berserk (|cffFFFF00+200%|r)"
+[h02I]
+Name="Orcish Siege Factory"
+Hotkey=S
+Tip="Build Orcish Siege Factory [|cffffcc00S|r]"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Catapult|n|n|cffFFAC00Catapult:|r|n|cffFFFF80Attack:|r Siege (|cffFFFF001000|r rng,|cffFFFF00 27|r dps)|n|cffFFFF80Armor:|r Medium (|cffFFFF005|r)|n|cffFFFF80Hitpoints: |cffFFFF00475|r|n|cffFFFF80Abilities:|r|n-Can't attack Air|n-Splash Damage|n-Burning Ammo (|cffFFFF0048dps|r)"
+[h02F]
+Name="Spider Egg Nest: Bones"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h02G]
+Name="Spider Egg Nest: Wood"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h02D]
+Name="Ancient Tree"
+Hotkey=X
+Tip="Build Ancient Tree [|cffffcc00X|r]"
+Ubertip="|cffFF8204Legendary Building|r|n|n|cffFFFF80Ability:|cffFFFF00Wild transformation|r|nTransforms non-mechanical enemies into hostile forest creatures (transform chance: 33%).|n|cffFFFF80Cooldown:|cffFFFF00 50 |rseconds"
+[h02E]
+Name="Spider Egg Sack: Web"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h02B]
+Name="Shamanic Tent"
+Hotkey=W
+Tip="Build Shamanic Tent [|cffffcc00W|r]"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Shaman|n|n|cffFFAC00Shaman:|r|n|cffFFFF80Attack:|r Magic (|cffFFFF00350|r rng,|cffFFFF00 26|r dps)|n|cffFFFF80Armor:|r Unarmored (|cffFFFF001|r)|n|cffFFFF80Hitpoints: |cffFFFF00340|r|n|cffFFFF80Abilities:|r|n-Shaman's Buff (|cffFFFF00+4armor, +30%dmg|r)"
+[h02C]
+Name="Ancient Guardian"
+Hotkey=D
+Tip="Build Ancient Guardian [|cffffcc00D|r]"
+Ubertip="|cffFFFF80Ability:|cffFFFF00 Banish|r|nTurns an enemy unit ethereal. Ethereal creatures cannot attack, but they can cast spells and certain spells cast upon them will have a greater effect.|n|n|cffFFFF80Cooldown:|cffFFFF00 12 |rseconds"
+[h04M]
+Name="Shadow Ancient"
+Hotkey=R
+Tip="Upgrade to Shadow Ancient [|cffffcc00R|r]"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Shadow Drake|n|n|cffFFAC00Shadow Drake:|r|n|cffFFFF80Attack:|r Magic (|cffFFFF00400|r rng,|cffFFFF00 45|r dps)|n|cffFFFF80Armor:|r Medium (|cffFFFF004|r)|n|cffFFFF80Hitpoints: |cffFFFF00700|r|n|cffFFFF80Abilities:|r|n-Flying|n-Nether sphere (|cffFFFF00+25dmg|r)|n|n|cffFF0000You must turn off unit production before you can upgrade!|r"
+[h04L]
+Name="Void Portal"
+Hotkey=W
+Tip="Build Void Portal [|cffffcc00W|r]"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Void Walker|n|cffFFFF80Upgrades: |cffFFFF001|n|n|cffFFAC00Void Walker:|r|n|cffFFFF80Attack:|r Magic (|cffFFFF00380|r rng,|cffFFFF00 25|r dps)|n|cffFFFF80Armor:|r Light (|cffFFFF002|r)|n|cffFFFF80Hitpoints: |cffFFFF00375|r|n|cffFFFF80Abilities:|r|n-Incinerate (|cffFFFF00+5 dmg/hit|r)|n-Corruption Aura (|cffFFFF00-2 armor|r)"
+[h050]
+Name="Column Ruined"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h04O]
+Name="Nether Ancient"
+Hotkey=E
+Tip="Build Nether Ancient [|cffffcc00E|r]"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Nether Drake|n|cffFFFF80Upgrades: |cffFFFF001|n|n|cffFFAC00Nether Drake:|r|n|cffFFFF80Attack:|r Magic (|cffFFFF00400|r rng,|cffFFFF00 26|r dps)|n|cffFFFF80Armor:|r Medium (|cffFFFF002|r)|n|cffFFFF80Hitpoints: |cffFFFF00425|r|n|cffFFFF80Abilities:|r|n-Flying|n-Nether sphere (|cffFFFF00+20dmg|r)"
+[h04N]
+Name="Portal of the Abyss"
+Hotkey=R
+Tip="Upgrade to Portal of the Abyss [|cffffcc00R|r]"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Void Keeper|n|n|cffFFAC00Void Keeper:|r|n|cffFFFF80Attack:|r Magic (|cffFFFF00400|r rng,|cffFFFF00 50|r dps)|n|cffFFFF80Armor:|r Light (|cffFFFF004|r)|n|cffFFFF80Hitpoints: |cffFFFF00740|r|n|cffFFFF80Abilities:|r|n-Incinerate (|cffFFFF00+5 dmg/hit|r)|n-Corruption Aura (|cffFFFF00-4 armor|r)|n|n|cffFF0000You must turn off unit production before you can upgrade!|r"
+[h04Q]
+Name="Hell's Gate"
+Hotkey=A
+Tip="Build Hell's Gate [|cffffcc00A|r]"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Infernal Machine|n|cffFFFF80Upgrades: |cffFFFF001|n|n|cffFFAC00Infernal Machine:|r|n|cffFFFF80Attack:|r Siege (|cffFFFF00600|r rng,|cffFFFF00 45|r dps)|n|cffFFFF80Armor:|r Heavy (|cffFFFF003|r)|n|cffFFFF80Hitpoints: |cffFFFF00600|r|n|cffFFFF80Abilities:|r|n-Can't attack Air|n-Detonate (|cffFFFF00100dmg|r)"
+[h052]
+Name="Lightning (Alis)"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h051]
+Name="Elemental Builder"
+Hotkey=P
+Tip="|cffFFD900Choose Elemental Realms|r"
+Ubertip="The forces of Nature itself are called to fight for their masters. Specializing in strong units and healing buffs, the Nature Race is slightly more expensive but better than the average race."
+[h04P]
+Name="Hell's Portal"
+Hotkey=R
+Tip="Upgrade to Hell's Portal [|cffffcc00R|r]"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Infernal Tank|n|n|cffFFAC00Infernal Tank:|r|n|cffFFFF80Attack:|r Siege (|cffFFFF00600|r rng,|cffFFFF00 57|r dps)|n|cffFFFF80Armor:|r Heavy (|cffFFFF004|r)|n|cffFFFF80Hitpoints: |cffFFFF00850|r|n|cffFFFF80Abilities:|r|n-Can't attack Air|n-Line Damage (|cffFFFF0050dmg|r)|n-Detonate (|cffFFFF00150dmg|r)|n|n|cffFF0000You must turn off unit production before you can upgrade!|r"
+[h054]
+Name="Graveyard"
+Hotkey=R
+Tip="Upgrade to Graveyard [|cffffcc00R|r]"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Vampire Lord|n|n|cffFFAC00Vampire Lord:|r|n|cffFFFF80Attack:|r Pierce (|cffFFFF00melee|r,|cffFFFF00 80|r dps)|n|cffFFFF80Armor:|r Hero (|cffFFFF004|r)|n|cffFFFF80Hitpoints: |cffFFFF00650|r|n|cffFFFF80Abilities:|r|n-Raise Vampire|n-Vampiric Aura (|cffFFFF0030%|r)|n-Vampire Attack (|cffFFFF00100%|r)|n|n|cffFF0000You must turn off unit production before you can upgrade!|r"
+[h04S]
+Name="Felhound Shrine"
+Hotkey=R
+Tip="Build Felhound Shrine [|cffffcc00R|r]"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Felhound|n|n|cffFFAC00Felhound:|r|n|cffFFFF80Attack:|r Pierce (|cffFFFF00melee|r,|cffFFFF00 37|r dps)|n|cffFFFF80Armor:|r Medium (|cffFFFF007|r)|n|cffFFFF80Hitpoints: |cffFFFF00650|r|n|cffFFFF80Abilities:|r|n-Slow Aura (|cffFFFF00-12%|r)"
+[h04R]
+Name="Forgotten One"
+Hotkey=F
+Tip="Build Forgotten One [|cffffcc00F|r]"
+Ubertip="|cffFFFF80Ability:|cffFFFF00 Tentacle Prison|r|nCreates 5 aggressive tentacles around an random enemy unit. Raised tentacles have a less critical strike.|n|n|cffFFFF80Cooldown:|cffFFFF00 12 |rseconds"
+[h053]
+Name="Lightning (Coruscus)"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h056]
+Name="Skull Shrine"
+Hotkey=R
+Tip="Upgrade to Skull Shrine [|cffffcc00R|r]"
+Ubertip="|cffFFFF80Ability:|cffFFFF00 Raise Dead (greater)|r|nRaises a skeleton from a random corpse.|nChance to raise greater Skeleton: 30%|n|n|cffFFFF80Cooldown:|cffFFFF00 14 |rseconds"
+[h04U]
+Name="Demonic Statue"
+Hotkey=S
+Tip="Build Demonic Statue [|cffffcc00S|r]"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Incubus|n|n|cffFFAC00Incubus:|r|n|cffFFFF80Attack:|r Chaos (|cffFFFF00530|r rng,|cffFFFF00 64|r dps)|n|cffFFFF80Armor:|r Medium (|cffFFFF004|r)|n|cffFFFF80Hitpoints: |cffFFFF001000|r|n|cffFFFF80Abilities:|r|n-Splash Damage|n-Overtake (|cffFFFF0010%|r)"
+[h055]
+Name="High Citadel of Necromancy"
+Hotkey=R
+Tip="Upgrade to High Citadel of Necromancy [|cffffcc00R|r]"
+Ubertip="|cffFF8204Legendary Building|r|n|cffFFFF80Trains: |cffFFFF00Lich King|n|n|cffFFAC00Lich King:|r|n|cffFFFF80Attack:|r Magic (|cffFFFF00500|r rng,|cffFFFF00 66|r dps)|n|cffFFFF80Armor:|r Unarmored (|cffFFFF006|r)|n|cffFFFF80Hitpoints: |cffFFFF00950|r|n|cffFFFF80Abilities:|r|n-Legendary Spell Resistance (|cffFFFF0070%|r)|n-Immune|n-Decaying Attack|n-Raise Dead|n-Leach life|n|n|cffFF0000You must turn off unit production before you can upgrade!|r"
+[h04T]
+Name="Eye of Corruption"
+Hotkey=X
+Tip="Build Eye of Corruption [|cffffcc00X|r]"
+Ubertip="|cffFF8204Legendary Building|r|n|n|cffFFFF80Ability:|cffFFFF00 Gaze of Corruption|r|nDecreases the armor of all enemy units by 6."
+[h04W]
+Name="Corrupted Ancient of War"
+Hotkey=R
+Tip="Upgrade to Corrupted Ancient of War [|cffffcc00R|r]"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Corrupted Treant|n|cffFFFF80Upgrades: |cffFFFF001|n|n|cffFFAC00Corrupted Treant:|r|n|cffFFFF80Attack:|r Normal (|cffFFFF00melee|r,|cffFFFF00 38|r dps)|n|cffFFFF80Armor:|r Heavy (|cffFFFF005|r)|n|cffFFFF80Hitpoints: |cffFFFF00640|r|n|cffFFFF80Abilities:|r|n-Cleaving Attack (|cffFFFF0025%|r)|n-Critical Strike (|cffFFFF0010%, x2|r)|n-Weakening Attack (|cffFFFF00-55% dmg|r)|n|n|cffFF0000You must turn off unit production before you can upgrade!|r"
+[h058]
+Name="Fissure (Coruscus)"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h04V]
+Name="Corrupted Ancient of Battle"
+Hotkey=Q
+Tip="Build Corrupted Ancient of Battle [|cffffcc00Q|r]"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Corrupted Ent|n|cffFFFF80Upgrades: |cffFFFF002|n|n|cffFFAC00Corrupted Ent:|r|n|cffFFFF80Attack:|r Normal (|cffFFFF00melee|r,|cffFFFF00 19|r dps)|n|cffFFFF80Armor:|r Heavy (|cffFFFF004|r)|n|cffFFFF80Hitpoints: |cffFFFF00320|r|n|cffFFFF80Abilities:|r|n-Weakening Attack (|cffFFFF00-27% dmg|r)"
+[h057]
+Name="Fire Pillar (Coruscus)"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h04Y]
+Name="Column"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h059]
+Name="Golden Shrine of Justice"
+Hotkey=X
+Tip="Build Golden Shrine of Justice [|cffffcc00X|r]"
+Ubertip="|cffFFFF80Ability:|cffFFFF00 Bright Aura of Grace|r|nWhenever an allied unit dies, there is a 16% chance(+4% for each consequent Shrine) that the unit will be revived. Cannot revive legendary and mechanical units and revive twice. "
+[h04X]
+Name="RescueDummy"
+Hotkey=P
+Tip=Train |cffffcc00P|rriest
+Ubertip="Supporting spellcaster. Can initially cast Heal, which increases the life of wounded units. Can also learn Dispel Magic and Inner Fire. |n|n|cffffcc00Attacks land and air units.|r"
+Casterupgradename=Initiate, Adept, Master
+Casterupgradetip="- Heal","- Heal|n- Dispel Magic","- Heal|n- Dispel Magic|n- Inner Fire"
+[h04Z]
+Name="Tainted Farm"
+Hotkey=R
+Tip="Upgrade to Tainted Farm [|cffffcc00R|r]"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Suffocated Zombie|n|cffFFFF80Upgrades: |cffFFFF001|n|n|cffFFAC00Suffocated Zombie:|r|n|cffFFFF80Attack:|r Chaos (|cffFFFF00melee|r,|cffFFFF00 27|r dps)|n|cffFFFF80Armor:|r Medium (|cffFFFF005|r)|n|cffFFFF80Hitpoints: |cffFFFF00500|r|n|cffFFFF80Abilities:|r|n-Plague Attack (|cffFFFF008 dps|r)|n-Rot (|cffFFFF0012 dps|r)|n|n|cffFF0000You must turn off unit production before you can upgrade!|r"
+[h05A]
+Name="HandOfJusticeDummy"
+Hotkey=P
+Tip=Train |cffffcc00P|rriest
+Ubertip="Supporting spellcaster. Can initially cast Heal, which increases the life of wounded units. Can also learn Dispel Magic and Inner Fire. |n|n|cffffcc00Attacks land and air units.|r"
+Casterupgradename=Initiate, Adept, Master
+Casterupgradetip="- Heal","- Heal|n- Dispel Magic","- Heal|n- Dispel Magic|n- Inner Fire"
+[h05B]
+Name="Tornado (Atrium)"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h05C]
+Name="Marksman"
+Hotkey=Q
+Tip="Trains Marksman"
+Ubertip="|n|cffFFFF80Attack:|r Pierce (|cffFFFF00800|r rng,|cffFFFF00 69|r dps)|n|cffFFFF80Attack:|r Pierce (|cffFFFF00500|r rng,|cffFFFF00 28|r dps)|n|cffFFFF80Armor:|r Medium (|cffFFFF001|r)|n|cffFFFF80Hitpoints: |cffFFFF00450|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Air Only|r|nThis unit can't attack ground enemies|n|n|cff80FF00Air Critical Strike|r|n40% chance on each attack to hit air units for 3 times of the normal damage"
+[h05D]
+Name="Gunner's Hall"
+Hotkey=E
+Tip="Upgrade to Gunner's Hall [|cffffcc00E|r]"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Heavy Gunner|n|n|cffFFAC00Heavy Gunner:|r|n|cffFFFF80Attack:|r Pierce (|cffFFFF00550|r rng,|cffFFFF00 47|r dps)|n|cffFFFF80Armor:|r Medium (|cffFFFF003|r)|n|cffFFFF80Hitpoints: |cffFFFF00500|r|n|cffFFFF80Abilities:|r|n-Can't attack Air|n-Splash Damage|n-Critical Strike (|cffFFFF0020%, 2x|r)|n|n|cffFF0000You must turn off unit production before you can upgrade!|r"
+[h05E]
+Name="Trapper's Hut"
+Hotkey=R
+Tip="Upgrade to Trapper's Hut [|cffffcc00R|r]"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Troll Trapper|n|n|cffFFAC00Troll Trapper:|r|n|cffFFFF80Attack:|r Normal (|cffFFFF00325|r rng,|cffFFFF00 38|r dps)|n|cffFFFF80Armor:|r Medium (|cffFFFF004|r)|n|cffFFFF80Hitpoints: |cffFFFF00600|r|n|cffFFFF80Abilities:|r|n-Ensnare|n-Berserk (|cffFFFF00+200%|r)|n|n|cffFF0000You must turn off unit production before you can upgrade!|r"
+[h05F]
+Name="Lernaean Fountain"
+Hotkey=R
+Tip="Upgrade to Lernaean Fountain [|cffffcc00R|r]"
+Ubertip="|cffFF8204Legendary Building|r|n|cffFFFF80Trains: |cffFFFF00Ancient Hydra|n|n|cffFFAC00Ancient Hydra:|r|n|cffFFFF80Attack:|r Chaos (|cffFFFF00500|r rng,|cffFFFF00 123|r dps)|n|cffFFFF80Armor:|r Medium (|cffFFFF008|r)|n|cffFFFF80Hitpoints: |cffFFFF001500|r|n|cffFFFF80Abilities:|r|n-Legendary Spell Resistance (|cffFFFF0070%|r)|n-Immune|n-Triple Attack|n-Split|n|n|cffFF0000You must turn off unit production before you can upgrade!|r"
+[h05G]
+Name="Heroic Statue"
+Hotkey=X
+Tip="Build Heroic Statue [|cffffcc00X|r]"
+Ubertip="|cffFFFF80Ability:|cffFFFF00 Call to Arms|r|nEach 5th (-1 for each consequent Statue) spawning structure wich belongs to the owner of Statue will produce additional unit."
+[h05H]
+Name="Vampire Lord"
+Hotkey=Q
+Tip="Trains Vampire Lord"
+Ubertip="|n|cffFFFF80Attack:|r Pierce (|cffFFFF00melee|r,|cffFFFF00 80|r dps)|n|cffFFFF80Armor:|r Hero (|cffFFFF004|r)|n|cffFFFF80Hitpoints: |cffFFFF00650|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Raise Vampire|r|nWhenever the Vampire Lord kills a living unit it will spawn a Vampire from it.|n|n|cff80FF00Vampiric Aura|r|nAllied melee units in 900 range gain 30% life steal|n|n|cff80FF00Vampire Attack|r|nRegains 100% of its attack damage"
+[h05I]
+Name="Magic Tower Ruin"
+Hotkey=Y
+Tip="Build Magic Tower Ruin [|cffffcc00Y|r]"
+Ubertip="|cffFFFF80Ability:|cffFFFF00 Present of Chaos|r|nSends chaotic forces into a random enemy unit.|nThese forces have one of the following effects on the target unit:|n-The unit explodes (no bounty)|n-The unit dies (you gain bounty)|n-The unit transforms into a Mutation that fights for you|n-The unit is hexed|n-The unit receives 500 damage|n-The unit healed, gets 400 bonus health (50%) and +25 damage (50%)|n-The unit is stunned for 6 seconds and receives 200 spell damage|n-Nothing happens at all|n|n|cffFFFF80Cooldown:|cffFFFF00 10 |rseconds"
+[h05J]
+Name="Aircraft Factory"
+Hotkey=Q
+Tip="Build Aircraft Factory [|cffffcc00Q|r]"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Roterothopter|n|cffFFFF80Upgrades: |cffFFFF001|n|n|cffFFAC00Roterothopter:|r|n|cffFFFF80Attack:|r Pierce (|cffFFFF00500|r rng,|cffFFFF00 25|r dps)|n|cffFFFF80Attack:|r Pierce (|cffFFFF00500|r rng,|cffFFFF00 20|r dps)|n|cffFFFF80Armor:|r Light (|cffFFFF004|r)|n|cffFFFF80Hitpoints: |cffFFFF00300|r|n|cffFFFF80Abilities:|r|n-Flying|n-Can't attack Ground|n-Bash (|cffFFFF0030%, 40dmg, 1.2sec|r)"
+[h05K]
+Name="Tornado (Thalamus)"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h05L]
+Name="Energy Tower"
+Hotkey=Y
+Tip="Build Energy Tower [|cffffcc00Y|r]"
+Ubertip="|cffFFAC00Base Defense|r:|nThis is a tower to protect key positions.|n|n|cffFFFF80Attack Type:|cffFFFF00 Chaos|n|cffFFFF80Range:|cffFFFF00 600|n|cffFFFF80Average DPS:|cffFFFF00 65|r|n|n|cffFFFF80Abilities:|r|n-Bouncing Attack (|cffFFFF003 targets|r)|n-Energy burst"
+[h03N]
+Name="Greater Elemental Of Earth"
+Ubertip="|n|cffFFFF80Attack:|r Siege (|cffFFFF00melee|r,|cffFFFF00 86|r dps)|n|cffFFFF80Armor:|r Unarmored (|cffFFFF008|r)|n|cffFFFF80Hitpoints: |cffFFFF001300|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Pulverize|r|nDeals 120 damage in 100 AoE|n|n|cff80FF00Spell resistance|r|nHas 15% spell resistance."
+Hotkey=Q
+Tip="Trains Greater Elemental Of Earth"
+[h03M]
+Name="Defiled Granary"
+Hotkey=R
+Tip="Upgrade to Defiled Granary [|cffffcc00R|r]"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Plague Bearer|n|n|cffFFAC00Plague Bearer:|r|n|cffFFFF80Attack:|r Chaos (|cffFFFF00melee|r,|cffFFFF00 52|r dps)|n|cffFFFF80Armor:|r Medium (|cffFFFF006|r)|n|cffFFFF80Hitpoints: |cffFFFF001050|r|n|cffFFFF80Abilities:|r|n-Plague Attack (|cffFFFF0015 dps|r)|n-Plague Cloud (|cffFFFF0020 dps|r)|n|n|cffFF0000You must turn off unit production before you can upgrade!|r"
+[h03L]
+Name="Greater Frost Launcher"
+Hotkey=R
+Tip="Upgrade to Greater Frost Launcher [|cffffcc00R|r]"
+Ubertip="|cffFFFF80Ability:|cffFFFF00 Greater Frost Bolt|r|nLaunches a huge frost bolt at a random enemy structure. On impact this bolt freezes everything in 250 range for 12 seconds and deals 100 chaos damage.|n|n|cffFFFF80Cooldown:|cffFFFF00 15 |rseconds"
+[h03K]
+Name="Ice Troll Hut"
+Hotkey=E
+Tip="Build Ice Troll Hut [|cffffcc00E|r]"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Ice Troll Shadow Priest|n|cffFFFF80Upgrades: |cffFFFF001|n|n|cffFFAC00Ice Troll Shadow Priest:|r|n|cffFFFF80Attack:|r Magic (|cffFFFF00350|r rng,|cffFFFF00 27|r dps)|n|cffFFFF80Armor:|r Light (|cffFFFF001|r)|n|cffFFFF80Hitpoints: |cffFFFF00350|r|n|cffFFFF80Abilities:|r|n-Frost Attack (|cffFFFF0010%, 7sec, 15dps|r)|n-Frost Armor (|cffFFFF00+3.5|r)"
+[h043]
+Name="Frost Claws"
+Hotkey=R
+Tip="Upgrade to Frost Claws [|cffffcc00R|r]"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Ancient Wandigoo|n|n|cffFFAC00Ancient Wandigoo:|r|n|cffFFFF80Attack:|r Pierce (|cffFFFF00melee|r,|cffFFFF00 78|r dps)|n|cffFFFF80Armor:|r Medium (|cffFFFF007|r)|n|cffFFFF80Hitpoints: |cffFFFF001400|r|n|cffFFFF80Abilities:|r|n-Pulverize (|cffFFFF0030%, 140 dmg|r)|n-Howl (|cffFFFF00-4 armor, -30% dmg|r)|n|n|cffFF0000You must turn off unit production before you can upgrade!|r"
+[h03R]
+Name="Greater Elemental Of Lightning"
+Ubertip="|n|cffFFFF80Attack:|r Magic (|cffFFFF00400|r rng|r,|cffFFFF00 61|r dps)|n|cffFFFF80Armor:|r Heavy (|cffFFFF008|r)|n|cffFFFF80Hitpoints: |cffFFFF00800|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Lightning Attack|r|nDeals 40 additional damage up to 5 targets|n|n|cff80FF00Lightning Shield|r|n30% chance to shock melee attacker for 1s."
+Hotkey=Q
+Tip="Trains Greater Elemental Of Lightning"
+[h042]
+Name="Pilar of Globe-Lightning"
+Hotkey=E
+Tip="Build Pilar of Globe-Lightning [|cffffcc00E|r]"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Elemental Of Lightning:|n|cffFFFF80Upgrades: |cffFFFF001|n|n|cffFFAC00Elemental Of Lightning:|r|n|cffFFFF80Attack:|r Magic (|cffFFFF00350|r rng|r,|cffFFFF00 25|r dps)|n|cffFFFF80Armor:|r Heavy (|cffFFFF004|r)|n|cffFFFF80Hitpoints: |cffFFFF00450|r|n|cffFFFF80Abilities:|r|n-Lightning Attack (|cffFFFF0025dmg, 3targets|r)|n-Lightning Shield (|cffFFFF0015%|r)|n|n|cffFF0000You must turn off unit production before you can upgrade!|r"
+[h03Q]
+Name="Icy Tower"
+Hotkey=Y
+Tip="Build Icy Tower [|cffffcc00Y|r]"
+Ubertip="|cffFFAC00Base Defense|r:|nThis is a tower to protect key positions.|n|n|cffFFFF80Attack Type:|cffFFFF00 Normal|n|cffFFFF80Range:|cffFFFF00 700|n|cffFFFF80Average DPS:|cffFFFF00 73|r|n|n|cffFFFF80Abilities:|r|n-Splash Damage|n-Chilling Attack"
+[h041]
+Name="Greater Fissure"
+Hotkey=R
+Tip="Upgrade to Greater Fissure [|cffffcc00R|r]"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Greater Elemental Of Earth:|n|n|cffFFAC00Greater Elemental Of Earth:|r|n|cffFFFF80Attack:|r Siege (|cffFFFF00melee|r,|cffFFFF00 83|r dps)|n|cffFFFF80Armor:|r Unarmored (|cffFFFF008|r)|n|cffFFFF80Hitpoints: |cffFFFF001300|r|n|cffFFFF80Abilities:|r|n-Pulverize (|cffFFFF0025%, 120dmg|r)|n-Spell resistance|n|n|cffFF0000You must turn off unit production before you can upgrade!|r"
+[h03P]
+Name="Elemental Of Lightning"
+Ubertip="|n|cffFFFF80Attack:|r Magic (|cffFFFF00350|r rng|r,|cffFFFF00 28r dps)|n|cffFFFF80Armor:|r Heavy (|cffFFFF004|r)|n|cffFFFF80Hitpoints: |cffFFFF00450|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Lightning Attack|r|nDeals 25 additional damage up to 3 targets|n|cff80FF00Lightning Shield|r|n15% chance to shock melee attacker for 1s."
+Hotkey=Q
+Tip="Trains Elemental Of Lightning"
+[h040]
+Name="Rock Pile"
+Hotkey=A
+Tip="Build Rock Pile [|cffffcc00A|r]"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Elemental Of Earth:|n|cffFFFF80Upgrades: |cffFFFF001|n|n|cffFFAC00Elemental Of Earth:|r|n|cffFFFF80Attack:|r Siege (|cffFFFF00melee|r,|cffFFFF00 50|r dps)|n|cffFFFF80Armor:|r Unarmored(|cffFFFF005|r)|n|cffFFFF80Hitpoints: |cffFFFF00650|r|n|cffFFFF80Abilities:|r|n-Pulverize (|cffFFFF0020%, 60dmg|r)"
+[h03O]
+Name="World Freezer"
+Hotkey=X
+Tip="Build World Freezer [|cffffcc00X|r]"
+Ubertip="|cffFF8204Legendary Building|r|n|n|cffFFFF80Ability:|cffFFFF00 Onset of Winter|r|nSends out three frost orbs that fly into a random direction, attacking random enemies for 60 dps spell damage, freezing random  air and ground units.|n|n|cffFFFF80Cooldown:|cffFFFF00 40 |rseconds"
+[h047]
+Name="Chilling Mushroom"
+Hotkey=F
+Tip="Build Chilling Mushroom [|cffffcc00F|r]"
+Ubertip="|cffFFFF80Ability:|cffFFFF00 Freezing Blast|r|nFreezes an air unit stunning it for 4 seconds and dealing 200 damage.|n|n|cffFFFF80Cooldown:|cffFFFF00 7 |rseconds"
+[h03V]
+Name="Master Of Elements"
+Ubertip="|n|cffFFFF80Attack:|r Chaos (|cffFFFF00500|r rng|r,|cffFFFF00 65 dps)|n|cffFFFF80Armor:|r Normal (|cffFFFF006|r)|n|cffFFFF80Hitpoints: |cffFFFF00950|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Legendary Spell Resistance|r|nSpell damage dealt to this unit is reduced by 70%|n|n|cff80FF00Knowledge of Elements|r|nCasts random damaging spell every 7 seconds."
+Hotkey=Q
+Tip="Trains Master Of Elements"
+[h046]
+Name="Altar of Blaze"
+Hotkey=R
+Tip="Upgrade to Altar of Blaze [|cffffcc00R|r]"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Greater Elemental Of Fire:|n|cffFFFF80Upgrades: |cffFFFF001|n|n|cffFFAC00Greater Elemental Of Fire:|r|n|cffFFFF80Attack:|r Chaos (|cffFFFF00450|r rng|r,|cffFFFF00 65|r dps)|n|cffFFFF80Armor:|r Normal (|cffFFFF005|r)|n|cffFFFF80Hitpoints: |cffFFFF00850|r|n|cffFFFF80Abilities:|r|n-Fire Breath (|cffFFFF0020%, 100dmg|r)|n|n-Burning aura (30 dmg\s to nearby enemies)|n|n|cffFF0000You must turn off unit production before you can upgrade!|r"
+[h03U]
+Name="Igloo"
+Hotkey=W
+Tip="Build Igloo [|cffffcc00W|r]"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Hrimthrusa|n|n|cffFFAC00Hrimthrusa:|r|n|cffFFFF80Attack:|r Pierce (|cffFFFF00380|r rng,|cffFFFF00 33|r dps)|n|cffFFFF80Armor:|r Heavy (|cffFFFF002|r)|n|cffFFFF80Hitpoints: |cffFFFF00325|r|n|cffFFFF80Abilities:|r|n-Frost Attack (|cffFFFF005%, 7sec, 15dps|r)"
+[h045]
+Name="Altar of Fire"
+Hotkey=R
+Tip="Build Altar of Fire [|cffffcc00R|r]"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Elemental Of Fire:|n|cffFFFF80Upgrades: |cffFFFF001|n|n|cffFFAC00Elemental Of Fire:|r|n|cffFFFF80Attack:|r Chaos (|cffFFFF00400|r rng|r,|cffFFFF00 38|r dps)|n|cffFFFF80Armor:|r Normal (|cffFFFF003|r)|n|cffFFFF80Hitpoints: |cffFFFF00465"
+[h03T]
+Name="Ice Claws"
+Hotkey=R
+Tip="Build Ice Claws [|cffffcc00R|r]"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Wandigoo|n|cffFFFF80Upgrades: |cffFFFF001|n|n|cffFFAC00Wandigoo:|r|n|cffFFFF80Attack:|r Pierce (|cffFFFF00melee|r,|cffFFFF00 46|r dps)|n|cffFFFF80Armor:|r Medium (|cffFFFF005|r)|n|cffFFFF80Hitpoints: |cffFFFF00800|r|n|cffFFFF80Abilities:|r|n-Pulverize (|cffFFFF0025%, 80 dmg|r)"
+[h044]
+Name="Pilar of St. Elmo's Fire"
+Hotkey=E
+Tip="Upgrade to Pilar of St. Elmo's Fire [|cffffcc00E|r]"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Greater Elemental Of Lightning:|n|n|cffFFAC00Greater Elemental Of Lightning:|r|n|cffFFFF80Attack:|r Magic (|cffFFFF00400|r rng|r,|cffFFFF00 61|r dps)|n|cffFFFF80Armor:|r Heavy (|cffFFFF008|r)|n|cffFFFF80Hitpoints: |cffFFFF00800|r|n|cffFFFF80Abilities:|r|n-Lightning Attack (|cffFFFF0040dmg, 5targets|r)|n-Lightning Shield (|cffFFFF0030%|r)|n|n|cffFF0000You must turn off unit production before you can upgrade!|r"
+[h03S]
+Name="Crystal Palace"
+Hotkey=S
+Tip="Build Crystal Palace [|cffffcc00S|r]"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Ice Queen|n|n|cffFFAC00Ice Queen:|r|n|cffFFFF80Attack:|r Chaos (|cffFFFF00450|r rng,|cffFFFF00 56|r dps)|n|cffFFFF80Armor:|r Unarmored (|cffFFFF004|r)|n|cffFFFF80Hitpoints: |cffFFFF00650|r|n|cffFFFF80Abilities:|r|n-Frost Nova|n-Frost Attack (|cffFFFF0020%, 12.5sec, 30dps|r)|n-Crystal Aura (|cffFFFF00+0.5 mana/sec|r)"
+[h03Z]
+Name="Spellbound Fountain"
+Hotkey=R
+Tip="Upgrade to Spellbound Fountain [|cffffcc00R|r]"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Greater Elemental Of Water:|n|n|cffFFAC00Greater Elemental Of Water:|r|n|cffFFFF80Attack:|r Normal (|cffFFFF00450|r rng|r,|cffFFFF00 50|r dps)|n|cffFFFF80Armor:|r Medium (|cffFFFF007|r)|n|cffFFFF80Hitpoints: |cffFFFF00650|r|n|cffFFFF80Abilities:|r|n-Great Illusionist (|cffFFFF0020%|r)|n-Liquid Body (|cffFFFF0040%|r)|n|n|cffFF0000You must turn off unit production before you can upgrade!|r"
+[h03Y]
+Name="Golden Fountain"
+Hotkey=R
+Tip="Build Golden Fountain [|cffffcc00R|r]"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Elemental Of Water:|n|cffFFFF80Upgrades: |cffFFFF001|n|n|cffFFAC00Elemental Of Water:|r|n|cffFFFF80Attack: |r Normal (|cffFFFF00400|r rng|r,|cffFFFF00 28|r dps)|n|cffFFFF80Armor:|r Medium (|cffFFFF003|r)|n|cffFFFF80Hitpoints: |cffFFFF00300|r|n|cffFFFF80Abilities:|r|n-Liquid Body (|cffFFFF0025%|r)|n-Illusionist|n|n|cffFF0000You must turn off unit production before you can upgrade!|r"
+[h03X]
+Name="Water Spring"
+Hotkey=W
+Tip="Build Water Spring [|cffffcc00W|r]"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Lesser Elemental Of Water:|n|cffFFFF80Upgrades: |cffFFFF001|n|n|cffFFAC00Lesser Elemental Of Water:|r|n|cffFFFF80Attack: 1|r Normal (|cffFFFF0030|r rng|r,|cffFFFF00 28|r dps)|n|cffFFFF80Attack: 2|r Pierce (|cffFFFF00300|r rng|r,|cffFFFF00 18|r dps)|n|cffFFFF80Armor:|r Medium (|cffFFFF001|r)|n|cffFFFF80Hitpoints: |cffFFFF00300|r|n|cffFFFF80Abilities:|r|n-Liquid Body (|cffFFFF0060%|r)"
+[h049]
+Name="Snowy Rocks"
+Hotkey=Q
+Tip="Build Snowy Rocks [|cffffcc00Q|r]"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Frost Wolf|n|cffFFFF80Upgrades: |cffFFFF002|n|n|cffFFAC00Frost Wolf:|r|n|cffFFFF80Attack:|r Normal (|cffFFFF00melee|r,|cffFFFF00 20|r dps)|n|cffFFFF80Armor:|r Unarmored (|cffFFFF004|r)|n|cffFFFF80Hitpoints: |cffFFFF00280|r|n|cffFFFF80Abilities:|r|n-Critical Strike (|cffFFFF0010%, 1.5x|r)"
+[h048]
+Name="Frost Launcher"
+Hotkey=D
+Tip="Build Frost Launcher [|cffffcc00D|r]"
+Ubertip="|cffFFFF80Upgrades: |cffFFFF001|r|n|n|cffFFFF80Ability:|cffFFFF00 Frost Bolt|r|nLaunches a frost bolt at a random enemy structure. On impact this bolt freezes the structure for 10 seconds and deals 50 chaos damage to it.|n|n|cffFFFF80Cooldown:|cffFFFF00 12 |rseconds"
+[h03W]
+Name="Glacier"
+Hotkey=R
+Tip="Upgrade to Glacier [|cffffcc00R|r]"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Magnataur|n|n|cffFFAC00Magnataur:|r|n|cffFFFF80Attack:|r Normal (|cffFFFF00melee|r,|cffFFFF00 90|r dps)|n|cffFFFF80Armor:|r Unarmored (|cffFFFF008|r)|n|cffFFFF80Hitpoints: |cffFFFF001200|r|n|cffFFFF80Abilities:|r|n-Stomp (|cffFFFF003.5sec, 75dmg|r)|n-Critical Strike (|cffFFFF0015%, 3x|r)|n-Cleaving Attack (|cffFFFF0040%|r)|n|n|cffFF0000You must turn off unit production before you can upgrade!|r"
+[h04B]
+Name="Temple of Necromancy"
+Hotkey=R
+Tip="Upgrade to Temple of Necromancy [|cffffcc00R|r]"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Mighty Necromancer|n|cffFFFF80Upgrades: |cffFFFF001|n|n|cffFFAC00Mighty Necromancer:|r|n|cffFFFF80Attack:|r Magic (|cffFFFF00400|r rng,|cffFFFF00 46|r dps)|n|cffFFFF80Armor:|r Unarmored (|cffFFFF003|r)|n|cffFFFF80Hitpoints: |cffFFFF00550|r|n|cffFFFF80Abilities:|r|n-Carrion Swarm (|cffFFFF0025%, 70dmg|r)|n-Raise Greater Dead|n|n|cffFF0000You must turn off unit production before you can upgrade!|r"
+[h04C]
+Name="Monument of Wind Stream"
+Hotkey=R
+Tip="Upgrade to Monument of Wind Stream [|cffffcc00R|r]"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Elemental Of Wind:|n|cffFFFF80Upgrades: |cffFFFF001|n|n|cffFFAC00Elemental Of Wind:|r|n|cffFFFF80Attack: 1|r Pierce (|cffFFFF00450|r rng|r,|cffFFFF00 43|r dps)|n|cffFFFF80Attack: 2|r Pierce (|cffFFFF00450|r rng|r,|cffFFFF00 37|r dps)|n|cffFFFF80Armor:|r Unarmored (|cffFFFF004|r)|n|cffFFFF80Hitpoints: |cffFFFF00675|r|n|cffFFFF80Abilities:|rAbilities:|r|n-Flying|n-Gale (|cffFFFF0020% slow(air)|r)|n|n|cffFF0000You must turn off unit production before you can upgrade!|r"
+[h04A]
+Name="Trapped Gale"
+Hotkey=Q
+Tip="Build Trapped Gale [|cffffcc00Q|r]"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Lesser Elemental Of Wind:|n|cffFFFF80Upgrades: |cffFFFF001|n|n|cffFFAC00Lesser Elemental Of Wind:|r|n|cffFFFF80Attack:|r Pierce (|cffFFFF00400|r rng|r,|cffFFFF00 30|r dps)|n|cffFFFF80Armor:|r Unarmored (|cffFFFF002|r)|n|cffFFFF80Hitpoints: |cffFFFF00325|r|n|cffFFFF80Abilities:|r|n-Flying|n-Can't attack Ground"
+[h04F]
+Name="Icy Rocks"
+Hotkey=R
+Tip="Upgrade to Icy Rocks [|cffffcc00R|r]"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Polar Bear|n|cffFFFF80Upgrades: |cffFFFF001|n|n|cffFFAC00Polar Bear:|r|n|cffFFFF80Attack:|r Normal (|cffFFFF00melee|r,|cffFFFF00 43|r dps)|n|cffFFFF80Armor:|r Unarmored (|cffFFFF005|r)|n|cffFFFF80Hitpoints: |cffFFFF00550|r|n|cffFFFF80Abilities:|r|n-Cleaving Attack (|cffFFFF0027%|r)|n-Critical Strike (|cffFFFF0010%, x2|r)|n|n|cffFF0000You must turn off unit production before you can upgrade!|r"
+[h04G]
+Name="FreezeDummy"
+Hotkey=P
+Tip=Train |cffffcc00P|rriest
+Ubertip="Supporting spellcaster. Can initially cast Heal, which increases the life of wounded units. Can also learn Dispel Magic and Inner Fire. |n|n|cffffcc00Attacks land and air units.|r"
+Casterupgradename=Initiate, Adept, Master
+Casterupgradetip="- Heal","- Heal|n- Dispel Magic","- Heal|n- Dispel Magic|n- Inner Fire"
+[h04D]
+Name="Zephyros Memorial"
+Hotkey=R
+Tip="Upgrade to Zephyros Memorial [|cffffcc00R|r]"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Greater Elemental Of Wind:|n|n|cffFFAC00Greater Elemental Of Wind:|r|n|cffFFFF80Attack:|r Pierce (|cffFFFF00450|r rng|r,|cffFFFF00 75|r dps)|n|cffFFFF80Armor:|r Medium (|cffFFFF009|r)|n|cffFFFF80Hitpoints: |cffFFFF001350|r|n|cffFFFF80Abilities:|rAbilities:|r|n-Flying|n-Gale (|cffFFFF0035% slow(air)|r)|n|n|cffFF0000You must turn off unit production before you can upgrade!|r"
+[h04E]
+Name="Tower of Elder Knowledge"
+Hotkey=R
+Tip="Upgrade to Tower of Elder Knowledge [|cffffcc00R|r]"
+Ubertip="|cffFF8204Legendary Building|r|n|cffFFFF80Trains: |cffFFFF00Master Of Elements:|n|n|cffFFAC00Master Of Elements:|r|n|cffFFFF80Attack:|r Chaos (|cffFFFF00500|r rng|r,|cffFFFF00 65|r dps)|n|cffFFFF80Armor:|r Normal (|cffFFFF006|r)|n|cffFFFF80Hitpoints: |cffFFFF00950|r|n|cffFFFF80Abilities:|r|n-Legendary Spell Resistance (|cffFFFF0070%|r)|n-Knowledge of Elements|n|n|cffFF0000You must turn off unit production before you can upgrade!|r"
+[h04J]
+Name="Demonic Statue"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h04K]
+Name="Well of Pain"
+Hotkey=D
+Tip="Build Well of Pain [|cffffcc00D|r]"
+Ubertip="|cffFFFF80Ability:|cffFFFF00 Touch of Pain|r|nDeals 180 spell damage to a random enemy unit(cost 4 MP).|n|n|cffFFFF80Cooldown:|cffFFFF00 2 |rseconds"
+[h04H]
+Name="AdvancedFreezeDummy"
+Hotkey=P
+Tip=Train |cffffcc00P|rriest
+Ubertip="Supporting spellcaster. Can initially cast Heal, which increases the life of wounded units. Can also learn Dispel Magic and Inner Fire. |n|n|cffffcc00Attacks land and air units.|r"
+Casterupgradename=Initiate, Adept, Master
+Casterupgradetip="- Heal","- Heal|n- Dispel Magic","- Heal|n- Dispel Magic|n- Inner Fire"
+[h04I]
+Name="Incubus"
+Hotkey=Q
+Tip="Trains Incubus"
+Ubertip="|n|cffFFFF80Attack:|r Chaos (|cffFFFF00530|r rng,|cffFFFF00 70|r dps)|n|cffFFFF80Armor:|r Medium (|cffFFFF004|r)|n|cffFFFF80Hitpoints: |cffFFFF001000|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Splash Damage|r|nThis unit's attacks hit all units in a 180 AoE around its target. Units farther away from the target receive less damage|n|n|cff80FF00Overtake|r|n7% chance on each attack to take control of the attacked unit"
+[h06V]
+Name="Nuke Dummy"
+Hotkey=P
+Tip=Train |cffffcc00P|rriest
+Ubertip="Supporting spellcaster. Can initially cast Heal, which increases the life of wounded units. Can also learn Dispel Magic and Inner Fire. |n|n|cffffcc00Attacks land and air units.|r"
+Casterupgradename=Initiate, Adept, Master
+Casterupgradetip="- Heal","- Heal|n- Dispel Magic","- Heal|n- Dispel Magic|n- Inner Fire"
+[h06W]
+Name="Nuke Explosion Dummy"
+Hotkey=P
+Tip=Train |cffffcc00P|rriest
+Ubertip="Supporting spellcaster. Can initially cast Heal, which increases the life of wounded units. Can also learn Dispel Magic and Inner Fire. |n|n|cffffcc00Attacks land and air units.|r"
+Casterupgradename=Initiate, Adept, Master
+Casterupgradetip="- Heal","- Heal|n- Dispel Magic","- Heal|n- Dispel Magic|n- Inner Fire"
+[h06X]
+Name="Nuke Start Dummy"
+Hotkey=P
+Tip=Train |cffffcc00P|rriest
+Ubertip="Supporting spellcaster. Can initially cast Heal, which increases the life of wounded units. Can also learn Dispel Magic and Inner Fire. |n|n|cffffcc00Attacks land and air units.|r"
+Casterupgradename=Initiate, Adept, Master
+Casterupgradetip="- Heal","- Heal|n- Dispel Magic","- Heal|n- Dispel Magic|n- Inner Fire"
+[h06Y]
+Name="Dragonhawk Portal"
+Hotkey=R
+Tip="Build Dragonhawk Portal [|cffffcc00R|r]"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Dragonhawk Rider|n|n|cffFFAC00Dragonhawk Rider:|r|n|cffFFFF80Attack:|r Pierce (|cffFFFF00450|r rng,|cffFFFF00 46|r dps)|n|cffFFFF80Armor:|r Heavy (|cffFFFF003|r)|n|cffFFFF80Hitpoints: |cffFFFF00650|r|n|cffFFFF80Abilities:|r|n-Flying|n-Solar Strike"
+[h073]
+Name="Elune's Lantern"
+Hotkey=Y
+Tip="Build Elune's Lantern [|cffffcc00Y|r]"
+Ubertip="|cffFFAC00Base Defense|r:|nThis is a tower to protect key positions.|n|n|cffFFFF80Attack Type:|cffFFFF00 Magic|n|cffFFFF80Range:|cffFFFF00 850|n|cffFFFF80Average DPS:|cffFFFF00 87|r|n|n|cffFFFF80Abilities:|r|n-Feedback (|cffFFFF0035 mana|r)"
+[h06R]
+Name="Gyrocopter"
+Hotkey=Q
+Tip="Trains Gyrocopter"
+Ubertip="|n|cffFFFF80Attack:|r Pierce (|cffFFFF00500|r rng,|cffFFFF00 45|r dps)|n|cffFFFF80Attack:|r Siege (|cffFFFF00100|r rng,|cffFFFF00 36|r dps)|n|cffFFFF80Armor:|r Light (|cffFFFF006|r)|n|cffFFFF80Hitpoints: |cffFFFF00625|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Flying|r|nThis unit is flying|n|n|cff80FF00Air Only|r|nThis unit can't attack ground enemies|n|n|cff80FF00Bash|r|n50% chance on each attack to stun for 1.2 seconds and deal 60 extra damage"
+[h06S]
+Name="Heavy Tank"
+Hotkey=Q
+Tip="Trains Heavy Tank"
+Ubertip="|n|cffFFFF80Attack:|r Normal (|cffFFFF00400|r rng,|cffFFFF00 62|r dps)|n|cffFFFF80Armor:|r Heavy (|cffFFFF0012|r)|n|cffFFFF80Hitpoints: |cffFFFF00800|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Ground Only|r|nThis unit can't attack flying enemies|n|n|cff80FF00Heavy Tank Armor|r|nReduces all attack damage dealt to this unit by 24. Cannot reduce below 5 damage."
+[h06T]
+Name="Light Tank"
+Hotkey=Q
+Tip="Trains Light Tank"
+Ubertip="|n|cffFFFF80Attack:|r Normal (|cffFFFF00375|r rng,|cffFFFF00 33|r dps)|n|cffFFFF80Armor:|r Heavy (|cffFFFF005|r)|n|cffFFFF80Hitpoints: |cffFFFF00400|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Ground Only|r|nThis unit can't attack flying enemies|n|n|cff80FF00Light Tank Armor|r|nReduces all attack damage dealt to this unit by 12. Cannot reduce below 5 damage."
+[h06U]
+Name="Mine Layer"
+Hotkey=Q
+Tip="Trains Mine Layer"
+Ubertip="|n|cffFFFF80Attack:|r Normal (|cffFFFF00melee|r,|cffFFFF00 42|r dps)|n|cffFFFF80Armor:|r Heavy (|cffFFFF006|r)|n|cffFFFF80Hitpoints: |cffFFFF00640|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Light Tank Armor|r|nReduces all attack damage dealt to this unit by 12. Cannot reduce below 5 damage.|n|n|cff80FF00Lay Mine|r|nLays a mine that explodes when enemies step onto it. Deals 250 damage to enemies in 150 range and 125 damage to enemies in 300 range. Explodes when destroyed (100 damage in small area)"
+[h070]
+Name="Highelf Siege Factory"
+Hotkey=A
+Tip="Build Highelf Siege Factory [|cffffcc00A|r]"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Ballista|n|n|cffFFAC00Ballista:|r|n|cffFFFF80Attack:|r Siege (|cffFFFF00850|r rng,|cffFFFF00 31|r dps)|n|cffFFFF80Armor:|r Medium (|cffFFFF003|r)|n|cffFFFF80Hitpoints: |cffFFFF00500|r|n|cffFFFF80Abilities:|r|n-Can't attack Air|n-Line Damage"
+[h06P]
+Name="Mechanical Builder"
+Hotkey=P
+Tip="|cffFFD900Choose Mech Coalition|r"
+Ubertip="Clever goblin tinkers and machinists have gathered to assemble their own army! Their units have a lot of splash damage and high armor but lack ranged and magic attacks. They have a good tower with a bouncing attack."
+[h06Q]
+Name="Roterothopter"
+Hotkey=Q
+Tip="Trains Roterothopter"
+Ubertip="|n|cffFFFF80Attack:|r Pierce (|cffFFFF00500|r rng,|cffFFFF00 25|r dps)|n|cffFFFF80Attack:|r Pierce (|cffFFFF00500|r rng,|cffFFFF00 20|r dps)|n|cffFFFF80Armor:|r Light (|cffFFFF004|r)|n|cffFFFF80Hitpoints: |cffFFFF00300|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Flying|r|nThis unit is flying|n|n|cff80FF00Air Only|r|nThis unit can't attack ground enemies|n|n|cff80FF00Bash|r|n30% chance on each attack to stun for 1.2 seconds and deal 40 extra damage"
+[h07L]
+Name="Guild of Shadows"
+Hotkey=R
+Tip="Upgrade to Guild of Shadows [|cffffcc00R|r]"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Royal Assassin|n|n|cffFFAC00Royal Assassin:|r|n|cffFFFF80Attack:|r Pierce (|cffFFFF00melee|r,|cffFFFF00 60|r dps)|n|cffFFFF80Armor:|r Medium (|cffFFFF002|r)|n|cffFFFF80Hitpoints: |cffFFFF00575|r|n|cffFFFF80Abilities:|r|n-Evade (|cffFFFF0025%|r)|n-Feedback (|cffFFFF0060mana, x2.2|r)|n-Backstab (|cffFFFF00300 dmg|r)|n|n|cffFF0000You must turn off unit production before you can upgrade!|r"
+[h07N]
+Name="Scorched Mansion"
+Hotkey=R
+Tip="Upgrade to Scorched Mansion [|cffffcc00R|r]"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Avatar of Vengeance|n|n|cffFFAC00Avatar of Vengeance:|r|n|cffFFFF80Attack:|r Magic (|cffFFFF00melee|r,|cffFFFF00 77|r dps)|n|cffFFFF80Armor:|r Light (|cffFFFF008|r)|n|cffFFFF80Hitpoints: |cffFFFF00700|r|n|cffFFFF80Abilities:|r|n-Spell Reduction|n-Corrosive Attack (|cffFFFF00-7 armor|r)|n-Evade (|cffFFFF0040%|r)|n-Heal on Kill (|cffFFFF0015%|r)|n-Revenge (|cffFFFF00350 dmg|r)|n|n|cffFF0000You must turn off unit production before you can upgrade!|r"
+[h07M]
+Name="House of Shadows"
+Hotkey=E
+Tip="Build House of Shadows [|cffffcc00E|r]"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Assassin|n|cffFFFF80Upgrades: |cffFFFF001|n|n|cffFFAC00Assassin:|r|n|cffFFFF80Attack:|r Pierce (|cffFFFF00melee|r,|cffFFFF00 30|r dps)|n|cffFFFF80Armor:|r Medium (|cffFFFF001|r)|n|cffFFFF80Hitpoints: |cffFFFF00375|r|n|cffFFFF80Abilities:|r|n-Evade (|cffFFFF0015%|r)|n-Feedback (|cffFFFF0040mana, x1.7|r)|n-Backstab (|cffFFFF00150 dmg|r)"
+[h07H]
+Name="Obelisk of Wilderness"
+Hotkey=F
+Tip="Build Obelisk of Wilderness [|cffffcc00F|r]"
+Ubertip="|cffFFFF80Ability:|cffFFFF00 Resistance of the Wilderness|r|nBlesses a friendly random unit with the resistance of the wilderness, giving it permanently 40% spell damage reduction and a 40% chance to reduce incoming attack damage by 40. Has an extra chance to target units that don't have the buff yet.|n|n|cffFFFF80Cooldown:|cffFFFF00 9 |rseconds"
+[h07I]
+Name="Starfall Obelisk"
+Hotkey=X
+Tip="Build Starfall Obelisk [|cffffcc00X|r]"
+Ubertip="|cffFF8204Legendary Building|r|n|n|cffFFFF80Ability:|cffFFFF00 Starfall|r|nStars fall down from the sky around a random enemy unit damaging all enemies in its area for 8 seconds dealing 120 damage on hit. Buildings receive only 40% of this damage.|n|n|cffFFFF80Cooldown:|cffFFFF00 32 |rseconds"
+[h07D]
+Name="Moon Altar"
+Hotkey=R
+Tip="Upgrade to Moon Altar [|cffffcc00R|r]"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Sage Druid|n|n|cffFFAC00Sage Druid:|r|n|cffFFFF80Attack:|r Chaos (|cffFFFF00375|r rng,|cffFFFF00 46|r dps)|n|cffFFFF80Armor:|r Unarmored (|cffFFFF003|r)|n|cffFFFF80Hitpoints: |cffFFFF00550|r|n|cffFFFF80Abilities:|r|n-Mass Entangle (|cffFFFF006sec, 35dps|r)|n|n|cffFF0000You must turn off unit production before you can upgrade!|r"
+[h07C]
+Name="Bloodmage"
+Hotkey=
+Tip="Train Wizard"
+Ubertip="A strong High-elven Wizard that uses strong magic to heal friends and disable foes."
+Casterupgradename=
+Casterupgradetip=
+[h07B]
+Name="Sorceress"
+Hotkey=Q
+Tip="Trains Sorceress"
+Ubertip="|n|cffFFFF80Attack:|r Magic (|cffFFFF00500|r rng,|cffFFFF00 27|r dps)|n|cffFFFF80Armor:|r Unarmored (|cffFFFF002|r)|n|cffFFFF80Hitpoints: |cffFFFF00550|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Healing Wave|r|nCasts a healing wave onto an ally that hits up to 2 targets. Heals 150 hitpoints on the first target and 40% less on each bounce|n|cff8080FFCooldown: |r8|n|cff8080FFMana cost: |r50|n|n|cff80FF00Chain Lightning|r|nHas a 25% chance on each attack to cast a chainlighting that hits up to 3 enemies, dealing 150 damage to the first one and 30% less per bounce"
+Casterupgradename=
+Casterupgradetip=
+[h05Y]
+Name="WindOrb"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h05Z]
+Name="Book of Conjuration"
+Hotkey=F
+Tip="Build Book of Conjuration [|cffffcc00F|r]"
+Ubertip="|cffFFFF80Ability:|cffFFFF00Elemental havoc|r|nCasts one of spells:|n- Stone spikes: each spike pierce ground units dealing 100dmg and stun for 0.5s, flying units are damaged for 50dmg.|n- Lightning storm: each lightning does 100dmg  to flying and stun for 0.5s, ground units are damaged for 50dmg.|n|cffFFFF80Duration:|cffFFFF00 6 s|rs.|n|cffFFFF80Cooldown:|cffFFFF00 16 |rs."
+[h05W]
+Name="LandEffect"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h069]
+Name="Spare Part Heap"
+Hotkey=F
+Tip="Build Spare Part Heap [|cffffcc00F|r]"
+Ubertip="|cffFFFF80Ability:|cffFFFF00 Assemble Gobbo Machinist|r|nAssembles a Gobbo Machinist each 12 seconds, which lasts 30 seconds and spots for worn buildings and mechanical units that it can repair."
+[h05X]
+Name="Tank Factory"
+Hotkey=W
+Tip="Build Tank Factory [|cffffcc00W|r]"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Light Tank|n|cffFFFF80Upgrades: |cffFFFF004|n|n|cffFFAC00Light Tank:|r|n|cffFFFF80Attack:|r Normal (|cffFFFF00375|r rng,|cffFFFF00 33|r dps)|n|cffFFFF80Armor:|r Heavy (|cffFFFF005|r)|n|cffFFFF80Hitpoints: |cffFFFF00400|r|n|cffFFFF80Abilities:|r|n-Can't attack Air|n-Light Tank Armor (|cffFFFF00-12 dmg|r)"
+[h05U]
+Name="Lumber Mill"
+Hotkey=S
+Tip="Build Lumber Mill [|cffffcc00S|r]"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Goblin Shredder|n|n|cffFFAC00Goblin Shredder:|r|n|cffFFFF80Attack:|r Pierce (|cffFFFF00melee|r,|cffFFFF00 56|r dps)|n|cffFFFF80Armor:|r Medium (|cffFFFF009|r)|n|cffFFFF80Hitpoints: |cffFFFF001000|r|n|cffFFFF80Abilities:|r|n-Inducted Rage|n-Detonate (|cffFFFF0050dmg|r)|n-Shredder Attack"
+[h066]
+Name="Book of Conjuration"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h05V]
+Name="Golem Factory"
+Hotkey=A
+Tip="Build Golem Factory [|cffffcc00A|r]"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Iron Golem|n|cffFFFF80Upgrades: |cffFFFF001|n|n|cffFFAC00Iron Golem:|r|n|cffFFFF80Attack:|r Hero (|cffFFFF00melee|r,|cffFFFF00 46|r dps)|n|cffFFFF80Armor:|r Medium (|cffFFFF0012|r)|n|cffFFFF80Hitpoints: |cffFFFF00525|r|n|cffFFFF80Abilities:|r|n-Spell Resistance (|cffFFFF0030%|r)|n-Pulverize (|cffFFFF0025%, 60 dmg|r)|n-Bash (|cffFFFF0015%, 40dmg, 2sec|r)"
+[h067]
+Name="Elemental Guard Tower"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h05S]
+Name="LightningOrb"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h064]
+Name="Linker"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h05T]
+Name="Gun Smith"
+Hotkey=R
+Tip="Build Gun Smith [|cffffcc00R|r]"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Flamegunner|n|cffFFFF80Upgrades: |cffFFFF001|n|n|cffFFAC00Flamegunner:|r|n|cffFFFF80Attack:|r Chaos (|cffFFFF0070|r rng,|cffFFFF00 37|r dps)|n|cffFFFF80Armor:|r Light (|cffFFFF004|r)|n|cffFFFF80Hitpoints: |cffFFFF00500|r|n|cffFFFF80Abilities:|r|n-Can't attack Air|n-Line Damage"
+[h065]
+Name="Obelisk of Elements"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h05Q]
+Name="FireOrb"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h062]
+Name="Magical Distorter"
+Hotkey=S
+Tip="Build Magical Distorter [|cffffcc00S|r]"
+Ubertip="|cffFFFF80Ability: |cffFFFF00Distortion  of Magic|r|nCreates magic distortion near enemy uinit greately lowering its natural magical resistance. (-100%, cooldown: 10s)"
+[h05R]
+Name="Red Shield Generator"
+Hotkey=R
+Tip="Upgrade to Red Shield Generator [|cffffcc00R|r]"
+Ubertip="|cffFFFF80Ability:|cffFFFF00 Greater Energy Shield|r|nShields a random friendly unit with energy, giving it +4 armor and protects from most  enemy  specials. If protection is disrupted unit will be restored by 150 hp.|n|n|cffFFFF80Cooldown:|cffFFFF00 7 |rseconds"
+[h063]
+Name="Linker"
+Hotkey=X
+Tip="Build Linker [|cffffcc00X|r]"
+Ubertip="|cffFF8204Legendary Building|r|n|n|cffFFFF80Ability:|cffFFFF00 Link|r|nIf elemental is killed Linker gives to the spirit of the killed a chance to link with its killer. Elemental's Spirit damages linked enemy up to 40% of its Max HP."
+[h05O]
+Name="Fontis Oris"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h060]
+Name="Obelisk of Elements"
+Hotkey=D
+Tip="Build Obelisk of Elements [|cffffcc00D|r]"
+Ubertip="|cffFFFF80Ability:|cffFFFF00 Enchantment|r|nGives elemental shield to  random unit:|n- Earth shield: +7 armor|n- Air shield: +20% IAS\MS,20% damage resistance|n- Fire shield: Burns random enemy(15dps, 80 AoE)|n|n|cffFFFF80Cooldown:|cffFFFF00 10 |rseconds"
+[h05P]
+Name="Ignis-fluus"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h061]
+Name="Elemental Guard Tower"
+Hotkey=Z
+Tip="Build Elemental Guard Tower [|cffffcc00Z|r]"
+Ubertip="|cffFFAC00Base Defense|r:|nThis is a tower to protect key positions.|n|n|cffFFFF80Attack Type:|cffFFFF00 Chaos|n|cffFFFF80Range:|cffFFFF00 850|n|cffFFFF80Average DPS:|cffFFFF00 59|r|n|n|cffFFFF80Abilities:|r|nElemental nature (gives 1 from 3 randoms abilities to constructed structure):|n-Disharge: deals 30 dmg to a random enemy unit every 0.5sec.|n-Boulder: 35% chance to stun enemy unit for 3 sec and deal 100 additional dmg|n-Immolation: deals 30dmg/sec in 350 AoE"
+[h05M]
+Name="Demolition Lab"
+Hotkey=E
+Tip="Build Demolition Lab [|cffffcc00E|r]"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Lunatic Goblin|n|n|cffFFAC00Lunatic Goblin:|r|n|cffFFFF80Armor:|r Unarmored (|cffFFFF000|r)|n|cffFFFF80Hitpoints: |cffFFFF00175|r|n|cffFFFF80Abilities:|r|n-Suicide (|cffFFFF00275 dmg|r)|n-Detonate (|cffFFFF00150dmg|r)"
+[h05N]
+Name="Anima"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h06K]
+Name="Nuke Launcher"
+Hotkey=S
+Tip=""
+Ubertip="pwned!"
+[h06J]
+Name="Blue Shield Generator"
+Hotkey=X
+Tip="Build Blue Shield Generator [|cffffcc00X|r]"
+Ubertip="|cffFFFF80Upgrades: |cffFFFF001|r|n|n|cffFFFF80Ability:|cffFFFF00 Energy Shield|r|nShields a random friendly unit with energy, giving it +2 armor. Protects shielded unit from certain negative spells.|n|n|cffFFFF80Cooldown:|cffFFFF00 7 |rseconds"
+[h06B]
+Name="Wisp"
+Hotkey=F
+Tip=Train |cffffcc00F|rootman
+Ubertip="Versatile foot soldier. Can learn the Defend ability. |n|n|cffffcc00Attacks land units.|r"
+[h099]
+Name="Assault Tank"
+Hotkey=Q
+Tip="Trains Assault Tank"
+Ubertip="|n|cffFFFF80Attack:|r Chaos (|cffFFFF00550|r rng,|cffFFFF00 50|r dps)|n|cffFFFF80Armor:|r Heavy (|cffFFFF008|r)|n|cffFFFF80Hitpoints: |cffFFFF00700|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Ground Only|r|nThis unit can't attack flying enemies|n|n|cff80FF00Splash Damage|r|nThis unit's attacks hit all units in a 150 AoE around its target. Units farther away from the target receive less damage|n|n|cff80FF00Medium Tank Armor|r|nReduces all attack damage dealt to this unit by 18. Cannot reduce below 5 damage."
+[h08X]
+Name="Archery Range"
+Hotkey=Q
+Tip="Build Archery Range [|cffffcc00Q|r]"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Archer |n|cffFFFF80Upgrades: |cffFFFF001|n|n|cffFFAC00Archer :|r|n|cffFFFF80Attack:|r Pierce (|cffFFFF00450|r rng,|cffFFFF00 28|r dps)|n|cffFFFF80Armor:|r Unarmored (|cffFFFF002|r)|n|cffFFFF80Hitpoints: |cffFFFF00320|r|n|cffFFFF80Abilities:|r|n-Headshot (|cffFFFF0010%, 50dmg|r)|n-Evade (|cffFFFF0015%|r)"
+[h08Y]
+Name="Archery Tower"
+Hotkey=R
+Tip="Upgrade to Archery Tower [|cffffcc00R|r]"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Master Archer|n|n|cffFFAC00Master Archer:|r|n|cffFFFF80Attack:|r Pierce (|cffFFFF00500|r rng,|cffFFFF00 84|r dps)|n|cffFFFF80Armor:|r Unarmored (|cffFFFF004|r)|n|cffFFFF80Hitpoints: |cffFFFF00525|r|n|cffFFFF80Abilities:|r|n-Headshot (|cffFFFF0020%, 125dmg|r)|n-Evade (|cffFFFF0025%|r)|n|n|cffFF0000You must turn off unit production before you can upgrade!|r"
+[h08Z]
+Name="Archery Target"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h091]
+Name="Elf Build2"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h08P]
+Name="Silver Glade"
+Hotkey=D
+Tip="Build Silver Glade [|cffffcc00D|r]"
+Ubertip="|cffFFFF80Ability:|cffFFFF00 Moonshine Blessing|r|nBlesses everything around a random friendly unit that is attacked. Blessed units regain max 250 health, 50 mana and +5 armor for 5 seconds.|n|n|cffFFFF80Cooldown:|cffFFFF00 20 |rseconds"
+[h092]
+Name="Spellbreaker Kodo Farm"
+Hotkey=R
+Tip="Upgrade to Spellbreaker Kodo Farm [|cffffcc00R|r]"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Spellbreaker Kodo Rider|n|n|cffFFAC00Spellbreaker Kodo Rider:|r|n|cffFFFF80Attack:|r Pierce (|cffFFFF00320|r rng,|cffFFFF00 33|r dps)|n|cffFFFF80Armor:|r Light (|cffFFFF005|r)|n|cffFFFF80Hitpoints: |cffFFFF001200|r|n|cffFFFF80Abilities:|r|n-Spell Resistance (|cffFFFF0070%|r)|n|n|cffFF0000You must turn off unit production before you can upgrade!|r"
+[h08Q]
+Name="Fire"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h093]
+Name="Citadel Effect"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h08R]
+Name="Fire Small"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h094]
+Name="Citadel Effect 2"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h08S]
+Name="Orb3 BIG"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h08T]
+Name="Orb9"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h096]
+Name="Golem Factory: Gold"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h08U]
+Name="FrostOrbDummy"
+Hotkey=P
+Tip=Train |cffffcc00P|rriest
+Ubertip="Supporting spellcaster. Can initially cast Heal, which increases the life of wounded units. Can also learn Dispel Magic and Inner Fire. |n|n|cffffcc00Attacks land and air units.|r"
+Casterupgradename=Initiate, Adept, Master
+Casterupgradetip="- Heal","- Heal|n- Dispel Magic","- Heal|n- Dispel Magic|n- Inner Fire"
+[h097]
+Name="Precious Golem Factory"
+Hotkey=R
+Tip="Upgrade to Precious Golem Factory [|cffffcc00R|r]"
+Ubertip="|cffFF8204Legendary Building|r|n|cffFFFF80Trains: |cffFFFF00Adamant Golem|n|n|cffFFAC00Adamant Golem:|r|n|cffFFFF80Attack:|r Hero (|cffFFFF00melee|r,|cffFFFF00 92|r dps)|n|cffFFFF80Armor:|r Divine (|cffFFFF0015|r)|n|cffFFFF80Hitpoints: |cffFFFF00950|r|n|cffFFFF80Abilities:|r|n-Immune|n-Extreme Spell Resistance (|cffFFFF0090%|r)|n-Bash (|cffFFFF0050%, 100dmg, 2sec|r)|n-Pulverize (|cffFFFF0040%, 150 dmg|r)|n|n|cffFF0000You must turn off unit production before you can upgrade!|r"
+[h08V]
+Name="Orb18"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h098]
+Name="Rocket Tank"
+Hotkey=Q
+Tip="Trains Rocket Tank"
+Ubertip="|n|cffFFFF80Attack:|r Normal (|cffFFFF00400|r rng,|cffFFFF00 76|r dps)|n|cffFFFF80Armor:|r Heavy (|cffFFFF0012|r)|n|cffFFFF80Hitpoints: |cffFFFF00900|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Ground Only|r|nThis unit can't attack flying enemies|n|n|cff80FF00Heavy Tank Armor|r|nReduces all attack damage dealt to this unit by 24. Cannot reduce below 5 damage.|n|n|cff80FF00AA Rockets|r|nFires rockets onto random flying enemies in 850 range. Each rocket deals 75 damage."
+[h08W]
+Name="Tower"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h09J]
+Name="Mine Layer Factory"
+Hotkey=R
+Tip="Upgrade to Mine Layer Factory [|cffffcc00R|r]"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Mine Layer|n|n|cffFFAC00Mine Layer:|r|n|cffFFFF80Attack:|r Normal (|cffFFFF00melee|r,|cffFFFF00 42|r dps)|n|cffFFFF80Armor:|r Heavy (|cffFFFF007|r)|n|cffFFFF80Hitpoints: |cffFFFF00640|r|n|cffFFFF80Abilities:|r|n-Light Tank Armor (|cffFFFF00-12 dmg|r)|n-Lay Mine (|cffFFFF00250 dmg|r)|n|n|cffFF0000You must turn off unit production before you can upgrade!|r"
+[h09I]
+Name="Assault Tank Factory"
+Hotkey=E
+Tip="Upgrade to Assault Tank Factory [|cffffcc00E|r]"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Assault Tank|n|n|cffFFAC00Assault Tank:|r|n|cffFFFF80Attack:|r Chaos (|cffFFFF00550|r rng,|cffFFFF00 50|r dps)|n|cffFFFF80Armor:|r Heavy (|cffFFFF008|r)|n|cffFFFF80Hitpoints: |cffFFFF00700|r|n|cffFFFF80Abilities:|r|n-Can't attack Air|n-Splash Damage|n-Medium Tank Armor (|cffFFFF00-18 dmg|r)|n|n|cffFF0000You must turn off unit production before you can upgrade!|r"
+[h09L]
+Name="Bomber Factory"
+Hotkey=R
+Tip="Upgrade to Bomber Factory [|cffffcc00R|r]"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Gyrocopter|n|n|cffFFAC00Gyrocopter:|r|n|cffFFFF80Attack:|r Pierce (|cffFFFF00500|r rng,|cffFFFF00 45|r dps)|n|cffFFFF80Attack:|r Siege (|cffFFFF00100|r rng,|cffFFFF00 36|r dps)|n|cffFFFF80Armor:|r Light (|cffFFFF006|r)|n|cffFFFF80Hitpoints: |cffFFFF00625|r|n|cffFFFF80Abilities:|r|n-Flying|n-Can't attack Ground|n-Bash (|cffFFFF0050%, 60dmg, 1.2sec|r)|n|n|cffFF0000You must turn off unit production before you can upgrade!|r"
+[h09K]
+Name="Aircraft: Fence"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h09N]
+Name="Arsenal: Trash1"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h09M]
+Name="MineDummy"
+Hotkey=P
+Tip=Train |cffffcc00P|rriest
+Ubertip="Supporting spellcaster. Can initially cast Heal, which increases the life of wounded units. Can also learn Dispel Magic and Inner Fire. |n|n|cffffcc00Attacks land and air units.|r"
+Casterupgradename=Initiate, Adept, Master
+Casterupgradetip="- Heal","- Heal|n- Dispel Magic","- Heal|n- Dispel Magic|n- Inner Fire"
+[h09P]
+Name="Arsenal"
+Hotkey=R
+Tip="Upgrade to Arsenal [|cffffcc00R|r]"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Flamegunner Sergeant|n|n|cffFFAC00Flamegunner Sergeant:|r|n|cffFFFF80Attack:|r Chaos (|cffFFFF0070|r rng,|cffFFFF00 66|r dps)|n|cffFFFF80Armor:|r Light (|cffFFFF007|r)|n|cffFFFF80Hitpoints: |cffFFFF00700|r|n|cffFFFF80Abilities:|r|n-Can't attack Air|n-Line Damage|n-Astral Grenade|n|n|cffFF0000You must turn off unit production before you can upgrade!|r"
+[h09O]
+Name="Arsenal: Trash2"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h09B]
+Name="Heavy Tank Factory"
+Hotkey=W
+Tip="Upgrade to Heavy Tank Factory [|cffffcc00W|r]"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Heavy Tank|n|cffFFFF80Upgrades: |cffFFFF001|n|n|cffFFAC00Heavy Tank:|r|n|cffFFFF80Attack:|r Normal (|cffFFFF00400|r rng,|cffFFFF00 62|r dps)|n|cffFFFF80Armor:|r Heavy (|cffFFFF0012|r)|n|cffFFFF80Hitpoints: |cffFFFF00800|r|n|cffFFFF80Abilities:|r|n-Can't attack Air|n-Heavy Tank Armor (|cffFFFF00-24 dmg|r)|n|n|cffFF0000You must turn off unit production before you can upgrade!|r"
+[h09A]
+Name="Tank Factory: Big Mine"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h09D]
+Name="Tank Factory: Runes1"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h09C]
+Name="Tank Factory: Brazier"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h09F]
+Name="Tank Factory: Mine"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h09E]
+Name="Tank Factory: Furnace Fire"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h09H]
+Name="Rocket Tank Factory"
+Hotkey=R
+Tip="Upgrade to Rocket Tank Factory [|cffffcc00R|r]"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Rocket Tank|n|n|cffFFAC00Rocket Tank:|r|n|cffFFFF80Attack:|r Normal (|cffFFFF00400|r rng,|cffFFFF00 76|r dps)|n|cffFFFF80Armor:|r Heavy (|cffFFFF0012|r)|n|cffFFFF80Hitpoints: |cffFFFF00900|r|n|cffFFFF80Abilities:|r|n-Can't attack Air|n-Heavy Tank Armor (|cffFFFF00-24 dmg|r)|n-AA Rockets (|cffFFFF0075 dps|r)|n|n|cffFF0000You must turn off unit production before you can upgrade!|r"
+[h09G]
+Name="Tank Factory: Runes2"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h088]
+Name="Moon Shrine"
+Hotkey=W
+Tip="Build Moon Shrine [|cffffcc00W|r]"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Druid|n|cffFFFF80Upgrades: |cffFFFF001|n|n|cffFFAC00Druid:|r|n|cffFFFF80Attack:|r Chaos (|cffFFFF00375|r rng,|cffFFFF00 31|r dps)|n|cffFFFF80Armor:|r Unarmored (|cffFFFF001|r)|n|cffFFFF80Hitpoints: |cffFFFF00325|r|n|cffFFFF80Abilities:|r|n-Entangle (|cffFFFF005sec, 15dps|r)"
+[h089]
+Name="Night Elf Builder"
+Hotkey=P
+Tip="|cffFFD900Choose Night Elves|r"
+Ubertip="Night Elfs have split from the Elven Union and fight on their own for their goddess Elune. They are fragile creatures but they know how to evade enemies blows and protect themselves from harmful magic. They have a tower with feedback."
+[h07O]
+Name="Pillaged Hut"
+Hotkey=R
+Tip="Build Pillaged Hut [|cffffcc00R|r]"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Avenging Spirit|n|cffFFFF80Upgrades: |cffFFFF001|n|n|cffFFAC00Avenging Spirit:|r|n|cffFFFF80Attack:|r Magic (|cffFFFF00melee|r,|cffFFFF00 37|r dps)|n|cffFFFF80Armor:|r Light (|cffFFFF005|r)|n|cffFFFF80Hitpoints: |cffFFFF00425|r|n|cffFFFF80Abilities:|r|n-Corrosive Attack (|cffFFFF00-4 armor|r)|n-Spell Reduction|n-Evade (|cffFFFF0030%|r)|n-Heal on Kill (|cffFFFF0012%|r)"
+[h08K]
+Name="Orb8"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h08J]
+Name="Orb7"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h08I]
+Name="Orb6"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h08H]
+Name="Orb5"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h090]
+Name="Elf Build"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h08O]
+Name="plant2"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h08N]
+Name="plant"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h08M]
+Name="Orb2High"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h08L]
+Name="Entangle"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h08C]
+Name="Star Fall"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h08B]
+Name="Luna Beam"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h08A]
+Name="Teleport"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h08G]
+Name="Orb4"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h08F]
+Name="Orb3"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h08E]
+Name="Orb2"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h08D]
+Name="Orb1"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h01D]
+Name="Chaos Citadel"
+Hotkey=W
+Tip="Build Chaos Citadel [|cffffcc00W|r]"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Chaos Warrior|n|cffFFFF80Upgrades: |cffFFFF001|n|n|cffFFAC00Chaos Warrior:|r|n|cffFFFF80Attack:|r Normal (|cffFFFF00melee|r,|cffFFFF00 27|r dps)|n|cffFFFF80Armor:|r Medium (|cffFFFF005|r)|n|cffFFFF80Hitpoints: |cffFFFF00400|r|n|cffFFFF80Abilities:|r|n-Cleaving Attack (|cffFFFF0025%|r)"
+[h01C]
+Name="Altar of Greed"
+Hotkey=E
+Tip="Build Altar of Greed [|cffffcc00E|r]"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Succubus|n|n|cffFFAC00Succubus:|r|n|cffFFFF80Attack:|r Magic (|cffFFFF00360|r rng,|cffFFFF00 35|r dps)|n|cffFFFF80Armor:|r Light (|cffFFFF002|r)|n|cffFFFF80Hitpoints: |cffFFFF00450|r|n|cffFFFF80Abilities:|r|n-Curse (|cffFFFF0035% miss|r)"
+[h01B]
+Name="Reptile Pool"
+Hotkey=A
+Tip="Build Reptile Pool [|cffffcc00A|r]"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Dragon Turtle |n|n|cffFFAC00Dragon Turtle :|r|n|cffFFFF80Attack:|r Siege (|cffFFFF00550|r rng,|cffFFFF00 54|r dps)|n|cffFFFF80Armor:|r Heavy (|cffFFFF008|r)|n|cffFFFF80Hitpoints: |cffFFFF00650|r|n|cffFFFF80Abilities:|r|n-Bash (|cffFFFF0015%, 25dmg, 2sec|r)|n-Thornshell (|cffFFFF0060%|r)"
+[h01A]
+Name="Nature Builder"
+Hotkey=P
+Tip="|cffFFD900Choose Nature Force|r"
+Ubertip="The forces of Nature itself are called to fight for their masters. Specializing in strong units and healing buffs, the Nature Race is slightly more expensive but better than the average race."
+[h01H]
+Name="Ancient of Life"
+Hotkey=R
+Tip="Upgrade to Ancient of Life [|cffffcc00R|r]"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Keeper of the Grove|n|cffFFFF80Upgrades: |cffFFFF001|n|n|cffFFAC00Keeper of the Grove |r|n|cffFFFF80Attack:|r Pierce (|cffFFFF00500|r rng|r,|cffFFFF00 50|r dps)|n|cffFFFF80Armor:|r Medium (|cffFFFF005|r)|n|cffFFFF80Hitpoints: |cffFFFF00700|r|n|cffFFFF80Abilities:|r|n-Summon Treants|n-Spell Resist (|cffFFFF0020%|r)|n-Natures Touch (|cffFFFF00150hp, 3armor|r)|n|n|cffFF0000You must turn off unit production before you can upgrade!|r"
+[h01G]
+Name="DemolishDummy"
+Hotkey=P
+Tip=Train |cffffcc00P|rriest
+Ubertip="Supporting spellcaster. Can initially cast Heal, which increases the life of wounded units. Can also learn Dispel Magic and Inner Fire. |n|n|cffffcc00Attacks land and air units.|r"
+Casterupgradename=Initiate, Adept, Master
+Casterupgradetip="- Heal","- Heal|n- Dispel Magic","- Heal|n- Dispel Magic|n- Inner Fire"
+[h01F]
+Name="Volcano"
+Hotkey=F
+Tip="Build Volcano [|cffffcc00F|r]"
+Ubertip="|cffFFFF80Ability:|cffFFFF00 Eruption|r|nDamages the area around a random enemy unit dealing 180 dps spell damage. Cannot damage more than 5 units concurrently. Deals only 40% damage to buildings.|n|n|cffFFFF80Cooldown:|cffFFFF00 14 |rseconds"
+[h01E]
+Name="Shrine of Destruction"
+Hotkey=X
+Tip="Build Shrine of Destruction [|cffffcc00X|r]"
+Ubertip="|cffFF8204Legendary Building|r|n|n|cffFFFF80Ability:|cffFFFF00 Hell's Fist|r|nDestroys a random enemy building. Cannot destroy legendary buildings or the Main Castle. You don't gain bounty for the destroyed building.|n|n|cffFFFF80Cooldown:|cffFFFF00 40 |rseconds"
+[h00Z]
+Name="City of Magic"
+Hotkey=D
+Tip="Build City of Magic [|cffffcc00D|r]"
+Ubertip="|cffFFFF80Ability:|cffFFFF00 Hex|r|nTurns random enemy unit into a sheep for 50 seconds.|n|n|cffFFFF80Cooldown:|cffFFFF00 15 |rseconds"
+[h00Y]
+Name="Furbolg Hut"
+Hotkey=W
+Tip="Build Furbolg Hut [|cffffcc00W|r]"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Furbolg Shaman|n|cffFFFF80Upgrades: |cffFFFF001|n|n|cffFFAC00Furbolg Shaman |r|n|cffFFFF80Attack:|r Magic (|cffFFFF00400|r rng|r,|cffFFFF00 37|r dps)|n|cffFFFF80Armor:|r Light (|cffFFFF001|r)|n|cffFFFF80Hitpoints: |cffFFFF00450|r|n|cffFFFF80Abilities:|r|n-Rejuvenation (|cffFFFF00200hp|r)"
+[h019]
+Name="Orc Builder"
+Hotkey=P
+Tip="|cffFFD900Choose the Orcish Horde|r"
+Ubertip="The Orcish Horde trains tough fighters and supports them with shamanic magic. Their axe masters are feared all over the battlefield. An anti-air tower is available to Orcs."
+[h00X]
+Name="Tower of Supreme Magic"
+Hotkey=R
+Tip="Upgrade to Tower of Supreme Magic [|cffffcc00R|r]"
+Ubertip="|cffFF8204Legendary Building|r|n|cffFFFF80Trains: |cffFFFF00Wizard|n|n|cffFFAC00Wizard:|r|n|cffFFFF80Attack:|r Chaos (|cffFFFF00650|r rng,|cffFFFF00 55|r dps)|n|cffFFFF80Armor:|r Unarmored (|cffFFFF004|r)|n|cffFFFF80Hitpoints: |cffFFFF00800|r|n|cffFFFF80Abilities:|r|n-Legendary Spell Resistance (|cffFFFF0070%|r)|n-Immune|n-Healing Wave (|cffFFFF00300hp, 6 targets|r)|n-Chain Lightning (|cffFFFF0030%, 230dmg|r)|n-Firebolt (|cffFFFF0075 dmg|r)|n|n|cffFF0000You must turn off unit production before you can upgrade!|r"
+[h013]
+Name="Ancient of Growth"
+Hotkey=E
+Tip="Build Ancient of Growth [|cffffcc00E|r]"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Dryad|n|cffFFFF80Upgrades: |cffFFFF002|n|n|cffFFAC00Dryad |r|n|cffFFFF80Attack:|r Pierce (|cffFFFF00500|r rng|r,|cffFFFF00 37|r dps)|n|cffFFFF80Armor:|r Medium (|cffFFFF003|r)|n|cffFFFF80Hitpoints: |cffFFFF00500|r|n|cffFFFF80Abilities:|r|n-Spell Resist (|cffFFFF0015%|r)|n-Natures Touch (|cffFFFF0075hp, 2armor|r)"
+[h00R]
+Name="Spider Egg Hatchery"
+Hotkey=R
+Tip="Build Spider Egg Hatchery [|cffffcc00R|r]"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Brood Mother |n|n|cffFFAC00Brood Mother |r|n|cffFFFF00Two Spiders get trained at once|r|n|cffFFFF80Attack:|r Pierce (|cffFFFF00melee|r,|cffFFFF00 70|r dps)|n|cffFFFF80Armor:|r Unarmored (|cffFFFF006|r)|n|cffFFFF80Hitpoints: |cffFFFF00800|r|n|cffFFFF80Abilities:|r|n-Infest|n-Web|n-Spawn|n-Slow Poison (|cffFFFF0025% slow, 12dmg/sec|r)|n|n|cffFF0000You must turn off unit production before you can upgrade!|r"
+[h014]
+Name="Arcane Tower"
+Hotkey=Y
+Tip="Build Arcane Tower [|cffffcc00Y|r]"
+Ubertip="|cffFFAC00Base Defense|r:|nThis is a tower to protect key positions.|n|n|cffFFFF80Attack Type:|cffFFFF00 Magic|n|cffFFFF80Range:|cffFFFF00 675|n|cffFFFF80Average DPS:|cffFFFF00 39|r|n|n|cffFFFF80Abilities:|r|n-Multi Shot (|cffFFFF005 targets|r)"
+[h00S]
+Name="Hunter's Hall"
+Hotkey=Q
+Tip="Build Hunter's Hall [|cffffcc00Q|r]"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Huntress|n|cffFFFF80Upgrades: |cffFFFF002|n|n|cffFFAC00Huntress:|r|n|cffFFFF80Attack:|r Pierce (|cffFFFF00400|r rng,|cffFFFF00 27|r dps)|n|cffFFFF80Armor:|r Light (|cffFFFF001|r)|n|cffFFFF80Hitpoints: |cffFFFF00300|r|n|cffFFFF80Abilities:|r|n-Evade (|cffFFFF008%|r)"
+[h011]
+Name="Nightelf Siege Factory"
+Hotkey=S
+Tip="Build Nightelf Siege Factory [|cffffcc00S|r]"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Glaive Thrower|n|n|cffFFAC00Glaive Thrower:|r|n|cffFFFF80Attack:|r Siege (|cffFFFF001000|r rng,|cffFFFF00 26|r dps)|n|cffFFFF80Armor:|r Heavy (|cffFFFF002|r)|n|cffFFFF80Hitpoints: |cffFFFF00400|r|n|cffFFFF80Abilities:|r|n-Can't attack Air|n-Bouncing Attack (|cffFFFF004 targets|r)"
+[h00P]
+Name="Elf Builder"
+Hotkey=P
+Tip="|cffFFD900Choose the Elven Union|r"
+Ubertip="The elven races have gathered to defend their realms. Elves use strong magic to weaken enemies and aid friendly units. They've got a pretty good siege weapon and a low ranged tower with multishot."
+[h012]
+Name="Furbolg Abode"
+Hotkey=R
+Tip="Build Furbolg Abode [|cffffcc00R|r]"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Furbolg Elder Shaman |n|n|cffFFAC00Furbolg Elder Shaman |r|n|cffFFFF80Attack:|r Magic (|cffFFFF00450|r rng|r,|cffFFFF00 40|r dps)|n|cffFFFF80Armor:|r Light (|cffFFFF003|r)|n|cffFFFF80Hitpoints: |cffFFFF00650|r|n|cffFFFF80Abilities:|r|n-Manaburn|n-Rejuvenation (|cffFFFF00400hp|r)|n|n|cffFF0000You must turn off unit production before you can upgrade!|r"
+[h00Q]
+Name="Spider Egg Nest"
+Hotkey=R
+Tip="Upgrade to Spider Egg Nest [|cffffcc00R|r]"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Giant Spider|n|cffFFFF80Upgrades: |cffFFFF001|n|n|cffFFAC00Giant Spider |r|n|cffFFFF00Two Spiders get trained at once|r|n|cffFFFF80Attack:|r Pierce (|cffFFFF00melee|r,|cffFFFF00 53|r dps)|n|cffFFFF80Armor:|r Unarmored (|cffFFFF004|r)|n|cffFFFF80Hitpoints: |cffFFFF00480|r|n|cffFFFF80Abilities:|r|n-Web|n-Slow Poison (|cffFFFF0015% slow, 8dmg/sec|r)|n-Spawn (|cffFFFF001 Black Spider|r)|n|n|cffFF0000You must turn off unit production before you can upgrade!|r"
+[h017]
+Name="Northern Builder"
+Hotkey=P
+Tip="|cffFFD900Choose Northern Realms|r"
+Ubertip="The nordic creatures stand united against everyone who wants to invade their beloved icy plains and mountains. They use strong freezing and chilling magic. Nordics can defend their buildings with a chilling splash tower."
+[h00V]
+Name="Bloodelf War Academy"
+Hotkey=E
+Tip="Build Bloodelf War Academy [|cffffcc00E|r]"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Bloodthirster|n|n|cffFFAC00Bloodthirster:|r|n|cffFFFF80Attack:|r Magic (|cffFFFF00360|r rng,|cffFFFF00 38|r dps)|n|cffFFFF80Armor:|r Medium (|cffFFFF003|r)|n|cffFFFF80Hitpoints: |cffFFFF00525|r|n|cffFFFF80Abilities:|r|n-Bouncing Attack (|cffFFFF003 targets|r)|n-Faerie Fire (|cffFFFF00-6 armor|r)"
+[h018]
+Name="Undead Builder"
+Hotkey=P
+Tip="|cffFFD900Choose the Undead Forces|r"
+Ubertip="Undead Forces use necromantic magic to reanimate dead units. They bring death and disease to their enemies. An undead builder is able to construct a spirit tower to defend your base."
+[h00W]
+Name="Wizard"
+Hotkey=Q
+Tip="Trains Wizard"
+Ubertip="|n|cffFFFF80Attack:|r Chaos (|cffFFFF00650|r rng,|cffFFFF00 55|r dps)|n|cffFFFF80Armor:|r Unarmored (|cffFFFF004|r)|n|cffFFFF80Hitpoints: |cffFFFF00800|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Legendary Spell Resistance|r|nSpell damage done to this unit is reduced by 70%|n|n|cff80FF00Immune|r|nThis unit is immune to certain negative effects|n|n|cff80FF00Healing Wave|r|nCasts a healing wave onto an ally that hits up to 6 targets. Heals 300 hitpoints on the first target and 30% less on each bounce|n|cff8080FFCooldown: |r12|n|cff8080FFMana cost: |r70|n|n|cff80FF00Chain Lightning|r|nHas a 30% chance on each attack to cast a chainlighting that hits up to 7 enemies, dealing 230 damage to the first one and 20% less per bounce|n|n|cff80FF00Firebolt|r|nCasts a Firebolt onto a random enemy unit or building every 3 seconds. The Firebolt deals 75 spell damage upon impact. The target burns for 4 seconds taking 25 additional damage per second. "
+Casterupgradename=
+Casterupgradetip=
+[h015]
+Name="Gryphon Rock"
+Hotkey=R
+Tip="Build Gryphon Rock [|cffffcc00R|r]"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Gryphon Rider|n|n|cffFFAC00Gryphon Rider:|r|n|cffFFFF80Attack:|r Magic (|cffFFFF00450|r rng,|cffFFFF00 23|r dps)|n|cffFFFF80Armor:|r Medium (|cffFFFF002|r)|n|cffFFFF80Hitpoints: |cffFFFF00500|r|n|cffFFFF80Abilities:|r|n-Flying|n-Bash (|cffFFFF0015%, 25dmg, 2sec|r)|n-Chain Lightning (|cffFFFF0010%, 150dmg|r)"
+[h00T]
+Name="Hall of Honor"
+Hotkey=W
+Tip="Build Hall of Honor [|cffffcc00W|r]"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Blademaster|n|cffFFFF80Upgrades: |cffFFFF001|n|n|cffFFAC00Blademaster:|r|n|cffFFFF80Attack:|r Normal (|cffFFFF00melee|r,|cffFFFF00 39|r dps)|n|cffFFFF80Armor:|r Heavy (|cffFFFF007|r)|n|cffFFFF80Hitpoints: |cffFFFF00450|r|n|cffFFFF80Abilities:|r|n-Evade (|cffFFFF0015%|r)|n-Critical Strike (|cffFFFF0025%, 2.5x|r)|n-Spell Resist (|cffFFFF0015%|r)"
+[h016]
+Name="Gryphon Rider"
+Hotkey=Q
+Tip="Trains Gryphon Rider"
+Ubertip="|n|cffFFFF80Attack:|r Magic (|cffFFFF00450|r rng,|cffFFFF00 23|r dps)|n|cffFFFF80Armor:|r Medium (|cffFFFF002|r)|n|cffFFFF80Hitpoints: |cffFFFF00500|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Flying|r|nThis unit is flying|n|n|cff80FF00Bash|r|n15% chance on each attack to stun for 2 seconds and deal 25 extra damage|n|n|cff80FF00Chain Lightning|r|nHas a 10% chance on each attack to cast a chainlighting that hits up to 5 enemies, dealing 150 damage to the first one and 25% less per bounce"
+[h00U]
+Name="Bloodthirster"
+Hotkey=Q
+Tip="Trains Bloodthirster"
+Ubertip="|n|cffFFFF80Attack:|r Magic (|cffFFFF00360|r rng,|cffFFFF00 38|r dps)|n|cffFFFF80Armor:|r Medium (|cffFFFF003|r)|n|cffFFFF80Hitpoints: |cffFFFF00525|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Bouncing Attack|r|nThis unit's attacks can hit up to 3 enemies, dealing 30% less damage on each bounce|n|n|cff80FF00Faerie Fire|r|nReduces the armor of an enemy by 6 for 30 seconds|n|cff8080FFCooldown: |r6|n|cff8080FFMana cost: |r20"
+[h00J]
+Name="Swamp Well"
+Hotkey=W
+Tip="Build Swamp Well [|cffffcc00W|r]"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Suumpmolk|n|cffFFFF80Upgrades: |cffFFFF001|n|n|cffFFAC00Suumpmolk:|r|n|cffFFFF80Attack:|r Normal (|cffFFFF00325|r rng,|cffFFFF00 27|r dps)|n|cffFFFF80Armor:|r Medium (|cffFFFF003|r)|n|cffFFFF80Hitpoints: |cffFFFF00380|r|n|cffFFFF80Abilities:|r|n-Poison Attack (|cffFFFF0035% slow|r)"
+[h00K]
+Name="Hjordhejmen"
+Hotkey=S
+Tip="Build Hjordhejmen [|cffffcc00S|r]"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Warlock|n|n|cffFFAC00Warlock:|r|n|cffFFFF80Attack:|r Chaos (|cffFFFF00160|r rng,|cffFFFF00 17|r dps)|n|cffFFFF80Armor:|r Unarmored (|cffFFFF001|r)|n|cffFFFF80Hitpoints: |cffFFFF00320|r|n|cffFFFF80Abilities:|r|n-Chamber (|cffFFFF00175 spell dmg|r)"
+[h00H]
+Name="Murloc Hut"
+Hotkey=Q
+Tip="Build Murloc Hut [|cffffcc00Q|r]"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Murloc|n|cffFFFF80Upgrades: |cffFFFF003|n|n|cffFFAC00Murloc:|r|n|cffFFFF00Two Murlocs get trained at once|r|n|cffFFFF80Attack:|r Normal (|cffFFFF00melee|r,|cffFFFF00 12|r dps)|n|cffFFFF80Armor:|r Unarmored (|cffFFFF002|r)|n|cffFFFF80Hitpoints: |cffFFFF00180|r"
+[h00I]
+Name="Ancient Pyramide"
+Hotkey=D
+Tip="Build Ancient Pyramide [|cffffcc00D|r]"
+Ubertip="|cffFFFF80Ability:|cffFFFF00 Earthquake|r|nSplits the earth below a random enemy unit, damaging and slowing all enemy ground units in that region. Deals 50 spell damage, slows by 50% for 6 seconds.|n|n|cffFFFF80Cooldown:|cffFFFF00 8 |rseconds"
+[h00N]
+Name="Tidal Guardian"
+Hotkey=X
+Tip="Build Tidal Guardian [|cffffcc00X|r]"
+Ubertip="|cffFFFF80Ability:|cffFFFF00 Tsunami|r|nSends a huge wave towards a random enemy unit. The Wave hits all ground units in its way dealing 220 damage.|n|n|cffFFFF80Cooldown:|cffFFFF00 20 |rseconds"
+[h010]
+Name="Gjallarhorn"
+Hotkey=D
+Tip="Build Gjallarhorn [|cffffcc00D|r]"
+Ubertip="|cffFFFF80Ability:|cffFFFF00 Holy Power|r|nBoosts attackspeed (+50%) to nearby friendly units (max 5 units).|n|n|cffFFFF80Cooldown:|cffFFFF00 8 |rseconds"
+[h00O]
+Name="Chaos Builder"
+Hotkey=P
+Tip="|cffFFFF00Choose Chaos Legion|r"
+Ubertip="The Forces of Chaos summon horrible demons and use destructive magic to defeat their enemies. Chaos has no siege unit, but many strong units with chaos damage. Chaos has NO TOWER!"
+[h00L]
+Name="Flower of life"
+Hotkey=F
+Tip=Build |cffffcc00F|rarm
+Ubertip="Provides food, which increases the maximum number of units that can be trained."
+[h00M]
+Name="Oracle of Sirens"
+Hotkey=F
+Tip="Build Oracle of Sirens [|cffffcc00F|r]"
+Ubertip="|cffFFFF80Ability:|cffFFFF00 Control Enemy|r|nGains control of a random enemy unit.|n|n|cffFFFF80Cooldown:|cffFFFF00 16 |rseconds"
+[h00A]
+Name="Death Pit"
+Hotkey=D
+Tip="Build Death Pit [|cffffcc00D|r]"
+Ubertip="|cffFFFF80Ability:|cffFFFF00 Sudden Death|r|nKills a random enemy unit instantly.|n|n|cffFFFF80Cooldown:|cffFFFF00 15 |rseconds"
+[h00C]
+Name="Human Builder"
+Hotkey=P
+Tip="|cffFFD900Choose Human Alliance|r"
+Ubertip="Humans use many cheap units to overrun the enemy. They can use artillery to demolish the enemy base without having to attack it directly. This race has a basic defense tower."
+[h00B]
+Name="Fountain of Wonders"
+Hotkey=A
+Tip="Build Fountain of Wonders [|cffffcc00A|r]"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Faerie Dragon|n|n|cffFFAC00Faerie Dragon:|r|n|cffFFFF80Attack:|r Magic (|cffFFFF00350|r rng,|cffFFFF00 28|r dps)|n|cffFFFF80Armor:|r Light (|cffFFFF002|r)|n|cffFFFF80Hitpoints: |cffFFFF00460|r|n|cffFFFF80Abilities:|r|n-Flying|n-Heal (|cffFFFF00175 hp|r)|n-Feedback (|cffFFFF0025 mana|r)"
+[h00E]
+Name="Naga Builder"
+Hotkey=P
+Tip="|cffFFD900Choose Naga Faction|r"
+Ubertip="The Nagas have above average powerful units with a high hitpoint regeneration. In addition many expensive special buildings are available to them. But note that this race has NO TOWERS!"
+[h00D]
+Name="Dummy"
+Hotkey=P
+Tip=Train |cffffcc00P|rriest
+Ubertip="Supporting spellcaster. Can initially cast Heal, which increases the life of wounded units. Can also learn Dispel Magic and Inner Fire. |n|n|cffffcc00Attacks land and air units.|r"
+Casterupgradename=Initiate, Adept, Master
+Casterupgradetip="- Heal","- Heal|n- Dispel Magic","- Heal|n- Dispel Magic|n- Inner Fire"
+[h00G]
+Name="Coral Statue"
+Hotkey=Y
+Tip="Build Coral Statue [|cffffcc00Y|r]"
+Ubertip="|cffFFFF80Ability:|cffFFFF00 Restoration|r|nRestores hitpoints of nearby friendly units  and repairs nearby buildings by 2.5 hp/s in 650 range. Repair effect stacks."
+[h00F]
+Name="Spawning Grounds"
+Hotkey=R
+Tip="Build Spawning Grounds [|cffffcc00R|r]"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Naga Guardian|n|cffFFFF80Upgrades: |cffFFFF001|n|n|cffFFAC00Naga Guardian:|r|n|cffFFFF80Attack:|r Pierce (|cffFFFF00melee|r,|cffFFFF00 51|r dps)|n|cffFFFF80Armor:|r Heavy (|cffFFFF006|r)|n|cffFFFF80Hitpoints: |cffFFFF00650|r|n|cffFFFF80Abilities:|r|n-Cleaving Attack (|cffFFFF0035%|r)"
+[h009]
+Name="Dragon Nest"
+Hotkey=A
+Tip="Build Dragon Nest [|cffffcc00A|r]"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Red Dragon|n|n|cffFFAC00Red Dragon:|r|n|cffFFFF80Attack:|r Chaos (|cffFFFF00400|r rng,|cffFFFF00 50|r dps)|n|cffFFFF80Armor:|r Heavy (|cffFFFF003|r)|n|cffFFFF80Hitpoints: |cffFFFF00850|r|n|cffFFFF80Abilities:|r|n-Flying|n-Splash Damage"
+[h008]
+Name="Treasure Box"
+Hotkey=V
+Tip="Build Treasure Box [|cffffcc00V|r]"
+Ubertip="The first Treasure Box you build increases your income by 25% every other TB gives 15% less than the one before (i.e. the second gives 21.25% the third 18,06% and so on). |nWatch out, its fragile!"
+[h000]
+Name="Barracks"
+Hotkey=Q
+Tip="Build Barracks [|cffffcc00Q|r]"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Footman|n|cffFFFF80Upgrades: |cffFFFF001|n|n|cffFFAC00Footman:|r|n|cffFFFF80Attack:|r Normal (|cffFFFF00melee|r,|cffFFFF00 18|r dps)|n|cffFFFF80Armor:|r Heavy (|cffFFFF004|r)|n|cffFFFF80Hitpoints: |cffFFFF00260|r"
+[h001]
+Name="Artillery"
+Hotkey=F
+Tip="Build Artillery [|cffffcc00F|r]"
+Ubertip="|cffFFFF80Ability:|cffFFFF00 Artillery Fire|r|nFires artillery grenades at the enemy base. Deals 200-300 siege damage on impact. Not very accurate, but devastating if it hits. Deals major splash damage.|n|n|cffFFFF80AoE:|cffFFFF00 300|r|n|cffFFFF80Cooldown:|cffFFFF00 12 |rseconds"
+[h002]
+Name="Spider Egg Clutch"
+Hotkey=Q
+Tip="Build Spider Egg Clutch [|cffffcc00Q|r]"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Black Spider|n|cffFFFF80Upgrades: |cffFFFF002|n|n|cffFFAC00Black Spider |r|n|cffFFFF00Two Spiders get trained at once|r|n|cffFFFF80Attack:|r Pierce (|cffFFFF00melee|r,|cffFFFF00 30|r dps)|n|cffFFFF80Armor:|r Unarmored (|cffFFFF001|r)|n|cffFFFF80Hitpoints: |cffFFFF00240|r|n|cffFFFF80Abilities:|r|n-Slow Poison (|cffFFFF0010% slow, 5dmg/sec|r)"
+[h003]
+Name="Sniper Nest"
+Hotkey=W
+Tip="Build Sniper Nest [|cffffcc00W|r]"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Sniper|n|cffFFFF80Upgrades: |cffFFFF002|n|n|cffFFAC00Sniper:|r|n|cffFFFF80Attack:|r Pierce (|cffFFFF00500|r rng,|cffFFFF00 22|r dps)|n|cffFFFF80Armor:|r Medium (|cffFFFF000|r)|n|cffFFFF80Hitpoints: |cffFFFF00270|r|n|cffFFFF80Abilities:|r|n-Critical Strike (|cffFFFF0010%, 1.5x|r)"
+[h004]
+Name="Weapon Lab"
+Hotkey=E
+Tip="Build Weapon Lab [|cffffcc00E|r]"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Mortar|n|n|cffFFAC00Mortar:|r|n|cffFFFF80Attack:|r Siege (|cffFFFF001000|r rng,|cffFFFF00 21|r dps)|n|cffFFFF80Armor:|r Light (|cffFFFF000|r)|n|cffFFFF80Hitpoints: |cffFFFF00280|r|n|cffFFFF80Abilities:|r|n-Can't attack Air|n-Splash Damage"
+[h005]
+Name="Obelisk of Light"
+Hotkey=F
+Tip="Build Obelisk of Light [|cffffcc00F|r]"
+Ubertip="|cffFFFF80Ability:|cffFFFF00 Light Beam|r|nShoots beam of light at random visisble enemy unit dealing 140 damage.|n|n|cffFFFF80Cooldown:|cffFFFF00 5 |rseconds"
+[h006]
+Name="Watch Tower"
+Hotkey=Y
+Tip="Build Watch Tower [|cffffcc00Y|r]"
+Ubertip="|cffFFAC00Base Defense|r:|nThis is a tower to protect key positions.|n|n|cffFFFF80Attack Type:|cffFFFF00 Pierce|n|cffFFFF80Range:|cffFFFF00 950|n|cffFFFF80Average DPS:|cffFFFF00 90|r"
+[h007]
+Name="Demon Gate"
+Hotkey=S
+Tip="Build Demon Gate [|cffffcc00S|r]"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Infernal|n|n|cffFFAC00Infernal:|r|n|cffFFFF80Attack:|r Chaos (|cffFFFF00melee|r,|cffFFFF00 85|r dps)|n|cffFFFF80Armor:|r Heavy (|cffFFFF007|r)|n|cffFFFF80Hitpoints: |cffFFFF001600|r|n|cffFFFF80Abilities:|r|n-Can attack Air|n-Immolation (|cffFFFF0030dps|r)"
+[tec3]
+Name="Tech Level 3"
+Hotkey=P
+Tip=Train |cffffcc00P|rriest
+Ubertip="Supporting spellcaster. Can initially cast Heal, which increases the life of wounded units. Can also learn Dispel Magic and Inner Fire. |n|n|cffffcc00Attacks land and air units.|r"
+Casterupgradename=Initiate, Adept, Master
+Casterupgradetip="- Heal","- Heal|n- Dispel Magic","- Heal|n- Dispel Magic|n- Inner Fire"
+[tec2]
+Name="Tech Level 2"
+Hotkey=P
+Tip=Train |cffffcc00P|rriest
+Ubertip="Supporting spellcaster. Can initially cast Heal, which increases the life of wounded units. Can also learn Dispel Magic and Inner Fire. |n|n|cffffcc00Attacks land and air units.|r"
+Casterupgradename=Initiate, Adept, Master
+Casterupgradetip="- Heal","- Heal|n- Dispel Magic","- Heal|n- Dispel Magic|n- Inner Fire"
+[tec1]
+Name="Tech Level 1"
+Hotkey=P
+Tip=Train |cffffcc00P|rriest
+Ubertip="Supporting spellcaster. Can initially cast Heal, which increases the life of wounded units. Can also learn Dispel Magic and Inner Fire. |n|n|cffffcc00Attacks land and air units.|r"
+Casterupgradename=Initiate, Adept, Master
+Casterupgradetip="- Heal","- Heal|n- Dispel Magic","- Heal|n- Dispel Magic|n- Inner Fire"
+[h06C]
+Name="Arch"
+Hotkey=F
+Tip=Build |cffffcc00F|rarm
+Ubertip="Provides food, which increases the maximum number of units that can be trained."
+[h06D]
+Name="Kamikaze factory"
+Hotkey=E
+Tip="Upgrade to Kamikaze factory [|cffffcc00E|r]"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Kamikaze Goblin|n|n|cffFFAC00Kamikaze Goblin:|r|n|cffFFFF80Armor:|r Unarmored (|cffFFFF000|r)|n|cffFFFF80Hitpoints: |cffFFFF00200|r|n|cffFFFF80Abilities:|r|n-Suicide (|cffFFFF00350 dmg|r)|n-Detonate (|cffFFFF00150dmg|r)|n-Flying."
+[h06E]
+Name="Shamanic Hut"
+Hotkey=W
+Tip="Upgrade to Shamanic Hut [|cffffcc00W|r]"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Stout Shaman|n|n|cffFFAC00Stout  Shaman:|r|n|cffFFFF80Attack:|r Magic (|cffFFFF00350|r rng,|cffFFFF00 34|r dps)|n|cffFFFF80Armor:|r Unarmored (|cffFFFF002|r)|n|cffFFFF80Hitpoints: |cffFFFF00420|r|n|cffFFFF80Abilities:|r|n-Shaman's Buff (|cffFFFF00+5armor, +45%dmg|r)|n-Spell resistance: 25%"
+[h06F]
+Name="Siege Tank"
+Hotkey=G
+Tip="Trains Siege Tank"
+Ubertip="|n|cffFFFF80Attack:|r Siege (|cffFFFF001150|r rng,|cffFFFF00 30|r dps)|n|cffFFFF80Armor:|r Normal (|cffFFFF005|r)|n|cffFFFF80Hitpoints: |cffFFFF00500|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Ground Only|r|nThis unit can't attack flying enemies|n|n|cff80FF00Splash Damage|r|nThis unit's attacks hit all units in a 180 AoE around its target. Units farther away from the target receive less damage|n|n|cff80FF00Medium Tank Armor|r|nReduces all attack damage dealt to this unit by 18. Cannot reduce below 5 damage."
+[h06G]
+Name="Siege Tank Factory"
+Hotkey=E
+Tip="Upgrade to Siege Tank Factory [|cffffcc00E|r]"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Siege  Tank|n|n|cffFFAC00Siege Tank:|r|n|cffFFFF80Attack:|r Siege (|cffFFFF001250|r rng,|cffFFFF00 30|r dps)|n|cffFFFF80Armor:|r Medium (|cffFFFF005|r)|n|cffFFFF80Hitpoints: |cffFFFF00500|r|n|cffFFFF80Abilities:|r|n-Can't attack Air|n-Splash Damage|n-Medium Tank Armor (|cffFFFF00-18 dmg|r)|n|n|cffFF0000You must turn off unit production before you can upgrade!|r"
+[h06H]
+Name="Guard Tower"
+Hotkey=Z
+Tip="Build Guard Tower[|cffffcc00Z|r]"
+Ubertip="|cffFFAC00Base Defense|r:|nThis is a tower to protect key positions.|n|n|cffFFFF80Attack Type:|cffFFFF00 Pierce|n|cffFFFF80Range:|cffFFFF00 800|n|cffFFFF80Average DPS:|cffFFFF00 95|r"
+[h06I]
+Name="Sacred Peyote"
+Hotkey=D
+Tip="Build Sacred Peyote [|cffffcc00D|r]"
+Ubertip="|cffFFFF80Ability:|cffFFFF00 Peyote potion|r|nPoisons random living enemy with a halucinogenic spores, sending it to dreams for 7s (dealing 7dps), with chance of 25% unit can became hostile to both teams.|n|n|cffFFFF80Cooldown:|cffFFFF0010|rseconds"
+[h06L]
+Name="Altar of Quicksands"
+Hotkey=F
+Tip="Build Altar of Sands[|cffffcc00F|r]"
+Ubertip="|cffFFFF80Ability:|cffFFFF00Quicksands|r|n Creates quicksands under random enemy unit. Quicksands last 12s, affected enemies move and attack slower, unit in the middle may be drowned.|n|n|cffFFFF80Cooldown:|cffFFFF00 12 |rseconds"
+[h06M]
+Name="Temple of Storm"
+Hotkey=X
+Tip="Build Temple of Storm[|cffffcc00X|r]"
+Ubertip="|cffFFFF80Ability:|cffFFFF00 Call of Storm|r|n Conjures great Sandstorm:|n-Enemies move and attack slower (-50%), miss 75% of their attacks|n-Flows of sand do 15 dmg\s to enemies.|nStorm lasts 8s, cooldown 45s"
+[h06N]
+Name="Desert Builder"
+Hotkey=P
+Tip="|cffFFD900Choose Desert Dwellers|r"
+Ubertip="The Dwellers of Desert use rare and mighty creatures and misterious rituals to confuse and overcome its enemies."
+[h03H]
+Name="AltarOfSand: Cloud"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h068]
+Name="Castle gate"
+Hotkey=U
+Tip=|cffffcc00U|rpgrade to Castle
+Ubertip="Upgrade to Castle to enable the production of additional types of structures and units."
+[h06A]
+Name="Castle gate"
+Hotkey=U
+Tip=|cffffcc00U|rpgrade to Castle
+Ubertip="Upgrade to Castle to enable the production of additional types of structures and units."
+[h06O]
+Name="Sanctum of Greater Decay"
+Hotkey=X
+Tip="Upgrade to Sanctum of Greater Decay [|cffffcc00X|r]"
+Ubertip="|cffFFFF80Ability:|cffFFFF00 Great Decay|r|nDeals 10 damage per second to all non mechanical enemy units. Does not stack, so don't build twice!"
+[h06Z]
+Name="Sanctum of Greatest Decay"
+Hotkey=X
+Tip="Upgrade to Sanctum of Greatest Decay [|cffffcc00X|r]"
+Ubertip="|cffFFFF80Ability:|cffFFFF00 Greatest Decay|r|nDeals 12 dps to non mechanical and 3 dps to mechanical enemy units. Does not stack, so don't build twice!"
+[h071]
+Name="Matriarchs"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h072]
+Name="Holy Altar"
+Hotkey=X
+Tip="Build Holy Altar [|cffffcc00X|r]"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Holy Warrior|n|n|cffFFAC00Holy Warrior:|r|n|cffFFFF80Attack:|r Hero (|cffFFFF00melee|r,|cffFFFF00 87|r dps)|n|cffFFFF80Armor:|r Heavy (|cffFFFF0012|r)|n|cffFFFF80Hitpoints: |cffFFFF001400|r|n|cffFFFF80Abilities:|r|n-Cleaving Attack (|cffFFFF0040%|r)|n-Prayer|n-Protection Aura(|cffFFFF00+7|r)|n-Spell-resistant|n|n|cffFF0000You must turn off unit production before you can upgrade!|r"
+[h074]
+Name="Holy Warrior"
+Hotkey=Q
+Tip="Holy Warrior"
+Ubertip="|n|cffFFFF80Attack:|r Hero (|cffFFFF00melee|r,|cffFFFF00 87|r dps)|n|cffFFFF80Armor:|r Heavy (|cffFFFF0012|r)|n|cffFFFF80Hitpoints: |cffFFFF001400|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Cleaving Attack|r|n Deals 40% of the hit damage to nearby enemies|n|n|cff80FF00Prayer|r|nBlesses Warior and nearby units, can return non-legendary allied units back to life (heals 50hp\mp, adds 30% damage and 3 armor for 8s, resurrects 3-5 units).|n|cff8080FFCooldown: |r20s|n|n|cff80FF00Protection Aura|r|nIncreases the armor of allies in 450 range by 7|n|n|cff80FF00Spell-resistance|r|nHas 50% resistance to negative spells"
+[h075]
+Name="Dreadnought"
+Hotkey=Q
+Tip="Trains Dreadnought"
+Ubertip="|n|cffFFFF80Attack:|r Normal (|cffFFFF00400|r rng,|cffFFFF00 62|r dps)|n|cffFFFF80Armor:|r Heavy (|cffFFFF0012|r)|n|cffFFFF80Hitpoints: |cffFFFF00800|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Ground Only|r|nThis unit can't attack flying enemies|n|n|cff80FF00Heavy Tank Armor|r|nReduces all attack damage dealt to this unit by 24. Cannot reduce below 5 damage."
+[h076]
+Name="Primordial Nest"
+Hotkey=A
+Tip="Upgrade to Primordial Dragon's Altar [|cffffcc00A|r]"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Primordial Azure Dragon|n|n|cffFFAC00Primordial Azure Dragon:|r|n|cffFFFF80Attack:|r Chaos (|cffFFFF00400|r rng,|cffFFFF00 70|r dps)|n|cffFFFF80Armor:|r Heavy (|cffFFFF006|r)|n|cffFFFF80Hitpoints: |cffFFFF001400|r|n|cffFFFF80Abilities:|r|n-Flying|n-Splash Damage|n-Chilling aura|n-Freezing breath|n-Legendary spell resistance(50%)|n|cffFF0000You must turn off unit production before you can upgrade!|r"
+[h077]
+Name="Dreadnought Factory"
+Hotkey=E
+Tip="Upgrade to Dreadnought Factory [|cffffcc00E|r]"
+Ubertip="|cffFF8204Legendary Building|r|n|cffFFFF80Trains: |cffFFFF00DreadnoughtTank|n|n|cffFFAC00Dreadnought Tank:|r|n|cffFFFF80Attack:|r Chaos (|cffFFFF00550|r rng,|cffFFFF00 50|r dps)|n|cffFFFF80Armor:|r Heavy (|cffFFFF008|r)|n|cffFFFF80Hitpoints: |cffFFFF00700|r|n|cffFFFF80Abilities:|r|n-Can't attack Air|n-Splash Damage|n-Medium Tank Armor (|cffFFFF00-18 dmg|r)|n|n|cffFF0000You must turn off unit production before you can upgrade!|r"

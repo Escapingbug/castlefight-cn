@@ -1,0 +1,721 @@
+[Avng]
+Name=Spirit of Vengeance
+Tip=Spirit of |cffffcc00V|rengeance
+Ubertip="Raises an invulnerable feral spirit from a corpse. Lasts <Avng,Dur1> seconds or until the avatar dies."
+Hotkey=V
+Untip="|cffc3dbffRight-click to activate auto-casting."
+Unubertip="|cffc3dbffRight-click to deactivate auto-casting."
+[Bvng]
+Bufftip=Spirit of Vengeance
+Buffubertip="Vengeance was here."
+[Amfl]
+Name=Mana Flare
+Tip=Mana |cffffcc00F|rlare
+Untip=Stop Mana |cffffcc00F|rlare
+Ubertip="Causes the Faerie Dragon to channel negative magical energies that damage nearby enemies when they cast spells. Also increases the Faerie Dragon's armor by <Amfl,DataE1>. |nLasts <Amfl,Dur1> seconds."
+Unubertip="Stops channeling Mana Flare."
+Hotkey=F
+Unhotkey=F
+[Bmfl]
+Bufftip=Mana Flare
+Buffubertip="This unit has Mana Flare on it; nearby enemy units that cast spells will take damage."
+[Bmfa]
+Bufftip=Mana Flare
+Buffubertip="This unit has Mana Flare on it; nearby enemy units that cast spells will take damage."
+[Apsh]
+Name=Phase Shift
+Tip=Phas|cffffcc00e|r Shift
+Ubertip="Causes this unit to shift out of existence whenever it takes damage, temporarily avoiding any further damage. |nLasts <Apsh,Dur1> second."
+Untip="|cffc3dbff|cffc3dbffRight-click to activate auto-casting.|r|r"
+Unubertip="|cffc3dbffRight-click to deactivate auto-casting.|r"
+Hotkey=E
+Unhotkey=E
+[Bpsh]
+Bufftip=Phase Shift
+Buffubertip="This unit has shifted out of existence and cannot be harmed temporarily."
+[Aetl]
+Name=Ethereal
+Tip=Ethereal
+Ubertip="Ethereal creatures cannot attack, but can cast spells and will take extra damage from Magic attacks and spells."
+Hotkey=E
+[Asp1]
+Name=Sphere
+[Agra]
+Name=War Club
+Tip=|cffffcc00W|rar Club
+Ubertip="Picks up a tree to give the Mountain Giant Siege damage, and increased attack range. |nLasts for <Agra,DataE1> strikes."
+Hotkey=W
+[Assk]
+Name=Hardened Skin
+Tip=Hardened Skin
+Ubertip="Reduces all attacks on the Mountain Giant by <Assk,DataC1> damage. Attacks cannot be reduced below <Assk,DataB1> damage."
+Hotkey=K
+[Arsk]
+Name=Resistant Skin
+Tip=Resistant Skin
+Ubertip="Reduces the duration of negative spells and renders the Mountain Giant immune to certain spells."
+Hotkey=E
+[Atau]
+Name=Taunt
+Tip=|cffffcc00T|raunt
+Ubertip="The closest <Atau,DataA1> enemies are forced to attack this unit."
+Hotkey=T
+[Btau]
+Bufftip=Taunt
+Buffubertip="This unit has been taunted and is now immune."
+[AEbl]
+Name=Blink
+Tip=|cffffcc00B|rlink - [|cffffcc00Level 1|r],|cffffcc00B|rlink - [|cffffcc00Level 2|r],|cffffcc00B|rlink - [|cffffcc00Level 3|r]
+Ubertip="Teleports the Warden a short distance, allowing her to move in and out of combat.","Teleports the Warden a short distance, allowing her to move in and out of combat.","Teleports the Warden a short distance, allowing her to move in and out of combat."
+Hotkey=B
+Researchtip="Learn |cffffcc00B|rlink - [|cffffcc00Level %d|r]"
+Researchubertip="Short distance teleportation that allows the Warden to move in and out of combat. |n|n|cffffcc00Level 1|r - <AEbl,Cool1> second cooldown, <AEbl,Cost1> mana. |n|cffffcc00Level 2|r - <AEbl,Cool2> second cooldown, <AEbl,Cost2> mana. |n|cffffcc00Level 3|r - <AEbl,Cool3> second cooldown, <AEbl,Cost3> mana."
+Researchhotkey=B
+[AEfk]
+Name=Fan of Knives
+Tip=|cffffcc00F|ran of Knives - [|cffffcc00Level 1|r],|cffffcc00F|ran of Knives - [|cffffcc00Level 2|r],|cffffcc00F|ran of Knives - [|cffffcc00Level 3|r]
+Ubertip="The Warden hurls a flurry of knives, damaging nearby enemies. Each knife does <AEfk,DataA1> damage.","The Warden hurls a flurry of knives, damaging nearby enemies. Each knife does <AEfk,DataA2> damage.","The Warden hurls a flurry of knives damaging, nearby enemies. Each knife does <AEfk,DataA3> damage."
+Hotkey=F
+Researchtip="Learn |cffffcc00F|ran of Knives - [|cffffcc00Level %d|r]"
+Researchubertip="The Warden hurls a flurry of knives, damaging nearby enemies. |n|n|cffffcc00Level 1|r - <AEfk,DataA1> damage per target. |n|cffffcc00Level 2|r - <AEfk,DataA2> damage per target. |n|cffffcc00Level 3|r - <AEfk,DataA3> damage per target."
+Researchhotkey=F
+[AEsh]
+Name=Shadow Strike
+Tip=Sha|cffffcc00d|row Strike - [|cffffcc00Level 1|r],Sha|cffffcc00d|row Strike - [|cffffcc00Level 2|r],Sha|cffffcc00d|row Strike - [|cffffcc00Level 3|r]
+Ubertip="Hurls a poisoned dagger at a target enemy unit, dealing <AEsh,DataE1> initial damage, and <AEsh,DataA1> damage every <AEsh,Cast1> seconds for <AEsh,Dur1> seconds. The poison slows the movement speed of the targeted unit for a short duration.","Hurls a poisoned dagger at a target enemy unit, dealing <AEsh,DataE2> initial damage, and <AEsh,DataA2> damage every <AEsh,Cast2> seconds for <AEsh,Dur2> seconds. The poison slows the movement speed of the targeted unit for a short duration.","Hurls a poisoned dagger at a target enemy unit, dealing <AEsh,DataE3> initial damage, and <AEsh,DataA3> damage every <AEsh,Cast3> seconds for <AEsh,Dur3> seconds. The poison slows the movement speed of the targeted unit for a short duration."
+Hotkey=D
+Researchtip="Learn Sha|cffffcc00d|row Strike - [|cffffcc00Level %d|r]"
+Researchubertip="Hurls a poisoned dagger which deals large initial damage, and then deals damage over time. The poisoned unit has its movement speed slowed for a short duration. |n|n|cffffcc00Level 1|r - <AEsh,DataE1> strike damage, <AEsh,DataA1> duration damage. |n|cffffcc00Level 2|r - <AEsh,DataE2> strike damage, <AEsh,DataA2> duration damage. |n|cffffcc00Level 3|r - <AEsh,DataE3> strike damage, <AEsh,DataA3> duration damage."
+Researchhotkey=D
+[BEsh]
+Bufftip=Shadow Strike
+Buffubertip="This unit was hit by Shadow Strike; it will take damage over time and move more slowly."
+[BEsi]
+Bufftip=Shadow Strike
+Buffubertip="This unit was hit by Shadow Strike; it will take damage over time and move more slowly."
+[AEsv]
+Name=Vengeance
+Tip=|cffffcc00V|rengeance
+Ubertip="Creates a powerful avatar that summons invulnerable spirits from nearby corpses to attack your enemies. When the Avatar of Vengeance dies, the spirits vanish. |nLasts <AEsv,Dur1> seconds."
+Hotkey=V
+Researchtip="Learn |cffffcc00V|rengeance"
+Researchubertip="Creates a powerful avatar that summons invulnerable spirits from nearby corpses to attack your enemies. When the Avatar of Vengeance dies, the spirits vanish. |nLasts <AEsv,Dur1> seconds."
+Researchhotkey=V
+[BEsv]
+Bufftip=Vengeance
+Buffubertip="Vengeance is angry."
+[Slo2]
+Name=Load Wisp
+Tip=|cffffcc00L|road Wisp
+Ubertip="Loads a targeted friendly Wisp."
+Hotkey=L
+[Amgl]
+Name=Moon Glaive
+Tip=Moon Glaive
+Ubertip="Gives the Huntress the ability to strike additional units with her bouncing glaive attacks."
+[Aspo]
+Name=Slow Poison
+Tip=Slow Poison
+Ubertip="A poison attack that deals <Aspo,DataA1> damage per second, and slows the target enemy's movement by <Aspo,DataB1,%>% and attack by <Aspo,DataC1,%>% for <Aspo,Dur1> seconds."
+[Bspo]
+Bufftip=Slow Poison
+Buffubertip="This unit was hit by Slow Poison; its movement speed and attack rate have been reduced, and it will take damage over time."
+[Bssd]
+Bufftip=Slow Poison
+Buffubertip="This unit was hit by Slow Poison; its movement speed and attack rate have been reduced, and it will take damage over time."
+[Ashm]
+Name=Shadow Meld
+Tip=H|cffffcc00i|rde
+Ubertip="Stops the unit from auto-acquiring enemies, allowing it to Shadowmeld and remain unseen at night."
+Hotkey=I
+[Aesn]
+Name=Sentinel
+Tip=S|cffffcc00e|rntinel
+Ubertip="Send an owl to a nearby tree to reveal the area around it. |nCan see invisible units."
+Hotkey=E
+[Aeat]
+Name=Eat Tree
+Tip=|cffffcc00E|rat Tree
+Ubertip="Consume a tree to restore <Aeat,DataC1> hit points over <Aeat,Dur1> seconds."
+Hotkey=E
+[Ambt]
+Name=Replenish Mana and Life
+Tip=|cffffcc00R|replenish Mana and Life
+Ubertip="Replenish the life and mana of a target friendly unit."
+Untip="|cffc3dbff|cffc3dbffRight-click to activate auto-casting.|r|r"
+Unubertip="|cffc3dbffRight-click to deactivate auto-casting.|r"
+Hotkey=R
+Unhotkey=R
+Order=replenish
+[Awha]
+Name=Gather
+Tip=|cffffcc00G|rather
+Ubertip="Mines gold from Entangled Gold Mines and harvests lumber from trees."
+Hotkey=G
+[Adtn]
+Name=Detonate
+Tip=|cffffcc00D|retonate
+Ubertip="Destroys the Wisp, dispelling all magical buffs and draining <Adtn,DataA1> mana from each unit in an area around the Wisp. |n|cffffcc00Deals <Adtn,DataB1> damage to summoned units.|r"
+Hotkey=D
+[Awhe]
+Name=Heal
+Tip=Hea|cffffcc00l|r
+Ubertip="Heals nearby friendly wounded units."
+Untip="|cffc3dbffRight-click to activate auto-casting.|r"
+Unubertip="|cffc3dbffRight-click to deactivate auto-casting.|r"
+Hotkey=L
+Unhotkey=L
+[Aent]
+Name=Entangle Gold Mine
+Tip=Entangle |cffffcc00G|rold Mine
+Ubertip="Entangles the gold mine, allowing Wisps to enter and mine the gold."
+Hotkey=G
+[Aenc]
+Name=Load
+Tip=|cffffcc00L|road
+Ubertip="Orders a Wisp to enter the gold mine."
+Hotkey=L
+Untip=|cffffcc00U|rnload All
+Unubertip="Removes all Wisps from the gold mine."
+Unhotkey=U
+[Aroo]
+Name=Root
+Tip=|cffffcc00R|root
+Ubertip="Burrows the Ancient's roots into the ground, rendering it immobile, but allowing it to build units. For the Ancient Protector, this allows it to hurl enormous rocks through the air to damage enemy units. Also gives the Ancient Fortified armor."
+Hotkey=R
+Untip=Up|cffffcc00r|root
+Unubertip="Allows the Ancient to pull itself up out of the ground so that it can move. Also gives the Ancient Heavy armor."
+Unhotkey=R
+[Abrf]
+Name=Bear Form
+Tip=Bear |cffffcc00F|rorm
+Ubertip="Transforms the Druid into a bear, slowing mana regeneration, but making him an excellent warrior."
+Hotkey=F
+Untip=Night Elf |cffffcc00F|rorm
+Unubertip="Transforms the Druid into a Night Elf."
+Unhotkey=F
+[Sbr2]
+[Arav]
+Name=Storm Crow Form
+Tip=Storm Crow |cffffcc00F|rorm
+Ubertip="Transforms the Druid into a storm crow, giving him the ability to fly."
+Hotkey=F
+Untip=Night Elf |cffffcc00F|rorm
+Unubertip="Transforms the Druid into a Night Elf."
+Unhotkey=F
+[Sra2]
+[Aadm]
+Name=Abolish Magic
+Tip=A|cffffcc00b|rolish Magic
+Ubertip="Dispels positive buffs from enemy units, and negative buffs from friendly units. |n|cffffcc00Deals <Aadm,DataB1> damage to summoned units.|r"
+Untip="|cffc3dbffRight-click to activate auto-casting.|r"
+Unubertip="|cffc3dbffRight-click to deactivate auto-casting.|r"
+Hotkey=B
+Unhotkey=B
+[Amim]
+Name=Spell Immunity
+Tip=Spell Immunity
+Ubertip="Renders this unit immune to all spells."
+[Ault]
+Name=Ultravision
+[Aco2]
+Name=Mount Hippogryph
+Tip=Mo|cffffcc00u|rnt Hippogryph
+Ubertip="Mounts a Hippogryph so that the Archer can attack from the air. |n|n|cffffcc00Attacks land and air units.|r"
+Hotkey=U
+Order=coupletarget
+[Aco3]
+Name=Pick up Archer
+Tip=Pick |cffffcc00u|rp Archer
+Ubertip="Picks up an Archer so that the Archer can attack from the air. |n|n|cffffcc00Attacks land and air units.|r"
+Hotkey=U
+Order=coupletarget
+[Adec]
+Name=Dismount
+Tip=Dismo|cffffcc00u|rnt Archer & Hippogryph
+Ubertip="Dismounts the Archer from the Hippogryph."
+Hotkey=U
+[Acor]
+Name=Corrosive Breath
+Tip=Corrosive Breath
+Ubertip="Hurls a ball of corrosive bile that is effective against buildings."
+[Bcor]
+Bufftip=Corrosive Breath
+Buffubertip="This building was hit by Corrosive Breath; it will take damage over time."
+[AEmb]
+Name=Mana Burn
+Tip=Mana |cffffcc00B|rurn - [|cffffcc00Level 1|r],Mana |cffffcc00B|rurn - [|cffffcc00Level 2|r],Mana |cffffcc00B|rurn - [|cffffcc00Level 3|r]
+Ubertip="Sends a bolt of negative energy that burns up to <AEmb,DataA1> points of a target enemy unit's mana. The mana combusts, dealing damage equal to the amount of mana burned.","Sends a bolt of negative energy that burns up to <AEmb,DataA2> points of a target enemy unit's mana. The mana combusts, dealing damage equal to the amount of mana burned.","Sends a bolt of negative energy that burns up to <AEmb,DataA3> points of a target enemy unit's mana. The mana combusts, dealing damage equal to the amount of mana burned."
+Hotkey=B
+Researchtip="Learn Mana |cffffcc00B|rurn - [|cffffcc00Level %d|r]"
+Researchubertip="Sends a bolt of negative energy that burns a target enemy unit's mana. Burned mana combusts, dealing damage to the target equal to the amount of mana burned. |n|n|cffffcc00Level 1|r - Burns up to <AEmb,DataA1> mana. |n|cffffcc00Level 2|r - Burns up to <AEmb,DataA2> mana. |n|cffffcc00Level 3|r - Burns up to <AEmb,DataA3> mana."
+Researchhotkey=B
+[AEim]
+Name=Immolation
+Tip=Activate Immo|cffffcc00l|ration - [|cffffcc00Level 1|r],Activate Immo|cffffcc00l|ration - [|cffffcc00Level 2|r],Activate Immo|cffffcc00l|ration - [|cffffcc00Level 3|r]
+Ubertip="Activate Immolation to engulf this unit in flames, causing <AEim,DataA1> damage per second to nearby enemy land units. |nDrains mana until deactivated.","Activate Immolation to engulf this unit in flames, causing <AEim,DataA2> damage per second to nearby enemy land units. |nDrains mana until deactivated.","Activate Immolation to engulf this unit in flames, causing <AEim,DataA3> damage per second to nearby enemy land units. |nDrains mana until deactivated."
+Unubertip="Deactivate Immolation to stop draining mana."
+Hotkey=L
+Untip=Deactivate Immo|cffffcc00l|ration
+Unhotkey=L
+Researchtip="Learn Immo|cffffcc00l|ration - [|cffffcc00Level %d|r]"
+Researchubertip="Engulfs the Demon Hunter in flames, causing damage to nearby enemy land units. |nDrains mana until deactivated. |n|n|cffffcc00Level 1|r - <AEim,DataA1> damage per second. |n|cffffcc00Level 2|r - <AEim,DataA2> damage per second. |n|cffffcc00Level 3|r - <AEim,DataA3> damage per second."
+Researchhotkey=L
+[BEim]
+Bufftip=Immolation
+Buffubertip="This unit has Immolation; nearby enemy ground units will take damage over time."
+[AEev]
+Name=Evasion
+Tip=Evasion - [|cffffcc00Level 1|r],Evasion - [|cffffcc00Level 2|r],Evasion - [|cffffcc00Level 3|r]
+Ubertip="Gives a <AEev,DataA1,%>% chance to avoid an attack.","Gives a <AEev,DataA2,%>% chance to avoid an attack.","Gives a <AEev,DataA3,%>% chance to avoid an attack."
+Researchtip="Learn |cffffcc00E|rvasion - [|cffffcc00Level %d|r]"
+Researchubertip="Gives a percent chance to avoid attacks. |n|n|cffffcc00Level 1|r - <AEev,DataA1,%>% chance that an opponent misses. |n|cffffcc00Level 2|r - <AEev,DataA2,%>% chance that an opponent misses. |n|cffffcc00Level 3|r - <AEev,DataA3,%>% chance that an opponent misses."
+Researchhotkey=E
+[AEme]
+Name=Metamorphosis
+Tip=Me|cffffcc00t|ramorphosis
+Ubertip="Transforms the Demon Hunter into a powerful Demon with a ranged attack and <AEme,DataE1> bonus hit points. |nLasts <AEme,HeroDur1> seconds."
+Hotkey=T
+Researchtip=Learn Me|cffffcc00t|ramorphosis
+Researchubertip="Transforms the Demon Hunter into a powerful Demon with a ranged attack and <AEme,DataE1> bonus hit points. |nLasts <AEme,HeroDur1> seconds."
+Researchhotkey=T
+Globalmessage=
+Globalsound=
+[BEme]
+Bufftip=Metamorphosis
+Buffubertip="Transforms the Demon Hunter into a powerful Demon with a ranged attack."
+[AEer]
+Name=Entangling Roots
+Tip=|cffffcc00E|rntangling Roots - [|cffffcc00Level 1|r],|cffffcc00E|rntangling Roots - [|cffffcc00Level 2|r],|cffffcc00E|rntangling Roots - [|cffffcc00Level 3|r]
+Ubertip="Causes roots to burst from the ground, immobilizing and disarming a target enemy unit for <AEer,Dur1> seconds, and dealing <AEer,DataA1> damage per second.","Causes roots to burst from the ground, immobilizing and disarming a target enemy unit for <AEer,Dur2> seconds, and dealing <AEer,DataA2> damage per second.","Causes roots to burst from the ground, immobilizing and disarming a target enemy unit for <AEer,Dur3> seconds, and dealing <AEer,DataA3> damage per second."
+Hotkey=E
+Researchtip="Learn |cffffcc00E|rntangling Roots - [|cffffcc00Level %d|r]"
+Researchubertip="Causes roots to burst from the ground, immobilizing, disarming and damaging a target enemy temporarily. |n|n|cffffcc00Level 1|r - <AEer,DataA1> damage per second for <AEer,Dur1> seconds. |n|cffffcc00Level 2|r - <AEer,DataA2> damage per second for <AEer,Dur2> seconds. |n|cffffcc00Level 3|r - <AEer,DataA3> damage per second for <AEer,Dur3> seconds."
+Researchhotkey=E
+[BEer]
+Bufftip=Entangling Roots
+Buffubertip="This unit has been hit by Entangling Roots; it cannot move and takes damage over time."
+[AEfn]
+Name=Force of Nature
+Tip=|cffffcc00F|rorce of Nature - [|cffffcc00Level 1|r],|cffffcc00F|rorce of Nature - [|cffffcc00Level 2|r],|cffffcc00F|rorce of Nature - [|cffffcc00Level 3|r]
+Ubertip="Converts a small area of trees into <AEfn,DataA1> Treants. Treants have <efon,realHP> hit points and deal <efon,mindmg1> - <efon,maxdmg1> damage. Can learn Nature's Blessing. |nLasts <AEfn,Dur1> seconds. |n|n|cffffcc00Attacks land units.|r","Converts a large area of trees into <AEfn,DataA2> Treants. Treants have <efon,realHP> hit points and deal <efon,mindmg1> - <efon,maxdmg1> damage. Can learn Nature's Blessing. |nLasts <AEfn,Dur2> seconds. |n|n|cffffcc00Attacks land units.|r","Converts a very large area of trees into <AEfn,DataA3> Treants. Treants have <efon,realHP> hit points and deal <efon,mindmg1> - <efon,maxdmg1> damage. Can learn Nature's Blessing. |nLasts <AEfn,Dur3> seconds. |n|n|cffffcc00Attacks land units.|r"
+Hotkey=F
+Researchtip="Learn |cffffcc00F|rorce of Nature - [|cffffcc00Level %d|r]"
+Researchubertip="Converts an area of trees into Treants. Treants have <efon,realHP> hit points and deal <efon,mindmg1> - <efon,maxdmg1> damage. Can learn Nature's Blessing. |n|n|cffffcc00Attacks land units.|r |n|n|cffffcc00Level 1|r - Raises <AEfn,DataA1> Treants for <AEfn,Dur1> seconds. |n|cffffcc00Level 2|r - Raises <AEfn,DataA2> Treants for <AEfn,Dur2> seconds. |n|cffffcc00Level 3|r - Raises <AEfn,DataA3> Treants for <AEfn,Dur3> seconds."
+Researchhotkey=F
+[BEfn]
+Bufftip=Force of Nature
+Buffubertip="Summoned units take damage from dispels."
+[AEah]
+Name=Thorns Aura
+Tip=Thorns Aura - [|cffffcc00Level 1|r],Thorns Aura - [|cffffcc00Level 2|r],Thorns Aura - [|cffffcc00Level 3|r]
+Ubertip="An aura that gives friendly nearby units a damage shield, which deals <AEah,DataA1,%>% of an enemy unit's melee attack damage back to it.","An aura that gives friendly nearby units a damage shield, which deals <AEah,DataA2,%>% of an enemy unit's melee attack damage back to it.","An aura that gives friendly nearby units a damage shield, which deals <AEah,DataA3,%>% of an enemy unit's melee attack damage back to it."
+Researchtip="Learn Tho|cffffcc00r|rns Aura - [|cffffcc00Level %d|r]"
+Researchubertip="An aura that gives friendly nearby units a damage shield, which returns a percentage of a melee attacker's damage back to it. |n|n|cffffcc00Level 1|r - Returns <AEah,DataA1,%>% damage. |n|cffffcc00Level 2|r - Returns <AEah,DataA2,%>% damage. |n|cffffcc00Level 3|r - Returns <AEah,DataA3,%>% damage."
+Researchhotkey=R
+[BEah]
+Bufftip=Thorns Aura
+Buffubertip="This unit is under the effects of Thorns Aura; melee units that attack it will take damage."
+[AEtq]
+Name=Tranquility
+Tip=|cffffcc00T|rranquility
+Ubertip="Causes rains of healing energy to pour down in a large area, healing friendly allied units for <AEtq,DataA1> hit points per second. |nLasts <AEtq,Dur1> seconds."
+Hotkey=T
+Researchtip="Learn |cffffcc00T|rranquility"
+Researchubertip="Causes rains of healing energy to pour down in a large area, healing friendly allied units for <AEtq,DataA1> hit points per second. |nLasts <AEtq,Dur1> seconds."
+Researchhotkey=T
+Globalmessage=
+Globalsound=
+[AEst]
+Name=Scout
+Tip=S|cffffcc00c|rout - [|cffffcc00Level 1|r],S|cffffcc00c|rout - [|cffffcc00Level 2|r],S|cffffcc00c|rout - [|cffffcc00Level 3|r]
+Ubertip="Summons an Owl Scout, which can be used to scout.|nCan see invisible units. |nLasts <AEst,Dur1> seconds.","Summons a fast Owl Scout, which can be used to scout.|nCan see invisible units. |nLasts <AEst,Dur2> seconds.","Summons a very fast Owl Scout, which can be used to scout.|nCan see invisible units. |nLasts <AEst,Dur3> seconds."
+Hotkey=C
+Researchtip="Learn S|cffffcc00c|rout - [|cffffcc00Level %d|r]"
+Researchubertip="Temporarily summons an Owl Scout, which can be used to scout the map. |nCan see invisible units. |n|n|cffffcc00Level 1|r - Summons an Owl Scout for <AEst,Cost1> mana. |n|cffffcc00Level 2|r - Summons a better Owl Scout for <AEst,Cost2> mana. |n|cffffcc00Level 3|r - Summons the best Owl Scout for <AEst,Cost3> mana."
+Researchhotkey=C
+[BEst]
+Bufftip=Scout
+Buffubertip="Summoned units take damage from dispels."
+[AHfa]
+Name=Searing Arrows
+Tip=Sea|cffffcc00r|ring Arrows - [|cffffcc00Level 1|r],Sea|cffffcc00r|ring Arrows - [|cffffcc00Level 2|r],Sea|cffffcc00r|ring Arrows - [|cffffcc00Level 3|r]
+Ubertip="Adds <AHfa,DataA1> bonus fire damage to an attack against enemies, but drains mana with each shot fired.","Adds <AHfa,DataA2> bonus fire damage to an attack, but drains mana with each shot fired.","Adds <AHfa,DataA3> bonus fire damage to an attack, but drains mana with each shot fired."
+Untip="|cffc3dbffRight-click to activate auto-casting.|r"
+Unubertip="|cffc3dbffRight-click to deactivate auto-casting.|r"
+Hotkey=R
+Unhotkey=R
+Researchtip="Learn Sea|cffffcc00r|ring Arrows - [|cffffcc00Level %d|r]"
+Researchubertip="Increases the damage of the Priestess' attack by adding fire. |n|n|cffffcc00Level 1|r - <AHfa,DataA1> bonus damage. |n|cffffcc00Level 2|r - <AHfa,DataA2> bonus damage. |n|cffffcc00Level 3|r - <AHfa,DataA3> bonus damage."
+Researchhotkey=R
+[AEar]
+Name=Trueshot Aura
+Tip=Trueshot Aura - [|cffffcc00Level 1|r],Trueshot Aura - [|cffffcc00Level 2|r],Trueshot Aura - [|cffffcc00Level 3|r]
+Ubertip="An aura that gives friendly nearby units a <AEar,DataA1,%>% bonus damage to their ranged attacks.","An aura that gives friendly nearby units a <AEar,DataA2,%>% bonus damage to their ranged attacks.","An aura that gives friendly nearby units a <AEar,DataA3,%>% bonus damage to their ranged attacks."
+Researchtip="Learn |cffffcc00T|rrueshot Aura - [|cffffcc00Level %d|r]"
+Researchubertip="An aura that gives friendly nearby units bonus damage to their ranged attacks. |n|n|cffffcc00Level 1|r - Increases base ranged damage by <AEar,DataA1,%>%. |n|cffffcc00Level 2|r - Increases base ranged damage by <AEar,DataA2,%>%. |n|cffffcc00Level 3|r - Increases base ranged damage by <AEar,DataA3,%>%."
+Researchhotkey=T
+[BEar]
+Bufftip=Trueshot Aura
+Buffubertip="This unit is under the effects of Trueshot Aura; its ranged attacks will deal more damage."
+[AEsf]
+Name=Starfall
+Tip=Star|cffffcc00f|rall
+Ubertip="Calls down waves of falling stars that damage nearby enemy units. Each wave deals <AEsf,DataA1> damage. |nLasts for <AEsf,Dur1> seconds."
+Hotkey=F
+Researchtip=Learn Star|cffffcc00f|rall
+Researchubertip="Calls down waves of falling stars that damage nearby enemy units. Each wave deals <AEsf,DataA1> damage. |nLasts for <AEsf,Dur1> seconds."
+Researchhotkey=F
+[Afae]
+Name=Faerie Fire
+Tip=Fae|cffffcc00r|rie Fire
+Ubertip="Reduces a target enemy unit's armor by <Afae,DataA1> and gives vision of that unit. |nLasts <Afae,Dur1> seconds."
+Untip="|cffc3dbffRight-click to activate auto-casting.|r"
+Unubertip="|cffc3dbffRight-click to deactivate auto-casting.|r"
+Hotkey=R
+Unhotkey=R
+[Afa2]
+Name=Faerie Fire
+Tip=Fae|cffffcc00r|rie Fire
+Ubertip="Reduces a target enemy unit's armor by <Afae,DataA1> and gives vision of that unit. |nLasts <Afae,Dur1> seconds."
+Untip="|cffc3dbffRight-click to activate auto-casting.|r"
+Unubertip="|cffc3dbffRight-click to deactivate auto-casting.|r"
+Hotkey=R
+Unhotkey=R
+[Bfae]
+Bufftip=Faerie Fire
+Buffubertip="This unit has Faerie Fire; it has reduced armor and can be seen by the enemy."
+[Acyc]
+Name=Cyclone
+Tip=|cffffcc00C|ryclone
+Ubertip="Tosses a target non-mechanical enemy unit into the air, rendering it unable to move, attack or cast spells, and stopping others from attacking or casting on it. |nLasts <Acyc,Dur1> seconds."
+Hotkey=C
+[Bcyc]
+Bufftip=Cyclone
+Buffubertip="This unit is in a Cyclone; it cannot move, attack or cast spells."
+[Bcy2]
+Bufftip=Cyclone
+Buffubertip="This unit is in a Cyclone; it cannot move, attack or cast spells."
+[Arej]
+Name=Rejuvenation
+Tip=R|cffffcc00e|rjuvenation
+Ubertip="Heals a target friendly unit for <Arej,DataA1> hit points over <Arej,Dur1> seconds."
+Hotkey=E
+[Brej]
+Bufftip=Rejuvenation
+Buffubertip="This unit has Rejuvenation; it is healing hit points over time."
+[Aren]
+Name=Renew
+Tip=|cffffcc00R|renew
+Ubertip="Renews friendly Night Elf buildings, allied buildings, and friendly mechanical units."
+Untip="|cffc3dbffRight-click to activate auto-casting.|r"
+Unubertip="|cffc3dbffRight-click to deactivate auto-casting.|r"
+Hotkey=R
+Unhotkey=R
+[Aroa]
+Name=Roar
+Tip=|cffffcc00R|roar
+Ubertip="Gives friendly nearby units a <Aroa,DataA1,%>% bonus to damage. |nLasts <Aroa,Dur1> seconds."
+Hotkey=R
+[Ara2]
+Name=Roar
+Tip=|cffffcc00R|roar
+Ubertip="Gives friendly nearby units a <Ara2,DataA1,%>% bonus to damage. |nLasts <Ara2,Dur1> seconds."
+Hotkey=R
+[Broa]
+Bufftip=Roar
+Buffubertip="This unit has Roar; its attack damage has been increased."
+[Alit]
+Name=Lightning Attack
+[Bbar]
+Bufftip=Barkskin
+Buffubertip="This unit has Barkskin; it has increased armor."
+[Atol]
+[BEia]
+EditorName=Immolation (Caster)
+[Beat]
+EditorName=Eat Tree
+[Bgra]
+EditorName=War Club
+[AEsd]
+EditorName=Starfall (Target)
+[AEtr]
+EditorName=Tranquility (Target)
+[Bult]
+EditorName=Ultravision
+[XEsf]
+EditorName=Starfall (Effect)
+[XEtq]
+EditorName=Tranquility (Effect)
+[XEsn]
+EditorName=Sentinel (Effect)
+[Xfns]
+EditorName=Building Damage - Night Elf Small
+[Xfnm]
+EditorName=Building Damage - Night Elf Medium
+[Xfnl]
+EditorName=Building Damage - Night Elf Large
+[A0EX]
+Name="ELE: Discharge"
+Tip="Discharge"
+Ubertip="Every 0.4 seconds deals 25 damage to a random enemy unit in 650 AoE."
+[A0EV]
+Name="ELE: Boulder"
+Tip="Boulder"
+Ubertip="Has a 50% chance to stun unit for 3 seconds and deal 100 additional damage."
+[A0EW]
+Name="ELE: Shield of Mist"
+Tip="Shield of Mist"
+Ubertip="Prevents any melee attack on this tower."
+[A0DU]
+Name="NAT: Force of Nature"
+Tip=|cffffcc00F|rorce of Nature - [|cffffcc00Level 1|r],|cffffcc00F|rorce of Nature - [|cffffcc00Level 2|r],|cffffcc00F|rorce of Nature - [|cffffcc00Level 3|r]
+Ubertip="Converts a small area of trees into <AEfn,DataA1> Treants. Treants have <efon,realHP> hit points and deal <efon,mindmg1> - <efon,maxdmg1> damage. Can learn Nature's Blessing. |nLasts <AEfn,Dur1> seconds. |n|n|cffffcc00Attacks land units.|r","Converts a large area of trees into <AEfn,DataA2> Treants. Treants have <efon,realHP> hit points and deal <efon,mindmg1> - <efon,maxdmg1> damage. Can learn Nature's Blessing. |nLasts <AEfn,Dur2> seconds. |n|n|cffffcc00Attacks land units.|r","Converts a very large area of trees into <AEfn,DataA3> Treants. Treants have <efon,realHP> hit points and deal <efon,mindmg1> - <efon,maxdmg1> damage. Can learn Nature's Blessing. |nLasts <AEfn,Dur3> seconds. |n|n|cffffcc00Attacks land units.|r"
+Hotkey=F
+Researchtip="Learn |cffffcc00F|rorce of Nature - [|cffffcc00Level %d|r]"
+Researchubertip="Converts an area of trees into Treants. Treants have <efon,realHP> hit points and deal <efon,mindmg1> - <efon,maxdmg1> damage. Can learn Nature's Blessing. |n|n|cffffcc00Attacks land units.|r |n|n|cffffcc00Level 1|r - Raises <AEfn,DataA1> Treants for <AEfn,Dur1> seconds. |n|cffffcc00Level 2|r - Raises <AEfn,DataA2> Treants for <AEfn,Dur2> seconds. |n|cffffcc00Level 3|r - Raises <AEfn,DataA3> Treants for <AEfn,Dur3> seconds."
+Researchhotkey=F
+[A0AW]
+Name="NAT: Furbolg Shaman (rejuvenation)"
+Tip=R|cffffcc00e|rjuvenation
+Ubertip="Heals a target friendly unit for <Arej,DataA1> hit points over <Arej,Dur1> seconds."
+Hotkey=E
+[A0AX]
+Name="NAT: Furbolg Elder Shaman (rejuvenation)"
+Tip=R|cffffcc00e|rjuvenation
+Ubertip="Heals a target friendly unit for <Arej,DataA1> hit points over <Arej,Dur1> seconds."
+Hotkey=E
+[A0BC]
+Name="NAT: Mounatin Giant (Grab Tree)"
+Tip=|cffffcc00W|rar Club
+Ubertip="Picks up a tree to give the Mountain Giant Siege damage, and increased attack range. |nLasts for <Agra,DataE1> strikes."
+Hotkey=W
+[A0BE]
+Name="NAT: Mountain Giant (hardened skin)"
+Tip=Hardened Skin
+Ubertip="Reduces all attacks on the Mountain Giant by <Assk,DataC1> damage. Attacks cannot be reduced below <Assk,DataB1> damage."
+Hotkey=K
+[A0BI]
+Name="NAT: Mountain Giant (taunt)"
+Tip=|cffffcc00T|raunt
+Ubertip="The closest <Atau,DataA1> enemies are forced to attack this unit."
+Hotkey=T
+[A0C3]
+Name="NAT: Furbolg Elder Shaman (manaburn)"
+Tip=Mana |cffffcc00B|rurn - [|cffffcc00Level 1|r],Mana |cffffcc00B|rurn - [|cffffcc00Level 2|r],Mana |cffffcc00B|rurn - [|cffffcc00Level 3|r]
+Ubertip="Sends a bolt of negative energy that burns up to <AEmb,DataA1> points of a target enemy unit's mana. The mana combusts, dealing damage equal to the amount of mana burned.","Sends a bolt of negative energy that burns up to <AEmb,DataA2> points of a target enemy unit's mana. The mana combusts, dealing damage equal to the amount of mana burned.","Sends a bolt of negative energy that burns up to <AEmb,DataA3> points of a target enemy unit's mana. The mana combusts, dealing damage equal to the amount of mana burned."
+Hotkey=B
+Researchtip="Learn Mana |cffffcc00B|rurn - [|cffffcc00Level %d|r]"
+Researchubertip="Sends a bolt of negative energy that burns a target enemy unit's mana. Burned mana combusts, dealing damage to the target equal to the amount of mana burned. |n|n|cffffcc00Level 1|r - Burns up to <AEmb,DataA1> mana. |n|cffffcc00Level 2|r - Burns up to <AEmb,DataA2> mana. |n|cffffcc00Level 3|r - Burns up to <AEmb,DataA3> mana."
+Researchhotkey=B
+[A0A0]
+Name=Hardened Skin
+Tip=Hardened Skin
+Ubertip="Reduces all attacks on the Mountain Giant by <Assk,DataC1> damage. Attacks cannot be reduced below <Assk,DataB1> damage."
+Hotkey=K
+[A05V]
+Name="CHA: Quill Demon (thorns aura)"
+Tip=Thorns Aura - [|cffffcc00Level 1|r],Thorns Aura - [|cffffcc00Level 2|r],Thorns Aura - [|cffffcc00Level 3|r]
+Ubertip="An aura that gives friendly nearby units a damage shield, which deals <AEah,DataA1,%>% of an enemy unit's melee attack damage back to it.","An aura that gives friendly nearby units a damage shield, which deals <AEah,DataA2,%>% of an enemy unit's melee attack damage back to it.","An aura that gives friendly nearby units a damage shield, which deals <AEah,DataA3,%>% of an enemy unit's melee attack damage back to it."
+Researchtip="Learn Tho|cffffcc00r|rns Aura - [|cffffcc00Level %d|r]"
+Researchubertip="An aura that gives friendly nearby units a damage shield, which returns a percentage of a melee attacker's damage back to it. |n|n|cffffcc00Level 1|r - Returns <AEah,DataA1,%>% damage. |n|cffffcc00Level 2|r - Returns <AEah,DataA2,%>% damage. |n|cffffcc00Level 3|r - Returns <AEah,DataA3,%>% damage."
+Researchhotkey=R
+[A070]
+Name="flag_legend"
+Tip=Moon Glaive
+Ubertip="Gives the Huntress the ability to strike additional units with her bouncing glaive attacks."
+[A079]
+Name="NEL: Druid (Heal Rain)"
+Tip=|cffffcc00T|rranquility
+Ubertip="Causes rains of healing energy to pour down in a large area, healing friendly allied units for <AEtq,DataA1> hit points per second. |nLasts <AEtq,Dur1> seconds."
+Hotkey=T
+Researchtip="Learn |cffffcc00T|rranquility"
+Researchubertip="Causes rains of healing energy to pour down in a large area, healing friendly allied units for <AEtq,DataA1> hit points per second. |nLasts <AEtq,Dur1> seconds."
+Researchhotkey=T
+Globalmessage=
+Globalsound=
+[A07A]
+Name=Entangling Roots
+Tip=|cffffcc00E|rntangling Roots - [|cffffcc00Level 1|r],|cffffcc00E|rntangling Roots - [|cffffcc00Level 2|r],|cffffcc00E|rntangling Roots - [|cffffcc00Level 3|r]
+Ubertip="Causes roots to burst from the ground, immobilizing and disarming a target enemy unit for <AEer,Dur1> seconds, and dealing <AEer,DataA1> damage per second.","Causes roots to burst from the ground, immobilizing and disarming a target enemy unit for <AEer,Dur2> seconds, and dealing <AEer,DataA2> damage per second.","Causes roots to burst from the ground, immobilizing and disarming a target enemy unit for <AEer,Dur3> seconds, and dealing <AEer,DataA3> damage per second."
+Hotkey=E
+Researchtip="Learn |cffffcc00E|rntangling Roots - [|cffffcc00Level %d|r]"
+Researchubertip="Causes roots to burst from the ground, immobilizing, disarming and damaging a target enemy temporarily. |n|n|cffffcc00Level 1|r - <AEer,DataA1> damage per second for <AEer,Dur1> seconds. |n|cffffcc00Level 2|r - <AEer,DataA2> damage per second for <AEer,Dur2> seconds. |n|cffffcc00Level 3|r - <AEer,DataA3> damage per second for <AEer,Dur3> seconds."
+Researchhotkey=E
+[A07B]
+Name=Resistant Skin
+Tip=Resistant Skin
+Ubertip="Reduces the duration of negative spells and renders the Mountain Giant immune to certain spells."
+Hotkey=E
+[A07Q]
+Name=Entangling Roots
+Tip=|cffffcc00E|rntangling Roots - [|cffffcc00Level 1|r],|cffffcc00E|rntangling Roots - [|cffffcc00Level 2|r],|cffffcc00E|rntangling Roots - [|cffffcc00Level 3|r]
+Ubertip="Causes roots to burst from the ground, immobilizing and disarming a target enemy unit for <AEer,Dur1> seconds, and dealing <AEer,DataA1> damage per second.","Causes roots to burst from the ground, immobilizing and disarming a target enemy unit for <AEer,Dur2> seconds, and dealing <AEer,DataA2> damage per second.","Causes roots to burst from the ground, immobilizing and disarming a target enemy unit for <AEer,Dur3> seconds, and dealing <AEer,DataA3> damage per second."
+Hotkey=E
+Researchtip="Learn |cffffcc00E|rntangling Roots - [|cffffcc00Level %d|r]"
+Researchubertip="Causes roots to burst from the ground, immobilizing, disarming and damaging a target enemy temporarily. |n|n|cffffcc00Level 1|r - <AEer,DataA1> damage per second for <AEer,Dur1> seconds. |n|cffffcc00Level 2|r - <AEer,DataA2> damage per second for <AEer,Dur2> seconds. |n|cffffcc00Level 3|r - <AEer,DataA3> damage per second for <AEer,Dur3> seconds."
+Researchhotkey=E
+[A07V]
+Name=Moon Glaive
+Tip="Restoration Aura"
+Ubertip="|cffFFFF80Ability:|cffFFFF00 Restore Area|r|nRestores hitpoints of nearby friendly units  in 650 range and repairs nearby buildings by 2.5 hp/s in 700 range. Repair effects stack."
+[A07W]
+Name=Moon Glaive
+Tip="Ray of Light"
+Ubertip="Deals 150 damage to a random visible enemy. Immune to Frost Launcher, damages magic immune units. |n|cffFFFF80Cooldown:|cffFFFF00 5 |rseconds"
+[A07T]
+Name="NEL: Starfall"
+Tip=Star|cffffcc00f|rall
+Ubertip="Calls down waves of falling stars that damage nearby enemy units. Each wave deals <AEsf,DataA1> damage. |nLasts for <AEsf,Dur1> seconds."
+Hotkey=F
+Researchtip=Learn Star|cffffcc00f|rall
+Researchubertip="Calls down waves of falling stars that damage nearby enemy units. Each wave deals <AEsf,DataA1> damage. |nLasts for <AEsf,Dur1> seconds."
+Researchhotkey=F
+[A07Y]
+Name=Sphere
+[A08D]
+Name=Hardened Skin
+Tip=Hardened Skin
+Ubertip="Reduces all attacks on the Mountain Giant by <Assk,DataC1> damage. Attacks cannot be reduced below <Assk,DataB1> damage."
+Hotkey=K
+[A08T]
+Name="NEL: Starfall (-na)"
+Tip=Star|cffffcc00f|rall
+Ubertip="Calls down waves of falling stars that damage nearby enemy units. Each wave deals <AEsf,DataA1> damage. |nLasts for <AEsf,Dur1> seconds."
+Hotkey=F
+Researchtip=Learn Star|cffffcc00f|rall
+Researchubertip="Calls down waves of falling stars that damage nearby enemy units. Each wave deals <AEsf,DataA1> damage. |nLasts for <AEsf,Dur1> seconds."
+Researchhotkey=F
+[A09Y]
+Name=Hardened Skin
+Tip=Hardened Skin
+Ubertip="Reduces all attacks on the Mountain Giant by <Assk,DataC1> damage. Attacks cannot be reduced below <Assk,DataB1> damage."
+Hotkey=K
+[A09W]
+Name=Slow Poison
+Tip="Greater Poison Attack"
+Ubertip="Deals 25 damage per second and slows attack and movementspeed by 60%. Lasts 8 seconds"
+[A09U]
+Name="Energy burst_"
+Tip="Energy Burst"
+Ubertip="The attacks of this unit bounce 2 times, dealing 0.3 less damage after each bounce.|nThis tower protected by a static shield and its attackers could be damaged by a discharge of lightning(80 dmg)."
+[A09Z]
+Name=Hardened Skin
+Tip=Hardened Skin
+Ubertip="Reduces all attacks on the Mountain Giant by <Assk,DataC1> damage. Attacks cannot be reduced below <Assk,DataB1> damage."
+Hotkey=K
+[A001]
+Name=Blink
+Tip="Blink [|cffffcc00D|r]","|cffffcc00B|rlink - [|cffffcc00Level 2|r]","|cffffcc00B|rlink - [|cffffcc00Level 3|r]"
+Ubertip="Teleports the worker a short distance","Teleports the Warden a short distance, allowing her to move in and out of combat.","Teleports the Warden a short distance, allowing her to move in and out of combat."
+Hotkey=D
+Researchtip="Learn |cffffcc00B|rlink - [|cffffcc00Level %d|r]"
+Researchubertip="Short distance teleportation that allows the Warden to move in and out of combat. |n|n|cffffcc00Level 1|r - <AEbl,Cool1> second cooldown, <AEbl,Cost1> mana. |n|cffffcc00Level 2|r - <AEbl,Cool2> second cooldown, <AEbl,Cost2> mana. |n|cffffcc00Level 3|r - <AEbl,Cool3> second cooldown, <AEbl,Cost3> mana."
+Researchhotkey=B
+[A00C]
+Name=Slow Poison
+Tip="Slow Poison","Greater Poison Attack"
+Ubertip="A poison attack that deals <Aspo,DataA1> damage per second, and slows the target enemy's movement by <Aspo,DataB1,%>% and attack by <Aspo,DataC1,%>% for <Aspo,Dur1> seconds.","Deals 20 damage per second and slows attack and movementspeed by 70%. Lasts 8 seconds"
+[A00G]
+Name=Phase Shift
+Tip=Phas|cffffcc00e|r Shift
+Ubertip="Causes this unit to shift out of existence whenever it takes damage, temporarily avoiding any further damage. |nLasts <Apsh,Dur1> second."
+Untip="|cffc3dbff|cffc3dbffRight-click to activate auto-casting.|r|r"
+Unubertip="|cffc3dbffRight-click to deactivate auto-casting.|r"
+Hotkey=E
+Unhotkey=E
+[A00H]
+Name="TriggerAttack"
+Tip=Sea|cffffcc00r|ring Arrows - [|cffffcc00Level 1|r],Sea|cffffcc00r|ring Arrows - [|cffffcc00Level 2|r],Sea|cffffcc00r|ring Arrows - [|cffffcc00Level 3|r]
+Ubertip="Adds <AHfa,DataA1> bonus fire damage to an attack against enemies, but drains mana with each shot fired.","Adds <AHfa,DataA2> bonus fire damage to an attack, but drains mana with each shot fired.","Adds <AHfa,DataA3> bonus fire damage to an attack, but drains mana with each shot fired."
+Untip="|cffc3dbffRight-click to activate auto-casting.|r"
+Unubertip="|cffc3dbffRight-click to deactivate auto-casting.|r"
+Hotkey=R
+Unhotkey=R
+Researchtip="Learn Sea|cffffcc00r|ring Arrows - [|cffffcc00Level %d|r]"
+Researchubertip="Increases the damage of the Priestess' attack by adding fire. |n|n|cffffcc00Level 1|r - <AHfa,DataA1> bonus damage. |n|cffffcc00Level 2|r - <AHfa,DataA2> bonus damage. |n|cffffcc00Level 3|r - <AHfa,DataA3> bonus damage."
+Researchhotkey=R
+[A02Q]
+Name=Hardened Skin
+Tip=Hardened Skin
+Ubertip="Reduces all attacks on the Mountain Giant by <Assk,DataC1> damage. Attacks cannot be reduced below <Assk,DataB1> damage."
+Hotkey=K
+[A052]
+Name="COR: Shadow Dragon (Damage Reflect)"
+Tip=Elune's Grace'
+Ubertip="Reduces the damage taken from Piercing attacks to <Aegr,DataA1,%>%, and spells and Magic attacks to <Aegr,DataE1,%>%."
+[A0FE]
+Name="Air shield"
+Tip=Elune's Grace'
+Ubertip="Reduces the damage taken from Piercing attacks to <Aegr,DataA1,%>%, and spells and Magic attacks to <Aegr,DataE1,%>%."
+[A0ET]
+Name="NAT: Abolish"
+Tip=A|cffffcc00b|rolish Magic
+Ubertip="Dispels positive buffs from enemy units, and negative buffs from friendly units. |n|cffffcc00Deals <Aadm,DataB1> damage to summoned units.|r"
+Untip="|cffc3dbffRight-click to activate auto-casting.|r"
+Unubertip="|cffc3dbffRight-click to deactivate auto-casting.|r"
+Hotkey=B
+Unhotkey=B
+[A0FZ]
+Name="ELE: whirlwind"
+Tip=|cffffcc00C|ryclone
+Ubertip="Tosses a target non-mechanical enemy unit into the air, rendering it unable to move, attack or cast spells, and stopping others from attacking or casting on it. |nLasts <Acyc,Dur1> seconds."
+Hotkey=C
+[A0A6]
+Name=Entangling Roots
+Tip=|cffffcc00E|rntangling Roots - [|cffffcc00Level 1|r],|cffffcc00E|rntangling Roots - [|cffffcc00Level 2|r],|cffffcc00E|rntangling Roots - [|cffffcc00Level 3|r]
+Ubertip="Causes roots to burst from the ground, immobilizing and disarming a target enemy unit for <AEer,Dur1> seconds, and dealing <AEer,DataA1> damage per second.","Causes roots to burst from the ground, immobilizing and disarming a target enemy unit for <AEer,Dur2> seconds, and dealing <AEer,DataA2> damage per second.","Causes roots to burst from the ground, immobilizing and disarming a target enemy unit for <AEer,Dur3> seconds, and dealing <AEer,DataA3> damage per second."
+Hotkey=E
+Researchtip="Learn |cffffcc00E|rntangling Roots - [|cffffcc00Level %d|r]"
+Researchubertip="Causes roots to burst from the ground, immobilizing, disarming and damaging a target enemy temporarily. |n|n|cffffcc00Level 1|r - <AEer,DataA1> damage per second for <AEer,Dur1> seconds. |n|cffffcc00Level 2|r - <AEer,DataA2> damage per second for <AEer,Dur2> seconds. |n|cffffcc00Level 3|r - <AEer,DataA3> damage per second for <AEer,Dur3> seconds."
+Researchhotkey=E
+[A0GW]
+Name="Defend2"
+Tip=Elune's Grace'
+Ubertip="Reduces the damage taken from Piercing attacks to <Aegr,DataA1,%>%, and spells and Magic attacks to <Aegr,DataE1,%>%."
+[A0HY]
+Name="peyotes sleep"
+Tip=|cffffcc00E|rntangling Roots - [|cffffcc00Level 1|r],|cffffcc00E|rntangling Roots - [|cffffcc00Level 2|r],|cffffcc00E|rntangling Roots - [|cffffcc00Level 3|r]
+Ubertip="Causes roots to burst from the ground, immobilizing and disarming a target enemy unit for <AEer,Dur1> seconds, and dealing <AEer,DataA1> damage per second.","Causes roots to burst from the ground, immobilizing and disarming a target enemy unit for <AEer,Dur2> seconds, and dealing <AEer,DataA2> damage per second.","Causes roots to burst from the ground, immobilizing and disarming a target enemy unit for <AEer,Dur3> seconds, and dealing <AEer,DataA3> damage per second."
+Hotkey=E
+Researchtip="Learn |cffffcc00E|rntangling Roots - [|cffffcc00Level %d|r]"
+Researchubertip="Causes roots to burst from the ground, immobilizing, disarming and damaging a target enemy temporarily. |n|n|cffffcc00Level 1|r - <AEer,DataA1> damage per second for <AEer,Dur1> seconds. |n|cffffcc00Level 2|r - <AEer,DataA2> damage per second for <AEer,Dur2> seconds. |n|cffffcc00Level 3|r - <AEer,DataA3> damage per second for <AEer,Dur3> seconds."
+Researchhotkey=E
+[A0IR]
+Name="NAT.ult phis resist"
+Tip=Hardened Skin
+Ubertip="Reduces all attacks on the Mountain Giant by <Assk,DataC1> damage. Attacks cannot be reduced below <Assk,DataB1> damage."
+Hotkey=K
+[A0IP]
+Name="NATult resist"
+Tip=Elune's Grace'
+Ubertip="Reduces the damage taken from Piercing attacks to <Aegr,DataA1,%>%, and spells and Magic attacks to <Aegr,DataE1,%>%."
+[B027]
+Bufftip=Haste
+Buffubertip=This unit has attack speed and movement speed increased.
+EditorName=ELE: Enchant (Haste)
+[B00M]
+Bufftip=Frozen
+Buffubertip=This unit is frozen to the ground. It can't move and receives damage over time.
+[B00K]
+Bufftip=Battle Cry
+Buffubertip=This unit has its damage increased.
+[B00V]
+Bufftip=Quill Aura
+Buffubertip=This unit is under the effect of quill aura. Melee attackers receive damage.
+[B017]
+Bufftip=Blessing of the Wilderness
+Buffubertip=This unit is resistant to spells and attacks.
+[B02M]
+Bufftip=ww
+Buffubertip=This unit is engaged by whirlwind.
+[B02N]
+Bufftip=ww2
+Buffubertip=This unit is engaged by whirlwind.
+[B02P]
+Bufftip=Snakes poison
+Buffubertip=This unit is poisoned; it takes damage over time and moves slowly.
+EditorName=Snakes Poison
+[B02Y]
+Bufftip=Blessing
+Buffubertip=This unit's damage and armor increased.

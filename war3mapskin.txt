@@ -1,0 +1,42 @@
+[FrameDef]
+DAMAGETIP_MELEE=damage against:|n|cff00FF00Medium: 175%|r|n|cffFFFF00Unarmored: 105%|nHeavy: 100%|r|n|cffFF0000Light: 70%|nFortified: 50%|nDivine: 25%|r
+DAMAGETIP_NORMAL=damage against:|n|cff00FF00Medium: 175%|r|n|cffFFFF00Unarmored: 105%|nHeavy: 100%|r|n|cffFF0000Light: 70%|nFortified: 50%|nDivine: 25%|r
+DAMAGETIP_PIERCE=damage against:|n|cff00FF00Light: 175%|r|n|cffFFFF00Unarmored: 105%|nMedium: 100%|r|n|cffFF0000Heavy: 70%|nFortified: 50%|nDivine: 25%|r
+DAMAGETIP_MAGIC=damage against:|n|cff00FF00Heavy: 175%|r|n|cffFFFF00Unarmored: 105%|nLight: 100%|r|n|cffFF0000Medium: 70%|nFortified: 40%|nDivine: 25%|r
+DAMAGETIP_CHAOS=damage against:|n|cffFFFF00All armor types: 100%|r
+DAMAGETIP_SIEGE=damage against:|n|cff00FF00Fortified: 160%|r|n|cffFFFF00Unarmored: 100%|r|n|cffFF0000Light: 70%|nMedium: 70%|nHeavy: 70%|nDivine: 20%|r
+ARMORTIP_NONE=damage received from:|cffFFFF00Hero: 110%|nNormal: 105%|nPierce: 105%|nMagic: 105%|nChaos: 100%|nSiege: 100%|r
+ARMORTIP_SMALL=damage received from:|n|cffFF0000Pierce: 175%|r|n|cffFFFF00Hero: 110%|nMagic: 100%|nChaos: 100%|r|n|cff00FF00Normal: 70%|nSiege: 70%|r
+ARMORTIP_MEDIUM=damage received from:|n|cffFF0000Normal: 175%|r|n|cffFFFF00Hero: 110%|nPierce: 100%|nChaos: 100%|r|n|cff00FF00Magic: 70%|nSiege: 70%|r
+ARMORTIP_NORMAL=damage received from:|n|cffFF0000Normal: 175%|r|n|cffFFFF00Hero: 110%|nPierce: 100%|nChaos: 100%|r|n|cff00FF00Magic: 70%|nSiege: 70%|r
+ARMORTIP_LARGE=damage received from:|n|cffFF0000Magic: 175%|r|n|cffFFFF00Hero: 110%|nNormal: 100%|nChaos: 100%|r|n|cff00FF00Pierce: 70%|nSiege: 70%|r
+ARMORTIP_FORT=damage received from:|n|cffFF0000Siege: 160%|r|n|cffFFFF00Chaos: 100%|r|n|cff00FF00Hero: 60%|nNormal: 50%|nPierce: 50%|nMagic: 40%|r
+ARMORTIP_DIVINE=damage received from:|n|cffFFFF00Chaos: 100%|r|n|cff00FF00Hero: 40%|nOthers: 25%|nSiege: 20%|r
+DAMAGETIP_HERO=damage against:|n|cff00FF00Unarmored: 110%|nLight: 110%|nMedium: 110%|nHeavy: 110%|r|n|cffFF0000Fortified: 60%|nDivine: 40%|r
+ARMORTIP_HERO=damage received from:|n|cffFFFF00Chaos: 100%|r|n|cff00FF00Others: 60%|nSiege: 40%|r
+QUESTSOPTIONAL=Hints:
+INVULNERABLE=|Cffff0000Invulnerable|R
+QUESTS=|c0000ff40Castle Fight|r
+KEY_QUESTS=|cff80FF00Manual|r (|Cfffed312F9|R)
+QUESTSMAIN=Modes & Mods:
+RESOURCE_UBERTIP_UPKEEP_INFO=:)
+RESOURCE_UBERTIP_UPKEEP_INFO_WOOD=:)
+IDLE_PEON_DESC=Jump to your Builder
+IDLE_PEON=Your Builder (|Cfffed312F8|R)
+UPPER_BUTTON_QUEST_TIP=|cff80FF00Manual|r (|Cfffed312F9|R)
+UPPER_BUTTON_QUEST_UBER=Contains useful information about this map.
+COLON_GOLD_INCOME_RATE=Fun:
+RESOURCE_UBERTIP_GOLD=|c00ffdc00You gain gold by incomes.|r
+RESOURCE_UBERTIP_LUMBER=|c0000c850You gain lumber by building structures that produce units.|r
+GOLD=|c00ffdc00Gold|r
+COLON_GOLD=|c00ffdc00Gold|r:
+COLON_LUMBER=|c0000c850Lumber|r:
+LUMBER=|c0000c850Lumber|r
+COLON_FOOD=|c008000ffLegendaries|r:
+COLON_PROVIDED=|c008000ffLegendaries limit|r: 
+RESOURCE_UBERTIP_SUPPLY=|c008000ffYou may increase your limit of Legendaries by buying Cheese in Main Castle.|r
+[Errors]
+Nofood=Need to up Legendaries limit.,Need to up Legendaries limit.,Need to up Legendaries limit.,Need to up Legendaries limit.
+[CustomSkin]
+SupplyIcon=UI\Feedback\Resources\ResourceManaStone.blp
+ToolTipSupplyIcon=UI\Widgets\ToolTips\Human\ToolTipStonesIcon.blp

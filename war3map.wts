@@ -1,0 +1,58 @@
+STRING 5
+{
+Modifications can be entered by the red player in the first 20 seconds of game time (like game modes).
+List of modifications:
+|cff80FF00-co|r (|cffFFFF80Coins|r)
+|cff80FF00-du|r (|cffFFFF80Dual Races|r)
+|cff80FF00-na|r (|cffFFFF80No Artillery|r)
+|cff80FF00-ntb|r (|cffFFFF80No Treasure Box|r)
+|cff80FF00-nb|r (|cffFFFF80No Unit Bounty|r)
+|cff80FF00-nt|r (|cffFFFF80No Taxes|r)
+|cff80FF00-ht|r (|cffFFFF80High Taxes|r)
+|cff80FF00-ns|r (|cffFFFF80No Special Buildings|r)
+|cff80FF00-ni|r (|cffFFFF80No Items|r)
+|cff80FF00-nl|r (|cffFFFF80No Legendaries|r)
+|cff80FF00-nrs|r (|cffFFFF80No Rescue Strike|r)
+|cff80FF00-llX|r (|cffFFFF80Lumber Limit X|r)
+|cff80FF00-dom|r (|cffFFFF80Domination|r)
+|cff80FF00-slX|r (|cffFFFF80Single Lane X|r)
+|cff80FF00-fowX|r (|cffFFFF80Fog of War X seconds|r)
+|cff80FF00-nfow|r (|cffFFFF80Disable Fog of War|r)
+|cff80FF00-banX|r (|cffFFFF80Ban X Races|r)
+|cff80FF00-rbanX|r (|cffFFFF80Random Ban X Races|r)
+|cff80FF00-mpX|r (|cffFFFF80Multiple Players X|r)
+|cff80FF00-empX|r (|cffFFFF80Extended Multiple Players X|r)
+|cff80FF00-ca|r (|cffFFFF80Caging|r)
+|cff80FF00-itX|r (|cffFFFF80Income Time X|r)
+|cff80FF00-envX|r (|cffFFFF80Set environment X|r)
+|cff80FF00-glwX|r (|cffFFFF80Round time limit with win result X|r)
+|cff80FF00-gldX|r (|cffFFFF80Round time limit with draw result X|r)
+|cff80FF00-dafk|r (|cffFFFF80Disable -afk command|r)
+|cff80FF00-balX|r (|cffFFFF80Changes autobalance variant to X|r)
+|cff80FF00-srRX|r (|cffFFFF80Changes amount of start resource R to value X|r)
+|cff80FF00-si|r (|cffFFFF80Streaming income (depends on -itX)|r)
+|cffFF8000Funmodes:|r
+|cff80FF00-cc|r (|cffFFFF80Crazy Coins|r)
+|cffFF8000Debugging:|r
+|cff80FF00-ndb|r (|cffFFFF80Disable debug log|r)
+|cff80FF00-nfrX|r (|cffFFFF80Removes X new races from racepool|r)
+}
+STRING 6
+{
+|cffFFFF00Host Commands (red player only!):|r
+|cff80FF00-fillX|r : This command fills both Teams with AI players until the given Number is reached.
+|cff80FF00-skip|r : Use this command in the first 20 seconds to skip the remaining mode choose time and start round 1 immediately.
+|cff80FF00-roll|r : Shows a random value :E
+|cff80FF00-xrX|r : Increases the number of wins for overall victory by X. All players must agree to this change by typing -agree.
+|cff80FF00-pause|r : Allows to pause start game timer
+|cffFFFF00Player Commands (all players):|r
+|cff80FF00-income|r : Shows a detailed overview about your income.
+|cff80FF00-armor|r : Shows a short description which damage type is good/bad against what armor.
+|cff80FF00-stats|r : Shows your current statistics.
+|cff80FF00-draw|r : Type it to vote for drawing the round.
+|cff80FF00-agree|r : Type it to agree with -xrX.
+|cff80FF00-afk|r : Type it to activate AI.
+|cff80FF00-mtX|r : Type it to activate your metronome.
+|cff80FF00-at|r : Changes mode of autotraing.
+|cff80FF00-mode|r : Shows a game config string.
+}

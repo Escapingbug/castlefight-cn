@@ -1,0 +1,301 @@
+[ebal]
+Name=Glaive Thrower
+Hotkey=T
+Tip=Train Glaive |cffffcc00T|rhrower
+Ubertip="Long-range siege weaponry. Exceptional damage versus buildings. Can gain the Vorpal Blades upgrade to attack trees. |n|n|cffffcc00Attacks land units.|r"
+[etrp]
+Name=Ancient Protector
+Hotkey=P
+Tip=Create Ancient |cffffcc00P|rrotector
+Ubertip="Defensive Ancient. When rooted in the ground, can hurl enormous rocks at nearby enemy units. |n|n|cffffcc00Attacks land and air units.|r"
+[echm]
+Name=Chimaera
+Hotkey=C
+Tip=Train |cffffcc00C|rhimaera
+Ubertip="Flying two headed Dragon. Can learn Corrosive Breath. |n|n|cffffcc00Attacks land units.|r"
+[edoc]
+Name=Druid of the Claw
+Hotkey=C
+Tip=Train Druid of the |cffffcc00C|rlaw
+Ubertip="Melee spellcaster. Can initially cast Roar, which increases attack damage. Can also learn Rejuvenation, Bear Form and Mark of the Claw. |n|n|cffffcc00Attacks land units.|r"
+Casterupgradename=Initiate, Adept, Master
+Casterupgradetip="- Roar","- Roar|n- Rejuvenation","- Roar|n- Rejuvenation|n- Bear Form"
+[edcm]
+Name=Druid of the Claw
+Hotkey=C
+Tip=Train Druid of the |cffffcc00C|rlaw
+Ubertip="Melee spellcaster. Can initially cast Roar, which increases attack damage. Can also learn Rejuvenation, Bear Form and Mark of the Claw. |n|n|cffffcc00Attacks land units.|r"
+Casterupgradename=Initiate, Adept, Master
+Casterupgradetip="- Roar","- Roar|n- Rejuvenation","- Roar|n- Rejuvenation|n- Bear Form"
+[edot]
+Name=Druid of the Talon
+Hotkey=T
+Tip=Train Druid of the |cffffcc00T|ralon
+Ubertip="Maneuverable spellcaster. Can initially cast Faerie Fire, which reduces armor and gives vision of an enemy unit. Can also learn Storm Crow Form, Cyclone and Mark of the Talon. |n|n|cffffcc00Attacks land and air units.|r"
+Casterupgradename=Initiate, Adept, Master
+Casterupgradetip="- Faerie Fire","- Faerie Fire|n- Storm Crow Form","- Faerie Fire|n- Storm Crow Form|n- Cyclone"
+[edtm]
+Name=Druid of the Talon
+Hotkey=T
+Tip=Train Druid of the |cffffcc00T|ralon
+Ubertip="Maneuverable spellcaster. Can initially cast Faerie Fire, which reduces armor and gives vision of an enemy unit. Can also learn Storm Crow Form, Cyclone and Mark of the Talon. |n|n|cffffcc00Attacks land and air units.|r"
+Casterupgradename=Initiate, Adept, Master
+Casterupgradetip="- Faerie Fire","- Faerie Fire|n- Storm Crow Form","- Faerie Fire|n- Storm Crow Form|n- Cyclone"
+[egol]
+Name=Entangled Gold Mine
+Tip=Entangle |cffffcc00G|rold Mine
+Ubertip="A cluster of roots that allows wisps to mine gold from goldmines."
+[ewsp]
+Name=Wisp
+Hotkey=W
+Tip=Train |cffffcc00W|risp
+Ubertip="Basic worker unit. Can harvest gold and lumber, create Night Elf buildings and Renew. |nCan Detonate to dispel magic, hurt summoned creatures and drain mana in an area."
+[Edem]
+Name=Demon Hunter
+Hotkey=D
+Tip=Summon |cffffcc00D|remon Hunter
+Ubertip="Cunning Hero, adept at maneuvering through battles. Can learn Immolation, Evasion, Mana Burn, and Metamorphosis. |n|n|cffffcc00Attacks land units.|r"
+Revivetip=Revive |cffffcc00D|remon Hunter
+Awakentip=Revive |cffffcc00D|remon Hunter
+Propernames=Shadowsong,Shadowfury,Shadowstalker,Flameseeker,Darkweaver,Darkterror,Darksorrow,Sindweller,Painkiller,Hellbourne,Wrathbringer,Ragerunner,Firebrand,Bloodwrath,Terrorblade
+[Edmm]
+Name=Demon Hunter
+Hotkey=D
+Tip=Summon |cffffcc00D|remon Hunter
+Ubertip="Cunning Hero, adept at maneuvering through battles. Can learn Immolation, Evasion, Mana Burn, and Metamorphosis. |n|n|cffffcc00Attacks land units.|r"
+Revivetip=Revive |cffffcc00D|remon Hunter
+Awakentip=Revive |cffffcc00D|remon Hunter
+Propernames=Shadowsong,Shadowfury,Shadowstalker,Flameseeker,Darkweaver,Darkterror,Darksorrow,Sindweller,Painkiller,Hellbourne,Wrathbringer,Ragerunner,Firebrand,Bloodwrath,Terrorblade
+[Ekee]
+Name=Keeper of the Grove
+Hotkey=K
+Tip=Summon |cffffcc00K|reeper of the Grove
+Ubertip="Mystical Hero, adept at using nature spells. Can learn Entangling Roots, Force of Nature, Thorns Aura, and Tranquility. |n|n|cffffcc00Attacks land and air units.|r"
+Revivetip=Revive |cffffcc00K|reeper of the Grove
+Awakentip=Revive |cffffcc00K|reeper of the Grove
+Propernames=Larodar,Anubris,Nandieb,Califax,Bandalar,Malorne,Gholbine,Dagda,Nuada,Oghma,Centrius,Ceredwyn
+[Emoo]
+Name=Priestess of the Moon
+Hotkey=P
+Tip=Summon |cffffcc00P|rriestess of the Moon
+Ubertip="Warrior Hero, adept at enhancing ranged attacks and slaying enemies from afar. Can learn Scout, Searing Arrows, Trueshot Aura, and Starfall. |n|n|cffffcc00Attacks land and air units.|r"
+Revivetip=Revive |cffffcc00P|rriestess of the Moon
+Awakentip=Revive |cffffcc00P|rriestess of the Moon
+Propernames=Kathris Starsong,Adora Nightshade,Mora Moonsinger,Felore Moonray,Anara Chillwind,Kera Stardragon,Mave Whisperwind,Delas Moonfang,Mira Whitemane,Theta Saberfang,Tygra Snowscar,Ariel Darkmoon,Diana Windwood
+[Ewar]
+Name=Warden
+Hotkey=W
+Tip=Summon |cffffcc00W|rarden
+Ubertip="Cunning Hero, adept at entering and escaping combat. Can learn Blink, Fan of Knives, Shadow Strike and Vengeance. |n|n|cffffcc00Attacks land units.|r"
+Revivetip=Revive |cffffcc00W|rarden
+Awakentip=Revive |cffffcc00W|rarden
+Propernames=Alsa Iron-cell,The Iron Raven,Marin Bladewing,Shalis Darkhunter,Sira Moonwarden,Saithis,Malace Shade,Kiri Starstalker,Anaya Felgrove,Mirana Starlight,Felhala Starmoon,Drelanim Whisperwind,Cordana Felsong,Nalmeena Darkfollow
+[esen]
+Name=Huntress
+Hotkey=H
+Tip=Train |cffffcc00H|runtress
+Ubertip="Agile short-ranged warrior. Can learn the Sentinel ability and the Moon Glaive attack. |n|n|cffffcc00Attacks land units.|r"
+[earc]
+Name=Archer
+Hotkey=A
+Tip=Train |cffffcc00A|rrcher
+Ubertip="Basic long-ranged attacker. Can learn the Marksmanship, Improved Bows and Hippogryph Taming upgrades.|n|n|cffffcc00Attacks land and air units.|r"
+[edry]
+Name=Dryad
+Hotkey=D
+Tip=Train |cffffcc00D|rryad
+Ubertip="Anti-spellcaster that has a poison attack which slows and damages enemy units. Also has Spell Immunity which renders her invulnerable to magical effects and damage. Can learn Abolish Magic. |n|n|cffffcc00Attacks land and air units.|r"
+[efon]
+Name=Treant
+[ehip]
+Name=Hippogryph
+Hotkey=H
+Tip=Train |cffffcc00H|rippogryph
+Ubertip="Flying melee attack beast. Can learn the Hippogryph Taming ability. |n|n|cffffcc00Attacks air units.|r"
+[ehpr]
+Name=Hippogryph Rider
+Hotkey=R
+Tip=Ride Hippog|cffffcc00r|ryph
+Ubertip="Archer mounted Hippogryph. |n|n|cffffcc00Attacks land and air units.|r"
+[etol]
+Name=Tree of Life
+Hotkey=T
+Tip=Create |cffffcc00T|rree of Life
+Ubertip="Primary structure, used to train Wisps and entangle gold mines. Can be upgraded to Tree of Ages and then Tree of Eternity to enable the production of additional types of structures and units. |n|n|cffffcc00Attacks land units.|r"
+[etoa]
+Name=Tree of Ages
+Hotkey=U
+Tip=|cffffcc00U|rpgrade to Tree of Ages
+Ubertip="Upgrade to Tree of Ages to enable the production of additional types of structures and units. |n|n|cffffcc00Attacks land units.|r"
+[etoe]
+Name=Tree of Eternity
+Hotkey=U
+Tip=|cffffcc00U|rpgrade to Tree of Eternity
+Ubertip="Upgrade to Tree of Eternity to enable the production of additional types of structures and units. |n|n|cffffcc00Attacks land units.|r"
+[edob]
+Name=Hunter's Hall'
+Hotkey=H
+Tip=Create |cffffcc00H|runter's Hall'
+Ubertip="Contains the attack and armor upgrades for all units, the Ultravision and Well Spring upgrades."
+[eate]
+Name=Altar of Elders
+Hotkey=A
+Tip=Create |cffffcc00A|rltar of Elders
+Ubertip="Summons Heroes. Revives slain Heroes."
+[eden]
+Name=Ancient of Wonders
+Hotkey=D
+Tip=Build Ancient of Won|cffffcc00d|rers
+Ubertip="Creates a shop with purchasable items. The items available depend upon what level of upgrade your Tree of Life has (Tree of Life, Tree of Ages, or Tree of Eternity) and which buildings you have. |n|n|cffffcc00Attacks land units.|r"
+[eaoe]
+Name=Ancient of Lore
+Hotkey=L
+Tip=Create Ancient of |cffffcc00L|rore
+Ubertip="Keeper of ground based spellcasters. Trains Druids of the Claw, Dryads, and Mountain Giants. |nAlso contains the upgrades for Druids of the Claw, Mark of the Claw, Abolish Magic, Hardened Skin, and Resistant Skin. |n|n|cffffcc00Attacks land units.|r"
+[eaom]
+Name=Ancient of War
+Hotkey=R
+Tip=Create Ancient of Wa|cffffcc00r|r
+Ubertip="Keeper of primary assault troops. Trains Archers, Huntresses, and Glaive Throwers. |nAlso contains Archer, Huntress and Glaive Thrower upgrades. |n|n|cffffcc00Attacks land units.|r"
+[eaow]
+Name=Ancient of Wind
+Hotkey=W
+Tip=Create Ancient of |cffffcc00W|rind
+Ubertip="Keeper of aerial assault units and spellcasters. Trains Hippogryphs, Druids of the Talon, and Faerie Dragons. |nAlso contains the upgrades for Druids of the Talon, Mark of the Talon, and Hippogryph Taming. |n|n|cffffcc00Attacks land units.|r"
+[edos]
+Name=Chimaera Roost
+Hotkey=C
+Tip=Create |cffffcc00C|rhimaera Roost
+Ubertip="Trains Chimaeras. |nAlso contains the Corrosive Breath upgrade."
+[emow]
+Name=Moon Well
+Hotkey=M
+Tip=Create |cffffcc00M|roon Well
+Ubertip="Provides food, which increases the maximum number of units that can be trained. Has the Replenish Mana and Life ability. Can gain the Well Spring upgrade. Regenerates mana at night."
+[espv]
+Name=Avatar of Vengeance
+[emtg]
+Name=Mountain Giant
+Hotkey=G
+Tip=Train Mountain |cffffcc00G|riant
+Ubertip="Massive melee unit that can disrupt enemy attackers and take incredible amounts of punishment. Has the Taunt and War Club abilities. Can learn Hardened Skin, and Resistant Skin. |n|n|cffffcc00Attacks land units.|r"
+[efdr]
+Name=Faerie Dragon
+Hotkey=F
+Tip=Train |cffffcc00F|raerie Dragon
+Ubertip="Small flying creature adept at harming spellcasters and avoiding damage. Has Spell Immunity, Phase Shift and Mana Flare. |n|n|cffffcc00Attacks land and air units.|r"
+[Aimp]
+Name=Vorpal Blades
+Tip=Vorpal Blades
+Ubertip="Permits the glaives launched by the Glaive Thrower to strike through initial ground targets and damage those behind. Also allows the Glaive Thrower to attack trees."
+[e00D]
+Name=Treant
+[e00C]
+Name="Ancient Keeper "
+Hotkey=Q
+Tip="Trains Ancient Keeper"
+Ubertip="|n|cffFFFF80Attack:|r Chaos (|cffFFFF00550|r rng|r,|cffFFFF00 70|r dps)|n|cffFFFF80Armor:|r Medium (|cffFFFF004|r)|n|cffFFFF80Hitpoints: |cffFFFF001000|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Natures Aura|r|nGrants up 15\10 hp regeneration to all allied units within 160\350 radius|n|n|cff80FF00Incorporeal|r|nGives 20% chance to evade attack|n|n|cff80FF00Treant Sprout|r|nAncient Keeper summons 5 trees that surround his position, protecting him from melee attacks. After 3 seconds, the trees transforms into Treants which attacks  enemies|n|cff8080FFCooldown: |r30|n|cff8080FFMana cost: |r200"
+[e00B]
+Name="Avenging Spirit"
+Ubertip="|n|cffFFFF80Attack:|r Magic (|cffFFFF00melee|r,|cffFFFF00 37|r dps)|n|cffFFFF80Armor:|r Light (|cffFFFF005|r)|n|cffFFFF80Hitpoints: |cffFFFF00425|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Corrosive Attack|r|nOn attack, reduces the armor of the attacked unit by 4 for 1.5 seconds|n|n|cff80FF00Spell Reduction|r|nReduces the duration of negative Spells cast onto this unit and makes it immune to certain spells|n|n|cff80FF00Evade|r|n30% chance to evade an attack|n|n|cff80FF00Heal on Kill|r|nEvery time this units kills an enemy it is healed by 14%."
+Hotkey=Q
+Tip="Trains Avenging Spirit"
+[e00A]
+Name="Avatar of Vengeance"
+Ubertip="|n|cffFFFF80Attack:|r Magic (|cffFFFF00melee|r,|cffFFFF00 77|r dps)|n|cffFFFF80Armor:|r Light (|cffFFFF008|r)|n|cffFFFF80Hitpoints: |cffFFFF00700|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Spell Reduction|r|nReduces the duration of negative Spells cast onto this unit and makes it immune to certain spells|n|n|cff80FF00Corrosive Attack|r|nOn attack, reduces the armor of the attacked unit by 7 for 1.5 seconds|n|n|cff80FF00Evade|r|n40% chance to evade an attack|n|n|cff80FF00Heal on Kill|r|nEvery time this units kills an enemy it is healed by 20%.|n|n|cff80FF00Revenge|r|nUpon death, this unit deals 350 chaos damage to its killer. Does not damage buildings."
+Hotkey=Q
+Tip="Trains Avatar of Vengeance"
+[e009]
+Name="Keeper of the Grove "
+Hotkey=Q
+Tip="Trains Keeper of the Grove"
+Ubertip="|n|cffFFFF80Attack:|r Pierce (|cffFFFF00450|r rng|r,|cffFFFF00 50|r dps)|n|cffFFFF80Armor:|r Medium (|cffFFFF005|r)|n|cffFFFF80Hitpoints: |cffFFFF00800|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Spell Resist|r|nKeeper of the Grove receives 20% less damage from spells|n|n|cff80FF00Natures Touch|r|nHeals 150 hp and adds 3 armor to target|n|cff8080FFCooldown: |r8|n|cff8080FFMana cost: |r25|n|n|cff80FF00Summon Treants|r|nSummons 2 Treants with Thorns ability (returns 10% from received melee damage)|n|cff8080FFCooldown: |r25|n|cff8080FFMana cost: |r100"
+[e008]
+Name="dummy"
+Hotkey=W
+Tip=""
+Ubertip=""
+[e007]
+Name="Druid"
+Hotkey=Q
+Tip="Trains Druid"
+Ubertip="|n|cffFFFF80Attack:|r Chaos (|cffFFFF00375|r rng,|cffFFFF00 31|r dps)|n|cffFFFF80Armor:|r Unarmored (|cffFFFF001|r)|n|cffFFFF80Hitpoints: |cffFFFF00325|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Entangle|r|nEntangles a ground unit for 5 seconds dealing 15 damage per second|n|cff8080FFCooldown: |r14|n|cff8080FFMana cost: |r30"
+Casterupgradename=
+Casterupgradetip=
+[e006]
+Name="Dryad "
+Hotkey=Q
+Tip="Trains Dryad"
+Ubertip="|n|cffFFFF80Attack:|r Pierce (|cffFFFF00400|r rng|r,|cffFFFF00 37|r dps)|n|cffFFFF80Armor:|r Medium (|cffFFFF003|r)|n|cffFFFF80Hitpoints: |cffFFFF00500|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Natures Touch|r|nHeals 75 hp and adds 2 armor to target|n|cff8080FFCooldown: |r20|n|cff8080FFMana cost: |r35"
+[e005]
+Name="Ballista"
+Hotkey=Q
+Tip="Trains Ballista"
+Ubertip="|n|cffFFFF80Attack:|r Siege (|cffFFFF00850|r rng,|cffFFFF00 31|r dps)|n|cffFFFF80Armor:|r Medium (|cffFFFF003|r)|n|cffFFFF80Hitpoints: |cffFFFF00500|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Ground Only|r|nThis unit can't attack flying enemies|n|n|cff80FF00Line Damage|r|nThis unit's attacks hit all units in 200.0 range behind its target"
+[e003]
+Name="Ranger"
+Hotkey=Q
+Tip="Trains Ranger"
+Ubertip="|n|cffFFFF80Attack:|r Pierce (|cffFFFF00425|r rng,|cffFFFF00 62|r dps)|n|cffFFFF80Armor:|r Light (|cffFFFF003|r)|n|cffFFFF80Hitpoints: |cffFFFF00500|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Multi Shot|r|nShoots at 3 targets simultaneously|n|n|cff80FF00Evade|r|n15% chance to evade an attack"
+[e004]
+Name="Amazon"
+Hotkey=Q
+Tip="Trains Amazon"
+Ubertip="|n|cffFFFF80Attack:|r Pierce (|cffFFFF00460|r rng,|cffFFFF00 100|r dps)|n|cffFFFF80Armor:|r Light (|cffFFFF005|r)|n|cffFFFF80Hitpoints: |cffFFFF00900|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Immune|r|nThis unit is immune to certain negative effects|n|n|cff80FF00Legendary Spell Resistance|r|nSpell damage done to this unit is reduced by 70%|n|n|cff80FF00Multi Shot|r|nShoots at 7 targets simultaneously|n|n|cff80FF00Evade|r|n25% chance to evade an attack"
+[e001]
+Name="Huntress"
+Hotkey=Q
+Tip="Trains Huntress"
+Ubertip="|n|cffFFFF80Attack:|r Pierce (|cffFFFF00400|r rng,|cffFFFF00 27|r dps)|n|cffFFFF80Armor:|r Light (|cffFFFF001|r)|n|cffFFFF80Hitpoints: |cffFFFF00300|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Evade|r|n8% chance to evade an attack"
+[e002]
+Name="Glaive Thrower"
+Hotkey=Q
+Tip="Trains Glaive Thrower"
+Ubertip="|n|cffFFFF80Attack:|r Siege (|cffFFFF001000|r rng,|cffFFFF00 26|r dps)|n|cffFFFF80Armor:|r Heavy (|cffFFFF002|r)|n|cffFFFF80Hitpoints: |cffFFFF00400|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Ground Only|r|nThis unit can't attack flying enemies|n|n|cff80FF00Bouncing Attack|r|nThis unit's attacks can hit up to 4 enemies, dealing 30% less damage on each bounce"
+[e000]
+Name="Faerie Dragon"
+Hotkey=Q
+Tip="Trains Faerie Dragon"
+Ubertip="|n|cffFFFF80Attack:|r Magic (|cffFFFF00350|r rng,|cffFFFF00 28|r dps)|n|cffFFFF80Armor:|r Light (|cffFFFF002|r)|n|cffFFFF80Hitpoints: |cffFFFF00460|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Flying|r|nThis unit is flying|n|n|cff80FF00Heal|r|nHeals an allied unit by 200 hitpoints|n|cff8080FFCooldown: |r6|n|cff8080FFMana cost: |r20|n|n|cff80FF00Feedback|r|nEach attack burns up to 25 mana dealing the same amount of damage"
+[e00F]
+Name="Mountain Giant "
+Hotkey=Q
+Tip="Trains Mountain Giant"
+Ubertip="|n|cffFFFF80Attack:|r Normal (|cffFFFF00melee|r,|cffFFFF00 83|r dps)|n|cffFFFF80Armor:|r Fortified (|cffFFFF008|r)|n|cffFFFF80Hitpoints: |cffFFFF001050|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Grab Tree|r|nPicks up a nearby tree which increases its damage and transforms it into siege type. Can attack air units with tree. Lasts 10 hits|n|n|cff80FF00Pulverize|r|n30% chance to deal 200 damage in 175 AoE|n|n|cff80FF00Hardened Skin|r|nMountain Giant received damage reduced by 30|n|n|cff80FF00Resistant Skin|r|nGiant spell resistance is 50%|n|n|cff80FF00Taunt|r|nForces nearby enemies in 240 AoE to attack Mountain Giant|n|cff8080FFCooldown: |r8"
+[e00J]
+Name="Sage Druid"
+Hotkey=Q
+Tip="Trains Sage Druid"
+Ubertip="|n|cffFFFF80Attack:|r Chaos (|cffFFFF00375|r rng,|cffFFFF00 46|r dps)|n|cffFFFF80Armor:|r Unarmored (|cffFFFF003|r)|n|cffFFFF80Hitpoints: |cffFFFF00550|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Mass Entangle|r|nEntangles up to 3 ground units for 6 seconds dealing 35 damage per second|n|cff8080FFCooldown: |r14|n|cff8080FFMana cost: |r35"
+Casterupgradename=
+Casterupgradetip=
+[e00E]
+Name="ET dummy"
+Hotkey=W
+Tip=""
+Ubertip=""
+[e00H]
+Name="Elemental spirit"
+Hotkey=W
+Tip=""
+Ubertip=""
+[e00G]
+Name="Raise dummy"
+Hotkey=W
+Tip=""
+Ubertip=""
+[e00I]
+Name="quicksand"
+Hotkey=W
+Tip=""
+Ubertip=""
+[e00K]
+Name="coral dummy"
+Hotkey=W
+Tip=""
+Ubertip=""
+[e00L]
+Name="electow dummy"
+Hotkey=W
+Tip=""
+Ubertip=""

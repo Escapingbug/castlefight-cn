@@ -1,0 +1,555 @@
+[HERO]
+Name=A Hero
+[nshp]
+Name=Goblin Shipyard
+Tip=Build Goblin Shipyard
+Description=Sells boats.
+[nmrk]
+Name=Marketplace
+Tip=Build Marketplace
+Description=A store for purchasing goods.
+[ndog]
+Name=Dog
+Tip=Invoke Dog
+Ubertip="Call upon the spirit of Dog to save you."
+[npig]
+Name=Pig
+Tip=Invoke Pig
+Ubertip="Call upon the spirit of Pig to save you."
+[nder]
+Name=Stag
+Tip=Invoke Stag
+Ubertip="Call upon the spirit of Stag to save you."
+[nsea]
+Name=Seal
+Tip=Invoke Seal
+Ubertip="Call upon the spirit of Seal to save you."
+[nshe]
+Name=Sheep
+Tip=Invoke Sheep
+Ubertip="Call upon the spirit of Sheep to save you."
+[nsha]
+Name=Sheep
+Tip=Invoke Sheep
+Ubertip="Call upon the spirit of Sheep to save you."
+[nshw]
+Name=Sheep
+Tip=Invoke Sheep
+Ubertip="Call upon the spirit of Sheep to save you."
+[nshf]
+Name=Flying Sheep
+Tip=Invoke Uber Sheep
+Ubertip="Call upon the Uber Sheep to save you."
+[nvul]
+Name=Vulture
+Tip=Invoke Vulture
+Ubertip="Call upon the spirit of Vulture to save you."
+[ninf]
+Name=Infernal
+Tip=Summon Infernal
+Ubertip="Heavy melee unit cloaked in demonic flames that damage nearby enemy ground units. Immune to magic. |n|n|cffffcc00Attacks land units.|r"
+[nwgt]
+Name=Way Gate
+Tip=Build Way Gate
+Description=Teleports units to a sister Way Gate.
+[ncp2]
+Name=Circle of Power
+Tip=Build Circle of Power
+Description=A pedestal that glows with energy.
+[nowl]
+Name=Owl Scout
+[now2]
+Name=Owl Scout
+[now3]
+Name=Owl Scout
+[nskk]
+Name=Skink
+Tip=Invoke Skink
+Ubertip="Call upon the spirit of Skink to save you."
+[ncrb]
+Name=Crab
+Tip=Invoke Crab
+Ubertip="Call upon the spirit of Crab to save you."
+[nhmc]
+Name=Hermit Crab
+Tip=Invoke Hermit Crab
+Ubertip="Call upon the spirit of Hermit Crab to save you."
+[nech]
+Name=Chicken
+Tip=Invoke Chicken
+Ubertip="Call upon the spirit of fearsome Chicken to save you."
+[nfro]
+Name=Frog
+Tip=Invoke Frog
+Ubertip="Call upon the spirit of fearsome Frog to save you."
+[necr]
+Name=Rabbit
+Tip=Invoke Rabbit
+Ubertip="Call upon the spirit of fearsome Rabbit to save you."
+[nrac]
+Name=Raccoon
+Tip=Invoke Raccoon
+Ubertip="Call upon the spirit of fearsome Raccoon to save you."
+[nalb]
+Name=Albatross
+Tip=Invoke Albatross
+Ubertip="Call upon the spirit of Albatross to save you."
+[npng]
+Name=Penguin
+Tip=Invoke Penguin
+Ubertip="Call upon the spirit of Penguin to save you."
+[npnw]
+Name=Penguin
+Tip=Invoke Penguin
+Ubertip="Call upon the spirit of Penguin to save you."
+[nrat]
+Name=Rat
+Tip=Invoke Rat
+Ubertip="Call upon the spirit of Rat to save you."
+[nsno]
+Name=Snowy Owl
+Tip=Invoke Snowy Owl
+Ubertip="Call upon the spirit of Snowy Owl to save you."
+[nfbr]
+Name=Fel Boar
+Tip=Invoke Fel Boar
+Ubertip="Call upon the spirit of Fel Boar to save you."
+[ndwm]
+Name=Dune Worm
+Tip=Invoke Dune Worm
+Ubertip="Call upon the spirit of Dune Worm to save you."
+[nvdl]
+Name=Lesser Voidwalker
+Tip=Hire Lesser Voidwalker
+Ubertip="Light ranged unit. |n|n|cffffcc00Attacks land and air units.|r"
+[n02F]
+Name="Tornado (-na)"
+[n02E]
+Name=Tornado
+[n02B]
+Name="Great Bear "
+Ubertip="|n|cffFFFF80Attack:|r Normal (|cffFFFF00melee|r,|cffFFFF00 63|r dps)|n|cffFFFF80Armor:|r Unarmored (|cffFFFF008|r)|n|cffFFFF80Hitpoints: |cffFFFF001250|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Bash|r|nHas 30% chance to stun enemy for 1 second and deal 65 additional damage|n|n|cff80FF00Cleave|r|nEach hit deals 35% of the normal damage to all enemies in 175 range in front of this unit|n|n|cff80FF00Critical Strike|r|nHas 30% chance to deal double damage on hit|n|n|cff80FF00Feral Rage|r|nHas 20% chance to increase its attack speed and get 30% of additional damage on being hit"
+Hotkey=Q
+Tip="Trains Great Bear"
+[n02A]
+Name="Emerald Dragon "
+Tip="Trains Emerald Dragon"
+Ubertip="|n|cffFFFF80Attack:|r Chaos (|cffFFFF00250|r rng|r,|cffFFFF00 46|r dps)|n|cffFFFF80Armor:|r Heavy (|cffFFFF004|r)|n|cffFFFF80Hitpoints: |cffFFFF00700|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Regeneration|r|nDragon vital force regenerates 5hp/s|n|n|cff80FF00Splash|r|nDeals splash damage in 150 AoE"
+Hotkey=Q
+[n01Y]
+Name="Dragonhawk Rider"
+Hotkey=Q
+Tip="Trains Dragonhawk Rider"
+Ubertip="|n|cffFFFF80Attack:|r Pierce (|cffFFFF00450|r rng,|cffFFFF00 46|r dps)|n|cffFFFF80Armor:|r Heavy (|cffFFFF003|r)|n|cffFFFF80Hitpoints: |cffFFFF00650|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Flying|r|nThis unit is flying|n|n|cff80FF00Solar Strike|r|nStrikes up to 4 non mechanical air units in a 400 AoE with sunlight, dealing 80 damage and stunning for 4 seconds|n|cff8080FFCooldown: |r14|n|cff8080FFMana cost: |r50"
+[n028]
+Name="Furbolg Elder Shaman "
+Tip="Trains Furbolg Elder Shaman"
+Ubertip="|n|cffFFFF80Attack:|r Magic (|cffFFFF00450|r rng|r,|cffFFFF00 51|r dps)|n|cffFFFF80Armor:|r Light (|cffFFFF003|r)|n|cffFFFF80Hitpoints: |cffFFFF00650|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Rejuvenation|r|nHeals 400 hp over 10 seconds|n|cff8080FFCooldown: |r14|n|cff8080FFMana cost: |r50|n|n|cff80FF00Manaburn|r|nHas 30% chance to burn up to 150 mana on hit and deal damage equal to amount of burned mana"
+Hotkey=Q
+[n01W]
+Name="Brood Mother "
+Tip="Trains Brood Mother"
+Ubertip="|n|cffFFFF80Attack:|r Pierce (|cffFFFF00melee|r,|cffFFFF00 70|r dps)|n|cffFFFF80Armor:|r Unarmored (|cffFFFF006|r)|n|cffFFFF80Hitpoints: |cffFFFF00800|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Slow Poison|r|nReduces attack and movement speed by 25% and deals 12 dmg/sec during 10 seconds|n|n|cff80FF00Web|r|nImmobilizes enemy units. Lasts 12 seconds|n|cff8080FFCooldown: |r18|n|n|cff80FF00Spawn|r|nSpawns Giant Spider on death|n|n|cff80FF00Infest|r|nDeals 25 dmg/sec during 10 seconds. When unit killed  2  Forest Spiders will spawn|n|cff8080FFCooldown: |r12|n|cff8080FFMana cost: |r50"
+Hotkey=Q
+[n029]
+Name="Forest Bear "
+Ubertip="|n|cffFFFF80Attack:|r Normal (|cffFFFF00melee|r,|cffFFFF00 48|r dps)|n|cffFFFF80Armor:|r Unarmored (|cffFFFF006|r)|n|cffFFFF80Hitpoints: |cffFFFF00680|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Bash|r|nHas 15% chance to stun enemy for 0.5 seconds and deal 50 additional damage|n|n|cff80FF00Cleave|r|nEach hit deals 30% of the normal damage to all enemies in 150 range in front of this unit|n|n|cff80FF00Critical Strike|r|nHas 20% chance to deal double damage on hit|n|n|cff80FF00Feral Rage|r|nHas 15% chance to increase its attack speed and get 20% of additional damage on being hit"
+Hotkey=Q
+Tip="Trains Forest Bear"
+[n01X]
+Name="Iron Golem"
+Tip="Trains Iron Golem"
+Ubertip="|n|cffFFFF80Attack:|r Hero (|cffFFFF00melee|r,|cffFFFF00 46|r dps)|n|cffFFFF80Armor:|r Medium (|cffFFFF0012|r)|n|cffFFFF80Hitpoints: |cffFFFF00550|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Spell Resistance|r|nReduces Spell Damage by 30%|n|n|cff80FF00Pulverize|r|nGrants a 25% chance on each attack to hit all enemies in 150 range for 60 damage and all units in 250 for half of the damage|n|n|cff80FF00Bash|r|n15% chance on each attack to stun for 2 seconds and deal 40 extra damage"
+Hotkey=Q
+[n026]
+Name="Furbolg Shaman "
+Tip="Trains Furbolg Shaman"
+Hotkey=Q
+Ubertip="|n|cffFFFF80Attack:|r Magic (|cffFFFF00400|r rng|r,|cffFFFF00 37|r dps)|n|cffFFFF80Armor:|r Light (|cffFFFF001|r)|n|cffFFFF80Hitpoints: |cffFFFF00450|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Rejuvenation|r|nHeals 200 hp over 10 seconds|n|cff8080FFCooldown: |r16|n|cff8080FFMana cost: |r50"
+[n01U]
+Name="Gobbo Machinist"
+Tip="Assemble Gobbo Machinist"
+Ubertip="Assembles an invulnerable Gobbo Machinist, which can repair buildings and units."
+Hotkey=C
+[n027]
+Name="Corrupted Annihilator"
+Tip="Trains Corrupted Annihilator"
+Ubertip="|n|cffFFFF80Attack:|r Normal (|cffFFFF00melee|r,|cffFFFF00 120|r dps)|n|cffFFFF80Armor:|r Heavy (|cffFFFF007|r)|n|cffFFFF80Hitpoints: |cffFFFF001800|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Legendary Spell Resistance|r|nSpell damage done to this unit is reduced by 70%|n|n|cff80FF00Immune|r|nThis unit is immune to certain negative effects|n|n|cff80FF00Cleaving Attack|r|nEach hit deals 40% of the normal damage to all enemies in 225 range in front of this unit|n|n|cff80FF00Critical Strike|r|n15% chance on each attack to deal 2 times the normal damage|n|n|cff80FF00Weakening Attack|r|nThe attacks of this unit decrease damage by 100% for 20 seconds|n|n|cff80FF00Fan of Spikes|r|nImpales ground units in a cone in front of the Annihilator dealing 250 spell damage and stunning them for 3.5 seconds.|n|cff8080FFCooldown: |r15|n|cff8080FFMana cost: |r40"
+Hotkey=Q
+[n01V]
+Name="Lunatic Goblin"
+Tip="Trains Lunatic Goblin"
+Ubertip="|n|cffFFFF80Armor:|r Unarmored (|cffFFFF000|r)|n|cffFFFF80Hitpoints: |cffFFFF00175|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Suicide|r|nSuicides, dealing 275 damage to ground enemies in 150 range and 125 damage to enemies in 300 range. Buildings receive only 75% of the damage|n|n|cff80FF00Detonate|r|nUpon death, Lunatic Goblin deals up to 150 damage to enemies in 280 range. Targets farther away take less damage. Stacks with the suicide damage."
+Hotkey=Q
+[n024]
+Name="Adamant Golem"
+Tip="Trains Adamant Golem"
+Ubertip="|n|cffFFFF80Attack:|r Hero (|cffFFFF00melee|r,|cffFFFF00 92|r dps)|n|cffFFFF80Armor:|r Divine (|cffFFFF0015|r)|n|cffFFFF80Hitpoints: |cffFFFF00950|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Immune|r|nThis unit is immune to certain negative effects|n|n|cff80FF00Extreme Spell Resistance|r|nReduces Spell Damage by 90% and ignores most of negative spells(0.5s cooldown)|n|n|cff80FF00Bash|r|n50% chance on each attack to stun for 2 seconds and deal 100 extra damage|n|n|cff80FF00Pulverize|r|nGrants a 40% chance on each attack to hit all enemies in 150 range for 150 damage and all units in 250 for half of the damage"
+Hotkey=Q
+[n01S]
+Name="Mutation"
+Tip=Summon Sludge Minion
+Ubertip="Melee unit that casts slow on enemies."
+[n025]
+Name="Landmine"
+[n01T]
+Name="Goblin Shredder"
+Hotkey=Q
+Tip="Trains Goblin Shredder"
+Ubertip="|n|cffFFFF80Attack:|r Pierce (|cffFFFF00melee|r,|cffFFFF00 56|r dps)|n|cffFFFF80Armor:|r Medium (|cffFFFF009|r)|n|cffFFFF80Hitpoints: |cffFFFF001000|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Inducted Rage|r|nEach time the Shredder is hit by a negative special building, it permanently gains 50% attackspeed and has a 60% chance that the special's effect is blocked. Attackspeed bonus is capped at 200%.|n|n|cff80FF00Detonate|r|nUpon death, Shredder deals up to 50 damage to enemies in 300 range. Targets farther away take less damage. Each time the Shredder gets hit by a negative special building the explosion damage gets doubled and the ranged gets increased slightly. Maximum is at 4 hits.|n|n|cff80FF00Shredder Attack|r|nEach hit deals full damage to all enemies in 160 range in front of this unit|n|cff80FF00Spell resistanse|r|nHas 15% resistanse to negative spells"
+[n01Q]
+Name="Hydra"
+Tip=Hire Ancient Hydra
+Ubertip="Strong ranged unit with poison attack. Splits upon death."
+[n01R]
+Name="Lesser Hydra"
+Tip=Hire Ancient Hydra
+Ubertip="Ranged unit with slow poison."
+[n01O]
+Name="Troll Trapper"
+Hotkey=Q
+Tip="Trains Troll Trapper"
+Ubertip="|n|cffFFFF80Attack:|r Normal (|cffFFFF00325|r rng,|cffFFFF00 38|r dps)|n|cffFFFF80Armor:|r Medium (|cffFFFF004|r)|n|cffFFFF80Hitpoints: |cffFFFF00600|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Ensnare|r|nEnsnares an enemy air unit, binding it to the ground that it can be attacked by melee units. Lasts 16 seconds|n|cff8080FFCooldown: |r8|n|n|cff80FF00Berserk|r|nWhenever this unit kills an enemy it goes into a rampage, gaining 200% attack speed, 25% movement speed, but also takes 10% more damage. Rampage lasts 6 seconds"
+[n021]
+Name="Raised Tentacle"
+Ubertip="Corrupted raised tentacle."
+Tip="Raised Tentacle"
+[n01P]
+Name="Ancient Hydra"
+Tip="Trains Ancient Hydra"
+Ubertip="|n|cffFFFF80Attack:|r Chaos (|cffFFFF00500|r rng,|cffFFFF00 143|r dps)|n|cffFFFF80Armor:|r Medium (|cffFFFF008|r)|n|cffFFFF80Hitpoints: |cffFFFF001750|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Splash Damage|r|nThis unit's attacks hit all units in a 250 AoE around its target. Units farther away from the target receive less damage|n|n|cff80FF00Legendary Spell Resistance|r|nSpell damage done to this unit is reduced by 70%|n|n|cff80FF00Immune|r|nThis unit is immune to certain negative effects|n|n|cff80FF00Triple Attack|r|nDeals  damage to 3 enemies simultaneously|n|n|cff80FF00Split|r|nSplits upon death into 2 hydras, which will split again upon death."
+Hotkey=Q
+[n00G]
+Name=Flying Sheep
+Tip=Invoke Uber Sheep
+Ubertip="Call upon the Uber Sheep to save you."
+[n00F]
+Name=Sheep
+Tip=Invoke Sheep
+Ubertip="Call upon the spirit of Sheep to save you."
+[n00M]
+Name="Blood Fiend"
+Tip=Hire Unbroken Rager
+Ubertip="Fast melee unit with random armor type and random abilities."
+[n00L]
+Name="Blood Fiend"
+Tip="Trains Blood Fiend"
+Ubertip="|n|cffFFFF80Attack:|r Chaos (|cffFFFF00melee|r,|cffFFFF00 45|r dps)|n|cffFFFF80Armor:|r Varies (|cffFFFF006|r)|n|cffFFFF80Hitpoints: |cffFFFF00600|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Present of Chaos|r|nEach bloodfiend has  random abilities and armor type."
+Hotkey=Q
+[n00A]
+Name="Satyr "
+Tip="Trains Satyr "
+Ubertip="|n|cffFFFF80Attack:|r Normal (|cffFFFF00275|r rng,|cffFFFF00 20|r dps)|n|cffFFFF80Armor:|r Light (|cffFFFF003|r)|n|cffFFFF80Hitpoints: |cffFFFF00250|r"
+Hotkey=Q
+[n00D]
+Name="Skeleton-Archer"
+Tip="Skeleton-Archer"
+Ubertip="Weak ranged unit."
+[n00C]
+Name="Skeletal Hero"
+Tip=Summon Skeletal Orc
+Ubertip="Melee unit with critical strike."
+[n00B]
+Name="Zombie"
+Tip="Trains Zombie"
+Ubertip="|n|cffFFFF80Attack:|r Chaos (|cffFFFF00melee|r,|cffFFFF00 15|r dps)|n|cffFFFF80Armor:|r Medium (|cffFFFF003|r)|n|cffFFFF80Hitpoints: |cffFFFF00265|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Rot|r|nDamages organic enemies in 250 range, dealing 8 damage per second"
+Hotkey=Q
+[n008]
+Name="Succubus"
+Tip="Trains Succubus"
+Ubertip="|n|cffFFFF80Attack:|r Magic (|cffFFFF00360|r rng,|cffFFFF00 33|r dps)|n|cffFFFF80Armor:|r Light (|cffFFFF002|r)|n|cffFFFF80Hitpoints: |cffFFFF00450|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Curse|r|nCurses target enemy to miss 35% of his attacks for 25 seconds|n|cff8080FFCooldown: |r6|n|cff8080FFMana cost: |r20"
+Hotkey=Q
+[n009]
+Name="Chaos Warrior"
+Tip="Trains Chaos Warrior"
+Ubertip="|n|cffFFFF80Attack:|r Normal (|cffFFFF00melee|r,|cffFFFF00 27|r dps)|n|cffFFFF80Armor:|r Medium (|cffFFFF005|r)|n|cffFFFF80Hitpoints: |cffFFFF00400|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Cleaving Attack|r|nEach hit deals 25% of the normal damage to all enemies in 175 range in front of this unit"
+Hotkey=Q
+[n000]
+Name="Infernal"
+Tip="Trains Infernal"
+Ubertip="|n|cffFFFF80Attack:|r Chaos (|cffFFFF00melee|r,|cffFFFF00 85|r dps)|n|cffFFFF80Armor:|r Heavy (|cffFFFF007|r)|n|cffFFFF80Hitpoints: |cffFFFF001600|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Attack Air|r|nThis unit can attack flying enemies|n|n|cff80FF00Immolation|r|nDeals 30 damage per second to all enemies in 250 range"
+Hotkey=Q
+[n001]
+Name="Red Dragon"
+Tip="Trains Red Dragon"
+Ubertip="|n|cffFFFF80Attack:|r Chaos (|cffFFFF00400|r rng,|cffFFFF00 50|r dps)|n|cffFFFF80Armor:|r Heavy (|cffFFFF003|r)|n|cffFFFF80Hitpoints: |cffFFFF00850|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Flying|r|nThis unit is flying|n|n|cff80FF00Splash Damage|r|nThis unit's attacks hit all units in a 200 AoE around its target. Units farther away from the target receive less damage"
+Hotkey=Q
+[n005]
+Name="Warlock"
+Tip="Trains Warlock"
+Ubertip="|n|cffFFFF80Attack:|r Chaos (|cffFFFF00160|r rng,|cffFFFF00 17|r dps)|n|cffFFFF80Armor:|r Unarmored (|cffFFFF001|r)|n|cffFFFF80Hitpoints: |cffFFFF00320|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Chamber|r|nDeals 175 spell damage to enemies in a 340 AoE|n|cff8080FFCooldown: |r12|n|cff8080FFMana cost: |r35"
+Hotkey=Q
+[n01H]
+Name="Corrupted Treant"
+Tip="Trains Corrupted Treant"
+Ubertip="|n|cffFFFF80Attack:|r Normal (|cffFFFF00melee|r,|cffFFFF00 38|r dps)|n|cffFFFF80Armor:|r Heavy (|cffFFFF005|r)|n|cffFFFF80Hitpoints: |cffFFFF00640|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Cleaving Attack|r|nEach hit deals 25% of the normal damage to all enemies in 175 range in front of this unit|n|n|cff80FF00Critical Strike|r|n10% chance on each attack to deal 2 times the normal damage|n|n|cff80FF00Weakening Attack|r|nThe attacks of this unit decrease damage by 35% for 10 seconds"
+Hotkey=Q
+[n01G]
+Name="Felhound"
+Tip="Trains Felhound"
+Hotkey=Q
+Ubertip="|n|cffFFFF80Attack:|r Pierce (|cffFFFF00melee|r,|cffFFFF00 37|r dps)|n|cffFFFF80Armor:|r Medium (|cffFFFF007|r)|n|cffFFFF80Hitpoints: |cffFFFF00650|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Slowing Aura|r|nDecreases speed of enemy units in 500 range by 15%"
+[n01I]
+Name="Corrupted Ent"
+Tip="Trains Corrupted Ent"
+Ubertip="|n|cffFFFF80Attack:|r Normal (|cffFFFF00melee|r,|cffFFFF00 19|r dps)|n|cffFFFF80Armor:|r Heavy (|cffFFFF004|r)|n|cffFFFF80Hitpoints: |cffFFFF00320|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Weakening Attack|r|nThe attacks of this unit decrease damage by 20% for 10 seconds"
+Hotkey=Q
+[n01L]
+Name="Greater Skeleton Archer"
+Tip=Hire Skeleton Archer
+Ubertip="Ranged unit with critical strike and evade."
+[n01K]
+Name="Suffocated Zombie"
+Tip="Trains Suffocated Zombie"
+Ubertip="|n|cffFFFF80Attack:|r Chaos (|cffFFFF00melee|r,|cffFFFF00 27|r dps)|n|cffFFFF80Armor:|r Medium (|cffFFFF005|r)|n|cffFFFF80Hitpoints: |cffFFFF00500|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Plague Attack|r|nUnits hit by the Zombie get their movement speed reduced by 15% and receive 8 damage per second for 10 seconds|n|n|cff80FF00Rot|r|nDamages organic enemies in 290 range, dealing 12 damage per second"
+Hotkey=Q
+[n01N]
+Name="Giant Spider "
+Tip="Trains Giant Spider"
+Ubertip="|n|cffFFFF80Attack:|r Pierce (|cffFFFF00melee|r,|cffFFFF00 53|r dps)|n|cffFFFF80Armor:|r Unarmored (|cffFFFF004|r)|n|cffFFFF80Hitpoints: |cffFFFF00500|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Slow Poison|r|nReduces attack and movement speed by 15% and deals 8 dmg/sec during 10 seconds|n|n|cff80FF00Web|r|nImmobilizes enemy units. Lasts 10 seconds|n|cff8080FFCooldown: |r18|n|n|cff80FF00Spawn|r|nSpawns Black Spider on death"
+Hotkey=Q
+[n01M]
+Name="Skeletal General"
+Tip=Summon Skeletal Orc
+Ubertip="Strong melee unit with a 20% damage add aura and critical strike."
+[n01B]
+Name="Shadow Drake"
+Tip="Trains Shadow Drake"
+Hotkey=Q
+Ubertip="|n|cffFFFF80Attack:|r Magic (|cffFFFF00400|r rng,|cffFFFF00 45|r dps)|n|cffFFFF80Armor:|r Medium (|cffFFFF004|r)|n|cffFFFF80Hitpoints: |cffFFFF00700|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Flying|r|nThis unit is flying|n|n|cff80FF00Nether sphere|r|nAdds 25 splash damage in 180 range, farther targets get less damage|n|cff8080FFMana cost: |r20"
+[n01A]
+Name="Void Keeper"
+Tip="Trains Void Keeper"
+Ubertip="|n|cffFFFF80Attack:|r Magic (|cffFFFF00400|r rng,|cffFFFF00 50|r dps)|n|cffFFFF80Armor:|r Light (|cffFFFF004|r)|n|cffFFFF80Hitpoints: |cffFFFF00740|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Incinerate|r|nEach attack onto the same target deals 5 damage more than the one before. If the target dies, it explodes dealing 125 spell damage to enemies in 120 AoE and half of the damage to units in 180 AoE|n|n|cff80FF00Corruption Aura|r|nDecreases the armor of all enemies in 550 range by 4"
+Hotkey=Q
+[n01D]
+Name="Nether Drake"
+Tip="Trains Nether Drake"
+Hotkey=Q
+Ubertip="|n|cffFFFF80Attack:|r Magic (|cffFFFF00400|r rng,|cffFFFF00 26|r dps)|n|cffFFFF80Armor:|r Medium (|cffFFFF002|r)|n|cffFFFF80Hitpoints: |cffFFFF00425|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Flying|r|nThis unit is flying|n|n|cff80FF00Nether sphere|r|nAdds 20 splash damage to attack wich hits all enemies in 180 range, farther targets get less damage|n|cff8080FFMana cost: |r20"
+[n01C]
+Name="Raised Tentacle"
+Ubertip="Corrupted raised tentacle."
+Tip="Raised Tentacle"
+[n01F]
+Name="Infernal Machine"
+Tip="Trains Infernal Machine"
+Ubertip="|n|cffFFFF80Attack:|r Siege (|cffFFFF00600|r rng,|cffFFFF00 45|r dps)|n|cffFFFF80Armor:|r Heavy (|cffFFFF003|r)|n|cffFFFF80Hitpoints: |cffFFFF00600|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Ground Only|r|nThis unit can't attack flying enemies|n|n|cff80FF00Detonate|r"
+Hotkey=Q
+[n01E]
+Name="Infernal Tank"
+Tip="Trains Infernal Tank"
+Ubertip="|n|cffFFFF80Attack:|r Siege (|cffFFFF00600|r rng,|cffFFFF00 50|r dps)|n|cffFFFF80Armor:|r Heavy (|cffFFFF004|r)|n|cffFFFF80Hitpoints: |cffFFFF00850|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Ground Only|r|nThis unit can't attack flying enemies|n|n|cff80FF00Line Damage|r|nDeals 50 additional spell damage to all enemies near its target|n|n|cff80FF00Detonate|r|nDeals up to 150 damage to enemies in 275 range. Targets farther away take less damage"
+Hotkey=Q
+[n017]
+Name="Frost Wolf"
+Tip="Trains Frost Wolf"
+Ubertip="|n|cffFFFF80Attack:|r Normal (|cffFFFF00melee|r,|cffFFFF00 20|r dps)|n|cffFFFF80Armor:|r Unarmored (|cffFFFF004|r)|n|cffFFFF80Hitpoints: |cffFFFF00280|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Critical Strike|r|n10% chance on each attack to hit for 1.5 times of the normal damage"
+Hotkey=Q
+[n00V]
+Name="Troll Berserker"
+Hotkey=Q
+Tip="Trains Troll Berserker"
+Ubertip="|n|cffFFFF80Attack:|r Normal (|cffFFFF00300|r rng,|cffFFFF00 30|r dps)|n|cffFFFF80Armor:|r Medium (|cffFFFF003|r)|n|cffFFFF80Hitpoints: |cffFFFF00450|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Berserk|r|nWhenever this unit kills an enemy it goes into a rampage, gaining 200% attack speed, 25% movement speed, but also takes 10% more damage. Rampage lasts 6 seconds"
+[n018]
+Name="Polar Bear"
+Tip="Trains Polar Bear"
+Ubertip="|n|cffFFFF80Attack:|r Normal (|cffFFFF00melee|r,|cffFFFF00 43|r dps)|n|cffFFFF80Armor:|r Unarmored (|cffFFFF005|r)|n|cffFFFF80Hitpoints: |cffFFFF00550|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Cleaving Attack|r|nEach hit deals 27% of the normal damage to all enemies in 200 range in front of this unit|n|n|cff80FF00Critical Strike|r|n10% chance on each attack to deal 2 times the normal damage"
+Hotkey=Q
+[n00W]
+Name="Summoned Lobster"
+Tip=Hire Makrura Tidecaller
+Ubertip="Melee unit with damage absorption and critical strike."
+[n019]
+Name="Void Walker"
+Tip="Trains Void Walker"
+Ubertip="|n|cffFFFF80Attack:|r Magic (|cffFFFF00380|r rng,|cffFFFF00 25|r dps)|n|cffFFFF80Armor:|r Light (|cffFFFF002|r)|n|cffFFFF80Hitpoints: |cffFFFF00375|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Incinerate|r|nEach attack onto the same target deals 3 damage more than the one before. If the target dies, it explodes dealing 60 spell damage to enemies in 90 AoE and half of the damage to units in 160 AoE|n|n|cff80FF00Corruption Aura|r|nDecreases the armor of all enemies in 400 range by 2"
+Hotkey=Q
+[n00Z]
+Name="Chaos Champion"
+Tip="Trains Chaos Champion"
+Ubertip="|n|cffFFFF80Attack:|r Normal (|cffFFFF00melee|r,|cffFFFF00 59|r dps)|n|cffFFFF80Armor:|r Medium (|cffFFFF008|r)|n|cffFFFF80Hitpoints: |cffFFFF00850|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Critical Strike|r|n10% chance on each attack to deal 2 times the normal damage|n|n|cff80FF00Roar|r|nIncreases the damage of all friendly units in 525 range by 25%. Lasts 20 seconds|n|cff8080FFCooldown: |r30|n|n|cff80FF00Cleaving Attack|r|nEach hit deals 35% of the normal damage to all enemies in 200 range in front of this unit"
+Hotkey=Q
+[n00N]
+Name="Blood Fiend"
+Tip=Hire Unbroken Rager
+Ubertip="Fast melee unit with random armor type and random abilities."
+[n010]
+Name="Azure Drake"
+Tip="Trains Azure Drake"
+Ubertip="|n|cffFFFF80Attack:|r Chaos (|cffFFFF00250|r rng,|cffFFFF00 33|r dps)|n|cffFFFF80Armor:|r Heavy (|cffFFFF004|r)|n|cffFFFF80Hitpoints: |cffFFFF00650|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Flying|r|nThis unit is flying|n|n|cff80FF00Splash Damage|r|nThis unit's attacks hit all units in a 175 AoE around its target. Units farther away from the target receive less damage|n|n|cff80FF00Chilling Attack|r|nAll units hit get chilled for 5 seconds"
+Hotkey=Q
+[n00O]
+Name="Blood Fiend"
+Tip=Hire Unbroken Rager
+Ubertip="Fast melee unit with random armor type and random abilities."
+[n011]
+Name="Hrimthrusa"
+Tip="Trains Hrimthrusa"
+Ubertip="|n|cffFFFF80Attack:|r Pierce (|cffFFFF00380|r rng,|cffFFFF00 33|r dps)|n|cffFFFF80Armor:|r Heavy (|cffFFFF002|r)|n|cffFFFF80Hitpoints: |cffFFFF00325|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Frost Attack|r|nEach attack against ground units has a 5% chance to freeze the target to the ground for 7 seconds, dealing 15 damage per second"
+Hotkey=Q
+[n00P]
+Name="Blood Fiend"
+Tip=Hire Unbroken Rager
+Ubertip="Fast melee unit with random armor type and random abilities."
+[n012]
+Name="Wandigoo"
+Tip="Trains Wandigoo"
+Ubertip="|n|cffFFFF80Attack:|r Pierce (|cffFFFF00melee|r,|cffFFFF00 46|r dps)|n|cffFFFF80Armor:|r Medium (|cffFFFF005|r)|n|cffFFFF80Hitpoints: |cffFFFF00800|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Pulverize|r|nGrants a 25% chance on each attack to hit all enemies in 150 range for 80 damage and all units in 250 for half of the damage"
+Hotkey=Q
+[n00Q]
+Name="Blood Fiend"
+Tip=Hire Unbroken Rager
+Ubertip="Fast melee unit with random armor type and random abilities."
+[n013]
+Name="Ancient Wandigoo"
+Tip="Trains Ancient Wandigoo"
+Ubertip="|n|cffFFFF80Attack:|r Pierce (|cffFFFF00melee|r,|cffFFFF00 78|r dps)|n|cffFFFF80Armor:|r Medium (|cffFFFF007|r)|n|cffFFFF80Hitpoints: |cffFFFF001400|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Pulverize|r|nGrants a 30% chance on each attack to hit all enemies in 150 range for 140 damage and all units in 250 for half of the damage|n|n|cff80FF00Howl|r|nDecreases armor of all enemies in 850 range by 4 and damage by 30% for 10 seconds|n|cff8080FFCooldown: |r17|n|cff8080FFMana cost: |r30"
+Hotkey=Q
+[n00R]
+Name="Blood Fiend"
+Tip=Hire Unbroken Rager
+Ubertip="Fast melee unit with random armor type and random abilities."
+[n00T]
+Name="Forest Spider "
+Tip="Trains Forest Spider"
+Ubertip="|n|cffFFFF80Attack:|r Pierce (|cffFFFF00melee|r,|cffFFFF00 15|r dps)|n|cffFFFF80Armor:|r Unarmored (|cffFFFF000|r)|n|cffFFFF80Hitpoints: |cffFFFF00150|r|n|cffFFFF80Abilities:|r"
+Hotkey=Q
+[n015]
+Name="Ice Troll Shadow Priest"
+Tip="Trains Ice Troll Shadow Priest"
+Ubertip="|n|cffFFFF80Attack:|r Magic (|cffFFFF00350|r rng,|cffFFFF00 27|r dps)|n|cffFFFF80Armor:|r Light (|cffFFFF001|r)|n|cffFFFF80Hitpoints: |cffFFFF00350|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Frost Attack|r|nEach attack against ground units and buildings has a 10% chance to freeze the target to the ground for 4 seconds, dealing 15 damage per second|n|n|cff80FF00Frost Armor|r|nCasts Frost Armor onto an ally granting a 3.5 armor bonus. All melee units that hit the armored unit will be chilled for 4 seconds. Armor lasts 30 seconds|n|cff8080FFCooldown: |r8|n|cff8080FFMana cost: |r35"
+Hotkey=Q
+[n00U]
+Name="Black Spider "
+Tip="Trains Black Spider"
+Ubertip="|n|cffFFFF80Attack:|r Pierce (|cffFFFF00melee|r,|cffFFFF00 30|r dps)|n|cffFFFF80Armor:|r Unarmored (|cffFFFF001|r)|n|cffFFFF80Hitpoints: |cffFFFF00250|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Slow Poison|r|nReduces attack and movement speed by 10% and deals 5 dmg/sec during 10 seconds"
+Hotkey=Q
+[n016]
+Name="Magnataur"
+Tip="Trains Magnataur"
+Ubertip="|n|cffFFFF80Attack:|r Normal (|cffFFFF00melee|r,|cffFFFF00 90|r dps)|n|cffFFFF80Armor:|r Unarmored (|cffFFFF008|r)|n|cffFFFF80Hitpoints: |cffFFFF001200|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Stomp|r|nStuns all ground units in 250 range, dealing 75 damage to them|n|cff8080FFCooldown: |r12|n|cff8080FFMana cost: |r25|n|n|cff80FF00Critical Strike|r|n15% chance on each attack to hit for 3 times of the normal damage. Can also crit against buildings!|n|n|cff80FF00Cleaving Attack|r|nEach hit deals 50% of the normal damage to all enemies in 160 range in front of this unit. Can also hit buildings!"
+Hotkey=Q
+[n02G]
+Name="Kamikaze Goblin"
+Tip="Trains Kamikaze Goblin"
+Ubertip="|n|cffFFFF80Armor:|r Unarmored (|cffFFFF000|r)|n|cffFFFF80Hitpoints: |cffFFFF00200|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Suicide|r|nSuicides, dealing 350 damage to all enemies in 150 range and 150 damage to enemies in 280 range. Buildings receive only 60% of the damage|n|n|cff80FF00Detonate|r|nUpon death, Kamikaze Goblin deals up to 150 damage to enemies in 280 range."
+Hotkey=Q
+[n02H]
+Name="Gobbo Machinist"
+Tip="Assemble Gobbo Machinist"
+Ubertip="Assembles an invulnerable Gobbo Machinist, which can repair buildings and units."
+Hotkey=C
+[n02Q]
+Name="test"
+Tip=Invoke Sheep
+Ubertip="Call upon the spirit of Sheep to save you."
+[n02S]
+Name="Gnoll"
+Tip="Trains Gnoll (|cffffcc00Q|r)"
+Hotkey=Q
+Ubertip="|n|cffFFFF80Attack:|r Normal (|cffFFFF00420|r rng,|cffFFFF00 25|r dps)|n|cffFFFF80Armor:|r Light (|cffFFFF002|r)|n|cffFFFF80Hitpoints: |cffFFFF00340|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Minor poison|r|nPoisons target (10 damage for 1s).|n|cff80FF00Fowlhunter|r|n35% to deal 1.5x damage to flying."
+[n02T]
+Name="Gnoll-Ambusher"
+Tip="Trains Gnoll-Ambusher (|cffffcc00Q|r)"
+Hotkey=Q
+Ubertip="|n|cffFFFF80Attack:|r Normal (|cffFFFF00500|r rng,|cffFFFF00 50|r dps)|n|cffFFFF80Armor:|r Light (|cffFFFF003|r)|n|cffFFFF80Hitpoints: |cffFFFF00520|r|n|cffFFFF80Abilities:|r|n|cff80FF00Poisoned bolt|r|nPoisons target (20 dmg, 2s)|n|cff80FF00Ambush|r|nHides before attack to confuse target and deal 250 dmg on first attack.|n|cff80FF00Critical shot|r|n10% to deal 2x damage|n|cff80FF00Fowlhunter|r|n60% to deal 2x damage to flying."
+[n02U]
+Name="Razormane"
+Tip="Trains Razormane(|cffffcc00Q|r)"
+Ubertip="|n|cffFFFF80Attack:|r Pierce, ground (|cffFFFF00Melee|r,|cffFFFF00 63|r dps)|n|cffFFFF80Armor:|r Unarmored (|cffFFFF007|r)|n|cffFFFF80Hitpoints: |cffFFFF00750|r|n|cffFFFF80Abilities:|r|n|cff80FF00Bristleback|r|n75% of melee damage is returned to the attacker."
+Hotkey=Q
+[n02W]
+Name="Harpy"
+Tip="Trains Harpy (|cffffcc00Q|r)"
+Hotkey=Q
+Ubertip="|n|cffFFFF80Attack:|r Pierce(|cffFFFF00280|r rng,|cffFFFF00 37|r dps)|n|cffFFFF80Armor:|r Unarmored (|cffFFFF001|r)|n|cffFFFF80Hitpoints: |cffFFFF00420|r|n|cffFFFF80Abilities:|r|n|cff80FF00Flying|r|n|cff80FF00Agile|r|ncan evade attacks(10%)"
+[n02X]
+Name="Ogre"
+Tip="Trains Ogre (|cffffcc00Q|r)"
+Ubertip="|n|cffFFFF80Attack:|r Siege, ground (|cffFFFF00Melee|r,|cffFFFF00 56|r dps)|n|cffFFFF80Armor:|r Heavy (|cffFFFF005|r)|n|cffFFFF80Hitpoints: |cffFFFF00650|r|n|cffFFFF80Abilities:|r|n|cff80FF00Heavy club|r|nCan stun its target (15% chance, 60 dmg)|n|cff80FF00Small splash|r|nDeals damage in 65 area|n|cff80FF00Spell resistant|r|nhas 15% spell resistance."
+Hotkey=Q
+[n02Y]
+Name="Ogre Lord"
+Tip="Trains Ogre Lord (|cffffcc00Q|r)"
+Ubertip="n|cffFFFF80Attack:|r Siege, ground (|cffFFFF00Melee|r,|cffFFFF00 84|r dps)|n|cffFFFF80Armor:|r Heavy (|cffFFFF008|r)|n|cffFFFF80Hitpoints: |cffFFFF001250|r|n|cffFFFF80Abilities:|r|n|cff80FF00Club mastery|r|ncan stun its target (20% chance, 80 dmg), falls into battle rage  (+40% AS for 3s)|n|cff80FF00Spell resistant|r|nhas 20% spell resistance|n|cff80FF00Splash|r|ndeals damage in 80 AoE|n"
+Hotkey=Q
+[n02Z]
+Name="Salamander"
+Tip="Trains Salamander(|cffffcc00Q|r)"
+Ubertip="|n|cffFFFF80Attack:|r Chaos (|cffFFFF00375|r range,|cffFFFF00 47|r dps)|n|cffFFFF80Armor:|r Heavy (|cffFFFF006|r)|n|cffFFFF80Hitpoints: |cffFFFF00850|r|n|cffFFFF80Abilities:|r|n|cff80FF00Salamander's poison|r|n40% chance to spit magical poison in 120 area (25 dps, -4 armor and 30% slow). Poison lasts 2s.|n|cff80FF00Magical creature|r|nSalamander can't last long in phisical world (-1 hp\s)."
+Hotkey=Q
+[n030]
+Name="Sandkin"
+Tip="Trains Sandkin (|cffffcc00Q|r)"
+Hotkey=Q
+Ubertip="|n|cffFFFF80Attack:|r Magic (|cffFFFF00250|r range,|cffFFFF00 37|r dps)|n|cffFFFF80Armor:|r Normal (|cffFFFF005|r)|n|cffFFFF80Hitpoints: |cffFFFF00550|r|n|cffFFFF80Abilities:|r|n|cff80FF00Sandcloud|r|ncreates cloud of sand to dim enemy vision in 250 area, affected units miss 25% of their attacks. Cooldown: 12s|n|cff80FF00Ground Only|r |nthis unit can't attack flying enemies."
+[n032]
+Name="Harpy Witch"
+Tip="Trains Harpy Witch (|cffffcc00Q|r)"
+Hotkey=Q
+Ubertip="|n|cffFFFF80Attack:|r Pierce(|cffFFFF00320|r rng,|cffFFFF00 50|r dps)|n|cffFFFF80Armor:|r Unarmored (|cffFFFF002|r)|n|cffFFFF80Hitpoints: |cffFFFF00700|r|n|cffFFFF80Abilities:|r|n|cff80FF00Flying|r|n|cff80FF00Steal life|r|nWitch steals 80-120 hp from nearby living enemy(10 s cooldown).|n|cff80FF00Blind|r|nWitch can blind its target (15% to blind for 4s, blind unit miss 90% of its attacks)|n|cff80FF00Agile|r|ncan evade attacks(15%)"
+[n034]
+Name="Harpies' Matriarch"
+Tip="Trains Matriarch of Harpies (|cffffcc00Q|r)"
+Hotkey=Q
+Ubertip="|n|cffFFFF80Attack:|r Hero(|cffFFFF00450|r rng,|cffFFFF00 95|r dps)|n|cffFFFF80Armor:|r Unarmored (|cffFFFF006|r)|n|cffFFFF80Hitpoints: |cffFFFF001250|r|n|cffFFFF80Abilities:|r|n|cff80FF00Flying|r|n|cff80FF00Legendary spell resistance|r|n|cff80FF00Rain of stones|r|nHeavy stones fall from the sky. Each stone does 125 dmg in 150 AoE|n|cff80FF00Summon harpies|r|nMatriarch summons swarm of harpies for 5s.|n"
+[n035]
+Name="Monstrous Sandkin"
+Tip="Trains Monstrous Sandkin (|cffffcc00Q|r)"
+Hotkey=Q
+Ubertip="|n|cffFFFF80Attack:|r Magic(|cffFFFF00320|r range,|cffFFFF00 65|r dps)|n|cffFFFF80Armor:|r Normal (|cffFFFF008|r)|n|cffFFFF80Hitpoints: |cffFFFF00900|r|n|cffFFFF80Abilities:|r|n|cff80FF00Sandcloud|r|ncreates cloud of sand to dim enemy vision in 300 rng, affected units miss 40% of their attacks. Cooldown: 10s|n|cff80FF00Critical strike|r|nhas 20% chance to deal 2x damage|n|cff80FF00Sandshield|r|ndense flow of sand greatly slows nearby enemies' attack speed(-60% ). |n|cff80FF00Ground Only|r|nthis unit can't attack flying enemies."
+[n080]
+Name="starf dummy"
+[n037]
+Name="el.book dummy"
+[n038]
+Name="el.book dummy -na"
+[n039]
+Name="starf dummy na"
+[n03A]
+Name="Primordial Azure Dragon"
+Tip="Trains Primordial Azure Dragon"
+Ubertip="|n|cffFFFF80Attack:|r Chaos (|cffFFFF00400|r rng,|cffFFFF00 72|r dps)|n|cffFFFF80Armor:|r Heavy (|cffFFFF006|r)|n|cffFFFF80Hitpoints: |cffFFFF001400|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Flying|r|nThis unit is flying|n|n|cff80FF00Splash Damage|r|nThis unit's attacks hit all units in a 180 AoE around its target. Units farther away from the target receive less damage|n|n|cff80FF00Chilling Aura|r|nAll enemy units within 300 range are slowed by 50% and witin 600 by 25%.|n|n|cff80FF00Freezing breath|r Freezes its target and nearby units for 1.5s.|n|cff80FF00Legendary spell resistance(50%)|r"
+Hotkey=Q
+[n03B]
+Name="boar"
+Tip=Summon Timber Wolf
+Ubertip="Light melee unit. |n|n|cffffcc00Attacks land units.|r"
+[n03C]
+Name=Giant Wolf
+Tip=Summon Giant Wolf
+Ubertip="Medium melee unit with Critical Strike. |n|n|cffffcc00Attacks land units.|r"
+[n03D]
+Name=Mammoth
+Tip=Hire Mammoth
+Ubertip="Medium melee unit. |n|n|cffffcc00Attacks land units.|r"
+[n03E]
+Name=Spider Crab Behemoth
+Tip=Hire Spider |cffffcc00C|rrab
+Ubertip="Heavy melee unit. |n|n|cffffcc00Attacks land units.|r"
+Hotkey=C
+[n03L]
+Name=Timber Wolf
+Tip=Summon Timber Wolf
+Ubertip="Light melee unit. |n|n|cffffcc00Attacks land units.|r"
+[n03F]
+Name="rat"
+Tip=Summon Timber Wolf
+Ubertip="Light melee unit. |n|n|cffffcc00Attacks land units.|r"
+[n03G]
+Name="bird"
+Tip=Summon Timber Wolf
+Ubertip="Light melee unit. |n|n|cffffcc00Attacks land units.|r"
+[n03K]
+Name="vulture"
+Tip=Summon Timber Wolf
+Ubertip="Light melee unit. |n|n|cffffcc00Attacks land units.|r"
+[n03I]
+Name="Stag"
+Tip=Summon Timber Wolf
+Ubertip="Light melee unit. |n|n|cffffcc00Attacks land units.|r"
+[n03H]
+Name="Scarab"
+Tip=Summon Timber Wolf
+Ubertip="Light melee unit. |n|n|cffffcc00Attacks land units.|r"

@@ -1,0 +1,257 @@
+[TWN1]
+Name=Town Hall or Great Hall or Tree of Life or Necropolis
+[TWN2]
+Name=Keep or Stronghold or Tree of Ages or Halls of the Dead
+[TWN3]
+Name=Castle or Fortress or Tree of Eternity or Black Citadel
+[TALT]
+Name=An Altar
+[mdpb]
+Name=Medusa Pebble
+Hotkey=P
+Tip=Purchase Medusa |cffffcc00P|rebble
+Ubertip="Turns the targeted enemy non-Hero unit into stone when used. A unit turned to stone by the Medusa Pebble is removed from the game permanently."
+Description=Turns target unit to stone.
+[ofir]
+Name=Orb of Fire
+Hotkey=F
+Tip=Purchase Orb of |cffffcc00F|rire
+Ubertip="Adds <AIfb,DataA1> bonus fire damage to the attack of a Hero when carried. The Hero's attacks also become ranged when attacking air and do splash damage to nearby enemy units."
+Description=Attacks also do fire damage.
+[oli2]
+Name=Orb of Lightning
+Hotkey=L
+Tip=Purchase Orb of |cffffcc00L|rightning
+Ubertip="Adds <AIll,DataA1> bonus damage to the attack of a Hero when carried. The Hero's attacks also become ranged when attacking air, and have a chance to dispel magic and slow the movement speed of the enemy for <AIlp,Dur1> seconds. |n|cffffcc00Deals <AIpg,DataC1> bonus damage to summoned units."
+Description=Attacks cause lightning damage.
+[oven]
+Name=Orb of Venom
+Hotkey=V
+Tip=Purchase Orb of |cffffcc00V|renom
+Ubertip="Adds <AIpb,DataA1> bonus damage to the attack of a Hero when carried. The Hero's attacks also become ranged when attacking air and poison enemy units for <Apo2,Dur1> seconds."
+Description=Attacks cause poison damage.
+[ocor]
+Name=Orb of Corruption
+Hotkey=B
+Tip=Purchase Or|cffffcc00b|r of Corruption
+Ubertip="Adds <AIcb,DataA1> bonus damage to the attack of a Hero when carried. The Hero's attacks also become ranged when attacking air and reduce the armor of enemy units for <AIcb,Dur1> seconds."
+Description=Attacks reduce armor.
+[phea]
+Name=Potion of Healing
+Hotkey=P
+Tip=Purchase |cffffcc00P|rotion of Healing
+Ubertip="Heals <AIh1,DataA1> hit points when used."
+Description=Restores lost hit points.
+[pman]
+Name=Potion of Mana
+Hotkey=M
+Tip=Purchase Potion of |cffffcc00M|rana
+Ubertip="Restores <AIm1,DataA1> mana when used."
+Description=Restores lost mana.
+[shea]
+Name=Scroll of Healing
+Hotkey=H
+Tip=Purchase Scroll of |cffffcc00H|realing
+Ubertip="Heals <AIha,DataA1> hit points to all friendly non-mechanical units around the Hero when used."
+Description=Restores hit points to nearby units.
+[stwp]
+Name=Scroll of Town Portal
+Hotkey=T
+Tip=Purchase Scroll of |cffffcc00T|rown Portal
+Ubertip="Teleports the Hero and any of its nearby troops to a target friendly town hall."
+Description=Transports troops to friendly town hall.
+[rnec]
+Name=Rod of Necromancy
+Hotkey=R
+Tip=Purchase |cffffcc00R|rod of Necromancy
+Ubertip="Creates two Skeleton Warriors from a corpse. |nContains <rnec,uses> charges."
+Description=Creates two Skeleton Warriors from a corpse.
+[pams]
+Name=Anti-magic Potion
+Hotkey=A
+Tip=Purchase |cffffcc00A|rnti-magic Potion
+Ubertip="Gives the Hero immunity to magical spells for <AIxs,Dur1> seconds."
+Description=Renders Hero immune to magic.
+[hslv]
+Name=Healing Salve
+Hotkey=H
+Tip=Purchase |cffffcc00H|realing Salve
+Ubertip="|cff87ceebNon-Combat Consumable|r|nRegenerates a target unit's hit points by <AIrl,DataA1> over <AIrl,Dur1> seconds when used. |nContains <hslv,uses> charges."
+Description=Regenerates lost hit points over time.
+[plcl]
+Name=Lesser Clarity Potion
+Hotkey=C
+Tip=Purchase Lesser |cffffcc00C|rlarity Potion
+Ubertip="|cff87ceebNon-Combat Consumable|r|nRegenerates the Hero's mana by <AIpl,DataB1> over <AIpl,Dur1> seconds when used."
+Description=Regenerates mana over time.
+[sreg]
+Name=Scroll of Regeneration
+Hotkey=R
+Tip=Purchase Scroll of |cffffcc00R|regeneration
+Ubertip="|cff87ceebNon-Combat Consumable|r|nRegenerates the hit points of all friendly non-mechanical units in an area around your Hero by <AIsl,DataA1> over <AIsl,Dur1> seconds when used."
+Description=Regenerates the health of nearby units.
+[skul]
+Name=Sacrificial Skull
+Hotkey=K
+Tip=Purchase Sacrificial S|cffffcc00k|rull
+Ubertip="Creates an area of Blight at a target location."
+Description=Creates Blight at a target location.
+[moon]
+Name=Moonstone
+Hotkey=N
+Tip=Purchase Moo|cffffcc00n|rstone
+Ubertip="Causes an eclipse that blocks out the sun and creates an artificial night. |nLasts <AIct,Dur1> seconds."
+Description=Makes it night time.
+[tgrh]
+Name=Tiny Great Hall
+Hotkey=G
+Tip=Purchase Tiny |cffffcc00G|rreat Hall
+Ubertip="Creates a Great Hall at a target location. Human, Night Elf, and Undead players will get their racial equivalent town hall."
+Description="Creates a Great Hall."
+[tsct]
+Name=Ivory Tower
+Hotkey=V
+Tip=Purchase I|cffffcc00v|rory Tower
+Ubertip="Creates a Scout Tower at a target location."
+Description="Creates a Scout Tower."
+[spre]
+Name=Staff of Preservation
+Hotkey=E
+Tip=Purchase Staff of Pr|cffffcc00e|rservation
+Ubertip="Teleports a target friendly unit to its highest level town hall."
+Description=Teleports a target unit home.
+[mcri]
+Name=Mechanical Critter
+Hotkey=E
+Tip=Purchase M|cffffcc00e|rchanical Critter
+Ubertip="Creates a player-controlled critter that can be used to scout enemies."
+Description=Creates a mechanical critter.
+[ssan]
+Name=Staff of Sanctuary
+Hotkey=N
+Tip=Purchase Staff of Sa|cffffcc00n|rctuary
+Ubertip="Teleports a target unit to your highest level town hall, stunning the unit and regenerating <ANsa,DataE1> hit points per second. Lasts until the unit is fully healed."
+Description=Heals and teleports a unit.
+[shas]
+Name=Scroll of Speed
+Hotkey=S
+Tip=Purchase Scroll of |cffffcc00S|rpeed
+Ubertip="Increases the movement speed of the Hero and nearby allied units to the maximum movement speed. |nLasts <AIsa,Dur1> seconds."
+Description=Increases movement speed of units.
+[dust]
+Name=Dust of Appearance
+Hotkey=D
+Tip=Purchase |cffffcc00D|rust of Appearance
+Ubertip="Reveals enemy invisible units in an area around the Hero. |nContains <dust,uses> charges. |nLasts <AItb,Dur1> seconds."
+Description=Reveals invisible units.
+[I00C]
+Name="Explode Mine"
+Hotkey=C
+Tip="Explode"
+Ubertip="Explodes this mine to free space for your buildings"
+Description=Boosts attack damage by 9.
+[I00D]
+Name="Tech Tent"
+Hotkey=G
+Tip="Buy Tech Tent"
+Ubertip="Builds a tech tent at a target location. You can research new tech levels there allowing you to train higher tier units.|n|nWARNING: If this building is destroyed, you cannot tech anymore!"
+Description="Builds a tech tent at a target location. You can research new tech levels there allowing you to train higher tier units.|n|nWARNING: If this building is destroyed, you cannot tech anymore!"
+[I00A]
+Name="Drum'n'Bass Bassline Generator"
+Hotkey=W
+Tip="Buy Drum'n'Bass Bassline Generator"
+Ubertip="Increases the movementspeed of all friendly units by 15% and their attackspeed by 25%. |cffFF0000Does not stack, dont buy twice!|r"
+Description="Increases the movementspeed of all friendly units by 15% and their attackspeed by 25%."
+[I00B]
+Name="Nuke Launcher"
+Hotkey=G
+Tip="Buy Nuke Launcher"
+Ubertip="Builds up a Nuke Launcher at a target location. It will periodically launch Nuclear Missles at the enemy base."
+Description="Builds a Nuke Launcher"
+[I009]
+Name="Rune of Restoration"
+Hotkey=B
+Tip="Buy Rune of Restoration"
+Ubertip="Repairs buildings and heals units near owner. Stacks with other Runes and Coral Statues."
+Description="Repairs buildings and heals units near owner. Stacks with other Runes and Coral Statues."
+[I008]
+Name="Double Damage"
+Tip="Buy Double Damage"
+Ubertip="Increases the damage of all allied units by 100% for 30 seconds."
+Description="Increases the damage of all allied units by 100% for 30 seconds."
+[I007]
+Name="Quad Damage"
+Tip="Buy Quad Damage"
+Ubertip="Increases the damage of all allied units by 300% for 30 seconds."
+Description="Increases the damage of all allied units by 300% for 30 seconds."
+[I006]
+Name="Orb of Lightning"
+Hotkey=T
+Tip="Buy Orb of Lightning"
+Ubertip="Allows your worker to fire a chainlightning at target enemy unit once every minute. The chainlightning hits 10 targets, dealing 1000 damage to the first target."
+Description="Allows your worker to fire a chainlightning at target enemy unit once every minute. The chainlightning hits 10 targets, dealing 1000 damage to the first target."
+[I005]
+Name="Scroll of Stone"
+Hotkey=R
+Tip="Buy Scroll of Stone"
+Ubertip="When used, the scroll heals 400 hitpoints, 200 mana and gives 8 bonus armor for 30 seconds to all allied units in a huge area."
+Description="When used, the scroll heals 400 hitpoints, 200 mana and gives 8 bonus armor for 30 seconds to all allied units in a huge area."
+[I004]
+Name="Cheese"
+Tip="Buy Cheese"
+Ubertip="Allowing you to build one more legendary structure."
+Description="Allowing you to build one more legendary structure."
+[I003]
+Name="Drum'n'Bass Bass Drums"
+Tip="Buy Drum'n'Bass Bass Drums"
+Ubertip="Gives to all allied units +30% damage. |cffFF0000Each consequent gives +15% damage|r"
+Description="Gives +30% damage to allied units."
+[I001]
+Name="Blast Staff"
+Hotkey=B
+Tip="Buy Blast Staff"
+Ubertip="Launches one magic projectile per second at a random enemy in 750 range. Projectiles deal 50 spell damage."
+Description="Launches one magic projectile per second at a random nearby enemy. Projectiles deal 50 spell damage."
+[I000]
+Name="Gold"
+Hotkey=S
+Tip="Gold"
+Ubertip="Gold"
+Description="Gold"
+[I031]
+Name="Double Blast Staff"
+Hotkey=B
+Tip="Buy Blast Staff"
+Ubertip="Launches two magic projectiles per second at a random enemy in 750 range. Projectile deal 50 spell damage."
+Description="Launches two magic projectiles per second at a random nearby enemy. Projectile deal 50 spell damage."
+[I032]
+Name="Quad Blast Staff"
+Hotkey=B
+Tip="Buy Blast Staff"
+Ubertip="Launches four magic projectiles per second at a random enemy in 750 range. Projectile deal 50 spell damage."
+Description="Launches four magic projectiles per second at a random nearby enemy. Projectile deal 50 spell damage."
+[I013]
+Name="Drum'n'Bass Bass Drums"
+Tip="Buy Drum'n'Bass Bass Drums"
+Ubertip="Gives to all allied units +45% damage. |cffFF0000Each consequent gives +15% damage|r"
+Description="Gives +45% damage to allied units."
+[I014]
+Name="Drum'n'Bass Bass Drums"
+Tip="Buy Drum'n'Bass Bass Drums"
+Ubertip="Gives to all allied units +60% damage. |cffFF0000Each consequent gives +15% damage|r"
+Description="Gives +60% damage to allied units."
+[I015]
+Name="Drum'n'Bass Bass Drums"
+Tip="Buy Drum'n'Bass Bass Drums"
+Ubertip="Gives to all allied units +75% damage. |cffFF0000Each consequent gives +15% damage|r"
+Description="Gives +75% damage to allied units."
+[I016]
+Name="Drum'n'Bass Bass Drums"
+Tip="Buy Drum'n'Bass Bass Drums"
+Ubertip="Gives to all allied units +90% damage. |cffFF0000Next consequent will NOTgive more bonus damage!|r"
+Description="Gives +90% damage to allied units."
+[I002]
+Name="Devastating Strike"
+Tip="Buy Devastating Strike"
+Ubertip="Kills all enemy's units in the target area.|nDo not buy if you hadn't used  your DS!"
+Description="Kills all enemy's units in the target area.|nDo not buy if you hadn't used  your DS!"

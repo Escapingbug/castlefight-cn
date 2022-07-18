@@ -1,0 +1,2305 @@
+[ANic]
+Name=Incinerate
+Tip=Incinerate - [|cffffcc00Level 1|r],Incinerate - [|cffffcc00Level 2|r],Incinerate - [|cffffcc00Level 3|r]
+Researchtip="Learn In|cffffcc00c|rinerate - [|cffffcc00Level %d|r]"
+Ubertip="Each attack made is enhanced with living flames that cling to the target. These flames add <ANic,DataA1> damage on the first attack, twice as much on the second attack, three times as much on the third attack, etc.|n|nIf a unit dies while under this effect, it is incinerated, causing up to <ANic,DataB1> damage to all nearby hostile units.","Each attack made is enhanced with living flames that cling to the target. These flames add <ANic,DataA2> damage on the first attack, twice as much on the second attack, three times as much on the third attack, etc.|n|nIf a unit dies while under this effect, it is incinerated, causing up to <ANic,DataB2> damage to all nearby hostile units.","Each attack made is enhanced with living flames that cling to the target. These flames add <ANic,DataA3> damage on the first attack, twice as much on the second attack, three times as much on the third attack, etc.|n|nIf a unit dies while under this effect, it is incinerated, causing up to <ANic,DataB3> damage to all nearby hostile units."
+Researchubertip="Each attack made is enhanced with living flames that cling to the target. These flames add a small amount of damage on the first attack, twice as much on the second attack, three times as much on the third attack, etc.|n|nIf a unit dies while under this effect, it is incinerated, causing significant damage to all nearby hostile units.|n|n|cffffcc00Level 1|r - <ANic,DataA1> bonus damage, <ANic,DataB1> incineration damage.|n|cffffcc00Level 2|r - <ANic,DataA2> bonus damage, <ANic,DataB2> incineration damage.|n|cffffcc00Level 3|r - <ANic,DataA3> bonus damage, <ANic,DataB3> incineration damage."
+Hotkey=C
+Researchhotkey=C
+[BNic]
+Bufftip=Incinerate
+Buffubertip="This target is partially aflame, and will incinerate if it dies, causing damage to nearby units."
+[ANlm]
+Name=Summon Lava Spawn
+Tip=Summon Lava Spa|cffffcc00w|rn - [|cffffcc00Level 1|r],Summon Lava Spa|cffffcc00w|rn - [|cffffcc00Level 2|r],Summon Lava Spa|cffffcc00w|rn - [|cffffcc00Level 3|r]
+Researchtip="Learn Summon Lava Spa|cffffcc00w|rn - [|cffffcc00Level %d|r]"
+Ubertip="Summons a Lava Spawn, a resilient and deadly fire creature. As a Lava Spawn deals damage, it consumes the flesh of its target, thereby fueling its fires and eventually splitting into two healthy Lava Spawns.|n|nHas <nlv1,realHP> hit points and deals <nlv1,mindmg1> - <nlv1,maxdmg1> damage.|nLasts <ANlm,Dur1> seconds.|n|n|cffffcc00Attacks ground and air units.|r","Summons a Lava Spawn, a resilient and deadly fire creature. As a Lava Spawn deals damage, it consumes the flesh of its target, thereby fueling its fires and eventually splitting into two healthy Lava Spawns.|n|nHas <nlv2,realHP> hit points and deals <nlv2,mindmg1> - <nlv2,maxdmg1> damage.|nLasts <ANlm,Dur2> seconds.|n|n|cffffcc00Attacks ground and air units.|r","Summons a Lava Spawn, a resilient and deadly fire creature. As a Lava Spawn deals damage, it consumes the flesh of its target, thereby fueling its fires and eventually splitting into two healthy Lava Spawns.|n|nHas <nlv3,realHP> hit points and deals <nlv3,mindmg1> - <nlv3,maxdmg1> damage.|nLasts <ANlm,Dur3> seconds.|n|n|cffffcc00Attacks ground and air units.|r"
+Researchubertip="Summons a Lava Spawn, a resilient and deadly fire creature. As a Lava Spawn deals damage, it consumes the flesh of its target, eventually splitting into two healthy Lava Spawns.|nLasts <ANlm,Dur1> seconds.|n|n|cffffcc00Level 1|r - <nlv1,realHP> hit points, <nlv1,mindmg1> - <nlv1,maxdmg1> damage.|n|cffffcc00Level 2|r - <nlv2,realHP> hit points, <nlv2,mindmg1> - <nlv2,maxdmg1> damage.|n|cffffcc00Level 3|r - <nlv3,realHP> hit points, <nlv3,mindmg1> - <nlv3,maxdmg1> damage.|n|n|cffffcc00Attacks ground and air units.|r"
+Hotkey=W
+Researchhotkey=W
+[BNlm]
+Bufftip=Lava Spawn
+Buffubertip="Lava Spawn."
+[ANde]
+Name=Demolish
+Tip="Demolish"
+Ubertip="Causes attacks to do <ANde,DataB1> times normal damage to buildings."
+Hotkey=
+[ANf1]
+Name=Factory
+Tip="Factory - Upgrade Level 1"
+Ubertip="Factory."
+Hotkey=
+[ANf2]
+Name=Factory
+Tip="Factory - Upgrade Level 2"
+Ubertip="Factory."
+Hotkey=
+[ANf3]
+Name=Factory
+Tip="Factory - Upgrade Level 3"
+Ubertip="Factory."
+Hotkey=
+[ANhs]
+Name=Healing Spray
+Tip=H|cffffcc00e|raling Spray - [|cffffcc00Level 1|r],H|cffffcc00e|raling Spray - [|cffffcc00Level 2|r],H|cffffcc00e|raling Spray - [|cffffcc00Level 3|r]
+Researchtip="Learn H|cffffcc00e|raling Spray - [|cffffcc00Level %d|r]"
+Ubertip="Sprays <ANhs,DataF1> waves of healing mist; each wave heals <ANhs,DataA1> damage to all units in an area.","Sprays <ANhs,DataF2> waves of healing mist; each wave heals <ANhs,DataA2> damage to all units in an area.","Sprays <ANhs,DataF3> waves of healing mist; each wave heals <ANhs,DataA3> damage to all units in an area."
+Researchubertip="Sprays waves of healing mist that heal units in a target area. |n|n|cffffcc00Level 1|r - <ANhs,DataF1> waves at <ANhs,DataA1> hit points healed each. |n|cffffcc00Level 2|r - <ANhs,DataF2> waves at <ANhs,DataA2> hit points healed each. |n|cffffcc00Level 3|r - <ANhs,DataF3> waves at <ANhs,DataA3> hit points healed each."
+Hotkey=E
+Researchhotkey=E
+[BNhs]
+Bufftip=Healing Spray
+Buffubertip="This unit is being healed by Healing Spray."
+[ANab]
+Name=Acid Bomb
+Tip=Acid |cffffcc00B|romb - [|cffffcc00Level 1|r],Acid |cffffcc00B|romb - [|cffffcc00Level 2|r],Acid |cffffcc00B|romb - [|cffffcc00Level 3|r]
+Researchtip="Learn Acid |cffffcc00B|romb - [|cffffcc00Level %d|r]"
+Ubertip="Hurls a flask of acid at a target.  The flask breaks upon impact, splashing a powerful acid on nearby hostile units.|n|nDecreases armor by <ANab,DataC1>; deals <ANab,DataD1> damage per second to the primary target; deals slightly less damage to nearby targets.|nLasts <ANab,Dur1> seconds.","Hurls a flask of acid at a target.  The flask breaks upon impact, splashing a powerful acid on nearby hostile units.|n|nDecreases armor by <ANab,DataC2>; deals <ANab,DataD2> damage per second to the primary target; deals slightly less damage to nearby targets.|nLasts <ANab,Dur2> seconds.","Hurls a flask of acid at a target.  The flask breaks upon impact, splashing a powerful acid on nearby hostile units.|n|nDecreases armor by <ANab,DataC3>; deals <ANab,DataD3> damage per second to the primary target; deals slightly less damage to nearby targets.|nLasts <ANab,Dur3> seconds."
+Researchubertip="Hurls a flask of acid at a target.  The flask breaks upon impact, splashing a powerful acid on nearby hostile units.|n|nDecreases armor; deals high damage over time to the primary target; deals slightly less damage over time to nearby targets.|nLasts <ANab,Dur1> seconds.|n|n|cffffcc00Level 1|r - <ANab,DataD1> max damage per second, reduces armor by <ANab,DataC1>.|n|cffffcc00Level 2|r - <ANab,DataD2> max damage per second, reduces armor by <ANab,DataC2>.|n|cffffcc00Level 3|r - <ANab,DataD3> max damage per second, reduces armor by <ANab,DataC3>."
+Hotkey=B
+Researchhotkey=B
+[BNab]
+Bufftip=Acid Bomb
+Buffubertip="This unit has been Acid Bombed.  It has reduced armor, and is being damaged over time."
+[Aasl]
+Name=Slow Aura
+[Atdg]
+Name=Building Damage Aura
+[Atwa]
+Name=Tornado Wander
+[ANrf]
+Name=Rain of Fire
+Tip=Rain of |cffffcc00F|rire - [|cffffcc00Level 1|r],Rain of |cffffcc00F|rire - [|cffffcc00Level 2|r],Rain of |cffffcc00F|rire - [|cffffcc00Level 3|r]
+Ubertip="Calls down waves of fire that damage units in an area. Each wave deals <ANrf,DataB1> initial damage and <ANrf,DataE1> damage per second for <ANrf,Dur1> seconds. |nLasts for <ANrf,DataA1> waves.","Calls down waves of fire that damage units in an area. Each wave deals <ANrf,DataB2> initial damage and <ANrf,DataE2> damage per second for <ANrf,Dur2> seconds. |nLasts for <ANrf,DataA2> waves.","Calls down waves of fire that damage units in an area. Each wave deals <ANrf,DataB3> initial damage and <ANrf,DataE3> damage per second for <ANrf,Dur3> seconds. |nLasts for <ANrf,DataA3> waves."
+Hotkey=F
+Researchtip=Learn Rain of |cffffcc00F|rire - [|cffffcc00Level %d|r]
+Researchhotkey=F
+Researchubertip="Calls down waves of fire that damage units in an area. Each wave deals initial damage and then burns enemies for <ANrf,Dur1> seconds. |n|n|cffffcc00Level 1|r - <ANrf,DataB1> wave damage, <ANrf,DataA1> waves, <ANrf,DataE1> damage per second. |n|cffffcc00Level 2|r - <ANrf,DataB2> wave damage, <ANrf,DataA2> waves, <ANrf,DataE2> damage per second. |n|cffffcc00Level 3|r - <ANrf,DataB3> wave damage, <ANrf,DataA3> waves, <ANrf,DataE3> damage per second."
+[BNrd]
+Bufftip=Rain of Fire
+Buffubertip="This unit was hit by Rain of Fire; it will take damage over time."
+[ANht]
+Name=Howl of Terror
+Tip=Howl of |cffffcc00T|rerror - [|cffffcc00Level 1|r],Howl of |cffffcc00T|rerror - [|cffffcc00Level 2|r],Howl of |cffffcc00T|rerror - [|cffffcc00Level 3|r]
+Ubertip="The Pit Lord lets loose a terrifying howl that reduces nearby enemy units' attack damage by <ANht,DataA1,%>% for <ANht,Dur1> seconds.","The Pit Lord lets loose a terrifying howl that reduces nearby enemy units' attack damage by <ANht,DataA2,%>% for <ANht,Dur2> seconds.","The Pit Lord lets loose a terrifying howl that reduces nearby enemy units' attack damage by <ANht,DataA3,%>% for <ANht,Dur3> seconds."
+Hotkey=T
+Researchtip="Learn Howl of |cffffcc00T|rerror - [|cffffcc00Level %d|r]"
+Researchubertip="The Pit Lord lets loose a terrifying howl that causes nearby enemy units to shiver in fear, reducing their attack damage. |nLasts <ANht,Dur1> seconds. |n|n|cffffcc00Level 1|r - <ANht,DataA1,%>% attack damage reduction. |n|cffffcc00Level 2|r - <ANht,DataA2,%>% attack damage reduction. |n|cffffcc00Level 3|r - <ANht,DataA3,%>% attack damage reduction."
+Researchhotkey=T
+[BNht]
+Bufftip=Howl of Terror
+Buffubertip="This unit has heard the Howl of Terror; it deals less damage for a duration."
+[ANca]
+Name=Cleaving Attack
+Tip=Cleaving Attack - [|cffffcc00Level 1|r],Cleaving Attack - [|cffffcc00Level 2|r],Cleaving Attack - [|cffffcc00Level 3|r]
+Ubertip="The Pit Lord strikes with such force that <ANca,DataA1,%>% of his damage strikes through to enemies near the primary attacked unit.","The Pit Lord strikes with such force that <ANca,DataA2,%>% of his damage strikes through to enemies near the primary attacked unit.","The Pit Lord strikes with such force that <ANca,DataA3,%>% of his damage strikes through to enemies near the primary attacked unit."
+Researchtip="Learn |cffffcc00C|rleaving Attack - [|cffffcc00Level %d|r]"
+Researchubertip="The Pit Lord strikes with such force that he damages multiple enemies with his attack. |n|n|cffffcc00Level 1|r - <ANca,DataA1,%>% damage is splash. |n|cffffcc00Level 2|r - <ANca,DataA2,%>% damage is splash. |n|cffffcc00Level 3|r - <ANca,DataA3,%>% damage is splash."
+Researchhotkey=C
+[ANef]
+Name="Storm, Earth, And Fire"
+Tip="Storm, |cffffcc00E|rarth, And Fire"
+Ubertip="Splits the Pandaren Brewmaster into elements, forming 3 specialized warriors. If any of them survive until the end of their summoned timer, the Brewmaster is reborn. |nLasts <ANef,HeroDur1> seconds."
+Hotkey=E
+Researchtip="Learn Storm, |cffffcc00E|rarth, And Fire"
+Researchubertip="Splits the Pandaren Brewmaster into elements, forming 3 specialized warriors. If any of them survive until the end of their summoned timer, the Brewmaster is reborn. |nLasts <ANef,HeroDur1> seconds."
+Researchhotkey=E
+[BNef]
+Bufftip="Pandaren Elemental"
+Buffubertip="I am a Pandaren Elemental; worship me."
+[ANbf]
+Name=Breath of Fire
+Tip=Breath of |cffffcc00F|rire - [|cffffcc00Level 1|r],Breath of |cffffcc00F|rire - [|cffffcc00Level 2|r],Breath of |cffffcc00F|rire - [|cffffcc00Level 3|r]
+Ubertip="Breathes a cone of fire at enemy units, dealing <ANbf,DataA1> initial damage. Units that have Drunken Haze on them will ignite and burn for <ANbf,DataE1> damage per second over <ANbf,Dur1> seconds.","Breathes a cone of fire at enemy units, dealing <ANbf,DataA2> initial damage. Units that have Drunken Haze on them will ignite and burn for <ANbf,DataE2> damage per second over <ANbf,Dur2> seconds.","Breathes a cone of fire at enemy units, dealing <ANbf,DataA3> initial damage. Units that have Drunken Haze on them will ignite and burn for <ANbf,DataE3> damage per second over <ANbf,Dur3> seconds."
+Hotkey=F
+Researchtip="Learn Breath of |cffffcc00F|rire - [|cffffcc00Level %d|r]"
+Researchubertip="Breathes a cone of fire at enemy units which deals damage. Units that have Drunken Haze on them will ignite and take burn damage over time. |nLasts <ANbf,Dur1> seconds. |n|n|cffffcc00Level 1|r - <ANbf,DataA1> initial damage, <ANbf,DataE1> damage per second. |n|cffffcc00Level 2|r - <ANbf,DataA2> initial damage, <ANbf,DataE2> damage per second. |n|cffffcc00Level 3|r - <ANbf,DataA3> initial damage, <ANbf,DataE3> damage per second."
+Researchhotkey=F
+[Aiun]
+Name=Unit Inventory
+Tip="Unit Inventory"
+Ubertip="Allows this unit to carry items for Heroes. Items cannot be used from this unit's inventory."
+[Aion]
+Name=Unit Inventory
+Tip="Unit Inventory"
+Ubertip="Allows this unit to carry items for Heroes. Items cannot be used from this unit's inventory."
+[Aihn]
+Name=Unit Inventory
+Tip="Unit Inventory"
+Ubertip="Allows this unit to carry items for Heroes. Items cannot be used from this unit's inventory."
+[Aien]
+Name=Unit Inventory
+Tip="Unit Inventory"
+Ubertip="Allows this unit to carry items for Heroes. Items cannot be used from this unit's inventory."
+[ANst]
+Name=Stampede
+Tip=S|cffffcc00t|rampede
+Ubertip="Calls down hordes of rampaging thunder lizards to explode upon the Beastmaster's enemies. Each exploding lizard deals <ANst,DataC1> damage. |nLasts <ANst,Dur1> seconds."
+Hotkey=T
+Researchtip=Learn S|cffffcc00t|rampede
+Researchubertip="Calls down hordes of rampaging thunder lizards to explode upon the Beastmaster's enemies. Each exploding lizard deals <ANst,DataC1> damage. |nLasts <ANst,Dur1> seconds."
+Researchhotkey=T
+[AInv]
+Name=Inventory
+[ANpr]
+[ANss]
+[ANbf]
+Name=Breath of Fire
+Tip=Breath of |cffffcc00F|rire - [|cffffcc00Level 1|r],Breath of |cffffcc00F|rire - [|cffffcc00Level 2|r],Breath of |cffffcc00F|rire - [|cffffcc00Level 3|r]
+Ubertip="Breathes a cone of fire at enemy units, dealing <ANbf,DataA1> initial damage, and burning them for <ANbf,DataE1> damage per second over <ANbf,Dur1> seconds.","Breathes a cone of fire at enemy units, dealing <ANbf,DataA2> initial damage, and burning them for <ANbf,DataE2> damage per second over <ANbf,Dur2> seconds.","Breathes a cone of fire at enemy units, dealing <ANbf,DataA3> initial damage, and burning them for <ANbf,DataE3> damage per second over <ANbf,Dur3> seconds."
+Hotkey=F
+Researchtip="Learn Breath of |cffffcc00F|rire - [|cffffcc00Level %d|r]"
+Researchubertip="Breathes a cone of fire at enemy units, dealing initial damage, and then damage over time. |nLasts <ANbf,Dur1> seconds. |n|n|cffffcc00Level 1|r - <ANbf,DataA1> initial damage, <ANbf,DataE1> damage per second. |n|cffffcc00Level 2|r - <ANbf,DataA2> initial damage, <ANbf,DataE2> damage per second. |n|cffffcc00Level 3|r - <ANbf,DataA3> initial damage, <ANbf,DataE3> damage per second."
+Researchhotkey=F
+[BNbf]
+Bufftip=Breath of Fire
+Buffubertip="This unit has been hit by Breath of Fire; it will take damage over time."
+[ANdh]
+Name=Drunken Haze
+Tip=|cffffcc00D|rrunken Haze - [|cffffcc00Level 1|r],|cffffcc00D|rrunken Haze - [|cffffcc00Level 2|r],|cffffcc00D|rrunken Haze - [|cffffcc00Level 3|r]
+Ubertip="Drenches enemy units in alcohol, causing their movement speed to be reduced by <ANdh,DataC1,%>%, and have a <ANdh,DataB1,%>% chance to miss on attacks. When units with Drunken Haze cast on them are hit by Breath of Fire, they will ignite and take burn damage. |nLasts <ANdh,Dur1> seconds.","Drenches enemy units in alcohol, causing their movement speed to be reduced by <ANdh,DataC2,%>%, and have a <ANdh,DataB2,%>% chance to miss on attacks. When units with Drunken Haze cast on them are hit by Breath of Fire, they will ignite and take burn damage. |nLasts <ANdh,Dur2> seconds.","Drenches enemy units in alcohol, causing their movement speed to be reduced by <ANdh,DataC3,%>%, and have a <ANdh,DataB3,%>% chance to miss on attacks. When units with Drunken Haze cast on them are hit by Breath of Fire, they will ignite and take burn damage. |nLasts <ANdh,Dur3> seconds."
+Hotkey=D
+Researchtip="Learn |cffffcc00D|rrunken Haze - [|cffffcc00Level %d|r]"
+Researchubertip="Drenches enemy units in alcohol, causing their movement speed to be reduced, and have a chance to miss on attacks. When units with Drunken Haze cast on them are hit by Breath of Fire, they will ignite and take burn damage over time. |nLasts <ANdh,Dur1> seconds |n|n|cffffcc00Level 1|r - <ANdh,DataC1,%>% movement speed reduction, <ANdh,DataB1,%>% miss chance. |n|cffffcc00Level 2|r - <ANdh,DataC2,%>% movement speed reduction, <ANdh,DataB2,%>% miss chance. |n|cffffcc00Level 3|r - <ANdh,DataC3,%>% movement speed reduction, <ANdh,DataB3,%>% miss chance."
+Researchhotkey=D
+[BNdh]
+Bufftip=Drunken Haze
+Buffubertip="This unit was hit by a Drunken Haze; it has reduced movement speed and a chance to miss on attacks."
+[ANsi]
+Name=Silence
+Tip=Sil|cffffcc00e|rnce - [|cffffcc00Level 1|r],Sil|cffffcc00e|rnce - [|cffffcc00Level 2|r],Sil|cffffcc00e|rnce - [|cffffcc00Level 3|r]
+Ubertip="Stops all enemies in a small target area from casting spells for <ANsi,Dur1> seconds.","Stops all enemies in a medium target area from casting spells for <ANsi,Dur2> seconds.","Stops all enemies in a large target area from casting spells for <ANsi,Dur3> seconds."
+Hotkey=E
+Researchtip="Learn Sil|cffffcc00e|rnce - [|cffffcc00Level %d|r]"
+Researchubertip="Stops all enemies in a target area from casting spells. The area of effect and duration increase with level. |n|n|cffffcc00Level 1|r - Small area, lasts <ANsi,Dur1> seconds. |n|cffffcc00Level 2|r - Medium area, lasts <ANsi,Dur2> seconds. |n|cffffcc00Level 3|r - Large area, lasts <ANsi,Dur3> seconds."
+Researchhotkey=E
+[BNsi]
+Bufftip=Silence
+Buffubertip="This unit is Silenced; it cannot cast spells."
+[ANch]
+Name=Charm
+Tip=|cffffcc00C|rharm
+Ubertip="Takes control of a target enemy unit. |nCharm cannot be used on Heroes, or creeps above level <ANch,DataA1>."
+Hotkey=C
+Researchtip=Learn |cffffcc00C|rharm
+Researchubertip="Takes control of a target enemy unit. |nCharm cannot be used on Heroes, or creeps above level <ANch,DataA1>."
+Researchhotkey=C
+[ANmo]
+Name=Monsoon
+Tip=Monsoo|cffffcc00n|r - [|cffffcc00Level 1|r],Monsoo|cffffcc00n|r - [|cffffcc00Level 2|r],Monsoo|cffffcc00n|r - [|cffffcc00Level 3|r]
+Ubertip="Calls down a storm of lightning to strike enemy units for <ANmo,DataA1> damage in a small target area. |nLasts <ANmo,Dur1> seconds.","Calls down a storm of lightning to strike enemy units for <ANmo,DataA2> damage in a medium target area. |nLasts <ANmo,Dur1> seconds.","Calls down a storm of lightning to strike enemy units for <ANmo,DataA3> damage in a large target area. |nLasts <ANmo,Dur1> seconds."
+Hotkey=N
+Researchtip="Learn Monsoo|cffffcc00n|r - [|cffffcc00Level %d|r]"
+Researchubertip="Calls a storm of lightning bolts to strike enemy units for <ANmo,DataA1> damage. |nLasts <ANmo,Dur1> seconds. |n|n|cffffcc00Level 1|r - Small area. |n|cffffcc00Level 2|r - Medium area. |n|cffffcc00Level 3|r - Large area."
+Researchhotkey=N
+[BNmo]
+Bufftip=Monsoon
+Buffubertip="This unit is under a Monsoon; it will take damage from lightning bolts."
+[ANto]
+Name=Tornado
+Tip=|cffffcc00T|rornado
+Ubertip="Summons a fierce controllable Tornado that slows enemy units' movement speed, randomly tosses enemy ground units into the air and damages enemy buildings. |nLasts <ANto,Dur1> seconds."
+Hotkey=T
+Researchtip="Learn |cffffcc00T|rornado"
+Researchubertip="Summons a fierce controllable Tornado that slows enemy units' movement speed, randomly tosses enemy ground units into the air and damages enemy buildings. |nLasts <ANto,Dur1> seconds."
+Researchhotkey=T
+[Basl]
+Bufftip=Tornado
+Buffubertip="This unit is caught within a Tornado; its movement speed has been reduced temporarily."
+[BNto]
+Bufftip=Tornado
+[Arng]
+Name=Revenge
+[Adtg]
+Name=True Sight
+Tip=True Sight
+Ubertip="Reveals nearby invisible units."
+[ANtr]
+Name=True Sight
+Tip=True Sight
+Ubertip="Reveals nearby invisible units."
+[Abgm]
+Name=Blighted Gold Mine Ability
+[Aegm]
+Name=Entangled Gold Mine Ability
+[Atol]
+Name=Tree of Life upgrade ability
+[Awrp]
+Name=Waygate ability
+[BNsp]
+Bufftip=Soul Preservation
+Buffubertip="This unit is being preserved for later use."
+[ANfd]
+Name=Finger of Death
+Tip=|cffffcc00F|ringer of Death
+Ubertip="Instantly turns a creature or building inside-out, destroying it utterly."
+Hotkey=F
+Researchtip=Learn |cffffcc00F|ringer of Death
+Researchubertip="Instantly turns a creature or building inside-out, destroying it utterly."
+Researchhotkey=F
+[ANrc]
+Name=Rain of Chaos
+Tip=|cffffcc00R|rain of Chaos
+Ubertip="Calls down multiple Infernals from the sky."
+Hotkey=R
+Researchtip=Learn |cffffcc00R|rain of Chaos
+Researchubertip="Calls down multiple Infernals from the sky."
+Researchhotkey=R
+[Achd]
+Name=Cargo Hold Death
+[Aloa]
+Name=Load
+Tip=|cffffcc00L|road
+Ubertip="Loads a targeted friendly land unit."
+Hotkey=L
+[Adro]
+Name=Unload
+Tip=|cffffcc00U|rnload All
+Ubertip="Unloads all carried units at a target location."
+Hotkey=U
+[Sdro]
+Name=Unload
+Tip=|cffffcc00U|rnload All
+Ubertip="Unloads all carried units at a target location."
+Hotkey=U
+[Adri]
+Name=Unload Instant
+Tip=|cffffcc00U|rnload All
+Ubertip="Unloads all units."
+Hotkey=U
+[Asla]
+Name=Sleep Always
+Tip=|cffffcc00S|leep
+Ubertip="Unit sleeps until awoken."
+[Advc]
+Name=Devour Cargo
+[ANpi]
+Name=Permanent Immolation
+Tip=Permanent Immolation
+Ubertip="Burns nearby enemy units for <ANpi,DataA1> points of damage per second."
+[Apig]
+Name=Permanent Immolation
+Tip=Permanent Immolation
+Ubertip="Burns nearby enemy units for <Apig,DataA1> points of damage per second."
+[Abun]
+Name=Cargo Hold (Orc Burrow)
+[Acar]
+Name=Cargo Hold
+[ANgl]
+Name=Exchange Gold for Lumber
+Tip=Exchange %d Gold for %d |cffffcc00L|rumber
+Hotkey=L
+[ANlg]
+Name=Exchange Lumber for Gold
+Tip=Exchange %d Lumber for %d |cffffcc00G|rold
+Hotkey=G
+[ANrl]
+Name=Life Regeneration
+[Aneu]
+Name=Select Hero
+Tip=Select |cffffcc00H|rero
+Untip=Deselect |cffffcc00H|rero
+Hotkey=H
+Unhotkey=H
+[Ane2]
+Name=Select Unit
+Tip=Select |cffffcc00U|rnit
+Untip=Deselect |cffffcc00U|rnit
+Hotkey=U
+Unhotkey=U
+[ANin]
+Name=Inferno
+Tip=|cffffcc00I|rnferno
+Ubertip="Summons an Infernal from the sky, causing area effect damage where it lands."
+Hotkey=I
+Researchtip=Learn |cffffcc00I|rnferno
+Researchhotkey=I
+Globalmessage=
+Globalsound=
+[BNin]
+Bufftip=Infernal
+Buffubertip="This Infernal is mighty."
+[Asds]
+Name=Kaboom!
+Tip=Ka|cffffcc00b|room!
+Ubertip="Deals <Asds,DataB1> damage in a small area. Effective against buildings and trees."
+Untip="|cffc3dbff|cffc3dbffRight-click to activate auto-casting.|r|r"
+Unubertip="|cffc3dbff|cffc3dbffRight-click to deactivate auto-casting.|r|r"
+Hotkey=B
+Unhotkey=B
+[ACsw]
+Name=Slow
+Hotkey=W
+Unhotkey=W
+Tip=Slo|cffffcc00w|r
+Ubertip="Slows enemy unit's attack rate by <ACsw,DataB1,%>% and movement speed by <ACsw,DataA1,%>%. Lasts <ACsw,Dur1> seconds."
+Untip="|cffc3dbffRight-click to activate auto-casting.|r"
+Unubertip="|cffc3dbffRight-click to deactivate auto-casting.|r"
+[ACtb]
+Name=Hurl Boulder
+Tip=Hurl |cffffcc00B|roulder
+Ubertip="A magical boulder that is thrown at an enemy unit, causing <ACtb,DataA1> points of damage and stunning the target for <ACtb,Dur1> seconds."
+Hotkey=B
+[ACbr]
+Name=Berserker Rage
+Tip=|cffffcc00B|rerserker Rage
+Ubertip="Increases attack rate by <ACbr,DataA1,%>% for <ACbr,Dur1> seconds."
+Hotkey=B
+[Bfzy]
+Bufftip=Frenzy
+Buffubertip="This unit has Frenzy; its attack rate and movement speed are increased."
+[ACsp]
+Name=Sleep
+[Aspd]
+Name=Spawn Spiders
+[AOac]
+Name=Command Aura
+Tip=Command Aura
+Ubertip="Gives extra damage to the attacks of nearby friendly units."
+[Boac]
+Bufftip=Command Aura
+Buffubertip="This unit is under the effects of Command Aura; it has increased attack damage."
+[Btlf]
+Bufftip=Timed Life
+Buffubertip="Summoned units take damage from dispels."
+[Adda]
+Name=AOE damage upon death
+[Agho]
+Name=Ghost
+[Aeth]
+Name=Ghost
+[Agld]
+Name=Gold Mine ability
+[Amin]
+Name=Mine - exploding
+[Apiv]
+Name=Permanent Invisibility
+[Artn]
+Name=Return
+[Avul]
+Name=Invulnerable
+[Awan]
+Name=Wander
+[AUmd]
+Name=Dark Summoning (Malganis)
+[Aarm]
+Name=Mana Regeneration Aura
+[Barm]
+Bufftip=Mana Regeneration Aura
+Buffubertip="This unit is under the effects of Mana Regeneration Aura; it has an increased mana regeneration rate."
+[ANre]
+Name=Life Regeneration Aura
+[Sch2]
+Name=Cargo Hold
+[Argd]
+Name=Return Gold
+[Argl]
+Name=Return Gold and Lumber
+[Arlm]
+Name=Return Lumber
+[Amnz]
+Name=AOE damage upon death
+[Aand]
+[ACad]
+[Aap2]
+[Abli]
+Name=Blight
+[Abds]
+Name=Blight Dispel Small
+[Abdl]
+Name=Blight Dispel Large
+[Abgs]
+Name=Blight Growth Small
+[Abgl]
+Name=Blight Growth Large
+[ACct]
+Name=Critical Strike
+Tip=Critical Strike
+Ubertip="Gives a <ACct,DataA1>% chance to do <ACct,DataB1> times normal damage on an attack."
+[Amnx]
+Name=AOE damage upon death
+[Adt1]
+[Adt2]
+[Adt3]
+[ACen]
+Name=Ensnare
+Tip=|cffffcc00E|rnsnare
+Ubertip="Causes a target enemy unit to be bound to the ground so that it cannot move for <ACen,Dur1> seconds. Air units that are ensnared can be attacked as though they were land units."
+Hotkey=E
+[AChd]
+[ACma]
+[Sloa]
+Name=Load
+Tip=|cffffcc00L|road
+Ubertip="Loads a targeted friendly land unit."
+Hotkey=L
+[ACmi]
+Name=Spell Immunity
+Tip=Spell Immunity
+Ubertip="Renders this unit immune to all spells."
+[ACm2]
+Name=Spell Immunity
+Tip=Spell Immunity
+Ubertip="Renders this unit immune to all spells."
+[ACm3]
+Name=Spell Immunity
+Tip=Spell Immunity
+Ubertip="Renders this unit immune to all spells."
+[ACrj]
+Name=Rejuvenation
+Tip=R|cffffcc00e|rjuvenation
+Ubertip="Heals a target friendly unit for <ACrj,DataA1> hit points over <ACrj,Dur1> seconds."
+Hotkey=E
+[Ahrp]
+Name=Repair
+Tip=|cffffcc00R|repair
+Ubertip="Repairs mechanical units and structures at the cost of resources."
+Untip="|cffc3dbffRight-click to activate auto-casting.|r"
+Unubertip="|cffc3dbffRight-click to deactivate auto-casting.|r"
+Hotkey=R
+Unhotkey=R
+[Aro1]
+Name=Root
+Tip=|cffffcc00R|root
+Ubertip="Burrows the Ancient's roots into the ground, rendering it immobile, but allowing it to build units. For the Ancient Protector, this allows it to hurl enormous rocks through the air to damage enemy units. Also gives the Ancient Fortified armor."
+Hotkey=R
+Untip=Up|cffffcc00r|root
+Unubertip="Allows the Ancient to pull itself up out of the ground so that it can move and engage units in melee combat. Also gives the Ancient Heavy armor."
+Unhotkey=R
+[Aro2]
+Name=Root
+Tip=|cffffcc00R|root
+Ubertip="Burrows the Ancient's roots into the ground, rendering it immobile, but allowing it to build units. For the Ancient Protector, this allows it to hurl enormous rocks through the air to damage enemy units. Also gives the Ancient Fortified armor."
+Hotkey=R
+Untip=Up|cffffcc00r|root
+Unubertip="Allows the Ancient to pull itself up out of the ground so that it can move and engage units in melee combat. Also gives the Ancient Heavy armor."
+Unhotkey=R
+[Asid]
+Name=Sell Items
+Tip=Sell Items
+Ubertip="Permits the sale of items."
+[Asud]
+Name=Sell Units
+Tip=Sell Units
+Ubertip="Permits the sale of units."
+[ACsw]
+[ACpv]
+Name=Pulverize
+Tip=Pulverize
+Ubertip="Gives a <ACpv,DataA1>% chance that an attack will deal <ACpv,DataB1> damage to nearby units."
+[Anei]
+Name=Select User
+Tip=Select |cffffcc00U|rser
+Hotkey=U
+[ACrk]
+Name=Resistant Skin
+Tip=Resistant Skin
+Ubertip="Reduces the duration of negative spells and renders the unit immune to certain spells."
+[ANfl]
+Name=Forked Lightning
+Tip=|cffffcc00F|rorked Lightning - [|cffffcc00Level 1|r],|cffffcc00F|rorked Lightning - [|cffffcc00Level 2|r],|cffffcc00F|rorked Lightning - [|cffffcc00Level 3|r]
+Ubertip="Calls forth a cone of lightning on a target enemy unit, hitting up to <ANfl,DataB1> enemy units for <ANfl,DataA1> damage.","Calls forth a cone of lightning from the Sea Witch, hitting up to <ANfl,DataB2> enemy units for <ANfl,DataA2> damage.","Calls forth a cone of lightning from the Sea Witch, hitting up to <ANfl,DataB3> enemy units for <ANfl,DataA3> damage."
+Hotkey=F
+Researchtip="Learn |cffffcc00F|rorked Lightning - [|cffffcc00Level %d|r]"
+Researchubertip="Calls forth a cone of lightning to damage enemies. |n|n|cffffcc00Level 1|r - <ANfl,DataA1> damage per unit. |n|cffffcc00Level 2|r - <ANfl,DataA2> damage per unit. |n|cffffcc00Level 3|r - <ANfl,DataA3> damage per unit."
+Researchhotkey=F
+[BNpi]
+EditorName=Permanent Immolation
+[Bpig]
+EditorName=Permanent Immolation
+[BNst]
+EditorName=Stampede
+[BNrf]
+EditorName=Rain of Fire (Area)
+[Bsha]
+EditorName=Shared Vision
+[Btdg]
+EditorName=Tornado Damage
+[ANmd]
+EditorName=Monsoon
+[XErf]
+EditorName=Rain of Fire (Effect)
+[XIct]
+EditorName=Item Change Time of Day
+[XNmo]
+EditorName=Monsoon (Effect)
+[XNhs]
+EditorName=Healing Spray (Effect)
+[A0DY]
+Name="ELE: Greater Elemental Of Fire (split)"
+Tip=Summon Lava Spa|cffffcc00w|rn - [|cffffcc00Level 1|r],Summon Lava Spa|cffffcc00w|rn - [|cffffcc00Level 2|r],Summon Lava Spa|cffffcc00w|rn - [|cffffcc00Level 3|r]
+Researchtip="Learn Summon Lava Spa|cffffcc00w|rn - [|cffffcc00Level %d|r]"
+Ubertip="Summons a Lava Spawn, a resilient and deadly fire creature. As a Lava Spawn deals damage, it consumes the flesh of its target, thereby fueling its fires and eventually splitting into two healthy Lava Spawns.|n|nHas <nlv1,realHP> hit points and deals <nlv1,mindmg1> - <nlv1,maxdmg1> damage.|nLasts <ANlm,Dur1> seconds.|n|n|cffffcc00Attacks ground and air units.|r","Summons a Lava Spawn, a resilient and deadly fire creature. As a Lava Spawn deals damage, it consumes the flesh of its target, thereby fueling its fires and eventually splitting into two healthy Lava Spawns.|n|nHas <nlv2,realHP> hit points and deals <nlv2,mindmg1> - <nlv2,maxdmg1> damage.|nLasts <ANlm,Dur2> seconds.|n|n|cffffcc00Attacks ground and air units.|r","Summons a Lava Spawn, a resilient and deadly fire creature. As a Lava Spawn deals damage, it consumes the flesh of its target, thereby fueling its fires and eventually splitting into two healthy Lava Spawns.|n|nHas <nlv3,realHP> hit points and deals <nlv3,mindmg1> - <nlv3,maxdmg1> damage.|nLasts <ANlm,Dur3> seconds.|n|n|cffffcc00Attacks ground and air units.|r"
+Researchubertip="Summons a Lava Spawn, a resilient and deadly fire creature. As a Lava Spawn deals damage, it consumes the flesh of its target, eventually splitting into two healthy Lava Spawns.|nLasts <ANlm,Dur1> seconds.|n|n|cffffcc00Level 1|r - <nlv1,realHP> hit points, <nlv1,mindmg1> - <nlv1,maxdmg1> damage.|n|cffffcc00Level 2|r - <nlv2,realHP> hit points, <nlv2,mindmg1> - <nlv2,maxdmg1> damage.|n|cffffcc00Level 3|r - <nlv3,realHP> hit points, <nlv3,mindmg1> - <nlv3,maxdmg1> damage.|n|n|cffffcc00Attacks ground and air units.|r"
+Hotkey=W
+Researchhotkey=W
+[A0E9]
+Name="Elemental Of Earth"
+Tip="Trains Elemental Of Earth"
+Ubertip="|n|cffFFFF80Attack:|r Siege (|cffFFFF00melee|r,|cffFFFF00 50|r dps)|n|cffFFFF80Armor:|r Hero (|cffFFFF004|r)|n|cffFFFF80Hitpoints: |cffFFFF00450|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Pulverize|r|nDeals 100 damage with 20% chance in 200 AoE and half of damage in 300 AoE|n|n|cff80FF00Power of Earth|r|nDeals additional damage proportionally to the elemental's current life (50dmg*currentHP/maxHP)"
+Untip="|cffc3dbffRight-click to activate auto-casting.|r"
+Unubertip="|cffc3dbffRight-click to deactivate auto-casting.|r"
+Hotkey=R
+Unhotkey=R
+[A0E8]
+Name="Greater Water Elemental"
+Tip="Trains Greater Elemental Of Water"
+Ubertip="|n|cffFFFF80Attack: 1|r Normal (|cffFFFF0030|r rng|r,|cffFFFF00 66|r dps)|n|cffFFFF80Attack: 2|r Pierce (|cffFFFF00380|r rng|r,|cffFFFF00 66|r dps)|n|cffFFFF80Armor:|r Medium (|cffFFFF007|r)|n|cffFFFF80Hitpoints: |cffFFFF00650|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Illusion|r|nHas 20% chance to create a copy of itself on attack. Illusion deals only 60% of attack and receives double damage|n|n|cff80FF00Liquid Body|r|nIn 80% of cases attack pass through Water Elemental's body without dealing any damage"
+Untip=" "
+Unubertip=" "
+Hotkey=R
+Unhotkey=R
+[A0E7]
+Name="Water Elemental"
+Tip="Trains Elemental Of Water"
+Ubertip="|n|cffFFFF80Attack: 1|r Normal (|cffFFFF0030|r rng|r,|cffFFFF00 40|r dps)|n|cffFFFF80Attack: 2|r Pierce (|cffFFFF00340|r rng|r,|cffFFFF00 29|r dps)|n|cffFFFF80Armor:|r Medium (|cffFFFF003|r)|n|cffFFFF80Hitpoints: |cffFFFF00500|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Liquid Body|r|nIn 80% of cases attack pass through Water Elemental's body without dealing any damage"
+Untip="|cffc3dbffRight-click to activate auto-casting.|r"
+Unubertip="|cffc3dbffRight-click to deactivate auto-casting.|r"
+Hotkey=R
+Unhotkey=R
+[A0DV]
+Name="ELE: ObeliskOfElements (dummy)"
+Tip="Enchant"
+Ubertip="Gives elemental shield to a random allied unit and heals it for 100hp:|n- Earth shield: +5 armor, 35% boulder throw(100dmg 1.5s stun)|n- Air shield: +20% IAS\MS,+20%spell and damage resist|n- Fire shield: Burns random enemy(25dps, 150 AoE)|n|n|cffFFFF80Cooldown:|cffFFFF00 10 |rseconds"
+Untip="|cffc3dbffRight-click to activate auto-casting.|r"
+Unubertip="|cffc3dbffRight-click to deactivate auto-casting.|r"
+Hotkey=R
+Unhotkey=R
+[A0EE]
+Name="Greater Elemental Of Fire"
+Tip="Trains Greater Elemental Of Fire"
+Ubertip="|n|cffFFFF80Attack:|r Chaos (|cffFFFF00450|r rng|r,|cffFFFF00 51|r dps)|n|cffFFFF80Armor:|r Heavy (|cffFFFF007|r)|n|cffFFFF80Hitpoints: |cffFFFF00900|r|n|cffFFFF80Abilities:|r|n|ncff80FF00Fire Breath|r|nHas 15% chance to cast Fire Breath on attack(150 damage)"
+Untip="|cffc3dbffRight-click to activate auto-casting.|r"
+Unubertip="|cffc3dbffRight-click to deactivate auto-casting.|r"
+Hotkey=R
+Unhotkey=R
+[A0ED]
+Name="Elemental Of Fire"
+Tip="Trains Elemental Of Fire"
+Ubertip="|n|cffFFFF80Attack:|r Chaos (|cffFFFF00400|r rng|r,|cffFFFF00 34|r dps)|n|cffFFFF80Armor:|r Heavy (|cffFFFF003|r)|n|cffFFFF80Hitpoints: |cffFFFF00525|r"
+Untip="|cffc3dbffRight-click to activate auto-casting.|r"
+Unubertip="|cffc3dbffRight-click to deactivate auto-casting.|r"
+Hotkey=R
+Unhotkey=R
+[A0EC]
+Name="Greater Elemental Of Lightning"
+Tip="Trains Greater Elemental Of Lightning"
+Ubertip="|n|cffFFFF80Attack:|r Spell (|cffFFFF00400|r rng|r,|cffFFFF00 1|r dps)|n|cffFFFF80Armor:|r Heavy (|cffFFFF009|r)|n|cffFFFF80Hitpoints: |cffFFFF00800|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Lightning Attack|r|nDeals 80 damage up to 5 targets in 600 range|n|n|cff80FF00Lightning Shield|r|nWhenever elemental is attacked by melee unit there is 30% chance on attacker get stunned for 4 seconds"
+Untip="|cffc3dbffRight-click to activate auto-casting.|r"
+Unubertip="|cffc3dbffRight-click to deactivate auto-casting.|r"
+Hotkey=R
+Unhotkey=R
+[A0EB]
+Name="Elemental Of Lightning"
+Tip="Trains Elemental Of Lightning"
+Ubertip="|n|cffFFFF80Attack:|r Spell (|cffFFFF00350|r rng|r,|cffFFFF00 1|r dps)|n|cffFFFF80Armor:|r Heavy (|cffFFFF003|r)|n|cffFFFF80Hitpoints: |cffFFFF00450|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Lightning Attack|r|nDeals 50 damage up to 3 targets in 600 range|n|n|cff80FF00Lightning Shield|r|nWhenever elemental is attacked by melee unit there is 15% chance on attacker get stunned for 2 seconds"
+Untip="|cffc3dbffRight-click to activate auto-casting.|r"
+Unubertip="|cffc3dbffRight-click to deactivate auto-casting.|r"
+Hotkey=R
+Unhotkey=R
+[A0EA]
+Name="Greater Elemental Of Earth"
+Tip="Trains Greater Elemental Of Earth"
+Ubertip="|n|cffFFFF80Attack:|r Siege (|cffFFFF00melee|r,|cffFFFF00 83|r dps)|n|cffFFFF80Armor:|r Hero (|cffFFFF008|r)|n|cffFFFF80Hitpoints: |cffFFFF00950|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Pulverize|r|nDeals 200 damage with 25% in 200 AoE and half of damage in 300 AoE|n|n|cff80FF00Power of Earth|r|nDeals additional damage proportionally to the elemental's current life (100dmg*currentHP/maxHP)"
+Untip="|cffc3dbffRight-click to activate auto-casting.|r"
+Unubertip="|cffc3dbffRight-click to deactivate auto-casting.|r"
+Hotkey=R
+Unhotkey=R
+[A0EL]
+Name=Mana Regeneration
+[A0EM]
+Name="NAT: Wisp (stun)"
+Tip=Bash
+Ubertip="Gives a <ACbh,DataA1>% chance that an attack will do <ACbh,DataC1> bonus damage and stun an opponent for <ACbh,Dur1> seconds."
+[A0EH]
+Name="Greater Elemental Of Wind"
+Tip="Trains Greater Elemental Of Wind"
+Ubertip="|n|cffFFFF80Attack: 1|r Pierce (|cffFFFF00450|r rng|r,|cffFFFF00 55|r dps)|n|cffFFFF80Attack: 2|r Pierce (|cffFFFF00450|r rng|r,|cffFFFF00 43|r dps)|n|cffFFFF80Armor:|r Medium (|cffFFFF009|r)|n|cffFFFF80Hitpoints: |cffFFFF001300|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Flying|r|nThis unit is flying|n|n|cff80FF00Gale|r|nReduces attack and movement speed of enemy air units by 35% in 500 range"
+Untip="|cffc3dbffRight-click to activate auto-casting.|r"
+Unubertip="|cffc3dbffRight-click to deactivate auto-casting.|r"
+Hotkey=R
+Unhotkey=R
+[A0EI]
+Name="ELE: Book of Conjuration"
+Tip="Elemental Rain"
+Ubertip="|cffFFFF80Ability:|cffFFFF00 Elemental havoc|r|nCasts one of spells:|n- Stone spikes: 100dmg + shock to ground, 50dmg to flying,|n- Lightning storm: 100dmg and shock to flying, 50 dmg to ground|nin 300 AoE, duration 6s.|n|cffFFFF80Cooldown:|cffFFFF00 16 |rseconds"
+Untip="|cffc3dbffRight-click to activate auto-casting.|r"
+Unubertip="|cffc3dbffRight-click to deactivate auto-casting.|r"
+Hotkey=R
+Unhotkey=R
+[A0EF]
+Name="Lesser Elemental Of Wind"
+Tip="Trains Lesser Elemental Of Wind"
+Ubertip="|n|cffFFFF80Attack:|r Pierce (|cffFFFF00400|r rng|r,|cffFFFF00 30|r dps)|n|cffFFFF80Armor:|r Medium (|cffFFFF002|r)|n|cffFFFF80Hitpoints: |cffFFFF00350|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Flying|r|nThis unit is flying"
+Untip="|cffc3dbffRight-click to activate auto-casting.|r"
+Unubertip="|cffc3dbffRight-click to deactivate auto-casting.|r"
+Hotkey=R
+Unhotkey=R
+[A0EG]
+Name="Elemental Of Wind"
+Tip="Trains Elemental Of Wind"
+Ubertip="|n|cffFFFF80Attack: 1|r Pierce (|cffFFFF00450|r rng|r,|cffFFFF00 43|r dps)|n|cffFFFF80Attack: 2|r Pierce (|cffFFFF00450|r rng|r,|cffFFFF00 37|r dps)|n|cffFFFF80Armor:|r Medium (|cffFFFF004|r)|n|cffFFFF80Hitpoints: |cffFFFF00550|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Flying|r|nThis unit is flying|n|n|cff80FF00Gale|r|nReduces attack and movement speed of enemy air units by 20% in 500 range"
+Untip="|cffc3dbffRight-click to activate auto-casting.|r"
+Unubertip="|cffc3dbffRight-click to deactivate auto-casting.|r"
+Hotkey=R
+Unhotkey=R
+[A0ES]
+Name=Slow Aura
+[A0EP]
+Name="ELE: Enchant (forged weapon)"
+Tip="|cffffcc00Q|ruill Spray"
+Ubertip="Adds <ANak,DataA1> bonus damage to the Quill Beast's attack and causes its attacks to do area of effect damage."
+Untip="|cffc3dbff|cffc3dbffRight-click to activate auto-casting.|r|r"
+Unubertip="|cffc3dbffRight-click to deactivate auto-casting.|r"
+Hotkey=Q
+Unhotkey=Q
+[A0EN]
+Name=Kaboom!
+Tip=Ka|cffffcc00b|room!
+Ubertip="Deals <Asds,DataB1> damage in a small area. Effective against buildings and trees."
+Untip="|cffc3dbff|cffc3dbffRight-click to activate auto-casting.|r|r"
+Unubertip="|cffc3dbff|cffc3dbffRight-click to deactivate auto-casting.|r|r"
+Hotkey=B
+Unhotkey=B
+[A0CY]
+Name="ELE: Elemental Rain"
+Tip="Elemental Rain"
+Ubertip="Casts 1 from next 3 spells:|n- Monsoon (40dmg/sec, 5 sec)|n- Meteor Shower 200dmg, 15dmg/sec, 3 sec)|n- Blizzard (25dmg/wave, 7 waves)|n|n|cffFFFF80Cooldown:|cffFFFF00 14 |rseconds"
+Untip="|cffc3dbffRight-click to activate auto-casting.|r"
+Unubertip="|cffc3dbffRight-click to deactivate auto-casting.|r"
+Hotkey=R
+Unhotkey=R
+[A0CZ]
+Name="ELE: Enchant"
+Tip="Enchant"
+Ubertip="Enchants a random allied unit with an elemental buff, improving its traits.|n|n|cffFFFF80Cooldown:|cffFFFF00 9 |rseconds"
+Untip="|cffc3dbffRight-click to activate auto-casting.|r"
+Unubertip="|cffc3dbffRight-click to deactivate auto-casting.|r"
+Hotkey=R
+Unhotkey=R
+[A0CT]
+Name="ELE: Elemental Of Water (evasion)"
+Tip=Evasion
+Ubertip="Gives a <ACes,DataA1,%>% percent chance to avoid an attack."
+[A0D8]
+Name="ELE: Elemental Guard Tower (Immolation)"
+Tip="Immolation"
+Ubertip="Burns nearby enemy units for 18 points of damage per second in 350 range."
+[A0DC]
+Name="ELE: Elemental Guard Tower (Boulder)"
+Tip="Boulder strike"
+Ubertip="Has a 50% chance to stun unit for 3 seconds and deal 100 additional damage."
+Hotkey=B
+[A0E3]
+Name="ELE: monsoon"
+Tip=Monsoo|cffffcc00n|r - [|cffffcc00Level 1|r],Monsoo|cffffcc00n|r - [|cffffcc00Level 2|r],Monsoo|cffffcc00n|r - [|cffffcc00Level 3|r]
+Ubertip="Calls down a storm of lightning to strike enemy units for <ACmo,DataA1> damage in a small target area. |nLasts <ACmo,Dur1> seconds.","Calls down a storm of lightning to strike enemy units for <ACmo,DataA2> damage in a medium target area. |nLasts <ACmo,Dur1> seconds.","Calls down a storm of lightning to strike enemy units for <ACmo,DataA3> damage in a large target area. |nLasts <ACmo,Dur1> seconds."
+Hotkey=N
+Researchtip="Learn Monsoo|cffffcc00n|r - [|cffffcc00Level %d|r]"
+Researchubertip="Calls a storm of lightning bolts to strike enemy units for <ANmo,DataA1> damage. |nLasts <ANmo,Dur1> seconds. |n|n|cffffcc00Level 1|r - Small area. |n|cffffcc00Level 2|r - Medium area. |n|cffffcc00Level 3|r - Large area."
+Researchhotkey=N
+[A0E4]
+Name="ELE: monsoon (-na)"
+Tip=Monsoo|cffffcc00n|r - [|cffffcc00Level 1|r],Monsoo|cffffcc00n|r - [|cffffcc00Level 2|r],Monsoo|cffffcc00n|r - [|cffffcc00Level 3|r]
+Ubertip="Calls down a storm of lightning to strike enemy units for <ACmo,DataA1> damage in a small target area. |nLasts <ACmo,Dur1> seconds.","Calls down a storm of lightning to strike enemy units for <ACmo,DataA2> damage in a medium target area. |nLasts <ACmo,Dur1> seconds.","Calls down a storm of lightning to strike enemy units for <ACmo,DataA3> damage in a large target area. |nLasts <ACmo,Dur1> seconds."
+Hotkey=N
+Researchtip="Learn Monsoo|cffffcc00n|r - [|cffffcc00Level %d|r]"
+Researchubertip="Calls a storm of lightning bolts to strike enemy units for <ANmo,DataA1> damage. |nLasts <ANmo,Dur1> seconds. |n|n|cffffcc00Level 1|r - Small area. |n|cffffcc00Level 2|r - Medium area. |n|cffffcc00Level 3|r - Large area."
+Researchhotkey=N
+[A0DT]
+Name="Lesser Water Elemental"
+Tip="Trains Lesser Elemental Of Water"
+Ubertip="|n|cffFFFF80Attack: 1|r Normal (|cffFFFF0030|r rng|r,|cffFFFF00 38|r dps)|n|cffFFFF80Attack: 2|r Pierce (|cffFFFF00300|r rng|r,|cffFFFF00 18|r dps)|n|cffFFFF80Armor:|r Medium (|cffFFFF001|r)|n|cffFFFF80Hitpoints: |cffFFFF00300|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Liquid Body|r|nIn 60% of cases attack pass through Water Elemental's body without dealing any damage"
+Untip="|cffc3dbffRight-click to activate auto-casting.|r"
+Unubertip="|cffc3dbffRight-click to deactivate auto-casting.|r"
+Hotkey=R
+Unhotkey=R
+[A0E1]
+Name=Parasite
+Tip=Pa|cffffcc00r|rasite
+Ubertip="Afflicts a target enemy unit with a deadly parasite that deals <ANpa,DataA1> damage per second for <ANpa,Dur1> seconds. If the afflicted unit dies while under the effect of Parasite, a minor minion will spawn from its corpse."
+Untip="|cffc3dbffRight-click to activate auto-casting.|r"
+Unubertip="|cffc3dbffRight-click to deactivate auto-casting.|r"
+Hotkey=R
+Unhotkey=R
+[A0BS]
+Name="NAT: Ancient of Wonders (dummy)"
+Tip="Wild transformation"
+Ubertip="Transforms non-mechanical enemies into hostile forest creatures (transform chance: 25%).|n|cffFFFF80Cooldown:|cffFFFF00 50 |rseconds"
+Untip="|cffc3dbffRight-click to activate auto-casting.|r"
+Unubertip="|cffc3dbffRight-click to deactivate auto-casting.|r"
+Hotkey=R
+Unhotkey=R
+[A0BZ]
+Name="NAT: Ancient Bear (cleaving attack)"
+Tip=Cleaving Attack
+Ubertip="The creature strikes with such force that <ACce,DataA1,%>% of their damage strikes through to enemies near the primary attacked unit."
+[A0BY]
+Name="NAT: Bear (cleaving attack)"
+Tip=Cleaving Attack
+Ubertip="The creature strikes with such force that <ACce,DataA1,%>% of their damage strikes through to enemies near the primary attacked unit."
+[A0BX]
+Name="NAT: Ancient Keeper (treants sprout)"
+Tip=Pa|cffffcc00r|rasite
+Ubertip="Afflicts a target enemy unit with a deadly parasite that deals <ANpa,DataA1> damage per second for <ANpa,Dur1> seconds. If the afflicted unit dies while under the effect of Parasite, a minor minion will spawn from its corpse."
+Untip="|cffc3dbffRight-click to activate auto-casting.|r"
+Unubertip="|cffc3dbffRight-click to deactivate auto-casting.|r"
+Hotkey=R
+Unhotkey=R
+[A0BW]
+Name="NAT: Ancient Keeper (incorporeal)"
+Tip=Evasion
+Ubertip="Gives a <ACev,DataA1,%>% percent chance to avoid an attack."
+[A0CA]
+Name=Slow Aura
+[A0CE]
+Name="Tornado (Unit Damage Aura)"
+[A0CJ]
+Name="ELE: Elemental Of Lightning (forked lightning)"
+Tip=Fo|cffffcc00r|rked Lightning
+Ubertip="Calls forth a cone of lightning on a target enemy unit, hitting up to <ACfl,DataB1> enemy units for <ACfl,DataA1> damage."
+Hotkey=R
+[A0CK]
+Name="ELE: Greater Elemental Of Lightning (forked lightning)"
+Tip=Fo|cffffcc00r|rked Lightning
+Ubertip="Calls forth a cone of lightning on a target enemy unit, hitting up to <ACfl,DataB1> enemy units for <ACfl,DataA1> damage."
+Hotkey=R
+[A0CN]
+Name="ELE: Greater Elemental Of Fire (firebreath)"
+Tip=Breath of |cffffcc00F|rire
+Ubertip="Breathes a cone of fire at enemy units, dealing <ACbc,DataA1> damage."
+Hotkey=F
+[A0D0]
+Name="ELE: Elemental Rain (Meteor Shower)"
+Tip=Rain of |cffffcc00F|rire
+Ubertip="Calls down waves of fire that damage units in an area. Each wave deals <ACrg,DataB1> initial damage and <ACrg,DataE1> damage per second for <ACrg,Dur1> seconds. |nLasts for <ACrg,DataA1> waves."
+Hotkey=F
+[A0CL]
+Name="ELE: Elemental Of Fire (split)"
+Tip=Summon Lava Spa|cffffcc00w|rn - [|cffffcc00Level 1|r],Summon Lava Spa|cffffcc00w|rn - [|cffffcc00Level 2|r],Summon Lava Spa|cffffcc00w|rn - [|cffffcc00Level 3|r]
+Researchtip="Learn Summon Lava Spa|cffffcc00w|rn - [|cffffcc00Level %d|r]"
+Ubertip="Summons a Lava Spawn, a resilient and deadly fire creature. As a Lava Spawn deals damage, it consumes the flesh of its target, thereby fueling its fires and eventually splitting into two healthy Lava Spawns.|n|nHas <nlv1,realHP> hit points and deals <nlv1,mindmg1> - <nlv1,maxdmg1> damage.|nLasts <ANlm,Dur1> seconds.|n|n|cffffcc00Attacks ground and air units.|r","Summons a Lava Spawn, a resilient and deadly fire creature. As a Lava Spawn deals damage, it consumes the flesh of its target, thereby fueling its fires and eventually splitting into two healthy Lava Spawns.|n|nHas <nlv2,realHP> hit points and deals <nlv2,mindmg1> - <nlv2,maxdmg1> damage.|nLasts <ANlm,Dur2> seconds.|n|n|cffffcc00Attacks ground and air units.|r","Summons a Lava Spawn, a resilient and deadly fire creature. As a Lava Spawn deals damage, it consumes the flesh of its target, thereby fueling its fires and eventually splitting into two healthy Lava Spawns.|n|nHas <nlv3,realHP> hit points and deals <nlv3,mindmg1> - <nlv3,maxdmg1> damage.|nLasts <ANlm,Dur3> seconds.|n|n|cffffcc00Attacks ground and air units.|r"
+Researchubertip="Summons a Lava Spawn, a resilient and deadly fire creature. As a Lava Spawn deals damage, it consumes the flesh of its target, eventually splitting into two healthy Lava Spawns.|nLasts <ANlm,Dur1> seconds.|n|n|cffffcc00Level 1|r - <nlv1,realHP> hit points, <nlv1,mindmg1> - <nlv1,maxdmg1> damage.|n|cffffcc00Level 2|r - <nlv2,realHP> hit points, <nlv2,mindmg1> - <nlv2,maxdmg1> damage.|n|cffffcc00Level 3|r - <nlv3,realHP> hit points, <nlv3,mindmg1> - <nlv3,maxdmg1> damage.|n|n|cffffcc00Attacks ground and air units.|r"
+Hotkey=W
+Researchhotkey=W
+[A0D3]
+Name="ELE: Elemental Rain (Meteor Shower)"
+Tip=Rain of |cffffcc00F|rire
+Ubertip="Calls down waves of fire that damage units in an area. Each wave deals <ACrg,DataB1> initial damage and <ACrg,DataE1> damage per second for <ACrg,Dur1> seconds. |nLasts for <ACrg,DataA1> waves."
+Hotkey=F
+[A0CS]
+Name="ELE: Lesser Elemental Of Water (evasion)"
+Tip=Evasion
+Ubertip="Gives a <ACes,DataA1,%>% percent chance to avoid an attack."
+[A0B4]
+Name="NAT: Ancient Bear (critical strike)"
+Tip=Critical Strike
+Ubertip="Gives a <ACct,DataA1>% chance to do <ACct,DataB1> times normal damage on an attack."
+[A0B3]
+Name="NAT: Bear (critical strike)"
+Tip=Critical Strike
+Ubertip="Gives a <ACct,DataA1>% chance to do <ACct,DataB1> times normal damage on an attack."
+[A0B6]
+Name=Bloodlust
+Tip=|cffffcc00B|rloodlust
+Ubertip="Increases a target friendly unit's attack rate by <ACbb,DataA1,%>% and movement speed by <ACbb,DataB1,%>% for <ACbb,Dur1> seconds."
+Untip="|cffc3dbffRight-click to activate auto-casting.|r"
+Unubertip="|cffc3dbffRight-click to deactivate auto-casting.|r"
+Hotkey=B
+Unhotkey=B
+[A0AU]
+Name="NAT: Brood Mother (->giant spider)"
+[A0B5]
+Name=Bloodlust
+Tip=|cffffcc00B|rloodlust
+Ubertip="Increases a target friendly unit's attack rate by <ACbb,DataA1,%>% and movement speed by <ACbb,DataB1,%>% for <ACbb,Dur1> seconds."
+Untip="|cffc3dbffRight-click to activate auto-casting.|r"
+Unubertip="|cffc3dbffRight-click to deactivate auto-casting.|r"
+Hotkey=B
+Unhotkey=B
+[A0AV]
+Name="NAT: Brood Mother (infest 2 forest spiders)"
+Tip=Pa|cffffcc00r|rasite
+Ubertip="Afflicts a target enemy unit with a deadly parasite that deals <ANpa,DataA1> damage per second for <ANpa,Dur1> seconds. If the afflicted unit dies while under the effect of Parasite, a minor minion will spawn from its corpse."
+Untip="|cffc3dbffRight-click to activate auto-casting.|r"
+Unubertip="|cffc3dbffRight-click to deactivate auto-casting.|r"
+Hotkey=R
+Unhotkey=R
+[A0B9]
+Name="COR: Void Keeper (Incinerate)"
+Tip="Incinerate","Incinerate - [|cffffcc00Level 2|r]","Incinerate - [|cffffcc00Level 3|r]"
+Researchtip="Learn In|cffffcc00c|rinerate - [|cffffcc00Level %d|r]"
+Ubertip="Each attack onto the same target deals 5 damage more than the one before. If the target dies, it explodes dealing 125 spell damage to enemies in 120 AoE and half of the damage to units in 180 AoE","Each attack made is enhanced with living flames that cling to the target. These flames add <ANic,DataA2> damage on the first attack, twice as much on the second attack, three times as much on the third attack, etc.|n|nIf a unit dies while under this effect, it is incinerated, causing up to <ANic,DataB2> damage to all nearby hostile units.","Each attack made is enhanced with living flames that cling to the target. These flames add <ANic,DataA3> damage on the first attack, twice as much on the second attack, three times as much on the third attack, etc.|n|nIf a unit dies while under this effect, it is incinerated, causing up to <ANic,DataB3> damage to all nearby hostile units."
+Researchubertip="Each attack made is enhanced with living flames that cling to the target. These flames add a small amount of damage on the first attack, twice as much on the second attack, three times as much on the third attack, etc.|n|nIf a unit dies while under this effect, it is incinerated, causing significant damage to all nearby hostile units.|n|n|cffffcc00Level 1|r - <ANic,DataA1> bonus damage, <ANic,DataB1> incineration damage.|n|cffffcc00Level 2|r - <ANic,DataA2> bonus damage, <ANic,DataB2> incineration damage.|n|cffffcc00Level 3|r - <ANic,DataA3> bonus damage, <ANic,DataB3> incineration damage."
+Hotkey=C
+Researchhotkey=C
+[A0BD]
+Name="NAT: Ancient of Gale"
+Tip=|cffffcc00T|rornado
+Ubertip="Summons a fierce controllable Tornado that slows enemy units' movement speed, randomly tosses enemy ground units into the air and damages enemy buildings. |nLasts <ANto,Dur1> seconds."
+Hotkey=T
+Researchtip="Learn |cffffcc00T|rornado"
+Researchubertip="Summons a fierce controllable Tornado that slows enemy units' movement speed, randomly tosses enemy ground units into the air and damages enemy buildings. |nLasts <ANto,Dur1> seconds."
+Researchhotkey=T
+[A0BH]
+Name="NAT: Mountain Giant (pulverize)"
+Tip=Pulverize
+Ubertip="Gives a <ACpv,DataA1>% chance that an attack will deal <ACpv,DataB1> damage to nearby units."
+[A0BJ]
+Name="NAT: Mountain Giant (taunt dummy)"
+Tip=Pa|cffffcc00r|rasite
+Ubertip="Afflicts a target enemy unit with a deadly parasite that deals <ANpa,DataA1> damage per second for <ANpa,Dur1> seconds. If the afflicted unit dies while under the effect of Parasite, a minor minion will spawn from its corpse."
+Untip="|cffc3dbffRight-click to activate auto-casting.|r"
+Unubertip="|cffc3dbffRight-click to deactivate auto-casting.|r"
+Hotkey=R
+Unhotkey=R
+[A0BK]
+Name="NAT: Treant (thorns)"
+Tip=Spiked Shell
+Ubertip="Razor-sharp spikes on the Turtle's shell deal <ANth,DataA1,%>% of an enemy unit's melee attack damage back to it."
+[A0BM]
+Name="NAT: Banish (dummy)"
+Tip="Banish"
+Ubertip="Turns an enemy unit ethereal. Ethereal creatures cannot attack, but they can cast spells and certain spells cast upon them will have a greater effect. Lasts 30 seconds."
+Untip="|cffc3dbffRight-click to activate auto-casting.|r"
+Unubertip="|cffc3dbffRight-click to deactivate auto-casting.|r"
+Hotkey=C
+Unhotkey=C
+[A0BO]
+Name="NAT: Ancient of Gale (dummy)"
+Tip="Cyclone"
+Ubertip="Slows enemies units attack and movement speed by 25% and deals 30 dps in 250 AoE for 7 seconds. Buildings take 50% of damage.|n|n|cffFFFF80Cooldown:|cffFFFF00 14 |rseconds"
+Untip="|cffc3dbffRight-click to activate auto-casting.|r"
+Unubertip="|cffc3dbffRight-click to deactivate auto-casting.|r"
+Hotkey=R
+Unhotkey=R
+[A0BP]
+Name="NAT: Ancient of Gale (dummy, -na)"
+Tip="Cyclone"
+Ubertip="Slows enemies units attack and movement speed by 25% and deals 40 dps in 250 AoE for 7 seconds.|n|n|cffFFFF80Cooldown:|cffFFFF00 14 |rseconds"
+Untip="|cffc3dbffRight-click to activate auto-casting.|r"
+Unubertip="|cffc3dbffRight-click to deactivate auto-casting.|r"
+Hotkey=R
+Unhotkey=R
+[A0BQ]
+Name="NAT: Ancient of Gale (-na)"
+Tip=|cffffcc00T|rornado
+Ubertip="Summons a fierce controllable Tornado that slows enemy units' movement speed, randomly tosses enemy ground units into the air and damages enemy buildings. |nLasts <ANto,Dur1> seconds."
+Hotkey=T
+Researchtip="Learn |cffffcc00T|rornado"
+Researchubertip="Summons a fierce controllable Tornado that slows enemy units' movement speed, randomly tosses enemy ground units into the air and damages enemy buildings. |nLasts <ANto,Dur1> seconds."
+Researchhotkey=T
+[A0AA]
+Name=Chain Lightning
+Tip=|cffffcc00C|rhain Lightning
+Ubertip="Hurls a bolt of lightning that bounces up to <ACcl,DataB1> times, dealing <ACcl,DataA1> damage to the primary target. Each jump deals less damage."
+Hotkey=C
+[A0A8]
+Name="HEL: Sorceress (healing wave)"
+Tip=H|cffffcc00e|raling Wave
+Ubertip="Calls forth a wave of healing energy that bounces up to <AChv,DataB1> times, healing <AChv,DataA1> damage on the primary target. Each jump heals less damage."
+Hotkey=E
+[A0A3]
+Name="Lunatic die dmg"
+[A0AQ]
+Name="NAT: Giant Spider (->black spider)"
+[A0B2]
+Name="NAT: Ancient Bear (bash)"
+Tip=Bash
+Ubertip="Gives a <ACbh,DataA1>% chance that an attack will do <ACbh,DataC1> bonus damage and stun an opponent for <ACbh,Dur1> seconds."
+[A0B1]
+Name="NAT: Bear (bash)"
+Tip=Bash
+Ubertip="Gives a <ACbh,DataA1>% chance that an attack will do <ACbh,DataC1> bonus damage and stun an opponent for <ACbh,Dur1> seconds."
+[A0B0]
+Name="NAT: Ancient Keeper (natures aura strong)"
+Tip=Unholy Aura
+Ubertip="Increases nearby friendly units' movement speed by <ACua,DataA1,%>% and life regeneration rate by <ACua,DataB1,%>%."
+[A0AG]
+Name=Critical Strike
+Tip=Critical Strike
+Ubertip="Gives a <ACct,DataA1>% chance to do <ACct,DataB1> times normal damage on an attack."
+[A0AF]
+Name=Impale
+Tip=Impal|cffffcc00e|r
+Ubertip="Slams the ground, sending a wave of force out in a straight line, dealing <ACmp,DataA1> damage and hurling enemy ground units into the air in their wake, stunning them for <ACmp,Dur1> seconds."
+Hotkey=E
+[A0AE]
+Name=Parasite
+Tip=Pa|cffffcc00r|rasite
+Ubertip="Afflicts a target enemy unit with a deadly parasite that deals <ANpa,DataA1> damage per second for <ANpa,Dur1> seconds. If the afflicted unit dies while under the effect of Parasite, a minor minion will spawn from its corpse."
+Untip="|cffc3dbffRight-click to activate auto-casting.|r"
+Unubertip="|cffc3dbffRight-click to deactivate auto-casting.|r"
+Hotkey=R
+Unhotkey=R
+[A0AD]
+Name="40% splash"
+Tip=Cleaving Attack
+Ubertip="The creature strikes with such force that <ACce,DataA1,%>% of their damage strikes through to enemies near the primary attacked unit."
+[A05J]
+Name="evade"
+Tip=Evasion
+Ubertip="Gives a <ACev,DataA1,%>% percent chance to avoid an attack."
+[A05K]
+Name=Bash
+Tip=Bash
+Ubertip="Gives a <ACbh,DataA1>% chance that an attack will do <ACbh,DataC1> bonus damage and stun an opponent for <ACbh,Dur1> seconds."
+[A05I]
+Name=Critical Strike
+Tip=Critical Strike
+Ubertip="Gives a <ACct,DataA1>% chance to do <ACct,DataB1> times normal damage on an attack."
+[A065]
+Name="25% splash"
+Tip=Cleaving Attack
+Ubertip="The creature strikes with such force that <ACce,DataA1,%>% of their damage strikes through to enemies near the primary attacked unit."
+[A05T]
+Name=Permanent Immolation
+Tip=Permanent Immolation
+Ubertip="Burns nearby enemy units for <ANpi,DataA1> points of damage per second."
+[A05U]
+Name=Parasite
+Tip="Raise Dead (greater)"
+Ubertip="Raises a skeleton from a random corpse. Can raise normal or greater skeletons and generals.|n|n|cffFFFF80Cooldown:|cffFFFF00 14 |rseconds"
+Untip="|cffc3dbffRight-click to activate auto-casting.|r"
+Unubertip="|cffc3dbffRight-click to deactivate auto-casting.|r"
+Hotkey=R
+Unhotkey=R
+[A066]
+Name=Critical Strike
+Tip=Critical Strike
+Ubertip="Gives a <ACct,DataA1>% chance to do <ACct,DataB1> times normal damage on an attack."
+[A063]
+Name="27% splash"
+Tip=Cleaving Attack
+Ubertip="The creature strikes with such force that <ACce,DataA1,%>% of their damage strikes through to enemies near the primary attacked unit."
+[A05S]
+Name=Envenomed Weapons
+Tip=Envenomed Weapons
+Ubertip="Deals <ACvs,DataA1> poison damage per second. |nLasts <ACvs,Dur1> seconds."
+[A05P]
+Name=Permanent Immolation
+Tip=Permanent Immolation
+Ubertip="Burns nearby enemy units for <ANpi,DataA1> points of damage per second."
+[A05Q]
+Name=Envenomed Weapons
+Tip=Envenomed Weapons
+Ubertip="Deals <ACvs,DataA1> poison damage per second. |nLasts <ACvs,Dur1> seconds."
+[A062]
+Name=Critical Strike
+Tip=Critical Strike
+Ubertip="Gives a <ACct,DataA1>% chance to do <ACct,DataB1> times normal damage on an attack."
+[A060]
+Name="25% splash"
+Tip=Cleaving Attack
+Ubertip="The creature strikes with such force that <ACce,DataA1,%>% of their damage strikes through to enemies near the primary attacked unit."
+[A05Z]
+Name="35% splash"
+Tip=Cleaving Attack
+Ubertip="The creature strikes with such force that <ACce,DataA1,%>% of their damage strikes through to enemies near the primary attacked unit."
+[A05Y]
+Name=Critical Strike
+Tip=Critical Strike
+Ubertip="Gives a <ACct,DataA1>% chance to do <ACct,DataB1> times normal damage on an attack."
+[A05X]
+Name=Chain Lightning
+Tip=|cffffcc00C|rhain Lightning
+Ubertip="Hurls a bolt of lightning that bounces up to <ACcl,DataB1> times, dealing <ACcl,DataA1> damage to the primary target. Each jump deals less damage."
+Hotkey=C
+[A05W]
+Name="25% splash"
+Tip=Cleaving Attack
+Ubertip="The creature strikes with such force that <ACce,DataA1,%>% of their damage strikes through to enemies near the primary attacked unit."
+[A068]
+Name=Bash
+Tip=Bash
+Ubertip="Gives a <ACbh,DataA1>% chance that an attack will do <ACbh,DataC1> bonus damage and stun an opponent for <ACbh,Dur1> seconds."
+[A067]
+Name="25% splash"
+Tip=Cleaving Attack
+Ubertip="The creature strikes with such force that <ACce,DataA1,%>% of their damage strikes through to enemies near the primary attacked unit."
+[A06F]
+Name=Critical Strike
+Tip=Critical Strike
+Ubertip="Gives a <ACct,DataA1>% chance to do <ACct,DataB1> times normal damage on an attack."
+[A06B]
+Name=Critical Strike
+Tip="Hand of Justice"
+Ubertip="Whenever an allied building is destroyed there is a 40% chance that the Golden Shrine of Justice will kill the source that killed the building. This chance stacks only once per team (Max 2 Shrines)."
+[A06A]
+Name=Critical Strike
+Tip="Bright Aura of Grace"
+Ubertip="Whenever an allied unit dies, there is a 16% chance (+4% for each consequent Shrine)  that this unit will be revived. "
+[A06K]
+Name=Spawn Hydra
+[A06L]
+Name=Critical Strike
+Tip=Critical Strike
+Ubertip="Gives a <ACct,DataA1>% chance to do <ACct,DataB1> times normal damage on an attack."
+[A06M]
+Name=Critical Strike
+Tip="Call to Arms"
+Ubertip="Call to Arms|nEach 5th (-1 for each consequent Statue) spawning structure wich belongs to the owner of Statue will produce additional unit."
+[A06N]
+Name="UND: Greater Vampir (vampiric aura)"
+Tip=Vampiric Aura
+Ubertip="Nearby friendly melee units gain <ACvp,DataA1,%>% of their attack damage when they hit enemy units."
+[A06G]
+Name=Slow Aura
+[A06I]
+Name=Parasite
+Tip=Pa|cffffcc00r|rasite
+Ubertip="Afflicts a target enemy unit with a deadly parasite that deals <ANpa,DataA1> damage per second for <ANpa,Dur1> seconds. If the afflicted unit dies while under the effect of Parasite, a minor minion will spawn from its corpse."
+Untip="|cffc3dbffRight-click to activate auto-casting.|r"
+Unubertip="|cffc3dbffRight-click to deactivate auto-casting.|r"
+Hotkey=R
+Unhotkey=R
+[A06J]
+Name=Spawn Hydra
+[A074]
+Name="Evade"
+Tip=Evasion
+Ubertip="Gives a <ACev,DataA1,%>% percent chance to avoid an attack."
+[A06P]
+Name="NOR: Chilling Mushroom"
+Tip="Freezing Blast"
+Ubertip="Freezes an air unit stunning it for 4 seconds and dealing 200 damage.|n|n|cffFFFF80Cooldown:|cffFFFF00 7 |rseconds"
+Untip="|cffc3dbffRight-click to activate auto-casting.|r"
+Unubertip="|cffc3dbffRight-click to deactivate auto-casting.|r"
+Hotkey=R
+Unhotkey=R
+[A072]
+Name=Parasite
+Tip="Launch Nuclear Missle"
+Ubertip="Launches a nuclear missle at the enemy base. Warning: It is recommended that allied units leave the target area. Have a nice day!|n|n|cffFFFF80Cooldown:|cffFFFF00 30 |rseconds"
+Untip="|cffc3dbffRight-click to activate auto-casting.|r"
+Unubertip="|cffc3dbffRight-click to deactivate auto-casting.|r"
+Hotkey=R
+Unhotkey=R
+[A073]
+Name="Evade"
+Tip=Evasion
+Ubertip="Gives a <ACev,DataA1,%>% percent chance to avoid an attack."
+[A06R]
+Name=Parasite
+Tip="Present of Chaos"
+Ubertip="Sends chaotic forces into a random enemy unit.|nThese forces have one of the following effects on the target unit:|n-The unit explodes (no bounty)|n-The unit dies (you gain bounty)|n-The unit transforms into a Mutation that fights for you|n-The unit is hexed|n-The unit receives 500 damage|n-The unit gets 400 bonus health and +25 damage and is fully healed|n-The unit is stunned for 6 seconds and receives 200 spell damage|n-Nothing happens at all|n|n|cffFFFF80Cooldown:|cffFFFF00 10 |rseconds"
+Untip="|cffc3dbffRight-click to activate auto-casting.|r"
+Unubertip="|cffc3dbffRight-click to deactivate auto-casting.|r"
+Hotkey=R
+Unhotkey=R
+[A07R]
+Name=Parasite
+Tip=Pa|cffffcc00r|rasite
+Ubertip="Afflicts a target enemy unit with a deadly parasite that deals <ANpa,DataA1> damage per second for <ANpa,Dur1> seconds. If the afflicted unit dies while under the effect of Parasite, a minor minion will spawn from its corpse."
+Untip="|cffc3dbffRight-click to activate auto-casting.|r"
+Unubertip="|cffc3dbffRight-click to deactivate auto-casting.|r"
+Hotkey=R
+Unhotkey=R
+[A07P]
+Name=Parasite
+Tip=Pa|cffffcc00r|rasite
+Ubertip="Afflicts a target enemy unit with a deadly parasite that deals <ANpa,DataA1> damage per second for <ANpa,Dur1> seconds. If the afflicted unit dies while under the effect of Parasite, a minor minion will spawn from its corpse."
+Untip="|cffc3dbffRight-click to activate auto-casting.|r"
+Unubertip="|cffc3dbffRight-click to deactivate auto-casting.|r"
+Hotkey=R
+Unhotkey=R
+[A07U]
+Name=Parasite
+Tip="Starfall"
+Ubertip="Stars fall down from the sky damaging all enemies in 800 area for 8 seconds dealing 120  damage on hit. Buildings receive only 40% of this damage.|n|n|cffFFFF80Cooldown:|cffFFFF00 32 |rseconds"
+Untip="|cffc3dbffRight-click to activate auto-casting.|r"
+Unubertip="|cffc3dbffRight-click to deactivate auto-casting.|r"
+Hotkey=R
+Unhotkey=R
+[A08B]
+Name=Parasite
+Tip="Moonshine Blessing"
+Ubertip="Blesses everything around a random friendly unit that is attacked. Blessed units regain 175 health, 50 mana and +6 armor for 6 seconds.|n|n|cffFFFF80Cooldown:|cffFFFF00 20 |rseconds"
+Untip="|cffc3dbffRight-click to activate auto-casting.|r"
+Unubertip="|cffc3dbffRight-click to deactivate auto-casting.|r"
+Hotkey=R
+Unhotkey=R
+[A08E]
+Name="NEL: Obelisk of Wilderness"
+Tip="Resistance of the Wilderness"
+Ubertip="Blesses a friendly random unit with the resistance of the wilderness, giving it permanently 40% spell damage reduction and a 40% chance to reduce incoming attack damage by 40. Has an extra chance to target units that don't have the buff yet.|n|n|cffFFFF80Cooldown:|cffFFFF00 7 |rseconds"
+Untip="|cffc3dbffRight-click to activate auto-casting.|r"
+Unubertip="|cffc3dbffRight-click to deactivate auto-casting.|r"
+Hotkey=R
+Unhotkey=R
+[A08I]
+Name=Bash
+Tip=Bash
+Ubertip="Gives a <ACbh,DataA1>% chance that an attack will do <ACbh,DataC1> bonus damage and stun an opponent for <ACbh,Dur1> seconds."
+[A08J]
+Name=Bash
+Tip=Bash
+Ubertip="Gives a <ACbh,DataA1>% chance that an attack will do <ACbh,DataC1> bonus damage and stun an opponent for <ACbh,Dur1> seconds."
+[A08M]
+Name=Evasion
+Tip=Evasion
+Ubertip="Gives a <ACev,DataA1,%>% percent chance to avoid an attack."
+[A090]
+Name=Bash
+Tip=Bash
+Ubertip="Gives a <ACbh,DataA1>% chance that an attack will do <ACbh,DataC1> bonus damage and stun an opponent for <ACbh,Dur1> seconds."
+[A091]
+Name=Pulverize
+Tip=Pulverize
+Ubertip="Gives a <ACpv,DataA1>% chance that an attack will deal <ACpv,DataB1> damage to nearby units."
+[A08P]
+Name=Slow Aura
+[A092]
+Name=Pulverize
+Tip=Pulverize
+Ubertip="Gives a <ACpv,DataA1>% chance that an attack will deal <ACpv,DataB1> damage to nearby units."
+[A08Q]
+Name="Damage 200"
+Tip=|cffffcc00F|ringer of Pain
+Ubertip="Horribly cripples the innards of a creature or building."
+Hotkey=F
+Researchtip=Learn |cffffcc00F|ringer of Pain
+Researchubertip="Horribly cripples the innards of a creature or building."
+Researchhotkey=F
+[A08R]
+Name=Demolish
+Tip="Demolish"
+Ubertip="Causes attacks to do <ANde,DataB1> times normal damage to buildings."
+Hotkey=
+[A094]
+Name="100% splash"
+Tip=Cleaving Attack
+Ubertip="The creature strikes with such force that <ACce,DataA1,%>% of their damage strikes through to enemies near the primary attacked unit."
+[A08S]
+Name=Entangling Roots
+Tip=|cffffcc00E|rntangling Roots
+Ubertip="Causes roots to burst from the ground, immobilizing a target enemy unit for <Aenr,Dur1> seconds, and dealing <Aenr,DataA1> damage per second."
+Hotkey=E
+[A095]
+Name="LayMine"
+Tip=Pa|cffffcc00r|rasite
+Ubertip="Afflicts a target enemy unit with a deadly parasite that deals <ANpa,DataA1> damage per second for <ANpa,Dur1> seconds. If the afflicted unit dies while under the effect of Parasite, a minor minion will spawn from its corpse."
+Untip="|cffc3dbffRight-click to activate auto-casting.|r"
+Unubertip="|cffc3dbffRight-click to deactivate auto-casting.|r"
+Hotkey=R
+Unhotkey=R
+[A097]
+Name=AOE damage upon death
+[A08V]
+Name=Parasite
+Tip=Pa|cffffcc00r|rasite
+Ubertip="Afflicts a target enemy unit with a deadly parasite that deals <ANpa,DataA1> damage per second for <ANpa,Dur1> seconds. If the afflicted unit dies while under the effect of Parasite, a minor minion will spawn from its corpse."
+Untip="|cffc3dbffRight-click to activate auto-casting.|r"
+Unubertip="|cffc3dbffRight-click to deactivate auto-casting.|r"
+Hotkey=R
+Unhotkey=R
+[A098]
+Name=Mine - exploding
+[A08W]
+Name=Bloodlust
+Tip=B|cffffcc00l|roodlust
+Ubertip="Increases a target friendly unit's attack rate by <ACbl,DataA1,%>% and movement speed by <ACbl,DataB1,%>% for <ACbl,Dur1> seconds."
+Untip="|cffc3dbffRight-click to activate auto-casting.|r"
+Unubertip="|cffc3dbffRight-click to deactivate auto-casting.|r"
+Hotkey=L
+Unhotkey=L
+[A099]
+Name="Lunatic"
+Tip=Ka|cffffcc00b|room!
+Ubertip="Deals <Asds,DataB1> damage in a small area. Effective against buildings and trees."
+Untip="|cffc3dbff|cffc3dbffRight-click to activate auto-casting.|r|r"
+Unubertip="|cffc3dbff|cffc3dbffRight-click to deactivate auto-casting.|r|r"
+Hotkey=B
+Unhotkey=B
+[A08Z]
+Name="MEH: Iron Golem (bash)"
+Tip=Bash
+Ubertip="Gives a <ACbh,DataA1>% chance that an attack will do <ACbh,DataC1> bonus damage and stun an opponent for <ACbh,Dur1> seconds."
+[A09B]
+Name=AOE damage upon death
+[A09D]
+Name=Parasite
+Tip=Pa|cffffcc00r|rasite
+Ubertip="Afflicts a target enemy unit with a deadly parasite that deals <ANpa,DataA1> damage per second for <ANpa,Dur1> seconds. If the afflicted unit dies while under the effect of Parasite, a minor minion will spawn from its corpse."
+Untip="|cffc3dbffRight-click to activate auto-casting.|r"
+Unubertip="|cffc3dbffRight-click to deactivate auto-casting.|r"
+Hotkey=R
+Unhotkey=R
+[A09I]
+Name=Bash
+Tip=Bash
+Ubertip="Gives a <ACbh,DataA1>% chance that an attack will do <ACbh,DataC1> bonus damage and stun an opponent for <ACbh,Dur1> seconds."
+[A09X]
+Name=Parasite
+Tip=Pa|cffffcc00r|rasite
+Ubertip="Afflicts a target enemy unit with a deadly parasite that deals <ANpa,DataA1> damage per second for <ANpa,Dur1> seconds. If the afflicted unit dies while under the effect of Parasite, a minor minion will spawn from its corpse."
+Untip="|cffc3dbffRight-click to activate auto-casting.|r"
+Unubertip="|cffc3dbffRight-click to deactivate auto-casting.|r"
+Hotkey=R
+Unhotkey=R
+[A09T]
+Name="MECH: burst"
+Tip="Energy burst"
+Ubertip=""
+Hotkey=C
+[A09R]
+Name=Command Aura
+Tip=Command Aura
+Ubertip="Gives extra damage to the attacks of nearby friendly units."
+[A09O]
+Name=Parasite
+Tip="Greater Energy Shield"
+Ubertip="Shields a random friendly unit with energy, giving it +4 armor. The next two times this unit is targeted by a negative building ability, the ability will not have any effect. In addition, the next time the unit is targeted by a negative building ability, it will gain 150 hp.|n|n|cffFFFF80Cooldown:|cffFFFF00 7 |rseconds"
+Untip="|cffc3dbffRight-click to activate auto-casting.|r"
+Unubertip="|cffc3dbffRight-click to deactivate auto-casting.|r"
+Hotkey=R
+Unhotkey=R
+[A09N]
+Name=Parasite
+Tip="Energy Shield"
+Ubertip="Shields a random friendly unit with energy, giving it +2 armor. The next time this unit is targeted by a negative building ability, the ability will not have any effect and the shield will vanish. Has an extra chance to target units that don't have a shield yet.|n|n|cffFFFF80Cooldown:|cffFFFF00 7 |rseconds"
+Untip="|cffc3dbffRight-click to activate auto-casting.|r"
+Unubertip="|cffc3dbffRight-click to deactivate auto-casting.|r"
+Hotkey=C
+Unhotkey=C
+[A09K]
+Name="MEH: Gobbo Machinist (repair)"
+Tip=|cffffcc00R|repair
+Ubertip="Repairs mechanical units and structures at the cost of resources."
+Untip="|cffc3dbffRightclick enables auto repair.|r"
+Unubertip="|cffc3dbffRightclick disables auto repair.|r"
+Hotkey=F
+Unhotkey=F
+[A09J]
+Name=Bash
+Tip=Bash
+Ubertip="Gives a <ACbh,DataA1>% chance that an attack will do <ACbh,DataC1> bonus damage and stun an opponent for <ACbh,Dur1> seconds."
+[A006]
+Name=Pulverize
+Tip=Pulverize
+Ubertip="Gives a <ACpv,DataA1>% chance that an attack will deal <ACpv,DataB1> damage to nearby units."
+[A005]
+Name="Devastating Strike"
+Tip="Devastating Strike [|cffffcc00V|r]"
+Ubertip="Kills all enemy's units in the target area.|n |cffFF0000Use it wisely, it decides most matches!|r"
+Hotkey=V
+[A008]
+Name="Rune of restoration"
+[A007]
+Name=Life Regeneration Aura
+[A009]
+Name="35% splash"
+Tip=Cleaving Attack
+Ubertip="The creature strikes with such force that <ACce,DataA1,%>% of their damage strikes through to enemies near the primary attacked unit."
+[A00T]
+Name="evade"
+Tip=Evasion
+Ubertip="Gives a <ACes,DataA1,%>% percent chance to avoid an attack."
+[A00R]
+Name=Demolish
+Tip="Demolish"
+Ubertip="Causes attacks to do <ANde,DataB1> times normal damage to buildings."
+Hotkey=
+[A013]
+Name=Slow Aura
+[A00Q]
+Name=Pulverize
+Tip=Pulverize
+Ubertip="Gives a <ACpv,DataA1>% chance that an attack will deal <ACpv,DataB1> damage to nearby units."
+[A012]
+Name=Permanent Immolation
+Tip=Permanent Immolation
+Ubertip="Burns nearby enemy units for <ANpi,DataA1> points of damage per second."
+[A019]
+Name=Command Aura
+Tip=Command Aura
+Ubertip="Gives extra damage to the attacks of nearby friendly units."
+[A00W]
+Name=Faerie Fire
+Tip=Fae|cffffcc00r|rie Fire
+Ubertip="Reduces a target enemy unit's armor by <ACff,DataA1> and gives vision of that unit. |nLasts <ACff,Dur1> seconds."
+Untip="|cffc3dbffRight-click to activate auto-casting.|r"
+Unubertip="|cffc3dbffRight-click to deactivate auto-casting.|r"
+Hotkey=R
+Unhotkey=R
+[A00V]
+Name=Critical Strike
+Tip=Critical Strike
+Ubertip="Gives a <ACct,DataA1>% chance to do <ACct,DataB1> times normal damage on an attack."
+[A017]
+Name=Parasite
+Tip="Hex"
+Ubertip="Turns random enemy unit into a sheep for 45 seconds.|n|n|cffFFFF80Cooldown:|cffFFFF00 10 |rseconds"
+Untip="|cffc3dbffRight-click to activate auto-casting.|r"
+Unubertip="|cffc3dbffRight-click to deactivate auto-casting.|r"
+Hotkey=R
+Unhotkey=R
+[A00U]
+Name="Evasion"
+Tip=Evasion
+Ubertip="Gives a <ACev,DataA1,%>% percent chance to avoid an attack."
+[A00Y]
+Name="HEL: Wizard (Heal)"
+Tip=H|cffffcc00e|raling Wave
+Ubertip="Calls forth a wave of healing energy that bounces up to <AChv,DataB1> times, healing <AChv,DataA1> damage on the primary target. Each jump heals less damage."
+Hotkey=E
+[A01A]
+Name=Bash
+Tip=Bash
+Ubertip="Gives a <ACbh,DataA1>% chance that an attack will do <ACbh,DataC1> bonus damage and stun an opponent for <ACbh,Dur1> seconds."
+[A00D]
+Name=Critical Strike
+Tip=Critical Strike
+Ubertip="Gives a <ACct,DataA1>% chance to do <ACct,DataB1> times normal damage on an attack."
+[A00K]
+Name=Parasite
+Tip=Pa|cffffcc00r|rasite
+Ubertip="Afflicts a target enemy unit with a deadly parasite that deals <ANpa,DataA1> damage per second for <ANpa,Dur1> seconds. If the afflicted unit dies while under the effect of Parasite, a minor minion will spawn from its corpse."
+Untip="|cffc3dbffRight-click to activate auto-casting.|r"
+Unubertip="|cffc3dbffRight-click to deactivate auto-casting.|r"
+Hotkey=R
+Unhotkey=R
+[A00L]
+Name=Chain Lightning
+Tip=|cffffcc00C|rhain Lightning
+Ubertip="Hurls a bolt of lightning that bounces up to <ACcl,DataB1> times, dealing <ACcl,DataA1> damage to the primary target. Each jump deals less damage."
+Hotkey=C
+[A00O]
+Name="NAG: Oracle"
+Tip="Control Enemy"
+Ubertip="Gains control of a random enemy unit.|n|n|cffFFFF80Cooldown:|cffFFFF00 16 |rseconds"
+Untip="|cffc3dbffRight-click to activate auto-casting.|r"
+Unubertip="|cffc3dbffRight-click to deactivate auto-casting.|r"
+Hotkey=R
+Unhotkey=R
+[A00P]
+Name=Crushing Wave
+Tip="Tidal Wave"
+Ubertip="Hurls a gigantic wave that deals 220 damage to ground units in a line."
+Hotkey=C
+[A00M]
+Name=Parasite
+Tip="Earthquake"
+Ubertip="Splits the earth below a random enemy unit, damaging and slowing all enemy ground units in that region. Deals 40 spell damage, slows by 50% for 10 seconds.|n|n|cffFFFF80Cooldown:|cffFFFF00 8 |rseconds"
+Untip="|cffc3dbffRight-click to activate auto-casting.|r"
+Unubertip="|cffc3dbffRight-click to deactivate auto-casting.|r"
+Hotkey=R
+Unhotkey=R
+[A00N]
+Name=Charm
+Tip=Cha|cffffcc00r|rm
+Ubertip="Takes control of a target enemy unit. |nCharm cannot be used on Heroes, or creeps above level <ACch,DataA1>."
+Hotkey=R
+[A01Z]
+Name="NAG Winged Snake: Dispel"
+Tip=A|cffffcc00b|rolish Magic
+Ubertip="Dispels positive buffs from enemy units, and negative buffs from friendly units. |n|cffffcc00Deals <ACdm,DataB1> damage to summoned units.|r"
+Untip="|cffc3dbffRight-click to activate auto-casting.|r"
+Unubertip="|cffc3dbffRight-click to deactivate auto-casting.|r"
+Hotkey=B
+Unhotkey=B
+[A01W]
+Name=Parasite
+Tip="Erase"
+Ubertip="Kills 70% of the units that belong to the enemy and have same type.|n|n|cffFFFF80Cooldown:|cffFFFF00 50 |rseconds |cffFFFF00-12.5|r seconds per upgrade."
+Untip="|cffc3dbffRight-click to activate auto-casting.|r"
+Unubertip="|cffc3dbffRight-click to deactivate auto-casting.|r"
+Hotkey=X
+Unhotkey=X
+[A028]
+Name=Slow Aura
+[A029]
+Name=Slow Aura
+[A01R]
+Name=Demolish
+Tip="Demolish"
+Ubertip="Causes attacks to do <ANde,DataB1> times normal damage to buildings."
+Hotkey=
+[A023]
+Name=Slow Aura
+[A01S]
+Name=Pulverize
+Tip=Pulverize
+Ubertip="Gives a <ACpv,DataA1>% chance that an attack will deal <ACpv,DataB1> damage to nearby units."
+[A024]
+Name=Slow Aura
+[A01T]
+Name="UND: Sanctum Of Decay"
+Tip="Decay"
+Ubertip="Deals 8 spell damage per second to all non mechanical enemy units. "
+[A025]
+Name=Critical Strike
+Tip=Critical Strike
+Ubertip="Gives a <ACct,DataA1>% chance to do <ACct,DataB1> times normal damage on an attack."
+[A01U]
+Name=Bash
+Tip="Soul Steal"
+Ubertip="Grants a 5% chance to steal the soul  of the unit the tower attacks and thus killing it instantly."
+[A026]
+Name=Bash
+Tip=Bash
+Ubertip="Gives a <ACbh,DataA1>% chance that an attack will do <ACbh,DataC1> bonus damage and stun an opponent for <ACbh,Dur1> seconds."
+[A01O]
+Name=Vampiric Aura
+Tip=Vampiric Aura
+Ubertip="Nearby friendly melee units gain <ACvp,DataA1,%>% of their attack damage when they hit enemy units."
+[A020]
+Name=Envenomed Weapons
+Tip="Poisoned Arrows"
+Ubertip="The Arrows of this tower are coated with lesser poison that lasts 4 seconds dealing 5 damage per second and slowing attack and movementspeed by 25%."
+[A01N]
+Name=Command Aura
+Tip=Command Aura
+Ubertip="Gives extra damage to the attacks of nearby friendly units."
+[A01Q]
+Name=Parasite
+Tip="Raise Dead"
+Ubertip="Raises a Skeleton from a random corpse.|n|n|cffFFFF80Cooldown:|cffFFFF00 12 |rseconds"
+Untip="|cffc3dbffRight-click to activate auto-casting.|r"
+Unubertip="|cffc3dbffRight-click to deactivate auto-casting.|r"
+Hotkey=D
+Unhotkey=D
+[A022]
+Name=Slow Aura
+[A01P]
+Name=Vampiric Aura
+Tip=Vampiric Aura
+Ubertip="Nearby friendly melee units gain <ACvp,DataA1,%>% of their attack damage when they hit enemy units."
+[A021]
+Name=Slow Aura
+[A01K]
+Name="Holy Power (Horn)"
+Tip="Holy Power"
+Ubertip="Adds 50% attackspeed to nearby friendly units.|n|n|cffFFFF80Cooldown:|cffFFFF00 8 |rseconds"
+Untip="|cffc3dbffRight-click to activate auto-casting.|r"
+Unubertip="|cffc3dbffRight-click to deactivate auto-casting.|r"
+Hotkey=R
+Unhotkey=R
+[A01J]
+Name=Parasite
+Tip="Eruption"
+Ubertip="Damages the area around a random enemy unit dealing 175 spell damage. Cannot do more than 600 damage. Deals only 40% damage to buildings.|n|n|cffFFFF80Cooldown:|cffFFFF00 14 |rseconds"
+Untip="|cffc3dbffRight-click to activate auto-casting.|r"
+Unubertip="|cffc3dbffRight-click to deactivate auto-casting.|r"
+Hotkey=R
+Unhotkey=R
+[A01L]
+Name=Permanent Immolation
+Tip=Permanent Immolation
+Ubertip="Burns nearby enemy units for <ANpi,DataA1> points of damage per second."
+[A01F]
+Name="25% splash"
+Tip=Cleaving Attack
+Ubertip="The creature strikes with such force that <ACce,DataA1,%>% of their damage strikes through to enemies near the primary attacked unit."
+[A01C]
+Name="NAG: Dragon Turtle (spiked shell)"
+Tip=Spiked Shell
+Ubertip="Razor-sharp spikes on the Turtle's shell deal <ANth,DataA1,%>% of an enemy unit's melee attack damage back to it."
+[A01E]
+Name=Parasite
+Tip="Hell's Fist"
+Ubertip="Destroys a random enemy building. Cannot destroy legendary buildings or the Main Castle. You don't gain bounty for the destroyed building.|n|n|cffFFFF80Cooldown:|cffFFFF00 35 |rseconds"
+Untip="|cffc3dbffRight-click to activate auto-casting.|r"
+Unubertip="|cffc3dbffRight-click to deactivate auto-casting.|r"
+Hotkey=R
+Unhotkey=R
+[A01D]
+Name=Hurl Boulder
+Tip=Hurl |cffffcc00B|roulder
+Ubertip="A magical boulder that is thrown at an enemy unit, causing <ACtb,DataA1> points of damage and stunning the target for <ACtb,Dur1> seconds."
+Hotkey=B
+[A02Z]
+Name="ORC: Serpent Rock"
+Tip="Poison Area"
+Ubertip="Spits poison onto an area near a random enemy unit. All units that get hit by this poison get their armor reduced by 5, their attack and movement speed reduced by 20% and take damage over time. The poison lasts 5 seconds.|n|n|cffFFFF80Cooldown:|cffFFFF00 12 |rseconds"
+Untip="|cffc3dbffRight-click to activate auto-casting.|r"
+Unubertip="|cffc3dbffRight-click to deactivate auto-casting.|r"
+Hotkey=R
+Unhotkey=R
+[A02W]
+Name=Critical Strike
+Tip=Critical Strike
+Ubertip="Gives a <ACct,DataA1>% chance to do <ACct,DataB1> times normal damage on an attack."
+[A02X]
+Name="NAG: RG (Cleaving Attack)"
+Tip=Cleaving Attack
+Ubertip="The creature strikes with such force that <ACce,DataA1,%>% of their damage strikes through to enemies near the primary attacked unit."
+[A039]
+Name="ORC: Ceremonial Totem"
+Tip="Tribal Blessing"
+Ubertip="Gives a random friendly unit permanently +20 damage, +20% attackspeed, 3 armor and 200 hitpoints. Also gives one of the following:|n- Demolish (x1.5)|n- Critical Strike (25%, x2)|n- Evasion (30%)|n|n|cffFFFF80Cooldown:|cffFFFF00 10 |rseconds"
+Untip="|cffc3dbffRight-click to activate auto-casting.|r"
+Unubertip="|cffc3dbffRight-click to deactivate auto-casting.|r"
+Hotkey=R
+Unhotkey=R
+[A02U]
+Name="NAG: Siren (Purge (cd))"
+Tip=Pa|cffffcc00r|rasite
+Ubertip="Afflicts a target enemy unit with a deadly parasite that deals <ANpa,DataA1> damage per second for <ANpa,Dur1> seconds. If the afflicted unit dies while under the effect of Parasite, a minor minion will spawn from its corpse."
+Untip="|cffc3dbffRight-click to activate auto-casting.|r"
+Unubertip="|cffc3dbffRight-click to deactivate auto-casting.|r"
+Hotkey=R
+Unhotkey=R
+[A02V]
+Name=Critical Strike
+Tip=Critical Strike
+Ubertip="Gives a <ACct,DataA1>% chance to do <ACct,DataB1> times normal damage on an attack."
+[A02T]
+Name="NAG: Siren (Purge)"
+Tip=Pur|cffffcc00g|re
+Ubertip="Removes all buffs from a target unit, and slows its movement speed by a factor of <ACpu,DataA1>. Purged units will slowly regain their movement speed over <ACpu,Dur1> seconds. |n|cffffcc00Deals <ACpu,DataC1> damage to summoned units.|r"
+Hotkey=G
+[A02R]
+Name=Critical Strike
+Tip=Critical Strike
+Ubertip="Gives a <ACct,DataA1>% chance to do <ACct,DataB1> times normal damage on an attack."
+[A033]
+Name="UND: Death Pit"
+Tip="Sudden Death"
+Ubertip="Kills a random enemy unit instantly.|n|n|cffFFFF80Cooldown:|cffFFFF00 15 |rseconds"
+Untip="|cffc3dbffRight-click to activate auto-casting.|r"
+Unubertip="|cffc3dbffRight-click to deactivate auto-casting.|r"
+Hotkey=R
+Unhotkey=R
+[A032]
+Name=Parasite
+Tip="Global Stasis"
+Ubertip="Stuns all enemy units for 4.5 seconds.|n|n|cffFFFF80Cooldown:|cffFFFF00 35-45 |rseconds"
+Untip="|cffc3dbffRight-click to activate auto-casting.|r"
+Unubertip="|cffc3dbffRight-click to deactivate auto-casting.|r"
+Hotkey=R
+Unhotkey=R
+[A02P]
+Name=Pulverize
+Tip=Pulverize
+Ubertip="Gives a <ACpv,DataA1>% chance that an attack will deal <ACpv,DataB1> damage to nearby units."
+[A031]
+Name=War Stomp
+Tip=War S|cffffcc00t|romp
+Ubertip="Slams the ground, dealing <Awrg,DataA1> damage to nearby enemy land units and stunning them for <Awrg,Dur1> seconds."
+Hotkey=T
+[A02O]
+Name=Slow Aura
+[A030]
+Name="ORC: Serpent Rock"
+Tip=Acid |cffffcc00B|romb - [|cffffcc00Level 1|r],Acid |cffffcc00B|romb - [|cffffcc00Level 2|r],Acid |cffffcc00B|romb - [|cffffcc00Level 3|r]
+Researchtip="Learn Acid |cffffcc00B|romb - [|cffffcc00Level %d|r]"
+Ubertip="Hurls a flask of acid at a target.  The flask breaks upon impact, splashing a powerful acid on nearby hostile units.|n|nDecreases armor by <ANab,DataC1>; deals <ANab,DataD1> damage per second to the primary target; deals slightly less damage to nearby targets.|nLasts <ANab,Dur1> seconds.","Hurls a flask of acid at a target.  The flask breaks upon impact, splashing a powerful acid on nearby hostile units.|n|nDecreases armor by <ANab,DataC2>; deals <ANab,DataD2> damage per second to the primary target; deals slightly less damage to nearby targets.|nLasts <ANab,Dur2> seconds.","Hurls a flask of acid at a target.  The flask breaks upon impact, splashing a powerful acid on nearby hostile units.|n|nDecreases armor by <ANab,DataC3>; deals <ANab,DataD3> damage per second to the primary target; deals slightly less damage to nearby targets.|nLasts <ANab,Dur3> seconds."
+Researchubertip="Hurls a flask of acid at a target.  The flask breaks upon impact, splashing a powerful acid on nearby hostile units.|n|nDecreases armor; deals high damage over time to the primary target; deals slightly less damage over time to nearby targets.|nLasts <ANab,Dur1> seconds.|n|n|cffffcc00Level 1|r - <ANab,DataD1> max damage per second, reduces armor by <ANab,DataC1>.|n|cffffcc00Level 2|r - <ANab,DataD2> max damage per second, reduces armor by <ANab,DataC2>.|n|cffffcc00Level 3|r - <ANab,DataD3> max damage per second, reduces armor by <ANab,DataC3>."
+Hotkey=B
+Researchhotkey=B
+[A02N]
+Name="30% splash"
+Tip=Cleaving Attack
+Ubertip="The creature strikes with such force that <ACce,DataA1,%>% of their damage strikes through to enemies near the primary attacked unit."
+[A02L]
+Name="Crit 10%x1.5"
+Tip="Critical strike"
+Ubertip="Critical strike (10% to deal 1.5x damage)"
+[A04D]
+Name="50% splash"
+Tip=Cleaving Attack
+Ubertip="The creature strikes with such force that <ACce,DataA1,%>% of their damage strikes through to enemies near the primary attacked unit."
+[A045]
+Name="frz20p"
+Tip=|cffffcc00E|rntangling Roots
+Ubertip="Causes roots to burst from the ground, immobilizing a target enemy unit for <Aenr,Dur1> seconds, and dealing <Aenr,DataA1> damage per second."
+Hotkey=E
+[A047]
+Name=Entangling Roots
+Tip=|cffffcc00E|rntangling Roots
+Ubertip="Causes roots to burst from the ground, immobilizing a target enemy unit for <Aenr,Dur1> seconds, and dealing <Aenr,DataA1> damage per second."
+Hotkey=E
+[A03W]
+Name=Entangling Roots
+Tip=|cffffcc00E|rntangling Roots
+Ubertip="Causes roots to burst from the ground, immobilizing a target enemy unit for <Aenr,Dur1> seconds, and dealing <Aenr,DataA1> damage per second."
+Hotkey=E
+[A03Z]
+Name=Frost Armor
+Tip=|cffffcc00F|rrost Armor
+Ubertip="Creates a shield of frost around a target friendly unit. The shield adds <ACfa,DataB1> armor and slows melee units that attack it for <ACfa,Dur1> seconds. |nLasts <ACfa,DataA1> seconds."
+Untip="|cffc3dbffRight-click to activate auto-casting.|r"
+Unubertip="|cffc3dbffRight-click to deactivate auto-casting.|r"
+Hotkey=F
+[A040]
+Name=Frost Armor
+Tip=|cffffcc00F|rrost Armor
+Ubertip="Creates a shield of frost around a target friendly unit. The shield adds <ACfa,DataB1> armor and slows melee units that attack it for <ACfa,Dur1> seconds. |nLasts <ACfa,DataA1> seconds."
+Untip="|cffc3dbffRight-click to activate auto-casting.|r"
+Unubertip="|cffc3dbffRight-click to deactivate auto-casting.|r"
+Hotkey=F
+[A042]
+Name=Brilliance Aura
+Tip=Brilliance Aura
+Ubertip="Gives additional mana regeneration to nearby friendly units of <ACba,DataA1> mana per second."
+[A041]
+Name=Healing Spray
+Tip=H|cffffcc00e|raling Spray - [|cffffcc00Level 1|r],H|cffffcc00e|raling Spray - [|cffffcc00Level 2|r],H|cffffcc00e|raling Spray - [|cffffcc00Level 3|r]
+Researchtip="Learn H|cffffcc00e|raling Spray - [|cffffcc00Level %d|r]"
+Ubertip="Sprays <ANhs,DataF1> waves of healing mist; each wave heals <ANhs,DataA1> damage to all units in an area.","Sprays <ANhs,DataF2> waves of healing mist; each wave heals <ANhs,DataA2> damage to all units in an area.","Sprays <ANhs,DataF3> waves of healing mist; each wave heals <ANhs,DataA3> damage to all units in an area."
+Researchubertip="Sprays waves of healing mist that heal units in a target area. |n|n|cffffcc00Level 1|r - <ANhs,DataF1> waves at <ANhs,DataA1> hit points healed each. |n|cffffcc00Level 2|r - <ANhs,DataF2> waves at <ANhs,DataA2> hit points healed each. |n|cffffcc00Level 3|r - <ANhs,DataF3> waves at <ANhs,DataA3> hit points healed each."
+Hotkey=E
+Researchhotkey=E
+[A03P]
+Name="HELF: Archer"
+Tip=Evasion
+Ubertip="Gives a <ACev,DataA1,%>% percent chance to avoid an attack."
+[A044]
+Name=Parasite
+Tip=Pa|cffffcc00r|rasite
+Ubertip="Afflicts a target enemy unit with a deadly parasite that deals <ANpa,DataA1> damage per second for <ANpa,Dur1> seconds. If the afflicted unit dies while under the effect of Parasite, a minor minion will spawn from its corpse."
+Untip="|cffc3dbffRight-click to activate auto-casting.|r"
+Unubertip="|cffc3dbffRight-click to deactivate auto-casting.|r"
+Hotkey=R
+Unhotkey=R
+[A03S]
+Name=Parasite
+Tip=Pa|cffffcc00r|rasite
+Ubertip="Afflicts a target enemy unit with a deadly parasite that deals <ANpa,DataA1> damage per second for <ANpa,Dur1> seconds. If the afflicted unit dies while under the effect of Parasite, a minor minion will spawn from its corpse."
+Untip="|cffc3dbffRight-click to activate auto-casting.|r"
+Unubertip="|cffc3dbffRight-click to deactivate auto-casting.|r"
+Hotkey=R
+Unhotkey=R
+[A043]
+Name="NOR: Ice Queen (frost nova)"
+Tip=Frost |cffffcc00N|rova
+Ubertip="Blasts enemy units with a wave of frost that deals <ACfn,DataB1> damage to the target, and <ACfn,DataA1> nova damage. Cold damage slows units' movement and attack rate for <ACfn,Dur1> seconds."
+Hotkey=N
+[A03R]
+Name=Roar
+Tip=|cffffcc00R|roar
+Ubertip="Gives nearby friendly units a <ACro,DataA1,%>% bonus to damage. |nLasts <ACro,Dur1> seconds."
+Hotkey=R
+[A05A]
+Name=Pulverize
+Tip=Pulverize
+Ubertip="Gives a <ACpv,DataA1>% chance that an attack will deal <ACpv,DataB1> damage to nearby units."
+[A05D]
+Name=War Stomp
+Tip=War S|cffffcc00t|romp
+Ubertip="Slams the ground, dealing <Awrs,DataA1> damage to nearby enemy land units and stunning them for <Awrs,Dur1> seconds."
+Hotkey=T
+[A05E]
+Name=Parasite
+Tip=Pa|cffffcc00r|rasite
+Ubertip="Afflicts a target enemy unit with a deadly parasite that deals <ANpa,DataA1> damage per second for <ANpa,Dur1> seconds. If the afflicted unit dies while under the effect of Parasite, a minor minion will spawn from its corpse."
+Untip="|cffc3dbffRight-click to activate auto-casting.|r"
+Unubertip="|cffc3dbffRight-click to deactivate auto-casting.|r"
+Hotkey=R
+Unhotkey=R
+[A05B]
+Name=Howl of Terror
+Tip=Ho|cffffcc00w|rl of Terror
+Ubertip="Emits a terrifying howl that reduces nearby enemy units' attack damage by <Acht,DataA1,%>% for <Acht,Dur1> seconds."
+Hotkey=W
+[A05C]
+Name=Parasite
+Tip=Pa|cffffcc00r|rasite
+Ubertip="Afflicts a target enemy unit with a deadly parasite that deals <ANpa,DataA1> damage per second for <ANpa,Dur1> seconds. If the afflicted unit dies while under the effect of Parasite, a minor minion will spawn from its corpse."
+Untip="|cffc3dbffRight-click to activate auto-casting.|r"
+Unubertip="|cffc3dbffRight-click to deactivate auto-casting.|r"
+Hotkey=R
+Unhotkey=R
+[A059]
+Name=Pulverize
+Tip=Pulverize
+Ubertip="Gives a <ACpv,DataA1>% chance that an attack will deal <ACpv,DataB1> damage to nearby units."
+[A056]
+Name="Corrupted: Void Walker"
+Tip=Permanent Immolation
+Ubertip="Burns nearby enemy units for <ANpi,DataA1> points of damage per second."
+[A04U]
+Name=Parasite
+Tip="Tentacle Prison"
+Ubertip="|cffFFFF80Ability:|cffFFFF00 Tentacle Prison|r|nCreates 5 aggressive tentacles around an random enemy unit. Raised tentacles have a less critical strike.|n|n|cffFFFF80Cooldown:|cffFFFF00 12 |rseconds"
+Untip="|cffc3dbffRight-click to activate auto-casting.|r"
+Unubertip="|cffc3dbffRight-click to deactivate auto-casting.|r"
+Hotkey=R
+Unhotkey=R
+[A057]
+Name="COR: Well Of Pain"
+Tip="Touch of Pain"
+Ubertip="Deals 180 spell damage to a random enemy unit.  Can save mana to release a burst of touches.|n|n|cffFFFF80Cooldown:|cffFFFF00 4 |rseconds"
+Untip="|cffc3dbffRight-click to activate auto-casting.|r"
+Unubertip="|cffc3dbffRight-click to deactivate auto-casting.|r"
+Hotkey=R
+Unhotkey=R
+[A04V]
+Name=AOE damage upon death
+[A04Y]
+Name=AOE damage upon death
+[A050]
+Name=Critical Strike
+Tip=Critical Strike
+Ubertip="Gives a <ACct,DataA1>% chance to do <ACct,DataB1> times normal damage on an attack."
+[A04O]
+Name=Charm
+Tip=|cffffcc00C|rharm
+Ubertip="Takes control of a target enemy unit. |nCharm cannot be used on Heroes, or creeps above level <ANch,DataA1>."
+Hotkey=C
+Researchtip=Learn |cffffcc00C|rharm
+Researchubertip="Takes control of a target enemy unit. |nCharm cannot be used on Heroes, or creeps above level <ANch,DataA1>."
+Researchhotkey=C
+[A04R]
+Name=Parasite
+Tip="Gaze of Corruption"
+Ubertip="Decreases the armor of all enemy units by 12 for 20 seconds|n|n|cffFFFF80Cooldown:|cffFFFF00 50 |rseconds"
+Untip="|cffc3dbffRight-click to activate auto-casting.|r"
+Unubertip="|cffc3dbffRight-click to deactivate auto-casting.|r"
+Hotkey=R
+Unhotkey=R
+[A04Q]
+Name=Cripple
+Tip=|cffffcc00C|rripple
+Ubertip="Reduces movement speed by <ACcr,DataA1,%>%, attack rate by <ACcr,DataB1,%>%, and damage by <ACcr,DataC1,%>% of a target enemy unit. |nLasts <ACcr,Dur1> seconds."
+Hotkey=C
+[A04H]
+Name=Entangling Roots
+Tip=|cffffcc00E|rntangling Roots
+Ubertip="Causes roots to burst from the ground, immobilizing a target enemy unit for <Aenr,Dur1> seconds, and dealing <Aenr,DataA1> damage per second."
+Hotkey=E
+[A04E]
+Name=Critical Strike
+Tip=Critical Strike
+Ubertip="Gives a <ACct,DataA1>% chance to do <ACct,DataB1> times normal damage on an attack."
+[A04L]
+Name=Parasite
+Tip="Greater Frost Bolt"
+Ubertip="Launches a huge frost bolt at a random enemy structure. On impact this bolt freezes everything in 250 range for 12 seconds and deals 100 chaos damage.|n|n|cffFFFF80Cooldown:|cffFFFF00 15 |rseconds"
+Untip="|cffc3dbffRight-click to activate auto-casting.|r"
+Unubertip="|cffc3dbffRight-click to deactivate auto-casting.|r"
+Hotkey=R
+Unhotkey=R
+[A04J]
+Name=Parasite
+Tip="Frost Bolt"
+Ubertip="Launches a frost bolt at a random enemy structure. On impact this bolt freezes the structure for 10 seconds and deals 50 chaos damage to it.|n|n|cffFFFF80Cooldown:|cffFFFF00 12 |rseconds"
+Untip="|cffc3dbffRight-click to activate auto-casting.|r"
+Unubertip="|cffc3dbffRight-click to deactivate auto-casting.|r"
+Hotkey=X
+Unhotkey=X
+[A04I]
+Name=Parasite
+Tip="Onset of Winter"
+Ubertip="Sends out three frost orbs that fly into a random direction, attacking random enemies for 60 dps spell damage, stunning random air units, freezing random ground units and chilling each unit near them.|n|n|cffFFFF80Cooldown:|cffFFFF00 35 |rseconds"
+Untip="|cffc3dbffRight-click to activate auto-casting.|r"
+Unubertip="|cffc3dbffRight-click to deactivate auto-casting.|r"
+Hotkey=R
+Unhotkey=R
+[A0EY]
+Name=Cripple
+Tip=|cffffcc00C|rripple
+Ubertip="Reduces movement speed by <ACcr,DataA1,%>%, attack rate by <ACcr,DataB1,%>%, and damage by <ACcr,DataC1,%>% of a target enemy unit. |nLasts <ACcr,Dur1> seconds."
+Hotkey=C
+[A0F1]
+Name=Slow Aura
+[A0F2]
+Name=Slow Aura
+[A0F0]
+Name="ELE: Water wave"
+Tip=|cffffcc00C|rrushing Wave
+Ubertip="Sends a gigantic wave which deals <ACcv,DataA1> damage to each enemy land unit in a line, up to <ACcv,DataB1> max damage."
+Hotkey=C
+[A0F7]
+Name="ELE: Earth wave"
+Tip=Impal|cffffcc00e|r
+Ubertip="Slams the ground, sending a wave of force out in a straight line, dealing <ACmp,DataA1> damage and hurling enemy ground units into the air in their wake, stunning them for <ACmp,Dur1> seconds."
+Hotkey=E
+[A0F6]
+Name="ELE: Lightning wave"
+Tip=Shock|cffffcc00w|rave
+Ubertip="A wave of force that ripples outward, causing <ACsh,DataA1> damage to land units in a line."
+Hotkey=W
+[A0FB]
+Name="LifeLeach"
+Tip=Life |cffffcc00D|rrain - [|cffffcc00Level 1|r],Life |cffffcc00D|rrain - [|cffffcc00Level 2|r],Life |cffffcc00D|rrain - [|cffffcc00Level 3|r]
+Ubertip="Absorbs the life essence of a target enemy unit by taking <ANdr,DataA1> hit points per second from it and giving them to the Dark Ranger. |nLasts <ANdr,Dur1> seconds.","Absorbs the life essence of a target enemy unit by taking <ANdr,DataA2> hit points per second from it and giving them to the Dark Ranger. |nLasts <ANdr,Dur2> seconds.","Absorbs the life essence of a target enemy unit by taking <ANdr,DataA3> hit points per second from it and giving them to the Dark Ranger. |nLasts <ANdr,Dur3> seconds."
+Hotkey=D
+Researchtip="Learn Life |cffffcc00D|rrain - [|cffffcc00Level %d|r]"
+Researchubertip="Absorbs the life essence of a target enemy unit by taking hit points from it every second and giving them to the Dark Ranger. |nLasts <ANdr,Dur1> seconds. |n|n|cffffcc00Level 1|r - <ANdr,DataA1> hit point drain per second. |n|cffffcc00Level 2|r - <ANdr,DataA2> hit point drain per second. |n|cffffcc00Level 3|r - <ANdr,DataA3> hit point drain per second."
+Researchhotkey=D
+[A0FD]
+Name="Necr:LichLeach"
+Tip=Life D|cffffcc00r|rain
+Ubertip="Absorbs the life essence of a target enemy unit by taking <ACdr,DataA1> hit points per second from it and giving them to the caster. |nLasts <ACdr,Dur1> seconds."
+Hotkey=R
+[A0FA]
+Name="Throw boulder"
+Tip=Hurl |cffffcc00B|roulder
+Ubertip="A magical boulder that is thrown at an enemy unit, causing <ACtb,DataA1> points of damage and stunning the target for <ACtb,Dur1> seconds."
+Hotkey=B
+[S000]
+Name="Buf fire shield"
+Tip=Endurance Aura
+Ubertip="Increases nearby friendly units' movement speed by <SCae,DataA1,%>% and attack rate by <SCae,DataB1,%>%.","Increases nearby friendly units' movement speed by <SCae,DataA2,%>% and attack rate by <SCae,DataB2,%>%.","Increases nearby friendly units' movement speed by <SCae,DataA3,%>% and attack rate by <SCae,DataB3,%>%."
+[S001]
+Name="Buf earth shield"
+Tip=Endurance Aura
+Ubertip="Increases nearby friendly units' movement speed by <SCae,DataA1,%>% and attack rate by <SCae,DataB1,%>%.","Increases nearby friendly units' movement speed by <SCae,DataA2,%>% and attack rate by <SCae,DataB2,%>%.","Increases nearby friendly units' movement speed by <SCae,DataA3,%>% and attack rate by <SCae,DataB3,%>%."
+[S002]
+Name="Buf air shield"
+Tip=Endurance Aura
+Ubertip="Increases nearby friendly units' movement speed by <SCae,DataA1,%>% and attack rate by <SCae,DataB1,%>%.","Increases nearby friendly units' movement speed by <SCae,DataA2,%>% and attack rate by <SCae,DataB2,%>%.","Increases nearby friendly units' movement speed by <SCae,DataA3,%>% and attack rate by <SCae,DataB3,%>%."
+[A0F8]
+Name=Parasite
+Tip=Pa|cffffcc00r|rasite
+Ubertip="Afflicts a target enemy unit with a deadly parasite that deals <ANpa,DataA1> damage per second for <ANpa,Dur1> seconds. If the afflicted unit dies while under the effect of Parasite, a minor minion will spawn from its corpse."
+Untip="|cffc3dbffRight-click to activate auto-casting.|r"
+Unubertip="|cffc3dbffRight-click to deactivate auto-casting.|r"
+Hotkey=R
+Unhotkey=R
+[A0F9]
+Name="ELE:Spirit Link trigger"
+Tip="Spirit Link"
+Ubertip=""
+Untip="|cffc3dbffRight-click to activate auto-casting.|r"
+Unubertip="|cffc3dbffRight-click to deactivate auto-casting.|r"
+Hotkey=R
+Unhotkey=R
+[A0FO]
+Name="ELE: Water evasion greater"
+Tip=Evasion
+Ubertip="Gives a <ACes,DataA1,%>% percent chance to avoid an attack."
+[A0FV]
+Name="Kamikaze"
+Tip=Ka|cffffcc00b|room!
+Ubertip="Deals <Asds,DataB1> damage in a small area. Effective against buildings and trees."
+Untip="|cffc3dbff|cffc3dbffRight-click to activate auto-casting.|r|r"
+Unubertip="|cffc3dbff|cffc3dbffRight-click to deactivate auto-casting.|r|r"
+Hotkey=B
+Unhotkey=B
+[A0FW]
+Name="Kamikaze die"
+[A09L]
+Name="Shields"
+[A0FY]
+Name="Energy burst abil"
+Tip="Energy burst"
+Ubertip="Energy burst could deal additional damage (80 to the first target, jumps 4 times)"
+Untip="|cffc3dbffRight-click to activate auto-casting.|r"
+Unubertip="|cffc3dbffRight-click to deactivate auto-casting.|r"
+Hotkey=R
+Unhotkey=R
+[A0G1]
+Name="Poisoned arrows"
+Tip=Envenomed Weapons
+Ubertip="Deals <ACvs,DataA1> poison damage per second. |nLasts <ACvs,Dur1> seconds."
+[A0G2]
+Name="Poisoned arrows"
+Tip=Envenomed Weapons
+Ubertip="Deals <ACvs,DataA1> poison damage per second. |nLasts <ACvs,Dur1> seconds."
+[A0G4]
+Name="DST: Blind"
+Tip=|cffffcc00D|rrunken Haze - [|cffffcc00Level 1|r],|cffffcc00D|rrunken Haze - [|cffffcc00Level 2|r],|cffffcc00D|rrunken Haze - [|cffffcc00Level 3|r]
+Ubertip="Drenches enemy units in alcohol, causing their movement speed to be reduced by <ANdh,DataC1,%>%, and have a <ANdh,DataB1,%>% chance to miss on attacks. When units with Drunken Haze cast on them are hit by Breath of Fire, they will ignite and take burn damage. |nLasts <ANdh,Dur1> seconds.","Drenches enemy units in alcohol, causing their movement speed to be reduced by <ANdh,DataC2,%>%, and have a <ANdh,DataB2,%>% chance to miss on attacks. When units with Drunken Haze cast on them are hit by Breath of Fire, they will ignite and take burn damage. |nLasts <ANdh,Dur2> seconds.","Drenches enemy units in alcohol, causing their movement speed to be reduced by <ANdh,DataC3,%>%, and have a <ANdh,DataB3,%>% chance to miss on attacks. When units with Drunken Haze cast on them are hit by Breath of Fire, they will ignite and take burn damage. |nLasts <ANdh,Dur3> seconds."
+Hotkey=D
+Researchtip="Learn |cffffcc00D|rrunken Haze - [|cffffcc00Level %d|r]"
+Researchubertip="Drenches enemy units in alcohol, causing their movement speed to be reduced, and have a chance to miss on attacks. When units with Drunken Haze cast on them are hit by Breath of Fire, they will ignite and take burn damage over time. |nLasts <ANdh,Dur1> seconds |n|n|cffffcc00Level 1|r - <ANdh,DataC1,%>% movement speed reduction, <ANdh,DataB1,%>% miss chance. |n|cffffcc00Level 2|r - <ANdh,DataC2,%>% movement speed reduction, <ANdh,DataB2,%>% miss chance. |n|cffffcc00Level 3|r - <ANdh,DataC3,%>% movement speed reduction, <ANdh,DataB3,%>% miss chance."
+Researchhotkey=D
+[A0G8]
+Name="DST: Sandkin abil"
+Tip=Pa|cffffcc00r|rasite
+Ubertip="Afflicts a target enemy unit with a deadly parasite that deals <ANpa,DataA1> damage per second for <ANpa,Dur1> seconds. If the afflicted unit dies while under the effect of Parasite, a minor minion will spawn from its corpse."
+Untip="|cffc3dbffRight-click to activate auto-casting.|r"
+Unubertip="|cffc3dbffRight-click to deactivate auto-casting.|r"
+Hotkey=R
+Unhotkey=R
+[A0GB]
+Name="DST: Ogre auto"
+Tip=Pa|cffffcc00r|rasite
+Ubertip="Afflicts a target enemy unit with a deadly parasite that deals <ANpa,DataA1> damage per second for <ANpa,Dur1> seconds. If the afflicted unit dies while under the effect of Parasite, a minor minion will spawn from its corpse."
+Untip="|cffc3dbffRight-click to activate auto-casting.|r"
+Unubertip="|cffc3dbffRight-click to deactivate auto-casting.|r"
+Hotkey=R
+Unhotkey=R
+[A0GE]
+Name="Snake Altar abil"
+Tip="Create quicksands"
+Ubertip="|cffFFFF80Ability:|cffFFFF00Quicksands|r|n Creates quicksands under random enemy unit. Quicksands last 12s, affected enemies move and attack slower, units in the middle may be drowned (max 4).|n|n|cffFFFF80Cooldown:|cffFFFF00 12 |rseconds"
+Untip="|cffc3dbffRight-click to activate auto-casting.|r"
+Unubertip="|cffc3dbffRight-click to deactivate auto-casting.|r"
+Hotkey=R
+Unhotkey=R
+[A0GF]
+Name="Peyote abil"
+Tip="Peyote potion"
+Ubertip="|cffFFFF80Ability:|cffFFFF00 Peyote potion|r|nPoisons random living enemy with a halucinogenic spores, sending it to dreams for 7s (dealing 7dps), with chance of 25% unit can became hostile to both teams.|n|n|cffFFFF80Cooldown:|cffFFFF0010|rseconds"
+Untip="|cffc3dbffRight-click to activate auto-casting.|r"
+Unubertip="|cffc3dbffRight-click to deactivate auto-casting.|r"
+Hotkey=R
+Unhotkey=R
+[A0GK]
+Name="SandStorm abil"
+Tip="Sandstorm"
+Ubertip="Cast Sandstorm over the whole area wich blinds and slows the enemies(70% miss chance, -30% AS\MS), flows of sand do 20 dmg\s|n|n|cffFFFF80Duration:|cffFFFF00 8.5 |rseconds|n|cffFFFF80Cooldown:|cffFFFF00 36 |rseconds"
+Untip="|cffc3dbffRight-click to activate auto-casting.|r"
+Unubertip="|cffc3dbffRight-click to deactivate auto-casting.|r"
+Hotkey=R
+Unhotkey=R
+[A0GN]
+Name="Minelayer die dmg"
+[A0GO]
+Name="65aoe splash"
+Tip=Cleaving Attack
+Ubertip="The creature strikes with such force that <ACce,DataA1,%>% of their damage strikes through to enemies near the primary attacked unit."
+[A0GP]
+Name="110aoe splash"
+Tip=Cleaving Attack
+Ubertip="The creature strikes with such force that <ACce,DataA1,%>% of their damage strikes through to enemies near the primary attacked unit."
+[A0GQ]
+Name="Peyote dummy anim"
+Tip=Pa|cffffcc00r|rasite
+Ubertip="Afflicts a target enemy unit with a deadly parasite that deals <ANpa,DataA1> damage per second for <ANpa,Dur1> seconds. If the afflicted unit dies while under the effect of Parasite, a minor minion will spawn from its corpse."
+Untip="|cffc3dbffRight-click to activate auto-casting.|r"
+Unubertip="|cffc3dbffRight-click to deactivate auto-casting.|r"
+Hotkey=R
+Unhotkey=R
+[A0GU]
+Name=Bash
+Tip=Bash
+Ubertip="Gives a <ACbh,DataA1>% chance that an attack will do <ACbh,DataC1> bonus damage and stun an opponent for <ACbh,Dur1> seconds."
+[A00I]
+Name="Sandcloud"
+Tip=Sil|cffffcc00e|rnce
+Ubertip="Stops all enemies in a target area from casting spells for <ACsi,Dur1> seconds."
+Hotkey=E
+[A02B]
+Name="Sandstorm"
+Tip=Sil|cffffcc00e|rnce
+Ubertip="Stops all enemies in a target area from casting spells for <ACsi,Dur1> seconds."
+Hotkey=E
+[A07D]
+Name="Evasion"
+Tip=Evasion
+Ubertip="Gives a <ACev,DataA1,%>% percent chance to avoid an attack."
+[A0BR]
+Name="Rune of restoration"
+[A0DA]
+Name="NAT: Ancient Keeper (natures aura weak)"
+Tip=Unholy Aura
+Ubertip="Increases nearby friendly units' movement speed by <ACua,DataA1,%>% and life regeneration rate by <ACua,DataB1,%>%."
+[A0EJ]
+Name="Burning aura"
+Tip=Permanent Immolation
+Ubertip="Burns nearby enemy units for <ANpi,DataA1> points of damage per second."
+[A0G3]
+Name=Critical Strike
+Tip=Critical Strike
+Ubertip="Gives a <ACct,DataA1>% chance to do <ACct,DataB1> times normal damage on an attack."
+[A0GI]
+Name=Critical Strike
+Tip=Critical Strike
+Ubertip="Gives a <ACct,DataA1>% chance to do <ACct,DataB1> times normal damage on an attack."
+[A00A]
+Name="UND: Sanctum Of Decay"
+Tip="Greater Decay"
+Ubertip="Deals 10 spell damage per second to all non mechanical enemy units. "
+[A071]
+Name="UND: Sanctum Of Decay"
+Tip="Greatest Decay"
+Ubertip="Deals 12 spell damage per second to all non mechanical enemy units. "
+[A08G]
+Name="Rune of restoration"
+[A0H0]
+Name="Rain of stones"
+Tip=S|cffffcc00t|rampede
+Ubertip="Calls down hordes of rampaging thunder lizards to explode upon the Beastmaster's enemies. Each exploding lizard deals <ANst,DataC1> damage. |nLasts <ANst,Dur1> seconds."
+Hotkey=T
+Researchtip=Learn S|cffffcc00t|rampede
+Researchubertip="Calls down hordes of rampaging thunder lizards to explode upon the Beastmaster's enemies. Each exploding lizard deals <ANst,DataC1> damage. |nLasts <ANst,Dur1> seconds."
+Researchhotkey=T
+[A0H1]
+Name="DST: Matriarch auto"
+Tip=Pa|cffffcc00r|rasite
+Ubertip="Afflicts a target enemy unit with a deadly parasite that deals <ANpa,DataA1> damage per second for <ANpa,Dur1> seconds. If the afflicted unit dies while under the effect of Parasite, a minor minion will spawn from its corpse."
+Untip="|cffc3dbffRight-click to activate auto-casting.|r"
+Unubertip="|cffc3dbffRight-click to deactivate auto-casting.|r"
+Hotkey=R
+Unhotkey=R
+[A0H2]
+Name="DST: Blind"
+Tip=|cffffcc00D|rrunken Haze - [|cffffcc00Level 1|r],|cffffcc00D|rrunken Haze - [|cffffcc00Level 2|r],|cffffcc00D|rrunken Haze - [|cffffcc00Level 3|r]
+Ubertip="Drenches enemy units in alcohol, causing their movement speed to be reduced by <ANdh,DataC1,%>%, and have a <ANdh,DataB1,%>% chance to miss on attacks. When units with Drunken Haze cast on them are hit by Breath of Fire, they will ignite and take burn damage. |nLasts <ANdh,Dur1> seconds.","Drenches enemy units in alcohol, causing their movement speed to be reduced by <ANdh,DataC2,%>%, and have a <ANdh,DataB2,%>% chance to miss on attacks. When units with Drunken Haze cast on them are hit by Breath of Fire, they will ignite and take burn damage. |nLasts <ANdh,Dur2> seconds.","Drenches enemy units in alcohol, causing their movement speed to be reduced by <ANdh,DataC3,%>%, and have a <ANdh,DataB3,%>% chance to miss on attacks. When units with Drunken Haze cast on them are hit by Breath of Fire, they will ignite and take burn damage. |nLasts <ANdh,Dur3> seconds."
+Hotkey=D
+Researchtip="Learn |cffffcc00D|rrunken Haze - [|cffffcc00Level %d|r]"
+Researchubertip="Drenches enemy units in alcohol, causing their movement speed to be reduced, and have a chance to miss on attacks. When units with Drunken Haze cast on them are hit by Breath of Fire, they will ignite and take burn damage over time. |nLasts <ANdh,Dur1> seconds |n|n|cffffcc00Level 1|r - <ANdh,DataC1,%>% movement speed reduction, <ANdh,DataB1,%>% miss chance. |n|cffffcc00Level 2|r - <ANdh,DataC2,%>% movement speed reduction, <ANdh,DataB2,%>% miss chance. |n|cffffcc00Level 3|r - <ANdh,DataC3,%>% movement speed reduction, <ANdh,DataB3,%>% miss chance."
+Researchhotkey=D
+[A0H6]
+Name="UND: Sanctum Of Decay"
+Tip="Greatest Decay"
+Ubertip="Deals 3 dps to mechanical enemy units. "
+[A01I]
+Name="Volcano2"
+Tip=Rain of |cffffcc00F|rire
+Ubertip="Calls down waves of fire that damage units in an area. Each wave deals <ACrg,DataB1> initial damage and <ACrg,DataE1> damage per second for <ACrg,Dur1> seconds. |nLasts for <ACrg,DataA1> waves."
+Hotkey=F
+[A05H]
+Name="Volcano2"
+Tip=Rain of |cffffcc00F|rire
+Ubertip="Calls down waves of fire that damage units in an area. Each wave deals <ACrg,DataB1> initial damage and <ACrg,DataE1> damage per second for <ACrg,Dur1> seconds. |nLasts for <ACrg,DataA1> waves."
+Hotkey=F
+[A0H9]
+Name=Life Regeneration Aura
+[A0HB]
+Name="MatrSplit3"
+Tip="Storm, |cffffcc00E|rarth, And Fire"
+Ubertip="Splits the Pandaren Brewmaster into elements, forming 3 specialized warriors. If any of them survive until the end of their summoned timer, the Brewmaster is reborn. |nLasts <ANef,HeroDur1> seconds."
+Hotkey=E
+Researchtip="Learn Storm, |cffffcc00E|rarth, And Fire"
+Researchubertip="Splits the Pandaren Brewmaster into elements, forming 3 specialized warriors. If any of them survive until the end of their summoned timer, the Brewmaster is reborn. |nLasts <ANef,HeroDur1> seconds."
+Researchhotkey=E
+[A0HC]
+Name="MatrSplit1"
+Tip="Storm, |cffffcc00E|rarth, And Fire"
+Ubertip="Splits the Pandaren Brewmaster into elements, forming 3 specialized warriors. If any of them survive until the end of their summoned timer, the Brewmaster is reborn. |nLasts <ANef,HeroDur1> seconds."
+Hotkey=E
+Researchtip="Learn Storm, |cffffcc00E|rarth, And Fire"
+Researchubertip="Splits the Pandaren Brewmaster into elements, forming 3 specialized warriors. If any of them survive until the end of their summoned timer, the Brewmaster is reborn. |nLasts <ANef,HeroDur1> seconds."
+Researchhotkey=E
+[A0HD]
+Name="MatrSplit2"
+Tip="Storm, |cffffcc00E|rarth, And Fire"
+Ubertip="Splits the Pandaren Brewmaster into elements, forming 3 specialized warriors. If any of them survive until the end of their summoned timer, the Brewmaster is reborn. |nLasts <ANef,HeroDur1> seconds."
+Hotkey=E
+Researchtip="Learn Storm, |cffffcc00E|rarth, And Fire"
+Researchubertip="Splits the Pandaren Brewmaster into elements, forming 3 specialized warriors. If any of them survive until the end of their summoned timer, the Brewmaster is reborn. |nLasts <ANef,HeroDur1> seconds."
+Researchhotkey=E
+[A0GC]
+Name="SandStorm"
+Tip="Sandstorm"
+Ubertip="Sandstorm damages this unit."
+[A0G9]
+Name="DST: Harpy auto"
+Tip=Pa|cffffcc00r|rasite
+Ubertip="Afflicts a target enemy unit with a deadly parasite that deals <ANpa,DataA1> damage per second for <ANpa,Dur1> seconds. If the afflicted unit dies while under the effect of Parasite, a minor minion will spawn from its corpse."
+Untip="|cffc3dbffRight-click to activate auto-casting.|r"
+Unubertip="|cffc3dbffRight-click to deactivate auto-casting.|r"
+Hotkey=R
+Unhotkey=R
+[A0HI]
+Name="ELE: Distorter"
+Tip="Distortion of Magic"
+Ubertip="Casts magical distorsion on random enemy (-100% spell resistance)|n|n|cffFFFF80Cooldown:|cffFFFF00 10 |rseconds"
+Untip="|cffc3dbffRight-click to activate auto-casting.|r"
+Unubertip="|cffc3dbffRight-click to deactivate auto-casting.|r"
+Hotkey=R
+Unhotkey=R
+[A0HK]
+Name="DST: Gnolls auto"
+Tip=Pa|cffffcc00r|rasite
+Ubertip="Afflicts a target enemy unit with a deadly parasite that deals <ANpa,DataA1> damage per second for <ANpa,Dur1> seconds. If the afflicted unit dies while under the effect of Parasite, a minor minion will spawn from its corpse."
+Untip="|cffc3dbffRight-click to activate auto-casting.|r"
+Unubertip="|cffc3dbffRight-click to deactivate auto-casting.|r"
+Hotkey=R
+Unhotkey=R
+[A0HL]
+Name="Fowlhunter 60"
+Tip=Critical Strike
+Ubertip="Gives a <ACct,DataA1>% chance to do <ACct,DataB1> times normal damage on an attack."
+[A0HM]
+Name="Fowlhunter 35"
+Tip=Critical Strike
+Ubertip="Gives a <ACct,DataA1>% chance to do <ACct,DataB1> times normal damage on an attack."
+[A0HP]
+Name="Sandcloud2x"
+Tip=Sil|cffffcc00e|rnce
+Ubertip="Stops all enemies in a target area from casting spells for <ACsi,Dur1> seconds."
+Hotkey=E
+[A0HR]
+Name="SF dmg2bld"
+[A0HS]
+Name="starf eff"
+Tip=|cffffcc00I|rnferno
+Ubertip="Summons an Infernal from the sky, causing area effect damage where it lands."
+Hotkey=I
+Researchtip=Learn |cffffcc00I|rnferno
+Researchhotkey=I
+Globalmessage=
+Globalsound=
+[A0HT]
+Name="starfall"
+Tip=|cffffcc00R|rain of Chaos
+Ubertip="Calls down multiple Infernals from the sky."
+Hotkey=R
+Researchtip=Learn |cffffcc00R|rain of Chaos
+Researchubertip="Calls down multiple Infernals from the sky."
+Researchhotkey=R
+[A0HU]
+Name="starf eff na"
+Tip=|cffffcc00I|rnferno
+Ubertip="Summons an Infernal from the sky, causing area effect damage where it lands."
+Hotkey=I
+Researchtip=Learn |cffffcc00I|rnferno
+Researchhotkey=I
+Globalmessage=
+Globalsound=
+[A0HV]
+Name="starfall na"
+Tip=|cffffcc00R|rain of Chaos
+Ubertip="Calls down multiple Infernals from the sky."
+Hotkey=R
+Researchtip=Learn |cffffcc00R|rain of Chaos
+Researchubertip="Calls down multiple Infernals from the sky."
+Researchhotkey=R
+[A0HW]
+Name="DST: salam burn"
+Tip=Acid |cffffcc00B|romb - [|cffffcc00Level 1|r],Acid |cffffcc00B|romb - [|cffffcc00Level 2|r],Acid |cffffcc00B|romb - [|cffffcc00Level 3|r]
+Researchtip="Learn Acid |cffffcc00B|romb - [|cffffcc00Level %d|r]"
+Ubertip="Hurls a flask of acid at a target.  The flask breaks upon impact, splashing a powerful acid on nearby hostile units.|n|nDecreases armor by <ANab,DataC1>; deals <ANab,DataD1> damage per second to the primary target; deals slightly less damage to nearby targets.|nLasts <ANab,Dur1> seconds.","Hurls a flask of acid at a target.  The flask breaks upon impact, splashing a powerful acid on nearby hostile units.|n|nDecreases armor by <ANab,DataC2>; deals <ANab,DataD2> damage per second to the primary target; deals slightly less damage to nearby targets.|nLasts <ANab,Dur2> seconds.","Hurls a flask of acid at a target.  The flask breaks upon impact, splashing a powerful acid on nearby hostile units.|n|nDecreases armor by <ANab,DataC3>; deals <ANab,DataD3> damage per second to the primary target; deals slightly less damage to nearby targets.|nLasts <ANab,Dur3> seconds."
+Researchubertip="Hurls a flask of acid at a target.  The flask breaks upon impact, splashing a powerful acid on nearby hostile units.|n|nDecreases armor; deals high damage over time to the primary target; deals slightly less damage over time to nearby targets.|nLasts <ANab,Dur1> seconds.|n|n|cffffcc00Level 1|r - <ANab,DataD1> max damage per second, reduces armor by <ANab,DataC1>.|n|cffffcc00Level 2|r - <ANab,DataD2> max damage per second, reduces armor by <ANab,DataC2>.|n|cffffcc00Level 3|r - <ANab,DataD3> max damage per second, reduces armor by <ANab,DataC3>."
+Hotkey=B
+Researchhotkey=B
+[A0GD]
+Name="monsoon eff"
+Tip=|cffffcc00I|rnferno
+Ubertip="Summons an Infernal from the sky, causing area effect damage where it lands."
+Hotkey=I
+Researchtip=Learn |cffffcc00I|rnferno
+Researchhotkey=I
+Globalmessage=
+Globalsound=
+[A0GH]
+Name="spikes eff"
+Tip=|cffffcc00I|rnferno
+Ubertip="Summons an Infernal from the sky, causing area effect damage where it lands."
+Hotkey=I
+Researchtip=Learn |cffffcc00I|rnferno
+Researchhotkey=I
+Globalmessage=
+Globalsound=
+[A0I4]
+Name="monsoon eff na"
+Tip=|cffffcc00I|rnferno
+Ubertip="Summons an Infernal from the sky, causing area effect damage where it lands."
+Hotkey=I
+Researchtip=Learn |cffffcc00I|rnferno
+Researchhotkey=I
+Globalmessage=
+Globalsound=
+[A0I5]
+Name="spikes eff na"
+Tip=|cffffcc00I|rnferno
+Ubertip="Summons an Infernal from the sky, causing area effect damage where it lands."
+Hotkey=I
+Researchtip=Learn |cffffcc00I|rnferno
+Researchhotkey=I
+Globalmessage=
+Globalsound=
+[A0I6]
+Name="Monsoon"
+Tip=|cffffcc00R|rain of Chaos
+Ubertip="Calls down multiple Infernals from the sky."
+Hotkey=R
+Researchtip=Learn |cffffcc00R|rain of Chaos
+Researchubertip="Calls down multiple Infernals from the sky."
+Researchhotkey=R
+[A0I7]
+Name="Monsoon na"
+Tip=|cffffcc00R|rain of Chaos
+Ubertip="Calls down multiple Infernals from the sky."
+Hotkey=R
+Researchtip=Learn |cffffcc00R|rain of Chaos
+Researchubertip="Calls down multiple Infernals from the sky."
+Researchhotkey=R
+[A0I8]
+Name="Earthspikes"
+Tip=|cffffcc00R|rain of Chaos
+Ubertip="Calls down multiple Infernals from the sky."
+Hotkey=R
+Researchtip=Learn |cffffcc00R|rain of Chaos
+Researchubertip="Calls down multiple Infernals from the sky."
+Researchhotkey=R
+[A0I9]
+Name="Earthspikes na"
+Tip=|cffffcc00R|rain of Chaos
+Ubertip="Calls down multiple Infernals from the sky."
+Hotkey=R
+Researchtip=Learn |cffffcc00R|rain of Chaos
+Researchubertip="Calls down multiple Infernals from the sky."
+Researchhotkey=R
+[A0IA]
+Name="el.book AoE dmg"
+[A0IB]
+Name="el.book AoE dmg bld"
+[A0IE]
+Name="dmg 2 air"
+[A0IF]
+Name="starfall bldings dmg"
+[A0II]
+Name="Freezing breath"
+Tip=Acid |cffffcc00B|romb - [|cffffcc00Level 1|r],Acid |cffffcc00B|romb - [|cffffcc00Level 2|r],Acid |cffffcc00B|romb - [|cffffcc00Level 3|r]
+Researchtip="Learn Acid |cffffcc00B|romb - [|cffffcc00Level %d|r]"
+Ubertip="Hurls a flask of acid at a target.  The flask breaks upon impact, splashing a powerful acid on nearby hostile units.|n|nDecreases armor by <ANab,DataC1>; deals <ANab,DataD1> damage per second to the primary target; deals slightly less damage to nearby targets.|nLasts <ANab,Dur1> seconds.","Hurls a flask of acid at a target.  The flask breaks upon impact, splashing a powerful acid on nearby hostile units.|n|nDecreases armor by <ANab,DataC2>; deals <ANab,DataD2> damage per second to the primary target; deals slightly less damage to nearby targets.|nLasts <ANab,Dur2> seconds.","Hurls a flask of acid at a target.  The flask breaks upon impact, splashing a powerful acid on nearby hostile units.|n|nDecreases armor by <ANab,DataC3>; deals <ANab,DataD3> damage per second to the primary target; deals slightly less damage to nearby targets.|nLasts <ANab,Dur3> seconds."
+Researchubertip="Hurls a flask of acid at a target.  The flask breaks upon impact, splashing a powerful acid on nearby hostile units.|n|nDecreases armor; deals high damage over time to the primary target; deals slightly less damage over time to nearby targets.|nLasts <ANab,Dur1> seconds.|n|n|cffffcc00Level 1|r - <ANab,DataD1> max damage per second, reduces armor by <ANab,DataC1>.|n|cffffcc00Level 2|r - <ANab,DataD2> max damage per second, reduces armor by <ANab,DataC2>.|n|cffffcc00Level 3|r - <ANab,DataD3> max damage per second, reduces armor by <ANab,DataC3>."
+Hotkey=B
+Researchhotkey=B
+[A0IK]
+Name="Primordial dragon"
+[A0IO]
+Name="Coral restore spell"
+Tip=H|cffffcc00e|raling Wave
+Ubertip="Calls forth a wave of healing energy that bounces up to <AChv,DataB1> times, healing <AChv,DataA1> damage on the primary target. Each jump heals less damage."
+Hotkey=E
+[A0IQ]
+Name="spell dist buff"
+[A0IS]
+Name="NAT: =For.spirit auto"
+Tip=Pa|cffffcc00r|rasite
+Ubertip="Afflicts a target enemy unit with a deadly parasite that deals <ANpa,DataA1> damage per second for <ANpa,Dur1> seconds. If the afflicted unit dies while under the effect of Parasite, a minor minion will spawn from its corpse."
+Untip="|cffc3dbffRight-click to activate auto-casting.|r"
+Unubertip="|cffc3dbffRight-click to deactivate auto-casting.|r"
+Hotkey=R
+Unhotkey=R
+[A0FC]
+Name="Fire Shield"
+Tip=Permanent Immolation
+Ubertip="Burns nearby enemy units for <ANpi,DataA1> points of damage per second."
+[B008]
+Bufftip=Drum'n'Bass Beats
+Buffubertip=This unit is listening to Drum'n'Bass beats. The powerful basses boost its attack damage.
+[B023]
+Bufftip=Corrosive Breath
+Buffubertip=Armor of this unit is decreased.
+[B01R]
+Bufftip=Howl
+Buffubertip=This unit has its damage and armor decreased
+[B01J]
+Bufftip=Empowered
+Buffubertip=This unit has increased health, damage and armor
+[B01E]
+Bufftip=Lightning
+Buffubertip=This unit has a chance on each attack to release a chainlightning onto its target.
+[B028]
+Bufftip=Lightning Shield
+Buffubertip=This unit is blinded
+[B01U]
+Bufftip=Explosive Shells
+Buffubertip=This unit deals splash damage
+[B00O]
+Bufftip=Burning Soul
+Buffubertip=This unit will damage units aroud, if it dies.
+EditorName=Corrupted: Void Walker
+[B00L]
+Bufftip=Drum'n'Bass Bassline
+Buffubertip=This unit is listening to a Drum'n'Bass bassline. The powerful basses boost its movement and attackspeed.
+[B00C]
+Bufftip=Serpent Rock Poison
+Buffubertip=This unit is poisoned.
+[B018]
+Bufftip=Solar Attack
+Buffubertip=This unit is paralysed
+[B00S]
+EditorName=Corrupted: Void Walker
+[B02D]
+Bufftip=Wisp Strike
+Buffubertip=This unit slowed. His movement is decreased.
+[B02O]
+Bufftip=Blind
+Buffubertip=This unit has 90% miss chance and moves very slow.
+[B02I]
+EditorName=Burning aura
+[B02Q]
+Bufftip=Salamanders poison
+Buffubertip=Unit is poisoned by salamander, its attack and defence is lowered.

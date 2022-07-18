@@ -1,0 +1,267 @@
+[oalt]
+Name=Altar of Storms
+Hotkey=A
+Tip=Build |cffffcc00A|rltar of Storms
+Ubertip="Summons Heroes. Revives slain Heroes."
+[oang]
+Name=Ancestral Guardian
+[obar]
+Name=Barracks
+Hotkey=B
+Tip=Build |cffffcc00B|rarracks
+Ubertip="Primary troop production building. Trains Grunts, Headhunters and Demolishers. |nAlso contains the Berserker Strength, Berserker, Troll Regeneration, and Burning Oil upgrades."
+[obea]
+Name=Beastiary
+Hotkey=E
+Tip=Build B|cffffcc00e|rastiary
+Ubertip="Trains Raiders, Kodo Beasts, Troll Batriders, and Wind Riders. |nAlso contains the Ensnare, Envenomed Spears, Liquid Fire and War Drums upgrades."
+[Obla]
+Name=Blademaster
+Propernames=Tojara,Nikoro,Kajind,Mikasa,Samuro,Akinos,Mazuru,Yozshura,Daisho,Kigami,Arashicage,Moogul the Sly,Jubei
+Hotkey=B
+Tip=Summon |cffffcc00B|rlademaster
+Ubertip="Cunning Hero, adept at quickly killing individual units and creating confusion among enemies. Can learn Mirror Image, Wind Walk, Critical Strike and Bladestorm. |n|n|cffffcc00Attacks land units.|r"
+Revivetip=Revive |cffffcc00B|rlademaster
+Awakentip=Revive |cffffcc00B|rlademaster
+[ocat]
+Name=Demolisher
+Hotkey=D
+Tip=Train |cffffcc00D|remolisher
+Ubertip="Long-range siege weaponry. Effective against buildings but slow and vulnerable. Can learn the Burning Oil ability. |n|n|cffffcc00Attacks land units and trees.|r"
+[odoc]
+Name=Troll Witch Doctor
+Hotkey=W
+Tip=Train Troll |cffffcc00W|ritch Doctor
+Ubertip="Supporting spellcaster. Can initially cast Sentry Ward, which summons an invisible detector. Can also learn Stasis Trap and Healing Ward. |n|n|cffffcc00Attacks land and air units.|r"
+Casterupgradename=Initiate, Adept, Master
+Casterupgradetip="- Sentry Ward","- Sentry Ward|n- Stasis Trap","- Sentry Ward|n- Stasis Trap|n- Healing Ward"
+[otot]
+Name=Stasis Trap
+[oeye]
+Name=Sentry Ward
+[Ofar]
+Name=Far Seer
+Propernames=Gar'dal Grimsight,Negal Fireye,Kazil Darkeye,Magis Coldeye,Bale Bleakstare,Gorr Grimwolf,Kag'ar Winterfang,Nazgrel,Morg Wolfsong,Kazragore,Fenris'ar Gul'
+Hotkey=F
+Tip=Summon |cffffcc00F|rar Seer
+Ubertip="Mystical Hero, effective at ranged attacks and scouting. Can learn Chain Lightning, Far Sight, Feral Spirit and Earthquake. |n|n|cffffcc00Attacks land and air units.|r"
+Revivetip=Revive |cffffcc00F|rar Seer
+Awakentip=Revive |cffffcc00F|rar Seer
+[ofor]
+Name=War Mill
+Hotkey=M
+Tip=Build War |cffffcc00M|rill
+Ubertip="Serves as a drop-off point for harvested lumber. |nAlso contains upgrades for improved armor, melee weapons, ranged weapons, Reinforced Defenses, and Spiked Barricades."
+[ofrt]
+Name=Fortress
+Hotkey=U
+Tip=|cffffcc00U|rpgrade to Fortress
+Ubertip="Upgrade to Fortress to enable the production of additional types of structures and units."
+[ogre]
+Name=Great Hall
+Hotkey=H
+Tip=Build Great |cffffcc00H|rall
+Ubertip="Primary structure, used to train Peons and receive gathered resources. Can be upgraded to Stronghold and then Fortress to enable the production of additional types of structures and units."
+[ogru]
+Name=Grunt
+Hotkey=G
+Tip=Train |cffffcc00G|rrunt
+Ubertip="Brutish Orc warrior. Can learn Berserker Strength. |n|n|cffffcc00Attacks land units.|r"
+[ohun]
+Name=Troll Headhunter
+Hotkey=T
+Tip=Train |cffffcc00T|rroll Headhunter
+Ubertip="Versatile spear-thrower, effective against air units. Can learn Troll Regeneration. Can be upgraded to Troll Berserker, which has the Berserk ability. |n|n|cffffcc00Attacks land and air units.|r "
+[otbk]
+Name=Troll Berserker
+Hotkey=T
+Tip=Train |cffffcc00T|rroll Berserker
+Ubertip="Versatile spear-thrower, effective against air units. Has the Berserk ability, which allows it to deal more damage, but take more damage when attacked. Can learn Troll Regeneration. |n|n|cffffcc00Attacks land and air units.|r "
+[ohwd]
+Name=Healing Ward
+[okod]
+Name=Kodo Beast
+Hotkey=K
+Tip=Train |cffffcc00K|rodo Beast
+Ubertip="Lumbering war beast, mounted by an Orcish drummer. Has the abilities War Drums, and Devour. War Drums gives friendly units nearby a bonus to attack damage. Devour allows the Kodo to eat a target enemy unit. Can gain the War Drums Upgrade. |n|n|cffffcc00Attacks land and air units.|r"
+[osld]
+Name=Spirit Lodge
+Hotkey=S
+Tip=Build |cffffcc00S|rpirit Lodge
+Ubertip="Spellcaster production building. Trains Shaman, Witch Doctors, and Spirit Walkers. |nAlso contains spell upgrades for Shaman, Witch Doctors, and Spirit Walkers."
+[opeo]
+Name=Peon
+Hotkey=P
+Tip=Train |cffffcc00P|reon
+Ubertip="Basic worker unit. Can harvest gold and lumber, build structures, and Repair. Can also go inside Orc Burrows to give it an attack. |n|n|cffffcc00Attacks land units and trees.|r"
+[orai]
+Name=Raider
+Hotkey=R
+Tip=Train |cffffcc00R|raider
+Ubertip="Highly mobile wolf rider. Effective against buildings. Can learn the Ensnare ability. |n|n|cffffcc00Attacks land units.|r"
+[oshm]
+Name=Shaman
+Hotkey=S
+Tip=Train |cffffcc00S|rhaman
+Ubertip="Primary spellcaster. Can initially cast Purge, which slows and dispels positive and negative buffs. Can also learn Lightning Shield and Bloodlust. |n|n|cffffcc00Attacks land and air units.|r"
+Casterupgradename=Initiate, Adept, Master
+Casterupgradetip="- Purge","- Purge|n- Lightning Shield","- Purge|n- Lightning Shield|n- Bloodlust"
+[ostr]
+Name=Stronghold
+Hotkey=U
+Tip=|cffffcc00U|rpgrade to Stronghold
+Ubertip="Upgrade to Stronghold to enable the production of additional types of structures and units."
+[osw1]
+Name=Spirit Wolf
+[osw2]
+Name=Dire Wolf
+[osw3]
+Name=Shadow Wolf
+[osp1]
+Name=Serpent Ward
+[osp2]
+Name=Serpent Ward
+[osp3]
+Name=Serpent Ward
+[otau]
+Name=Tauren
+Hotkey=T
+Tip=Train |cffffcc00T|rauren
+Ubertip="Mighty warrior. Can learn the Pulverize ability. |n|n|cffffcc00Attacks land units.|r"
+[otbr]
+Name=Troll Batrider
+Hotkey=B
+Tip=Train Troll |cffffcc00B|ratrider
+Ubertip="Light flying unit with incredible perception. Good at destroying buildings. Has the Unstable Concoction ability, which allows the Troll Batrider to explode, dealing damage to nearby enemy air units. Can learn Liquid Fire, and Troll Regeneration. |n|n|cffffcc00Attacks land units.|r"
+[Oshd]
+Name=Shadow Hunter
+Propernames=Zul'kis,Zul'abar,Zul'rajas,Zul'maran,Jo Jo Headshrinker,Shaka-zahn,Shakti-lar,Mezil-kree
+Hotkey=H
+Tip=Summon Shadow |cffffcc00H|runter
+Ubertip="Cunning Hero, adept at healing magics and voodoo curses. Can learn Healing Wave, Hex, Serpent Ward and Big Bad Voodoo. |n|n|cffffcc00Attacks land and air units.|r"
+Revivetip=Revive Shadow |cffffcc00H|runter
+Awakentip=Revive Shadow |cffffcc00H|runter
+[Otch]
+Name=Tauren Chieftain
+Propernames=Marn Thunderhorn,Tygore Dusthoof,Tam Windtotem,Durn Harpyslayer,Kam Ghoststeer,Kel Stonebull,Mull Stormhoof,Grok Bloodhorn,Malar Plainstrider,Taur Runetotem
+Hotkey=T
+Tip=Summon |cffffcc00T|rauren Chieftain
+Ubertip="Warrior Hero, exceptional at absorbing damage and melee combat. Can learn Shockwave, War Stomp, Endurance Aura and Reincarnation. |n|n|cffffcc00Attacks land units.|r"
+Revivetip=Revive |cffffcc00T|rauren Chieftain
+Awakentip=Revive |cffffcc00T|rauren Chieftain
+[otrb]
+Name=Orc Burrow
+Hotkey=O
+Tip=Build |cffffcc00O|rrc Burrow
+Ubertip="Provides food, which increases the maximum number of units that can be trained. Peons can garrison inside to attack enemy units. Can learn the Reinforced Defenses upgrade. |n|n|cffffcc00Attacks land and air units.|r"
+[orbr]
+Name=Reinforced Orc Burrow
+Hotkey=O
+Tip=Build Reinforced |cffffcc00O|rrc Burrow
+Ubertip="Provides food, which increases the maximum number of units that can be trained. Peons can garrison inside to attack enemy units. |n|n|cffffcc00Attacks land and air units.|r"
+[otto]
+Name=Tauren Totem
+Hotkey=T
+Tip=Build |cffffcc00T|rauren Totem
+Ubertip="Trains Tauren. |nAlso contains the Pulverize upgrade."
+[ovln]
+Name=Voodoo Lounge
+Hotkey=V
+Tip=Build |cffffcc00V|roodoo Lounge
+Ubertip="Creates a shop with purchasable items. The items available depend upon what level of upgrade your Great Hall has (Great Hall, Stronghold, or Fortress) and which buildings you have."
+[owyv]
+Name=Wind Rider
+Hotkey=W
+Tip=Train |cffffcc00W|rind Rider
+Ubertip="Highly mobile flying creature. Excellent at scouting. Can learn Envenomed Spears. |n|n|cffffcc00Attacks land and air units.|r"
+[owtw]
+Name=Watch Tower
+Hotkey=W
+Tip=Build |cffffcc00W|ratch Tower
+Ubertip="Defensive structure. Can learn the Reinforced Defenses upgrade. |n|n|cffffcc00Attacks land and air units.|r"
+[ospw]
+DependencyOr=ospm
+Name=Spirit Walker
+Hotkey=T
+Tip=Train Spiri|cffffcc00t|r Walker
+Ubertip="Mystical Tauren caster. Has Ethereal Form, which allows him to avoid physical damage. Also has Spirit Link, which allows units to distribute incoming damage. Can learn Disenchant, and Ancestral Spirit. |n|n|cffffcc00Attacks land and air units.|r"
+Casterupgradename=Initiate, Adept, Master
+Casterupgradetip="- Ethereal Form|n- Spirit Link","- Ethereal Form|n- Spirit Link|n- Disenchant","- Ethereal Form|n- Spirit Link|n- Disenchant|n- Ancestral Spirit"
+[ospm]
+Name=Spirit Walker
+Hotkey=T
+Tip=Train Spiri|cffffcc00t|r Walker
+Ubertip="Mystical Tauren caster. Has Ethereal Form, which allows him to avoid physical damage. Also has Spirit Link, which allows units to distribute incoming damage. Can learn Disenchant, and Ancestral Spirit. |n|n|cffffcc00Attacks land and air units.|r"
+Casterupgradename=Initiate, Adept, Master
+Casterupgradetip="- Ethereal Form|n- Spirit Link","- Ethereal Form|n- Spirit Link|n- Disenchant","- Ethereal Form|n- Spirit Link|n- Disenchant|n- Ancestral Spirit"
+[o007]
+Name="Kodo"
+Hotkey=Q
+Tip="Trains Kodo"
+Ubertip="|n|cffFFFF80Attack:|r Pierce (|cffFFFF00melee|r,|cffFFFF00 24|r dps)|n|cffFFFF80Armor:|r Light (|cffFFFF006|r)|n|cffFFFF80Hitpoints: |cffFFFF001000|r"
+[o008]
+Name="Offensive Kodo Rider"
+Hotkey=Q
+Tip="Trains Offensive Kodo Rider"
+Ubertip="|n|cffFFFF80Attack:|r Pierce (|cffFFFF00320|r rng,|cffFFFF00 33|r dps)|n|cffFFFF80Armor:|r Light (|cffFFFF007|r)|n|cffFFFF80Hitpoints: |cffFFFF001200|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Melee Damage Aura|r|nIncreases the damage of allied melee units in 900 range by 30%"
+[o009]
+Name="Wyvern Rider"
+Hotkey=Q
+Tip="Trains Wyvern Rider"
+Ubertip="|n|cffFFFF80Attack:|r Pierce (|cffFFFF00400|r rng,|cffFFFF00 30|r dps)|n|cffFFFF80Armor:|r Unarmored (|cffFFFF002|r)|n|cffFFFF80Hitpoints: |cffFFFF00440|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Flying|r|nThis unit is flying|n|n|cff80FF00Minor Poison Attack|r|nThe attacks of this unit poison the enemy, slowing movement and attack speed by 20% and dealing 4 damage per second. The poison lasts 3 seconds."
+[o003]
+Name="Shaman"
+Hotkey=Q
+Tip="Trains Shaman"
+Ubertip="|n|cffFFFF80Attack:|r Magic (|cffFFFF00350|r rng,|cffFFFF00 26|r dps)|n|cffFFFF80Armor:|r Unarmored (|cffFFFF001|r)|n|cffFFFF80Hitpoints: |cffFFFF00340|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Shaman Buff|r|nIncreases an allies armor by 4, its damage by 30%. The buff lasts 30 seconds. Does not stack with Crusader's/Paladin's blessing.|n|cff8080FFCooldown: |r6|n|cff8080FF"
+Casterupgradename=
+Casterupgradetip=
+[o004]
+Name="Veteran Grunt"
+Hotkey=Q
+Tip="Trains Veteran Grunt"
+Ubertip="|n|cffFFFF80Attack:|r Normal (|cffFFFF00melee|r,|cffFFFF00 30|r dps)|n|cffFFFF80Armor:|r Heavy (|cffFFFF006|r)|n|cffFFFF80Hitpoints: |cffFFFF00575|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Critical Strike|r|n25% chance on each attack to hit for 2 times of the normal damage"
+[o005]
+Name="Axemaster"
+Hotkey=Q
+Tip="Trains Axemaster"
+Ubertip="|n|cffFFFF80Attack:|r Normal (|cffFFFF00melee|r,|cffFFFF00 65|r dps)|n|cffFFFF80Armor:|r Heavy (|cffFFFF0010|r)|n|cffFFFF80Hitpoints: |cffFFFF001000|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Critical Strike|r|n30% chance on each attack to hit for 3 times of the normal damage|n|n|cff80FF00Pulverize|r|nGrants a 35% chance on each attack to hit all enemies in 200 range for 130 damage"
+[o006]
+Name="Defensive Kodo Rider"
+Hotkey=Q
+Tip="Trains Defensive Kodo Rider"
+Ubertip="|n|cffFFFF80Attack:|r Pierce (|cffFFFF00320|r rng,|cffFFFF00 33|r dps)|n|cffFFFF80Armor:|r Light (|cffFFFF007|r)|n|cffFFFF80Hitpoints: |cffFFFF001200|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Armor Aura|r|nIncreases the armor of allies in 900 range by 4"
+[o000]
+Name="Anti Air Tower"
+Hotkey=Y
+Tip="Build Anti Air Tower [|cffffcc00Y|r]"
+Ubertip="|cffFFAC00Base Defense|r:|nThis is a tower to protect key positions.|n|n|cffFF8000Attack 1 |r(air)|n|cffFFFF80Attack Type:|cffFFFF00 Normal|n|cffFFFF80Range:|cffFFFF00 900|n|cffFFFF80Average DPS:|cffFFFF00 175|r|n|n|cffFF8000Attack 2 |r(ground)|n|cffFFFF80Attack Type:|cffFFFF00 Normal|n|cffFFFF80Range:|cffFFFF00 700|n|cffFFFF80Average DPS:|cffFFFF00 47|r|n|n|cffFFFF80Abilities:|r|n-Poisoned Arrows (|cffFFFF0025% slow, 35 damage|r)"
+[o001]
+Name="Catapult"
+Hotkey=Q
+Tip="Trains Catapult"
+Ubertip="|n|cffFFFF80Attack:|r Siege (|cffFFFF001000|r rng,|cffFFFF00 27|r dps)|n|cffFFFF80Armor:|r Medium (|cffFFFF005|r)|n|cffFFFF80Hitpoints: |cffFFFF00475|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Ground Only|r|nThis unit can't attack flying enemies|n|n|cff80FF00Splash Damage|r|nThis unit's attacks hit all units in a 160 AoE around its target. Units farther away from the target receive less damage|n|n|cff80FF00Burning Ammo|r|nThe attacks of this units make a 225 AoE burn for 2.5 seconds dealing 48 damage per second to ground units in that area"
+[o002]
+Name="Grunt"
+Hotkey=Q
+Tip="Trains Grunt"
+Ubertip="|n|cffFFFF80Attack:|r Normal (|cffFFFF00melee|r,|cffFFFF00 18|r dps)|n|cffFFFF80Armor:|r Heavy (|cffFFFF004|r)|n|cffFFFF80Hitpoints: |cffFFFF00325|r"
+[o00B]
+Name="Spellbreaker Kodo Rider"
+Hotkey=Q
+Tip="Trains Spellbreaker Kodo Rider"
+Ubertip="|n|cffFFFF80Attack:|r Pierce (|cffFFFF00320|r rng,|cffFFFF00 33|r dps)|n|cffFFFF80Armor:|r Light (|cffFFFF007|r)|n|cffFFFF80Hitpoints: |cffFFFF001200|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Spell Resistance|r|nSpell damage done to this unit is reduced by 70%"
+[o00A]
+Name="Ice Troll Witch Doctor"
+Hotkey=Q
+Tip="Trains Ice Troll Witch Doctor"
+Ubertip="|n|cffFFFF80Attack:|r Magic (|cffFFFF00370|r rng,|cffFFFF00 48|r dps)|n|cffFFFF80Armor:|r Light (|cffFFFF003|r)|n|cffFFFF80Hitpoints: |cffFFFF00650|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Chilling Attack|r|nAll units hit get chilled for 5 seconds|n|n|cff80FF00Frost Attack|r|nEach attack against ground units and buildings has a 10% chance to freeze the target to the ground for 6 seconds, dealing 20 damage per second|n|n|cff80FF00Frost Armor|r|nCasts Frost Armor onto an ally granting a 7 armor bonus. All melee units that hit the armored unit will be chilled for 6 seconds. Armor lasts 45 seconds|n|cff8080FFCooldown: |r8|n|cff8080FFMana cost: |r35"
+Casterupgradename=
+Casterupgradetip=
+[o00F]
+Name="Stout Shaman"
+Hotkey=Q
+Tip="Trains Stout Shaman"
+Ubertip="|n|cffFFFF80Attack:|r Magic (|cffFFFF00350|r rng,|cffFFFF00 43|r dps)|n|cffFFFF80Armor:|r Unarmored (|cffFFFF002|r)|n|cffFFFF80Hitpoints: |cffFFFF00420|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Shaman Buff|r|nIncreases an allies armor by 5, its damage by 45%. The buff lasts 30 seconds. Does not stack with Crusader's/Paladin's blessing.|n|cff8080FFCooldown: |r6|n|ncff80FF00Spell resistance: 25%"
+Casterupgradename=
+Casterupgradetip=
