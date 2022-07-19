@@ -270,7 +270,7 @@ Ubertip="Unloads all units."
 Hotkey=U
 [Asla]
 Name=Sleep Always
-Tip=|cffffcc00S|leep
+Tip=|cffffcc00S|rleep
 Ubertip="Unit sleeps until awoken."
 [Advc]
 Name=Devour Cargo

@@ -31,7 +31,7 @@ regex = "攻击：\\|r魔法"
 content = "伤害类型：|r魔法"
 
 [[rewrite]]
-regex = "攻击：\\|r普通"
+regex = "攻击：\\|r正常"
 content = "伤害类型：|r普通"
 
 [[rewrite]]
@@ -39,7 +39,7 @@ regex = "攻击：\\|r刺穿"
 content = "伤害类型：|r穿刺"
 
 [[rewrite]]
-regex = "攻击：\\|r攻城"
+regex = "攻击：\\|r围攻"
 content = "伤害类型：|r 攻城"
 
 [[rewrite]]
@@ -68,6 +68,104 @@ content = "护甲：|r重型"
 
 [[rewrite]]
 regex = "护甲：\\|r重重型"
+content = "护甲：|r重型"
+
+[[rewrite]]
+regex = "Suumpmolk"
+content = "剧毒蜥蜴"
+
+[[rewrite]]
+regex = "苏普莫克"
+content = "剧毒蜥蜴"
+
+[[rewrite]]
+regex = "哈比"
+content = "鹰身女妖"
+
+[[rewrite]]
+regex = "本机"
+content = "该单位"
+
+[[rewrite]]
+regex = "此单元"
+content = "该单位"
+
+[[rewrite]]
+# 奶酪
+regex = "更传奇的结构"
+content = "额外的传奇建筑"
+
+[[rewrite]]
+# 腐败种族
+regex = "腐败的企业集团"
+content = "腐败集团"
+
+[[rewrite]]
+regex = "随机比赛"
+content = "随机种族"
+
+[[rewrite]]
+regex = "产生蠕变的结构训练更强的蠕变"
+content = "生产建筑训练的单位将变强"
+
+[[rewrite]]
+regex = "尖刺迷"
+content = "尖刺重击"
+
+[[rewrite]]
+regex = "Nagas"
+content = "娜迦"
+
+[[rewrite]]
+regex = "马力"
+content = "生命值"
+
+[[rewrite]]
+regex = "后卫"
+content = "防御者"
+
+[[rewrite]]
+regex = "进阶战士馆"
+content = "高级战士大厅"
+
+[[rewrite]]
+regex = "刀剑大师"
+content = "剑圣"
+
+[[rewrite]]
+regex = "橡皮擦"
+content = "抹杀塔"
+
+[[rewrite]]
+regex = "永恒的远古"
+content = "永恒古树"
+
+[[rewrite]]
+regex = "色狼"
+content = "小恶魔"
+
+[[rewrite]]
+regex = "咕噜声"
+content = "兽人战士"
+
+[[rewrite]]
+regex = "咕噜"
+content = "兽人战士"
+
+[[rewrite]]
+regex = "构建单体"
+content = "建造巨石"
+
+[[rewrite]]
+regex = "羽毛恶魔"
+content = "大恶魔"
+
+[[rewrite]]
+regex = "弹射器"
+content = "投石车"
+
+[[rewrite]]
+regex = "护甲：\\|r重型型"
 content = "护甲：|r重型"
 
 [[rewrite]]
