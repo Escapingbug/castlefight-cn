@@ -27,56 +27,60 @@ regex = "火车"
 content = "训练"
 
 [[rewrite]]
-regex = "攻击：\\|r 魔法"
-content = "伤害类型:|r 魔法"
+regex = "攻击：\\|r魔法"
+content = "伤害类型：|r魔法"
 
 [[rewrite]]
-regex = "攻击：\\|r 普通"
-content = "伤害类型:|r 普通"
+regex = "攻击：\\|r普通"
+content = "伤害类型：|r普通"
 
 [[rewrite]]
-regex = "攻击：\\|r 刺穿"
-content = "伤害类型:|r 穿刺"
+regex = "攻击：\\|r刺穿"
+content = "伤害类型：|r穿刺"
 
 [[rewrite]]
-regex = "攻击：\\|r 攻城"
-content = "伤害类型:|r 攻城"
+regex = "攻击：\\|r攻城"
+content = "伤害类型：|r 攻城"
 
 [[rewrite]]
-regex = "攻击：\\|r 混乱"
-content = "伤害类型:|r 混乱"
+regex = "攻击：\\|r混乱"
+content = "伤害类型：|r 混乱"
 
 [[rewrite]]
-regex = "攻击：\\|r 英雄"
-content = "伤害类型:|r 英雄"
+regex = "攻击：\\|r英雄"
+content = "伤害类型：|r 英雄"
 
 [[rewrite]]
-regex = "盔甲：\\|r 无护甲"
-content = "护甲:|r 无甲"
+regex = "盔甲：\\|r无装甲"
+content = "护甲：|r 无甲"
 
 [[rewrite]]
-regex = "盔甲：\\|r 光"
-content = "护甲:|r 轻型"
+regex = "盔甲：\\|r光"
+content = "护甲：|r轻型"
 
 [[rewrite]]
-regex = "盔甲：\\|r 中型"
-content = "护甲:|r 中型"
+regex = "盔甲：\\|r中等"
+content = "护甲：|r中型"
 
 [[rewrite]]
-regex = "盔甲：\\|r 重"
-content = "护甲:|r 重型"
+regex = "盔甲：\\|r重"
+content = "护甲：|r重型"
 
 [[rewrite]]
-regex = "盔甲：\\|r 英雄"
-content = "护甲:|r 英雄"
+regex = "护甲：\\|r重重型"
+content = "护甲：|r重型"
 
 [[rewrite]]
-regex = "盔甲:\\|r 城防"
-content = "护甲:|r 城甲"
+regex = "盔甲：\\|r英雄"
+content = "护甲：|r英雄"
 
 [[rewrite]]
-regex = "盔甲:\\|r 神圣"
-content = "护甲:|r 神圣"
+regex = "盔甲：\\|r城防"
+content = "护甲：|r城甲"
+
+[[rewrite]]
+regex = "盔甲：\\|r神圣的"
+content = "护甲：|r神圣"
 
 [[translate]]
 regex = "Trains: "

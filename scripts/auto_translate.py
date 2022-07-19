@@ -1,13 +1,19 @@
+"""
+Intro
+-----
+
+This script calls up google translate API to translate strings speicified in map data.
+"""
+
 from abc import ABC, abstractmethod
 import asyncio
-import configparser
 import logging
 import re
-from typing import Any, Callable, Dict, Iterable, List, Tuple, cast
+from typing import Any, Callable, Dict, Generator, List, Tuple, cast
+from dataclasses import dataclass
 import tomli
 from pathlib import Path
 from glob import glob
-from configparser import ConfigParser
 import concurrent.futures
 
 # must use v2, or else we will get pretty bad result
@@ -19,6 +25,8 @@ import platform
 if platform.system() == "Windows":
     asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
 
+TRANSLATION_KEYS = ["Name", "Tip", "Ubertip", "Untip", "Unubertip"] 
+
 logging.basicConfig()
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
@@ -28,6 +36,70 @@ with open(Path(__file__).parent.joinpath("template.toml"), "rb") as f:
 
 F_SID_KEY_RE = re.compile('FdrFJe":"(.*?)"')
 BL_KEY_RE = re.compile('cfb2h":"(.*?)"')
+
+class Strings(ABC):
+    """
+    The strings content that needs translation
+    """
+    @abstractmethod
+    def translate(self) -> Generator[str, str, None]:
+        pass
+
+    @abstractmethod
+    def save(self, out_path: Path):
+        pass
+
+
+class IniLikeStrings(Strings):
+    """
+    *strings.txt files.
+
+    war3 map does not use the standard ini (which disallow collision section names).
+    We have to deal with that on our own.
+    """
+
+    @dataclass
+    class Item:
+        key: str
+        value: str
+
+    @dataclass
+    class Section:
+        name: str
+        content: List['IniLikeStrings.Item']
+
+    def __init__(self, path: Path, translate_keys: List[str] = TRANSLATION_KEYS):
+        self.translate_keys = translate_keys
+        self.sections: List['IniLikeStrings.Section'] = []  # a section is a list of [key, value]
+        with open(path, "r", encoding="utf8") as f:
+            lines = f.readlines()
+        cur_section = None 
+        for line in lines:
+            line = line.strip()
+            if line.startswith("["):
+                section_name = line.strip().strip("[").strip("]")
+                cur_section = self.Section(section_name, [])
+                self.sections.append(cur_section)
+            else:
+                key, value = line.split("=", maxsplit=1)
+                assert cur_section
+                cur_section.content.append(self.Item(key, value))
+        
+    def translate(self) -> Generator[str, str, None]:
+        for sec in self.sections:
+            for item in sec.content:
+                if item.key in self.translate_keys:
+                    logger.debug(f"value before {item.value}")
+                    item.value = yield item.value
+                    assert item.value
+                    logger.debug(f"item value {item.value}")
+
+    def save(self, out_path: Path):
+        with open(out_path, "w", encoding="utf8") as f:
+            for sec in self.sections:
+                f.write(f"[{sec.name}]\n")
+                for item in sec.content:
+                    f.write(f"{item.key}={item.value}\n")
 
 
 class PartTranslator(ABC):
@@ -43,6 +115,7 @@ class GooglePartTranslator(PartTranslator):
 
     async def translate(self, text: str) -> str:
         def do_translate():
+            assert len(text) > 0
             return self.translator.translate(text, "zh-CN", "en").result
 
         return await asyncio.get_running_loop().run_in_executor(
@@ -88,6 +161,9 @@ class TemplatePartTranslator(PartTranslator, TemplateBasedMixin):
         TemplateBasedMixin.__init__(self, "translate", max_workers=max_workers)
 
     async def translate(self, text: str) -> str | None:
+        # spaces only, early return
+        if len(text.strip()) == 0:
+            return text
         return await TemplateBasedMixin.translate(self, text)
 
 
@@ -114,6 +190,7 @@ class MultiPartTranslator:
             # be avoided. Since we are using public API, maybe we should not do that?
             result = None
             for translator in MultiPartTranslator.translation_providers:
+                assert len(text_input) != 0
                 result = await translator.translate(text_input)
                 if result is not None:
                     break
@@ -253,19 +330,10 @@ class ShortcutAdjust:
         return string
 
 
-class TemplateRewritter(TemplateBasedMixin):
-    def __init__(self) -> None:
-        super().__init__("rewrite")
-
-    def rewrite(self, string: str) -> str:
-        return super().rewrite(string)
-
-
 class TranslationPipeline:
     def __init__(self) -> None:
         self.shortcut_adjust = ShortcutAdjust
         self.translator = MultiPartTranslator
-        self.template_rewritter = TemplateRewritter()
 
     async def translate(self, string: str) -> str:
         # Interestingly, the exported ini file got some fields wrapped
@@ -278,89 +346,70 @@ class TranslationPipeline:
         string = string.strip('"')
         string = self.shortcut_adjust.adjust(string)
         string = await self.translator.translate(string)
-        string = self.template_rewritter.rewrite(string)
+        assert string
         return quoting(string)
 
 
 TRANSLATION_PIPELINE = TranslationPipeline()
 
 
-class StringsFile:
+class TranslationDriver:
     def __init__(
-        self, path: Path | str, out_dir: Path | str, translation_keys: Iterable[str]
+        self, path: Path | str, out_dir: Path | str
     ) -> None:
         self.path: Path = path if type(path) is Path else Path(path)
         out_d: Path = out_dir if type(out_dir) is Path else Path(out_dir)
         self.out_path = out_d.joinpath(self.path.name)
-        self.parser = ConfigParser(interpolation=None)
-        self.parser.optionxform = lambda option: option  # type: ignore
-        self.errored = False
-        try:
-            self.parser.read(path, encoding="utf8")
-        except configparser.DuplicateSectionError:
-            self.errored = True
-        self.translation_keys = set(translation_keys)
+        self.strings: Strings = self.open_strings(self.path) 
 
-    async def translate(self):
-        if self.errored:
-            return
+    def open_strings(self, path: Path) -> Strings:
+        if path.suffix != ".txt":
+            raise ValueError("not supported strings file")
+        
+        return IniLikeStrings(path, translate_keys=TRANSLATION_KEYS)
+
+    def translate(self):
         logger.debug(f"begin translating {self.path}")
-        set_task: List[
-            Tuple[str, str, asyncio.Task[str]]
-        ] = []  # (section_name, key, task)
-        for section_name in self.parser.sections():
-            section = self.parser[section_name]
-            for key in section.keys():
-                if key in self.translation_keys:
-                    logger.debug(
-                        f"pending translation({section}[{key}]): {section[key]}"
-                    )
-                    set_task.append(
-                        (
-                            section_name,
-                            key,
-                            asyncio.create_task(
-                                TRANSLATION_PIPELINE.translate(section[key])
-                            ),
-                        )
-                    )
-        for section_name, key, task in set_task:
-            result = await task
-            logger.debug(f"translation {section_name}[{key}] result {result}")
-            self.parser[section_name][key] = result
-
+        translate_procedure = self.strings.translate()
+        string = next(translate_procedure)
+        try:
+            while True:
+                logger.debug(f"begin async translate {string}")
+                result = asyncio.run(TRANSLATION_PIPELINE.translate(string))
+                logger.debug(f"got result {result}")
+                string = translate_procedure.send(result)
+        except StopIteration:
+            ...
+        
     def save(self):
-        if self.errored:
-            logger.error(f"{self.path} is errored, ignoring...")
-            return
-        with open(self.out_path, "w", encoding="utf8") as f:
-            self.parser.write(f)
+        self.strings.save(self.out_path)
 
 
 class MapDir:
-    def __init__(self, path: Path, out_dir: Path) -> None:
+    def __init__(self, path: Path) -> None:
         self.txt_files = glob(f"{path}/**/*strings.txt")
-        self.out_dir = out_dir
+        self.executor = concurrent.futures.ProcessPoolExecutor(8)
 
-    async def translate(self):
-        tasks: List[Tuple[StringsFile, asyncio.Task]] = []
-        for file_path_str in self.txt_files:
-            logger.info(f"Translating {file_path_str}")
-            stringsfile = StringsFile(file_path_str, self.out_dir, ["Name", "Tip", "Ubertip"])
-            tasks.append((stringsfile, asyncio.create_task(stringsfile.translate())))
-        for stringsfile, task in tasks:
-            await task
-            stringsfile.save()
+    @staticmethod
+    def _translate_action(file_path_str: str):
+        logger.info(f"Translating {file_path_str}")
+        driver = TranslationDriver(file_path_str, Path(__file__).parent.parent.joinpath("translate_out"))
+        driver.translate()
+        driver.save()
+
+    def translate(self):
+        for _ in self.executor.map(MapDir._translate_action, self.txt_files):
+            pass
 
 
 mapdir = MapDir(
     Path(__file__).parent.parent.joinpath("map_data"),
-    Path(__file__).parent.parent.joinpath("translate_out")
+    #Path(__file__).parent.parent.joinpath("translate_out")
 )
 
 
 def main():
-    asyncio.run(mapdir.translate())
+    mapdir.translate()
 
 
 if __name__ == "__main__":
