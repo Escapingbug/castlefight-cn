@@ -25,7 +25,15 @@ import platform
 if platform.system() == "Windows":
     asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
 
-TRANSLATION_KEYS = ["Name", "Tip", "Ubertip", "Untip", "Unubertip"] 
+TRANSLATION_KEYS = [
+    "Name",
+    "Tip",
+    "Ubertip",
+    "Untip",
+    "Unubertip",
+    "Bufftip",
+    "Buffubertip",
+]
 
 logging.basicConfig()
 logger = logging.getLogger(__name__)
@@ -37,10 +45,12 @@ with open(Path(__file__).parent.joinpath("template.toml"), "rb") as f:
 F_SID_KEY_RE = re.compile('FdrFJe":"(.*?)"')
 BL_KEY_RE = re.compile('cfb2h":"(.*?)"')
 
+
 class Strings(ABC):
     """
     The strings content that needs translation
     """
+
     @abstractmethod
     def translate(self) -> Generator[str, str, None]:
         pass
@@ -66,14 +76,16 @@ class IniLikeStrings(Strings):
     @dataclass
     class Section:
         name: str
-        content: List['IniLikeStrings.Item']
+        content: List["IniLikeStrings.Item"]
 
     def __init__(self, path: Path, translate_keys: List[str] = TRANSLATION_KEYS):
         self.translate_keys = translate_keys
-        self.sections: List['IniLikeStrings.Section'] = []  # a section is a list of [key, value]
+        self.sections: List[
+            "IniLikeStrings.Section"
+        ] = []  # a section is a list of [key, value]
         with open(path, "r", encoding="utf8") as f:
             lines = f.readlines()
-        cur_section = None 
+        cur_section = None
         for line in lines:
             line = line.strip()
             if line.startswith("["):
@@ -84,7 +96,7 @@ class IniLikeStrings(Strings):
                 key, value = line.split("=", maxsplit=1)
                 assert cur_section
                 cur_section.content.append(self.Item(key, value))
-        
+
     def translate(self) -> Generator[str, str, None]:
         for sec in self.sections:
             for item in sec.content:
@@ -131,9 +143,7 @@ class TemplateBasedMixin:
 
     def setup_translations(self, template_key: str):
         for trans in TEMPLATE.get(template_key) or []:
-            self.translations.append(
-                (re.compile(trans["regex"]), trans["content"])
-            )
+            self.translations.append((re.compile(trans["regex"]), trans["content"]))
 
     @staticmethod
     def translate_zipped(zipped: Tuple[Tuple[re.Pattern, str], str]) -> str | None:
@@ -144,7 +154,9 @@ class TemplateBasedMixin:
             return regex.sub(content, text)
 
     async def translate(self, text: str) -> str | None:
-        results = self.executor.map(TemplateBasedMixin.translate_zipped, zip(self.translations, text))
+        results = self.executor.map(
+            TemplateBasedMixin.translate_zipped, zip(self.translations, text)
+        )
         for result in results:
             if result is not None:
                 return result
@@ -154,7 +166,7 @@ class TemplateBasedMixin:
         for regex, content in self.translations:
             text = regex.sub(content, text)
         return text
-    
+
 
 class TemplatePartTranslator(PartTranslator, TemplateBasedMixin):
     def __init__(self, max_workers: int = 8):
@@ -254,12 +266,16 @@ class MultiPartTranslator:
                 texts_to_translate.append(part[start_idx:])
                 escape_strings.append("|" + part[:start_idx])
             else:
-                raise Exception(f"unsupported escape string found: {'|' + part} whole sentence {string}")
+                raise Exception(
+                    f"unsupported escape string found: {'|' + part} whole sentence {string}"
+                )
             i += 1
         if len(texts_to_translate) > 0:
             text_input = "|".join(texts_to_translate)
             result_tasks.append(
-                asyncio.create_task(MultiPartTranslator.translation_task(text_input, escape_strings))
+                asyncio.create_task(
+                    MultiPartTranslator.translation_task(text_input, escape_strings)
+                )
             )
         result: List[str] = [await task for task in result_tasks]
         return "|n".join(result)
@@ -317,7 +333,10 @@ class ShortcutAdjust:
                 original_word_pieces.append(pre_piece)
             clean_word_pieces.append(each_match.group(1))
             original_word_pieces.append(each_match.group(0))
-            if each_match.end() < len(string) - 1 and string[each_match.end() + 1] != " ":
+            if (
+                each_match.end() < len(string) - 1
+                and string[each_match.end() + 1] != " "
+            ):
                 post_piece = string[each_match.end() :].split(maxsplit=1)[0]
                 clean_word_pieces.append(post_piece)
                 original_word_pieces.append(post_piece)
@@ -325,8 +344,10 @@ class ShortcutAdjust:
             original_word = "".join(original_word_pieces)
             clean_word = "".join(clean_word_pieces)
 
-        # "[]" gives much better result in google translation (avoid semantic problem)
-            string = string.replace(original_word, f"[{each_match.group(0)}] {clean_word} ")
+            # "[]" gives much better result in google translation (avoid semantic problem)
+            string = string.replace(
+                original_word, f"[{each_match.group(0)}] {clean_word} "
+            )
         return string
 
 
@@ -346,7 +367,6 @@ class TranslationPipeline:
         string = string.strip('"')
         string = self.shortcut_adjust.adjust(string)
         string = await self.translator.translate(string)
-        assert string
         return quoting(string)
 
 
@@ -354,18 +374,16 @@ TRANSLATION_PIPELINE = TranslationPipeline()
 
 
 class TranslationDriver:
-    def __init__(
-        self, path: Path | str, out_dir: Path | str
-    ) -> None:
+    def __init__(self, path: Path | str, out_dir: Path | str) -> None:
         self.path: Path = path if type(path) is Path else Path(path)
         out_d: Path = out_dir if type(out_dir) is Path else Path(out_dir)
         self.out_path = out_d.joinpath(self.path.name)
-        self.strings: Strings = self.open_strings(self.path) 
+        self.strings: Strings = self.open_strings(self.path)
 
     def open_strings(self, path: Path) -> Strings:
         if path.suffix != ".txt":
             raise ValueError("not supported strings file")
-        
+
         return IniLikeStrings(path, translate_keys=TRANSLATION_KEYS)
 
     def translate(self):
@@ -380,7 +398,7 @@ class TranslationDriver:
                 string = translate_procedure.send(result)
         except StopIteration:
             ...
-        
+
     def save(self):
         self.strings.save(self.out_path)
 
@@ -393,7 +411,9 @@ class MapDir:
     @staticmethod
     def _translate_action(file_path_str: str):
         logger.info(f"Translating {file_path_str}")
-        driver = TranslationDriver(file_path_str, Path(__file__).parent.parent.joinpath("translate_out"))
+        driver = TranslationDriver(
+            file_path_str, Path(__file__).parent.parent.joinpath("translate_out")
+        )
         driver.translate()
         driver.save()
 
@@ -404,7 +424,7 @@ class MapDir:
 
 mapdir = MapDir(
     Path(__file__).parent.parent.joinpath("map_data"),
-    #Path(__file__).parent.parent.joinpath("translate_out")
+    # Path(__file__).parent.parent.joinpath("translate_out")
 )
 
 
