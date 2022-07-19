@@ -1,15 +1,27 @@
-[[armor]]
-en = "Medium"
-zh = "中甲"
+[[rewrite]]
+regex = "dmg"
+content = "伤害"
 
-[[armor]]
-en = "Light"
-zh = "轻甲"
+[[rewrite]]
+regex = "dps"
+content = "每秒伤害"
 
-[[armor]]
-en = "Heavy"
-zh = "重甲"
+[[rewrite]]
+regex = "rng"
+content = "射程"
 
-[[armor]]
-en = "Unarmored"
-zh = "无甲"
+[[rewrite]]
+regex = "盔甲："
+content = "护甲："
+
+[[rewrite]]
+regex = "火车"
+content = "训练"
+
+[[rewrite]]
+regex = "无装甲"
+content = "无甲"
+
+[[translate]]
+regex = "Trains: "
+content = "训练："

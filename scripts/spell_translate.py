@@ -1,7 +1,8 @@
+from abc import ABC, abstractmethod
 import asyncio
 import logging
 import re
-from typing import Any, Callable, Iterable, List, Tuple
+from typing import Any, Callable, Coroutine, Dict, Iterable, List, Tuple, cast
 import tomli
 from pathlib import Path
 from glob import glob
@@ -21,11 +22,20 @@ logging.basicConfig()
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.DEBUG)
 
+with open(Path(__file__).parent.joinpath("template.toml"), "rb") as f:
+    TEMPLATE: Dict[str, List[Dict[str, str]]] = tomli.load(f)
+
 F_SID_KEY_RE = re.compile('FdrFJe":"(.*?)"')
 BL_KEY_RE = re.compile('cfb2h":"(.*?)"')
 
 
-class AsyncTranslator:
+class PartTranslator(ABC):
+    @abstractmethod
+    async def translate(self, text: str) -> str | None:
+        pass
+
+
+class GooglePartTranslator(PartTranslator):
     def __init__(self, max_workers: int = 8):
         self.executor = concurrent.futures.ThreadPoolExecutor(max_workers=max_workers)
         self.translator = GoogleTranslateV2()
@@ -39,11 +49,40 @@ class AsyncTranslator:
         )
 
 
-translator = AsyncTranslator()
+class TemplatePartTranslator(PartTranslator):
+    def __init__(self, max_workers: int = 8):
+        self.translations: List[Tuple[re.Pattern, str]] = []
+        self.setup_translations()
+
+        self.executor = concurrent.futures.ProcessPoolExecutor(max_workers=max_workers)
+
+    def setup_translations(self):
+        for trans in TEMPLATE.get("translate") or []:
+            self.translations.append(
+                (re.compile(trans["regex"]), trans["content"])
+            )
+
+    @staticmethod
+    def try_match(zipped: Tuple[Tuple[re.Pattern, str], str]):
+        regex = zipped[0][0]
+        content = zipped[0][1]
+        text = zipped[1]
+        if regex.fullmatch(text):
+            return regex.sub(content, text)
+
+    async def translate(self, text: str) -> str | None:
+        results = self.executor.map(TemplatePartTranslator.try_match, zip(self.translations, text))
+        for result in results:
+            if result is not None:
+                return result
 
 
+class MultiPartTranslator:
+    translation_providers: List[PartTranslator] = [
+        TemplatePartTranslator(),
+        GooglePartTranslator(),
+    ]
 
-class GoogleTranslator:
     @staticmethod
     async def translate(string: str) -> str:
         """
@@ -79,7 +118,14 @@ class GoogleTranslator:
             """
             logger.debug(f"translating task translating {text_input}")
             if len(text_input) > 0:
-                result = await translator.translate(text_input)
+                # We can make this concurrent as well. But in that case, API call cannot
+                # be avoided. Since we are using public API, maybe we should not do that?
+                result = None
+                for translator in MultiPartTranslator.translation_providers:
+                    result = await translator.translate(text_input)
+                    if result is not None:
+                        break
+                result = cast(str, result)
             else:
                 result = ""
             translation_result = result.split("|")
@@ -144,18 +190,27 @@ class ShortcutAdjust:
     1. the colored letter is a single letter
     2. the colored letter is not a single token (no space wrapping it)
     """
+
     shortcut_hint_regex = re.compile("\\|c[0-9a-f]{8}([a-zA-Z0-9])\\|r")
 
     @staticmethod
     def not_wrapped_by_space(string: str, start: int, end: int):
-        return start >= 1 and end < len(string) - 1 and (string[start] != ' ' or string[end] != ' ')
+        return (
+            start >= 1
+            and end < len(string) - 1
+            and (string[start] != " " or string[end] != " ")
+        )
 
     @staticmethod
     def find_shortcut_hint(string: str) -> re.Match | None:
         returns = None
         for possible_hint in ShortcutAdjust.shortcut_hint_regex.finditer(string):
-            if ShortcutAdjust.not_wrapped_by_space(string, possible_hint.start(), possible_hint.end()):
-                assert returns is None, f"should not contain two possible shortcut hint: {string}"
+            if ShortcutAdjust.not_wrapped_by_space(
+                string, possible_hint.start(), possible_hint.end()
+            ):
+                assert (
+                    returns is None
+                ), f"should not contain two possible shortcut hint: {string}"
                 returns = possible_hint
         return returns
 
@@ -166,67 +221,65 @@ class ShortcutAdjust:
             return string
         clean_word_pieces = []
         original_word_pieces = []
-        if matched.start() > 1 and string[matched.start() - 1] != ' ':
-            pre_piece = string[:matched.start()].rsplit(maxsplit=1)[1]
+        if matched.start() > 1 and string[matched.start() - 1] != " ":
+            pre_piece = string[: matched.start()].rsplit(maxsplit=1)[1]
             clean_word_pieces.append(pre_piece)
             original_word_pieces.append(pre_piece)
         clean_word_pieces.append(matched.group(1))
         original_word_pieces.append(matched.group(0))
-        if matched.end() < len(string) - 1 and string[matched.end() + 1] != ' ':
-            post_piece = string[matched.end():].split(maxsplit=1)[0]
+        if matched.end() < len(string) - 1 and string[matched.end() + 1] != " ":
+            post_piece = string[matched.end() :].split(maxsplit=1)[0]
             clean_word_pieces.append(post_piece)
             original_word_pieces.append(post_piece)
 
-        original_word = ''.join(original_word_pieces)
-        clean_word = ''.join(clean_word_pieces)
+        original_word = "".join(original_word_pieces)
+        clean_word = "".join(clean_word_pieces)
 
         # "[]" gives much better result in google translation (avoid semantic problem)
         return string.replace(original_word, f"[{matched.group(0)}] {clean_word} ")
 
 
-class TemplateTranslator:
-
+class TemplateRewritter:
     def __init__(self) -> None:
-        with open(Path(__file__).parent.joinpath("template.toml"), "rb") as f:
-            self.template = tomli.load(f)
+        self.rewrites: List[Tuple[re.Pattern, str]] = []
+        for rewrite in TEMPLATE.get("rewrite") or []:
+            self.rewrites.append((re.compile(rewrite["regex"]), rewrite["content"]))
 
-    def translate(self, string: str, key: str) -> str | None:
-        # TODO
-        pass
+    def rewrite(self, string: str) -> str:
+        result = string
+        for (regex, content) in self.rewrites:
+            result = regex.sub(content, result)
+        return result
 
-    def rewrite(self, string: str, key: str) -> str:
-        # TODO
-        pass
 
 class TranslationPipeline:
-
     def __init__(self) -> None:
         self.shortcut_adjust = ShortcutAdjust
-        self.google_translator = GoogleTranslator
-        self.template_translator = TemplateTranslator()
+        self.translator = MultiPartTranslator
+        self.template_translator = TemplateRewritter()
 
-    async def translate(self, string: str, key: str) -> str:
+    async def translate(self, string: str) -> str:
         # Interestingly, the exported ini file got some fields wrapped
         # with quotes but some not.
         # During translation, the quotes are being respected,
         # so we deal with that by stripping then adding in the end.
-        quoting: Callable[[str], str] = (lambda x: f'"{x}"') if string[0] == '"' else lambda x: x
+        quoting: Callable[[str], str] = (
+            (lambda x: f'"{x}"') if string[0] == '"' else lambda x: x
+        )
         string = string.strip('"')
         string = self.shortcut_adjust.adjust(string)
-        result = self.template_translator.translate(string, key)
-        if result:
-            quoting(result)
-        string = self.template_translator.rewrite(string, key)
-        logger.debug(f"adjusted {string}")
-        result = await self.google_translator.translate(string)
-        return quoting(result)
-        
-        
+        string = await self.translator.translate(string)
+        string = self.template_translator.rewrite(string)
+        return quoting(string)
+
 
 TRANSLATION_PIPELINE = TranslationPipeline()
 
+
 class StringsFile:
-    def __init__(self, path: Path | str, out_dir: Path | str, translation_keys: Iterable[str]) -> None:
+    def __init__(
+        self, path: Path | str, out_dir: Path | str, translation_keys: Iterable[str]
+    ) -> None:
         self.path: Path = path if type(path) is Path else Path(path)
         out_d: Path = out_dir if type(out_dir) is Path else Path(out_dir)
         self.out_path = out_d.joinpath(self.path.name)
@@ -251,7 +304,9 @@ class StringsFile:
                         (
                             section_name,
                             key,
-                            asyncio.create_task(TRANSLATION_PIPELINE.translate(section[key], key)),
+                            asyncio.create_task(
+                                TRANSLATION_PIPELINE.translate(section[key])
+                            ),
                         )
                     )
         for section_name, key, task in set_task:
@@ -269,12 +324,15 @@ class MapDir:
         self.txt_files = glob(f"{path}/**/*.txt")
 
 
-template = Template(Path(__file__).parent.joinpath("template.toml"))
 mapdir = MapDir(Path(__file__).parent.parent.joinpath("map_data"))
 
 
 def main():
-    test = StringsFile("./map_data/units/humanunitstrings.txt", "./translate_out", ["Name", "Ubertip", "Tip"])
+    test = StringsFile(
+        "./map_data/units/humanunitstrings.txt",
+        "./translate_out",
+        ["Name", "Ubertip", "Tip"],
+    )
     asyncio.run(test.translate())
     test.save()
     """
