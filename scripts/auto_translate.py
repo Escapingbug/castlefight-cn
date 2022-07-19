@@ -105,6 +105,7 @@ class IniLikeStrings(Strings):
                     item.value = yield item.value
                     assert item.value
                     logger.debug(f"item value {item.value}")
+        logger.debug(f"strings translate done")
 
     def save(self, out_path: Path):
         with open(out_path, "w", encoding="utf8") as f:
@@ -386,18 +387,18 @@ class TranslationDriver:
 
         return IniLikeStrings(path, translate_keys=TRANSLATION_KEYS)
 
-    def translate(self):
+    async def translate(self):
         logger.debug(f"begin translating {self.path}")
         translate_procedure = self.strings.translate()
         string = next(translate_procedure)
         try:
             while True:
                 logger.debug(f"begin async translate {string}")
-                result = asyncio.run(TRANSLATION_PIPELINE.translate(string))
+                result = await TRANSLATION_PIPELINE.translate(string)
                 logger.debug(f"got result {result}")
                 string = translate_procedure.send(result)
         except StopIteration:
-            ...
+            logger.debug(f"now stop iteration")
 
     def save(self):
         self.strings.save(self.out_path)
@@ -406,20 +407,23 @@ class TranslationDriver:
 class MapDir:
     def __init__(self, path: Path) -> None:
         self.txt_files = glob(f"{path}/**/*strings.txt")
-        self.executor = concurrent.futures.ProcessPoolExecutor(8)
 
     @staticmethod
-    def _translate_action(file_path_str: str):
+    async def _translate_action(file_path_str: str):
         logger.info(f"Translating {file_path_str}")
         driver = TranslationDriver(
             file_path_str, Path(__file__).parent.parent.joinpath("translate_out")
         )
-        driver.translate()
+        await driver.translate()
+        logger.debug(f"driver translate done")
         driver.save()
 
-    def translate(self):
-        for _ in self.executor.map(MapDir._translate_action, self.txt_files):
-            pass
+    async def translate(self):
+        tasks = []
+        for f in self.txt_files:
+            tasks.append(asyncio.create_task(MapDir._translate_action(f)))
+        for task in tasks:
+            await task
 
 
 mapdir = MapDir(
@@ -429,7 +433,7 @@ mapdir = MapDir(
 
 
 def main():
-    mapdir.translate()
+    asyncio.run(mapdir.translate())
 
 
 if __name__ == "__main__":
