@@ -1,5 +1,6 @@
 from abc import ABC, abstractmethod
 import asyncio
+import configparser
 import logging
 import re
 from typing import Any, Callable, Coroutine, Dict, Iterable, List, Tuple, cast
@@ -20,7 +21,7 @@ if platform.system() == "Windows":
 
 logging.basicConfig()
 logger = logging.getLogger(__name__)
-logger.setLevel(logging.DEBUG)
+logger.setLevel(logging.INFO)
 
 with open(Path(__file__).parent.joinpath("template.toml"), "rb") as f:
     TEMPLATE: Dict[str, List[Dict[str, str]]] = tomli.load(f)
@@ -49,21 +50,20 @@ class GooglePartTranslator(PartTranslator):
         )
 
 
-class TemplatePartTranslator(PartTranslator):
-    def __init__(self, max_workers: int = 8):
+class TemplateBasedMixin:
+    def __init__(self, template_key: str, max_workers: int = 8):
         self.translations: List[Tuple[re.Pattern, str]] = []
-        self.setup_translations()
-
         self.executor = concurrent.futures.ProcessPoolExecutor(max_workers=max_workers)
+        self.setup_translations(template_key=template_key)
 
-    def setup_translations(self):
-        for trans in TEMPLATE.get("translate") or []:
+    def setup_translations(self, template_key: str):
+        for trans in TEMPLATE.get(template_key) or []:
             self.translations.append(
                 (re.compile(trans["regex"]), trans["content"])
             )
 
     @staticmethod
-    def try_match(zipped: Tuple[Tuple[re.Pattern, str], str]):
+    def translate_zipped(zipped: Tuple[Tuple[re.Pattern, str], str]) -> str | None:
         regex = zipped[0][0]
         content = zipped[0][1]
         text = zipped[1]
@@ -71,10 +71,44 @@ class TemplatePartTranslator(PartTranslator):
             return regex.sub(content, text)
 
     async def translate(self, text: str) -> str | None:
-        results = self.executor.map(TemplatePartTranslator.try_match, zip(self.translations, text))
+        results = self.executor.map(TemplateBasedMixin.translate_zipped, zip(self.translations, text))
         for result in results:
             if result is not None:
                 return result
+
+    def rewrite(self, text: str) -> str:
+        # rewrite can only be sequential
+        for regex, content in self.translations:
+            text = regex.sub(content, text)
+        return text
+    
+
+class TemplatePartTranslator(PartTranslator, TemplateBasedMixin):
+    def __init__(self, max_workers: int = 8):
+        TemplateBasedMixin.__init__(self, "translate", max_workers=max_workers)
+
+    async def translate(self, text: str) -> str | None:
+        return await TemplateBasedMixin.translate(self, text)
+
+
+class TemplatePreRewritter(TemplateBasedMixin):
+    """
+    Rewrite but works on direct source language, based
+    on template patterns.
+
+    This should work for known property and pattern such as
+    armor or attack type.
+    """
+
+    def __init__(self):
+        super().__init__("pre_rewrite")
+
+    def rewrite(self, text: str) -> str:
+        """
+        :param text: the raw input text (escape strings inside)
+        :returns: rewritten result
+        """
+        return super().rewrite(text)
 
 
 class MultiPartTranslator:
@@ -82,6 +116,40 @@ class MultiPartTranslator:
         TemplatePartTranslator(),
         GooglePartTranslator(),
     ]
+
+    @staticmethod
+    async def translation_task(text_input: str, escape_strings: List[str]) -> str:
+        """
+        translates the text_input which contains escape_string to the final result
+        :param text_input: the input to translate, should contain "|" s as separators,
+            such as: AAAA|BBBB
+        :param escape_strings: the escape strings that behind each "|" separator,
+            an example would be ["|c0000ffff"]
+        :returns: the translated string with correct escape strings inserted,
+            like AAAA|c0000ffffBBBB
+        """
+        logger.debug(f"translating task translating {text_input}")
+        if len(text_input) > 0:
+            # We can make this concurrent as well. But in that case, API call cannot
+            # be avoided. Since we are using public API, maybe we should not do that?
+            result = None
+            for translator in MultiPartTranslator.translation_providers:
+                result = await translator.translate(text_input)
+                if result is not None:
+                    break
+            result = cast(str, result)
+        else:
+            result = ""
+        translation_result = result.split("|")
+        assert (
+            len(translation_result) == len(escape_strings) + 1
+        ), f"incorrect translation result: {translation_result} escape string {escape_strings} {text_input}"
+        # merge escape_strings back
+        final_result = [translation_result[0]]
+        for i in range(1, len(translation_result)):
+            final_result.append(escape_strings[i - 1])
+            final_result.append(translation_result[i])
+        return "".join(final_result)
 
     @staticmethod
     async def translate(string: str) -> str:
@@ -105,40 +173,6 @@ class MultiPartTranslator:
         # less semantic-influencing separator.
 
         result_tasks: List[asyncio.Task[Any]] = []
-
-        async def translation_task(text_input: str, escape_strings: List[str]) -> str:
-            """
-            translates the text_input which contains escape_string to the final result
-            :param text_input: the input to translate, should contain "|" s as separators,
-                such as: AAAA|BBBB
-            :param escape_strings: the escape strings that behind each "|" separator,
-                an example would be ["|c0000ffff"]
-            :returns: the translated string with correct escape strings inserted,
-                like AAAA|c0000ffffBBBB
-            """
-            logger.debug(f"translating task translating {text_input}")
-            if len(text_input) > 0:
-                # We can make this concurrent as well. But in that case, API call cannot
-                # be avoided. Since we are using public API, maybe we should not do that?
-                result = None
-                for translator in MultiPartTranslator.translation_providers:
-                    result = await translator.translate(text_input)
-                    if result is not None:
-                        break
-                result = cast(str, result)
-            else:
-                result = ""
-            translation_result = result.split("|")
-            assert (
-                len(translation_result) == len(escape_strings) + 1
-            ), f"incorrect translation result: {translation_result} escape string {escape_strings}"
-            # merge escape_strings back
-            final_result = [translation_result[0]]
-            for i in range(1, len(translation_result)):
-                final_result.append(escape_strings[i - 1])
-                final_result.append(translation_result[i])
-            return "".join(final_result)
-
         escape_strings = (
             []
         )  # for |r and |c, record the exact escape string of each inserted "|"
@@ -150,7 +184,7 @@ class MultiPartTranslator:
                 text_input = "|".join(texts_to_translate)
                 result_tasks.append(
                     asyncio.create_task(
-                        translation_task(
+                        MultiPartTranslator.translation_task(
                             text_input=text_input, escape_strings=escape_strings
                         )
                     )
@@ -163,12 +197,12 @@ class MultiPartTranslator:
                 texts_to_translate.append(part[start_idx:])
                 escape_strings.append("|" + part[:start_idx])
             else:
-                raise Exception(f"unsupported escape string found: {'|' + part}")
+                raise Exception(f"unsupported escape string found: {'|' + part} whole sentence {string}")
             i += 1
         if len(texts_to_translate) > 0:
             text_input = "|".join(texts_to_translate)
             result_tasks.append(
-                asyncio.create_task(translation_task(text_input, escape_strings))
+                asyncio.create_task(MultiPartTranslator.translation_task(text_input, escape_strings))
             )
         result: List[str] = [await task for task in result_tasks]
         return "|n".join(result)
@@ -202,61 +236,57 @@ class ShortcutAdjust:
         )
 
     @staticmethod
-    def find_shortcut_hint(string: str) -> re.Match | None:
-        returns = None
+    def find_shortcut_hints(string: str) -> List[re.Match]:
+        returns = []
         for possible_hint in ShortcutAdjust.shortcut_hint_regex.finditer(string):
             if ShortcutAdjust.not_wrapped_by_space(
                 string, possible_hint.start(), possible_hint.end()
             ):
-                assert (
-                    returns is None
-                ), f"should not contain two possible shortcut hint: {string}"
-                returns = possible_hint
+                returns.append(possible_hint)
         return returns
 
     @staticmethod
     def adjust(string: str) -> str:
-        matched = ShortcutAdjust.find_shortcut_hint(string)
-        if matched is None:
+        matched = ShortcutAdjust.find_shortcut_hints(string)
+        if len(matched) == 0:
             return string
-        clean_word_pieces = []
-        original_word_pieces = []
-        if matched.start() > 1 and string[matched.start() - 1] != " ":
-            pre_piece = string[: matched.start()].rsplit(maxsplit=1)[1]
-            clean_word_pieces.append(pre_piece)
-            original_word_pieces.append(pre_piece)
-        clean_word_pieces.append(matched.group(1))
-        original_word_pieces.append(matched.group(0))
-        if matched.end() < len(string) - 1 and string[matched.end() + 1] != " ":
-            post_piece = string[matched.end() :].split(maxsplit=1)[0]
-            clean_word_pieces.append(post_piece)
-            original_word_pieces.append(post_piece)
 
-        original_word = "".join(original_word_pieces)
-        clean_word = "".join(clean_word_pieces)
+        for each_match in matched:
+            clean_word_pieces = []
+            original_word_pieces = []
+            if each_match.start() > 1 and string[each_match.start() - 1] != " ":
+                pre_piece = string[: each_match.start()].rsplit(maxsplit=1)[-1]
+                clean_word_pieces.append(pre_piece)
+                original_word_pieces.append(pre_piece)
+            clean_word_pieces.append(each_match.group(1))
+            original_word_pieces.append(each_match.group(0))
+            if each_match.end() < len(string) - 1 and string[each_match.end() + 1] != " ":
+                post_piece = string[each_match.end() :].split(maxsplit=1)[0]
+                clean_word_pieces.append(post_piece)
+                original_word_pieces.append(post_piece)
+
+            original_word = "".join(original_word_pieces)
+            clean_word = "".join(clean_word_pieces)
 
         # "[]" gives much better result in google translation (avoid semantic problem)
-        return string.replace(original_word, f"[{matched.group(0)}] {clean_word} ")
+            string = string.replace(original_word, f"[{each_match.group(0)}] {clean_word} ")
+        return string
 
 
-class TemplateRewritter:
+class TemplateRewritter(TemplateBasedMixin):
     def __init__(self) -> None:
-        self.rewrites: List[Tuple[re.Pattern, str]] = []
-        for rewrite in TEMPLATE.get("rewrite") or []:
-            self.rewrites.append((re.compile(rewrite["regex"]), rewrite["content"]))
+        super().__init__("rewrite")
 
     def rewrite(self, string: str) -> str:
-        result = string
-        for (regex, content) in self.rewrites:
-            result = regex.sub(content, result)
-        return result
+        return super().rewrite(string)
 
 
 class TranslationPipeline:
     def __init__(self) -> None:
         self.shortcut_adjust = ShortcutAdjust
         self.translator = MultiPartTranslator
-        self.template_translator = TemplateRewritter()
+        self.template_pre_rewritter = TemplatePreRewritter()
+        self.template_rewritter = TemplateRewritter()
 
     async def translate(self, string: str) -> str:
         # Interestingly, the exported ini file got some fields wrapped
@@ -267,9 +297,10 @@ class TranslationPipeline:
             (lambda x: f'"{x}"') if string[0] == '"' else lambda x: x
         )
         string = string.strip('"')
+        string = self.template_pre_rewritter.rewrite(string)
         string = self.shortcut_adjust.adjust(string)
         string = await self.translator.translate(string)
-        string = self.template_translator.rewrite(string)
+        string = self.template_rewritter.rewrite(string)
         return quoting(string)
 
 
@@ -285,10 +316,16 @@ class StringsFile:
         self.out_path = out_d.joinpath(self.path.name)
         self.parser = ConfigParser(interpolation=None)
         self.parser.optionxform = lambda option: option  # type: ignore
-        self.parser.read(path, encoding="utf8")
+        self.errored = False
+        try:
+            self.parser.read(path, encoding="utf8")
+        except configparser.DuplicateSectionError:
+            self.errored = True
         self.translation_keys = set(translation_keys)
 
     async def translate(self):
+        if self.errored:
+            return
         logger.debug(f"begin translating {self.path}")
         set_task: List[
             Tuple[str, str, asyncio.Task[str]]
@@ -315,31 +352,37 @@ class StringsFile:
             self.parser[section_name][key] = result
 
     def save(self):
+        if self.errored:
+            logger.error(f"{self.path} is errored, ignoring...")
+            return
         with open(self.out_path, "w", encoding="utf8") as f:
             self.parser.write(f)
 
 
 class MapDir:
-    def __init__(self, path: Path) -> None:
-        self.txt_files = glob(f"{path}/**/*.txt")
+    def __init__(self, path: Path, out_dir: Path) -> None:
+        self.txt_files = glob(f"{path}/**/*strings.txt")
+        self.out_dir = out_dir
+
+    async def translate(self):
+        tasks: List[Tuple[StringsFile, asyncio.Task]] = []
+        for file_path_str in self.txt_files:
+            logger.info(f"Translating {file_path_str}")
+            stringsfile = StringsFile(file_path_str, self.out_dir, ["Name", "Tip", "Ubertip"])
+            tasks.append((stringsfile, asyncio.create_task(stringsfile.translate())))
+        for stringsfile, task in tasks:
+            await task
+            stringsfile.save()
 
 
-mapdir = MapDir(Path(__file__).parent.parent.joinpath("map_data"))
+mapdir = MapDir(
+    Path(__file__).parent.parent.joinpath("map_data"),
+    Path(__file__).parent.parent.joinpath("translate_out")
+)
 
 
 def main():
-    test = StringsFile(
-        "./map_data/units/humanunitstrings.txt",
-        "./translate_out",
-        ["Name", "Ubertip", "Tip"],
-    )
-    asyncio.run(test.translate())
-    test.save()
-    """
-    for sec in test.parser.sections():
-        section = test.parser[sec]
-        print(dict(section.items()))
-    """
+    asyncio.run(mapdir.translate())
 
 
 if __name__ == "__main__":

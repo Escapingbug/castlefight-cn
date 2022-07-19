@@ -15,12 +15,72 @@ regex = "盔甲："
 content = "护甲："
 
 [[rewrite]]
+regex = "逃避"
+content = "闪避"
+
+[[rewrite]]
+regex = "意见反馈"
+content = "反馈"
+
+[[rewrite]]
+regex = "有翼的蛇"
+content = "翼蛇"
+
+[[rewrite]]
 regex = "火车"
 content = "训练"
 
-[[rewrite]]
-regex = "无装甲"
-content = "无甲"
+[[pre_rewrite]]
+regex = "Attack:|r Magic"
+content = "伤害类型:|r 魔法"
+
+[[pre_rewrite]]
+regex = "Attack:|r Normal"
+content = "伤害类型:|r 普通"
+
+[[pre_rewrite]]
+regex = "Attack:|r Pierce"
+content = "伤害类型:|r 穿刺"
+
+[[pre_rewrite]]
+regex = "Attack:|r Siege"
+content = "伤害类型:|r 攻城"
+
+[[pre_rewrite]]
+regex = "Attack:|r Chaos"
+content = "伤害类型:|r 混乱"
+
+[[pre_rewrite]]
+regex = "Attack:|r Hero"
+content = "伤害类型:|r 英雄"
+
+[[pre_rewrite]]
+regex = "Armor:|r Unarmored"
+content = "护甲:|r 无甲"
+
+[[pre_rewrite]]
+regex = "Armor:|r Light"
+content = "护甲:|r 轻型"
+
+[[pre_rewrite]]
+regex = "Armor:|r Medium"
+content = "护甲:|r 中型"
+
+[[pre_rewrite]]
+regex = "Armor:|r Heavy"
+content = "护甲:|r 重型"
+
+[[pre_rewrite]]
+regex = "Armor:|r Hero"
+content = "护甲:|r 英雄"
+
+[[pre_rewrite]]
+regex = "Armor:|r Fortified"
+content = "护甲:|r 城甲"
+
+[[pre_rewrite]]
+regex = "Armor:|r Divine"
+content = "护甲:|r 神圣"
 
 [[translate]]
 regex = "Trains: "

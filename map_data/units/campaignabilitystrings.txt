@@ -1,71 +1,71 @@
 [ANha]
-Name=采集
-Tip=开采
-Ubertip="从金矿中开采黄金并从树木中收获木材"
-Untip=R|cffffcc00e|r送回资源
-Unubertip="将携带的资源归还到最近的潮汐神殿"
+Name=Harvest
+Tip=|cffffcc00G|rather
+Ubertip="Mines gold from gold mines and harvests lumber from trees."
+Untip=R|cffffcc00e|rturn Resources
+Unubertip="Return the carried resources to the nearest Temple of the Tides."
 Hotkey=G
 Unhotkey=E
 [ANpa]
-Name=寄生虫
-Tip=寄生(|cffffcc00R|r)
-Ubertip="用致命的寄生虫感染目标敌方单位，每秒造成 <ANpa,DataA1> 伤害，持续 <ANpa,Dur1> 秒。如果受影响的单位在寄生虫的影响下死亡，则会从其尸体中生成一个小型仆从"
-Untip="|cffc3dbff右键单击以激活自动施法|r"
-Unubertip="|cffc3dbff右键单击以禁用自动施法|r"
+Name=Parasite
+Tip=Pa|cffffcc00r|rasite
+Ubertip="Afflicts a target enemy unit with a deadly parasite that deals <ANpa,DataA1> damage per second for <ANpa,Dur1> seconds. If the afflicted unit dies while under the effect of Parasite, a minor minion will spawn from its corpse."
+Untip="|cffc3dbffRight-click to activate auto-casting.|r"
+Unubertip="|cffc3dbffRight-click to deactivate auto-casting.|r"
 Hotkey=R
 Unhotkey=R
 [BNpa]
-Bufftip="寄生虫"
-Buffubertip="这个单位被寄生虫感染了；它会随着时间的推移受到伤害，如果它在受折磨的情况下死亡，则会从它的尸体中生成一个仆从。"
+Bufftip="Parasite"
+Buffubertip="This unit has been inflicted with a parasite; it will take damage over time, and if it dies while still afflicted, a minion will spawn from its corpse."
 [ANcl]
-Name=道具
-Tip=道具(|cffffcc00C|r)
-Ubertip="引导强大的守护魔法。"
+Name=Channel
+Tip=|cffffcc00C|rhannel
+Ubertip="Channels powerful warding magic."
 Hotkey=C
 [IBA8]
-Name=道具
-Tip="修复符文"
-Ubertip="修理工人附近的建筑物。与其他符文和珊瑚雕像叠加。"
+Name=Channel
+Tip="Rune of Repair"
+Ubertip="Repairs buildings near the worker. Stacks with other Runes and Coral Statues."
 Hotkey=
 [IBA5]
-Name=道具
-Tip="守护卷轴"
-Ubertip="使用时，该卷轴可以治疗 400 点生命值、200 点法力值，并在 30 秒内为较大区域内的所有友军单位提供 8 点额外护甲"
+Name=Channel
+Tip="Scroll of Stone"
+Ubertip="When used, the scroll heals 400 hitpoints, 200 mana and gives 8 bonus armor for 30 seconds to all allied units in a huge area."
 Hotkey=
 [IBA4]
-Name=道具
-Tip="奶酪"
-Ubertip="允许建造额外的传说建筑"
+Name=Channel
+Tip="Cheese"
+Ubertip="Allowing you to build one more legendary structure."
 Hotkey=
 [IBA7]
-Name=道具
-Tip="爆破法杖"
-Ubertip="每秒向附近的随机敌人发射一枚魔法飞弹。飞弹造成 60 点法术伤害。"
+Name=Channel
+Tip="Blast Staff"
+Ubertip="Launches one magic projectile per second at a random nearby enemy. Projectiles deal 60 spell damage."
 Hotkey=
 [IBA6]
-Name=道具
-Tip="战争号角"
-Ubertip="使所有友方单位的移动速度提高 15%，攻击速度提高 30%"
+Name=Channel
+Tip="Drum'n'Bass Bassline Generator"
+Ubertip="Increases the movementspeed of all friendly units by 15% and their attackspeed by 30%."
 Hotkey=
 [IBA1]
 Name=Channel
-Tip="四倍伤害"
-Ubertip="30秒内对所有友方单位造成的伤害提高300%。"
+Tip="Quad Damage"
+Ubertip="Increases the damage of all allied units by 300% for 30 seconds."
 Hotkey=
 [IBA0]
 Name=Channel
-Tip="两倍伤害"
-Ubertip="使所有友方单位的伤害提高 100%，持续 30 秒。"
+Tip="Double Damage"
+Ubertip="Increases the damage of all allied units by 100% for 30 seconds."
 Hotkey=
 [IBA3]
 Name=Channel
-Tip="战鼓"
-Ubertip="给予所有友军单位 +33% 伤害。"
+Tip="Drum'n'Bass Bass Drums"
+Ubertip="Gives all allied units +33% damage."
 Hotkey=
 [IBA2]
 Name=Channel
-Tip="闪电之球"
-Ubertip="允许您的工人每分钟向目标敌方单位发射一次链式闪电。闪电链击中 10 个目标，对第一个目标造成 1000 点伤害。"
+Tip="Orb of Lightning"
+Ubertip="Allows your worker to fire a chainlightning at target enemy unit once every minute. The chainlightning hits 10 targets, dealing 1000 damage to the first target."
 Hotkey=
 [A0DZ]
 Name=Channel
@@ -94,8 +94,8 @@ Ubertip="Channels powerful warding magic."
 Hotkey=C
 [A0EO]
 Name=Channel
-Tip="取消"
-Ubertip="取消所有单位训练"
+Tip="Cancel"
+Ubertip="Cancels all ongoing recruitment processes."
 Hotkey=C
 [A0CV]
 Name="f_ranged"
@@ -104,73 +104,73 @@ Ubertip="Channels powerful warding magic."
 Hotkey=C
 [A0DD]
 Name=Channel
-Tip="|cffFFFF00选择混乱军团|r"
-Ubertip="混乱大军召唤可怕的恶魔并使用破坏性魔法击败他们的敌人。混乱没有攻城单位，但有很多具有混乱伤害的强力单位。混乱没有塔！"
+Tip="|cffFFFF00Choose Chaos Legion|r"
+Ubertip="The Forces of Chaos summon horrible demons and use destructive magic to defeat their enemies. Chaos has no siege unit, but many strong units with chaos damage. Chaos has NO TOWER!"
 Hotkey=C
 [A0DI]
 Name=Channel
-Tip="|cffFFD900选择娜迦派系|r"
-Ubertip="娜迦拥有高于平均水平的强大单位，具有很高的生命值恢复。此外，他们还可以使用许多昂贵的特殊建筑。但请注意，娜迦没有塔！"
+Tip="|cffFFD900Choose Naga Faction|r"
+Ubertip="The Nagas have above average powerful units with a high hitpoint regeneration. In addition many expensive special buildings are available to them. But note that this race has NO TOWERS!"
 Hotkey=C
 [A0DJ]
 Name=Channel
-Tip="|cffFFD900选择北部王国|r"
-Ubertip="北境生物团结一致，反对所有想要入侵他们心爱的冰冷平原和山脉的人。他们使用强大的冰冻魔法。北境人可以用令人毛骨悚然的溅射塔保卫他们的建筑物。"
+Tip="|cffFFD900Choose Northern Realms|r"
+Ubertip="The nordic creatures stand united against everyone who wants to invade their beloved icy plains and mountains. They use strong freezing and chilling magic. Nordics can defend their buildings with a chilling splash tower."
 Hotkey=C
 [A0DK]
 Name=Channel
-Tip="|cffFFD900选择暗夜精灵|r"
-Ubertip="暗夜精灵从精灵联盟中分裂出来，为他们的女神艾露恩而战。他们是脆弱的生物，但他们知道如何躲避敌人的打击并保护自己免受有害魔法的伤害。他们有一座反馈塔。"
+Tip="|cffFFD900Choose Night Elves|r"
+Ubertip="Night Elfs have split from the Elven Union and fight on their own for their goddess Elune. They are fragile creatures but they know how to evade enemies blows and protect themselves from harmful magic. They have a tower with feedback."
 Hotkey=C
 [A0DL]
 Name=Channel
-Tip="|cffFFD900选择亡灵部队|r"
-Ubertip="亡灵部队使用死灵魔法使死去的单位复活。他们给敌人带来死亡和疾病。亡灵建造者能够建造一座幽灵塔来保卫你的基地。"
+Tip="|cffFFD900Choose the Undead Forces|r"
+Ubertip="Undead Forces use necromantic magic to reanimate dead units. They bring death and disease to their enemies. An undead builder is able to construct a spirit tower to defend your base."
 Hotkey=C
 [A0DE]
 Name=Channel
-Tip="|cffFFD900选择精灵联盟|r"
-Ubertip="精灵种族聚集在一起保卫他们的领地。精灵使用强大的魔法来削弱敌人并帮助友方单位。他们有一种相当不错的攻城武器和一座带有多重射击的低射程塔。"
+Tip="|cffFFD900Choose the Elven Union|r"
+Ubertip="The elven races have gathered to defend their realms. Elves use strong magic to weaken enemies and aid friendly units. They've got a pretty good siege weapon and a low ranged tower with multishot."
 Hotkey=C
 [A0DF]
 Name=Channel
-Tip="|cffFFD900选择堕落集团|r"
-Ubertip="这些曾经友好的生物被邪恶的恶魔腐蚀，变成了黑暗的爪牙。他们使用黑暗魔法来影响他们的敌人，并且可以建造一座具有溅射伤害的塔。"
+Tip="|cffFFD900Choose Corrupted Ones Conglomerate|r"
+Ubertip="Corrupted by evil demons, these former friendly creatures have turned into minions of darkness. They use dark magic to influence their enemies and can build a tower with splash damage."
 Hotkey=C
 [A0DG]
 Name=Channel
-Tip="|cffFFD900选择人类联盟|r"
-Ubertip="人类使用许多廉价单位来超越敌人。他们可以使用大炮摧毁敌人的基地，而无需直接攻击它。这个种族有一个基本的防御塔。"
+Tip="|cffFFD900Choose Human Alliance|r"
+Ubertip="Humans use many cheap units to overrun the enemy. They can use artillery to demolish the enemy base without having to attack it directly. This race has a basic defense tower."
 Hotkey=C
 [A0DH]
 Name=Channel
-Tip="|cffFFD900选择兽人部落|r"
-Ubertip="兽人部落训练强悍的战士并用萨满魔法支持他们。他们的斧头大师在整个战场上都令人恐惧。兽人可以使用防空塔。"
+Tip="|cffFFD900Choose the Orcish Horde|r"
+Ubertip="The Orcish Horde trains tough fighters and supports them with shamanic magic. Their axe masters are feared all over the battlefield. An anti-air tower is available to Orcs."
 Hotkey=C
 [A0DQ]
 Name=Channel
-Tip="上一页"
-Ubertip="切到上一页"
+Tip="Previous"
+Ubertip="Previous page."
 Hotkey=C
 [A0DR]
 Name=Channel
-Tip="|cffFFD900随机种族|r"
-Ubertip="选择随机种族"
+Tip="|cffFFD900Random Race|r"
+Ubertip="You will get a random race."
 Hotkey=C
 [A0DS]
-Name="基础建筑"
+Name="Elemental Building"
 Tip=|cffffcc00C|rhannel
 Ubertip="Channels powerful warding magic."
 Hotkey=C
 [A0DM]
 Name=Channel
-Tip="|cffFFD900选择机械同盟|r"
-Ubertip="聪明的地精修补匠和机械师聚集在一起组建他们自己的军队！他们的单位有大量的溅射伤害和高护甲，但缺乏远程和魔法攻击。他们有一个弹跳攻击的不错的塔。"
+Tip="|cffFFD900Choose Mech Coalition|r"
+Ubertip="Clever goblin tinkers and machinists have gathered to assemble their own army! Their units have a lot of splash damage and high armor but lack ranged and magic attacks. They have a good tower with a bouncing attack."
 Hotkey=C
 [A0DN]
 Name=Channel
-Tip="|cffFFD900选择自然力量|r"
-Ubertip="大自然的力量本身被召唤为他们的主人而战。自然种族专注于强大的单位和治疗增益，比普通种族稍微贵一些，但更好。"
+Tip="|cffFFD900Choose Nature Force|r"
+Ubertip="The forces of Nature itself are called to fight for their masters. Specializing in strong units and healing buffs, the Nature Race is slightly more expensive but better than the average race."
 Hotkey=C
 [A0E0]
 Name=Channel
@@ -179,13 +179,13 @@ Ubertip="Channels powerful warding magic."
 Hotkey=C
 [A0DO]
 Name=Channel
-Tip="|cffFFD900选择元素宇宙|r"
-Ubertip="元素是最古老的种族，自宇宙出现以来就存在。它的单位非常强大，但也很昂贵。元素使用元素的控制来摧毁它的敌人和强化盟友的魔法。这是一种独特的种族，可以减少其单位的建造时间。有防御塔。"
+Tip="|cffFFD900Choose Elementals' Universe|r"
+Ubertip="Elementals is the eldest race and exists since universe  appeared. Its units are pretty strong but also expensive. Elementals use control of elements for destroying its enemies and reinforcement magic for allies. This is the unique race that can decrease build time for its units. Has defense tower."
 Hotkey=C
 [A0DP]
 Name=Channel
-Tip="下一页"
-Ubertip="切到下一页"
+Tip="Next"
+Ubertip="Next page."
 Hotkey=C
 [A0C5]
 Name="SpcTakeDmg"
@@ -309,8 +309,8 @@ Ubertip="Channels powerful warding magic."
 Hotkey=C
 [A0GL]
 Name="Desert race"
-Tip="|cffFFD900选择沙漠部族|r"
-Ubertip="沙漠居民使用强大的生物和神秘的仪式来迷惑和战胜它的敌人。"
+Tip="|cffFFD900Choose Desert Plains|r"
+Ubertip="The Dwellers of Desert use mighty creatures and misterious rituals to confuse and overcome its enemies."
 Hotkey=C
 [A0GS]
 Name="f_revived"
@@ -329,8 +329,8 @@ Buffubertip="This unit has been inflicted with a parasite; it will take damage o
 Bufftip=Targeted
 Buffubertip=This unit is targeted by a spell
 [B00H]
-Bufftip=双倍伤害
-Buffubertip=这个单位正在造成十分可怕的伤害。
+Bufftip=Double Damage
+Buffubertip=This unit is dealing freaking wicked damage.
 [B00I]
-Bufftip=四倍伤害
-Buffubertip=这他妈？！
+Bufftip=Quad Damage
+Buffubertip=WTF?!
