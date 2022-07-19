@@ -3,7 +3,7 @@ import asyncio
 import configparser
 import logging
 import re
-from typing import Any, Callable, Coroutine, Dict, Iterable, List, Tuple, cast
+from typing import Any, Callable, Dict, Iterable, List, Tuple, cast
 import tomli
 from pathlib import Path
 from glob import glob
@@ -89,26 +89,6 @@ class TemplatePartTranslator(PartTranslator, TemplateBasedMixin):
 
     async def translate(self, text: str) -> str | None:
         return await TemplateBasedMixin.translate(self, text)
-
-
-class TemplatePreRewritter(TemplateBasedMixin):
-    """
-    Rewrite but works on direct source language, based
-    on template patterns.
-
-    This should work for known property and pattern such as
-    armor or attack type.
-    """
-
-    def __init__(self):
-        super().__init__("pre_rewrite")
-
-    def rewrite(self, text: str) -> str:
-        """
-        :param text: the raw input text (escape strings inside)
-        :returns: rewritten result
-        """
-        return super().rewrite(text)
 
 
 class MultiPartTranslator:
@@ -285,7 +265,6 @@ class TranslationPipeline:
     def __init__(self) -> None:
         self.shortcut_adjust = ShortcutAdjust
         self.translator = MultiPartTranslator
-        self.template_pre_rewritter = TemplatePreRewritter()
         self.template_rewritter = TemplateRewritter()
 
     async def translate(self, string: str) -> str:
@@ -297,7 +276,6 @@ class TranslationPipeline:
             (lambda x: f'"{x}"') if string[0] == '"' else lambda x: x
         )
         string = string.strip('"')
-        string = self.template_pre_rewritter.rewrite(string)
         string = self.shortcut_adjust.adjust(string)
         string = await self.translator.translate(string)
         string = self.template_rewritter.rewrite(string)
