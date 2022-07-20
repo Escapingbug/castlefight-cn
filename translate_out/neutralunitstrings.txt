@@ -1,0 +1,555 @@
+[HERO]
+Name=一个英雄
+[nshp]
+Name=地精造船厂
+Tip=建造地精造船厂
+Description=Sells boats.
+[nmrk]
+Name=市场
+Tip=建立市场
+Description=A store for purchasing goods.
+[ndog]
+Name=狗
+Tip=召唤狗
+Ubertip="召唤狗的精神来拯救你。"
+[npig]
+Name=猪
+Tip=召唤猪
+Ubertip="召唤猪的灵魂来拯救你。"
+[nder]
+Name=麈
+Tip=调用雄鹿
+Ubertip="召唤雄鹿的灵魂来拯救你。"
+[nsea]
+Name=海豹
+Tip=调用印章
+Ubertip="召唤海豹之魂来拯救你。"
+[nshe]
+Name=羊
+Tip=召唤绵羊
+Ubertip="呼唤绵羊的精神来拯救你。"
+[nsha]
+Name=羊
+Tip=召唤绵羊
+Ubertip="呼唤绵羊的精神来拯救你。"
+[nshw]
+Name=羊
+Tip=召唤绵羊
+Ubertip="呼唤绵羊的精神来拯救你。"
+[nshf]
+Name=飞羊
+Tip=调用 Uber Sheep
+Ubertip="召唤 Uber Sheep 来拯救你。"
+[nvul]
+Name=秃鹰
+Tip=召唤秃鹫
+Ubertip="召唤秃鹰之灵来拯救你。"
+[ninf]
+Name=地狱
+Tip=召唤地狱火
+Ubertip="重型近战单位隐藏在恶魔火焰中，对附近的敌方地面单位造成伤害。对魔法免疫。|n|n|cffffcc00攻击陆地单位。|r"
+[nwgt]
+Name=道门
+Tip=建道门
+Description=Teleports units to a sister Way Gate.
+[ncp2]
+Name=权力圈
+Tip=建立权力圈
+Description=A pedestal that glows with energy.
+[nowl]
+Name=猫头鹰侦察兵
+[now2]
+Name=猫头鹰侦察兵
+[now3]
+Name=猫头鹰侦察兵
+[nskk]
+Name=石龙子
+Tip=召唤灵蜥
+Ubertip="召唤灵蜥的灵魂来拯救你。"
+[ncrb]
+Name=螃蟹
+Tip=召唤螃蟹
+Ubertip="召唤螃蟹的灵魂来拯救你。"
+[nhmc]
+Name=寄居蟹
+Tip=召唤寄居蟹
+Ubertip="召唤寄居蟹的灵魂来拯救你。"
+[nech]
+Name=鸡
+Tip=召唤鸡
+Ubertip="召唤可怕的鸡的精神来拯救你。"
+[nfro]
+Name=青蛙
+Tip=召唤青蛙
+Ubertip="召唤可怕的青蛙的灵魂来拯救你。"
+[necr]
+Name=兔子
+Tip=召唤兔子
+Ubertip="召唤可怕的兔子的灵魂来拯救你。"
+[nrac]
+Name=狸
+Tip=召唤浣熊
+Ubertip="召唤可怕的浣熊的灵魂来拯救你。"
+[nalb]
+Name=信天翁
+Tip=召唤信天翁
+Ubertip="召唤信天翁的灵魂来拯救你。"
+[npng]
+Name=企鹅
+Tip=召唤企鹅
+Ubertip="召唤企鹅之魂来拯救你。"
+[npnw]
+Name=企鹅
+Tip=召唤企鹅
+Ubertip="召唤企鹅之魂来拯救你。"
+[nrat]
+Name=鼠
+Tip=召唤老鼠
+Ubertip="召唤老鼠的灵魂来拯救你。"
+[nsno]
+Name=雪鸮
+Tip=召唤雪鸮
+Ubertip="召唤雪鸮的灵魂来拯救你。"
+[nfbr]
+Name=邪野猪
+Tip=召唤邪能野猪
+Ubertip="召唤邪野猪的灵魂来拯救你。"
+[ndwm]
+Name=沙丘蠕虫
+Tip=召唤沙丘蠕虫
+Ubertip="召唤沙丘虫的灵魂来拯救你。"
+[nvdl]
+Name=小型虚空行者
+Tip=雇佣小型虚空行者
+Ubertip="轻型远程单位。|n|n|cffffcc00攻击陆地和空中单位。|r"
+[n02F]
+Name="龙卷风 (-na)"
+[n02E]
+Name=龙卷风
+[n02B]
+Name="大熊"
+Ubertip="|n|cffFFFF80攻击：|r普通（|cffFFFF00近战|r，|cffFFFF00 63|r dps）|n|cffFFFF80盔甲：|r无装甲 (|cffFFFF008|r)|n|cffFFFF80生命值：|cffFFFF001250|r|n|cffFFFF80能力：|r|n|n|cff80FF00重击|r|n有 30% 几率使敌人昏迷 1 秒并造成 65 额外伤害|n|n|cff80FF00劈开|r|n每次命中对本单位前方 175 范围内的所有敌人造成 35% 的正常伤害|n|n|cff80FF00致命一击|r|n击中时有 30% 几率造成双倍伤害|n|n|cff80FF00狂怒|r|n被击中时有 20% 几率提高攻击速度并获得 30% 的额外伤害"
+Hotkey=Q
+Tip="火车大熊"
+[n02A]
+Name="翡翠龙"
+Tip="火车翡翠龙"
+Ubertip="|n|cffFFFF80攻击：|r混乱 (|cffFFFF00250|r rng|r,|cffFFFF00 46|r dps)|n|cffFFFF80盔甲：|r重 (|cffFFFF004|r)|n|cffFFFF80生命值：|cffFFFF00700|r|n|cffFFFF80能力：|r|n|n|cff80FF00再生|r|n龙生命力再生 5hp/s|n|n|cff80FF00飞溅|r|n在 150 范围内造成溅射伤害"
+Hotkey=Q
+[n01Y]
+Name="龙鹰骑士"
+Hotkey=Q
+Tip="训练龙鹰骑士"
+Ubertip="|n|cffFFFF80攻击：|r穿刺 (|cffFFFF00450|r rng,|cffFFFF00 46|r dps)|n|cffFFFF80盔甲：|r重 (|cffFFFF003|r)|n|cffFFFF80生命值：|cffFFFF00650|r|n|cffFFFF80能力：|r|n|n|cff80FF00飞行|r|n这个单位在飞|n|n|cff80FF00太阳罢工|r|n用阳光在 400 范围内攻击最多 4 个非机械空中单位，造成 80 点伤害并眩晕 4 秒|n|cff8080FF冷却时间：|r14|n|cff8080FF法力消耗：|r50"
+[n028]
+Name="熊怪长老萨满"
+Tip="训练熊怪长老萨满"
+Ubertip="|n|cffFFFF80攻击：|r魔法 (|cffFFFF00450|r rng|r,|cffFFFF00 51|r dps)|n|cffFFFF80盔甲：|r光 (|cffFFFF003|r)|n|cffFFFF80生命值：|cffFFFF00650|r|n|cffFFFF80能力：|r|n|n|cff80FF00复兴|r|n在 10 秒内恢复 400 hp|n|cff8080FF冷却时间：|r14|n|cff8080FF法力消耗：|r50|n|n|cff80FF00马纳本|r|n击中时有 30% 几率燃烧最多 150 点法力值，并造成等同于已燃烧法力值的伤害"
+Hotkey=Q
+[n01W]
+Name="育母"
+Tip="训练育雏妈妈"
+Ubertip="|n|cffFFFF80攻击：|r穿刺 (|cffFFFF00近战|r,|cffFFFF00 70|r dps)|n|cffFFFF80盔甲：|r无装甲 (|cffFFFF006|r)|n|cffFFFF80生命值：|cffFFFF00800|r|n|cffFFFF80能力：|r|n|n|cff80FF00慢毒|r|n攻击和移动速度降低 25%，并在 10 秒内造成 12 伤害/秒|n|n|cff80FF00网站|r|n固定敌方单位。持续 12 秒|n|cff8080FF冷却时间：|r18|n|n|cff80FF00产卵|r|n死亡时生成巨型蜘蛛|n|n|cff80FF00感染|r|n在 10 秒内造成 25 dmg/秒的伤害。当单位杀死 2 只森林蜘蛛时会生成|n|cff8080FF冷却时间：|r12|n|cff8080FF法力消耗：|r50"
+Hotkey=Q
+[n029]
+Name="森林熊"
+Ubertip="|n|cffFFFF80攻击：|r普通（|cffFFFF00近战|r，|cffFFFF00 48|r dps）|n|cffFFFF80盔甲：|r无装甲 (|cffFFFF006|r)|n|cffFFFF80生命值：|cffFFFF00680|r|n|cffFFFF80能力：|r|n|n|cff80FF00重击|r|n有 15% 的几率使敌人昏迷 0.5 秒并造成 50 额外伤害|n|n|cff80FF00劈开|r|n每次命中对本单位前方 150 范围内的所有敌人造成 30% 的正常伤害|n|n|cff80FF00致命一击|r|n击中时有 20% 几率造成双倍伤害|n|n|cff80FF00狂怒|r|n有 15% 的几率提高其攻击速度并在被击中时获得 20% 的额外伤害"
+Hotkey=Q
+Tip="火车森林熊"
+[n01X]
+Name="铁巨人"
+Tip="火车铁傀儡"
+Ubertip="|n|cffFFFF80攻击：|r英雄 (|cffFFFF00近战|r,|cffFFFF00 46|r dps)|n|cffFFFF80盔甲：|r中等 (|cffFFFF0012|r)|n|cffFFFF80生命值：|cffFFFF00550|r|n|cffFFFF80能力：|r|n|n|cff80FF00法术抗力|r|n减少法术伤害 30%|n|n|cff80FF00粉碎|r|n每次攻击有 25% 的几率对 150 范围内的所有敌人造成 60 点伤害，对 250 范围内的所有单位造成一半伤害|n|n|cff80FF00重击|r|n每次攻击有 15% 几率眩晕 2 秒并造成 40 额外伤害"
+Hotkey=Q
+[n026]
+Name="熊怪萨满"
+Tip="训练熊怪萨满"
+Hotkey=Q
+Ubertip="|n|cffFFFF80攻击：|r魔法 (|cffFFFF00400|r rng|r,|cffFFFF00 37|r dps)|n|cffFFFF80盔甲：|r光 (|cffFFFF001|r)|n|cffFFFF80生命值：|cffFFFF00450|r|n|cffFFFF80能力：|r|n|n|cff80FF00复兴|r|n在 10 秒内恢复 200 hp|n|cff8080FF冷却时间：|r16|n|cff8080FF法力消耗：|r50"
+[n01U]
+Name="Gobbo 机械师"
+Tip="组装 Gobbo 机械师"
+Ubertip="组装一个无懈可击的 Gobbo 机械师，可以修复建筑物和单位。"
+Hotkey=C
+[n027]
+Name="堕落的歼灭者"
+Tip="训练堕落的歼灭者"
+Ubertip="|n|cffFFFF80攻击：|r普通（|cffFFFF00近战|r，|cffFFFF00 120|r dps）|n|cffFFFF80盔甲：|r重型 (|cffFFFF007|r)|n|cffFFFF80生命值：|cffFFFF001800|r|n|cffFFFF80能力：|r|n|n|cff80FF00传奇法术抗性|r|n对该单位造成的法术伤害降低 70%|n|n|cff80FF00免疫|r|n该单位免疫某些负面效果|n|n|cff80FF00分裂攻击|r|n每次命中对本单位前方 225 范围内的所有敌人造成 40% 的正常伤害|n|n|cff80FF00致命一击|r|n每次攻击有 15% 几率造成 2 倍正常伤害|n|n|cff80FF00弱化攻击|r|n该单位的攻击减少 100% 的伤害，持续 20 秒|n|n|cff80FF00尖刺爱好者|r|n刺穿歼灭者前方锥形区域内的地面单位，造成 250 点法术伤害并使其昏迷 3.5 秒。|n|cff8080FF冷却时间：|r15|n|cff8080FF法力消耗：|r40"
+Hotkey=Q
+[n01V]
+Name="疯狂的地精"
+Tip="训练疯狂的哥布林"
+Ubertip="|n|cffFFFF80盔甲：|r无装甲 (|cffFFFF000|r)|n|cffFFFF80生命值：|cffFFFF00175|r|n|cffFFFF80能力：|r|n|n|cff80FF00自杀|r|n自杀，对150范围内的地面敌人造成275点伤害，对300范围内的敌人造成125点伤害。建筑物只受到 75% 的伤害|n|n|cff80FF00引爆|r|n死后，疯狂地精对 280 范围内的敌人造成最多 150 点伤害。更远的目标受到的伤害更少。与自杀伤害叠加。"
+Hotkey=Q
+[n024]
+Name="坚毅魔像"
+Tip="训练精金魔像"
+Ubertip="|n|cffFFFF80攻击：|r英雄 (|cffFFFF00近战|r,|cffFFFF00 92|r dps)|n|cffFFFF80盔甲：|r神圣的 (|cffFFFF0015|r)|n|cffFFFF80生命值：|cffFFFF00950|r|n|cffFFFF80能力：|r|n|n|cff80FF00免疫|r|n该单位免疫某些负面效果|n|n|cff80FF00极限法术抗性|r|n减少 90% 法术伤害并忽略大部分负面法术（0.5 秒冷却时间）|n|n|cff80FF00重击|r|n每次攻击有 50% 几率眩晕 2 秒并造成 100 额外伤害|n|n|cff80FF00粉碎|r|n每次攻击有 40% 的几率对 150 范围内的所有敌人造成 150 伤害，对 250 范围内的所有单位造成一半伤害"
+Hotkey=Q
+[n01S]
+Name="突变"
+Tip=召唤污泥仆从
+Ubertip="对敌人施放减速的近战单位。"
+[n025]
+Name="地雷"
+[n01T]
+Name="地精粉碎机"
+Hotkey=Q
+Tip="火车地精粉碎机"
+Ubertip="|n|cffFFFF80攻击：|r刺穿 (|cffFFFF00近战|r,|cffFFFF00 56|r dps)|n|cffFFFF80盔甲：|r中等 (|cffFFFF009|r)|n|cffFFFF80生命值：|cffFFFF001000|r|n|cffFFFF80能力：|r|n|n|cff80FF00诱导愤怒|r|n每次碎纸机被负面特殊建筑击中时，它都会永久获得 50% 的攻击速度，并有 60% 的几率阻止特殊效果。攻击速度加成上限为 200%。|n|n|cff80FF00引爆|r|n死亡时，碎纸机对 300 范围内的敌人造成最多 50 点伤害。更远的目标受到的伤害更少。每次碎纸机被负面的特殊建筑击中时，爆炸伤害都会翻倍，并且远程会略微增加。最大值为 4 次命中。|n|n|cff80FF00碎纸机攻击|r|n每一击对本单位前方 160 范围内的所有敌人造成全额伤害|n|cff80FF00法术抗性|r|n对负面法术有 15% 的抗性"
+[n01Q]
+Name="九头蛇"
+Tip=雇用远古九头蛇
+Ubertip="具有毒攻击的强大远程单位。死亡时分裂。"
+[n01R]
+Name="小九头蛇"
+Tip=雇用远古九头蛇
+Ubertip="具有慢毒的远程单位。"
+[n01O]
+Name="巨魔捕手"
+Hotkey=Q
+Tip="火车巨魔捕手"
+Ubertip="|n|cffFFFF80攻击：|r正常 (|cffFFFF00325|r rng,|cffFFFF00 38|r dps)|n|cffFFFF80盔甲：|r中等 (|cffFFFF004|r)|n|cffFFFF80生命值：|cffFFFF00600|r|n|cffFFFF80能力：|r|n|n|cff80FF00圈套|r|n诱捕敌方空中单位，将其绑定在地面上，使其可以被近战单位攻击。持续 16 秒|n|cff8080FF冷却时间：|r8|n|n|cff80FF00狂暴|r|n每当这个单位杀死一个敌人时，它就会暴走，获得 200% 的攻击速度和 25% 的移动速度，但也会受到 10% 的额外伤害。狂暴持续 6 秒"
+[n021]
+Name="凸起的触手"
+Ubertip="腐化的凸起触手。"
+Tip="凸起的触手"
+[n01P]
+Name="古代九头蛇"
+Tip="火车远古九头蛇"
+Ubertip="|n|cffFFFF80攻击：|r混乱 (|cffFFFF00500|r rng,|cffFFFF00 143|r dps)|n|cffFFFF80盔甲：|r中等 (|cffFFFF008|r)|n|cffFFFF80生命值：|cffFFFF001750|r|n|cffFFFF80能力：|r|n|n|cff80FF00飞溅伤害|r|n该单位的攻击命中目标周围 250 范围内的所有单位。距离目标越远的单位受到的伤害越少|n|n|cff80FF00传奇法术抗性|r|n对该单位造成的法术伤害降低 70%|n|n|cff80FF00免疫|r|n该单位免疫某些负面效果|n|n|cff80FF00三重攻击|r|n同时对3名敌人造成伤害|n|n|cff80FF00拆分|r|n死亡时分裂成 2 条多头蛇，它们会在死亡时再次分裂。"
+Hotkey=Q
+[n00G]
+Name=飞羊
+Tip=调用 Uber Sheep
+Ubertip="召唤 Uber Sheep 来拯救你。"
+[n00F]
+Name=羊
+Tip=召唤绵羊
+Ubertip="呼唤绵羊的精神来拯救你。"
+[n00M]
+Name="血魔"
+Tip=Hire Unbroken Rager
+Ubertip="具有随机装甲类型和随机能力的快速近战单位。"
+[n00L]
+Name="血魔"
+Tip="训练血魔"
+Ubertip="|n|cffFFFF80攻击：|r混乱（|cffFFFF00近战|r，|cffFFFF00 45|r dps）|n|cffFFFF80盔甲：|r变化 (|cffFFFF006|r)|n|cffFFFF80生命值：|cffFFFF00600|r|n|cffFFFF80能力：|r|n|n|cff80FF00混乱的存在|r|n每个血魔都有随机的能力和盔甲类型。"
+Hotkey=Q
+[n00A]
+Name="色狼"
+Tip="火车萨特"
+Ubertip="|n|cffFFFF80攻击：|r正常 (|cffFFFF00275|r rng,|cffFFFF00 20|r dps)|n|cffFFFF80盔甲：|r光 (|cffFFFF003|r)|n|cffFFFF80生命值：|cffFFFF00250|r"
+Hotkey=Q
+[n00D]
+Name="骷髅弓箭手"
+Tip="骷髅弓箭手"
+Ubertip="弱远程单位。"
+[n00C]
+Name="骷髅英雄"
+Tip=召唤骷髅兽人
+Ubertip="具有致命一击的近战单位。"
+[n00B]
+Name="僵尸"
+Tip="火车僵尸"
+Ubertip="|n|cffFFFF80攻击：|r混乱（|cffFFFF00近战|r，|cffFFFF00 15|r dps）|n|cffFFFF80盔甲：|r中等 (|cffFFFF003|r)|n|cffFFFF80生命值：|cffFFFF00265|r|n|cffFFFF80能力：|r|n|n|cff80FF00腐烂|r|n对 250 范围内的有机体敌人造成伤害，每秒造成 8 点伤害"
+Hotkey=Q
+[n008]
+Name="魅魔"
+Tip="火车魅魔"
+Ubertip="|n|cffFFFF80攻击：|r魔法 (|cffFFFF00360|r rng,|cffFFFF00 33|r dps)|n|cffFFFF80盔甲：|r光 (|cffFFFF002|r)|n|cffFFFF80生命值：|cffFFFF00450|r|n|cffFFFF80能力：|r|n|n|cff80FF00诅咒|r|n诅咒目标敌人在 25 秒内错过 35% 的攻击|n|cff8080FF冷却时间：|r6|n|cff8080FF法力消耗：|r20"
+Hotkey=Q
+[n009]
+Name="混沌战士"
+Tip="训练混沌战士"
+Ubertip="|n|cffFFFF80攻击：|r普通（|cffFFFF00近战|r，|cffFFFF00 27|r dps）|n|cffFFFF80盔甲：|r中等 (|cffFFFF005|r)|n|cffFFFF80生命值：|cffFFFF00400|r|n|cffFFFF80能力：|r|n|n|cff80FF00分裂攻击|r|n每次命中对本单位前方 175 范围内的所有敌人造成 25% 的正常伤害"
+Hotkey=Q
+[n000]
+Name="地狱"
+Tip="火车炼狱"
+Ubertip="|n|cffFFFF80攻击：|r混乱（|cffFFFF00近战|r，|cffFFFF00 85|r dps）|n|cffFFFF80盔甲：|r重型 (|cffFFFF007|r)|n|cffFFFF80生命值：|cffFFFF001600|r|n|cffFFFF80能力：|r|n|n|cff80FF00攻击空气|r|n这个单位可以攻击飞行的敌人|n|n|cff80FF00献祭|r|n每秒对 250 范围内的所有敌人造成 30 点伤害"
+Hotkey=Q
+[n001]
+Name="红龙"
+Tip="火车红龙"
+Ubertip="|n|cffFFFF80攻击：|r混乱 (|cffFFFF00400|r rng,|cffFFFF00 50|r dps)|n|cffFFFF80盔甲：|r重 (|cffFFFF003|r)|n|cffFFFF80生命值：|cffFFFF00850|r|n|cffFFFF80能力：|r|n|n|cff80FF00飞行|r|n这个单位在飞|n|n|cff80FF00飞溅伤害|r|n该单位的攻击会命中目标周围 200 范围内的所有单位。距离目标越远的单位受到的伤害越少"
+Hotkey=Q
+[n005]
+Name="术士"
+Tip="火车术士"
+Ubertip="|n|cffFFFF80攻击：|r混乱 (|cffFFFF00160|r rng,|cffFFFF00 17|r dps)|n|cffFFFF80盔甲：|r无装甲 (|cffFFFF001|r)|n|cffFFFF80生命值：|cffFFFF00320|r|n|cffFFFF80能力：|r|n|n|cff80FF00商会|r|n在 340 范围内对敌人造成 175 点法术伤害|n|cff8080FF冷却时间：|r12|n|cff8080FF法力消耗：|r35"
+Hotkey=Q
+[n01H]
+Name="腐化的树精"
+Tip="训练腐化的树精"
+Ubertip="|n|cffFFFF80攻击：|r普通（|cffFFFF00近战|r，|cffFFFF00 38|r dps）|n|cffFFFF80盔甲：|r重型 (|cffFFFF005|r)|n|cffFFFF80生命值：|cffFFFF00640|r|n|cffFFFF80能力：|r|n|n|cff80FF00分裂攻击|r|n每次命中对本单位前方 175 范围内的所有敌人造成 25% 的正常伤害|n|n|cff80FF00致命一击|r|n每次攻击有 10% 几率造成 2 倍正常伤害|n|n|cff80FF00弱化攻击|r|n该单位的攻击减少 35% 的伤害，持续 10 秒"
+Hotkey=Q
+[n01G]
+Name="地狱犬"
+Tip="训练地狱犬"
+Hotkey=Q
+Ubertip="|n|cffFFFF80攻击：|r穿刺 (|cffFFFF00近战|r,|cffFFFF00 37|r dps)|n|cffFFFF80盔甲：|r中等 (|cffFFFF007|r)|n|cffFFFF80生命值：|cffFFFF00650|r|n|cffFFFF80能力：|r|n|n|cff80FF00减速光环|r|n500范围内敌方单位速度降低15%"
+[n01I]
+Name="腐化的实体"
+Tip="火车腐败的耳鼻喉科"
+Ubertip="|n|cffFFFF80攻击：|r普通（|cffFFFF00近战|r，|cffFFFF00 19|r dps）|n|cffFFFF80盔甲：|r重 (|cffFFFF004|r)|n|cffFFFF80生命值：|cffFFFF00320|r|n|cffFFFF80能力：|r|n|n|cff80FF00弱化攻击|r|n该单位的攻击减少 20% 的伤害，持续 10 秒"
+Hotkey=Q
+[n01L]
+Name="大骷髅弓箭手"
+Tip=雇用骷髅弓箭手
+Ubertip="具有暴击和闪避的远程单位。"
+[n01K]
+Name="窒息的僵尸"
+Tip="火车窒息僵尸"
+Ubertip="|n|cffFFFF80攻击：|r混乱（|cffFFFF00近战|r，|cffFFFF00 27|r dps）|n|cffFFFF80盔甲：|r中等 (|cffFFFF005|r)|n|cffFFFF80生命值：|cffFFFF00500|r|n|cffFFFF80能力：|r|n|n|cff80FF00瘟疫袭击|r|n被僵尸击中的单位移动速度降低 15%，每秒受到 8 点伤害，持续 10 秒|n|n|cff80FF00腐烂|r|n对 290 范围内的有机体敌人造成伤害，每秒造成 12 点伤害"
+Hotkey=Q
+[n01N]
+Name="巨型蜘蛛"
+Tip="火车巨型蜘蛛"
+Ubertip="|n|cffFFFF80攻击：|r穿刺 (|cffFFFF00近战|r,|cffFFFF00 53|r dps)|n|cffFFFF80盔甲：|r无装甲 (|cffFFFF004|r)|n|cffFFFF80生命值：|cffFFFF00500|r|n|cffFFFF80能力：|r|n|n|cff80FF00慢毒|r|n降低 15% 攻击和移动速度，并在 10 秒内造成 8 伤害/秒|n|n|cff80FF00网站|r|n固定敌方单位。持续 10 秒|n|cff8080FF冷却时间：|r18|n|n|cff80FF00产卵|r|n死亡时生成黑蜘蛛"
+Hotkey=Q
+[n01M]
+Name="骷髅将军"
+Tip=召唤骷髅兽人
+Ubertip="具有 20% 伤害的强大近战单位增加光环和致命一击。"
+[n01B]
+Name="暗影幼龙"
+Tip="训练暗影幼龙"
+Hotkey=Q
+Ubertip="|n|cffFFFF80攻击：|r魔法 (|cffFFFF00400|r rng,|cffFFFF00 45|r dps)|n|cffFFFF80盔甲：|r中等 (|cffFFFF004|r)|n|cffFFFF80生命值：|cffFFFF00700|r|n|cffFFFF80能力：|r|n|n|cff80FF00飞行|r|n这个单位在飞|n|n|cff80FF00幽冥球|r|n在 180 范围内增加 25 点溅射伤害，更远的目标受到的伤害更少|n|cff8080FF法力消耗：|r20"
+[n01A]
+Name="虚空守护者"
+Tip="训练虚空守护者"
+Ubertip="|n|cffFFFF80攻击：|r魔法 (|cffFFFF00400|r rng,|cffFFFF00 50|r dps)|n|cffFFFF80盔甲：|r光 (|cffFFFF004|r)|n|cffFFFF80生命值：|cffFFFF00740|r|n|cffFFFF80能力：|r|n|n|cff80FF00焚烧|r|n对同一目标的每次攻击造成的伤害比前一次多 5 点。如果目标死亡，它会爆炸，在 120 范围内对敌人造成 125 点法术伤害，在 180 范围内对单位造成一半伤害|n|n|cff80FF00腐败光环|r|n550范围内所有敌人的护甲降低4"
+Hotkey=Q
+[n01D]
+Name="虚空幼龙"
+Tip="训练虚空幼龙"
+Hotkey=Q
+Ubertip="|n|cffFFFF80攻击：|r魔法 (|cffFFFF00400|r rng,|cffFFFF00 26|r dps)|n|cffFFFF80盔甲：|r中等 (|cffFFFF002|r)|n|cffFFFF80生命值：|cffFFFF00425|r|n|cffFFFF80能力：|r|n|n|cff80FF00飞行|r|n这个单位在飞|n|n|cff80FF00幽冥球|r|n攻击增加 20 点溅射伤害，击中 180 范围内的所有敌人，更远的目标受到的伤害更少|n|cff8080FF法力消耗：|r20"
+[n01C]
+Name="凸起的触手"
+Ubertip="腐化的凸起触手。"
+Tip="凸起的触手"
+[n01F]
+Name="地狱机器"
+Tip="火车地狱机器"
+Ubertip="|n|cffFFFF80攻击：|r围城 (|cffFFFF00600|r rng,|cffFFFF00 45|r dps)|n|cffFFFF80盔甲：|r重 (|cffFFFF003|r)|n|cffFFFF80生命值：|cffFFFF00600|r|n|cffFFFF80能力：|r|n|n|cff80FF00仅限地面|r|n该单位无法攻击飞行的敌人|n|n|cff80FF00引爆|r"
+Hotkey=Q
+[n01E]
+Name="地狱火坦克"
+Tip="训练地狱火坦克"
+Ubertip="|n|cffFFFF80攻击：|r围城 (|cffFFFF00600|r rng,|cffFFFF00 50|r dps)|n|cffFFFF80盔甲：|r重 (|cffFFFF004|r)|n|cffFFFF80生命值：|cffFFFF00850|r|n|cffFFFF80能力：|r|n|n|cff80FF00仅限地面|r|n该单位无法攻击飞行的敌人|n|n|cff80FF00线路损坏|r|n对目标附近的所有敌人造成 50 点额外法术伤害|n|n|cff80FF00引爆|r|n对 275 范围内的敌人造成最多 150 点伤害。更远的目标受到的伤害更少"
+Hotkey=Q
+[n017]
+Name="霜狼"
+Tip="训练霜狼"
+Ubertip="|n|cffFFFF80攻击：|r普通（|cffFFFF00近战|r，|cffFFFF00 20|r dps）|n|cffFFFF80盔甲：|r无装甲 (|cffFFFF004|r)|n|cffFFFF80生命值：|cffFFFF00280|r|n|cffFFFF80能力：|r|n|n|cff80FF00致命一击|r|n每次攻击有 10% 几率造成 1.5 倍的正常伤害"
+Hotkey=Q
+[n00V]
+Name="巨魔狂战士"
+Hotkey=Q
+Tip="训练巨魔狂战士"
+Ubertip="|n|cffFFFF80攻击：|r正常 (|cffFFFF00300|r rng,|cffFFFF00 30|r dps)|n|cffFFFF80盔甲：|r中等 (|cffFFFF003|r)|n|cffFFFF80生命值：|cffFFFF00450|r|n|cffFFFF80能力：|r|n|n|cff80FF00狂暴|r|n每当这个单位杀死一个敌人时，它就会暴走，获得 200% 的攻击速度和 25% 的移动速度，但也会受到 10% 的额外伤害。狂暴持续 6 秒"
+[n018]
+Name="北极熊"
+Tip="火车北极熊"
+Ubertip="|n|cffFFFF80攻击：|r普通 (|cffFFFF00近战|r,|cffFFFF00 43|r dps)|n|cffFFFF80盔甲：|r无装甲 (|cffFFFF005|r)|n|cffFFFF80生命值：|cffFFFF00550|r|n|cffFFFF80能力：|r|n|n|cff80FF00分裂攻击|r|n每次命中对本单位前方 200 范围内的所有敌人造成 27% 的正常伤害|n|n|cff80FF00致命一击|r|n每次攻击有 10% 几率造成 2 倍正常伤害"
+Hotkey=Q
+[n00W]
+Name="召唤龙虾"
+Tip=雇用 玛库拉 唤潮者
+Ubertip="具有伤害吸收和暴击的近战单位。"
+[n019]
+Name="虚空行者"
+Tip="训练虚空行者"
+Ubertip="|n|cffFFFF80攻击：|r魔法 (|cffFFFF00380|r rng,|cffFFFF00 25|r dps)|n|cffFFFF80盔甲：|r光 (|cffFFFF002|r)|n|cffFFFF80生命值：|cffFFFF00375|r|n|cffFFFF80能力：|r|n|n|cff80FF00焚烧|r|n对同一目标的每次攻击造成的伤害比前一次多 3 点。如果目标死亡，它会爆炸，在 90 范围内对敌人造成 60 点法术伤害，在 160 范围内对单位造成一半伤害|n|n|cff80FF00腐败光环|r|n400范围内所有敌人的护甲减少2"
+Hotkey=Q
+[n00Z]
+Name="混沌冠军"
+Tip="培养混沌冠军"
+Ubertip="|n|cffFFFF80攻击：|r普通（|cffFFFF00近战|r，|cffFFFF00 59|r dps）|n|cffFFFF80盔甲：|r中等 (|cffFFFF008|r)|n|cffFFFF80生命值：|cffFFFF00850|r|n|cffFFFF80能力：|r|n|n|cff80FF00致命一击|r|n每次攻击有 10% 几率造成 2 倍正常伤害|n|n|cff80FF00咆哮|r|n使525范围内所有友方单位的伤害提高25%。持续 20 秒|n|cff8080FF冷却时间：|r30|n|n|cff80FF00分裂攻击|r|n每次命中对本单位前方 200 范围内的所有敌人造成 35% 的正常伤害"
+Hotkey=Q
+[n00N]
+Name="血魔"
+Tip=Hire Unbroken Rager
+Ubertip="具有随机装甲类型和随机能力的快速近战单位。"
+[n010]
+Name="蔚蓝幼龙"
+Tip="训练碧蓝幼龙"
+Ubertip="|n|cffFFFF80攻击：|r混乱 (|cffFFFF00250|r rng,|cffFFFF00 33|r dps)|n|cffFFFF80盔甲：|r重 (|cffFFFF004|r)|n|cffFFFF80生命值：|cffFFFF00650|r|n|cffFFFF80能力：|r|n|n|cff80FF00飞行|r|n这个单位在飞|n|n|cff80FF00飞溅伤害|r|n该单位的攻击命中目标周围 175 范围内的所有单位。距离目标越远的单位受到的伤害越少|n|n|cff80FF00冰冷攻击|r|n所有被击中的单位都会被冰冻 5 秒"
+Hotkey=Q
+[n00O]
+Name="血魔"
+Tip=Hire Unbroken Rager
+Ubertip="具有随机装甲类型和随机能力的快速近战单位。"
+[n011]
+Name="鹧鸪菜"
+Tip="火车 Hrimthrusa"
+Ubertip="|n|cffFFFF80攻击：|r穿刺 (|cffFFFF00380|r rng,|cffFFFF00 33|r dps)|n|cffFFFF80盔甲：|r重 (|cffFFFF002|r)|n|cffFFFF80生命值：|cffFFFF00325|r|n|cffFFFF80能力：|r|n|n|cff80FF00冰霜攻击|r|n对地面单位的每次攻击有 5% 的几率将目标冻结在地面上 7 秒，每秒造成 15 点伤害"
+Hotkey=Q
+[n00P]
+Name="血魔"
+Tip=Hire Unbroken Rager
+Ubertip="具有随机装甲类型和随机能力的快速近战单位。"
+[n012]
+Name="万迪古"
+Tip="火车万迪古"
+Ubertip="|n|cffFFFF80攻击：|r穿刺 (|cffFFFF00近战|r,|cffFFFF00 46|r dps)|n|cffFFFF80盔甲：|r中等 (|cffFFFF005|r)|n|cffFFFF80生命值：|cffFFFF00800|r|n|cffFFFF80能力：|r|n|n|cff80FF00粉碎|r|n每次攻击有 25% 的几率对 150 范围内的所有敌人造成 80 点伤害，对 250 范围内的所有单位造成一半伤害"
+Hotkey=Q
+[n00Q]
+Name="血魔"
+Tip=Hire Unbroken Rager
+Ubertip="具有随机装甲类型和随机能力的快速近战单位。"
+[n013]
+Name="古旺迪古"
+Tip="火车古代万迪古"
+Ubertip="|n|cffFFFF80攻击：|r穿刺 (|cffFFFF00近战|r,|cffFFFF00 78|r dps)|n|cffFFFF80盔甲：|r中等 (|cffFFFF007|r)|n|cffFFFF80生命值：|cffFFFF001400|r|n|cffFFFF80能力：|r|n|n|cff80FF00粉碎|r|n每次攻击有 30% 的几率对 150 范围内的所有敌人造成 140 伤害，对 250 范围内的所有单位造成一半伤害|n|n|cff80FF00嚎叫|r|n850范围内所有敌人的护甲降低4点，伤害降低30%，持续10秒|n|cff8080FF冷却时间：|r17|n|cff8080FF法力消耗：|r30"
+Hotkey=Q
+[n00R]
+Name="血魔"
+Tip=Hire Unbroken Rager
+Ubertip="具有随机装甲类型和随机能力的快速近战单位。"
+[n00T]
+Name="森林蜘蛛"
+Tip="火车森林蜘蛛"
+Ubertip="|n|cffFFFF80攻击：|r穿刺 (|cffFFFF00近战|r,|cffFFFF00 15|r dps)|n|cffFFFF80盔甲：|r无装甲 (|cffFFFF000|r)|n|cffFFFF80生命值：|cffFFFF00150|r|n|cffFFFF80能力：|r"
+Hotkey=Q
+[n015]
+Name="冰巨魔暗牧"
+Tip="训练冰巨魔暗影牧师"
+Ubertip="|n|cffFFFF80攻击：|r魔法 (|cffFFFF00350|r rng,|cffFFFF00 27|r dps)|n|cffFFFF80盔甲：|r光 (|cffFFFF001|r)|n|cffFFFF80生命值：|cffFFFF00350|r|n|cffFFFF80能力：|r|n|n|cff80FF00冰霜攻击|r|n对地面单位和建筑物的每次攻击都有 10% 的几率将目标冻结在地面上 4 秒，每秒造成 15 点伤害|n|n|cff80FF00冰霜盔甲|r|n对一名盟友施放冰霜护甲，获得 3.5 点护甲加成。所有击中装甲单位的近战单位将被冰缓 4 秒。护甲持续 30 秒|n|cff8080FF冷却时间：|r8|n|cff8080FF法力消耗：|r35"
+Hotkey=Q
+[n00U]
+Name="黑蜘蛛"
+Tip="火车黑蜘蛛"
+Ubertip="|n|cffFFFF80攻击：|r穿刺 (|cffFFFF00近战|r,|cffFFFF00 30|r dps)|n|cffFFFF80盔甲：|r无装甲 (|cffFFFF001|r)|n|cffFFFF80生命值：|cffFFFF00250|r|n|cffFFFF80能力：|r|n|n|cff80FF00慢毒|r|n攻击和移动速度降低 10%，并在 10 秒内造成 5 伤害/秒"
+Hotkey=Q
+[n016]
+Name="马格纳陶尔"
+Tip="火车 Magnataur"
+Ubertip="|n|cffFFFF80攻击：|r普通（|cffFFFF00近战|r，|cffFFFF00 90|r dps）|n|cffFFFF80盔甲：|r无装甲 (|cffFFFF008|r)|n|cffFFFF80生命值：|cffFFFF001200|r|n|cffFFFF80能力：|r|n|n|cff80FF00跺脚|r|n眩晕 250 范围内的所有地面单位，对其造成 75 点伤害|n|cff8080FF冷却时间：|r12|n|cff8080FF法力消耗：|r25|n|n|cff80FF00致命一击|r|n每次攻击有 15% 的几率造成 3 倍的正常伤害。也可以对建筑物进行暴击！|n|n|cff80FF00分裂攻击|r|n每次命中对本单位前方 160 范围内的所有敌人造成 50% 的正常伤害。也可以击中建筑物！"
+Hotkey=Q
+[n02G]
+Name="神风哥布林"
+Tip="火车神风哥布林"
+Ubertip="|n|cffFFFF80盔甲：|r无装甲 (|cffFFFF000|r)|n|cffFFFF80生命值：|cffFFFF00200|r|n|cffFFFF80能力：|r|n|n|cff80FF00自杀|r|n自杀，对150范围内的所有敌人造成350伤害，对280范围内的敌人造成150伤害。建筑物只受到 60% 的伤害|n|n|cff80FF00引爆|r|n死亡时，神风哥布林对 280 范围内的敌人造成最多 150 点伤害。"
+Hotkey=Q
+[n02H]
+Name="Gobbo 机械师"
+Tip="组装 Gobbo 机械师"
+Ubertip="组装一个无懈可击的 Gobbo 机械师，可以修复建筑物和单位。"
+Hotkey=C
+[n02Q]
+Name="测试"
+Tip=召唤绵羊
+Ubertip="呼唤绵羊的精神来拯救你。"
+[n02S]
+Name="豺狼人"
+Tip="训练豺狼人 (|cffffcc00Q|r)"
+Hotkey=Q
+Ubertip="|n|cffFFFF80攻击：|r正常 (|cffFFFF00420|r rng,|cffFFFF00 25|r dps)|n|cffFFFF80盔甲：|r光 (|cffFFFF002|r)|n|cffFFFF80生命值：|cffFFFF00340|r|n|cffFFFF80能力：|r|n|n|cff80FF00小毒|r|n毒害目标（10 伤害，持续 1 秒）。|n|cff80FF00猎禽者|r|n35% 对飞行造成 1.5 倍伤害。"
+[n02T]
+Name="豺狼人伏击者"
+Tip="训练豺狼人-伏击者 (|cffffcc00Q|r)"
+Hotkey=Q
+Ubertip="|n|cffFFFF80攻击：|r正常 (|cffFFFF00500|r rng,|cffFFFF00 50|r dps)|n|cffFFFF80盔甲：|r光 (|cffFFFF003|r)|n|cffFFFF80生命值：|cffFFFF00520|r|n|cffFFFF80能力：|r|n|cff80FF00毒螺栓|r|n中毒目标（20 dmg，2s）|n|cff80FF00伏击|r|n攻击前隐藏以迷惑目标并在第一次攻击时造成 250 伤害。|n|cff80FF00关键镜头|r|n10% 造成 2 倍伤害|n|cff80FF00猎禽者|r|n60% 对飞行造成 2 倍伤害。"
+[n02U]
+Name="剃刀鬃毛"
+Tip="火车 剃刀鬃毛(|cffffcc00Q|r)"
+Ubertip="|n|cffFFFF80攻击：|r地面穿刺 (|cffFFFF00近战|r,|cffFFFF00 63|r dps)|n|cffFFFF80盔甲：|r无装甲 (|cffFFFF007|r)|n|cffFFFF80生命值：|cffFFFF00750|r|n|cffFFFF80能力：|r|n|cff80FF00猪鬃|r|n75% 的近战伤害返还给攻击者。"
+Hotkey=Q
+[n02W]
+Name="哈比"
+Tip="训练哈比 (|cffffcc00Q|r)"
+Hotkey=Q
+Ubertip="|n|cffFFFF80攻击：|r穿刺(|cffFFFF00280|r rng,|cffFFFF00 37|r dps)|n|cffFFFF80盔甲：|r无装甲 (|cffFFFF001|r)|n|cffFFFF80生命值：|cffFFFF00420|r|n|cffFFFF80能力：|r|n|cff80FF00飞行|r|n|cff80FF00敏捷|r|n可以躲避攻击(10%)"
+[n02X]
+Name="食人魔"
+Tip="训练食人魔 (|cffffcc00Q|r)"
+Ubertip="|n|cffFFFF80攻击：|r围攻，地面（|cffFFFF00近战|r，|cffFFFF00 56|r dps）|n|cffFFFF80盔甲：|r重型 (|cffFFFF005|r)|n|cffFFFF80生命值：|cffFFFF00650|r|n|cffFFFF80能力：|r|n|cff80FF00重磅俱乐部|r|n可以击晕目标（15% 几率，60 伤害）|n|cff80FF00小飞溅|r|n在65范围内造成伤害|n|cff80FF00耐拼写|r|n有 15% 法术抗性。"
+Hotkey=Q
+[n02Y]
+Name="食人魔领主"
+Tip="训练食人魔领主 (|cffffcc00Q|r)"
+Ubertip="n|cffFFFF80攻击：|r围攻，地面（|cffFFFF00近战|r，|cffFFFF00 84|r dps）|n|cffFFFF80盔甲：|r重 (|cffFFFF008|r)|n|cffFFFF80生命值：|cffFFFF001250|r|n|cffFFFF80能力：|r|n|cff80FF00俱乐部掌握|r|n可以击晕目标（20% 几率，80 伤害），陷入战斗狂暴（+40% AS 3 秒）|n|cff80FF00耐拼写|r|n有 20% 法术抗性|n|cff80FF00飞溅|r|n在 80 范围内造成伤害|n"
+Hotkey=Q
+[n02Z]
+Name="蝾"
+Tip="训练蝾螈(|cffffcc00Q|r)"
+Ubertip="|n|cffFFFF80攻击：|r混乱（|cffFFFF00375|r 范围，|cffFFFF00 47|r dps）|n|cffFFFF80盔甲：|r重 (|cffFFFF006|r)|n|cffFFFF80生命值：|cffFFFF00850|r|n|cffFFFF80能力：|r|n|cff80FF00蝾螈毒|r|n40% 几率在 120 范围内吐出魔法毒药（25 dps，-4 护甲和 30% 减速）。毒药持续2秒。|n|cff80FF00魔法生物|r|n蝾螈在物理世界中不能持续很长时间（-1 hp\s）。"
+Hotkey=Q
+[n030]
+Name="桑金"
+Tip="训练 Sandkin (|cffffcc00Q|r)"
+Hotkey=Q
+Ubertip="|n|cffFFFF80攻击：|r魔法（|cffFFFF00250|r 范围，|cffFFFF00 37|r dps）|n|cffFFFF80盔甲：|r正常 (|cffFFFF005|r)|n|cffFFFF80生命值：|cffFFFF00550|r|n|cffFFFF80能力：|r|n|cff80FF00沙云|r|n在 250 范围内制造沙云来模糊敌人的视野，受影响的单位会错过 25% 的攻击。冷却时间：12s|n|cff80FF00仅限地面|r|n这个单位不能攻击飞行的敌人。"
+[n032]
+Name="哈比女巫"
+Tip="训练哈比女巫 (|cffffcc00Q|r)"
+Hotkey=Q
+Ubertip="|n|cffFFFF80攻击：|r穿刺(|cffFFFF00320|r rng,|cffFFFF00 50|r dps)|n|cffFFFF80盔甲：|r无装甲 (|cffFFFF002|r)|n|cffFFFF80生命值：|cffFFFF00700|r|n|cffFFFF80能力：|r|n|cff80FF00飞行|r|n|cff80FF00偷走生命|r|n女巫从附近活着的敌人身上偷取 80-120 马力（10 秒冷却时间）。|n|cff80FF00盲人|r|n女巫可以致盲目标（15% 致盲 4 秒，致盲单位 90% 的攻击未命中）|n|cff80FF00敏捷|r|n可以躲避攻击(15%)"
+[n034]
+Name="鹰身女族长"
+Tip="训练鹰身女族长 (|cffffcc00Q|r)"
+Hotkey=Q
+Ubertip="|n|cffFFFF80攻击：|r英雄(|cffFFFF00450|r rng,|cffFFFF00 95|r dps)|n|cffFFFF80盔甲：|r无装甲 (|cffFFFF006|r)|n|cffFFFF80生命值：|cffFFFF001250|r|n|cffFFFF80能力：|r|n|cff80FF00飞行|r|n|cff80FF00传奇法术抗性|r|n|cff80FF00石头雨|r|n沉重的石头从天而降。每块石头在 150 范围内造成 125 伤害|n|cff80FF00召唤鹰身女妖|r|n女族长召唤一群鹰身女妖，持续 5 秒。|n"
+[n035]
+Name="可怕的沙金人"
+Tip="训练巨型沙人 (|cffffcc00Q|r)"
+Hotkey=Q
+Ubertip="|n|cffFFFF80攻击：|r魔法（|cffFFFF00320|r 范围，|cffFFFF00 65|r dps）|n|cffFFFF80盔甲：|r正常 (|cffFFFF008|r)|n|cffFFFF80生命值：|cffFFFF00900|r|n|cffFFFF80能力：|r|n|cff80FF00沙云|r|n制造沙云使敌人视野变暗 300 范围内，受影响的单位会错过 40% 的攻击。冷却时间：10s|n|cff80FF00重击|r|n有 20% 几率造成 2 倍伤害|n|cff80FF00防沙|r|n密集的沙流极大地降低了附近敌人的攻击速度（-60%）。|n|cff80FF00仅限地面|r|n这个单位不能攻击飞行的敌人。"
+[n080]
+Name="明星假人"
+[n037]
+Name="el.book dummy"
+[n038]
+Name="el.book dummy -na"
+[n039]
+Name="明星假人呐"
+[n03A]
+Name="太古青龙"
+Tip="训练太古青龙"
+Ubertip="|n|cffFFFF80攻击：|r混乱 (|cffFFFF00400|r rng,|cffFFFF00 72|r dps)|n|cffFFFF80盔甲：|r重 (|cffFFFF006|r)|n|cffFFFF80生命值：|cffFFFF001400|r|n|cffFFFF80能力：|r|n|n|cff80FF00飞行|r|n这个单位在飞|n|n|cff80FF00飞溅伤害|r|n该单位的攻击命中目标周围 180 范围内的所有单位。距离目标越远的单位受到的伤害越少|n|n|cff80FF00冰冷气息|r|n300 范围内的所有敌方单位减速 50%，600 范围内减速 25%。|n|n|cff80FF00冰冷的呼吸|r冻结其目标和附近的单位 1.5 秒。|n|cff80FF00传奇法术抗性(50%)|r"
+Hotkey=Q
+[n03B]
+Name="公猪"
+Tip=召唤木狼
+Ubertip="轻型近战单位。|n|n|cffffcc00攻击陆地单位。|r"
+[n03C]
+Name=巨狼
+Tip=召唤巨狼
+Ubertip="具有暴击的中型近战单位。|n|n|cffffcc00攻击陆地单位。|r"
+[n03D]
+Name=长毛象
+Tip=雇用猛犸象
+Ubertip="中型近战单位。|n|n|cffffcc00攻击陆地单位。|r"
+[n03E]
+Name=蜘蛛蟹巨兽
+Tip=雇用蜘蛛 [|cffffcc00C|r] 螃蟹
+Ubertip="重型近战单位。|n|n|cffffcc00攻击陆地单位。|r"
+Hotkey=C
+[n03L]
+Name=大灰狼
+Tip=召唤木狼
+Ubertip="轻型近战单位。|n|n|cffffcc00攻击陆地单位。|r"
+[n03F]
+Name="鼠"
+Tip=召唤木狼
+Ubertip="轻型近战单位。|n|n|cffffcc00攻击陆地单位。|r"
+[n03G]
+Name="鸟"
+Tip=召唤木狼
+Ubertip="轻型近战单位。|n|n|cffffcc00攻击陆地单位。|r"
+[n03K]
+Name="秃鹫"
+Tip=召唤木狼
+Ubertip="轻型近战单位。|n|n|cffffcc00攻击陆地单位。|r"
+[n03I]
+Name="麈"
+Tip=召唤木狼
+Ubertip="轻型近战单位。|n|n|cffffcc00攻击陆地单位。|r"
+[n03H]
+Name="圣甲虫"
+Tip=召唤木狼
+Ubertip="轻型近战单位。|n|n|cffffcc00攻击陆地单位。|r"

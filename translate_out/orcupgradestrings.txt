@@ -1,0 +1,100 @@
+[Rome]
+Name=钢近战武器，钍近战武器，奥金近战武器
+Tip=升级为钢 [|cffffcc00M|r] 近战武器，升级为瑟银 [|cffffcc00M|r] 近战武器，升级为奥金 [|cffffcc00M|r] 近战武器
+Ubertip="增加步兵、掠夺者和牛头人的近战攻击伤害。","进一步提高步兵、掠夺者和牛头人的近战攻击伤害。","进一步提高步兵、入侵者和牛头人的近战攻击伤害。"
+Hotkey=M,M,M
+[Rora]
+Name=钢制远程武器，钍远程武器，奥金远程武器
+Tip=升级到钢 [|cffffcc00R|r] 远程武器，升级到钍 [|cffffcc00R|r] 远程武器，升级到奥金 [|cffffcc00R|r] 远程武器
+Ubertip="增加猎头者、驭风者、巨魔蝙蝠骑士和爆破者的远程攻击伤害。","进一步增加猎头者、驭风者、巨魔蝙蝠骑士和破坏者的远程攻击伤害。","进一步增加猎头者、驭风者的远程攻击伤害，巨魔蝙蝠骑士和破坏者。"
+Hotkey=R,R,R
+[Roar]
+Name=钢盔甲，钍盔甲，奥金盔甲
+Tip=升级为钢铁单位 [|cffffcc00A|r] 护甲，升级为钍单位 [|cffffcc00A|r] 护甲，升级为奥金单位 |cffffcc00A|rrmor
+Ubertip="增加步兵、掠夺者、巨魔蝙蝠骑士、牛头人、猎头者、驭风者和爆破者的护甲。 Grunts、Raiders、Troll Batriders、Tauren、Headhunters、Wind Riders 和 Demolishers 的盔甲。"
+Hotkey=A,A,A
+[Rwdm]
+Name=战鼓伤害增加
+Tip=升级战争 [|cffffcc00D|r] 鼓
+Ubertip="增加科多兽身上的战鼓光环给予的伤害加成。战鼓会增加科多兽周围友军单位的伤害。"
+Hotkey=D
+[Ropg]
+Name=掠夺
+Tip=柱|cffffcc00g|re
+Ubertip="使苦工、步兵和突袭者的攻击在击中敌方建筑物时获得资源。"
+Hotkey=G
+[Robs]
+Name=狂战士的力量
+Tip=研究 [|cffffcc00B|r] 狂暴力量
+Ubertip="通过增加 <Robs,base1> 的生命值和 <Robs,base2> 额外攻击伤害来提高 Grunts 的战斗能力。"
+Hotkey=B
+[Rows]
+Name=粉碎
+Tip=研究 [|cffffcc00P|r] 粉碎
+Ubertip="赋予牛头人粉碎能力。粉碎使牛头人有机会对他们的攻击造成范围伤害。"
+Hotkey=P
+[Roen]
+Name=诱捕
+Tip=研究 [|cffffcc00n|r] 诱捕
+Ubertip="使掠夺者能够使用诱捕能力。诱捕使目标敌方单位被束缚在地面上，使其无法移动。被诱捕的空中单位可以像地面单位一样受到攻击。"
+Hotkey=N
+[Rovs]
+Name=毒矛
+Tip=研究 [|cffffcc00E|r] 毒矛
+Ubertip="为驭风者的攻击增加额外的中毒效果。被剧毒之矛中毒的单位会随着时间的推移受到伤害。"
+Hotkey=E
+[Rowd]
+Name=巫医高手训练，巫医大师训练
+Tip=女巫 [|cffffcc00D|r] 博士高手训练，女巫 [|cffffcc00D|r] 博士大师训练
+Ubertip="增加巫医的魔法容量、魔法回复速度、生命值，并赋予他们施放停滞陷阱的能力。 ."
+Hotkey=D,D
+[Rost]
+Name=萨满高手培训，萨满大师培训
+Tip=[|cffffcc00m|r] 萨满高手训练，[|cffffcc00m|r] 萨满高手训练
+Ubertip="增加萨满的法力容量、法力恢复速度、生命值，并赋予他们施放闪电之盾的能力。","增加萨满的法力容量、法力恢复速度、生命值，并赋予他们施放嗜血的能力。"
+Hotkey=M,M
+[Rosp]
+Name=尖刺路障，改进的尖刺路障，高级尖刺路障
+Tip=升级到 [|cffffcc00S|r] 尖刺路障，升级到改进的 [|cffffcc00S|r] 尖刺路障，升级到高级 [|cffffcc00S|r] 尖刺路障
+Ubertip="用尖刺环绕兽人建筑，对敌方近战攻击者造成伤害。每次攻击造成 <Rosp,base1> 伤害。","增加 <Rosp,mod1> 对近战攻击者造成的伤害量。","进一步增加 <Rosp,mod1> 对近战攻击者造成的伤害量。"
+Hotkey=S,S,S
+[Rotr]
+Name=巨魔再生，改进的巨魔再生，高级巨魔再生
+Tip=研究巨魔 [|cffffcc00R|r] 再生，研究改良巨魔 [|cffffcc00R|r] 再生，研究高级巨魔 |cffffcc00R|regeneration
+Ubertip="增加猎头者、巫医和巨魔蝙蝠骑士的生命值回复速度。","进一步增加猎头者、巫医和巨魔蝙蝠骑士的生命值回复速度。","进一步增加猎头者、巫医和巨魔蝙蝠骑士的生命值回复速度。巨魔蝙蝠骑士。"
+Hotkey=R
+[Rolf]
+Name=液体火
+Tip=研究 [|cffffcc00L|r] 液体火
+Ubertip="给予巨魔蝙蝠骑士液体火焰攻击，随着时间的推移对敌方建筑造成伤害，阻止它们被修复，并降低敌方建筑的攻击率。"
+Hotkey=L
+[Ropm]
+Name=背包
+Tip=研究 [|cffffcc00B|r] 背包
+Ubertip="赋予特定的兽人地面单位携带物品的能力。"
+Hotkey=B
+[Rowt]
+Name=Spirit Walker Adept Training, Spirit Walker Master Training
+Tip=[|cffffcc00r|r] 灵行者高手训练，[|cffffcc00r|r] 灵行者大师训练
+Ubertip="提高魂行者的法力容量、法力恢复速度、生命值，并赋予他们施放祛魅的能力。"
+Hotkey=R,R
+[Robk]
+Name=狂战士升级
+Tip=B[|cffffcc00e|r] erserker 升级
+Ubertip="将猎头者转变为巨魔狂战士，提高他们的生命值和狂暴能力。"
+Hotkey=E
+[Rorb]
+Name=强化防御
+Tip=强化 [|cffffcc00D|r] 防御
+Ubertip="升级洞穴和瞭望塔，使其拥有坚固的盔甲。"
+Hotkey=D
+[Robf]
+Name=烧油
+Tip=[|cffffcc00n|r] 燃烧的油
+Ubertip="升级爆破者以发射被燃烧的石油窒息的岩石，从而导致地面燃烧。"
+Hotkey=N
+[R001]
+Name="荆棘"
+Tip=升级到 [|cffffcc00S|r] 尖刺路障，升级到改进的 [|cffffcc00S|r] 尖刺路障，升级到高级 [|cffffcc00S|r] 尖刺路障
+Ubertip="对近战攻击者造成 <Rosp,base1> 伤害。","增加 <Rosp,mod1> 对近战攻击者造成的伤害量。","进一步增加 <Rosp,mod1> 对近战攻击者造成的伤害量。"
+Hotkey=S,S,S

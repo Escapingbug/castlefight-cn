@@ -1,0 +1,2305 @@
+[ANic]
+Name=焚化
+Tip=焚化 - [|cffffcc00Level 1|r],焚化 - [|cffffcc00Level 2|r],焚化 - [|cffffcc00Level 3|r]
+Researchtip="Learn In|cffffcc00c|rinerate - [|cffffcc00Level %d|r]"
+Ubertip="每次攻击都会被附着在目标身上的活火强化。这些火焰在第一次攻击时增加 <ANic,DataA1> 伤害，在第二次攻击时增加两倍，在第三次攻击时增加三倍，以此类推。|n|n如果一个单位在此效果下死亡，它会被焚化，对附近的所有敌对单位造成高达 <ANic,DataB1> 的伤害。这些火焰在第一次攻击时增加 <ANic,DataA2> 伤害，在第二次攻击时增加两倍，在第三次攻击时增加三倍，以此类推。|n|n如果一个单位在此效果下死亡，它会被焚化，对附近的所有敌对单位造成高达 <ANic,DataB2> 的伤害。这些火焰在第一次攻击时增加 <ANic,DataA3> 伤害，在第二次攻击时增加两倍，在第三次攻击时增加三倍，等等。|n|n如果一个单位在此效果下死亡，它会被焚化，对附近的所有敌对单位造成最多 <ANic,DataB3> 伤害。"
+Researchubertip="Each attack made is enhanced with living flames that cling to the target. These flames add a small amount of damage on the first attack, twice as much on the second attack, three times as much on the third attack, etc.|n|nIf a unit dies while under this effect, it is incinerated, causing significant damage to all nearby hostile units.|n|n|cffffcc00Level 1|r - <ANic,DataA1> bonus damage, <ANic,DataB1> incineration damage.|n|cffffcc00Level 2|r - <ANic,DataA2> bonus damage, <ANic,DataB2> incineration damage.|n|cffffcc00Level 3|r - <ANic,DataA3> bonus damage, <ANic,DataB3> incineration damage."
+Hotkey=C
+Researchhotkey=C
+[BNic]
+Bufftip=焚化
+Buffubertip="该目标部分着火，如果​​它死了会燃烧，对附近的单位造成伤害。"
+[ANlm]
+Name=召唤熔岩产卵
+Tip=Summon Lava [|cffffcc00w|r] Spawn n - [|cffffcc00Level 1|r],Summon Lava [|cffffcc00w|r] Spawn n - [|cffffcc00Level 2|r],Summon Lava [|cffffcc00w|r] Spawn n - [|cffffcc00Level 3|r]
+Researchtip="Learn Summon Lava Spa|cffffcc00w|rn - [|cffffcc00Level %d|r]"
+Ubertip="召唤熔岩之卵，一种有弹性且致命的火焰生物。当熔岩卵造成伤害时，它会消耗目标的肉，从而助长其火焰并最终分裂成两个健康的熔岩卵。|n|n拥有 <nlv1,realHP> 生命值并造成 <nlv1,mindmg1> - <nlv1,maxdmg1> 伤害。|n持续 <ANlm,Dur1> 秒。|n|n|cffffcc00攻击地面和空中单位。|r","召唤熔岩之卵，一种有弹性且致命的火焰生物。当熔岩卵造成伤害时，它会消耗目标的肉，从而助长其火焰并最终分裂成两个健康的熔岩卵。|n|n拥有 <nlv2,realHP> 生命值并造成 <nlv2,mindmg1> - <nlv2,maxdmg1> 伤害。|n持续 <ANlm,Dur2> 秒。|n|n|cffffcc00攻击地面和空中单位。|r","召唤熔岩之卵，一种有弹性且致命的火焰生物。当熔岩卵造成伤害时，它会消耗目标的肉，从而助长其火焰并最终分裂成两个健康的熔岩卵。|n|n拥有 <nlv3,realHP> 生命值并造成 <nlv3,mindmg1> - <nlv3,maxdmg1> 伤害。|n持续 <ANlm,Dur3> 秒。|n|n|cffffcc00攻击地面和空中单位。|r"
+Researchubertip="Summons a Lava Spawn, a resilient and deadly fire creature. As a Lava Spawn deals damage, it consumes the flesh of its target, eventually splitting into two healthy Lava Spawns.|nLasts <ANlm,Dur1> seconds.|n|n|cffffcc00Level 1|r - <nlv1,realHP> hit points, <nlv1,mindmg1> - <nlv1,maxdmg1> damage.|n|cffffcc00Level 2|r - <nlv2,realHP> hit points, <nlv2,mindmg1> - <nlv2,maxdmg1> damage.|n|cffffcc00Level 3|r - <nlv3,realHP> hit points, <nlv3,mindmg1> - <nlv3,maxdmg1> damage.|n|n|cffffcc00Attacks ground and air units.|r"
+Hotkey=W
+Researchhotkey=W
+[BNlm]
+Bufftip=熔岩产卵
+Buffubertip="熔岩产卵。"
+[ANde]
+Name=拆除
+Tip="拆除"
+Ubertip="使攻击对建筑物造成 <ANDe,DataB1> 倍的正常伤害。"
+Hotkey=
+[ANf1]
+Name=工厂
+Tip="工厂 - 升级 1 级"
+Ubertip="工厂。"
+Hotkey=
+[ANf2]
+Name=工厂
+Tip="工厂 - 升级 2 级"
+Ubertip="工厂。"
+Hotkey=
+[ANf3]
+Name=工厂
+Tip="工厂 - 升级 3 级"
+Ubertip="工厂。"
+Hotkey=
+[ANhs]
+Name=愈合喷雾
+Tip=H[|cffffcc00e|r] 消炎喷雾 - [|cffffcc00Level 1|r],H[|cffffcc00e|r] 消炎喷雾 - [|cffffcc00Level 2|r],H[|cffffcc00e|r] 消炎喷雾 - [|cffffcc00Level 3|r]
+Researchtip="Learn H|cffffcc00e|raling Spray - [|cffffcc00Level %d|r]"
+Ubertip="喷射<ANhs,DataF1>波治疗雾；每一波治疗一个区域内所有单位的<ANhs,DataA1>伤害。","喷洒<ANhs,DataF2>波治疗雾；每一波治疗一个区域内所有单位的<ANhs,DataA2>伤害。","喷洒<ANhs,DataF3>波治疗雾；每一波治疗一个区域内所有单位的<ANhs,DataA3>伤害。"
+Researchubertip="Sprays waves of healing mist that heal units in a target area. |n|n|cffffcc00Level 1|r - <ANhs,DataF1> waves at <ANhs,DataA1> hit points healed each. |n|cffffcc00Level 2|r - <ANhs,DataF2> waves at <ANhs,DataA2> hit points healed each. |n|cffffcc00Level 3|r - <ANhs,DataF3> waves at <ANhs,DataA3> hit points healed each."
+Hotkey=E
+Researchhotkey=E
+[BNhs]
+Bufftip=愈合喷雾
+Buffubertip="这个单位正在被治疗喷雾治疗。"
+[ANab]
+Name=酸性炸弹
+Tip=酸 [|cffffcc00B|r] 炸弹 - [|cffffcc00Level 1|r]，酸 [|cffffcc00B|r] 炸弹 - [|cffffcc00Level 2|r]，酸 [|cffffcc00B|r] 炸弹 - [|cffffcc00Level 3|r]
+Researchtip="Learn Acid |cffffcc00B|romb - [|cffffcc00Level %d|r]"
+Ubertip="向目标投掷一瓶酸液。烧瓶在撞击时破裂，向附近的敌方单位泼洒一种强酸。|n|n通过 <ANab,DataC1> 降低护甲；每秒对主要目标造成 <ANab,DataD1> 伤害；对附近目标造成的伤害略低。|n持续 <ANab,Dur1> 秒。","向目标投掷一瓶酸。烧瓶在撞击时破裂，向附近的敌方单位泼洒一种强酸。|n|n通过 <ANab,DataC2> 降低护甲；每秒对主要目标造成 <ANab,DataD2> 伤害；对附近目标造成的伤害略低。|n持续 <ANab,Dur2> 秒。","向目标投掷一瓶酸。烧瓶在撞击时破裂，向附近的敌方单位泼洒一种强酸。|n|n通过 <ANab,DataC3> 降低护甲；每秒对主要目标造成 <ANab,DataD3> 伤害；对附近目标造成的伤害略低。|n持续 <ANab,Dur3> 秒。"
+Researchubertip="Hurls a flask of acid at a target.  The flask breaks upon impact, splashing a powerful acid on nearby hostile units.|n|nDecreases armor; deals high damage over time to the primary target; deals slightly less damage over time to nearby targets.|nLasts <ANab,Dur1> seconds.|n|n|cffffcc00Level 1|r - <ANab,DataD1> max damage per second, reduces armor by <ANab,DataC1>.|n|cffffcc00Level 2|r - <ANab,DataD2> max damage per second, reduces armor by <ANab,DataC2>.|n|cffffcc00Level 3|r - <ANab,DataD3> max damage per second, reduces armor by <ANab,DataC3>."
+Hotkey=B
+Researchhotkey=B
+[BNab]
+Bufftip=酸性炸弹
+Buffubertip="该单位已被酸液轰炸。它的护甲减少了，并且随着时间的推移而损坏。"
+[Aasl]
+Name=缓慢光环
+[Atdg]
+Name=建筑伤害光环
+[Atwa]
+Name=龙卷风漫游
+[ANrf]
+Name=火雨
+Tip=[|cffffcc00F|r] 火雨 - [|cffffcc00Level 1|r],[|cffffcc00F|r] 火雨 - [|cffffcc00Level 2|r],[|cffffcc00F|r] 火雨 - [|cffffcc00Level 3|r]
+Ubertip="召唤火焰波对区域内的单位造成伤害。每波造成 <ANrf,DataB1> 初始伤害和 <ANrf,DataE1> 伤害每秒 <ANrf,Dur1> 秒。|n持续 <ANrf,DataA1> 波。","召唤火波对区域内的单位造成伤害。每波造成 <ANrf,DataB2> 初始伤害和 <ANrf,DataE2> 伤害每秒 <ANrf,Dur2> 秒。|n持续 <ANrf,DataA2> 波。","召唤火波对区域内的单位造成伤害。每波造成 <ANrf,DataB3> 初始伤害和 <ANrf,DataE3> 伤害每秒 <ANrf,Dur3> 秒。|n持续 <ANrf,DataA3> 波。"
+Hotkey=F
+Researchtip=Learn Rain of |cffffcc00F|rire - [|cffffcc00Level %d|r]
+Researchhotkey=F
+Researchubertip="Calls down waves of fire that damage units in an area. Each wave deals initial damage and then burns enemies for <ANrf,Dur1> seconds. |n|n|cffffcc00Level 1|r - <ANrf,DataB1> wave damage, <ANrf,DataA1> waves, <ANrf,DataE1> damage per second. |n|cffffcc00Level 2|r - <ANrf,DataB2> wave damage, <ANrf,DataA2> waves, <ANrf,DataE2> damage per second. |n|cffffcc00Level 3|r - <ANrf,DataB3> wave damage, <ANrf,DataA3> waves, <ANrf,DataE3> damage per second."
+[BNrd]
+Bufftip=火雨
+Buffubertip="这个单位被火雨击中；随着时间的推移，它会受到损害。"
+[ANht]
+Name=恐怖嚎叫
+Tip=[|cffffcc00T|r] 恐怖的嚎叫 - [|cffffcc00Level 1|r]，[|cffffcc00T|r] 恐怖的嚎叫 - [|cffffcc00Level 2|r]，[|cffffcc00T|r] 恐怖的嚎叫 - [|cffffcc00Level 3|r]
+Ubertip="深渊领主发出可怕的嚎叫声，使附近敌方单位的攻击伤害降低 <ANht,DataA1,%>%，持续 <ANht,Dur1> 秒。","深渊领主发出可怕的嚎叫声，减少附近的敌方单位' <ANht,DataA2,%>% 持续 <ANht,Dur2> 秒的攻击伤害。","深渊领主发出一声恐怖的嚎叫，将附近敌方单位的攻击伤害降低 <ANht,DataA3,%>% 持续 <ANht ,Dur3> 秒。"
+Hotkey=T
+Researchtip="Learn Howl of |cffffcc00T|rerror - [|cffffcc00Level %d|r]"
+Researchubertip="The Pit Lord lets loose a terrifying howl that causes nearby enemy units to shiver in fear, reducing their attack damage. |nLasts <ANht,Dur1> seconds. |n|n|cffffcc00Level 1|r - <ANht,DataA1,%>% attack damage reduction. |n|cffffcc00Level 2|r - <ANht,DataA2,%>% attack damage reduction. |n|cffffcc00Level 3|r - <ANht,DataA3,%>% attack damage reduction."
+Researchhotkey=T
+[BNht]
+Bufftip=恐怖嚎叫
+Buffubertip="这个单位听到了恐怖的嚎叫；它在一段时间内造成的伤害较小。"
+[ANca]
+Name=分裂攻击
+Tip=分裂攻击 - [|cffffcc00Level 1|r],分裂攻击 - [|cffffcc00Level 2|r],分裂攻击 - [|cffffcc00Level 3|r]
+Ubertip="深渊领主以 <ANca,DataA1,%>% 的伤害击穿主要攻击单位附近的敌人。伤害击穿主要攻击单位附近的敌人。","深渊领主的攻击力足以使 <ANca,DataA3,%>% 的伤害击穿主要攻击单位附近的敌人。"
+Researchtip="Learn |cffffcc00C|rleaving Attack - [|cffffcc00Level %d|r]"
+Researchubertip="The Pit Lord strikes with such force that he damages multiple enemies with his attack. |n|n|cffffcc00Level 1|r - <ANca,DataA1,%>% damage is splash. |n|cffffcc00Level 2|r - <ANca,DataA2,%>% damage is splash. |n|cffffcc00Level 3|r - <ANca,DataA3,%>% damage is splash."
+Researchhotkey=C
+[ANef]
+Name="风暴、地球和火"
+Tip="风暴、[|cffffcc00E|r] 大地和火"
+Ubertip="将熊猫人酒仙分裂成元素，形成 3 名专业战士。如果他们中的任何一个存活到他们的召唤计时器结束，酒仙就会重生。|n持续 <ANef,HeroDur1> 秒。"
+Hotkey=E
+Researchtip="Learn Storm, |cffffcc00E|rarth, And Fire"
+Researchubertip="Splits the Pandaren Brewmaster into elements, forming 3 specialized warriors. If any of them survive until the end of their summoned timer, the Brewmaster is reborn. |nLasts <ANef,HeroDur1> seconds."
+Researchhotkey=E
+[BNef]
+Bufftip="熊猫人元素"
+Buffubertip="我是熊猫人元素；崇拜我。"
+[ANbf]
+Name=火焰之息
+Tip=[|cffffcc00F|r] 火的气息 - [|cffffcc00Level 1|r]，[|cffffcc00F|r] 火的气息 - [|cffffcc00Level 2|r]，[|cffffcc00F|r] 火的气息 - [|cffffcc00Level 3|r]
+Ubertip="向敌方单位喷出锥形火焰，造成<ANbf,DataA1>初始伤害。身上有醉酒雾霾的单位会在 <ANbf,Dur1> 秒内点燃并燃烧，每秒造成 <ANbf,DataE1> 伤害。","向敌方单位喷出锥形火焰，造成 <ANbf,DataA2> 初始伤害。身上有醉酒雾霾的单位会在 <ANbf,Dur2> 秒内点燃并燃烧，每秒造成 <ANbf,DataE2> 伤害。","向敌方单位喷出锥形火焰，造成 <ANbf,DataA3> 初始伤害。身上有醉醺醺的单位会在 <ANbf,Dur3> 秒内点燃并燃烧，每秒造成 <ANbf,DataE3> 伤害。"
+Hotkey=F
+Researchtip="Learn Breath of |cffffcc00F|rire - [|cffffcc00Level %d|r]"
+Researchubertip="Breathes a cone of fire at enemy units which deals damage. Units that have Drunken Haze on them will ignite and take burn damage over time. |nLasts <ANbf,Dur1> seconds. |n|n|cffffcc00Level 1|r - <ANbf,DataA1> initial damage, <ANbf,DataE1> damage per second. |n|cffffcc00Level 2|r - <ANbf,DataA2> initial damage, <ANbf,DataE2> damage per second. |n|cffffcc00Level 3|r - <ANbf,DataA3> initial damage, <ANbf,DataE3> damage per second."
+Researchhotkey=F
+[Aiun]
+Name=单位库存
+Tip="单位库存"
+Ubertip="允许该单位为英雄携带物品。无法使用本机库存中的物品。"
+[Aion]
+Name=单位库存
+Tip="单位库存"
+Ubertip="允许该单位为英雄携带物品。无法使用本机库存中的物品。"
+[Aihn]
+Name=单位库存
+Tip="单位库存"
+Ubertip="允许该单位为英雄携带物品。无法使用本机库存中的物品。"
+[Aien]
+Name=单位库存
+Tip="单位库存"
+Ubertip="允许该单位为英雄携带物品。无法使用本机库存中的物品。"
+[ANst]
+Name=踩踏
+Tip=S[|cffffcc00t|r] 填塞
+Ubertip="召唤成群的狂暴雷霆蜥蜴向兽王的敌人爆炸。每只爆炸的蜥蜴都会造成 <ANst,DataC1> 伤害。|n持续 <ANst,Dur1> 秒。"
+Hotkey=T
+Researchtip=Learn S|cffffcc00t|rampede
+Researchubertip="Calls down hordes of rampaging thunder lizards to explode upon the Beastmaster's enemies. Each exploding lizard deals <ANst,DataC1> damage. |nLasts <ANst,Dur1> seconds."
+Researchhotkey=T
+[AInv]
+Name=存货
+[ANpr]
+[ANss]
+[ANbf]
+Name=火焰之息
+Tip=[|cffffcc00F|r] 火的气息 - [|cffffcc00Level 1|r]，[|cffffcc00F|r] 火的气息 - [|cffffcc00Level 2|r]，[|cffffcc00F|r] 火的气息 - [|cffffcc00Level 3|r]
+Ubertip="向敌方单位喷出锥形火焰，造成 <ANbf,DataA1> 初始伤害，并在 <ANbf,Dur1> 秒内将其燃烧，每秒造成 <ANbf,DataE1> 伤害。","向敌方单位喷出锥形火焰，造成 <ANbf,DataA2> 初始伤害，并在 <ANbf,Dur2> 秒内以每秒 <ANbf,DataE2> 伤害燃烧它们。","向敌方单位喷出锥形火焰，造成 <ANbf,DataA3> 初始伤害，并在 <ANbf,Dur3> 秒内以每秒 <ANbf,DataE3> 伤害燃烧它们。"
+Hotkey=F
+Researchtip="Learn Breath of |cffffcc00F|rire - [|cffffcc00Level %d|r]"
+Researchubertip="Breathes a cone of fire at enemy units, dealing initial damage, and then damage over time. |nLasts <ANbf,Dur1> seconds. |n|n|cffffcc00Level 1|r - <ANbf,DataA1> initial damage, <ANbf,DataE1> damage per second. |n|cffffcc00Level 2|r - <ANbf,DataA2> initial damage, <ANbf,DataE2> damage per second. |n|cffffcc00Level 3|r - <ANbf,DataA3> initial damage, <ANbf,DataE3> damage per second."
+Researchhotkey=F
+[BNbf]
+Bufftip=火焰之息
+Buffubertip="该单位已被火焰之息击中；随着时间的推移，它会受到损害。"
+[ANdh]
+Name=醉醺醺
+Tip=|cffffcc00D|r醉醺醺 - [|cffffcc00Level [|cffffcc00D|r] 1|r],醉醺醺 - [|cffffcc00Level 2|r],|cffffcc00D|r醉醺醺 - [|cffffcc00Level 3|r]
+Ubertip="将敌方单位浸入酒精中，使其移动速度降低<ANdh,DataC1,%>%，并有<ANdh,DataB1,%>% 的几率失手。当对他们施放醉酒雾霾的单位被火焰之息击中时，他们会被点燃并受到燃烧伤害。|n持续 <ANdh,Dur1> 秒。","将敌方单位浸入酒精中，使其移动速度降低 <ANdh,DataC2,%>%，并有 <ANdh,DataB2,%>% 几率失手.当对他们施放醉酒雾霾的单位被火焰之息击中时，他们会被点燃并受到燃烧伤害。|n持续 <ANdh,Dur2> 秒。","将敌方单位浸入酒精中，使其移动速度降低 <ANdh,DataC3,%>%，并有 <ANdh,DataB3,%>% 几率失手.当对他们施放醉酒雾霾的单位被火焰之息击中时，他们会被点燃并受到燃烧伤害。|n持续 <ANDh,Dur3> 秒。"
+Hotkey=D
+Researchtip="Learn |cffffcc00D|rrunken Haze - [|cffffcc00Level %d|r]"
+Researchubertip="Drenches enemy units in alcohol, causing their movement speed to be reduced, and have a chance to miss on attacks. When units with Drunken Haze cast on them are hit by Breath of Fire, they will ignite and take burn damage over time. |nLasts <ANdh,Dur1> seconds |n|n|cffffcc00Level 1|r - <ANdh,DataC1,%>% movement speed reduction, <ANdh,DataB1,%>% miss chance. |n|cffffcc00Level 2|r - <ANdh,DataC2,%>% movement speed reduction, <ANdh,DataB2,%>% miss chance. |n|cffffcc00Level 3|r - <ANdh,DataC3,%>% movement speed reduction, <ANdh,DataB3,%>% miss chance."
+Researchhotkey=D
+[BNdh]
+Bufftip=醉醺醺
+Buffubertip="该单位被醉酒雾霾击中；它降低了移动速度并有机会错过攻击。"
+[ANsi]
+Name=安静
+Tip=[|cffffcc00e|r] 沉默 - [|cffffcc00Level 1|r],[|cffffcc00e|r] 沉默 - [|cffffcc00Level 2|r],[|cffffcc00e|r] 沉默 - [|cffffcc00Level 3|r]
+Ubertip="使小目标区域内的所有敌人停止施法 <ANsi,Dur1> 秒。","阻止中等目标区域内的所有敌人施法 <ANsi,Dur2> 秒。","停止大范围内的所有敌人<ANsi,Dur3> 秒的施法时间。"
+Hotkey=E
+Researchtip="Learn Sil|cffffcc00e|rnce - [|cffffcc00Level %d|r]"
+Researchubertip="Stops all enemies in a target area from casting spells. The area of effect and duration increase with level. |n|n|cffffcc00Level 1|r - Small area, lasts <ANsi,Dur1> seconds. |n|cffffcc00Level 2|r - Medium area, lasts <ANsi,Dur2> seconds. |n|cffffcc00Level 3|r - Large area, lasts <ANsi,Dur3> seconds."
+Researchhotkey=E
+[BNsi]
+Bufftip=安静
+Buffubertip="本机已静音；它不能施法。"
+[ANch]
+Name=魅力
+Tip=|cffffcc00碳|r伤害
+Ubertip="控制一个目标敌方单位。|nCharm 不能用于英雄，或 <ANch,DataA1> 级以上的小兵。"
+Hotkey=C
+Researchtip=Learn |cffffcc00C|rharm
+Researchubertip="Takes control of a target enemy unit. |nCharm cannot be used on Heroes, or creeps above level <ANch,DataA1>."
+Researchhotkey=C
+[ANmo]
+Name=季风
+Tip=季风|cffffcc00n|r - [|cffffcc00Level 1|r],Monsoo|cffffcc00n|r - [|cffffcc00Level 2|r],Monsoo|cffffcc00n|r - [|cffffcc003级|r]
+Ubertip="召唤闪电风暴对小目标区域内的敌方单位造成<ANmo,DataA1>伤害。|n持续 <ANmo,Dur1> 秒。","召唤闪电风暴对中等目标区域内的敌方单位造成 <ANmo,DataA2> 伤害。|n持续 <ANmo,Dur1> 秒。","召唤闪电风暴对大范围目标区域内的敌方单位造成 <ANmo,DataA3> 伤害。|n持续 <ANmo,Dur1> 秒。"
+Hotkey=N
+Researchtip="Learn Monsoo|cffffcc00n|r - [|cffffcc00Level %d|r]"
+Researchubertip="Calls a storm of lightning bolts to strike enemy units for <ANmo,DataA1> damage. |nLasts <ANmo,Dur1> seconds. |n|n|cffffcc00Level 1|r - Small area. |n|cffffcc00Level 2|r - Medium area. |n|cffffcc00Level 3|r - Large area."
+Researchhotkey=N
+[BNmo]
+Bufftip=季风
+Buffubertip="这个单位是在季风下；它会受到闪电的伤害。"
+[ANto]
+Name=龙卷风
+Tip=|cffffcc00T|r龙卷风
+Ubertip="召唤猛烈的可控龙卷风，减慢敌方单位的移动速度，随机将敌方地面单位抛向空中并损坏敌方建筑物。|n持续 <ANto,Dur1> 秒。"
+Hotkey=T
+Researchtip="Learn |cffffcc00T|rornado"
+Researchubertip="Summons a fierce controllable Tornado that slows enemy units' movement speed, randomly tosses enemy ground units into the air and damages enemy buildings. |nLasts <ANto,Dur1> seconds."
+Researchhotkey=T
+[Basl]
+Bufftip=龙卷风
+Buffubertip="该单位被卷入龙卷风；它的移动速度暂时降低了。"
+[BNto]
+Bufftip=龙卷风
+[Arng]
+Name=复仇
+[Adtg]
+Name=真实视域
+Tip=真实视域
+Ubertip="显示附近的隐形单位。"
+[ANtr]
+Name=真实视域
+Tip=真实视域
+Ubertip="显示附近的隐形单位。"
+[Abgm]
+Name=枯萎的金矿技能
+[Aegm]
+Name=纠缠金矿能力
+[Atol]
+Name=生命之树升级能力
+[Awrp]
+Name=传送门能力
+[BNsp]
+Bufftip=灵魂保护
+Buffubertip="这个单位被保留以备后用。"
+[ANfd]
+Name=死亡之指
+Tip=|cffffcc00F|r死亡之指
+Ubertip="立即将一个生物或建筑物从里到外翻转，彻底摧毁它。"
+Hotkey=F
+Researchtip=Learn |cffffcc00F|ringer of Death
+Researchubertip="Instantly turns a creature or building inside-out, destroying it utterly."
+Researchhotkey=F
+[ANrc]
+Name=混乱之雨
+Tip=|cffffcc00R|r混沌
+Ubertip="从天空召唤多个地狱火。"
+Hotkey=R
+Researchtip=Learn |cffffcc00R|rain of Chaos
+Researchubertip="Calls down multiple Infernals from the sky."
+Researchhotkey=R
+[Achd]
+Name=货舱死亡
+[Aloa]
+Name=加载
+Tip=|cffffcc00L|r负载
+Ubertip="加载一个目标友方陆地单位。"
+Hotkey=L
+[Adro]
+Name=卸下
+Tip=|cffffcc00U|r全部下载
+Ubertip="在目标位置卸载所有携带的单位。"
+Hotkey=U
+[Sdro]
+Name=卸下
+Tip=|cffffcc00U|r全部下载
+Ubertip="在目标位置卸载所有携带的单位。"
+Hotkey=U
+[Adri]
+Name=即时卸载
+Tip=|cffffcc00U|r全部下载
+Ubertip="卸载所有单位。"
+Hotkey=U
+[Asla]
+Name=永远睡觉
+Tip=|cffffcc00S|r睡觉
+Ubertip="单元一直睡到醒来。"
+[Advc]
+Name=吞噬货物
+[ANpi]
+Name=永久献祭
+Tip=永久献祭
+Ubertip="燃烧附近的敌方单位，每秒造成 <ANpi,DataA1> 点伤害。"
+[Apig]
+Name=永久献祭
+Tip=永久献祭
+Ubertip="燃烧附近的敌方单位，每秒造成 <Apig,DataA1> 点伤害。"
+[Abun]
+Name=货舱（兽人洞穴）
+[Acar]
+Name=货舱
+[ANgl]
+Name=用黄金换木材
+Tip=将 %d 黄金换成 %d [|cffffcc00L|r] 木材
+Hotkey=L
+[ANlg]
+Name=用木材换黄金
+Tip=将 %d 木材换成 %d [|cffffcc00G|r] 金币
+Hotkey=G
+[ANrl]
+Name=生命再生
+[Aneu]
+Name=选择英雄
+Tip=选择 [|cffffcc00H|r] 英雄
+Untip=取消选择 [|cffffcc00H|r] 英雄
+Hotkey=H
+Unhotkey=H
+[Ane2]
+Name=选择单位
+Tip=选择 [|cffffcc00U|r] 单位
+Untip=取消选择 [|cffffcc00U|r] 单位
+Hotkey=U
+Unhotkey=U
+[ANin]
+Name=地狱火
+Tip=|cffffcc00我|r地狱
+Ubertip="从天空召唤一个地狱火，在它落地的地方造成范围伤害。"
+Hotkey=I
+Researchtip=Learn |cffffcc00I|rnferno
+Researchhotkey=I
+Globalmessage=
+Globalsound=
+[BNin]
+Bufftip=地狱
+Buffubertip="这个地狱火很强大。"
+[Asds]
+Name=轰隆隆！
+Tip=[|cffffcc00b|r] 轰隆隆！
+Ubertip="在小范围内造成 <Asds,DataB1> 伤害。对建筑物和树木有效。"
+Untip="|cffc3dbff|cffc3dbff右击激活自动投射。|r|r"
+Unubertip="|cffc3dbff|cffc3dbff右击关闭自动投射。|r|r"
+Hotkey=B
+Unhotkey=B
+[ACsw]
+Name=减缓
+Hotkey=W
+Unhotkey=W
+Tip=慢|cffffcc00慢|r
+Ubertip="使敌方单位的攻击速度降低<ACsw,DataB1,%>%，移动速度降低<ACsw,DataA1,%>%。持续 <ACsw,Dur1> 秒。"
+Untip="|cffc3dbff右击激活自动施法。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+[ACtb]
+Name=投掷巨石
+Tip=投掷 [|cffffcc00B|r] 巨石
+Ubertip="一块魔法巨石向敌方单位投掷，造成 <ACtb,DataA1> 点伤害并眩晕目标 <ACtb,Dur1> 秒。"
+Hotkey=B
+[ACbr]
+Name=狂暴之怒
+Tip=|cffffcc00B|r狂暴之怒
+Ubertip="在 <ACbr,Dur1> 秒内将攻击率提高 <ACbr,DataA1,%>%。"
+Hotkey=B
+[Bfzy]
+Bufftip=疯狂
+Buffubertip="这个单位有狂热；它的攻击速度和移动速度增加。"
+[ACsp]
+Name=睡觉
+[Aspd]
+Name=产卵蜘蛛
+[AOac]
+Name=命令光环
+Tip=命令光环
+Ubertip="对附近友军单位的攻击造成额外伤害。"
+[Boac]
+Bufftip=命令光环
+Buffubertip="该单位受到指挥光环的影响；它增加了攻击伤害。"
+[Btlf]
+Bufftip=定时生活
+Buffubertip="被召唤的单位会受到驱散的伤害。"
+[Adda]
+Name=死亡时的AOE伤害
+[Agho]
+Name=鬼
+[Aeth]
+Name=鬼
+[Agld]
+Name=金矿能力
+[Amin]
+Name=我的 - 爆炸
+[Apiv]
+Name=永久隐身
+[Artn]
+Name=返回
+[Avul]
+Name=刀枪不入
+[Awan]
+Name=漫步
+[AUmd]
+Name=黑暗召唤（Malganis）
+[Aarm]
+Name=法力回复光环
+[Barm]
+Bufftip=法力回复光环
+Buffubertip="该单位受到法力再生光环的影响；它具有增加的法力恢复速度。"
+[ANre]
+Name=生命再生光环
+[Sch2]
+Name=货舱
+[Argd]
+Name=返回黄金
+[Argl]
+Name=返回黄金和木材
+[Arlm]
+Name=返回木材
+[Amnz]
+Name=死亡时的AOE伤害
+[Aand]
+[ACad]
+[Aap2]
+[Abli]
+Name=枯萎病
+[Abds]
+Name=枯萎驱散小
+[Abdl]
+Name=枯萎驱散大
+[Abgs]
+Name=枯萎生长小
+[Abgl]
+Name=枯萎生长大
+[ACct]
+Name=致命一击
+Tip=致命一击
+Ubertip="给予 <ACct,DataA1>% 的几率在一次攻击中造成 <ACct,DataB1> 倍的正常伤害。"
+[Amnx]
+Name=死亡时的AOE伤害
+[Adt1]
+[Adt2]
+[Adt3]
+[ACen]
+Name=诱捕
+Tip=|cffffcc00电子|r圈套
+Ubertip="使目标敌方单位被束缚在地面上，使其在 <ACen,Dur1> 秒内无法移动。被诱捕的空中单位可以像地面单位一样受到攻击。"
+Hotkey=E
+[AChd]
+[ACma]
+[Sloa]
+Name=加载
+Tip=|cffffcc00L|r负载
+Ubertip="加载一个目标友方陆地单位。"
+Hotkey=L
+[ACmi]
+Name=技能免疫
+Tip=技能免疫
+Ubertip="使该单位免疫所有法术。"
+[ACm2]
+Name=技能免疫
+Tip=技能免疫
+Ubertip="使该单位免疫所有法术。"
+[ACm3]
+Name=技能免疫
+Tip=技能免疫
+Ubertip="使该单位免疫所有法术。"
+[ACrj]
+Name=复兴
+Tip=R[|cffffcc00e|r] 青春
+Ubertip="在 <ACrj,Dur1> 秒内为目标友方单位治疗 <ACrj,DataA1> 点生命值。"
+Hotkey=E
+[Ahrp]
+Name=修理
+Tip=|cffffcc00R|r修复
+Ubertip="以资源为代价修理机械单元和结构。"
+Untip="|cffc3dbff右击激活自动施法。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Hotkey=R
+Unhotkey=R
+[Aro1]
+Name=根
+Tip=|cffffcc00R|r根
+Ubertip="将远古者的根部埋入地下，使其无法移动，但允许其建造单位。对于远古守护者来说，这使它可以向空中投掷巨大的岩石来伤害敌方单位。还提供远古强化盔甲。"
+Hotkey=R
+Untip=[|cffffcc00r|r] 连根拔起
+Unubertip="允许远古者将自己拉出地面，以便它可以移动并与单位进行近战战斗。还提供远古重型盔甲。"
+Unhotkey=R
+[Aro2]
+Name=根
+Tip=|cffffcc00R|r根
+Ubertip="将远古者的根部埋入地下，使其无法移动，但允许其建造单位。对于远古守护者来说，这使它可以向空中投掷巨大的岩石来伤害敌方单位。还提供远古强化盔甲。"
+Hotkey=R
+Untip=[|cffffcc00r|r] 连根拔起
+Unubertip="允许远古者将自己拉出地面，以便它可以移动并与单位进行近战战斗。还提供远古重型盔甲。"
+Unhotkey=R
+[Asid]
+Name=出售物品
+Tip=出售物品
+Ubertip="允许出售物品。"
+[Asud]
+Name=出售单位
+Tip=出售单位
+Ubertip="允许出售单位。"
+[ACsw]
+[ACpv]
+Name=粉碎
+Tip=粉碎
+Ubertip="使攻击有 <ACpv,DataA1>% 的几率对附近单位造成 <ACpv,DataB1> 伤害。"
+[Anei]
+Name=选择用户
+Tip=选择 [|cffffcc00U|r] 用户
+Hotkey=U
+[ACrk]
+Name=抗性皮肤
+Tip=抗性皮肤
+Ubertip="减少负面法术的持续时间并使单位免疫某些法术。"
+[ANfl]
+Name=分叉的闪电
+Tip=|cffffcc00F|rorked Lightning - [|cffffcc00Level [|cffffcc00F|r] 1|r],Forked Lightning - [|cffffcc00Level 2|r],|cffffcc00F|rorked Lightning - [|cffffcc00Level 3|r]
+Ubertip="向目标敌方单位召唤一个锥形闪电，最多击中 <ANfl,DataB1> 个敌方单位，造成 <ANfl,DataA1> 伤害。","从海女巫身上召唤一个锥形闪电，最多击中 <ANfl, DataB2> 个敌方单位造成 <ANfl,DataA2> 伤害。","从海女巫那里召唤出一个锥形闪电，对最多 <ANfl,DataB3> 个敌方单位造成 <ANfl,DataA3> 伤害。"
+Hotkey=F
+Researchtip="Learn |cffffcc00F|rorked Lightning - [|cffffcc00Level %d|r]"
+Researchubertip="Calls forth a cone of lightning to damage enemies. |n|n|cffffcc00Level 1|r - <ANfl,DataA1> damage per unit. |n|cffffcc00Level 2|r - <ANfl,DataA2> damage per unit. |n|cffffcc00Level 3|r - <ANfl,DataA3> damage per unit."
+Researchhotkey=F
+[BNpi]
+EditorName=Permanent Immolation
+[Bpig]
+EditorName=Permanent Immolation
+[BNst]
+EditorName=Stampede
+[BNrf]
+EditorName=Rain of Fire (Area)
+[Bsha]
+EditorName=Shared Vision
+[Btdg]
+EditorName=Tornado Damage
+[ANmd]
+EditorName=Monsoon
+[XErf]
+EditorName=Rain of Fire (Effect)
+[XIct]
+EditorName=Item Change Time of Day
+[XNmo]
+EditorName=Monsoon (Effect)
+[XNhs]
+EditorName=Healing Spray (Effect)
+[A0DY]
+Name="ELE：高等火元素（分裂）"
+Tip=Summon Lava [|cffffcc00w|r] Spawn n - [|cffffcc00Level 1|r],Summon Lava [|cffffcc00w|r] Spawn n - [|cffffcc00Level 2|r],Summon Lava [|cffffcc00w|r] Spawn n - [|cffffcc00Level 3|r]
+Researchtip="Learn Summon Lava Spa|cffffcc00w|rn - [|cffffcc00Level %d|r]"
+Ubertip="召唤熔岩之卵，一种有弹性且致命的火焰生物。当熔岩卵造成伤害时，它会消耗目标的肉，从而助长其火焰并最终分裂成两个健康的熔岩卵。|n|n拥有 <nlv1,realHP> 生命值并造成 <nlv1,mindmg1> - <nlv1,maxdmg1> 伤害。|n持续 <ANlm,Dur1> 秒。|n|n|cffffcc00攻击地面和空中单位。|r","召唤熔岩之卵，一种有弹性且致命的火焰生物。当熔岩卵造成伤害时，它会消耗目标的肉，从而助长其火焰并最终分裂成两个健康的熔岩卵。|n|n拥有 <nlv2,realHP> 生命值并造成 <nlv2,mindmg1> - <nlv2,maxdmg1> 伤害。|n持续 <ANlm,Dur2> 秒。|n|n|cffffcc00攻击地面和空中单位。|r","召唤熔岩之卵，一种有弹性且致命的火焰生物。当熔岩卵造成伤害时，它会消耗目标的肉，从而助长其火焰并最终分裂成两个健康的熔岩卵。|n|n拥有 <nlv3,realHP> 生命值并造成 <nlv3,mindmg1> - <nlv3,maxdmg1> 伤害。|n持续 <ANlm,Dur3> 秒。|n|n|cffffcc00攻击地面和空中单位。|r"
+Researchubertip="Summons a Lava Spawn, a resilient and deadly fire creature. As a Lava Spawn deals damage, it consumes the flesh of its target, eventually splitting into two healthy Lava Spawns.|nLasts <ANlm,Dur1> seconds.|n|n|cffffcc00Level 1|r - <nlv1,realHP> hit points, <nlv1,mindmg1> - <nlv1,maxdmg1> damage.|n|cffffcc00Level 2|r - <nlv2,realHP> hit points, <nlv2,mindmg1> - <nlv2,maxdmg1> damage.|n|cffffcc00Level 3|r - <nlv3,realHP> hit points, <nlv3,mindmg1> - <nlv3,maxdmg1> damage.|n|n|cffffcc00Attacks ground and air units.|r"
+Hotkey=W
+Researchhotkey=W
+[A0E9]
+Name="大地元素"
+Tip="火车地球元素"
+Ubertip="|n|cffFFFF80攻击：|r围攻 (|cffFFFF00近战|r,|cffFFFF00 50|r dps)|n|cffFFFF80盔甲：|r英雄 (|cffFFFF004|r)|n|cffFFFF80生命值：|cffFFFF00450|r|n|cffFFFF80能力：|r|n|n|cff80FF00粉碎|r|n在 200 范围内以 20% 的几率造成 100 点伤害，在 300 范围内造成一半伤害|n|n|cff80FF00地球的力量|r|n造成与元素当前生命成正比的额外伤害 (50dmg*currentHP/maxHP)"
+Untip="|cffc3dbff右击激活自动施法。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Hotkey=R
+Unhotkey=R
+[A0E8]
+Name="高等水元素"
+Tip="训练高等水元素"
+Ubertip="|n|cffFFFF80攻击：1|r正常 (|cffFFFF0030|r rng|r,|cffFFFF00 66|r dps)|n|cffFFFF80攻击：2|r穿刺 (|cffFFFF00380|r rng|r,|cffFFFF00 66|r dps)|n|cffFFFF80盔甲：|r中等 (|cffFFFF007|r)|n|cffFFFF80生命值：|cffFFFF00650|r|n|cffFFFF80能力：|r|n|n|cff80FF00错觉|r|n攻击时有 20% 的几率创建自己的副本。幻象只造成 60% 的攻击并受到双倍伤害|n|n|cff80FF00液态|r|n在 80% 的情况下，攻击会穿过水元素的身体而不会造成任何伤害"
+Untip=" "
+Unubertip=" "
+Hotkey=R
+Unhotkey=R
+[A0E7]
+Name="水元素"
+Tip="火车水元素"
+Ubertip="|n|cffFFFF80攻击：1|r正常 (|cffFFFF0030|r rng|r,|cffFFFF00 40|r dps)|n|cffFFFF80攻击：2|r穿刺 (|cffFFFF00340|r rng|r,|cffFFFF00 29|r dps)|n|cffFFFF80盔甲：|r中等 (|cffFFFF003|r)|n|cffFFFF80生命值：|cffFFFF00500|r|n|cffFFFF80能力：|r|n|n|cff80FF00液态|r|n在 80% 的情况下，攻击会穿过水元素的身体而不会造成任何伤害"
+Untip="|cffc3dbff右击激活自动施法。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Hotkey=R
+Unhotkey=R
+[A0DV]
+Name="ELE：ObeliskOfElements（虚拟）"
+Tip="附魔"
+Ubertip="为随机友军单位提供元素护盾并为其治疗 100hp：|n- 大地之盾：+5 护甲，35% 巨石投掷（100dmg 1.5 秒眩晕）|n- 气盾：+20% IAS\MS，+20% 法术和伤害抗性|n- 火盾：燃烧随机敌人（25dps，150 AoE）|n|n|cffFFFF80冷却时间：|cffFFFF00 10 |r秒"
+Untip="|cffc3dbff右击激活自动施法。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Hotkey=R
+Unhotkey=R
+[A0EE]
+Name="高等火元素"
+Tip="训练高等火元素"
+Ubertip="|n|cffFFFF80攻击：|r混乱 (|cffFFFF00450|r rng|r,|cffFFFF00 51|r dps)|n|cffFFFF80盔甲：|r重型 (|cffFFFF007|r)|n|cffFFFF80生命值：|cffFFFF00900|r|n|cffFFFF80能力：|r|n|ncff80FF00火焰吐息|r|n攻击时有 15% 几率施放火焰吐息（150 伤害）"
+Untip="|cffc3dbff右击激活自动施法。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Hotkey=R
+Unhotkey=R
+[A0ED]
+Name="火元素"
+Tip="火车火元素"
+Ubertip="|n|cffFFFF80攻击：|r混乱 (|cffFFFF00400|r rng|r,|cffFFFF00 34|r dps)|n|cffFFFF80盔甲：|r重 (|cffFFFF003|r)|n|cffFFFF80生命值：|cffFFFF00525|r"
+Untip="|cffc3dbff右击激活自动施法。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Hotkey=R
+Unhotkey=R
+[A0EC]
+Name="高等闪电元素"
+Tip="训练高等闪电元素"
+Ubertip="|n|cffFFFF80攻击：|r法术 (|cffFFFF00400|r rng|r,|cffFFFF00 1|r dps)|n|cffFFFF80盔甲：|r重型 (|cffFFFF009|r)|n|cffFFFF80生命值：|cffFFFF00800|r|n|cffFFFF80能力：|r|n|n|cff80FF00闪电攻击|r|n对 600 范围内的 5 个目标造成 80 点伤害|n|n|cff80FF00闪电盾|r|n每当元素被近战单位攻击时，攻击者有 30% 的几率被眩晕 4 秒"
+Untip="|cffc3dbff右击激活自动施法。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Hotkey=R
+Unhotkey=R
+[A0EB]
+Name="闪电元素"
+Tip="训练闪电元素"
+Ubertip="|n|cffFFFF80攻击：|r法术 (|cffFFFF00350|r rng|r,|cffFFFF00 1|r dps)|n|cffFFFF80盔甲：|r重 (|cffFFFF003|r)|n|cffFFFF80生命值：|cffFFFF00450|r|n|cffFFFF80能力：|r|n|n|cff80FF00闪电攻击|r|n对 600 范围内的 3 个目标造成 50 点伤害|n|n|cff80FF00闪电盾|r|n每当元素被近战单位攻击时，攻击者有 15% 的几率被眩晕 2 秒"
+Untip="|cffc3dbff右击激活自动施法。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Hotkey=R
+Unhotkey=R
+[A0EA]
+Name="大地元素"
+Tip="训练大地元素"
+Ubertip="|n|cffFFFF80攻击：|r围攻 (|cffFFFF00近战|r,|cffFFFF00 83|r dps)|n|cffFFFF80盔甲：|r英雄 (|cffFFFF008|r)|n|cffFFFF80生命值：|cffFFFF00950|r|n|cffFFFF80能力：|r|n|n|cff80FF00粉碎|r|n在 200 范围内造成 200 点伤害，在 200 范围内造成 25% 伤害，在 300 范围内造成一半伤害|n|n|cff80FF00地球的力量|r|n造成与元素当前生命成比例的额外伤害 (100dmg*currentHP/maxHP)"
+Untip="|cffc3dbff右击激活自动施法。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Hotkey=R
+Unhotkey=R
+[A0EL]
+Name=法力回复
+[A0EM]
+Name="NAT：小精灵（眩晕）"
+Tip=重击
+Ubertip="使攻击有 <ACbh,DataA1>% 的几率造成 <ACbh,DataC1> 额外伤害并眩晕对手 <ACbh,Dur1> 秒。"
+[A0EH]
+Name="高等风元素"
+Tip="训练大风元素"
+Ubertip="|n|cffFFFF80攻击：1|r穿刺 (|cffFFFF00450|r rng|r,|cffFFFF00 55|r dps)|n|cffFFFF80攻击：2|r穿刺 (|cffFFFF00450|r rng|r,|cffFFFF00 43|r dps)|n|cffFFFF80盔甲：|r中等 (|cffFFFF009|r)|n|cffFFFF80生命值：|cffFFFF001300|r|n|cffFFFF80能力：|r|n|n|cff80FF00飞行|r|n这个单位在飞|n|n|cff80FF00大风|r|n500范围内敌方空中单位的攻击和移动速度降低35%"
+Untip="|cffc3dbff右击激活自动施法。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Hotkey=R
+Unhotkey=R
+[A0EI]
+Name="ELE：咒语之书"
+Tip="元素之雨"
+Ubertip="|cffFFFF80能力：|cffFFFF00元素浩劫|r|n施放咒语之一：|n- 石钉：100dmg + 冲击地面，50dmg 飞行，|n- 闪电风暴：100dmg 和对飞行的冲击，50 dmg 对地面|n在 300 范围内，持续 6 秒。|n|cffFFFF80冷却时间：|cffFFFF00 16 |r秒"
+Untip="|cffc3dbff右击激活自动施法。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Hotkey=R
+Unhotkey=R
+[A0EF]
+Name="次级风元素"
+Tip="训练次级风元素"
+Ubertip="|n|cffFFFF80攻击：|r穿刺 (|cffFFFF00400|r rng|r,|cffFFFF00 30|r dps)|n|cffFFFF80盔甲：|r中等 (|cffFFFF002|r)|n|cffFFFF80生命值：|cffFFFF00350|r|n|cffFFFF80能力：|r|n|n|cff80FF00飞行|r|n这个单位在飞"
+Untip="|cffc3dbff右击激活自动施法。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Hotkey=R
+Unhotkey=R
+[A0EG]
+Name="风元素"
+Tip="火车风元素"
+Ubertip="|n|cffFFFF80攻击：1|r穿刺 (|cffFFFF00450|r rng|r,|cffFFFF00 43|r dps)|n|cffFFFF80攻击：2|r穿刺 (|cffFFFF00450|r rng|r,|cffFFFF00 37|r dps)|n|cffFFFF80盔甲：|r中等 (|cffFFFF004|r)|n|cffFFFF80生命值：|cffFFFF00550|r|n|cffFFFF80能力：|r|n|n|cff80FF00飞行|r|n这个单位在飞|n|n|cff80FF00大风|r|n500范围内敌方空中单位的攻击和移动速度降低20%"
+Untip="|cffc3dbff右击激活自动施法。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Hotkey=R
+Unhotkey=R
+[A0ES]
+Name=缓慢光环
+[A0EP]
+Name="ELE：附魔（锻造武器）"
+Tip="|cffffcc00Q|r羽绒喷雾"
+Ubertip="对羽毛兽的攻击附加<ANak,DataA1>额外伤害，并使其攻击造成范围伤害。"
+Untip="|cffc3dbff|cffc3dbff右击激活自动投射。|r|r"
+Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Hotkey=Q
+Unhotkey=Q
+[A0EN]
+Name=轰隆隆！
+Tip=[|cffffcc00b|r] 轰隆隆！
+Ubertip="在小范围内造成 <Asds,DataB1> 伤害。对建筑物和树木有效。"
+Untip="|cffc3dbff|cffc3dbff右击激活自动投射。|r|r"
+Unubertip="|cffc3dbff|cffc3dbff右击关闭自动投射。|r|r"
+Hotkey=B
+Unhotkey=B
+[A0CY]
+Name="ELE：元素之雨"
+Tip="元素之雨"
+Ubertip="从接下来的 3 个法术中施放 1 个：|n- 季风（40dmg/秒，5 秒）|n- 流星雨 200dmg，15dmg/秒，3 秒）|n- 暴风雪（25dmg/波，7 波）|n|n|cffFFFF80冷却时间：|cffFFFF00 14 |r秒"
+Untip="|cffc3dbff右击激活自动施法。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Hotkey=R
+Unhotkey=R
+[A0CZ]
+Name="ELE：附魔"
+Tip="附魔"
+Ubertip="用元素增益为一个随机友军单位附魔，提高其特性。|n|n|cffFFFF80冷却时间：|cffFFFF00 9 |r秒"
+Untip="|cffc3dbff右击激活自动施法。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Hotkey=R
+Unhotkey=R
+[A0CT]
+Name="ELE：水元素（闪避）"
+Tip=逃避
+Ubertip="提供 <ACes,DataA1,%>% 的几率避免攻击。"
+[A0D8]
+Name="ELE：元素守卫塔（献祭）"
+Tip="献祭"
+Ubertip="在 350 范围内燃烧附近的敌方单位，每秒造成 18 点伤害。"
+[A0DC]
+Name="ELE：元素守卫塔（巨石）"
+Tip="巨石撞击"
+Ubertip="有 50% 的几率使单位昏迷 3 秒并造成 100 额外伤害。"
+Hotkey=B
+[A0E3]
+Name="ELE：季风"
+Tip=季风|cffffcc00n|r - [|cffffcc00Level 1|r],Monsoo|cffffcc00n|r - [|cffffcc00Level 2|r],Monsoo|cffffcc00n|r - [|cffffcc003级|r]
+Ubertip="召唤闪电风暴对小目标区域内的敌方单位造成<ACmo,DataA1>伤害。|n持续 <ACmo,Dur1> 秒。","召唤闪电风暴对中等目标区域内的敌方单位造成 <ACmo,DataA2> 伤害。|n持续 <ACmo,Dur1> 秒。","召唤闪电风暴对大范围目标区域内的敌方单位造成 <ACmo,DataA3> 伤害。|n持续 <ACmo,Dur1> 秒。"
+Hotkey=N
+Researchtip="Learn Monsoo|cffffcc00n|r - [|cffffcc00Level %d|r]"
+Researchubertip="Calls a storm of lightning bolts to strike enemy units for <ANmo,DataA1> damage. |nLasts <ANmo,Dur1> seconds. |n|n|cffffcc00Level 1|r - Small area. |n|cffffcc00Level 2|r - Medium area. |n|cffffcc00Level 3|r - Large area."
+Researchhotkey=N
+[A0E4]
+Name="ELE：季风 (-na)"
+Tip=季风|cffffcc00n|r - [|cffffcc00Level 1|r],Monsoo|cffffcc00n|r - [|cffffcc00Level 2|r],Monsoo|cffffcc00n|r - [|cffffcc003级|r]
+Ubertip="召唤闪电风暴对小目标区域内的敌方单位造成<ACmo,DataA1>伤害。|n持续 <ACmo,Dur1> 秒。","召唤闪电风暴对中等目标区域内的敌方单位造成 <ACmo,DataA2> 伤害。|n持续 <ACmo,Dur1> 秒。","召唤闪电风暴对大范围目标区域内的敌方单位造成 <ACmo,DataA3> 伤害。|n持续 <ACmo,Dur1> 秒。"
+Hotkey=N
+Researchtip="Learn Monsoo|cffffcc00n|r - [|cffffcc00Level %d|r]"
+Researchubertip="Calls a storm of lightning bolts to strike enemy units for <ANmo,DataA1> damage. |nLasts <ANmo,Dur1> seconds. |n|n|cffffcc00Level 1|r - Small area. |n|cffffcc00Level 2|r - Medium area. |n|cffffcc00Level 3|r - Large area."
+Researchhotkey=N
+[A0DT]
+Name="次级水元素"
+Tip="培养小水元素"
+Ubertip="|n|cffFFFF80攻击：1|r正常 (|cffFFFF0030|r rng|r,|cffFFFF00 38|r dps)|n|cffFFFF80攻击：2|r穿刺 (|cffFFFF00300|r rng|r,|cffFFFF00 18|r dps)|n|cffFFFF80盔甲：|r中等 (|cffFFFF001|r)|n|cffFFFF80生命值：|cffFFFF00300|r|n|cffFFFF80能力：|r|n|n|cff80FF00液态|r|n在 60% 的情况下，攻击会穿过水元素的身体而不造成任何伤害"
+Untip="|cffc3dbff右击激活自动施法。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Hotkey=R
+Unhotkey=R
+[A0E1]
+Name=寄生虫
+Tip=[|cffffcc00r|r] 寄生虫
+Ubertip="用致命的寄生虫感染目标敌方单位，每秒造成 <ANpa,DataA1> 伤害，持续 <ANpa,Dur1> 秒。如果受影响的单位在寄生虫的影响下死亡，则会从其尸体中生成一个小型仆从。"
+Untip="|cffc3dbff右击激活自动施法。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Hotkey=R
+Unhotkey=R
+[A0BS]
+Name="NAT：奇迹古树（假人）"
+Tip="狂野的转变"
+Ubertip="将非机械敌人转化为敌对的森林生物（转化几率：25%）。|n|cffFFFF80冷却时间：|cffFFFF00 50 |r秒"
+Untip="|cffc3dbff右击激活自动施法。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Hotkey=R
+Unhotkey=R
+[A0BZ]
+Name="NAT：远古熊（分裂攻击）"
+Tip=分裂攻击
+Ubertip="该生物的攻击力足以使 <ACce,DataA1,%>% 的伤害击穿主要攻击单位附近的敌人。"
+[A0BY]
+Name="NAT：熊（劈砍攻击）"
+Tip=分裂攻击
+Ubertip="该生物的攻击力足以使 <ACce,DataA1,%>% 的伤害击穿主要攻击单位附近的敌人。"
+[A0BX]
+Name="NAT：远古守护者（树人萌芽）"
+Tip=[|cffffcc00r|r] 寄生虫
+Ubertip="用致命的寄生虫感染目标敌方单位，每秒造成 <ANpa,DataA1> 伤害，持续 <ANpa,Dur1> 秒。如果受影响的单位在寄生虫的影响下死亡，则会从其尸体中生成一个小型仆从。"
+Untip="|cffc3dbff右击激活自动施法。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Hotkey=R
+Unhotkey=R
+[A0BW]
+Name="NAT：远古守护者（虚体）"
+Tip=逃避
+Ubertip="提供 <ACev,DataA1,%>% 的几率避免攻击。"
+[A0CA]
+Name=缓慢光环
+[A0CE]
+Name="龙卷风（单位伤害光环）"
+[A0CJ]
+Name="ELE：闪电元素（分叉闪电）"
+Tip=[|cffffcc00r|r] 分叉闪电
+Ubertip="向一个目标敌方单位召唤一个锥形闪电，对最多 <ACfl,DataB1> 个敌方单位造成 <ACfl,DataA1> 伤害。"
+Hotkey=R
+[A0CK]
+Name="ELE：大闪电元素（分叉闪电）"
+Tip=[|cffffcc00r|r] 分叉闪电
+Ubertip="向一个目标敌方单位召唤一个锥形闪电，对最多 <ACfl,DataB1> 个敌方单位造成 <ACfl,DataA1> 伤害。"
+Hotkey=R
+[A0CN]
+Name="ELE：高等火元素（喷火）"
+Tip=[|cffffcc00F|r] 火焰之息
+Ubertip="向敌方单位喷出锥形火焰，造成 <ACbc,DataA1> 伤害。"
+Hotkey=F
+[A0D0]
+Name="ELE：元素雨（流星雨）"
+Tip=[|cffffcc00F|r] 火雨
+Ubertip="召唤火焰波对区域内的单位造成伤害。每波造成 <ACrg,DataB1> 初始伤害和 <ACrg,DataE1> 伤害每秒 <ACrg,Dur1> 秒。|n持续 <ACrg,DataA1> 波。"
+Hotkey=F
+[A0CL]
+Name="ELE：火元素（分体）"
+Tip=Summon Lava [|cffffcc00w|r] Spawn n - [|cffffcc00Level 1|r],Summon Lava [|cffffcc00w|r] Spawn n - [|cffffcc00Level 2|r],Summon Lava [|cffffcc00w|r] Spawn n - [|cffffcc00Level 3|r]
+Researchtip="Learn Summon Lava Spa|cffffcc00w|rn - [|cffffcc00Level %d|r]"
+Ubertip="召唤熔岩之卵，一种有弹性且致命的火焰生物。当熔岩卵造成伤害时，它会消耗目标的肉，从而助长其火焰并最终分裂成两个健康的熔岩卵。|n|n拥有 <nlv1,realHP> 生命值并造成 <nlv1,mindmg1> - <nlv1,maxdmg1> 伤害。|n持续 <ANlm,Dur1> 秒。|n|n|cffffcc00攻击地面和空中单位。|r","召唤熔岩之卵，一种有弹性且致命的火焰生物。当熔岩卵造成伤害时，它会消耗目标的肉，从而助长其火焰并最终分裂成两个健康的熔岩卵。|n|n拥有 <nlv2,realHP> 生命值并造成 <nlv2,mindmg1> - <nlv2,maxdmg1> 伤害。|n持续 <ANlm,Dur2> 秒。|n|n|cffffcc00攻击地面和空中单位。|r","召唤熔岩之卵，一种有弹性且致命的火焰生物。当熔岩卵造成伤害时，它会消耗目标的肉，从而助长其火焰并最终分裂成两个健康的熔岩卵。|n|n拥有 <nlv3,realHP> 生命值并造成 <nlv3,mindmg1> - <nlv3,maxdmg1> 伤害。|n持续 <ANlm,Dur3> 秒。|n|n|cffffcc00攻击地面和空中单位。|r"
+Researchubertip="Summons a Lava Spawn, a resilient and deadly fire creature. As a Lava Spawn deals damage, it consumes the flesh of its target, eventually splitting into two healthy Lava Spawns.|nLasts <ANlm,Dur1> seconds.|n|n|cffffcc00Level 1|r - <nlv1,realHP> hit points, <nlv1,mindmg1> - <nlv1,maxdmg1> damage.|n|cffffcc00Level 2|r - <nlv2,realHP> hit points, <nlv2,mindmg1> - <nlv2,maxdmg1> damage.|n|cffffcc00Level 3|r - <nlv3,realHP> hit points, <nlv3,mindmg1> - <nlv3,maxdmg1> damage.|n|n|cffffcc00Attacks ground and air units.|r"
+Hotkey=W
+Researchhotkey=W
+[A0D3]
+Name="ELE：元素雨（流星雨）"
+Tip=[|cffffcc00F|r] 火雨
+Ubertip="召唤火焰波对区域内的单位造成伤害。每波造成 <ACrg,DataB1> 初始伤害和 <ACrg,DataE1> 伤害每秒 <ACrg,Dur1> 秒。|n持续 <ACrg,DataA1> 波。"
+Hotkey=F
+[A0CS]
+Name="ELE：次级水元素（闪避）"
+Tip=逃避
+Ubertip="提供 <ACes,DataA1,%>% 的几率避免攻击。"
+[A0B4]
+Name="NAT：远古熊（爆击）"
+Tip=致命一击
+Ubertip="给予 <ACct,DataA1>% 的几率在一次攻击中造成 <ACct,DataB1> 倍的正常伤害。"
+[A0B3]
+Name="NAT：熊（致命一击）"
+Tip=致命一击
+Ubertip="给予 <ACct,DataA1>% 的几率在一次攻击中造成 <ACct,DataB1> 倍的正常伤害。"
+[A0B6]
+Name=嗜血
+Tip=|cffffcc00B|r嗜血
+Ubertip="在 <ACbb,Dur1> 秒内，使目标友方单位的攻击率提高 <ACbb,DataA1,%>%，移动速度提高 <ACbb,DataB1,%>%。"
+Untip="|cffc3dbff右击激活自动施法。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Hotkey=B
+Unhotkey=B
+[A0AU]
+Name="NAT：育母（->巨型蜘蛛）"
+[A0B5]
+Name=嗜血
+Tip=|cffffcc00B|r嗜血
+Ubertip="在 <ACbb,Dur1> 秒内，使目标友方单位的攻击率提高 <ACbb,DataA1,%>%，移动速度提高 <ACbb,DataB1,%>%。"
+Untip="|cffc3dbff右击激活自动施法。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Hotkey=B
+Unhotkey=B
+[A0AV]
+Name="NAT：育母蜘蛛（感染 2 只森林蜘蛛）"
+Tip=[|cffffcc00r|r] 寄生虫
+Ubertip="用致命的寄生虫感染目标敌方单位，每秒造成 <ANpa,DataA1> 伤害，持续 <ANpa,Dur1> 秒。如果受影响的单位在寄生虫的影响下死亡，则会从其尸体中生成一个小型仆从。"
+Untip="|cffc3dbff右击激活自动施法。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Hotkey=R
+Unhotkey=R
+[A0B9]
+Name="COR：虚空守护者（焚化）"
+Tip="焚化","焚化 - [|cffffcc002 级|r]","焚化 - [|cffffcc003 级|r]"
+Researchtip="Learn In|cffffcc00c|rinerate - [|cffffcc00Level %d|r]"
+Ubertip="对同一目标的每次攻击造成的伤害比前一次多 5 点。如果目标死亡，它会爆炸，在 120 范围内对敌人造成 125 点法术伤害，在 180 范围内对单位造成一半伤害。这些火焰在第一次攻击时增加 <ANic,DataA2> 伤害，在第二次攻击时增加两倍，在第三次攻击时增加三倍，以此类推。|n|n如果一个单位在此效果下死亡，它会被焚化，对附近的所有敌对单位造成高达 <ANic,DataB2> 的伤害。这些火焰在第一次攻击时增加 <ANic,DataA3> 伤害，在第二次攻击时增加两倍，在第三次攻击时增加三倍，等等。|n|n如果一个单位在此效果下死亡，它会被焚化，对附近的所有敌对单位造成最多 <ANic,DataB3> 伤害。"
+Researchubertip="Each attack made is enhanced with living flames that cling to the target. These flames add a small amount of damage on the first attack, twice as much on the second attack, three times as much on the third attack, etc.|n|nIf a unit dies while under this effect, it is incinerated, causing significant damage to all nearby hostile units.|n|n|cffffcc00Level 1|r - <ANic,DataA1> bonus damage, <ANic,DataB1> incineration damage.|n|cffffcc00Level 2|r - <ANic,DataA2> bonus damage, <ANic,DataB2> incineration damage.|n|cffffcc00Level 3|r - <ANic,DataA3> bonus damage, <ANic,DataB3> incineration damage."
+Hotkey=C
+Researchhotkey=C
+[A0BD]
+Name="NAT：大风古树"
+Tip=|cffffcc00T|r龙卷风
+Ubertip="召唤猛烈的可控龙卷风，减慢敌方单位的移动速度，随机将敌方地面单位抛向空中并损坏敌方建筑物。|n持续 <ANto,Dur1> 秒。"
+Hotkey=T
+Researchtip="Learn |cffffcc00T|rornado"
+Researchubertip="Summons a fierce controllable Tornado that slows enemy units' movement speed, randomly tosses enemy ground units into the air and damages enemy buildings. |nLasts <ANto,Dur1> seconds."
+Researchhotkey=T
+[A0BH]
+Name="NAT：山巨人（粉碎）"
+Tip=粉碎
+Ubertip="使攻击有 <ACpv,DataA1>% 的几率对附近单位造成 <ACpv,DataB1> 伤害。"
+[A0BJ]
+Name="NAT：山地巨人（嘲讽假人）"
+Tip=[|cffffcc00r|r] 寄生虫
+Ubertip="用致命的寄生虫感染目标敌方单位，每秒造成 <ANpa,DataA1> 伤害，持续 <ANpa,Dur1> 秒。如果受影响的单位在寄生虫的影响下死亡，则会从其尸体中生成一个小型仆从。"
+Untip="|cffc3dbff右击激活自动施法。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Hotkey=R
+Unhotkey=R
+[A0BK]
+Name="NAT：树人（荆棘）"
+Tip=尖刺壳
+Ubertip="Turtle 外壳上的锋利尖刺会将 <ANth,DataA1,%>% 的敌方单位近战攻击伤害返还给它。"
+[A0BM]
+Name="NAT：放逐（虚拟）"
+Tip="放逐"
+Ubertip="使敌方单位变得虚无缥缈。灵体生物不能攻击，但他们可以施法，而某些施法在他们身上的效果会更大。持续 30 秒。"
+Untip="|cffc3dbff右击激活自动施法。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Hotkey=C
+Unhotkey=C
+[A0BO]
+Name="NAT：大风古树（假人）"
+Tip="气旋"
+Ubertip="使敌方单位的攻击和移动速度降低 25%，并在 250 范围内造成 30 dps，持续 7 秒。建筑物受到 50% 的伤害。|n|n|cffFFFF80冷却时间：|cffFFFF00 14 |r秒"
+Untip="|cffc3dbff右击激活自动施法。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Hotkey=R
+Unhotkey=R
+[A0BP]
+Name="NAT: 大风古树 (dummy, -na)"
+Tip="气旋"
+Ubertip="使敌方单位的攻击和移动速度降低 25%，并在 250 范围内造成 40 dps，持续 7 秒。|n|n|cffFFFF80冷却时间：|cffFFFF00 14 |r秒"
+Untip="|cffc3dbff右击激活自动施法。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Hotkey=R
+Unhotkey=R
+[A0BQ]
+Name="NAT：大风古树（-na）"
+Tip=|cffffcc00T|r龙卷风
+Ubertip="召唤猛烈的可控龙卷风，减慢敌方单位的移动速度，随机将敌方地面单位抛向空中并损坏敌方建筑物。|n持续 <ANto,Dur1> 秒。"
+Hotkey=T
+Researchtip="Learn |cffffcc00T|rornado"
+Researchubertip="Summons a fierce controllable Tornado that slows enemy units' movement speed, randomly tosses enemy ground units into the air and damages enemy buildings. |nLasts <ANto,Dur1> seconds."
+Researchhotkey=T
+[A0AA]
+Name=闪电链
+Tip=|cffffcc00C|r链闪电
+Ubertip="投出一道最多反弹<ACcl,DataB1>次的闪电，对主要目标造成<ACcl,DataA1>伤害。每次跳跃造成的伤害更少。"
+Hotkey=C
+[A0A8]
+Name="HEL：女术士（治疗波）"
+Tip=H[|cffffcc00e|r] 正弦波
+Ubertip="召唤一波治疗能量波，最多反弹 <AChv,DataB1> 次，对主要目标造成 <AChv,DataA1> 伤害。每次跳跃治疗的伤害都会减少。"
+Hotkey=E
+[A0A3]
+Name="疯子死 dmg"
+[A0AQ]
+Name="NAT：巨型蜘蛛（->黑蜘蛛）"
+[A0B2]
+Name="NAT：远古熊（bash）"
+Tip=重击
+Ubertip="使攻击有 <ACbh,DataA1>% 的几率造成 <ACbh,DataC1> 额外伤害并眩晕对手 <ACbh,Dur1> 秒。"
+[A0B1]
+Name="NAT：熊（bash）"
+Tip=重击
+Ubertip="使攻击有 <ACbh,DataA1>% 的几率造成 <ACbh,DataC1> 额外伤害并眩晕对手 <ACbh,Dur1> 秒。"
+[A0B0]
+Name="NAT：远古守护者（自然光环强）"
+Tip=邪恶光环
+Ubertip="附近友方单位移动速度提高<ACua,DataA1,%>%，生命恢复速度提高<ACua,DataB1,%>%。"
+[A0AG]
+Name=致命一击
+Tip=致命一击
+Ubertip="给予 <ACct,DataA1>% 的几率在一次攻击中造成 <ACct,DataB1> 倍的正常伤害。"
+[A0AF]
+Name=穿刺
+Tip=穿刺|cffffcc00e|r
+Ubertip="猛击地面，直线发射一波力量，造成 <ACmp,DataA1> 伤害并将敌方地面单位抛向空中，使其昏迷 <ACmp,Dur1> 秒。"
+Hotkey=E
+[A0AE]
+Name=寄生虫
+Tip=[|cffffcc00r|r] 寄生虫
+Ubertip="用致命的寄生虫感染目标敌方单位，每秒造成 <ANpa,DataA1> 伤害，持续 <ANpa,Dur1> 秒。如果受影响的单位在寄生虫的影响下死亡，则会从其尸体中生成一个小型仆从。"
+Untip="|cffc3dbff右击激活自动施法。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Hotkey=R
+Unhotkey=R
+[A0AD]
+Name="40% 飞溅"
+Tip=分裂攻击
+Ubertip="该生物的攻击力足以使 <ACce,DataA1,%>% 的伤害击穿主要攻击单位附近的敌人。"
+[A05J]
+Name="逃避"
+Tip=逃避
+Ubertip="提供 <ACev,DataA1,%>% 的几率避免攻击。"
+[A05K]
+Name=重击
+Tip=重击
+Ubertip="使攻击有 <ACbh,DataA1>% 的几率造成 <ACbh,DataC1> 额外伤害并眩晕对手 <ACbh,Dur1> 秒。"
+[A05I]
+Name=致命一击
+Tip=致命一击
+Ubertip="给予 <ACct,DataA1>% 的几率在一次攻击中造成 <ACct,DataB1> 倍的正常伤害。"
+[A065]
+Name="25% 飞溅"
+Tip=分裂攻击
+Ubertip="该生物的攻击力足以使 <ACce,DataA1,%>% 的伤害击穿主要攻击单位附近的敌人。"
+[A05T]
+Name=永久献祭
+Tip=永久献祭
+Ubertip="燃烧附近的敌方单位，每秒造成 <ANpi,DataA1> 点伤害。"
+[A05U]
+Name=寄生虫
+Tip="复活死者（更大）"
+Ubertip="从随机尸体中复活一具骷髅。可以培养普通或高级的骷髅和将军。|n|n|cffFFFF80冷却时间：|cffFFFF00 14 |r秒"
+Untip="|cffc3dbff右击激活自动施法。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Hotkey=R
+Unhotkey=R
+[A066]
+Name=致命一击
+Tip=致命一击
+Ubertip="给予 <ACct,DataA1>% 的几率在一次攻击中造成 <ACct,DataB1> 倍的正常伤害。"
+[A063]
+Name="27% 飞溅"
+Tip=分裂攻击
+Ubertip="该生物的攻击力足以使 <ACce,DataA1,%>% 的伤害击穿主要攻击单位附近的敌人。"
+[A05S]
+Name=剧毒武器
+Tip=剧毒武器
+Ubertip="每秒造成 <ACvs,DataA1> 毒伤害。|n持续 <ACvs,Dur1> 秒。"
+[A05P]
+Name=永久献祭
+Tip=永久献祭
+Ubertip="燃烧附近的敌方单位，每秒造成 <ANpi,DataA1> 点伤害。"
+[A05Q]
+Name=剧毒武器
+Tip=剧毒武器
+Ubertip="每秒造成 <ACvs,DataA1> 毒伤害。|n持续 <ACvs,Dur1> 秒。"
+[A062]
+Name=致命一击
+Tip=致命一击
+Ubertip="给予 <ACct,DataA1>% 的几率在一次攻击中造成 <ACct,DataB1> 倍的正常伤害。"
+[A060]
+Name="25% 飞溅"
+Tip=分裂攻击
+Ubertip="该生物的攻击力足以使 <ACce,DataA1,%>% 的伤害击穿主要攻击单位附近的敌人。"
+[A05Z]
+Name="35% 飞溅"
+Tip=分裂攻击
+Ubertip="该生物的攻击力足以使 <ACce,DataA1,%>% 的伤害击穿主要攻击单位附近的敌人。"
+[A05Y]
+Name=致命一击
+Tip=致命一击
+Ubertip="给予 <ACct,DataA1>% 的几率在一次攻击中造成 <ACct,DataB1> 倍的正常伤害。"
+[A05X]
+Name=闪电链
+Tip=|cffffcc00C|r链闪电
+Ubertip="投出一道最多反弹<ACcl,DataB1>次的闪电，对主要目标造成<ACcl,DataA1>伤害。每次跳跃造成的伤害更少。"
+Hotkey=C
+[A05W]
+Name="25% 飞溅"
+Tip=分裂攻击
+Ubertip="该生物的攻击力足以使 <ACce,DataA1,%>% 的伤害击穿主要攻击单位附近的敌人。"
+[A068]
+Name=重击
+Tip=重击
+Ubertip="使攻击有 <ACbh,DataA1>% 的几率造成 <ACbh,DataC1> 额外伤害并眩晕对手 <ACbh,Dur1> 秒。"
+[A067]
+Name="25% 飞溅"
+Tip=分裂攻击
+Ubertip="该生物的攻击力足以使 <ACce,DataA1,%>% 的伤害击穿主要攻击单位附近的敌人。"
+[A06F]
+Name=致命一击
+Tip=致命一击
+Ubertip="给予 <ACct,DataA1>% 的几率在一次攻击中造成 <ACct,DataB1> 倍的正常伤害。"
+[A06B]
+Name=致命一击
+Tip="正义之手"
+Ubertip="每当一座友方建筑被摧毁时，金色正义神殿就有 40% 的几率杀死摧毁该建筑的源头。这个机会每队只能叠加一次（最多 2 个神殿）。"
+[A06A]
+Name=致命一击
+Tip="优雅的明亮光环"
+Ubertip="每当一个友军单位死亡时，该单位有 16% 的几率（每个后续神殿 +4%）复活。"
+[A06K]
+Name=生成九头蛇
+[A06L]
+Name=致命一击
+Tip=致命一击
+Ubertip="给予 <ACct,DataA1>% 的几率在一次攻击中造成 <ACct,DataB1> 倍的正常伤害。"
+[A06M]
+Name=致命一击
+Tip="武装召唤"
+Ubertip="武装召唤|n属于雕像所有者的每 5 个（每个后续雕像 -1）产卵结构将产生额外的单位。"
+[A06N]
+Name="UND：大吸血鬼（吸血鬼光环）"
+Tip=吸血光环
+Ubertip="附近的友军近战单位在击中敌方单位时会获得 <ACvp,DataA1,%>% 的攻击伤害。"
+[A06G]
+Name=缓慢光环
+[A06I]
+Name=寄生虫
+Tip=[|cffffcc00r|r] 寄生虫
+Ubertip="用致命的寄生虫感染目标敌方单位，每秒造成 <ANpa,DataA1> 伤害，持续 <ANpa,Dur1> 秒。如果受影响的单位在寄生虫的影响下死亡，则会从其尸体中生成一个小型仆从。"
+Untip="|cffc3dbff右击激活自动施法。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Hotkey=R
+Unhotkey=R
+[A06J]
+Name=生成九头蛇
+[A074]
+Name="逃避"
+Tip=逃避
+Ubertip="提供 <ACev,DataA1,%>% 的几率避免攻击。"
+[A06P]
+Name="NOR：冷冻蘑菇"
+Tip="冷冻冲击波"
+Ubertip="冻结一个空中单位，使其昏迷 4 秒并造成 200 点伤害。|n|n|cffFFFF80冷却时间：|cffFFFF00 7 |r秒"
+Untip="|cffc3dbff右击激活自动施法。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Hotkey=R
+Unhotkey=R
+[A072]
+Name=寄生虫
+Tip="发射核导弹"
+Ubertip="向敌方基地发射核导弹。警告：建议友方单位离开目标区域。祝你今天过得愉快！|n|n|cffFFFF80冷却时间：|cffFFFF00 30 |r秒"
+Untip="|cffc3dbff右击激活自动施法。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Hotkey=R
+Unhotkey=R
+[A073]
+Name="逃避"
+Tip=逃避
+Ubertip="提供 <ACev,DataA1,%>% 的几率避免攻击。"
+[A06R]
+Name=寄生虫
+Tip="混沌之现"
+Ubertip="向随机敌方单位发送混沌力量。|n这些力量对目标单位具有以下效果之一：|n- 单位爆炸（没有赏金）|n-单位死亡（你获得赏金）|n-单位变身为为你而战的突变体|n- 单位是六边形|n-单位受到500点伤害|n- 该单位获得 400 额外生命值和 +25 伤害并完全治愈|n-单位被眩晕6秒并受到200点法术伤害|n- 什么都没有发生|n|n|cffFFFF80冷却时间：|cffFFFF00 10 |r秒"
+Untip="|cffc3dbff右击激活自动施法。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Hotkey=R
+Unhotkey=R
+[A07R]
+Name=寄生虫
+Tip=[|cffffcc00r|r] 寄生虫
+Ubertip="用致命的寄生虫感染目标敌方单位，每秒造成 <ANpa,DataA1> 伤害，持续 <ANpa,Dur1> 秒。如果受影响的单位在寄生虫的影响下死亡，则会从其尸体中生成一个小型仆从。"
+Untip="|cffc3dbff右击激活自动施法。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Hotkey=R
+Unhotkey=R
+[A07P]
+Name=寄生虫
+Tip=[|cffffcc00r|r] 寄生虫
+Ubertip="用致命的寄生虫感染目标敌方单位，每秒造成 <ANpa,DataA1> 伤害，持续 <ANpa,Dur1> 秒。如果受影响的单位在寄生虫的影响下死亡，则会从其尸体中生成一个小型仆从。"
+Untip="|cffc3dbff右击激活自动施法。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Hotkey=R
+Unhotkey=R
+[A07U]
+Name=寄生虫
+Tip="星陨"
+Ubertip="星星从天而降，对 800 范围内的所有敌人造成伤害，持续 8 秒，命中时造成 120 点伤害。建筑物只受到这种伤害的 40%。|n|n|cffFFFF80冷却时间：|cffFFFF00 32 |r秒"
+Untip="|cffc3dbff右击激活自动施法。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Hotkey=R
+Unhotkey=R
+[A08B]
+Name=寄生虫
+Tip="月光祝福"
+Ubertip="祝福一个被攻击的随机友方单位周围的一切。受祝福的单位恢复 175 点生命值、50 点法力值和 +6 点护甲，持续 6 秒。|n|n|cffFFFF80冷却时间：|cffFFFF00 20 |r秒"
+Untip="|cffc3dbff右击激活自动施法。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Hotkey=R
+Unhotkey=R
+[A08E]
+Name="NEL：荒野方尖碑"
+Tip="荒野的抵抗"
+Ubertip="使一个友方随机单位获得荒野抗性，使其永久减少 40% 的法术伤害，并有 40% 的几率减少 40 点受到的攻击伤害。有额外几率瞄准尚未获得增益的单位。|n|n|cffFFFF80冷却时间：|cffFFFF00 7 |r秒"
+Untip="|cffc3dbff右击激活自动施法。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Hotkey=R
+Unhotkey=R
+[A08I]
+Name=重击
+Tip=重击
+Ubertip="使攻击有 <ACbh,DataA1>% 的几率造成 <ACbh,DataC1> 额外伤害并眩晕对手 <ACbh,Dur1> 秒。"
+[A08J]
+Name=重击
+Tip=重击
+Ubertip="使攻击有 <ACbh,DataA1>% 的几率造成 <ACbh,DataC1> 额外伤害并眩晕对手 <ACbh,Dur1> 秒。"
+[A08M]
+Name=逃避
+Tip=逃避
+Ubertip="提供 <ACev,DataA1,%>% 的几率避免攻击。"
+[A090]
+Name=重击
+Tip=重击
+Ubertip="使攻击有 <ACbh,DataA1>% 的几率造成 <ACbh,DataC1> 额外伤害并眩晕对手 <ACbh,Dur1> 秒。"
+[A091]
+Name=粉碎
+Tip=粉碎
+Ubertip="使攻击有 <ACpv,DataA1>% 的几率对附近单位造成 <ACpv,DataB1> 伤害。"
+[A08P]
+Name=缓慢光环
+[A092]
+Name=粉碎
+Tip=粉碎
+Ubertip="使攻击有 <ACpv,DataA1>% 的几率对附近单位造成 <ACpv,DataB1> 伤害。"
+[A08Q]
+Name="伤害 200"
+Tip=|cffffcc00F|r痛苦之指
+Ubertip="严重削弱生物或建筑物的内脏。"
+Hotkey=F
+Researchtip=Learn |cffffcc00F|ringer of Pain
+Researchubertip="Horribly cripples the innards of a creature or building."
+Researchhotkey=F
+[A08R]
+Name=拆除
+Tip="拆除"
+Ubertip="使攻击对建筑物造成 <ANDe,DataB1> 倍的正常伤害。"
+Hotkey=
+[A094]
+Name="100% 飞溅"
+Tip=分裂攻击
+Ubertip="该生物的攻击力足以使 <ACce,DataA1,%>% 的伤害击穿主要攻击单位附近的敌人。"
+[A08S]
+Name=纠缠根
+Tip=|cffffcc00E|r纠缠根
+Ubertip="使根从地面爆裂，使目标敌方单位无法移动<Aenr,Dur1>秒，并每秒造成<Aenr,DataA1>伤害。"
+Hotkey=E
+[A095]
+Name="雷矿"
+Tip=[|cffffcc00r|r] 寄生虫
+Ubertip="用致命的寄生虫感染目标敌方单位，每秒造成 <ANpa,DataA1> 伤害，持续 <ANpa,Dur1> 秒。如果受影响的单位在寄生虫的影响下死亡，则会从其尸体中生成一个小型仆从。"
+Untip="|cffc3dbff右击激活自动施法。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Hotkey=R
+Unhotkey=R
+[A097]
+Name=死亡时的AOE伤害
+[A08V]
+Name=寄生虫
+Tip=[|cffffcc00r|r] 寄生虫
+Ubertip="用致命的寄生虫感染目标敌方单位，每秒造成 <ANpa,DataA1> 伤害，持续 <ANpa,Dur1> 秒。如果受影响的单位在寄生虫的影响下死亡，则会从其尸体中生成一个小型仆从。"
+Untip="|cffc3dbff右击激活自动施法。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Hotkey=R
+Unhotkey=R
+[A098]
+Name=我的 - 爆炸
+[A08W]
+Name=嗜血
+Tip=B[|cffffcc00l|r] 贪婪
+Ubertip="在 <ACbl,Dur1> 秒内使目标友方单位的攻击率提高 <ACbl,DataA1,%>%，移动速度提高 <ACbl,DataB1,%>%。"
+Untip="|cffc3dbff右击激活自动施法。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Hotkey=L
+Unhotkey=L
+[A099]
+Name="疯子"
+Tip=[|cffffcc00b|r] 轰隆隆！
+Ubertip="在小范围内造成 <Asds,DataB1> 伤害。对建筑物和树木有效。"
+Untip="|cffc3dbff|cffc3dbff右击激活自动投射。|r|r"
+Unubertip="|cffc3dbff|cffc3dbff右击关闭自动投射。|r|r"
+Hotkey=B
+Unhotkey=B
+[A08Z]
+Name="MEH：铁傀儡（重击）"
+Tip=重击
+Ubertip="使攻击有 <ACbh,DataA1>% 的几率造成 <ACbh,DataC1> 额外伤害并眩晕对手 <ACbh,Dur1> 秒。"
+[A09B]
+Name=死亡时的AOE伤害
+[A09D]
+Name=寄生虫
+Tip=[|cffffcc00r|r] 寄生虫
+Ubertip="用致命的寄生虫感染目标敌方单位，每秒造成 <ANpa,DataA1> 伤害，持续 <ANpa,Dur1> 秒。如果受影响的单位在寄生虫的影响下死亡，则会从其尸体中生成一个小型仆从。"
+Untip="|cffc3dbff右击激活自动施法。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Hotkey=R
+Unhotkey=R
+[A09I]
+Name=重击
+Tip=重击
+Ubertip="使攻击有 <ACbh,DataA1>% 的几率造成 <ACbh,DataC1> 额外伤害并眩晕对手 <ACbh,Dur1> 秒。"
+[A09X]
+Name=寄生虫
+Tip=[|cffffcc00r|r] 寄生虫
+Ubertip="用致命的寄生虫感染目标敌方单位，每秒造成 <ANpa,DataA1> 伤害，持续 <ANpa,Dur1> 秒。如果受影响的单位在寄生虫的影响下死亡，则会从其尸体中生成一个小型仆从。"
+Untip="|cffc3dbff右击激活自动施法。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Hotkey=R
+Unhotkey=R
+[A09T]
+Name="机甲：爆裂"
+Tip="能量爆发"
+Ubertip=""
+Hotkey=C
+[A09R]
+Name=命令光环
+Tip=命令光环
+Ubertip="对附近友军单位的攻击造成额外伤害。"
+[A09O]
+Name=寄生虫
+Tip="强效能量护盾"
+Ubertip="为一个随机友方单位提供能量护盾，使其护甲+4。该单位接下来两次被负面建筑技能作为目标，该技能将不会有任何效果。此外，该单位下一次被负面建筑能力作为目标时，它将获得 150 马力。|n|n|cffFFFF80冷却时间：|cffFFFF00 7 |r秒"
+Untip="|cffc3dbff右击激活自动施法。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Hotkey=R
+Unhotkey=R
+[A09N]
+Name=寄生虫
+Tip="能量护盾"
+Ubertip="为一个随机友方单位提供能量护盾，使其护甲+2。下次该单位被负面建筑技能作为目标时，该技能将不会有任何效果，并且护盾会消失。有额外的机会瞄准还没有盾牌的单位。|n|n|cffFFFF80冷却时间：|cffFFFF00 7 |r秒"
+Untip="|cffc3dbff右击激活自动施法。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Hotkey=C
+Unhotkey=C
+[A09K]
+Name="MEH：Gobbo 机械师（维修）"
+Tip=|cffffcc00R|r修复
+Ubertip="以资源为代价修理机械单元和结构。"
+Untip="|cffc3dbff右键单击启用自动修复。|r"
+Unubertip="|cffc3dbff右键单击禁用自动修复。|r"
+Hotkey=F
+Unhotkey=F
+[A09J]
+Name=重击
+Tip=重击
+Ubertip="使攻击有 <ACbh,DataA1>% 的几率造成 <ACbh,DataC1> 额外伤害并眩晕对手 <ACbh,Dur1> 秒。"
+[A006]
+Name=粉碎
+Tip=粉碎
+Ubertip="使攻击有 <ACpv,DataA1>% 的几率对附近单位造成 <ACpv,DataB1> 伤害。"
+[A005]
+Name="毁灭性打击"
+Tip="毁灭性打击 [|cffffcc00V|r]"
+Ubertip="杀死目标区域内的所有敌方单位。|n|cffFF0000明智地使用它，它决定了大多数比赛！|r"
+Hotkey=V
+[A008]
+Name="恢复符文"
+[A007]
+Name=生命再生光环
+[A009]
+Name="35% 飞溅"
+Tip=分裂攻击
+Ubertip="该生物的攻击力足以使 <ACce,DataA1,%>% 的伤害击穿主要攻击单位附近的敌人。"
+[A00T]
+Name="逃避"
+Tip=逃避
+Ubertip="提供 <ACes,DataA1,%>% 的几率避免攻击。"
+[A00R]
+Name=拆除
+Tip="拆除"
+Ubertip="使攻击对建筑物造成 <ANDe,DataB1> 倍的正常伤害。"
+Hotkey=
+[A013]
+Name=缓慢光环
+[A00Q]
+Name=粉碎
+Tip=粉碎
+Ubertip="使攻击有 <ACpv,DataA1>% 的几率对附近单位造成 <ACpv,DataB1> 伤害。"
+[A012]
+Name=永久献祭
+Tip=永久献祭
+Ubertip="燃烧附近的敌方单位，每秒造成 <ANpi,DataA1> 点伤害。"
+[A019]
+Name=命令光环
+Tip=命令光环
+Ubertip="对附近友军单位的攻击造成额外伤害。"
+[A00W]
+Name=精灵之火
+Tip=[|cffffcc00r|r] 精灵之火
+Ubertip="将目标敌方单位的护甲降低 <ACff,DataA1> 并提供该单位的视野。|n持续 <ACff,Dur1> 秒。"
+Untip="|cffc3dbff右击激活自动施法。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Hotkey=R
+Unhotkey=R
+[A00V]
+Name=致命一击
+Tip=致命一击
+Ubertip="给予 <ACct,DataA1>% 的几率在一次攻击中造成 <ACct,DataB1> 倍的正常伤害。"
+[A017]
+Name=寄生虫
+Tip="十六进制"
+Ubertip="将随机敌方单位变成绵羊，持续 45 秒。|n|n|cffFFFF80冷却时间：|cffFFFF00 10 |r秒"
+Untip="|cffc3dbff右击激活自动施法。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Hotkey=R
+Unhotkey=R
+[A00U]
+Name="逃避"
+Tip=逃避
+Ubertip="提供 <ACev,DataA1,%>% 的几率避免攻击。"
+[A00Y]
+Name="HEL：巫师（治疗）"
+Tip=H[|cffffcc00e|r] 正弦波
+Ubertip="召唤一波治疗能量波，最多反弹 <AChv,DataB1> 次，对主要目标造成 <AChv,DataA1> 伤害。每次跳跃治疗的伤害都会减少。"
+Hotkey=E
+[A01A]
+Name=重击
+Tip=重击
+Ubertip="使攻击有 <ACbh,DataA1>% 的几率造成 <ACbh,DataC1> 额外伤害并眩晕对手 <ACbh,Dur1> 秒。"
+[A00D]
+Name=致命一击
+Tip=致命一击
+Ubertip="给予 <ACct,DataA1>% 的几率在一次攻击中造成 <ACct,DataB1> 倍的正常伤害。"
+[A00K]
+Name=寄生虫
+Tip=[|cffffcc00r|r] 寄生虫
+Ubertip="用致命的寄生虫感染目标敌方单位，每秒造成 <ANpa,DataA1> 伤害，持续 <ANpa,Dur1> 秒。如果受影响的单位在寄生虫的影响下死亡，则会从其尸体中生成一个小型仆从。"
+Untip="|cffc3dbff右击激活自动施法。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Hotkey=R
+Unhotkey=R
+[A00L]
+Name=闪电链
+Tip=|cffffcc00C|r链闪电
+Ubertip="投出一道最多反弹<ACcl,DataB1>次的闪电，对主要目标造成<ACcl,DataA1>伤害。每次跳跃造成的伤害更少。"
+Hotkey=C
+[A00O]
+Name="NAG：甲骨文"
+Tip="控制敌人"
+Ubertip="获得随机敌方单位的控制权。|n|n|cffFFFF80冷却时间：|cffFFFF00 16 |r秒"
+Untip="|cffc3dbff右击激活自动施法。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Hotkey=R
+Unhotkey=R
+[A00P]
+Name=破碎波
+Tip="潮汐波"
+Ubertip="投掷巨浪，对一条线上的地面单位造成 220 点伤害。"
+Hotkey=C
+[A00M]
+Name=寄生虫
+Tip="地震"
+Ubertip="在一个随机敌方单位下方分裂地球，对该区域内的所有敌方地面单位造成伤害并减速。造成 40 点法术伤害，减速 50%，持续 10 秒。|n|n|cffFFFF80冷却时间：|cffFFFF00 8 |r秒"
+Untip="|cffc3dbff右击激活自动施法。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Hotkey=R
+Unhotkey=R
+[A00N]
+Name=魅力
+Tip=字符|cffffcc00r|rm
+Ubertip="控制一个目标敌方单位。|nCharm 不能用于英雄或 <ACch,DataA1> 级以上的小兵。"
+Hotkey=R
+[A01Z]
+Name="NAG翼蛇：驱散"
+Tip=A[|cffffcc00b|r] bolish 魔法
+Ubertip="驱散敌方单位的正面增益，以及友方单位的负面增益。|n|cffffcc00对被召唤的单位造成<ACdm,DataB1>伤害。|r"
+Untip="|cffc3dbff右击激活自动施法。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Hotkey=B
+Unhotkey=B
+[A01W]
+Name=寄生虫
+Tip="擦除"
+Ubertip="击杀 70% 属于敌方且类型相同的单位。|n|n|cffFFFF80冷却时间：|cffFFFF00 50 |r秒|cffFFFF00-12.5|r每次升级秒。"
+Untip="|cffc3dbff右击激活自动施法。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Hotkey=X
+Unhotkey=X
+[A028]
+Name=缓慢光环
+[A029]
+Name=缓慢光环
+[A01R]
+Name=拆除
+Tip="拆除"
+Ubertip="使攻击对建筑物造成 <ANDe,DataB1> 倍的正常伤害。"
+Hotkey=
+[A023]
+Name=缓慢光环
+[A01S]
+Name=粉碎
+Tip=粉碎
+Ubertip="使攻击有 <ACpv,DataA1>% 的几率对附近单位造成 <ACpv,DataB1> 伤害。"
+[A024]
+Name=缓慢光环
+[A01T]
+Name="UND：腐朽圣殿"
+Tip="衰变"
+Ubertip="每秒对所有非机械敌方单位造成 8 点法术伤害。"
+[A025]
+Name=致命一击
+Tip=致命一击
+Ubertip="给予 <ACct,DataA1>% 的几率在一次攻击中造成 <ACct,DataB1> 倍的正常伤害。"
+[A01U]
+Name=重击
+Tip="灵魂窃取"
+Ubertip="有 5% 的几率窃取塔攻击的单位的灵魂，从而立即将其杀死。"
+[A026]
+Name=重击
+Tip=重击
+Ubertip="使攻击有 <ACbh,DataA1>% 的几率造成 <ACbh,DataC1> 额外伤害并眩晕对手 <ACbh,Dur1> 秒。"
+[A01O]
+Name=吸血光环
+Tip=吸血光环
+Ubertip="附近的友军近战单位在击中敌方单位时会获得 <ACvp,DataA1,%>% 的攻击伤害。"
+[A020]
+Name=剧毒武器
+Tip="毒箭"
+Ubertip="这座塔的箭上涂有持续 4 秒的弱毒，每秒造成 5 点伤害，并使攻击和移动速度降低 25%。"
+[A01N]
+Name=命令光环
+Tip=命令光环
+Ubertip="对附近友军单位的攻击造成额外伤害。"
+[A01Q]
+Name=寄生虫
+Tip="复活"
+Ubertip="从一具随机尸体中复活一个骷髅。|n|n|cffFFFF80冷却时间：|cffFFFF00 12 |r秒"
+Untip="|cffc3dbff右击激活自动施法。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Hotkey=D
+Unhotkey=D
+[A022]
+Name=缓慢光环
+[A01P]
+Name=吸血光环
+Tip=吸血光环
+Ubertip="附近的友军近战单位在击中敌方单位时会获得 <ACvp,DataA1,%>% 的攻击伤害。"
+[A021]
+Name=缓慢光环
+[A01K]
+Name="神圣力量（号角）"
+Tip="神圣力量"
+Ubertip="为附近的友方单位增加 50% 的攻击速度。|n|n|cffFFFF80冷却时间：|cffFFFF00 8 |r秒"
+Untip="|cffc3dbff右击激活自动施法。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Hotkey=R
+Unhotkey=R
+[A01J]
+Name=寄生虫
+Tip="喷发"
+Ubertip="对一个随机敌方单位周围的区域造成伤害，造成 175 点法术伤害。不能造成超过600的伤害。对建筑物仅造成 40% 的伤害。|n|n|cffFFFF80冷却时间：|cffFFFF00 14 |r秒"
+Untip="|cffc3dbff右击激活自动施法。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Hotkey=R
+Unhotkey=R
+[A01L]
+Name=永久献祭
+Tip=永久献祭
+Ubertip="燃烧附近的敌方单位，每秒造成 <ANpi,DataA1> 点伤害。"
+[A01F]
+Name="25% 飞溅"
+Tip=分裂攻击
+Ubertip="该生物的攻击力足以使 <ACce,DataA1,%>% 的伤害击穿主要攻击单位附近的敌人。"
+[A01C]
+Name="NAG：龙龟（刺壳）"
+Tip=尖刺壳
+Ubertip="Turtle 外壳上的锋利尖刺会将 <ANth,DataA1,%>% 的敌方单位近战攻击伤害返还给它。"
+[A01E]
+Name=寄生虫
+Tip="地狱之拳"
+Ubertip="摧毁一个随机的敌方建筑。无法摧毁传说中的建筑或主城。你不会为被摧毁的建筑物获得赏金。|n|n|cffFFFF80冷却时间：|cffFFFF00 35 |r秒"
+Untip="|cffc3dbff右击激活自动施法。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Hotkey=R
+Unhotkey=R
+[A01D]
+Name=投掷巨石
+Tip=投掷 [|cffffcc00B|r] 巨石
+Ubertip="一块魔法巨石向敌方单位投掷，造成 <ACtb,DataA1> 点伤害并眩晕目标 <ACtb,Dur1> 秒。"
+Hotkey=B
+[A02Z]
+Name="兽人：蛇岩"
+Tip="毒区"
+Ubertip="向随机敌方单位附近的区域喷毒。所有被这种毒药击中的单位的护甲降低 5，攻击和移动速度降低 20%，并随着时间的推移受到伤害。毒药持续5秒。|n|n|cffFFFF80冷却时间：|cffFFFF00 12 |r秒"
+Untip="|cffc3dbff右击激活自动施法。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Hotkey=R
+Unhotkey=R
+[A02W]
+Name=致命一击
+Tip=致命一击
+Ubertip="给予 <ACct,DataA1>% 的几率在一次攻击中造成 <ACct,DataB1> 倍的正常伤害。"
+[A02X]
+Name="NAG：RG（分裂攻击）"
+Tip=分裂攻击
+Ubertip="该生物的攻击力足以使 <ACce,DataA1,%>% 的伤害击穿主要攻击单位附近的敌人。"
+[A039]
+Name="ORC：仪式图腾"
+Tip="部落祝福"
+Ubertip="永久给予一个随机友方单位 +20 伤害、+20% 攻击速度、3 点护甲和 200 点生命值。还给出以下之一：|n- 拆除 (x1.5)|n- 致命一击 (25%, x2)|n- 闪避 (30%)|n|n|cffFFFF80冷却时间：|cffFFFF00 10 |r秒"
+Untip="|cffc3dbff右击激活自动施法。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Hotkey=R
+Unhotkey=R
+[A02U]
+Name="NAG：警笛（清除（cd））"
+Tip=[|cffffcc00r|r] 寄生虫
+Ubertip="用致命的寄生虫感染目标敌方单位，每秒造成 <ANpa,DataA1> 伤害，持续 <ANpa,Dur1> 秒。如果受影响的单位在寄生虫的影响下死亡，则会从其尸体中生成一个小型仆从。"
+Untip="|cffc3dbff右击激活自动施法。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Hotkey=R
+Unhotkey=R
+[A02V]
+Name=致命一击
+Tip=致命一击
+Ubertip="给予 <ACct,DataA1>% 的几率在一次攻击中造成 <ACct,DataB1> 倍的正常伤害。"
+[A02T]
+Name="NAG：警笛（清除）"
+Tip=纯|cffffcc00g|re
+Ubertip="移除目标单位的所有增益，并将其移动速度降低 <ACpu,DataA1> 倍。被净化的单位将在 <ACpu,Dur1> 秒内缓慢恢复其移动速度。|n|cffffcc00对被召唤的单位造成<ACpu,DataC1>伤害。|r"
+Hotkey=G
+[A02R]
+Name=致命一击
+Tip=致命一击
+Ubertip="给予 <ACct,DataA1>% 的几率在一次攻击中造成 <ACct,DataB1> 倍的正常伤害。"
+[A033]
+Name="UND：死亡坑"
+Tip="猝死"
+Ubertip="立即杀死一个随机敌方单位。|n|n|cffFFFF80冷却时间：|cffFFFF00 15 |r秒"
+Untip="|cffc3dbff右击激活自动施法。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Hotkey=R
+Unhotkey=R
+[A032]
+Name=寄生虫
+Tip="全球停滞"
+Ubertip="眩晕所有敌方单位 4.5 秒。|n|n|cffFFFF80冷却时间：|cffFFFF00 35-45 |r秒"
+Untip="|cffc3dbff右击激活自动施法。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Hotkey=R
+Unhotkey=R
+[A02P]
+Name=粉碎
+Tip=粉碎
+Ubertip="使攻击有 <ACpv,DataA1>% 的几率对附近单位造成 <ACpv,DataB1> 伤害。"
+[A031]
+Name=战争践踏
+Tip=战争 [|cffffcc00t|r] 践踏
+Ubertip="猛击地面，对附近的敌方陆地单位造成 <Awrg,DataA1> 伤害并使其昏迷 <Awrg,Dur1> 秒。"
+Hotkey=T
+[A02O]
+Name=缓慢光环
+[A030]
+Name="兽人：蛇岩"
+Tip=酸 [|cffffcc00B|r] 炸弹 - [|cffffcc00Level 1|r]，酸 [|cffffcc00B|r] 炸弹 - [|cffffcc00Level 2|r]，酸 [|cffffcc00B|r] 炸弹 - [|cffffcc00Level 3|r]
+Researchtip="Learn Acid |cffffcc00B|romb - [|cffffcc00Level %d|r]"
+Ubertip="向目标投掷一瓶酸液。烧瓶在撞击时破裂，向附近的敌方单位泼洒一种强酸。|n|n通过 <ANab,DataC1> 降低护甲；每秒对主要目标造成 <ANab,DataD1> 伤害；对附近目标造成的伤害略低。|n持续 <ANab,Dur1> 秒。","向目标投掷一瓶酸。烧瓶在撞击时破裂，向附近的敌方单位泼洒一种强酸。|n|n通过 <ANab,DataC2> 降低护甲；每秒对主要目标造成 <ANab,DataD2> 伤害；对附近目标造成的伤害略低。|n持续 <ANab,Dur2> 秒。","向目标投掷一瓶酸。烧瓶在撞击时破裂，向附近的敌方单位泼洒一种强酸。|n|n通过 <ANab,DataC3> 降低护甲；每秒对主要目标造成 <ANab,DataD3> 伤害；对附近目标造成的伤害略低。|n持续 <ANab,Dur3> 秒。"
+Researchubertip="Hurls a flask of acid at a target.  The flask breaks upon impact, splashing a powerful acid on nearby hostile units.|n|nDecreases armor; deals high damage over time to the primary target; deals slightly less damage over time to nearby targets.|nLasts <ANab,Dur1> seconds.|n|n|cffffcc00Level 1|r - <ANab,DataD1> max damage per second, reduces armor by <ANab,DataC1>.|n|cffffcc00Level 2|r - <ANab,DataD2> max damage per second, reduces armor by <ANab,DataC2>.|n|cffffcc00Level 3|r - <ANab,DataD3> max damage per second, reduces armor by <ANab,DataC3>."
+Hotkey=B
+Researchhotkey=B
+[A02N]
+Name="30% 飞溅"
+Tip=分裂攻击
+Ubertip="该生物的攻击力足以使 <ACce,DataA1,%>% 的伤害击穿主要攻击单位附近的敌人。"
+[A02L]
+Name="暴击 10%x1.5"
+Tip="致命一击"
+Ubertip="暴击（10% 造成 1.5 倍伤害）"
+[A04D]
+Name="50% 飞溅"
+Tip=分裂攻击
+Ubertip="该生物的攻击力足以使 <ACce,DataA1,%>% 的伤害击穿主要攻击单位附近的敌人。"
+[A045]
+Name="frz20p"
+Tip=|cffffcc00E|r纠缠根
+Ubertip="使根从地面爆裂，使目标敌方单位无法移动<Aenr,Dur1>秒，并每秒造成<Aenr,DataA1>伤害。"
+Hotkey=E
+[A047]
+Name=纠缠根
+Tip=|cffffcc00E|r纠缠根
+Ubertip="使根从地面爆裂，使目标敌方单位无法移动<Aenr,Dur1>秒，并每秒造成<Aenr,DataA1>伤害。"
+Hotkey=E
+[A03W]
+Name=纠缠根
+Tip=|cffffcc00E|r纠缠根
+Ubertip="使根从地面爆裂，使目标敌方单位无法移动<Aenr,Dur1>秒，并每秒造成<Aenr,DataA1>伤害。"
+Hotkey=E
+[A03Z]
+Name=冰霜护甲
+Tip=|cffffcc00F|r冰霜护甲
+Ubertip="在目标友方单位周围制造一层冰霜护盾。护盾会增加 <ACfa,DataB1> 护甲并减缓攻击它的近战单位 <ACfa,Dur1> 秒。|n持续 <ACfa,DataA1> 秒。"
+Untip="|cffc3dbff右击激活自动施法。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Hotkey=F
+[A040]
+Name=冰霜护甲
+Tip=|cffffcc00F|r冰霜护甲
+Ubertip="在目标友方单位周围制造一层冰霜护盾。护盾会增加 <ACfa,DataB1> 护甲并减缓攻击它的近战单位 <ACfa,Dur1> 秒。|n持续 <ACfa,DataA1> 秒。"
+Untip="|cffc3dbff右击激活自动施法。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Hotkey=F
+[A042]
+Name=光辉光环
+Tip=光辉光环
+Ubertip="每秒为附近的友方单位提供额外的魔法恢复 <ACba,DataA1> 魔法值。"
+[A041]
+Name=愈合喷雾
+Tip=H[|cffffcc00e|r] 消炎喷雾 - [|cffffcc00Level 1|r],H[|cffffcc00e|r] 消炎喷雾 - [|cffffcc00Level 2|r],H[|cffffcc00e|r] 消炎喷雾 - [|cffffcc00Level 3|r]
+Researchtip="Learn H|cffffcc00e|raling Spray - [|cffffcc00Level %d|r]"
+Ubertip="喷射<ANhs,DataF1>波治疗雾；每一波治疗一个区域内所有单位的<ANhs,DataA1>伤害。","喷洒<ANhs,DataF2>波治疗雾；每一波治疗一个区域内所有单位的<ANhs,DataA2>伤害。","喷洒<ANhs,DataF3>波治疗雾；每一波治疗一个区域内所有单位的<ANhs,DataA3>伤害。"
+Researchubertip="Sprays waves of healing mist that heal units in a target area. |n|n|cffffcc00Level 1|r - <ANhs,DataF1> waves at <ANhs,DataA1> hit points healed each. |n|cffffcc00Level 2|r - <ANhs,DataF2> waves at <ANhs,DataA2> hit points healed each. |n|cffffcc00Level 3|r - <ANhs,DataF3> waves at <ANhs,DataA3> hit points healed each."
+Hotkey=E
+Researchhotkey=E
+[A03P]
+Name="帮助：弓箭手"
+Tip=逃避
+Ubertip="提供 <ACev,DataA1,%>% 的几率避免攻击。"
+[A044]
+Name=寄生虫
+Tip=[|cffffcc00r|r] 寄生虫
+Ubertip="用致命的寄生虫感染目标敌方单位，每秒造成 <ANpa,DataA1> 伤害，持续 <ANpa,Dur1> 秒。如果受影响的单位在寄生虫的影响下死亡，则会从其尸体中生成一个小型仆从。"
+Untip="|cffc3dbff右击激活自动施法。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Hotkey=R
+Unhotkey=R
+[A03S]
+Name=寄生虫
+Tip=[|cffffcc00r|r] 寄生虫
+Ubertip="用致命的寄生虫感染目标敌方单位，每秒造成 <ANpa,DataA1> 伤害，持续 <ANpa,Dur1> 秒。如果受影响的单位在寄生虫的影响下死亡，则会从其尸体中生成一个小型仆从。"
+Untip="|cffc3dbff右击激活自动施法。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Hotkey=R
+Unhotkey=R
+[A043]
+Name="NOR：冰雪女王（冰霜新星）"
+Tip=霜 [|cffffcc00N|r] 新星
+Ubertip="用一波冰霜冲击敌方单位，对目标造成 <ACfn,DataB1> 伤害，并造成 <ACfn,DataA1> 新星伤害。冰冷伤害会使单位的移动和攻击速度减慢 <ACfn,Dur1> 秒。"
+Hotkey=N
+[A03R]
+Name=怒吼
+Tip=|cffffcc00R|r桨
+Ubertip="给予附近友军单位<ACro,DataA1,%>% 伤害加成。|n持续 <ACr,Dur1> 秒。"
+Hotkey=R
+[A05A]
+Name=粉碎
+Tip=粉碎
+Ubertip="使攻击有 <ACpv,DataA1>% 的几率对附近单位造成 <ACpv,DataB1> 伤害。"
+[A05D]
+Name=战争践踏
+Tip=战争 [|cffffcc00t|r] 践踏
+Ubertip="猛击地面，对附近的敌方陆地单位造成 <Awrs,DataA1> 伤害并使其昏迷 <Awrs,Dur1> 秒。"
+Hotkey=T
+[A05E]
+Name=寄生虫
+Tip=[|cffffcc00r|r] 寄生虫
+Ubertip="用致命的寄生虫感染目标敌方单位，每秒造成 <ANpa,DataA1> 伤害，持续 <ANpa,Dur1> 秒。如果受影响的单位在寄生虫的影响下死亡，则会从其尸体中生成一个小型仆从。"
+Untip="|cffc3dbff右击激活自动施法。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Hotkey=R
+Unhotkey=R
+[A05B]
+Name=恐怖嚎叫
+Tip=[|cffffcc00w|r] 恐怖程度如何
+Ubertip="发出可怕的嚎叫声，使附近敌方单位的攻击伤害降低 <Acht,DataA1,%>%，持续 <Acht,Dur1> 秒。"
+Hotkey=W
+[A05C]
+Name=寄生虫
+Tip=[|cffffcc00r|r] 寄生虫
+Ubertip="用致命的寄生虫感染目标敌方单位，每秒造成 <ANpa,DataA1> 伤害，持续 <ANpa,Dur1> 秒。如果受影响的单位在寄生虫的影响下死亡，则会从其尸体中生成一个小型仆从。"
+Untip="|cffc3dbff右击激活自动施法。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Hotkey=R
+Unhotkey=R
+[A059]
+Name=粉碎
+Tip=粉碎
+Ubertip="使攻击有 <ACpv,DataA1>% 的几率对附近单位造成 <ACpv,DataB1> 伤害。"
+[A056]
+Name="腐化：虚空行者"
+Tip=永久献祭
+Ubertip="燃烧附近的敌方单位，每秒造成 <ANpi,DataA1> 点伤害。"
+[A04U]
+Name=寄生虫
+Tip="触手监狱"
+Ubertip="|cffFFFF80能力：|cffFFFF00触手监狱|r|n在一个随机敌方单位周围制造 5 条攻击性触手。抬起的触手的致命一击较少。|n|n|cffFFFF80冷却时间：|cffFFFF00 12 |r秒"
+Untip="|cffc3dbff右击激活自动施法。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Hotkey=R
+Unhotkey=R
+[A057]
+Name="COR：痛苦之井"
+Tip="痛苦之触"
+Ubertip="对随机敌方单位造成 180 点法术伤害。可以节省法力释放一连串的接触。|n|n|cffFFFF80冷却时间：|cffFFFF00 4 |r秒"
+Untip="|cffc3dbff右击激活自动施法。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Hotkey=R
+Unhotkey=R
+[A04V]
+Name=死亡时的AOE伤害
+[A04Y]
+Name=死亡时的AOE伤害
+[A050]
+Name=致命一击
+Tip=致命一击
+Ubertip="给予 <ACct,DataA1>% 的几率在一次攻击中造成 <ACct,DataB1> 倍的正常伤害。"
+[A04O]
+Name=魅力
+Tip=|cffffcc00碳|r伤害
+Ubertip="控制一个目标敌方单位。|nCharm 不能用于英雄，或 <ANch,DataA1> 级以上的小兵。"
+Hotkey=C
+Researchtip=Learn |cffffcc00C|rharm
+Researchubertip="Takes control of a target enemy unit. |nCharm cannot be used on Heroes, or creeps above level <ANch,DataA1>."
+Researchhotkey=C
+[A04R]
+Name=寄生虫
+Tip="腐败之眼"
+Ubertip="使所有敌方单位的护甲降低 12 点，持续 20 秒|n|n|cffFFFF80冷却时间：|cffFFFF00 50 |r秒"
+Untip="|cffc3dbff右击激活自动施法。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Hotkey=R
+Unhotkey=R
+[A04Q]
+Name=削弱
+Tip=|cffffcc00C|r波纹
+Ubertip="使目标敌方单位的移动速度降低<ACcr,DataA1,%>%，攻击率降低<ACcr,DataB1,%>%，伤害降低<ACcr,DataC1,%>%。|n持续 <ACcr,Dur1> 秒。"
+Hotkey=C
+[A04H]
+Name=纠缠根
+Tip=|cffffcc00E|r纠缠根
+Ubertip="使根从地面爆裂，使目标敌方单位无法移动<Aenr,Dur1>秒，并每秒造成<Aenr,DataA1>伤害。"
+Hotkey=E
+[A04E]
+Name=致命一击
+Tip=致命一击
+Ubertip="给予 <ACct,DataA1>% 的几率在一次攻击中造成 <ACct,DataB1> 倍的正常伤害。"
+[A04L]
+Name=寄生虫
+Tip="大寒冰箭"
+Ubertip="向随机敌方建筑发射巨大的冰霜箭。撞击时，这支箭会冻结 250 范围内的所有物体，持续 12 秒，并造成 100 点混乱伤害。|n|n|cffFFFF80冷却时间：|cffFFFF00 15 |r秒"
+Untip="|cffc3dbff右击激活自动施法。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Hotkey=R
+Unhotkey=R
+[A04J]
+Name=寄生虫
+Tip="冰霜之箭"
+Ubertip="向随机敌方建筑发射冰霜箭矢。撞击时，此螺栓会冻结结构 10 秒并对其造成 50 点混乱伤害。|n|n|cffFFFF80冷却时间：|cffFFFF00 12 |r秒"
+Untip="|cffc3dbff右击激活自动施法。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Hotkey=X
+Unhotkey=X
+[A04I]
+Name=寄生虫
+Tip="冬季来临"
+Ubertip="发射三个冰霜球，飞向随机方向，攻击随机敌人造成 60 dps 法术伤害，眩晕随机空中单位，冻结随机地面单位并冰冻附近的每个单位。|n|n|cffFFFF80冷却时间：|cffFFFF00 35 |r秒"
+Untip="|cffc3dbff右击激活自动施法。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Hotkey=R
+Unhotkey=R
+[A0EY]
+Name=削弱
+Tip=|cffffcc00C|r波纹
+Ubertip="使目标敌方单位的移动速度降低<ACcr,DataA1,%>%，攻击率降低<ACcr,DataB1,%>%，伤害降低<ACcr,DataC1,%>%。|n持续 <ACcr,Dur1> 秒。"
+Hotkey=C
+[A0F1]
+Name=缓慢光环
+[A0F2]
+Name=缓慢光环
+[A0F0]
+Name="ELE：水波"
+Tip=|cffffcc00C|r冲浪
+Ubertip="发出巨浪，对直线上的每个敌方陆地单位造成<ACcv,DataA1>伤害，最大伤害为<ACcv,DataB1>。"
+Hotkey=C
+[A0F7]
+Name="ELE：地球波"
+Tip=穿刺|cffffcc00e|r
+Ubertip="猛击地面，直线发射一波力量，造成 <ACmp,DataA1> 伤害并将敌方地面单位抛向空中，使其昏迷 <ACmp,Dur1> 秒。"
+Hotkey=E
+[A0F6]
+Name="ELE：闪电波"
+Tip=[|cffffcc00w|r] 冲击波
+Ubertip="一股力量波动向外波动，对直线上的陆地单位造成<ACsh,DataA1>伤害。"
+Hotkey=W
+[A0FB]
+Name="生命浸出"
+Tip=生命 [|cffffcc00D|r] 汲取 - [|cffffcc00Level 1|r],生命 [|cffffcc00D|r] 汲取 - [|cffffcc00Level 2|r],生命 [|cffffcc00D|r] 汲取 - [|cffffcc00Level 3|r]
+Ubertip="通过每秒从目标敌方单位获取 <ANdr,DataA1> 点生命值并将其提供给黑暗游侠来吸收目标敌方单位的生命精华。|n持续 <ANdr,Dur1> 秒。","通过每秒从目标敌方单位获取 <ANdr,DataA2> 点生命值并将其提供给黑暗游侠来吸收目标敌方单位的生命精华。|n持续 <ANdr,Dur2> 秒。","通过每秒从目标敌方单位获取 <ANdr,DataA3> 点生命值并将其提供给黑暗游侠来吸收目标敌方单位的生命精华。|n持续 <ANdr,Dur3> 秒。"
+Hotkey=D
+Researchtip="Learn Life |cffffcc00D|rrain - [|cffffcc00Level %d|r]"
+Researchubertip="Absorbs the life essence of a target enemy unit by taking hit points from it every second and giving them to the Dark Ranger. |nLasts <ANdr,Dur1> seconds. |n|n|cffffcc00Level 1|r - <ANdr,DataA1> hit point drain per second. |n|cffffcc00Level 2|r - <ANdr,DataA2> hit point drain per second. |n|cffffcc00Level 3|r - <ANdr,DataA3> hit point drain per second."
+Researchhotkey=D
+[A0FD]
+Name="死灵：巫妖里奇"
+Tip=生命 [|cffffcc00r|r] 流失
+Ubertip="通过每秒从目标敌方单位获取 <ACdr,DataA1> 生命值并给予施法者来吸收目标敌方单位的生命精华。|n持续 <ACdr,Dur1> 秒。"
+Hotkey=R
+[A0FA]
+Name="投掷巨石"
+Tip=投掷 [|cffffcc00B|r] 巨石
+Ubertip="一块魔法巨石向敌方单位投掷，造成 <ACtb,DataA1> 点伤害并眩晕目标 <ACtb,Dur1> 秒。"
+Hotkey=B
+[S000]
+Name="buff火盾"
+Tip=耐力光环
+Ubertip="附近友方单位移动速度提高<SCae,DataA1,%>%，攻击率提高<SCae,DataB1,%>%。","附近友方单位移动速度提高<SCae,DataA2,%>%并攻击rate by <SCae,DataB2,%>%.","增加附近友军单位的移动速度<SCae,DataA3,%>%和攻击率<SCae,DataB3,%>%。"
+[S001]
+Name="Buf大地盾"
+Tip=耐力光环
+Ubertip="附近友方单位移动速度提高<SCae,DataA1,%>%，攻击率提高<SCae,DataB1,%>%。","附近友方单位移动速度提高<SCae,DataA2,%>%并攻击rate by <SCae,DataB2,%>%.","增加附近友军单位的移动速度<SCae,DataA3,%>%和攻击率<SCae,DataB3,%>%。"
+[S002]
+Name="缓冲气罩"
+Tip=耐力光环
+Ubertip="附近友方单位移动速度提高<SCae,DataA1,%>%，攻击率提高<SCae,DataB1,%>%。","附近友方单位移动速度提高<SCae,DataA2,%>%并攻击rate by <SCae,DataB2,%>%.","增加附近友军单位的移动速度<SCae,DataA3,%>%和攻击率<SCae,DataB3,%>%。"
+[A0F8]
+Name=寄生虫
+Tip=[|cffffcc00r|r] 寄生虫
+Ubertip="用致命的寄生虫感染目标敌方单位，每秒造成 <ANpa,DataA1> 伤害，持续 <ANpa,Dur1> 秒。如果受影响的单位在寄生虫的影响下死亡，则会从其尸体中生成一个小型仆从。"
+Untip="|cffc3dbff右击激活自动施法。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Hotkey=R
+Unhotkey=R
+[A0F9]
+Name="ELE:Spirit Link 触发器"
+Tip="精神链接"
+Ubertip=""
+Untip="|cffc3dbff右击激活自动施法。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Hotkey=R
+Unhotkey=R
+[A0FO]
+Name="ELE：漏水更大"
+Tip=逃避
+Ubertip="提供 <ACes,DataA1,%>% 的几率避免攻击。"
+[A0FV]
+Name="神风敢死队"
+Tip=[|cffffcc00b|r] 轰隆隆！
+Ubertip="在小范围内造成 <Asds,DataB1> 伤害。对建筑物和树木有效。"
+Untip="|cffc3dbff|cffc3dbff右击激活自动投射。|r|r"
+Unubertip="|cffc3dbff|cffc3dbff右击关闭自动投射。|r|r"
+Hotkey=B
+Unhotkey=B
+[A0FW]
+Name="神风敢死队"
+[A09L]
+Name="盾牌"
+[A0FY]
+Name="能量爆发能力"
+Tip="能量爆发"
+Ubertip="能量爆发可以造成额外伤害（对第一个目标80，跳跃4次）"
+Untip="|cffc3dbff右击激活自动施法。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Hotkey=R
+Unhotkey=R
+[A0G1]
+Name="毒箭"
+Tip=剧毒武器
+Ubertip="每秒造成 <ACvs,DataA1> 毒伤害。|n持续 <ACvs,Dur1> 秒。"
+[A0G2]
+Name="毒箭"
+Tip=剧毒武器
+Ubertip="每秒造成 <ACvs,DataA1> 毒伤害。|n持续 <ACvs,Dur1> 秒。"
+[A0G4]
+Name="DST：盲人"
+Tip=|cffffcc00D|r醉醺醺 - [|cffffcc00Level [|cffffcc00D|r] 1|r],醉醺醺 - [|cffffcc00Level 2|r],|cffffcc00D|r醉醺醺 - [|cffffcc00Level 3|r]
+Ubertip="将敌方单位浸入酒精中，使其移动速度降低<ANdh,DataC1,%>%，并有<ANdh,DataB1,%>% 的几率失手。当对他们施放醉酒雾霾的单位被火焰之息击中时，他们会被点燃并受到燃烧伤害。|n持续 <ANdh,Dur1> 秒。","将敌方单位浸入酒精中，使其移动速度降低 <ANdh,DataC2,%>%，并有 <ANdh,DataB2,%>% 几率失手.当对他们施放醉酒雾霾的单位被火焰之息击中时，他们会被点燃并受到燃烧伤害。|n持续 <ANdh,Dur2> 秒。","将敌方单位浸入酒精中，使其移动速度降低 <ANdh,DataC3,%>%，并有 <ANdh,DataB3,%>% 几率失手.当对他们施放醉酒雾霾的单位被火焰之息击中时，他们会被点燃并受到燃烧伤害。|n持续 <ANDh,Dur3> 秒。"
+Hotkey=D
+Researchtip="Learn |cffffcc00D|rrunken Haze - [|cffffcc00Level %d|r]"
+Researchubertip="Drenches enemy units in alcohol, causing their movement speed to be reduced, and have a chance to miss on attacks. When units with Drunken Haze cast on them are hit by Breath of Fire, they will ignite and take burn damage over time. |nLasts <ANdh,Dur1> seconds |n|n|cffffcc00Level 1|r - <ANdh,DataC1,%>% movement speed reduction, <ANdh,DataB1,%>% miss chance. |n|cffffcc00Level 2|r - <ANdh,DataC2,%>% movement speed reduction, <ANdh,DataB2,%>% miss chance. |n|cffffcc00Level 3|r - <ANdh,DataC3,%>% movement speed reduction, <ANdh,DataB3,%>% miss chance."
+Researchhotkey=D
+[A0G8]
+Name="DST: Sandkin abil"
+Tip=[|cffffcc00r|r] 寄生虫
+Ubertip="用致命的寄生虫感染目标敌方单位，每秒造成 <ANpa,DataA1> 伤害，持续 <ANpa,Dur1> 秒。如果受影响的单位在寄生虫的影响下死亡，则会从其尸体中生成一个小型仆从。"
+Untip="|cffc3dbff右击激活自动施法。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Hotkey=R
+Unhotkey=R
+[A0GB]
+Name="DST：食人魔汽车"
+Tip=[|cffffcc00r|r] 寄生虫
+Ubertip="用致命的寄生虫感染目标敌方单位，每秒造成 <ANpa,DataA1> 伤害，持续 <ANpa,Dur1> 秒。如果受影响的单位在寄生虫的影响下死亡，则会从其尸体中生成一个小型仆从。"
+Untip="|cffc3dbff右击激活自动施法。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Hotkey=R
+Unhotkey=R
+[A0GE]
+Name="蛇祭台能力"
+Tip="创建流沙"
+Ubertip="|cffFFFF80能力：|cffFFFF00流沙|r|n在随机敌方单位下制造流沙。流沙持续 12 秒，受影响的敌人移动和攻击速度变慢，中间的单位可能会被淹死（最多 4 个）。|n|n|cffFFFF80冷却时间：|cffFFFF00 12 |r秒"
+Untip="|cffc3dbff右击激活自动施法。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Hotkey=R
+Unhotkey=R
+[A0GF]
+Name="仙人掌"
+Tip="仙人掌药水"
+Ubertip="|cffFFFF80能力：|cffFFFF00仙人掌药水|r|n用致幻孢子毒化随机活的敌人，将其送入梦境持续 7 秒（造成 7 dps），有 25% 的几率对双方队伍产生敌意。|n|n|cffFFFF80冷却时间：|cffFFFF0010|r秒"
+Untip="|cffc3dbff右击激活自动施法。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Hotkey=R
+Unhotkey=R
+[A0GK]
+Name="沙尘暴能力"
+Tip="沙暴"
+Ubertip="对整个区域施放沙尘暴，致盲并减慢敌人（70% 失手率，-30% AS\MS），沙流造成 20 dmg\s|n|n|cffFFFF80持续时间：|cffFFFF00 8.5 |r秒|n|cffFFFF80冷却时间：|cffFFFF00 36 |r秒"
+Untip="|cffc3dbff右击激活自动施法。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Hotkey=R
+Unhotkey=R
+[A0GN]
+Name="矿工死亡 dmg"
+[A0GO]
+Name="65aoe飞溅"
+Tip=分裂攻击
+Ubertip="该生物的攻击力足以使 <ACce,DataA1,%>% 的伤害击穿主要攻击单位附近的敌人。"
+[A0GP]
+Name="110aoe飞溅"
+Tip=分裂攻击
+Ubertip="该生物的攻击力足以使 <ACce,DataA1,%>% 的伤害击穿主要攻击单位附近的敌人。"
+[A0GQ]
+Name="仙人掌假人动画"
+Tip=[|cffffcc00r|r] 寄生虫
+Ubertip="用致命的寄生虫感染目标敌方单位，每秒造成 <ANpa,DataA1> 伤害，持续 <ANpa,Dur1> 秒。如果受影响的单位在寄生虫的影响下死亡，则会从其尸体中生成一个小型仆从。"
+Untip="|cffc3dbff右击激活自动施法。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Hotkey=R
+Unhotkey=R
+[A0GU]
+Name=重击
+Tip=重击
+Ubertip="使攻击有 <ACbh,DataA1>% 的几率造成 <ACbh,DataC1> 额外伤害并眩晕对手 <ACbh,Dur1> 秒。"
+[A00I]
+Name="沙云"
+Tip=[|cffffcc00e|r] 沉默
+Ubertip="使目标区域内的所有敌人在 <ACsi,Dur1> 秒内停止施法。"
+Hotkey=E
+[A02B]
+Name="沙暴"
+Tip=[|cffffcc00e|r] 沉默
+Ubertip="使目标区域内的所有敌人在 <ACsi,Dur1> 秒内停止施法。"
+Hotkey=E
+[A07D]
+Name="逃避"
+Tip=逃避
+Ubertip="提供 <ACev,DataA1,%>% 的几率避免攻击。"
+[A0BR]
+Name="恢复符文"
+[A0DA]
+Name="NAT：远古守护者（自然光环弱）"
+Tip=邪恶光环
+Ubertip="附近友方单位移动速度提高<ACua,DataA1,%>%，生命恢复速度提高<ACua,DataB1,%>%。"
+[A0EJ]
+Name="燃烧的光环"
+Tip=永久献祭
+Ubertip="燃烧附近的敌方单位，每秒造成 <ANpi,DataA1> 点伤害。"
+[A0G3]
+Name=致命一击
+Tip=致命一击
+Ubertip="给予 <ACct,DataA1>% 的几率在一次攻击中造成 <ACct,DataB1> 倍的正常伤害。"
+[A0GI]
+Name=致命一击
+Tip=致命一击
+Ubertip="给予 <ACct,DataA1>% 的几率在一次攻击中造成 <ACct,DataB1> 倍的正常伤害。"
+[A00A]
+Name="UND：腐朽圣殿"
+Tip="更大的衰减"
+Ubertip="每秒对所有非机械敌方单位造成 10 点法术伤害。"
+[A071]
+Name="UND：腐朽圣殿"
+Tip="最大衰减"
+Ubertip="每秒对所有非机械敌方单位造成 12 点法术伤害。"
+[A08G]
+Name="恢复符文"
+[A0H0]
+Name="石头雨"
+Tip=S[|cffffcc00t|r] 填塞
+Ubertip="召唤成群的狂暴雷霆蜥蜴向兽王的敌人爆炸。每只爆炸的蜥蜴都会造成 <ANst,DataC1> 伤害。|n持续 <ANst,Dur1> 秒。"
+Hotkey=T
+Researchtip=Learn S|cffffcc00t|rampede
+Researchubertip="Calls down hordes of rampaging thunder lizards to explode upon the Beastmaster's enemies. Each exploding lizard deals <ANst,DataC1> damage. |nLasts <ANst,Dur1> seconds."
+Researchhotkey=T
+[A0H1]
+Name="DST：女族长汽车"
+Tip=[|cffffcc00r|r] 寄生虫
+Ubertip="用致命的寄生虫感染目标敌方单位，每秒造成 <ANpa,DataA1> 伤害，持续 <ANpa,Dur1> 秒。如果受影响的单位在寄生虫的影响下死亡，则会从其尸体中生成一个小型仆从。"
+Untip="|cffc3dbff右击激活自动施法。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Hotkey=R
+Unhotkey=R
+[A0H2]
+Name="DST：盲人"
+Tip=|cffffcc00D|r醉醺醺 - [|cffffcc00Level [|cffffcc00D|r] 1|r],醉醺醺 - [|cffffcc00Level 2|r],|cffffcc00D|r醉醺醺 - [|cffffcc00Level 3|r]
+Ubertip="将敌方单位浸入酒精中，使其移动速度降低<ANdh,DataC1,%>%，并有<ANdh,DataB1,%>% 的几率失手。当对他们施放醉酒雾霾的单位被火焰之息击中时，他们会被点燃并受到燃烧伤害。|n持续 <ANdh,Dur1> 秒。","将敌方单位浸入酒精中，使其移动速度降低 <ANdh,DataC2,%>%，并有 <ANdh,DataB2,%>% 几率失手.当对他们施放醉酒雾霾的单位被火焰之息击中时，他们会被点燃并受到燃烧伤害。|n持续 <ANdh,Dur2> 秒。","将敌方单位浸入酒精中，使其移动速度降低 <ANdh,DataC3,%>%，并有 <ANdh,DataB3,%>% 几率失手.当对他们施放醉酒雾霾的单位被火焰之息击中时，他们会被点燃并受到燃烧伤害。|n持续 <ANDh,Dur3> 秒。"
+Hotkey=D
+Researchtip="Learn |cffffcc00D|rrunken Haze - [|cffffcc00Level %d|r]"
+Researchubertip="Drenches enemy units in alcohol, causing their movement speed to be reduced, and have a chance to miss on attacks. When units with Drunken Haze cast on them are hit by Breath of Fire, they will ignite and take burn damage over time. |nLasts <ANdh,Dur1> seconds |n|n|cffffcc00Level 1|r - <ANdh,DataC1,%>% movement speed reduction, <ANdh,DataB1,%>% miss chance. |n|cffffcc00Level 2|r - <ANdh,DataC2,%>% movement speed reduction, <ANdh,DataB2,%>% miss chance. |n|cffffcc00Level 3|r - <ANdh,DataC3,%>% movement speed reduction, <ANdh,DataB3,%>% miss chance."
+Researchhotkey=D
+[A0H6]
+Name="UND：腐朽圣殿"
+Tip="最大衰减"
+Ubertip="对机械敌方单位造成 3 dps。"
+[A01I]
+Name="火山2"
+Tip=[|cffffcc00F|r] 火雨
+Ubertip="召唤火焰波对区域内的单位造成伤害。每波造成 <ACrg,DataB1> 初始伤害和 <ACrg,DataE1> 伤害每秒 <ACrg,Dur1> 秒。|n持续 <ACrg,DataA1> 波。"
+Hotkey=F
+[A05H]
+Name="火山2"
+Tip=[|cffffcc00F|r] 火雨
+Ubertip="召唤火焰波对区域内的单位造成伤害。每波造成 <ACrg,DataB1> 初始伤害和 <ACrg,DataE1> 伤害每秒 <ACrg,Dur1> 秒。|n持续 <ACrg,DataA1> 波。"
+Hotkey=F
+[A0H9]
+Name=生命再生光环
+[A0HB]
+Name="MatrSplit3"
+Tip="风暴、[|cffffcc00E|r] 大地和火"
+Ubertip="将熊猫人酒仙分裂成元素，形成 3 名专业战士。如果他们中的任何一个存活到他们的召唤计时器结束，酒仙就会重生。|n持续 <ANef,HeroDur1> 秒。"
+Hotkey=E
+Researchtip="Learn Storm, |cffffcc00E|rarth, And Fire"
+Researchubertip="Splits the Pandaren Brewmaster into elements, forming 3 specialized warriors. If any of them survive until the end of their summoned timer, the Brewmaster is reborn. |nLasts <ANef,HeroDur1> seconds."
+Researchhotkey=E
+[A0HC]
+Name="MatrSplit1"
+Tip="风暴、[|cffffcc00E|r] 大地和火"
+Ubertip="将熊猫人酒仙分裂成元素，形成 3 名专业战士。如果他们中的任何一个存活到他们的召唤计时器结束，酒仙就会重生。|n持续 <ANef,HeroDur1> 秒。"
+Hotkey=E
+Researchtip="Learn Storm, |cffffcc00E|rarth, And Fire"
+Researchubertip="Splits the Pandaren Brewmaster into elements, forming 3 specialized warriors. If any of them survive until the end of their summoned timer, the Brewmaster is reborn. |nLasts <ANef,HeroDur1> seconds."
+Researchhotkey=E
+[A0HD]
+Name="MatrSplit2"
+Tip="风暴、[|cffffcc00E|r] 大地和火"
+Ubertip="将熊猫人酒仙分裂成元素，形成 3 名专业战士。如果他们中的任何一个存活到他们的召唤计时器结束，酒仙就会重生。|n持续 <ANef,HeroDur1> 秒。"
+Hotkey=E
+Researchtip="Learn Storm, |cffffcc00E|rarth, And Fire"
+Researchubertip="Splits the Pandaren Brewmaster into elements, forming 3 specialized warriors. If any of them survive until the end of their summoned timer, the Brewmaster is reborn. |nLasts <ANef,HeroDur1> seconds."
+Researchhotkey=E
+[A0GC]
+Name="沙暴"
+Tip="沙暴"
+Ubertip="沙尘暴会损坏该单位。"
+[A0G9]
+Name="DST：哈比汽车"
+Tip=[|cffffcc00r|r] 寄生虫
+Ubertip="用致命的寄生虫感染目标敌方单位，每秒造成 <ANpa,DataA1> 伤害，持续 <ANpa,Dur1> 秒。如果受影响的单位在寄生虫的影响下死亡，则会从其尸体中生成一个小型仆从。"
+Untip="|cffc3dbff右击激活自动施法。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Hotkey=R
+Unhotkey=R
+[A0HI]
+Name="ELE：失真器"
+Tip="魔法扭曲"
+Ubertip="对随机敌人施展魔法扭曲（-100% 法术抗性）|n|n|cffFFFF80冷却时间：|cffFFFF00 10 |r秒"
+Untip="|cffc3dbff右击激活自动施法。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Hotkey=R
+Unhotkey=R
+[A0HK]
+Name="DST：豺狼人汽车"
+Tip=[|cffffcc00r|r] 寄生虫
+Ubertip="用致命的寄生虫感染目标敌方单位，每秒造成 <ANpa,DataA1> 伤害，持续 <ANpa,Dur1> 秒。如果受影响的单位在寄生虫的影响下死亡，则会从其尸体中生成一个小型仆从。"
+Untip="|cffc3dbff右击激活自动施法。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Hotkey=R
+Unhotkey=R
+[A0HL]
+Name="猎禽者 60"
+Tip=致命一击
+Ubertip="给予 <ACct,DataA1>% 的几率在一次攻击中造成 <ACct,DataB1> 倍的正常伤害。"
+[A0HM]
+Name="猎禽者 35"
+Tip=致命一击
+Ubertip="给予 <ACct,DataA1>% 的几率在一次攻击中造成 <ACct,DataB1> 倍的正常伤害。"
+[A0HP]
+Name="沙云2x"
+Tip=[|cffffcc00e|r] 沉默
+Ubertip="使目标区域内的所有敌人在 <ACsi,Dur1> 秒内停止施法。"
+Hotkey=E
+[A0HR]
+Name="SF dmg2bld"
+[A0HS]
+Name="星效"
+Tip=|cffffcc00我|r地狱
+Ubertip="从天空召唤一个地狱火，在它落地的地方造成范围伤害。"
+Hotkey=I
+Researchtip=Learn |cffffcc00I|rnferno
+Researchhotkey=I
+Globalmessage=
+Globalsound=
+[A0HT]
+Name="星陨"
+Tip=|cffffcc00R|r混沌
+Ubertip="从天空召唤多个地狱火。"
+Hotkey=R
+Researchtip=Learn |cffffcc00R|rain of Chaos
+Researchubertip="Calls down multiple Infernals from the sky."
+Researchhotkey=R
+[A0HU]
+Name="斯塔夫纳"
+Tip=|cffffcc00我|r地狱
+Ubertip="从天空召唤一个地狱火，在它落地的地方造成范围伤害。"
+Hotkey=I
+Researchtip=Learn |cffffcc00I|rnferno
+Researchhotkey=I
+Globalmessage=
+Globalsound=
+[A0HV]
+Name="星陨呐"
+Tip=|cffffcc00R|r混沌
+Ubertip="从天空召唤多个地狱火。"
+Hotkey=R
+Researchtip=Learn |cffffcc00R|rain of Chaos
+Researchubertip="Calls down multiple Infernals from the sky."
+Researchhotkey=R
+[A0HW]
+Name="DST：萨拉姆燃烧"
+Tip=酸 [|cffffcc00B|r] 炸弹 - [|cffffcc00Level 1|r]，酸 [|cffffcc00B|r] 炸弹 - [|cffffcc00Level 2|r]，酸 [|cffffcc00B|r] 炸弹 - [|cffffcc00Level 3|r]
+Researchtip="Learn Acid |cffffcc00B|romb - [|cffffcc00Level %d|r]"
+Ubertip="向目标投掷一瓶酸液。烧瓶在撞击时破裂，向附近的敌方单位泼洒一种强酸。|n|n通过 <ANab,DataC1> 降低护甲；每秒对主要目标造成 <ANab,DataD1> 伤害；对附近目标造成的伤害略低。|n持续 <ANab,Dur1> 秒。","向目标投掷一瓶酸。烧瓶在撞击时破裂，向附近的敌方单位泼洒一种强酸。|n|n通过 <ANab,DataC2> 降低护甲；每秒对主要目标造成 <ANab,DataD2> 伤害；对附近目标造成的伤害略低。|n持续 <ANab,Dur2> 秒。","向目标投掷一瓶酸。烧瓶在撞击时破裂，向附近的敌方单位泼洒一种强酸。|n|n通过 <ANab,DataC3> 降低护甲；每秒对主要目标造成 <ANab,DataD3> 伤害；对附近目标造成的伤害略低。|n持续 <ANab,Dur3> 秒。"
+Researchubertip="Hurls a flask of acid at a target.  The flask breaks upon impact, splashing a powerful acid on nearby hostile units.|n|nDecreases armor; deals high damage over time to the primary target; deals slightly less damage over time to nearby targets.|nLasts <ANab,Dur1> seconds.|n|n|cffffcc00Level 1|r - <ANab,DataD1> max damage per second, reduces armor by <ANab,DataC1>.|n|cffffcc00Level 2|r - <ANab,DataD2> max damage per second, reduces armor by <ANab,DataC2>.|n|cffffcc00Level 3|r - <ANab,DataD3> max damage per second, reduces armor by <ANab,DataC3>."
+Hotkey=B
+Researchhotkey=B
+[A0GD]
+Name="季风效应"
+Tip=|cffffcc00我|r地狱
+Ubertip="从天空召唤一个地狱火，在它落地的地方造成范围伤害。"
+Hotkey=I
+Researchtip=Learn |cffffcc00I|rnferno
+Researchhotkey=I
+Globalmessage=
+Globalsound=
+[A0GH]
+Name="尖峰效应"
+Tip=|cffffcc00我|r地狱
+Ubertip="从天空召唤一个地狱火，在它落地的地方造成范围伤害。"
+Hotkey=I
+Researchtip=Learn |cffffcc00I|rnferno
+Researchhotkey=I
+Globalmessage=
+Globalsound=
+[A0I4]
+Name="季风效应"
+Tip=|cffffcc00我|r地狱
+Ubertip="从天空召唤一个地狱火，在它落地的地方造成范围伤害。"
+Hotkey=I
+Researchtip=Learn |cffffcc00I|rnferno
+Researchhotkey=I
+Globalmessage=
+Globalsound=
+[A0I5]
+Name="尖峰效应"
+Tip=|cffffcc00我|r地狱
+Ubertip="从天空召唤一个地狱火，在它落地的地方造成范围伤害。"
+Hotkey=I
+Researchtip=Learn |cffffcc00I|rnferno
+Researchhotkey=I
+Globalmessage=
+Globalsound=
+[A0I6]
+Name="季风"
+Tip=|cffffcc00R|r混沌
+Ubertip="从天空召唤多个地狱火。"
+Hotkey=R
+Researchtip=Learn |cffffcc00R|rain of Chaos
+Researchubertip="Calls down multiple Infernals from the sky."
+Researchhotkey=R
+[A0I7]
+Name="季风娜"
+Tip=|cffffcc00R|r混沌
+Ubertip="从天空召唤多个地狱火。"
+Hotkey=R
+Researchtip=Learn |cffffcc00R|rain of Chaos
+Researchubertip="Calls down multiple Infernals from the sky."
+Researchhotkey=R
+[A0I8]
+Name="地钉"
+Tip=|cffffcc00R|r混沌
+Ubertip="从天空召唤多个地狱火。"
+Hotkey=R
+Researchtip=Learn |cffffcc00R|rain of Chaos
+Researchubertip="Calls down multiple Infernals from the sky."
+Researchhotkey=R
+[A0I9]
+Name="地钉 na"
+Tip=|cffffcc00R|r混沌
+Ubertip="从天空召唤多个地狱火。"
+Hotkey=R
+Researchtip=Learn |cffffcc00R|rain of Chaos
+Researchubertip="Calls down multiple Infernals from the sky."
+Researchhotkey=R
+[A0IA]
+Name="el.book AoE 伤害"
+[A0IB]
+Name="el.book AoE dmg bld"
+[A0IE]
+Name="dmg 2 空气"
+[A0IF]
+Name="星陨大厦 dmg"
+[A0II]
+Name="冰冷的呼吸"
+Tip=酸 [|cffffcc00B|r] 炸弹 - [|cffffcc00Level 1|r]，酸 [|cffffcc00B|r] 炸弹 - [|cffffcc00Level 2|r]，酸 [|cffffcc00B|r] 炸弹 - [|cffffcc00Level 3|r]
+Researchtip="Learn Acid |cffffcc00B|romb - [|cffffcc00Level %d|r]"
+Ubertip="向目标投掷一瓶酸液。烧瓶在撞击时破裂，向附近的敌方单位泼洒一种强酸。|n|n通过 <ANab,DataC1> 降低护甲；每秒对主要目标造成 <ANab,DataD1> 伤害；对附近目标造成的伤害略低。|n持续 <ANab,Dur1> 秒。","向目标投掷一瓶酸。烧瓶在撞击时破裂，向附近的敌方单位泼洒一种强酸。|n|n通过 <ANab,DataC2> 降低护甲；每秒对主要目标造成 <ANab,DataD2> 伤害；对附近目标造成的伤害略低。|n持续 <ANab,Dur2> 秒。","向目标投掷一瓶酸。烧瓶在撞击时破裂，向附近的敌方单位泼洒一种强酸。|n|n通过 <ANab,DataC3> 降低护甲；每秒对主要目标造成 <ANab,DataD3> 伤害；对附近目标造成的伤害略低。|n持续 <ANab,Dur3> 秒。"
+Researchubertip="Hurls a flask of acid at a target.  The flask breaks upon impact, splashing a powerful acid on nearby hostile units.|n|nDecreases armor; deals high damage over time to the primary target; deals slightly less damage over time to nearby targets.|nLasts <ANab,Dur1> seconds.|n|n|cffffcc00Level 1|r - <ANab,DataD1> max damage per second, reduces armor by <ANab,DataC1>.|n|cffffcc00Level 2|r - <ANab,DataD2> max damage per second, reduces armor by <ANab,DataC2>.|n|cffffcc00Level 3|r - <ANab,DataD3> max damage per second, reduces armor by <ANab,DataC3>."
+Hotkey=B
+Researchhotkey=B
+[A0IK]
+Name="原始龙"
+[A0IO]
+Name="珊瑚恢复法术"
+Tip=H[|cffffcc00e|r] 正弦波
+Ubertip="召唤一波治疗能量波，最多反弹 <AChv,DataB1> 次，对主要目标造成 <AChv,DataA1> 伤害。每次跳跃治疗的伤害都会减少。"
+Hotkey=E
+[A0IQ]
+Name="法术距离buff"
+[A0IS]
+Name="NAT：=For.spirit auto"
+Tip=[|cffffcc00r|r] 寄生虫
+Ubertip="用致命的寄生虫感染目标敌方单位，每秒造成 <ANpa,DataA1> 伤害，持续 <ANpa,Dur1> 秒。如果受影响的单位在寄生虫的影响下死亡，则会从其尸体中生成一个小型仆从。"
+Untip="|cffc3dbff右击激活自动施法。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Hotkey=R
+Unhotkey=R
+[A0FC]
+Name="火盾"
+Tip=永久献祭
+Ubertip="燃烧附近的敌方单位，每秒造成 <ANpi,DataA1> 点伤害。"
+[B008]
+Bufftip=Drum'n'Bass 节拍
+Buffubertip=本机正在收听 Drum'n'Bass 节拍。强大的低音增强了它的攻击伤害。
+[B023]
+Bufftip=腐蚀性呼吸
+Buffubertip=该单位的护甲降低。
+[B01R]
+Bufftip=嗥
+Buffubertip=该单位的伤害和护甲降低
+[B01J]
+Bufftip=授权
+Buffubertip=这个单位增加了生命值、伤害和护甲
+[B01E]
+Bufftip=闪电
+Buffubertip=该单位每次攻击都有机会向其目标释放链状闪电。
+[B028]
+Bufftip=闪电之盾
+Buffubertip=这个单位被蒙蔽了
+[B01U]
+Bufftip=爆炸弹
+Buffubertip=该单位造成溅射伤害
+[B00O]
+Bufftip=燃烧的灵魂
+Buffubertip=如果该单位死亡，它将对周围的单位造成伤害。
+EditorName=Corrupted: Void Walker
+[B00L]
+Bufftip=Drum'n'Bass 贝司线
+Buffubertip=本机正在收听 Drum'n'Bass 贝司线。强大的低音提高了它的移动和攻击速度。
+[B00C]
+Bufftip=蛇岩毒药
+Buffubertip=这个单位中毒了。
+[B018]
+Bufftip=太阳攻击
+Buffubertip=这个单位瘫痪了
+[B00S]
+EditorName=Corrupted: Void Walker
+[B02D]
+Bufftip=小精灵打击
+Buffubertip=这个单位放慢了速度。他的动作减少了。
+[B02O]
+Bufftip=瞎的
+Buffubertip=这个单位有 90% 的失手率并且移动非常缓慢。
+[B02I]
+EditorName=Burning aura
+[B02Q]
+Bufftip=蝾螈毒药
+Buffubertip=单位被蝾螈中毒，攻击和防御降低。

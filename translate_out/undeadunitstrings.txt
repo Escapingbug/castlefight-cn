@@ -1,0 +1,260 @@
+[Ucrl]
+Name=地穴领主
+Propernames=Thebis-Ra,Typhis-Ahn,Anubiros,Memphis-Ahn,Horus'aman,Nephri'thos,Arak-arahm,Tuten'arak,Pharoh-moth'
+Tip=召唤 [|cffffcc00C|r] 地穴领主
+Hotkey=C
+Ubertip="战士英雄，擅长召唤昆虫爪牙和粉碎敌人。可以学习穿刺、尖刺甲壳、腐肉甲虫和蝗虫群。|n|n|cffffcc00攻击陆地单位。|r"
+Revivetip=Revive |cffffcc00C|rrypt Lord
+Awakentip=Revive |cffffcc00C|rrypt Lord
+[uaco]
+Name=追随者
+Tip=训练 [|cffffcc00c|r] 侍僧
+Ubertip="基本工人。可以召唤建筑、收获黄金和恢复。可以在祭祀坑中牺牲追随者来创造阴影。|n|n|cffffcc00攻击陆地单位。|r"
+Hotkey=C
+[uabo]
+Name=厌恶
+Tip=训练 [|cffffcc00A|r] 憎恶
+Ubertip="重型近战单位。可以学习疾病云能力和蚕食。|n|n|cffffcc00攻击陆地单位。|r"
+Hotkey=A
+[Udea]
+Name=死亡骑士
+Propernames=Lord Nightsorrow,Lord Soulrender,Lord Dethstorm,Lord Maldazzar,Lord Darkhallow,Lord Lightstalker,Baron Bloodbane,Baron Felblade,Duke Dreadmoore,Duke Ragereaver,Baron Frostfel,Lord Darkscythe,Duke Wintermaul,Baron Perenolde,Baron Morte
+Tip=召唤 [|cffffcc00D|r] 死亡骑士
+Ubertip="战士英雄，人类圣骑士的邪恶对手。可以学习死亡缠绕、死亡契约、邪恶光环和活化死者。|n|n|cffffcc00攻击陆地单位。|r"
+Revivetip=Revive |cffffcc00D|reath Knight
+Awakentip=Revive |cffffcc00D|reath Knight
+Hotkey=D
+[uban]
+Name=女妖
+Tip=火车 [|cffffcc00B|r] 女妖
+Ubertip="配套脚轮。最初可以施放诅咒，这会导致敌方单位偶尔在战斗中失手。还可以学习反魔法壳和附身。|n|n|cffffcc00攻击陆地和空中单位。|r"
+Hotkey=B
+Casterupgradename=Initiate, Adept, Master
+Casterupgradetip="- Curse","- Curse|n- Anti-magic Shell","- Curse|n- Anti-magic Shell|n- Possession"
+[ucrm]
+Name=地穴恶魔
+Tip=训练地穴 [|cffffcc00F|r] 恶魔
+Ubertip="远程战斗支援生物。可以学习Web，和Burrow能力。|n|n|cffffcc00攻击陆地单位。|r"
+Hotkey=F
+[ucry]
+Name=地穴恶魔
+Tip=训练地穴 [|cffffcc00F|r] 恶魔
+Ubertip="远程战斗支援生物。可以学习Web，和Burrow能力。|n|n|cffffcc00攻击陆地单位。|r"
+Hotkey=F
+[Udre]
+Name=恐惧魔王
+Propernames=Terrordar,Nerothos,Bleakill,Necros,Fearoth,Dethecus,Maldibion,Nochthitus,Gholbine,Rashgarroth,Aramachus,Zilfallon,Lorthiras,Zenedar,Mullioch,Algammon,Banehallow,Ven'Gyr'
+Tip=召唤 [|cffffcc00e|r] 恐惧魔王
+Ubertip="狡猾的英雄，擅长控制战斗。可以学习腐肉群、睡眠、吸血光环和地狱。|n|n|cffffcc00攻击陆地单位。|r"
+Revivetip=Revive Dr|cffffcc00e|radlord
+Awakentip=Revive Dr|cffffcc00e|radlord
+Hotkey=E
+[ufro]
+Name=冰霜巨龙
+Tip=Train [|cffffcc00F|r] 冰霜巨龙
+Ubertip="飞行重型攻击生物。可以学习冰冻呼吸能力。|n|n|cffffcc00攻击陆地和空中单位。|r"
+Hotkey=F
+[ugar]
+Name=石像鬼
+Tip=火车 [|cffffcc00a|r] 石像鬼
+Ubertip="飞行攻击生物。可以学习石形态能力。|n|n|cffffcc00攻击陆地和空中单位。|r"
+Hotkey=A
+[ugrm]
+Name=石形石像鬼
+Tip=火车 [|cffffcc00a|r] 石像鬼
+Ubertip="飞行攻击生物。|n|n|cffffcc00攻击陆地和空中单位。|r"
+Hotkey=A
+[ugho]
+Name=食尸鬼
+Tip=训练 [|cffffcc00G|r] 食尸鬼
+Ubertip="基本攻击单位和木材收割机。可以学习食人魔和食尸鬼狂热。|n|n|cffffcc00攻击陆地单位和树木。|r"
+Hotkey=G
+[Ulic]
+Name=巫妖
+Propernames=Ordin Frostbane,Ras Splinterspine,Morbent Fell,Rage Winterchill,Araj the Summoner,Kali'naj Dethknell,Rak Coldskull,Din Frostfire,Calis Wraithson,Venim Iceblade,Naze the Eternal,Ras Frostwhisper,Coldreaver,Cho'Nammoth,Kryptikk Soulslayer,Alandil Lieng
+Tip=召唤 [|cffffcc00L|r] 巫妖
+Ubertip="神秘英雄，特别擅长冰冷魔法。可以学习冰霜护甲、冰霜新星、黑暗仪式和死亡凋零。|n|n|cffffcc00攻击陆地和空中单位。|r"
+Revivetip=Revive |cffffcc00L|rich
+Awakentip=Revive |cffffcc00L|rich
+Hotkey=L
+[unec]
+Name=死灵法师
+Tip=训练 [|cffffcc00N|r] 死灵法师
+Ubertip="必备施法者。最初可以对尸体施放亡灵复生。还可以学习邪恶狂乱和残废。|n|n|cffffcc00攻击陆地和空中单位。|r"
+Hotkey=N
+Casterupgradename=Initiate, Adept, Master
+Casterupgradetip="- Raise Dead","- Raise Dead|n- Unholy Frenzy","- Raise Dead|n- Unholy Frenzy|n- Cripple"
+[uske]
+Name=骷髅战士
+Tip=召唤骷髅战士
+[uskm]
+Name=骷髅法师
+Tip=召唤骷髅法师
+[uplg]
+Name=疾病云
+[uaod]
+Name=黑暗祭坛
+Tip=召唤 [|cffffcc00A|r] 黑暗祭坛
+Ubertip="召唤英雄。复活被杀的英雄。"
+Hotkey=A
+[unpl]
+Name=墓地
+Tip=召唤 [|cffffcc00N|r] 墓地
+Ubertip="主要结构，用于训练侍僧和接收食尸鬼收集的木材。可以升级到死亡大厅，然后升级到黑色城堡，以生产更多类型的结构和单位。"
+Hotkey=N
+[unp1]
+Name=死者大厅
+Tip=|cffffcc00U|r升级到死亡大厅
+Ubertip="升级到死亡大厅，可以生产更多类型的结构和单位。|n|n|cffffcc00攻击陆地和空中单位。|r"
+Hotkey=U
+[unp2]
+Name=黑城堡
+Tip=|cffffcc00U|r升级到黑色堡垒
+Ubertip="升级到黑色城堡以生产更多类型的结构和单元。|n|n|cffffcc00攻击陆地和空中单位。|r"
+Hotkey=U
+[usep]
+Name=地穴
+Tip=召唤 [|cffffcc00C|r] 地穴
+Ubertip="初级部队生产大楼。训练食尸鬼、地穴恶魔和石像鬼。还包含 Ghoul Frenzy、Cannibalize、Stone Form、Web 和 Burrow 升级。"
+Hotkey=C
+[utod]
+Name=诅咒神殿
+Tip=召唤 [|cffffcc00T|r] 诅咒神殿
+Ubertip="施法者生产大楼。训练死灵法师和女妖。|n还包含死灵法师、女妖、骷髅长寿和骷髅掌握的升级。"
+Hotkey=T
+[utom]
+Name=遗物墓
+Hotkey=R
+Tip=召唤[|cffffcc00R|r]遗物之墓
+Ubertip="用可购买的物品创建一个商店。可用的物品取决于你的墓地的升级级别（墓地、死者大厅或黑色城堡）以及你拥有的建筑物。"
+[ugol]
+Name=闹鬼的金矿
+Tip=出没 [|cffffcc00G|r] 金矿
+Ubertip="出没金矿，以便追随者可以开采。在金矿上使用来腐蚀它们。"
+Hotkey=G
+[uzig]
+Name=金字形神塔
+Tip=召唤 [|cffffcc00Z|r] Ziggurat
+Ubertip="提供食物，增加可训练单位的最大数量。可以升级为攻击陆地和空中单位的防御结构。"
+Hotkey=Z
+[uzg1]
+Name=灵塔
+Tip=升级到精神 [|cffffcc00T|r] 塔
+Ubertip="升级以创建防御结构。|n|n|cffffcc00攻击陆地和空中单位。|r"
+Hotkey=T
+[uzg2]
+Name=蛛魔之塔
+Tip=升级到 [|cffffcc00N|r] 蛛魔之塔
+Ubertip="升级以创建一个防御结构，可以造成冰冷伤害并减慢敌方单位的速度。|n|n|cffffcc00攻击陆地和空中单位。|r"
+Hotkey=N
+[umtw]
+Name=肉车
+Tip=火车 [|cffffcc00M|r] 肉车
+Ubertip="尸体储存机。也可用作远程攻城武器。对建筑物造成异常伤害，但缓慢且易受攻击。可以学习疾病云能力。|n|n|cffffcc00攻击陆地单位和树木。|r"
+Hotkey=M
+[ubon]
+Name=墓地
+Tip=召唤 [|cffffcc00B|r] 墓地
+Ubertip="产生冰霜巨龙。还包含冰冻呼吸升级。"
+Hotkey=B
+[usap]
+Name=祭祀坑
+Tip=召唤 [|cffffcc00S|r] 祭祀坑
+Ubertip="具有将追随者变成阴影的牺牲能力。阴影是隐形的灵魂，可以看到隐形单位，但不能攻击。"
+Hotkey=S
+[uslh]
+Name=屠宰场
+Tip=召唤 [|cffffcc00h|r] 屠宰场
+Ubertip="生产憎恶、黑曜石雕像和肉车。还包含疾病云和毁灭者形态升级。"
+Hotkey=H
+[ugrv]
+Name=墓地
+Tip=召唤 [|cffffcc00v|r] 墓地
+Ubertip="为亡灵单位提供攻击和护甲升级。还生产尸体并作为收获木材的下车点。"
+Hotkey=V
+[ucs1]
+Name=腐肉甲虫
+[ucs2]
+Name=腐肉甲虫
+[ucsB]
+Name=地洞腐肉甲虫
+[ucs3]
+Name=腐肉甲虫
+[ucsC]
+Name=地洞腐肉甲虫
+[uloc]
+Name=刺槐
+[uobs]
+Name=黑曜石雕像
+Tip=创建 [|cffffcc00O|r] 黑曜石雕像
+Hotkey=O
+Ubertip="强化雕像，可以帮助补充军队的生命和法力。初始可以施放灵魂之触和枯萎精华，并学习毁灭者形态技能。|n|n|cffffcc00攻击陆地和空中单位。|r"
+[ubsp]
+Name=毁灭者
+Tip=变形为 [|cffffcc00t|r] 驱逐舰
+Hotkey=T
+Ubertip="必须消耗魔法来维持其法力值的大型飞行单位。擅长摧毁敌方施法者和地面部队集群。最初拥有法术免疫、吞噬魔法、吸收法力和毁灭之球。|n|n|cffffcc00攻击陆地和空中单位。|r"
+[u008]
+Name="大食尸鬼"
+Tip=训练 [|cffffcc00G|r] 食尸鬼
+Ubertip="基本攻击单位和木材收割机。可以学习食人魔和食尸鬼狂热。|n|n|cffffcc00攻击陆地单位和树木。|r"
+Hotkey=G
+[u007]
+Name="瘟疫携带者"
+Tip="火车瘟疫携带者"
+Ubertip="|n|cffFFFF80攻击：|r混乱（|cffFFFF00近战|r，|cffFFFF00 52|r dps）|n|cffFFFF80盔甲：|r中等 (|cffFFFF006|r)|n|cffFFFF80生命值：|cffFFFF001050|r|n|cffFFFF80能力：|r|n|n|cff80FF00瘟疫袭击|r|n被瘟疫携带者击中的单位移动速度降低 30%，每秒受到 15 点伤害，持续 15 秒|n|n|cff80FF00瘟疫云|r|n用瘟疫感染 350 范围内的有机体敌人，每秒造成 20 点伤害"
+Hotkey=Q
+[u006]
+Name="堕落的建造者"
+Tip="|cffFFD900选择腐败的企业集团|r"
+Ubertip="这些曾经友好的生物被邪恶的恶魔腐蚀，变成了黑暗的爪牙。他们使用黑暗魔法来影响他们的敌人，并且可以建造一座具有溅射伤害的塔。"
+[u005]
+Name="死灵法师"
+Tip="训练死灵法师"
+Ubertip="|n|cffFFFF80攻击：|r魔法 (|cffFFFF00380|r rng,|cffFFFF00 30|r dps)|n|cffFFFF80盔甲：|r无装甲 (|cffFFFF001|r)|n|cffFFFF80生命值：|cffFFFF00350|r|n|cffFFFF80能力：|r|n|n|cff80FF00死而复生|r|n举起骷髅|n|cff8080FF冷却时间：|r45|n|cff8080FF法力消耗：|r75"
+Hotkey=Q
+Casterupgradename=
+Casterupgradetip=
+[u00D]
+Name="巫妖王"
+Tip="训练巫妖王"
+Ubertip="|n|cffFFFF80攻击：|r魔法 (|cffFFFF00500|r rng,|cffFFFF00 75|r dps)|n|cffFFFF80盔甲：|r无装甲 (|cffFFFF005|r)|n|cffFFFF80生命值：|cffFFFF00900|r|n|cffFFFF80能力：|r|n|n|cff80FF00传奇法术抗性|r|n对该单位造成的法术伤害降低 70%|n|n|cff80FF00免疫|r|n该单位免疫某些负面效果|n|n|cff80FF00衰减攻击|r|n攻击时有 20% 几率偷取最多 200 点生命值或 15% 几率施放死亡凋零（在 300 范围内持续 5 秒，每秒消耗受影响敌人 8% 的生命）|n|n|cff80FF00骷髅大师|r|n从尸体中复活骷髅|n|cff8080FF冷却时间：|r25|n|cff8080FF法力消耗：|r100"
+Hotkey=Q
+Casterupgradename=
+Casterupgradetip=
+[u00C]
+Name=食尸鬼
+Tip=训练 [|cffffcc00G|r] 食尸鬼
+Ubertip="基本攻击单位和木材收割机。可以学习食人魔和食尸鬼狂热。|n|n|cffffcc00攻击陆地单位和树木。|r"
+Hotkey=G
+[u00B]
+Name="大骷髅战士"
+Tip=召唤骷髅战士
+Ubertip="具有分裂攻击和猛击的近战单位。"
+[u00A]
+Name=骷髅法师
+Tip=召唤骷髅法师
+Ubertip="弱远程单位。"
+[u00E]
+Name="巫妖食尸鬼"
+Tip=训练 [|cffffcc00G|r] 食尸鬼
+Ubertip="基本攻击单位和木材收割机。可以学习食人魔和食尸鬼狂热。|n|n|cffffcc00攻击陆地单位和树木。|r"
+Hotkey=G
+[u002]
+Name=骷髅战士
+Tip=召唤骷髅战士
+Ubertip="近战单位弱。"
+[u003]
+Name="大骷髅法师"
+Tip=召唤骷髅法师
+Ubertip="具有弹跳攻击的远程单位。"
+[u004]
+Name=食尸鬼
+Tip=训练 [|cffffcc00G|r] 食尸鬼
+Ubertip="基本攻击单位和木材收割机。可以学习食人魔和食尸鬼狂热。|n|n|cffffcc00攻击陆地单位和树木。|r"
+Hotkey=G
+[u000]
+Name="冰霜巨龙"
+Tip="火车冰霜巨龙"
+Ubertip="|n|cffFFFF80攻击：|r正常 (|cffFFFF00325|r rng,|cffFFFF00 77|r dps)|n|cffFFFF80盔甲：|r光 (|cffFFFF005|r)|n|cffFFFF80生命值：|cffFFFF001200|r|n|cffFFFF80能力：|r|n|n|cff80FF00飞行|r|n这个单位在飞|n|n|cff80FF00飞溅伤害|r|n该单位的攻击命中目标周围 225 范围内的所有单位。距离目标越远的单位受到的伤害越少|n|n|cff80FF00冰冷攻击|r|n所有被击中的单位都会被冰冻 5 秒"
+Hotkey=Q

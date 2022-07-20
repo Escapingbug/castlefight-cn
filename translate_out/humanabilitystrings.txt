@@ -1,0 +1,1011 @@
+[Amls]
+Name=空中镣铐
+Tip=A[|cffffcc00e|r] erial 枷锁
+Ubertip="魔法束缚目标敌方空中单位，使其无法移动或攻击，每秒受到<Amls,DataA1>伤害。|n持续 <Amls,Dur1> 秒。"
+Hotkey=E
+[Bmlt]
+Bufftip=空中镣铐
+Buffubertip="这个单位被捆绑在空中镣铐中；它不能移动或攻击，并且会随着时间的推移受到伤害。"
+[AHta]
+Name=揭示
+Tip=|cffffcc00R|r小牛皮
+Ubertip="显示地图的一个区域。|n检测隐形单位。|n持续 <AHta,Dur1> 秒。"
+Hotkey=R
+[Afbk]
+Name=反馈
+Tip=反馈
+Ubertip="Spell Breaker 攻击每次击中都会破坏 <Afbk,DataA1> 法力值。法力燃烧，对被攻击单位造成伤害。"
+[Afbt]
+Name=反馈
+Tip=反馈
+Ubertip="这座塔的攻击每击中任何单位都会破坏 <Afbt,DataA1> 法力值，造成与所破坏的法力值相等的额外伤害。|n|n此外，这座塔的攻击会对召唤的单位造成<Afbt,DataE1>额外伤害。"
+[Acmg]
+Name=控制魔法
+Tip=|cffffcc00C|r控制魔法
+Ubertip="控制一个敌方召唤单位。法力消耗是被召唤单位当前生命值的 <Acmg,DataB1,%>%。"
+Hotkey=C
+[Bcmg]
+Bufftip=控制魔法
+Buffubertip="本机已被控制；它现在服从一个新主人。"
+[AHdr]
+Name=虹吸法力
+Tip=虹吸管|cffffcc00n|r法力 - [|cffffcc00Level 1|r],Sipho|cffffcc00n|r法力 - [|cffffcc00Level 2|r],Sipho|cffffcc00n|r法力 - [|cffffcc003 级|r]
+Ubertip="在血法师和目标之间转移法力。每秒从敌人身上吸取 <AHdr,DataB1> 法力，或每秒将 <AHdr,DataE1> 法力转移给盟友。|n|n虹吸法力可以使血法师的法力值超过其最大值，但如果不使用多余的法力值会迅速流失。|n持续 <AHdr,Dur1> 秒。","在血法师和目标之间转移法力。每秒从敌人身上吸取 <AHdr,DataB2> 法力，或每秒将 <AHdr,DataE2> 法力转移给盟友。|n|n虹吸法力可以使血法师的法力值超过其最大值，但如果不使用多余的法力值会迅速流失。|n持续 <AHdr,Dur2> 秒。","在血法师和目标之间转移法力。每秒从敌人身上吸取 <AHdr,DataB3> 法力，或每秒将 <AHdr,DataE3> 法力转移给盟友。|n|n虹吸法力可以使血法师的法力值超过其最大值，但如果不使用多余的法力值会迅速流失。|n持续 <AHdr,Dur3> 秒。"
+Hotkey=N
+Researchtip="Learn Sipho|cffffcc00n|r Mana - [|cffffcc00Level %d|r]"
+Researchubertip="Transfers mana between the Blood Mage and a target. Drains mana from an enemy, or transfers mana to an ally.|n|nSiphon Mana can push the Blood Mage's mana over its maximum value, though excess mana drains off rapidly if not used.|nLasts <AHdr,Dur1> seconds.|n|n|cffffcc00Level 1|r - <AHdr,DataB1> mana drained per second. |n|cffffcc00Level 2|r - <AHdr,DataB2> mana drained per second. |n|cffffcc00Level 3|r - <AHdr,DataB3> mana drained per second."
+Researchhotkey=N
+[Bdbb]
+Name=吸取生命和法力（奖励）
+Bufftip=吸取生命和法力
+Buffubertip="该单位的生命值和法力值暂时高于其正常最大值。这个红利会很快消失。"
+[Bdbl]
+Name=消耗生命（奖励）
+Bufftip=耗尽生命
+Buffubertip="该单位的临时额外生命值高于其正常最大值。这个红利会很快消失。"
+[Bdbm]
+Name=虹吸法力（奖励）
+Bufftip=虹吸法力
+Buffubertip="该单位的临时额外法力值高于其正常最大值。这个红利会很快消失。"
+[Aflk]
+Name=高射炮
+Tip=高射炮
+Ubertip="使用强大的大炮对空中单位造成范围伤害。"
+[Aroc]
+Name=弹幕
+Tip=弹幕
+Ubertip="向附近的敌方空中单位发射强力火箭，每次命中造成 <hrtt,mindmg2> - <hrtt,maxdmg2> 伤害。"
+[Srtt]
+Requires=Rhrt
+[Asph]
+Name=领域
+[Asps]
+Name=法术窃取
+Tip=法术 [|cffffcc00t|r] 偷窃
+Ubertip="窃取敌方单位的正增益并将其应用于附近的友方单位，或从友方单位获取负增益并将其应用于附近的敌方单位。"
+Untip="|cffc3dbff右击激活自动施法。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Hotkey=T
+Unhotkey=T
+[Aclf]
+Name=云
+Tip=|cffffcc00C|r响亮
+Ubertip="用远程攻击对敌方建筑物施放，以阻止建筑物攻击。|n持续 <Aclf,Dur1> 秒。"
+Hotkey=C
+[Bclf]
+Bufftip=云
+Buffubertip="这个建筑上面有云，不能使用它的远程攻击。"
+[AHfs]
+Name=烈焰打击
+Tip=|cffffcc00F|rlame Strike - [|cffffcc00Level [|cffffcc00F|r] 1|r],Flame Strike - [|cffffcc00Level 2|r],|cffffcc00F|rlame Strike - [|cffffcc00Level 3|r]
+Ubertip="召唤一个火焰柱，燃烧地面单位，每秒造成 45 点伤害，持续 3 秒。随着火柱消退，火中的单位继续受到轻微伤害。","召唤一个火柱燃烧地面单位，每秒造成 80 点伤害，持续 3 秒。随着火柱消退，火中的单位继续受到轻微伤害。","召唤一个火柱燃烧地面单位，每秒造成 110 点伤害，持续 3 秒。随着火柱消退，火中的单位继续受到中度伤害。"
+Hotkey=F
+Researchtip="Learn |cffffcc00F|rlame Strike - [|cffffcc00Level %d|r]"
+Researchubertip="Conjures a pillar of fire which damages ground units in a target area over time. |n|n|cffffcc00Level 1|r - 45 damage a second for 3 seconds, followed by minor damage for 6 seconds. |n|cffffcc00Level 2|r - 80 damage a second for 3 seconds, followed by light damage for 6 seconds. |n|cffffcc00Level 3|r - 110 damage a second for 3 seconds, followed by moderate damage for 6 seconds."
+Researchhotkey=F
+[BHfs]
+Bufftip=烈焰打击
+Buffubertip="该单位处于烈焰打击中，并且会随着时间的推移受到伤害。"
+[AHbn]
+Name=放逐
+Tip=|cffffcc00B|ranish - [|cffffcc00Level [|cffffcc00B|r] 1|r],Banish - [|cffffcc00Level 2|r],|cffffcc00B|ranish - [|cffffcc00Level 3|r]
+Ubertip="使一个非机械单位变得虚无缥缈，并使其移动速度降低 <AHbn,DataA1,%>%，持续 <AHbn,Dur1> 秒。灵体生物不能攻击，但他们可以施法，并且对他们施法的某些法术会产生更大的效果。","将一个单位变为灵体并使其移动速度降低 <AHbn,DataA2,%>% 持续 <AHbn,Dur2> 秒.灵体生物不能攻击，但他们可以施法，并且对他们施法的某些法术会产生更大的效果。","将一个单位变为灵体并使其移动速度降低 <AHbn,DataA3,%>% 持续 <AHbn,Dur3> 秒.灵体生物不能攻击，但他们可以施法，而某些施法在他们身上的效果会更大。"
+Hotkey=B
+Researchtip="Learn |cffffcc00B|ranish - [|cffffcc00Level %d|r]"
+Researchubertip="Turns a non-mechanical unit ethereal and slows its movement speed by <AHbn,DataA1,%>% for a short duration. Ethereal creatures cannot attack, but they can cast spells and certain spells cast upon them will have a greater effect. |n|n|cffffcc00Level 1|r - <AHbn,Cost1> mana, lasts <AHbn,Dur1> seconds. |n|cffffcc00Level 2|r - <AHbn,Cost2> mana, lasts <AHbn,Dur2> seconds. |n|cffffcc00Level 3|r - <AHbn,Cost3> mana, lasts <AHbn,Dur3> seconds."
+Researchhotkey=B
+[BHbn]
+Bufftip=放逐
+Buffubertip="该单位被放逐；被放逐的生物不能攻击，但他们可以施法，并且会受到魔法攻击和法术的额外伤害。"
+[AHpx]
+Name=凤凰
+Tip=凤凰|cffffcc00x|r
+Ubertip="召唤强大的凤凰。凤凰的燃烧强度如此之大，以至于它会伤害自己和附近的敌方单位。具有法术免疫和抗性皮肤。当凤凰死后，它会产生一个蛋，然后孵化成凤凰。|n|n|cffffcc00攻击陆地和空中单位。|r"
+Hotkey=X
+Researchtip=Learn Phoeni|cffffcc00x|r
+Researchubertip="Summons a powerful Phoenix. The Phoenix burns with such intensity that it damages itself and nearby enemy units. Has Spell Immunity, and Resistant Skin. When a Phoenix dies, it creates an egg that will hatch into a Phoenix. |n|n|cffffcc00Attacks land and air units.|r"
+Researchhotkey=X
+[Aphx]
+Name=凤凰变形（蛋相关）
+[Bphx]
+Bufftip=凤凰
+Buffubertip="凤凰之力展开。"
+[Apxf]
+Name=凤凰火
+Tip=凤凰火
+Ubertip="射出一道道火焰，点燃附近的敌人。"
+[Bpxf]
+Bufftip=凤凰火
+Buffubertip="这个单位正在被凤凰之火烧毁；随着时间的推移，它会受到损害。"
+[Agyb]
+Name=飞行机器炸弹
+Tip=飞行机器炸弹
+Ubertip="允许飞行机器攻击陆地单位。"
+[Asth]
+Name=风暴之锤
+Tip=风暴之锤
+Ubertip="使狮鹫骑士的攻击对多个单位造成伤害。"
+[Agyv]
+Name=真实视域
+Tip=真实视域
+Ubertip="显示附近的隐形单位。"
+[Adts]
+Name=魔法哨兵
+Tip=魔法哨兵
+Ubertip="显示附近的隐形单位。"
+[Ainf]
+Name=内火
+Tip=内 [|cffffcc00F|r] 火
+Ubertip="使目标友方单位的伤害提高<Ainf,DataA1,%>%，护甲提高<Ainf,DataB1>。|n持续 <Ainf,Dur1> 秒。"
+Untip="|cffc3dbff右击激活自动施法。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Hotkey=F
+Unhotkey=F
+[Binf]
+Bufftip=内火
+Buffubertip="这个单位有内火；它的护甲和攻击伤害增加。"
+[Adis]
+Name=驱散魔法
+Tip=|cffffcc00D|r驱散魔法
+UberTip="Removes all buffs from units in a target area. |n|cffffcc00Deals <Adis,DataB1> damage to summoned units.|r"
+Hotkey=D
+[Ahea]
+Name=愈合
+Tip=H[|cffffcc00e|r] 伊尔
+Ubertip="为目标友方非机械受伤单位治疗 <Ahea,DataA1> 点生命值。"
+Untip="|cffc3dbff右击激活自动施法。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Hotkey=E
+Unhotkey=E
+[Bhea]
+Bufftip=愈合
+Buffubertip="这个单位正在被治愈；失去的生命值正在恢复。"
+[BNhe]
+Bufftip=中性治疗
+Buffubertip="这个单位正在被治愈；失去的生命值正在恢复。"
+[Aslo]
+Name=减缓
+Tip=慢|cffffcc00慢|r
+Ubertip="使目标敌方单位的攻击速度降低<Aslo,DataB1,%>%，移动速度降低<Aslo,DataA1,%>%。|n持续 <Aslo,Dur1> 秒。"
+Untip="|cffc3dbff右击激活自动施法。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Hotkey=W
+Unhotkey=W
+[Bslo]
+Bufftip=减缓
+Buffubertip="本机减速；它的移动速度和攻击速度降低。"
+[Aivs]
+Name=隐形
+Tip=|cffffcc00我|r不可见
+Ubertip="使单位隐形。如果该单位攻击、使用技能或施法，它将变得可见。|n持续 <Aivs,Dur1> 秒。"
+Hotkey=I
+[Binv]
+Bufftip=隐形
+Buffubertip="这个单位是不可见的；敌方单位看不到。如果它攻击或施法，它将变得可见。"
+[Aply]
+Name=多晶型
+Tip=[|cffffcc00o|r] 多晶型
+Ubertip="将目标敌方单位变成绵羊。目标单位保留其生命值和护甲，但不能攻击。|n不能对英雄施放。|n持续 <Aply,Dur1> 秒。"
+Hotkey=O
+[Bply]
+Bufftip=多晶型
+Buffubertip="这个单位是变形的；它变成了一只羊。"
+[AHbz]
+Name=暴风雪
+Tip=|cffffcc00B|rlizzard - [|cffffcc00Level [|cffffcc00B|r] 1|r],Blizzard - [|cffffcc00Level 2|r],|cffffcc00B|rlizzard - [|cffffcc00Level 3|r]
+Ubertip="调用 <AHbz,DataA1> 冻结冰碎片波；每一波对区域内的单位造成<AHbz,DataB1>伤害。","召唤<AHbz,DataA2>冰冻碎冰波;每一波对区域内的单位造成<AHbz,DataB2>伤害。","调用<AHbz,DataA3>冰冻碎冰波;每一波对区域内的单位造成 <AHbz,DataB3> 伤害。"
+Hotkey=B
+Researchtip="Learn |cffffcc00B|rlizzard - [|cffffcc00Level %d|r]"
+Researchubertip="Calls down waves of freezing ice shards that damage units in a target area. |n|n|cffffcc00Level 1|r - <AHbz,DataA1> waves at <AHbz,DataB1> damage each. |n|cffffcc00Level 2|r - <AHbz,DataA2> waves at <AHbz,DataB2> damage each. |n|cffffcc00Level 3|r - <AHbz,DataA3> waves at <AHbz,DataB3> damage each."
+Researchhotkey=B
+[BHbd]
+Bufftip=暴风雪
+Buffubertip="这个单位被暴雪破坏了。"
+[AHwe]
+Name=召唤水元素
+Tip=召唤 [|cffffcc00W|r] 水元素 - [|cffffcc00Level 1|r],召唤 [|cffffcc00W|r] 水元素 - [|cffffcc00Level 2|r],召唤 [|cffffcc00W|r] 水元素 - [|cffffcc00Level 3|r]
+Ubertip="召唤一个水元素攻击大法师的敌人。拥有 <hwat,realHP> 生命值并造成 <hwat,mindmg1> - <hwat,maxdmg1> 伤害。|n持续 <AHwe,Dur1> 秒。|n|n|cffffcc00攻击陆地和空中单位。|r","召唤水元素攻击大法师的敌人。拥有 <hwt2,realHP> 生命值并造成 <hwt2,mindmg1> - <hwt2,maxdmg1> 伤害。|n持续 <AHwe,Dur1> 秒。|n|n|cffffcc00攻击陆地和空中单位。|r","召唤水元素攻击大法师的敌人。拥有 <hwt3,realHP> 生命值并造成 <hwt3,mindmg1> - <hwt3,maxdmg1> 伤害。|n持续 <AHwe,Dur1> 秒。|n|n|cffffcc00攻击陆地和空中单位。|r"
+ResearchUberTip="Summons a water elemental to attack the Archmage's enemies. |nLasts <AHwe,Dur1> seconds. |n|n|cffffcc00Attacks land and air units.|r |n|n|cffffcc00Level 1|r - <hwat,realHP> hit points, <hwat,mindmg1> - <hwat,maxdmg1> damage. |n|cffffcc00Level 2|r - <hwt2,realHP> hit points, <hwt2,mindmg1> - <hwt2,maxdmg1> damage. |n|cffffcc00Level 3|r - <hwt3,realHP> hit points, <hwt3,mindmg1> - <hwt3,maxdmg1> damage."
+Hotkey=W
+Researchtip="Learn Summon |cffffcc00W|rater Elemental - [|cffffcc00Level %d|r]"
+Researchhotkey=W
+[BHwe]
+Bufftip=水元素
+Buffubertip="被召唤的单位容易被驱散。"
+[AHab]
+Name=光辉光环
+Tip=光辉光环 - [|cffffcc00Level 1|r],光辉光环 - [|cffffcc00Level 2|r],光辉光环 - [|cffffcc00Level 3|r]
+Ubertip="为附近的友方单位提供额外的法力恢复。","为附近的友方单位提供额外的法力恢复。","为附近的友方单位提供额外的法力恢复。"
+Researchtip="Learn B|cffffcc00r|rilliance Aura - [|cffffcc00Level %d|r]"
+Researchubertip="Gives additional mana regeneration to nearby friendly units. |n|n|cffffcc00Level 1|r - Grants minor mana regeneration. |n|cffffcc00Level 2|r - Grants moderate mana regeneration. |n|cffffcc00Level 3|r - Grants heavy mana regeneration."
+Researchhotkey=R
+[BHab]
+Bufftip=光辉光环
+Buffubertip="该单位受到光辉光环的影响；它具有增加的法力恢复。"
+[AHmt]
+Name=大规模传送
+Tip=质量 [|cffffcc00T|r] 传送
+Ubertip="将玩家附近单位（包括大法师）的 <AHmt,DataA1> 传送到友方地面单位或建筑物。"
+Hotkey=T
+Researchtip=Learn Mass |cffffcc00T|releport
+Researchubertip="Teleports <AHmt,DataA1> of the player's nearby units, including the Archmage, to a friendly ground unit or structure."
+Researchhotkey=T
+Globalmessage=
+Globalsound=
+[AHtb]
+Name=风暴之箭
+Tip=S[|cffffcc00t|r] torm Bolt - [|cffffcc00Level 1|r],S[|cffffcc00t|r] torm Bolt - [|cffffcc00Level 2|r],S[|cffffcc00t|r] torm Bolt - [|cffffcc00Level 3|r]
+Ubertip="向目标敌方单位投掷魔法锤，造成 <AHtb,DataA1> 伤害并眩晕目标 <AHtb,Dur1> 秒。","向目标敌方单位投掷魔法锤，造成 <AHtb,DataA2> 伤害并击晕目标 <AHtb,Dur2> 秒。","向目标敌方单位投掷魔法锤，造成 <AHtb,DataA3> 伤害并击晕目标 <AHtb,Dur3> 秒。"
+Hotkey=T
+Researchtip="Learn S|cffffcc00t|rorm Bolt - [|cffffcc00Level %d|r]"
+Researchubertip="A magical hammer that is thrown at an enemy unit, causing damage and stunning the target. |n|n|cffffcc00Level 1|r - <AHtb,DataA1> damage, <AHtb,Dur1> second stun. |n|cffffcc00Level 2|r - <AHtb,DataA2> damage, <AHtb,Dur2> second stun. |n|cffffcc00Level 3|r - <AHtb,DataA3> damage, <AHtb,Dur3> second stun."
+Researchhotkey=T
+[BHtb]
+Bufftip=风暴之箭
+Buffubertip="该单位被风暴箭击晕；它不能移动、攻击或施法。"
+[AHtc]
+Name=雷霆一击
+Tip=雷霆 [|cffffcc00C|r] 拍手 - [|cffffcc00Level 1|r],雷霆 [|cffffcc00C|r] 拍手 - [|cffffcc00Level 2|r],雷霆 [|cffffcc00C|r] 拍手 - [|cffffcc00Level 3|r]
+Ubertip="猛击地面，对附近的敌方陆地单位造成<AHtc,DataA1>伤害，并使其移动速度降低<AHtc,DataC1,%>%，攻击速度降低<AHtc,DataD1,%>%。","猛击地面，造成<AHtc,DataA2> 对附近敌方陆地单位造成伤害，并使其移动速度降低 <AHtc,DataC2,%>%，攻击速度降低 <AHtc,DataD2,%>%。","猛击地面，造成 <AHtc,DataA3>对附近的敌方陆地单位造成伤害，并使其移动速度降低<AHtc,DataC3,%>%，攻击速度降低<AHtc,DataD3,%>%。"
+Hotkey=C
+Researchtip="Learn Thunder |cffffcc00C|rlap - [|cffffcc00Level %d|r]"
+Researchubertip="Slams the ground, dealing damage to and slowing the movement speed and attack rate of nearby enemy land units. |n|n|cffffcc00Level 1|r - <AHtc,DataA1> damage, <AHtc,DataC1,%>% move, <AHtc,DataD1,%>% attack. |n|cffffcc00Level 2|r - <AHtc,DataA2> damage, <AHtc,DataC2,%>% move, <AHtc,DataD2,%>% attack. |n|cffffcc00Level 3|r - <AHtc,DataA3> damage, <AHtc,DataC3,%>% move, <AHtc,DataD3,%>% attack."
+Researchhotkey=C
+[BHtc]
+Bufftip=雷霆一击
+Buffubertip="该单位已被雷霆一击击中；它的移动速度和攻击速度降低。"
+[AHbh]
+Name=重击
+Tip=Bash - [|cffffcc00Level 1|r],Bash - [|cffffcc00Level 2|r],Bash - [|cffffcc00Level 3|r]
+Ubertip="使攻击有 <AHbh,DataA1>% 的几率造成 <AHbh,DataC1> 额外伤害并眩晕对手 <AHbh,Dur1> 秒。","使攻击有 <AHbh,DataA2>% 的几率造成<AHbh,DataC1> 额外伤害并眩晕对手 <AHbh,Dur1> 秒。","使攻击有 <AHbh,DataA3>% 的几率造成 <AHbh,DataC1> 额外伤害并眩晕对手 <AHbh ,Dur1> 秒。"
+Researchtip="Learn |cffffcc00B|rash - [|cffffcc00Level %d|r]"
+Researchubertip="Gives a chance that an attack will do <AHbh,DataC1> bonus damage and stun an opponent for <AHbh,Dur1> seconds. |n|n|cffffcc00Level 1|r - <AHbh,DataA1>% chance per attack. |n|cffffcc00Level 2|r - <AHbh,DataA2>% chance per attack. |n|cffffcc00Level 3|r - <AHbh,DataA3>% chance per attack."
+Researchhotkey=B
+[BHbh]
+Bufftip=重击
+Buffubertip="该单元已被抨击；它不能移动、攻击或施法。"
+[AHav]
+Name=阿凡达
+Tip=激活 [|cffffcc00v|r] 头像
+UberTip="Activate Avatar to give the Mountain King <AHav,DataA1> bonus armor, <AHav,DataB1> bonus hit points, <AHav,DataC1> bonus damage and spell immunity. |nLasts <AHav,Dur1> seconds."
+Untip=停用 [|cffffcc00v|r] 头像
+UnUberTip=""
+Hotkey=V
+Unhotkey=V
+Researchtip=Learn A|cffffcc00v|ratar
+ResearchUberTip="When Avatar is activated, it gives the Mountain King <AHav,DataA1> bonus armor, <AHav,DataB1> bonus hit points, <AHav,DataC1> bonus damage and spell immunity. |nLasts <AHav,Dur1> seconds."
+Researchhotkey=V
+[BHav]
+Bufftip=阿凡达
+Buffubertip="这个单位是阿凡达形式；它增加了生命值、攻击力、护甲，并且对法术免疫。"
+[AHhb]
+Name=圣光
+Tip=圣光|cffffcc00t|r - [|cffffcc00Level 1|r],圣光|cffffcc00t|r - [|cffffcc00Level 2|r],圣光|cffffcc00t|r - [|cffffcc003级|r]
+UberTip="A holy light that can heal a friendly living unit for <AHhb,DataA1> or deal half damage to an enemy Undead unit.","A holy light that can heal a friendly living unit for <AHhb,DataA2> or deal half damage to an enemy Undead unit.","A holy light that can heal a friendly living unit for <AHhb,DataA3> or deal half damage to an enemy Undead unit."
+Hotkey=T
+Researchtip="Learn Holy Ligh|cffffcc00t|r - [|cffffcc00Level %d|r]"
+Researchubertip="A holy light that can heal a friendly living unit or damage an enemy Undead unit. |n|n|cffffcc00Level 1|r - Heals for <AHhb,DataA1> hit points. |n|cffffcc00Level 2|r - Heals for <AHhb,DataA2> hit points. |n|cffffcc00Level 3|r - Heals for <AHhb,DataA3> hit points. "
+Researchhotkey=T
+[AHds]
+Name=圣盾
+Tip=|cffffcc00D|rivine Shield - [|cffffcc00Level [|cffffcc00D|r] 1|r],Divine Shield - [|cffffcc00Level 2|r],|cffffcc00D|rivine Shield - [|cffffcc00Level 3|r]
+Ubertip="一个坚不可摧的护盾围绕着这个单位，在 <AHds,Dur1> 秒内保护它免受所有伤害和法术。","一个坚不可摧的护盾围绕着这个单位，在 <AHds,Dur2> 秒内保护它免受所有伤害和法术。","一个坚不可摧的护盾围绕着这个单位，在 <AHds,Dur3> 秒内保护它免受所有伤害和法术的伤害。"
+Untip=停用 [|cffffcc00D|r] 圣盾
+Hotkey=D
+Unhotkey=D
+Researchtip="Learn |cffffcc00D|rivine Shield - [|cffffcc00Level %d|r]"
+Researchubertip="An impenetrable shield surrounds the Paladin, protecting him from all damage and spells for a set amount of time. |n|n|cffffcc00Level 1|r - Lasts <AHds,Dur1> seconds. |n|cffffcc00Level 2|r - Lasts <AHds,Dur2> seconds. |n|cffffcc00Level 3|r - Lasts <AHds,Dur3> seconds."
+Researchhotkey=D
+Globalmessage=
+Globalsound=
+[BHds]
+Bufftip=圣盾
+Buffubertip="这个单位在神圣之盾下；它是无懈可击的。"
+[AHad]
+Name=奉献光环
+Tip=虔诚光环 - [|cffffcc00Level 1|r],虔诚光环 - [|cffffcc00Level 2|r],虔诚光环 - [|cffffcc00Level 3|r]
+Ubertip="给予附近友军单位 <AHad,DataA1,.> 额外护甲。","给予附近友军单位 <AHad,DataA2,.> 额外护甲。","给予附近友军单位 <AHad,DataA3,.> 额外护甲."
+Researchtip="Learn De|cffffcc00v|rotion Aura - [|cffffcc00Level %d|r]"
+Researchubertip="Gives additional armor to nearby friendly units. |n|n|cffffcc00Level 1|r - Increases base armor by <AHad,DataA1,.>. |n|cffffcc00Level 2|r - Increases base armor by <AHad,DataA2,.>. |n|cffffcc00Level 3|r - Increases base armor by <AHad,DataA3,.>."
+Researchhotkey=V
+[BHad]
+Bufftip=奉献光环
+Buffubertip="该单位受到虔诚光环的影响；它增加了护甲。"
+[AHre]
+Name=复活
+Tip=|cffffcc00R|r复活
+Ubertip="使 <AHre,DataA1> 附近友军单位的尸体复活。"
+Hotkey=R
+Researchtip=Learn |cffffcc00R|resurrection
+Researchubertip="Brings back to life the corpses of <AHre,DataA1> friendly nearby units."
+Researchhotkey=R
+[Amic]
+Name=武装召唤
+Tip=|cffffcc00C|r全力以赴
+Untip=返回 [|cffffcc00W|r] 工作
+Ubertip="召集所有附近的农民到市政厅转换为民兵。|n持续 <Amil,Dur1> 秒。"
+Unubertip="召集所有附近的民兵到市政厅，将其转变为农民。"
+Hotkey=C
+Unhotkey=W
+[BHbz]
+EditorName=Blizzard (Caster)
+[Bdcb]
+EditorName=Drain Life & Mana (Caster)
+[Bdcl]
+EditorName=Drain Life (Caster)
+[Bdcm]
+EditorName=Drain Mana (Caster)
+[Bdtb]
+EditorName=Drain Life & Mana (Target)
+[Bdtl]
+EditorName=Drain Life (Target)
+[Bdtm]
+EditorName=Drain Mana (Target)
+[Bmlc]
+EditorName=Aerial Shackles (Caster)
+[Bivs]
+EditorName=Invisibility (Extra)
+[XHbz]
+EditorName=Blizzard (Effect)
+[XHfs]
+EditorName=Flame Strike (Effect)
+[Xclf]
+EditorName=Cloud (Effect)
+[Xfhs]
+EditorName=Building Damage - Human Small
+[Xfhm]
+EditorName=Building Damage - Human Medium
+[Xfhl]
+EditorName=Building Damage - Human Large
+[A0E6]
+Name="ELE：高等风元素（效果）"
+[A0D9]
+Name="ELE：元素守卫塔（放电）"
+Tip=凤凰火
+Ubertip="射出一道道火焰，点燃附近的敌人。"
+[A0CX]
+Name="ELE：奥尼斯·科鲁斯库斯"
+[A0D5]
+Name="ELE：电盾元素"
+Tip=S[|cffffcc00t|r] torm Bolt - [|cffffcc00Level 1|r],S[|cffffcc00t|r] torm Bolt - [|cffffcc00Level 2|r],S[|cffffcc00t|r] torm Bolt - [|cffffcc00Level 3|r]
+Ubertip="向目标敌方单位投掷魔法锤，造成 <AHtb,DataA1> 伤害并眩晕目标 <AHtb,Dur1> 秒。","向目标敌方单位投掷魔法锤，造成 <AHtb,DataA2> 伤害并击晕目标 <AHtb,Dur2> 秒。","向目标敌方单位投掷魔法锤，造成 <AHtb,DataA3> 伤害并击晕目标 <AHtb,Dur3> 秒。"
+Hotkey=T
+Researchtip="Learn S|cffffcc00t|rorm Bolt - [|cffffcc00Level %d|r]"
+Researchubertip="A magical hammer that is thrown at an enemy unit, causing damage and stunning the target. |n|n|cffffcc00Level 1|r - <AHtb,DataA1> damage, <AHtb,Dur1> second stun. |n|cffffcc00Level 2|r - <AHtb,DataA2> damage, <AHtb,Dur2> second stun. |n|cffffcc00Level 3|r - <AHtb,DataA3> damage, <AHtb,Dur3> second stun."
+Researchhotkey=T
+[A0CW]
+Name="ELE：奥尼斯·阿里斯"
+[A0E5]
+Name="ELE：风元素（效果）"
+[A0BT]
+Name="NAT：槽的守护者（自然接触）"
+Tip=H[|cffffcc00e|r] 伊尔
+Ubertip="为目标友方非机械受伤单位治疗 <Ahea,DataA1> 点生命值。"
+Untip="|cffc3dbff右击激活自动施法。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Hotkey=E
+Unhotkey=E
+[A0CG]
+Name="NEL：精灵龙（治疗）"
+Tip=H[|cffffcc00e|r] 伊尔
+Ubertip="为目标友方非机械受伤单位治疗 <Ahea,DataA1> 点生命值。"
+Untip="|cffc3dbff右击激活自动施法。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Hotkey=E
+Unhotkey=E
+[A0D1]
+Name="ELE：元素雨（暴风雪）"
+Tip=|cffffcc00B|rlizzard - [|cffffcc00Level [|cffffcc00B|r] 1|r],Blizzard - [|cffffcc00Level 2|r],|cffffcc00B|rlizzard - [|cffffcc00Level 3|r]
+Ubertip="调用 <AHbz,DataA1> 冻结冰碎片波；每一波对区域内的单位造成<AHbz,DataB1>伤害。","召唤<AHbz,DataA2>冰冻碎冰波;每一波对区域内的单位造成<AHbz,DataB2>伤害。","调用<AHbz,DataA3>冰冻碎冰波;每一波对区域内的单位造成 <AHbz,DataB3> 伤害。"
+Hotkey=B
+Researchtip="Learn |cffffcc00B|rlizzard - [|cffffcc00Level %d|r]"
+Researchubertip="Calls down waves of freezing ice shards that damage units in a target area. |n|n|cffffcc00Level 1|r - <AHbz,DataA1> waves at <AHbz,DataB1> damage each. |n|cffffcc00Level 2|r - <AHbz,DataA2> waves at <AHbz,DataB2> damage each. |n|cffffcc00Level 3|r - <AHbz,DataA3> waves at <AHbz,DataB3> damage each."
+Researchhotkey=B
+[A0D2]
+Name="ELE：元素雨（暴风雪）（-na）"
+Tip=|cffffcc00B|rlizzard - [|cffffcc00Level [|cffffcc00B|r] 1|r],Blizzard - [|cffffcc00Level 2|r],|cffffcc00B|rlizzard - [|cffffcc00Level 3|r]
+Ubertip="调用 <AHbz,DataA1> 冻结冰碎片波；每一波对区域内的单位造成<AHbz,DataB1>伤害。","召唤<AHbz,DataA2>冰冻碎冰波;每一波对区域内的单位造成<AHbz,DataB2>伤害。","调用<AHbz,DataA3>冰冻碎冰波;每一波对区域内的单位造成 <AHbz,DataB3> 伤害。"
+Hotkey=B
+Researchtip="Learn |cffffcc00B|rlizzard - [|cffffcc00Level %d|r]"
+Researchubertip="Calls down waves of freezing ice shards that damage units in a target area. |n|n|cffffcc00Level 1|r - <AHbz,DataA1> waves at <AHbz,DataB1> damage each. |n|cffffcc00Level 2|r - <AHbz,DataA2> waves at <AHbz,DataB2> damage each. |n|cffffcc00Level 3|r - <AHbz,DataA3> waves at <AHbz,DataB3> damage each."
+Researchhotkey=B
+[A0B8]
+Name="NAT：远古熊（狂暴）"
+Tip=内 [|cffffcc00F|r] 火
+Ubertip="使目标友方单位的伤害提高<Ainf,DataA1,%>%，护甲提高<Ainf,DataB1>。|n持续 <Ainf,Dur1> 秒。"
+Untip="|cffc3dbff右击激活自动施法。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Hotkey=F
+Unhotkey=F
+[A0B7]
+Name="NAT：熊（狂暴）"
+Tip=内 [|cffffcc00F|r] 火
+Ubertip="使目标友方单位的伤害提高<Ainf,DataA1,%>%，护甲提高<Ainf,DataB1>。|n持续 <Ainf,Dur1> 秒。"
+Untip="|cffc3dbff右击激活自动施法。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Hotkey=F
+Unhotkey=F
+[A0BL]
+Name="NAT：放逐"
+Tip=|cffffcc00B|ranish - [|cffffcc00Level [|cffffcc00B|r] 1|r],Banish - [|cffffcc00Level 2|r],|cffffcc00B|ranish - [|cffffcc00Level 3|r]
+Ubertip="使一个非机械单位变得虚无缥缈，并使其移动速度降低 <AHbn,DataA1,%>%，持续 <AHbn,Dur1> 秒。灵体生物不能攻击，但他们可以施法，并且对他们施法的某些法术会产生更大的效果。","将一个单位变为灵体并使其移动速度降低 <AHbn,DataA2,%>% 持续 <AHbn,Dur2> 秒.灵体生物不能攻击，但他们可以施法，并且对他们施法的某些法术会产生更大的效果。","将一个单位变为灵体并使其移动速度降低 <AHbn,DataA3,%>% 持续 <AHbn,Dur3> 秒.灵体生物不能攻击，但他们可以施法，而某些施法在他们身上的效果会更大。"
+Hotkey=B
+Researchtip="Learn |cffffcc00B|ranish - [|cffffcc00Level %d|r]"
+Researchubertip="Turns a non-mechanical unit ethereal and slows its movement speed by <AHbn,DataA1,%>% for a short duration. Ethereal creatures cannot attack, but they can cast spells and certain spells cast upon them will have a greater effect. |n|n|cffffcc00Level 1|r - <AHbn,Cost1> mana, lasts <AHbn,Dur1> seconds. |n|cffffcc00Level 2|r - <AHbn,Cost2> mana, lasts <AHbn,Dur2> seconds. |n|cffffcc00Level 3|r - <AHbn,Cost3> mana, lasts <AHbn,Dur3> seconds."
+Researchhotkey=B
+[A0BN]
+Name="NAT：古代保护者（bash）"
+Tip="Bash","Bash - [|cffffcc00Level 2|r]","Bash - [|cffffcc00Level 3|r]"
+Ubertip="使攻击有 <AHbh,DataA1>% 的几率造成 <AHbh,DataC1> 额外伤害并眩晕对手 <AHbh,Dur1> 秒。","使攻击有 <AHbh,DataA2>% 的几率造成<AHbh,DataC1> 额外伤害并眩晕对手 <AHbh,Dur1> 秒。","使攻击有 <AHbh,DataA3>% 的几率造成 <AHbh,DataC1> 额外伤害并眩晕对手 <AHbh ,Dur1> 秒。"
+Researchtip="Learn |cffffcc00B|rash - [|cffffcc00Level %d|r]"
+Researchubertip="Gives a chance that an attack will do <AHbh,DataC1> bonus damage and stun an opponent for <AHbh,Dur1> seconds. |n|n|cffffcc00Level 1|r - <AHbh,DataA1>% chance per attack. |n|cffffcc00Level 2|r - <AHbh,DataA2>% chance per attack. |n|cffffcc00Level 3|r - <AHbh,DataA3>% chance per attack."
+Researchhotkey=B
+[A0C0]
+Name="NAT: 熊怪萨满 (rejuvenation (dummy))"
+Tip=H[|cffffcc00e|r] 伊尔
+Ubertip="为目标友方非机械受伤单位治疗 <Ahea,DataA1> 点生命值。"
+Untip="|cffc3dbff右击激活自动施法。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Hotkey=E
+Unhotkey=E
+[A0C1]
+Name="NAT: 熊怪长老萨满 (rejuvenation (dummy))"
+Tip=H[|cffffcc00e|r] 伊尔
+Ubertip="为目标友方非机械受伤单位治疗 <Ahea,DataA1> 点生命值。"
+Untip="|cffc3dbff右击激活自动施法。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Hotkey=E
+Unhotkey=E
+[A0A7]
+Name=愈合
+Tip=H[|cffffcc00e|r] 伊尔
+Ubertip="为目标友方非机械受伤单位治疗 <Ahea,DataA1> 点生命值。"
+Untip="|cffc3dbff右击激活自动施法。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Hotkey=E
+Unhotkey=E
+[A0A4]
+Name=领域
+[A0A2]
+Name=领域
+[A0AK]
+Name="NOR：冷冻蘑菇"
+Tip=S[|cffffcc00t|r] torm Bolt - [|cffffcc00Level 1|r],S[|cffffcc00t|r] torm Bolt - [|cffffcc00Level 2|r],S[|cffffcc00t|r] torm Bolt - [|cffffcc00Level 3|r]
+Ubertip="向目标敌方单位投掷魔法锤，造成 <AHtb,DataA1> 伤害并眩晕目标 <AHtb,Dur1> 秒。","向目标敌方单位投掷魔法锤，造成 <AHtb,DataA2> 伤害并击晕目标 <AHtb,Dur2> 秒。","向目标敌方单位投掷魔法锤，造成 <AHtb,DataA3> 伤害并击晕目标 <AHtb,Dur3> 秒。"
+Hotkey=T
+Researchtip="Learn S|cffffcc00t|rorm Bolt - [|cffffcc00Level %d|r]"
+Researchubertip="A magical hammer that is thrown at an enemy unit, causing damage and stunning the target. |n|n|cffffcc00Level 1|r - <AHtb,DataA1> damage, <AHtb,Dur1> second stun. |n|cffffcc00Level 2|r - <AHtb,DataA2> damage, <AHtb,Dur2> second stun. |n|cffffcc00Level 3|r - <AHtb,DataA3> damage, <AHtb,Dur3> second stun."
+Researchhotkey=T
+[A0A1]
+Name=领域
+[A05F]
+Name="虚空-2护甲"
+Tip=虔诚光环 - [|cffffcc00Level 1|r],虔诚光环 - [|cffffcc00Level 2|r],虔诚光环 - [|cffffcc00Level 3|r]
+Ubertip="给予附近友军单位 <AHad,DataA1,.> 额外护甲。","给予附近友军单位 <AHad,DataA2,.> 额外护甲。","给予附近友军单位 <AHad,DataA3,.> 额外护甲."
+Researchtip="Learn De|cffffcc00v|rotion Aura - [|cffffcc00Level %d|r]"
+Researchubertip="Gives additional armor to nearby friendly units. |n|n|cffffcc00Level 1|r - Increases base armor by <AHad,DataA1,.>. |n|cffffcc00Level 2|r - Increases base armor by <AHad,DataA2,.>. |n|cffffcc00Level 3|r - Increases base armor by <AHad,DataA3,.>."
+Researchhotkey=V
+[A05G]
+Name="虚空-4护甲"
+Tip=虔诚光环 - [|cffffcc00Level 1|r],虔诚光环 - [|cffffcc00Level 2|r],虔诚光环 - [|cffffcc00Level 3|r]
+Ubertip="给予附近友军单位 <AHad,DataA1,.> 额外护甲。","给予附近友军单位 <AHad,DataA2,.> 额外护甲。","给予附近友军单位 <AHad,DataA3,.> 额外护甲."
+Researchtip="Learn De|cffffcc00v|rotion Aura - [|cffffcc00Level %d|r]"
+Researchubertip="Gives additional armor to nearby friendly units. |n|n|cffffcc00Level 1|r - Increases base armor by <AHad,DataA1,.>. |n|cffffcc00Level 2|r - Increases base armor by <AHad,DataA2,.>. |n|cffffcc00Level 3|r - Increases base armor by <AHad,DataA3,.>."
+Researchhotkey=V
+[A061]
+Name=反馈
+Tip=反馈
+Ubertip="这座塔的攻击每击中任何单位都会破坏 <Afbt,DataA1> 法力值，造成与所破坏的法力值相等的额外伤害。|n|n此外，这座塔的攻击会对召唤的单位造成<Afbt,DataE1>额外伤害。"
+[A05O]
+Name=领域
+[A06E]
+Name="救援打击效果"
+[A06S]
+Name=风暴之箭
+Tip=S[|cffffcc00t|r] torm Bolt - [|cffffcc00Level 1|r],S[|cffffcc00t|r] torm Bolt - [|cffffcc00Level 2|r],S[|cffffcc00t|r] torm Bolt - [|cffffcc00Level 3|r]
+Ubertip="向目标敌方单位投掷魔法锤，造成 <AHtb,DataA1> 伤害并眩晕目标 <AHtb,Dur1> 秒。","向目标敌方单位投掷魔法锤，造成 <AHtb,DataA2> 伤害并击晕目标 <AHtb,Dur2> 秒。","向目标敌方单位投掷魔法锤，造成 <AHtb,DataA3> 伤害并击晕目标 <AHtb,Dur3> 秒。"
+Hotkey=T
+Researchtip="Learn S|cffffcc00t|rorm Bolt - [|cffffcc00Level %d|r]"
+Researchubertip="A magical hammer that is thrown at an enemy unit, causing damage and stunning the target. |n|n|cffffcc00Level 1|r - <AHtb,DataA1> damage, <AHtb,Dur1> second stun. |n|cffffcc00Level 2|r - <AHtb,DataA2> damage, <AHtb,Dur2> second stun. |n|cffffcc00Level 3|r - <AHtb,DataA3> damage, <AHtb,Dur3> second stun."
+Researchhotkey=T
+[A075]
+Name=反馈
+Tip=反馈
+Ubertip="这座塔的攻击每击中任何单位都会破坏 <Afbt,DataA1> 法力值，造成与所破坏的法力值相等的额外伤害。|n|n此外，这座塔的攻击会对召唤的单位造成<Afbt,DataE1>额外伤害。"
+[A076]
+Name=反馈
+Tip=反馈
+Ubertip="这座塔的攻击每击中任何单位都会破坏 <Afbt,DataA1> 法力值，造成与所破坏的法力值相等的额外伤害。|n|n此外，这座塔的攻击会对召唤的单位造成<Afbt,DataE1>额外伤害。"
+[A06V]
+Name="传奇的"
+[A06O]
+Name=领域
+[A080]
+Name=凤凰火
+Tip=凤凰火
+Ubertip="射出一道道火焰，点燃附近的敌人。"
+[A07L]
+Name=反馈
+Tip=反馈
+Ubertip="这座塔的攻击每击中任何单位都会破坏 <Afbt,DataA1> 法力值，造成与所破坏的法力值相等的额外伤害。|n|n此外，这座塔的攻击会对召唤的单位造成<Afbt,DataE1>额外伤害。"
+[A083]
+Name=风暴之箭
+Tip=S[|cffffcc00t|r] torm Bolt - [|cffffcc00Level 1|r],S[|cffffcc00t|r] torm Bolt - [|cffffcc00Level 2|r],S[|cffffcc00t|r] torm Bolt - [|cffffcc00Level 3|r]
+Ubertip="向目标敌方单位投掷魔法锤，造成 <AHtb,DataA1> 伤害并眩晕目标 <AHtb,Dur1> 秒。","向目标敌方单位投掷魔法锤，造成 <AHtb,DataA2> 伤害并击晕目标 <AHtb,Dur2> 秒。","向目标敌方单位投掷魔法锤，造成 <AHtb,DataA3> 伤害并击晕目标 <AHtb,Dur3> 秒。"
+Hotkey=T
+Researchtip="Learn S|cffffcc00t|rorm Bolt - [|cffffcc00Level %d|r]"
+Researchubertip="A magical hammer that is thrown at an enemy unit, causing damage and stunning the target. |n|n|cffffcc00Level 1|r - <AHtb,DataA1> damage, <AHtb,Dur1> second stun. |n|cffffcc00Level 2|r - <AHtb,DataA2> damage, <AHtb,Dur2> second stun. |n|cffffcc00Level 3|r - <AHtb,DataA3> damage, <AHtb,Dur3> second stun."
+Researchhotkey=T
+[A084]
+Name=凤凰火
+Tip=凤凰火
+Ubertip="射出一道道火焰，点燃附近的敌人。"
+[A082]
+Name=风暴之箭
+Tip=S[|cffffcc00t|r] torm Bolt - [|cffffcc00Level 1|r],S[|cffffcc00t|r] torm Bolt - [|cffffcc00Level 2|r],S[|cffffcc00t|r] torm Bolt - [|cffffcc00Level 3|r]
+Ubertip="向目标敌方单位投掷魔法锤，造成 <AHtb,DataA1> 伤害并眩晕目标 <AHtb,Dur1> 秒。","向目标敌方单位投掷魔法锤，造成 <AHtb,DataA2> 伤害并击晕目标 <AHtb,Dur2> 秒。","向目标敌方单位投掷魔法锤，造成 <AHtb,DataA3> 伤害并击晕目标 <AHtb,Dur3> 秒。"
+Hotkey=T
+Researchtip="Learn S|cffffcc00t|rorm Bolt - [|cffffcc00Level %d|r]"
+Researchubertip="A magical hammer that is thrown at an enemy unit, causing damage and stunning the target. |n|n|cffffcc00Level 1|r - <AHtb,DataA1> damage, <AHtb,Dur1> second stun. |n|cffffcc00Level 2|r - <AHtb,DataA2> damage, <AHtb,Dur2> second stun. |n|cffffcc00Level 3|r - <AHtb,DataA3> damage, <AHtb,Dur3> second stun."
+Researchhotkey=T
+[A07Z]
+Name="法力燃烧"
+Tip=反馈
+Ubertip="这座塔的攻击最多燃烧 35 点法力值，造成 175% 的燃烧量伤害。对召唤的单位造成 30 点额外伤害。"
+[A07X]
+Name="基尔佐"
+Tip=S[|cffffcc00t|r] torm Bolt - [|cffffcc00Level 1|r],S[|cffffcc00t|r] torm Bolt - [|cffffcc00Level 2|r],S[|cffffcc00t|r] torm Bolt - [|cffffcc00Level 3|r]
+Ubertip="向目标敌方单位投掷魔法锤，造成 <AHtb,DataA1> 伤害并眩晕目标 <AHtb,Dur1> 秒。","向目标敌方单位投掷魔法锤，造成 <AHtb,DataA2> 伤害并击晕目标 <AHtb,Dur2> 秒。","向目标敌方单位投掷魔法锤，造成 <AHtb,DataA3> 伤害并击晕目标 <AHtb,Dur3> 秒。"
+Hotkey=T
+Researchtip="Learn S|cffffcc00t|rorm Bolt - [|cffffcc00Level %d|r]"
+Researchubertip="A magical hammer that is thrown at an enemy unit, causing damage and stunning the target. |n|n|cffffcc00Level 1|r - <AHtb,DataA1> damage, <AHtb,Dur1> second stun. |n|cffffcc00Level 2|r - <AHtb,DataA2> damage, <AHtb,Dur2> second stun. |n|cffffcc00Level 3|r - <AHtb,DataA3> damage, <AHtb,Dur3> second stun."
+Researchhotkey=T
+[A08N]
+Name=领域
+[A08U]
+Name="HEL：龙鹰（SolarStrike）"
+Tip=S[|cffffcc00t|r] torm Bolt - [|cffffcc00Level 1|r],S[|cffffcc00t|r] torm Bolt - [|cffffcc00Level 2|r],S[|cffffcc00t|r] torm Bolt - [|cffffcc00Level 3|r]
+Ubertip="向目标敌方单位投掷魔法锤，造成 <AHtb,DataA1> 伤害并眩晕目标 <AHtb,Dur1> 秒。","向目标敌方单位投掷魔法锤，造成 <AHtb,DataA2> 伤害并击晕目标 <AHtb,Dur2> 秒。","向目标敌方单位投掷魔法锤，造成 <AHtb,DataA3> 伤害并击晕目标 <AHtb,Dur3> 秒。"
+Hotkey=T
+Researchtip="Learn S|cffffcc00t|rorm Bolt - [|cffffcc00Level %d|r]"
+Researchubertip="A magical hammer that is thrown at an enemy unit, causing damage and stunning the target. |n|n|cffffcc00Level 1|r - <AHtb,DataA1> damage, <AHtb,Dur1> second stun. |n|cffffcc00Level 2|r - <AHtb,DataA2> damage, <AHtb,Dur2> second stun. |n|cffffcc00Level 3|r - <AHtb,DataA3> damage, <AHtb,Dur3> second stun."
+Researchhotkey=T
+[A09E]
+Name=雷霆一击
+Tip=雷霆 [|cffffcc00C|r] 拍手 - [|cffffcc00Level 1|r],雷霆 [|cffffcc00C|r] 拍手 - [|cffffcc00Level 2|r],雷霆 [|cffffcc00C|r] 拍手 - [|cffffcc00Level 3|r]
+Ubertip="猛击地面，对附近的敌方陆地单位造成<AHtc,DataA1>伤害，并使其移动速度降低<AHtc,DataC1,%>%，攻击速度降低<AHtc,DataD1,%>%。","猛击地面，造成<AHtc,DataA2> 对附近敌方陆地单位造成伤害，并使其移动速度降低 <AHtc,DataC2,%>%，攻击速度降低 <AHtc,DataD2,%>%。","猛击地面，造成 <AHtc,DataA3>对附近的敌方陆地单位造成伤害，并使其移动速度降低<AHtc,DataC3,%>%，攻击速度降低<AHtc,DataD3,%>%。"
+Hotkey=C
+Researchtip="Learn Thunder |cffffcc00C|rlap - [|cffffcc00Level %d|r]"
+Researchubertip="Slams the ground, dealing damage to and slowing the movement speed and attack rate of nearby enemy land units. |n|n|cffffcc00Level 1|r - <AHtc,DataA1> damage, <AHtc,DataC1,%>% move, <AHtc,DataD1,%>% attack. |n|cffffcc00Level 2|r - <AHtc,DataA2> damage, <AHtc,DataC2,%>% move, <AHtc,DataD2,%>% attack. |n|cffffcc00Level 3|r - <AHtc,DataA3> damage, <AHtc,DataC3,%>% move, <AHtc,DataD3,%>% attack."
+Researchhotkey=C
+[A09F]
+Name="MEH：火箭坦克（火箭）"
+Tip=凤凰火
+Ubertip="射出一道道火焰，点燃附近的敌人。"
+[A09S]
+Name=奉献光环
+Tip="动力装甲","虔诚光环 - [|cffffcc00Level 2|r]","虔诚光环 - [|cffffcc00Level 3|r]"
+Ubertip="使附近建筑物的护甲值提高 2。如果带有动力装甲的建筑物生成一个单位，该单位将获得 +20% 伤害、+2 护甲和 +100 生命值","为附近的友军提供 <AHad,DataA2,.> 额外护甲单位。","为附近的友方单位提供 <AHad,DataA3,.> 额外护甲。"
+Researchtip="Learn De|cffffcc00v|rotion Aura - [|cffffcc00Level %d|r]"
+Researchubertip="Gives additional armor to nearby friendly units. |n|n|cffffcc00Level 1|r - Increases base armor by <AHad,DataA1,.>. |n|cffffcc00Level 2|r - Increases base armor by <AHad,DataA2,.>. |n|cffffcc00Level 3|r - Increases base armor by <AHad,DataA3,.>."
+Researchhotkey=V
+[A09P]
+Name=光辉光环
+Tip="Power Up","光辉光环 - [|cffffcc00Level 2|r]","光辉光环 - [|cffffcc00Level 3|r]"
+Ubertip="使附近建筑物的法力恢复速度提高 0.25 法力/秒","为附近的友方单位提供额外的法力恢复。","为附近的友方单位提供额外的法力恢复。"
+Researchtip="Learn B|cffffcc00r|rilliance Aura - [|cffffcc00Level %d|r]"
+Researchubertip="Gives additional mana regeneration to nearby friendly units. |n|n|cffffcc00Level 1|r - Grants minor mana regeneration. |n|cffffcc00Level 2|r - Grants moderate mana regeneration. |n|cffffcc00Level 3|r - Grants heavy mana regeneration."
+Researchhotkey=R
+[A002]
+Name="死亡"
+Tip=凤凰火
+Ubertip="射出一道道火焰，点燃附近的敌人。"
+[A004]
+Name="NAT：树妖（自然接触）"
+Tip=H[|cffffcc00e|r] 伊尔
+Ubertip="为目标友方非机械受伤单位治疗 <Ahea,DataA1> 点生命值。"
+Untip="|cffc3dbff右击激活自动施法。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Hotkey=E
+Unhotkey=E
+[A003]
+Name=反馈
+Tip=反馈
+Ubertip="这座塔的攻击每击中任何单位都会破坏 <Afbt,DataA1> 法力值，造成与所破坏的法力值相等的额外伤害。|n|n此外，这座塔的攻击会对召唤的单位造成<Afbt,DataE1>额外伤害。"
+[A000]
+Name="HEL：光之方尖碑"
+Tip=凤凰火
+Ubertip="射出一道道火焰，点燃附近的敌人。"
+[A015]
+Name=弹幕
+Tip="多发"
+Ubertip="这座塔同时向最多 5 个敌人射击"
+[A014]
+Name=反馈
+Tip=反馈
+Ubertip="这座塔的攻击每击中任何单位都会破坏 <Afbt,DataA1> 法力值，造成与所破坏的法力值相等的额外伤害。|n|n此外，这座塔的攻击会对召唤的单位造成<Afbt,DataE1>额外伤害。"
+[A00X]
+Name="HEL：巫师（治愈（假人））"
+Tip=H[|cffffcc00e|r] 伊尔
+Ubertip="为目标友方非机械受伤单位治疗 <Ahea,DataA1> 点生命值。"
+Untip="|cffc3dbff右击激活自动施法。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Hotkey=E
+Unhotkey=E
+[A00B]
+Name=雷霆一击
+Tip=雷霆 [|cffffcc00C|r] 拍手 - [|cffffcc00Level 1|r],雷霆 [|cffffcc00C|r] 拍手 - [|cffffcc00Level 2|r],雷霆 [|cffffcc00C|r] 拍手 - [|cffffcc00Level 3|r]
+Ubertip="猛击地面，对附近的敌方陆地单位造成<AHtc,DataA1>伤害，并使其移动速度降低<AHtc,DataC1,%>%，攻击速度降低<AHtc,DataD1,%>%。","猛击地面，造成<AHtc,DataA2> 对附近敌方陆地单位造成伤害，并使其移动速度降低 <AHtc,DataC2,%>%，攻击速度降低 <AHtc,DataD2,%>%。","猛击地面，造成 <AHtc,DataA3>对附近的敌方陆地单位造成伤害，并使其移动速度降低<AHtc,DataC3,%>%，攻击速度降低<AHtc,DataD3,%>%。"
+Hotkey=C
+Researchtip="Learn Thunder |cffffcc00C|rlap - [|cffffcc00Level %d|r]"
+Researchubertip="Slams the ground, dealing damage to and slowing the movement speed and attack rate of nearby enemy land units. |n|n|cffffcc00Level 1|r - <AHtc,DataA1> damage, <AHtc,DataC1,%>% move, <AHtc,DataD1,%>% attack. |n|cffffcc00Level 2|r - <AHtc,DataA2> damage, <AHtc,DataC2,%>% move, <AHtc,DataD2,%>% attack. |n|cffffcc00Level 3|r - <AHtc,DataA3> damage, <AHtc,DataC3,%>% move, <AHtc,DataD3,%>% attack."
+Researchhotkey=C
+[A00E]
+Name="杀死"
+Tip=凤凰火
+Ubertip="射出一道道火焰，点燃附近的敌人。"
+[A00F]
+Name=光辉光环
+Tip=光辉光环 - [|cffffcc00Level 1|r],光辉光环 - [|cffffcc00Level 2|r],光辉光环 - [|cffffcc00Level 3|r]
+Ubertip="为附近的友方单位提供额外的法力恢复。","为附近的友方单位提供额外的法力恢复。","为附近的友方单位提供额外的法力恢复。"
+Researchtip="Learn B|cffffcc00r|rilliance Aura - [|cffffcc00Level %d|r]"
+Researchubertip="Gives additional mana regeneration to nearby friendly units. |n|n|cffffcc00Level 1|r - Grants minor mana regeneration. |n|cffffcc00Level 2|r - Grants moderate mana regeneration. |n|cffffcc00Level 3|r - Grants heavy mana regeneration."
+Researchhotkey=R
+[A010]
+Name=凤凰火
+Tip=凤凰火
+Ubertip="射出一道道火焰，点燃附近的敌人。"
+[A011]
+Name=奉献光环
+Tip=虔诚光环 - [|cffffcc00Level 1|r],虔诚光环 - [|cffffcc00Level 2|r],虔诚光环 - [|cffffcc00Level 3|r]
+Ubertip="给予附近友军单位 <AHad,DataA1,.> 额外护甲。","给予附近友军单位 <AHad,DataA2,.> 额外护甲。","给予附近友军单位 <AHad,DataA3,.> 额外护甲."
+Researchtip="Learn De|cffffcc00v|rotion Aura - [|cffffcc00Level %d|r]"
+Researchubertip="Gives additional armor to nearby friendly units. |n|n|cffffcc00Level 1|r - Increases base armor by <AHad,DataA1,.>. |n|cffffcc00Level 2|r - Increases base armor by <AHad,DataA2,.>. |n|cffffcc00Level 3|r - Increases base armor by <AHad,DataA3,.>."
+Researchhotkey=V
+[A02A]
+Name=领域
+[A027]
+Name=领域
+[A01V]
+Name=奉献光环
+Tip="灵魂虚弱","虔诚光环 - [|cffffcc00Level 2|r]","虔诚光环 - [|cffffcc00Level 3|r]"
+Ubertip="使附近敌方单位的护甲降低 3。","为附近的友军单位提供 <AHad,DataA2,.> 额外护甲。","为附近友方单位提供 <AHad,DataA3,.> 额外护甲。"
+Researchtip="Learn De|cffffcc00v|rotion Aura - [|cffffcc00Level %d|r]"
+Researchubertip="Gives additional armor to nearby friendly units. |n|n|cffffcc00Level 1|r - Increases base armor by <AHad,DataA1,.>. |n|cffffcc00Level 2|r - Increases base armor by <AHad,DataA2,.>. |n|cffffcc00Level 3|r - Increases base armor by <AHad,DataA3,.>."
+Researchhotkey=V
+[A01X]
+Name=风暴之箭
+Tip=S[|cffffcc00t|r] torm Bolt - [|cffffcc00Level 1|r],S[|cffffcc00t|r] torm Bolt - [|cffffcc00Level 2|r],S[|cffffcc00t|r] torm Bolt - [|cffffcc00Level 3|r]
+Ubertip="向目标敌方单位投掷魔法锤，造成 <AHtb,DataA1> 伤害并眩晕目标 <AHtb,Dur1> 秒。","向目标敌方单位投掷魔法锤，造成 <AHtb,DataA2> 伤害并击晕目标 <AHtb,Dur2> 秒。","向目标敌方单位投掷魔法锤，造成 <AHtb,DataA3> 伤害并击晕目标 <AHtb,Dur3> 秒。"
+Hotkey=T
+Researchtip="Learn S|cffffcc00t|rorm Bolt - [|cffffcc00Level %d|r]"
+Researchubertip="A magical hammer that is thrown at an enemy unit, causing damage and stunning the target. |n|n|cffffcc00Level 1|r - <AHtb,DataA1> damage, <AHtb,Dur1> second stun. |n|cffffcc00Level 2|r - <AHtb,DataA2> damage, <AHtb,Dur2> second stun. |n|cffffcc00Level 3|r - <AHtb,DataA3> damage, <AHtb,Dur3> second stun."
+Researchhotkey=T
+[A01M]
+Name=减缓
+Tip=慢|cffffcc00慢|r
+Ubertip="使目标敌方单位的攻击速度降低<Aslo,DataB1,%>%，移动速度降低<Aslo,DataA1,%>%。|n持续 <Aslo,Dur1> 秒。"
+Untip="|cffc3dbff右击激活自动施法。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Hotkey=W
+Unhotkey=W
+[A01H]
+Name=风暴之箭
+Tip=S[|cffffcc00t|r] torm Bolt - [|cffffcc00Level 1|r],S[|cffffcc00t|r] torm Bolt - [|cffffcc00Level 2|r],S[|cffffcc00t|r] torm Bolt - [|cffffcc00Level 3|r]
+Ubertip="向目标敌方单位投掷魔法锤，造成 <AHtb,DataA1> 伤害并眩晕目标 <AHtb,Dur1> 秒。","向目标敌方单位投掷魔法锤，造成 <AHtb,DataA2> 伤害并击晕目标 <AHtb,Dur2> 秒。","向目标敌方单位投掷魔法锤，造成 <AHtb,DataA3> 伤害并击晕目标 <AHtb,Dur3> 秒。"
+Hotkey=T
+Researchtip="Learn S|cffffcc00t|rorm Bolt - [|cffffcc00Level %d|r]"
+Researchubertip="A magical hammer that is thrown at an enemy unit, causing damage and stunning the target. |n|n|cffffcc00Level 1|r - <AHtb,DataA1> damage, <AHtb,Dur1> second stun. |n|cffffcc00Level 2|r - <AHtb,DataA2> damage, <AHtb,Dur2> second stun. |n|cffffcc00Level 3|r - <AHtb,DataA3> damage, <AHtb,Dur3> second stun."
+Researchhotkey=T
+[A02Y]
+Name=领域
+[A036]
+Name=领域
+[A037]
+Name=领域
+[A034]
+Name="ORC：防御科多兽（防御光环）"
+Tip=虔诚光环 - [|cffffcc00Level 1|r],虔诚光环 - [|cffffcc00Level 2|r],虔诚光环 - [|cffffcc00Level 3|r]
+Ubertip="给予附近友军单位 <AHad,DataA1,.> 额外护甲。","给予附近友军单位 <AHad,DataA2,.> 额外护甲。","给予附近友军单位 <AHad,DataA3,.> 额外护甲."
+Researchtip="Learn De|cffffcc00v|rotion Aura - [|cffffcc00Level %d|r]"
+Researchubertip="Gives additional armor to nearby friendly units. |n|n|cffffcc00Level 1|r - Increases base armor by <AHad,DataA1,.>. |n|cffffcc00Level 2|r - Increases base armor by <AHad,DataA2,.>. |n|cffffcc00Level 3|r - Increases base armor by <AHad,DataA3,.>."
+Researchhotkey=V
+[A02M]
+Name="萨满法术"
+Tip=内 [|cffffcc00F|r] 火
+Ubertip="使目标友方单位的伤害提高<Ainf,DataA1,%>%，护甲提高<Ainf,DataB1>。|n持续 <Ainf,Dur1> 秒。"
+Untip="|cffc3dbff右击激活自动施法。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Hotkey=F
+Unhotkey=F
+[A02D]
+Name="爆破"
+Tip=凤凰火
+Ubertip="射出一道道火焰，点燃附近的敌人。"
+[A02C]
+Name="COR：贪污腐败（永久）"
+Tip="腐蚀之眼","虔诚光环 - [|cffffcc00Level 2|r]","虔诚光环 - [|cffffcc00Level 3|r]"
+Ubertip="使所有敌方单位的护甲降低 6。","为附近的友军单位提供 <AHad,DataA2,.> 额外护甲。","为附近友方单位提供 <AHad,DataA3,.> 额外护甲。"
+Researchtip="Learn De|cffffcc00v|rotion Aura - [|cffffcc00Level %d|r]"
+Researchubertip="Gives additional armor to nearby friendly units. |n|n|cffffcc00Level 1|r - Increases base armor by <AHad,DataA1,.>. |n|cffffcc00Level 2|r - Increases base armor by <AHad,DataA2,.>. |n|cffffcc00Level 3|r - Increases base armor by <AHad,DataA3,.>."
+Researchhotkey=V
+[A04A]
+Name=领域
+[A04B]
+Name=领域
+[A04C]
+Name=领域
+[A03V]
+Name=领域
+[A03M]
+Name="HUM：十字军（内火）"
+Tip=内 [|cffffcc00F|r] 火
+Ubertip="使目标友方单位的伤害提高<Ainf,DataA1,%>%，护甲提高<Ainf,DataB1>。|n持续 <Ainf,Dur1> 秒。"
+Untip="|cffc3dbff右击激活自动施法。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Hotkey=F
+Unhotkey=F
+[A03O]
+Name=弹幕
+Tip=弹幕
+Ubertip="向附近的敌方空中单位发射强力火箭，每次命中造成 <hrtt,mindmg2> - <hrtt,maxdmg2> 伤害。"
+[A03N]
+Name=弹幕
+Tip=弹幕
+Ubertip="向附近的敌方空中单位发射强力火箭，每次命中造成 <hrtt,mindmg2> - <hrtt,maxdmg2> 伤害。"
+[A03I]
+Name="HUM：内心之火（圣骑士）"
+Tip=内 [|cffffcc00F|r] 火
+Ubertip="使目标友方单位的伤害提高<Ainf,DataA1,%>%，护甲提高<Ainf,DataB1>。|n持续 <Ainf,Dur1> 秒。"
+Untip="|cffc3dbff右击激活自动施法。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Hotkey=F
+Unhotkey=F
+[A03H]
+Name=复活
+Tip=|cffffcc00R|r复活
+Ubertip="使 <AHre,DataA1> 附近友军单位的尸体复活。"
+Hotkey=R
+Researchtip=Learn |cffffcc00R|resurrection
+Researchubertip="Brings back to life the corpses of <AHre,DataA1> friendly nearby units."
+Researchhotkey=R
+[A03K]
+Name="HUM：十字军/圣骑士治疗"
+Tip=H[|cffffcc00e|r] 伊尔
+Ubertip="为目标友方非机械受伤单位治疗 <Ahea,DataA1> 点生命值。"
+Untip="|cffc3dbff右击激活自动施法。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Hotkey=E
+Unhotkey=E
+[A03J]
+Name=奉献光环
+Tip=虔诚光环 - [|cffffcc00Level 1|r],虔诚光环 - [|cffffcc00Level 2|r],虔诚光环 - [|cffffcc00Level 3|r]
+Ubertip="给予附近友军单位 <AHad,DataA1,.> 额外护甲。","给予附近友军单位 <AHad,DataA2,.> 额外护甲。","给予附近友军单位 <AHad,DataA3,.> 额外护甲."
+Researchtip="Learn De|cffffcc00v|rotion Aura - [|cffffcc00Level %d|r]"
+Researchubertip="Gives additional armor to nearby friendly units. |n|n|cffffcc00Level 1|r - Increases base armor by <AHad,DataA1,.>. |n|cffffcc00Level 2|r - Increases base armor by <AHad,DataA2,.>. |n|cffffcc00Level 3|r - Increases base armor by <AHad,DataA3,.>."
+Researchhotkey=V
+[A058]
+Name=领域
+[A051]
+Name=领域
+[A04M]
+Name=领域
+[A053]
+Name=领域
+[A04G]
+Name=风暴之箭
+Tip=S[|cffffcc00t|r] torm Bolt - [|cffffcc00Level 1|r],S[|cffffcc00t|r] torm Bolt - [|cffffcc00Level 2|r],S[|cffffcc00t|r] torm Bolt - [|cffffcc00Level 3|r]
+Ubertip="向目标敌方单位投掷魔法锤，造成 <AHtb,DataA1> 伤害并眩晕目标 <AHtb,Dur1> 秒。","向目标敌方单位投掷魔法锤，造成 <AHtb,DataA2> 伤害并击晕目标 <AHtb,Dur2> 秒。","向目标敌方单位投掷魔法锤，造成 <AHtb,DataA3> 伤害并击晕目标 <AHtb,Dur3> 秒。"
+Hotkey=T
+Researchtip="Learn S|cffffcc00t|rorm Bolt - [|cffffcc00Level %d|r]"
+Researchubertip="A magical hammer that is thrown at an enemy unit, causing damage and stunning the target. |n|n|cffffcc00Level 1|r - <AHtb,DataA1> damage, <AHtb,Dur1> second stun. |n|cffffcc00Level 2|r - <AHtb,DataA2> damage, <AHtb,Dur2> second stun. |n|cffffcc00Level 3|r - <AHtb,DataA3> damage, <AHtb,Dur3> second stun."
+Researchhotkey=T
+[A0FX]
+Name="机甲护盾 A09L"
+Tip=虔诚光环 - [|cffffcc00Level 1|r],虔诚光环 - [|cffffcc00Level 2|r],虔诚光环 - [|cffffcc00Level 3|r]
+Ubertip="给予附近友军单位 <AHad,DataA1,.> 额外护甲。","给予附近友军单位 <AHad,DataA2,.> 额外护甲。","给予附近友军单位 <AHad,DataA3,.> 额外护甲."
+Researchtip="Learn De|cffffcc00v|rotion Aura - [|cffffcc00Level %d|r]"
+Researchubertip="Gives additional armor to nearby friendly units. |n|n|cffffcc00Level 1|r - Increases base armor by <AHad,DataA1,.>. |n|cffffcc00Level 2|r - Increases base armor by <AHad,DataA2,.>. |n|cffffcc00Level 3|r - Increases base armor by <AHad,DataA3,.>."
+Researchhotkey=V
+[S003]
+Requires=Rhrt
+Name="机甲图案转换"
+[A0GV]
+Name=云
+Tip=|cffffcc00C|r响亮
+Ubertip="用远程攻击对敌方建筑物施放，以阻止建筑物攻击。|n持续 <Aclf,Dur1> 秒。"
+Hotkey=C
+[A07C]
+Name="门控"
+Tip="切换城堡大门 [|cffffcc00G|r] (G)","Thunder |cffffcc00C|rlap - [|cffffcc00Level 2|r]","Thunder |cffffcc00C|rlap - [|cffffcc00Level 3|r]"
+Ubertip="关闭\打开城堡大门。|n关闭大门使收入减少 70%|n门将在其法力达到 0 时打开。|n","猛击地面，对附近的敌方陆地单位造成 <AHtc,DataA2> 伤害，并使其移动速度降低 <AHtc,DataC2,%>%，攻击速度降低 <AHtc,DataD2,%>%。","猛击地面，对附近的敌方陆地单位造成<AHtc,DataA3>伤害，并使其移动速度降低<AHtc,DataC3,%>%，攻击速度降低<AHtc,DataD3,%>%。"
+Hotkey=G
+Researchtip="Learn Thunder |cffffcc00C|rlap - [|cffffcc00Level %d|r]"
+Researchubertip="Slams the ground, dealing damage to and slowing the movement speed and attack rate of nearby enemy land units. |n|n|cffffcc00Level 1|r - <AHtc,DataA1> damage, <AHtc,DataC1,%>% move, <AHtc,DataD1,%>% attack. |n|cffffcc00Level 2|r - <AHtc,DataA2> damage, <AHtc,DataC2,%>% move, <AHtc,DataD2,%>% attack. |n|cffffcc00Level 3|r - <AHtc,DataA3> damage, <AHtc,DataC3,%>% move, <AHtc,DataD3,%>% attack."
+Researchhotkey=C
+[A0FK]
+Name="萨满法术"
+Tip=内 [|cffffcc00F|r] 火
+Ubertip="使目标友方单位的伤害提高<Ainf,DataA1,%>%，护甲提高<Ainf,DataB1>。|n持续 <Ainf,Dur1> 秒。"
+Untip="|cffc3dbff右击激活自动施法。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Hotkey=F
+Unhotkey=F
+[A0GZ]
+Name="九头蛇 3x"
+Tip=弹幕
+Ubertip="向附近的敌方空中单位发射强力火箭，每次命中造成 <hrtt,mindmg2> - <hrtt,maxdmg2> 伤害。"
+[A0H3]
+Name="女族长视觉"
+[A0HA]
+Name="爆破2"
+Tip=凤凰火
+Ubertip="射出一道道火焰，点燃附近的敌人。"
+[A0HH]
+Name="DST：窃取咒语"
+Tip=法术 [|cffffcc00t|r] 偷窃
+Ubertip="窃取敌方单位的正增益并将其应用于附近的友方单位，或从友方单位获取负增益并将其应用于附近的敌方单位。"
+Untip="|cffc3dbff右击激活自动施法。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Hotkey=T
+Unhotkey=T
+[A0HZ]
+Name="+7arm 450aoe"
+Tip=虔诚光环 - [|cffffcc00Level 1|r],虔诚光环 - [|cffffcc00Level 2|r],虔诚光环 - [|cffffcc00Level 3|r]
+Ubertip="给予附近友军单位 <AHad,DataA1,.> 额外护甲。","给予附近友军单位 <AHad,DataA2,.> 额外护甲。","给予附近友军单位 <AHad,DataA3,.> 额外护甲."
+Researchtip="Learn De|cffffcc00v|rotion Aura - [|cffffcc00Level %d|r]"
+Researchubertip="Gives additional armor to nearby friendly units. |n|n|cffffcc00Level 1|r - Increases base armor by <AHad,DataA1,.>. |n|cffffcc00Level 2|r - Increases base armor by <AHad,DataA2,.>. |n|cffffcc00Level 3|r - Increases base armor by <AHad,DataA3,.>."
+Researchhotkey=V
+[A0I0]
+Name="祷告"
+Tip=H[|cffffcc00e|r] 伊尔
+Ubertip="为目标友方非机械受伤单位治疗 <Ahea,DataA1> 点生命值。"
+Untip="|cffc3dbff右击激活自动施法。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Hotkey=E
+Unhotkey=E
+[A0I3]
+Name="祷告：复活"
+Tip=""
+Ubertip="使 <AHre,DataA1> 附近友军单位的尸体复活。"
+Hotkey=R
+Researchtip=Learn |cffffcc00R|resurrection
+Researchubertip="Brings back to life the corpses of <AHre,DataA1> friendly nearby units."
+Researchhotkey=R
+[A0ID]
+Name=领域
+[A0IM]
+Name="珊瑚愈合"
+Tip=凤凰火
+Ubertip="射出一道道火焰，点燃附近的敌人。"
+[A0IN]
+Name="珊瑚自愈"
+Tip="恢复 (|cffffcc00E|r)"
+Ubertip="|cffFFFF80能力：|cffFFFF00修复|r|n恢复附近友军单位的生命值，并在 650 范围内以 2.5 hp/s 的速度修复附近的建筑物。修复效果叠加。"
+Untip="恢复 (|cffffcc00E|r)"
+Unubertip="|cffFFFF80能力：|cffFFFF00修复|r|n恢复附近友军单位的生命值，并在 650 范围内以 2.5 hp/s 的速度修复附近的建筑物。修复效果叠加。"
+Hotkey=H
+Unhotkey=H
+[B002]
+Bufftip=对女妖的恐惧
+Buffubertip=女妖的存在会降低该单位的伤害。
+[B009]
+Bufftip=萨满的增益
+Buffubertip=这个单位被萨满buff了。它增加了护甲和伤害。
+[B020]
+Bufftip=自然诅咒
+Buffubertip=该单位的法力恢复已降低。
+[B01O]
+Bufftip=爆破
+Buffubertip=这个单位被爆炸法杖击中
+[B01P]
+Bufftip=星界锁链
+Buffubertip=这个单位被减速
+[B01K]
+Bufftip=动力装甲
+Buffubertip=这座建筑的护甲增加了，并产生了更强大的单位
+[B01M]
+Bufftip=光射线
+Buffubertip=这个单位被一束光击中
+[B01N]
+Bufftip=火箭
+Buffubertip=这个单位被火箭击中
+[B01G]
+Bufftip=红色能量护盾
+Buffubertip="该单位受到光辉光环的影响；它具有增加的法力恢复。"
+[B01H]
+Bufftip=能量护盾
+Buffubertip=这个单位有护盾，它的护甲增加了，并且会抵抗一些负面影响
+[B01I]
+Bufftip=供电
+Buffubertip=该建筑的技能冷却时间缩短
+[B01D]
+Bufftip=火弩箭
+Buffubertip=该单位被火弩箭击中并随着时间的推移受到伤害。
+[B01F]
+Bufftip=法术保护
+Buffubertip=该单位受到的法术伤害较少。
+[B01X]
+Bufftip=没有什么
+Buffubertip=没有什么 -。-
+[B01W]
+Bufftip=地震
+Buffubertip=该单位因地震而减速。
+[B01Y]
+Bufftip=星界手榴弹
+Buffubertip=这个单位被星界手榴弹击晕了。它降低了攻击和移动速度。
+[B025]
+Bufftip=没有什么
+Buffubertip=没有什么 -。-
+[B01V]
+Bufftip=没有什么
+Buffubertip="凤凰之力展开。"
+[B011]
+Bufftip=暗室
+Buffubertip=该单位可以释放魔法爆发，对他周围的所有单位造成伤害。
+[B00Q]
+Bufftip=|c00ff0000腐化盔甲|r
+Buffubertip=这个单位的防御有很大的问题。
+EditorName=Corrupted: Eye of Corruption
+[B00N]
+Bufftip=水晶光环
+Buffubertip=这个单位受到水晶光环的影响。它增加了法力恢复。
+[B00J]
+Bufftip=祝福
+Buffubertip=这个单位有福了。它具有快速的生命恢复和增加的护甲。
+[B00F]
+Bufftip=激进的战歌
+Buffubertip=这个单位增加了伤害。
+[B00E]
+Bufftip=盾之歌
+Buffubertip=这个单位增加了护甲。
+[B01B]
+Bufftip=奉献光环
+Buffubertip=这个单位的护甲增加了。
+[B01A]
+Bufftip=没有什么
+Buffubertip="凤凰之力展开。"
+[B019]
+Bufftip=有针对性
+Buffubertip=对该单位施放法术
+EditorName=Default
+[B00W]
+Bufftip=内虚
+Buffubertip=这个单位的护甲减少了。
+[B00T]
+Bufftip=没有什么
+Buffubertip="凤凰之力展开。"
+[B02A]
+Bufftip=|cff00ff00锻造武器|r
+Buffubertip=该单位受到锻造武器的影响；它有飞溅伤害。
+EditorName=Forged Weapon
+[B02B]
+Bufftip=急速
+Buffubertip=该单位处于急速效果下；它增加了攻击和移动速度。
+EditorName=Haste
+[B02C]
+Bufftip=|cff00ff00岩盾|r
+Buffubertip=该单位受到岩石护盾的影响；它增加了护甲。
+EditorName=Rock Shield
+[B02L]
+Bufftip=修理
+Buffubertip=本机已修
+EditorName=Repair
+[B02R]
+Bufftip=沙暴
+Buffubertip=这个单位被沙尘暴捕获。
+[X000]
+EditorName=Sandwhirl
+[B02V]
+Bufftip=神奇的扭曲
+Buffubertip=该单位的魔法抗性降低了 100%。
+[B02X]
+Bufftip=仙人掌药水
+Buffubertip=这个单位被仙人掌药水打乱了
+[B030]
+Bufftip=祷告
+Buffubertip=这个单位受到神圣战士的祝福。它增加了护甲和攻击。
+[B032]
+Bufftip=恢复
+Buffubertip=这个单位由珊瑚恢复
+EditorName=Coral restore

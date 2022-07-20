@@ -1,0 +1,223 @@
+[Odrt]
+Name=远见者
+Propernames=Drek'Thar'
+Hotkey=F
+Tip=召唤 [|cffffcc00F|r] 远先知
+Ubertip="神秘英雄，擅长远程攻击和侦察。可以学习闪电链、远视、野性精神和地震。|n|n|cffffcc00攻击陆地和空中单位。|r"
+Revivetip=Revive |cffffcc00F|rar Seer
+Awakentip=Revive |cffffcc00F|rar Seer
+[nhef]
+Name=高等精灵
+[n02D]
+Name="远古守护者"
+Hotkey=Z
+Tip="建造远古守护者 [|cffffcc00Z|r]"
+Ubertip="|cffFFAC00基地防御|r：|n这是保护关键位置的塔。|n|n|cffFFFF80攻击类型：|cffFFFF00围城|n|cffFFFF80范围：|cffFFFF00 700|n|cffFFFF80平均DPS：|cffFFFF00 70|r|n|n|cffFFFF80能力：|r|n-重击|n- 溅射伤害"
+[n02C]
+Name="蜘蛛蛋袋"
+Hotkey=Q
+Tip="建造蜘蛛蛋袋 [|cffffcc00Q|r]"
+Ubertip="|cffFFFF80火车： |cffFFFF00森林蜘蛛|n|cffFFFF80升级：|cffFFFF003|n|n|cffFFAC00森林蜘蛛 |r|n|cffFFFF80攻击：|r穿刺 (|cffFFFF00近战|r,|cffFFFF00 15|r dps)|n|cffFFFF80盔甲：|r无装甲 (|cffFFFF000|r)|n|cffFFFF80生命值：|cffFFFF00150|r"
+[n01Z]
+Name="刺客"
+Ubertip="|n|cffFFFF80攻击：|r穿刺 (|cffFFFF00近战|r,|cffFFFF00 30|r dps)|n|cffFFFF80盔甲：|r中等 (|cffFFFF001|r)|n|cffFFFF80生命值：|cffFFFF00375|r|n|cffFFFF80能力：|r|n|n|cff80FF00逃避|r|n15% 几率躲避攻击|n|n|cff80FF00意见反馈|r|n每次攻击最多燃烧 40 点法力值，造成 170% 已燃烧法力值的伤害|n|n|cff80FF00背刺|r|n刺客隐藏并尝试背刺施法者单位，造成 150 额外伤害。隐身时跑得快 30%|n|cff8080FF法力消耗：|r50"
+Hotkey=Q
+Tip="火车刺客"
+[n022]
+Name="射手"
+Tip="训练弓箭手"
+Hotkey=Q
+Ubertip="|n|cffFFFF80攻击：|r穿刺 (|cffFFFF00450|r rng,|cffFFFF00 28|r dps)|n|cffFFFF80盔甲：|r无装甲 (|cffFFFF002|r)|n|cffFFFF80生命值：|cffFFFF00320|r|n|cffFFFF80能力：|r|n|n|cff80FF00爆头|r|n每次攻击有 10% 几率眩晕 0.5 秒并造成 50 额外伤害|n|n|cff80FF00逃避|r|n15% 几率躲避攻击"
+[n023]
+Name="弓箭手大师"
+Tip="训练弓箭手大师"
+Hotkey=Q
+Ubertip="|n|cffFFFF80攻击：|r穿刺 (|cffFFFF00500|r rng,|cffFFFF00 84|r dps)|n|cffFFFF80盔甲：|r无装甲 (|cffFFFF004|r)|n|cffFFFF80生命值：|cffFFFF00525|r|n|cffFFFF80能力：|r|n|n|cff80FF00爆头|r|n每次攻击有 20% 几率眩晕 0.5 秒并造成 125 额外伤害。|n|n|cff80FF00逃避|r|n20% 几率躲避攻击"
+[n020]
+Name="皇家刺客"
+Ubertip="|n|cffFFFF80攻击：|r穿刺 (|cffFFFF00近战|r,|cffFFFF00 60|r dps)|n|cffFFFF80盔甲：|r中等 (|cffFFFF002|r)|n|cffFFFF80生命值：|cffFFFF00575|r|n|cffFFFF80能力：|r|n|n|cff80FF00逃避|r|n25% 几率躲避攻击|n|n|cff80FF00意见反馈|r|n每次攻击最多燃烧 60 点法力值，造成 220% 已燃烧法力值的伤害|n|n|cff80FF00背刺|r|n刺客隐藏并尝试背刺施法者单位，造成 300 额外伤害。隐身时跑得快 45%|n|cff8080FF法力消耗：|r50"
+Hotkey=Q
+Tip="训练皇家刺客"
+[n00I]
+Name="鱼人战士"
+Hotkey=Q
+Tip="训练鱼人战士"
+Ubertip="|n|cffFFFF80攻击：|r普通（|cffFFFF00近战|r，|cffFFFF00 24|r dps）|n|cffFFFF80盔甲：|r无装甲 (|cffFFFF004|r)|n|cffFFFF80生命值：|cffFFFF00325|r|n|cffFFFF80能力：|r|n|n|cff80FF00致命一击|r|n每次攻击有 10% 几率造成 2 倍正常伤害"
+[n00H]
+Name="翼蛇"
+Hotkey=Q
+Tip="训练有翼的蛇"
+Ubertip="|n|cffFFFF80攻击：|r魔法 (|cffFFFF00420|r rng,|cffFFFF00 33|r dps)|n|cffFFFF80盔甲：|r光 (|cffFFFF002|r)|n|cffFFFF80生命值：|cffFFFF00450|r|n|cffFFFF80能力：|r|n|n|cff80FF00飞行|r|n这个单位在飞|n|n|cff80FF00弹跳攻击|r|n该单位的攻击最多可击中 3 个敌人，每次弹跳造成的伤害降低 30%"
+[n00K]
+Name="鱼人刺客"
+Hotkey=Q
+Tip="训练鱼人刺客"
+Ubertip="|n|cffFFFF80攻击：|r普通（|cffFFFF00近战|r，|cffFFFF00 50|r dps）|n|cffFFFF80盔甲：|r无装甲 (|cffFFFF008|r)|n|cffFFFF80生命值：|cffFFFF00750|r|n|cffFFFF80能力：|r|n|n|cff80FF00重击|r|n每次攻击有 15% 几率眩晕 2 秒并造成 25 额外伤害|n|n|cff80FF00致命一击|r|n每次攻击有 20% 几率造成 2 倍正常伤害|n|n|cff80FF00逃避|r|n15% 几率躲避攻击|n|n|cff80FF00意见反馈|r|n每次攻击最多燃烧 25 点法力值，造成相同数量的伤害|n|n|cff80FF00分裂攻击|r|n每次命中对本单位前方 200 范围内的所有敌人造成 30% 的正常伤害"
+[n00J]
+Name="鱼人冠军"
+Hotkey=Q
+Tip="培养鱼人冠军"
+Ubertip="|n|cffFFFF80攻击：|r普通（|cffFFFF00近战|r，|cffFFFF00 36|r dps）|n|cffFFFF80盔甲：|r无装甲 (|cffFFFF006|r)|n|cffFFFF80生命值：|cffFFFF00520|r|n|cffFFFF80能力：|r|n|n|cff80FF00分裂攻击|r|n每次命中对本单位前方 175 范围内的所有敌人造成 25% 的正常伤害|n|n|cff80FF00逃避|r|n8% 几率躲避攻击|n|n|cff80FF00重击|r|n每次攻击有 15% 几率眩晕 2 秒并造成 25 额外伤害|n|n|cff80FF00致命一击|r|n每次攻击有 10% 几率造成 2 倍正常伤害"
+[n00E]
+Name="血肉魔像"
+Ubertip="|n|cffFFFF80攻击：|r围城 (|cffFFFF00近战|r,|cffFFFF00 65|r dps)|n|cffFFFF80盔甲：|r中等 (|cffFFFF008|r)|n|cffFFFF80生命值：|cffFFFF001200|r|n|cffFFFF80能力：|r|n|n|cff80FF00拆除|r|n该单位对建筑物造成 150% 的伤害|n|n|cff80FF00粉碎|r|n每次攻击有 35% 的几率对 150 范围内的所有敌人造成 125 点伤害，对 250 范围内的所有单位造成一半伤害"
+Hotkey=Q
+Tip="火车肉傀儡"
+[n006]
+Name="刀剑大师"
+Hotkey=Q
+Tip="训练剑圣"
+Ubertip="|n|cffFFFF80攻击：|r普通 (|cffFFFF00近战|r,|cffFFFF00 39|r dps)|n|cffFFFF80盔甲：|r重型 (|cffFFFF007|r)|n|cffFFFF80生命值：|cffFFFF00450|r|n|cffFFFF80能力：|r|n|n|cff80FF00逃避|r|n15% 几率躲避攻击|n|n|cff80FF00致命一击|r|n每次攻击有 25% 的几率造成 2.5 倍的正常伤害|n|n|cff80FF00法术抗力|r|n对该单位造成的法术伤害降低 15%"
+[n007]
+Name="龙龟"
+Hotkey=Q
+Tip="火车龙龟"
+Ubertip="|n|cffFFFF80攻击：|r围城 (|cffFFFF00550|r rng,|cffFFFF00 50|r dps)|n|cffFFFF80盔甲：|r重 (|cffFFFF008|r)|n|cffFFFF80生命值：|cffFFFF00600|r|n|cffFFFF80能力：|r|n|n|cff80FF00重击|r|n每次攻击有 15% 几率眩晕 2 秒并造成 25 额外伤害|n|n|cff80FF00刺壳|r|n将对海龟造成的近战伤害的 60% 反射回攻击者。还将造成的所有伤害降低至 80%"
+[n004]
+Name="苏普莫克"
+Tip="火车 Suumpmolk"
+Ubertip="|n|cffFFFF80攻击：|r正常 (|cffFFFF00325|r rng,|cffFFFF00 27|r dps)|n|cffFFFF80盔甲：|r中等 (|cffFFFF003|r)|n|cffFFFF80生命值：|cffFFFF00380|r|n|cffFFFF80能力：|r|n|n|cff80FF00毒攻击|r|n每秒造成 4 点伤害，并使攻击和移动速度降低 35%。持续 2 秒"
+Hotkey=Q
+[n002]
+Name="娜迦守护者"
+Tip="火车纳迦守护者"
+Ubertip="|n|cffFFFF80攻击：|r穿刺 (|cffFFFF00近战|r,|cffFFFF00 51|r dps)|n|cffFFFF80盔甲：|r重 (|cffFFFF006|r)|n|cffFFFF80生命值：|cffFFFF00625|r|n|cffFFFF80能力：|r|n|n|cff80FF00分裂攻击|r|n每次命中对本单位前方 230 范围内的所有敌人造成 35% 的正常伤害"
+Hotkey=Q
+[n003]
+Name="鱼人"
+Hotkey=Q
+Tip="火车 鱼人"
+Ubertip="|n|cffFFFF80攻击：|r普通（|cffFFFF00近战|r，|cffFFFF00 12|r dps）|n|cffFFFF80盔甲：|r无装甲 (|cffFFFF002|r)|n|cffFFFF80生命值：|cffFFFF00180|r"
+[n01J]
+Name="腐化的保护者"
+Hotkey=Y
+Tip="建造堕落的保护者 [|cffffcc00Y|r]"
+Ubertip="|cffFFAC00基地防御|r：|n这是保护关键位置的塔。|n|n|cffFFFF80攻击类型：|cffFFFF00混乱|n|cffFFFF80范围：|cffFFFF00 800|n|cffFFFF80平均DPS：|cffFFFF00 43|r|n|n|cffFFFF80能力：|r|n- 溅射伤害"
+[n00X]
+Name="纳迦皇家卫队"
+Tip="训练纳迦皇家卫队"
+Ubertip="|n|cffFFFF80攻击：|r穿刺 (|cffFFFF00近战|r,|cffFFFF00 78|r dps)|n|cffFFFF80盔甲：|r重型 (|cffFFFF009|r)|n|cffFFFF80生命值：|cffFFFF001100|r|n|cffFFFF80能力：|r|n|n|cff80FF00致命一击|r|n每次攻击有 10% 几率造成 2 倍正常伤害|n|n|cff80FF00分裂攻击|r|n每次命中对本单位前方 260 范围内的所有敌人造成 25% 的正常伤害"
+Hotkey=Q
+[n00Y]
+Name="剑圣长老"
+Hotkey=Q
+Tip="训练长老剑圣"
+Ubertip="|n|cffFFFF80攻击：|r普通（|cffFFFF00近战|r，|cffFFFF00 90|r dps）|n|cffFFFF80盔甲：|r重型 (|cffFFFF0010|r)|n|cffFFFF80生命值：|cffFFFF00750|r|n|cffFFFF80能力：|r|n|n|cff80FF00致命一击|r|n每次攻击有 30% 几率造成 3 倍正常伤害|n|n|cff80FF00逃避|r|n20% 几率躲避攻击|n|n|cff80FF00意见反馈|r|n每次攻击最多燃烧 25 点法力值，造成相同数量的伤害|n|n|cff80FF00法术抗力|r|n对该单位造成的法术伤害降低 25%"
+[n014]
+Name="冰雪皇后"
+Tip="火车冰雪女王"
+Hotkey=Q
+Ubertip="|n|cffFFFF80攻击：|r混乱 (|cffFFFF00450|r rng,|cffFFFF00 56|r dps)|n|cffFFFF80盔甲：|r无装甲 (|cffFFFF004|r)|n|cffFFFF80生命值：|cffFFFF00650|r|n|cffFFFF80能力：|r|n|n|cff80FF00冰霜新星|r|n对一名敌人施放冰霜爆炸，对目标造成 150 点伤害，并对目标周围 300 范围内的所有敌人造成额外 75 点伤害。所有被击中的目标都会被冰冻 6 秒|n|cff8080FF冷却时间：|r10|n|cff8080FF法力消耗：|r80|n|n|cff80FF00冰霜攻击|r|n对地面单位和建筑的每次攻击都有 20% 的几率将目标冻结在地面上 8 秒，每秒造成 30 点伤害|n|n|cff80FF00水晶光环|r|n每秒为 800 范围内的盟友增加 0.5 点法力值"
+[n00S]
+Name="娜迦海妖"
+Hotkey=Q
+Tip="火车纳迦海妖"
+Ubertip="|n|cffFFFF80攻击：|r混乱 (|cffFFFF00400|r rng,|cffFFFF00 50|r dps)|n|cffFFFF80盔甲：|r无装甲 (|cffFFFF003|r)|n|cffFFFF80生命值：|cffFFFF00550|r|n|cffFFFF80能力：|r|n|n|cff80FF00清洗|r|n净化一个敌人，移除其所有增益并使其减速 10 秒|n|cff8080FF冷却时间：|r10|n|cff8080FF法力消耗：|r30|n|n|cff80FF00召唤龙虾|r|n召唤 2 只龙虾，持续 45 秒。龙虾拥有致命一击 (10%, x3) 和硬壳技能，该技能有 50% 的几率将受到的攻击伤害降低 35|n|cff8080FF冷却时间：|r60|n|cff8080FF法力消耗：|r70"
+Casterupgradename=
+Casterupgradetip=
+[o00D]
+Name="风元素"
+Ubertip="|n|cffFFFF80攻击：|r穿刺 (|cffFFFF00450|r rng|r,|cffFFFF00 52|r dps)|n|cffFFFF80盔甲：|r无装甲 (|cffFFFF004|r)|n|cffFFFF80生命值：|cffFFFF00675|r|n|cffFFFF80能力：|r|n|cff80FF00飞行|r|n这个单位在飞|n|cff80FF00大风|r|n500范围内敌方空中单位的攻击和移动速度降低20%"
+Hotkey=Q
+Tip="火车风元素"
+[o00C]
+Name="次级风元素"
+Ubertip="|n|cffFFFF80攻击：|r穿刺 (|cffFFFF00400|r rng|r,|cffFFFF00 30|r dps)|n|cffFFFF80盔甲：|r无装甲 (|cffFFFF002|r)|n|cffFFFF80生命值：|cffFFFF00325|r|n|cffFFFF80能力：|r|n|cff80FF00飞行|r|n这个单位在飞|n|cff80FF00仅空气|r|n该单位无法攻击地面敌人|n"
+Hotkey=Q
+Tip="训练次级风元素"
+[o00E]
+Name="高等风元素"
+Ubertip="|n|cffFFFF80攻击：|r穿刺 (|cffFFFF00500|r rng|r,|cffFFFF00 70|r dps)|n|cffFFFF80盔甲：|r无装甲 (|cffFFFF006|r)|n|cffFFFF80生命值：|cffFFFF001400|r|n|cffFFFF80能力：|r|n|cff80FF00飞行|r|n这个单位在飞|n|cff80FF00大风|r|n500范围内敌方空中单位的攻击和移动速度降低35%"
+Hotkey=Q
+Tip="训练大风元素"
+[z000]
+Name="羽毛恶魔"
+Hotkey=Q
+Tip="训练羽毛笔恶魔"
+Ubertip="|n|cffFFFF80攻击：|r正常 (|cffFFFF00310|r rng,|cffFFFF00 57|r dps)|n|cffFFFF80盔甲：|r光 (|cffFFFF004|r)|n|cffFFFF80生命值：|cffFFFF00750|r|n|cffFFFF80能力：|r|n|n|cff80FF00弹跳攻击|r|n该单位的攻击最多可以击中 2 个敌人，每次弹跳造成的伤害降低 50%|n|n|cff80FF00羽毛笔|r|n350 范围内的所有友方单位都获得一个伤害护盾，可反射 35% 近战伤害"
+[z003]
+Name="火枪中士"
+Hotkey=Q
+Tip="训练火焰枪手中士"
+Ubertip="|n|cffFFFF80攻击：|r混乱 (|cffFFFF0070|r rng,|cffFFFF00 66|r dps)|n|cffFFFF80盔甲：|r光 (|cffFFFF007|r)|n|cffFFFF80生命值：|cffFFFF00700|r|n|cffFFFF80能力：|r|n|n|cff80FF00仅限地面|r|n该单位无法攻击飞行的敌人|n|n|cff80FF00线路损坏|r|n该单位的攻击命中目标后方 150.0 范围内的所有单位|n|n|cff80FF00星界手榴弹|r|n发射一枚手榴弹，造成 30 点伤害，并燃烧最多 100 点法力值，造成相同数量的伤害。此外，它会使单位减速 80%，持续 0.5 秒。影响范围：300"
+[z002]
+Name="火焰枪手"
+Hotkey=Q
+Tip="火车火焰枪手"
+Ubertip="|n|cffFFFF80攻击：|r混乱 (|cffFFFF0070|r rng,|cffFFFF00 37|r dps)|n|cffFFFF80盔甲：|r光 (|cffFFFF004|r)|n|cffFFFF80生命值：|cffFFFF00500|r|n|cffFFFF80能力：|r|n|n|cff80FF00仅限地面|r|n该单位无法攻击飞行的敌人|n|n|cff80FF00线路损坏|r|n该单位的攻击命中目标后方 150.0 范围内的所有单位"
+[u009]
+Name="强大的死灵法师"
+Ubertip="|n|cffFFFF80攻击：|r魔法 (|cffFFFF00400|r rng,|cffFFFF00 46|r dps)|n|cffFFFF80盔甲：|r无装甲 (|cffFFFF003|r)|n|cffFFFF80生命值：|cffFFFF00550|r|n|cffFFFF80能力：|r|n|n|cff80FF00腐肉群|r|n每次攻击有 25% 的几率释放一个腐肉群，对锥形范围内的所有敌人造成 70 点伤害|n|n|cff80FF00复活大死者|r|n举起骷髅。也可以培养更大的骷髅和英雄，但不能培养将军|n|cff8080FF冷却时间：|r30|n|cff8080FF法力消耗：|r75"
+Hotkey=Q
+Tip="训练强大的死灵法师"
+[u001]
+Name="女妖"
+Ubertip="|n|cffFFFF80攻击：|r魔法 (|cffFFFF00350|r rng,|cffFFFF00 48|r dps)|n|cffFFFF80盔甲：|r神圣的 (|cffFFFF002|r)|n|cffFFFF80生命值：|cffFFFF00310|r|n|cffFFFF80能力：|r|n|n|cff80FF00恐惧气息|r|n450范围内所有敌人的伤害输出减少15%|n|n|cff80FF00星界锁链|r|n使目标敌人的移动和攻击速度降低30%，持续15秒|n|cff8080FF冷却时间：|r8|n|cff8080FF法力消耗：|r25"
+Hotkey=Q
+Tip="火车女妖"
+[n02I]
+Name="豺狼人伏击者的小屋"
+Hotkey=W
+Tip="升级为伏击者小屋[|cffffcc00W|r]"
+Ubertip="|cffFFFF80火车：|cffFFFF00豺狼人-伏击者|n|n|cffFFAC00豺狼人伏击者：|r|n|cffFFFF80攻击：|r正常 (|cffFFFF00500|r rng,|cffFFFF00 50|r dps)|n|cffFFFF80盔甲：|r光 (|cffFFFF003|r)|n|cffFFFF80生命值：|cffFFFF00520|r|n|cffFFFF80能力：|r|n-毒螺栓|r|n-伏击|n- 关键镜头|n-猎禽者"
+[n02J]
+Name="野猪的洞穴"
+Hotkey=Q
+Tip="建造野猪人的洞穴[|cffffcc00Q|r]"
+Ubertip="|cffFFFF80火车： |cffFFFF00野猪|n|n|cffFFAC00野猪：|r|n|cffFFFF80攻击：|r地面穿刺 (|cffFFFF00近战|r,|cffFFFF00 27|r dps)|n|cffFFFF80盔甲：|r无装甲 (|cffFFFF003|r)|n|cffFFFF80生命值：|cffFFFF00360|r|n|cffFFFF80能力：|r|n- 羽毛笔"
+[n02K]
+Name="哈比的巢穴"
+Hotkey=E
+Tip="建造鹰身女妖巢[|cffffcc00E|r]"
+Ubertip="|cffFFFF80火车：|cffFFFF00哈比|n|n|cffFFAC00哈比：|r|n|cffFFFF80攻击：|r穿刺(|cffFFFF00280|r rng,|cffFFFF00 37|r dps)|n|cffFFFF80盔甲：|r无装甲 (|cffFFFF001|r)|n|cffFFFF80生命值：|cffFFFF00420|r|n|cffFFFF80能力：|r|n-飞行|r|n-敏捷"
+[n02L]
+Name="食人魔的巢穴"
+Hotkey=A
+Tip="建造食人魔的巢穴[|cffffcc00A|r]"
+Ubertip="|cffFFFF80火车： |cffFFFF00食人魔|n|n|cffFFAC00食人魔：|r|n|cffFFFF80攻击：|r围攻，地面（|cffFFFF00近战|r，|cffFFFF00 56|r dps）|n|cffFFFF80盔甲：|r重型 (|cffFFFF005|r)|n|cffFFFF80生命值：|cffFFFF00650|r|n|cffFFFF80能力：|r|n-重型俱乐部|r|n- 拼写抗性|n- 小飞溅"
+[n02M]
+Name="蝾螈孵化场"
+Hotkey=S
+Tip="建造蝾螈的孵化场[|cffffcc00S|r]"
+Ubertip="|cffFFFF80火车： |cffFFFF00蝾螈|n|n|cffFFAC00蝾螈：|r|n|cffFFFF80攻击：|r混乱（|cffFFFF00375|r 范围，|cffFFFF00 47|r dps）|n|cffFFFF80盔甲：|r重 (|cffFFFF006|r)|n|cffFFFF80生命值：|cffFFFF00850|r|n|cffFFFF80能力：|r|n- 蝾螈的毒药|n- 神奇的生物"
+[n02O]
+Name="豺狼人的帐篷"
+Hotkey=W
+Tip="建造豺狼人的帐篷[|cffffcc00W|r]"
+Ubertip="|cffFFFF80火车： |cffFFFF00豺狼人|n|n|cffFFAC00豺狼人：|r|n|cffFFFF80攻击：|r正常 (|cffFFFF00420|r rng,|cffFFFF00 25|r dps)|n|cffFFFF80盔甲：|r光 (|cffFFFF002|r)|n|cffFFFF80生命值：|cffFFFF00340|r|n|cffFFFF80能力：|r|n- 轻微毒药|n-猎禽者"
+[n02P]
+Name="桑金的皮"
+Hotkey=R
+Tip="建造沙地兽皮[|cffffcc00R|r]"
+Ubertip="|cffFFFF80火车： |cffFFFF00桑金|n|n|cffFFAC00沙金：|r|n|cffFFFF80攻击：|r地面魔法（|cffFFFF00250|r 范围，|cffFFFF00 37|r dps）|n|cffFFFF80盔甲：|r正常 (|cffFFFF005|r)|n|cffFFFF80生命值：|cffFFFF00550|r|n|cffFFFF80能力：|r|n-沙云"
+[n02N]
+Name="剃刀鬃毛的洞穴"
+Hotkey=Q
+Tip="升级到剃刀鬃毛的洞穴[|cffffcc00Q|r]"
+Ubertip="|cffFFFF80火车：|cffFFFF00钢鬃|n|n|cffFFAC00钢鬃鬃毛：|r|n|cffFFFF80攻击：|r地面穿刺 (|cffFFFF00近战|r,|cffFFFF00 63|r dps)|n|cffFFFF80盔甲：|r无装甲 (|cffFFFF007|r)|n|cffFFFF80生命值：|cffFFFF00750|r|n|cffFFFF80能力：|r|n-钢背"
+[n02R]
+Name="食人魔领主的巢穴"
+Hotkey=M
+Tip="升级为食人魔领主的巢穴[|cffffcc00F|r]"
+Ubertip="|cffFFFF80火车： |cffFFFF00食人魔领主|n|n|cffFFAC00食人魔领主：|r|n|cffFFFF80攻击：|r围攻，地面（|cffFFFF00近战|r，|cffFFFF00 84|r dps）|n|cffFFFF80盔甲：|r重 (|cffFFFF008|r)|n|cffFFFF80生命值：|cffFFFF001250|r|n|cffFFFF80能力：|r|n- 俱乐部掌握|n- 拼写抗性|n-溅"
+[n02V]
+Name="野猪人"
+Description="***"
+Tip="训练野猪人 (|cffffcc00Q|r)"
+Ubertip="|n|cffFFFF80攻击：|r穿刺 (|cffFFFF00近战|r,|cffFFFF00 27|r dps)|n|cffFFFF80盔甲：|r无装甲 (|cffFFFF003|r)|n|cffFFFF80生命值：|cffFFFF00360|r|n|n|cffFFFF80能力：|r|n|n|cff80FF00羽毛笔|r|n|n40% 的近战伤害返还给攻击者。"
+Hotkey=Q
+[n031]
+Name="哈比女巫的巢穴"
+Hotkey=E
+Tip="升级到女巫的巢穴[|cffffcc00E|r]"
+Ubertip="|cffFFFF80火车：|cffFFFF00哈比女巫|n|n|cffFFAC00哈比女巫：|r|n|cffFFFF80攻击：|r穿刺(|cffFFFF00320|r rng,|cffFFFF00 50|r dps)|n|cffFFFF80盔甲：|r无装甲 (|cffFFFF002|r)|n|cffFFFF80生命值：|cffFFFF00700|r|n|cffFFFF80能力：|r|n-飞行|r|n-偷走生命|r|n-盲人|r|n-敏捷"
+[n033]
+Name="鹰身女族长的巢穴"
+Hotkey=E
+Tip="升级为鹰身女族长的巢穴[|cffffcc00E|r]"
+Ubertip="|cffFF8204传奇建筑|r|n|cffFFFF80火车： |cffFFFF00鹰身女族长|n|n|cffFFAC00女族长：|r|n|cffFFFF80攻击：|r英雄(|cffFFFF00450|r rng,|cffFFFF00 95|r dps)|n|cffFFFF80盔甲：|r无装甲 (|cffFFFF006|r)|n|cffFFFF80生命值：|cffFFFF001250|r|n|cffFFFF80能力：|r|n-飞行|n- 石头雨|n- 鹰身女妖的呼唤"
+[n036]
+Name="巨大的沙金兽皮"
+Hotkey=R
+Tip="升级为巨型沙地兽皮[|cffffcc00R|r]"
+Ubertip="|cffFFFF80火车：|cffFFFF00MonstrousSandkin|n|n|cffFFAC00沙金：|r|n|cffFFFF80攻击：|r魔法，地面（|cffFFFF00320|r 范围，|cffFFFF00 65|r dps）|n|cffFFFF80盔甲：|r正常 (|cffFFFF008|r)|n|cffFFFF80生命值：|cffFFFF00900|r|n|cffFFFF80能力：|r|n-沙云|n-致命一击|n-沙盾|n- 仅限地面"

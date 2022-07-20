@@ -1,0 +1,58 @@
+﻿STRING 1
+{
+玩家 1
+}
+
+STRING 2
+{
+势力 1
+}
+
+STRING 3
+// 魔法效果/特效: Bbof (), Buffubertip (工具提示 - 扩展的)
+{
+这个单位正在燃烧
+}
+
+STRING 4
+// 魔法效果/特效: Bbof (), Bufftip (工具提示)
+{
+正在燃烧
+}
+
+STRING 5
+// 魔法效果/特效: BNic (), Buffubertip (工具提示 - 扩展的)
+{
+这个单位在死亡时会爆炸
+}
+
+STRING 6
+// 魔法效果/特效: BNic (), Bufftip (工具提示)
+{
+焚化
+}
+
+STRING 7
+// 魔法效果/特效: BIcb (), Bufftip (工具提示)
+{
+腐蚀气息
+}
+
+STRING 8
+// 魔法效果/特效: BIcb (), Buffubertip (工具提示 - 扩展的)
+{
+铠甲被腐蚀气息腐蚀
+}
+
+STRING 9
+// 魔法效果/特效: Bpxf (), Bufftip (工具提示)
+{
+灵魂触摸
+}
+
+STRING 10
+// 魔法效果/特效: Bpxf (), Buffubertip (工具提示 - 扩展的)
+{
+正在被元素之灵治愈
+}
+

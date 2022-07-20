@@ -1,0 +1,1932 @@
+[Hblm]
+Name=血法师
+Propernames=Eldin Sunstrider,Tanin Hawkwing,Lorn Bloodseeker,Aldos Firestar,Gilaras Drakeson,Hale Magefire,Kath'ranis Remar,Tyoril Sunchaser,Sylvos Windrunner,Tenris Mirkblood,Marakanis Starfury,Geldor Earthfire,Halendor Burnkin,Kelen the Destroyer'
+Hotkey=B
+Tip=召唤 [|cffffcc00B|r] 血法师
+Ubertip="神秘英雄，擅长控制魔法和远程攻击。可以学习烈焰打击、放逐、虹吸法力和凤凰。|n|n|cffffcc00攻击陆地和空中单位。|r"
+Revivetip=Revive |cffffcc00B|rlood Mage
+Awakentip=Revive |cffffcc00B|rlood Mage
+[halt]
+Name=国王祭坛
+Hotkey=A
+Tip=建造 [|cffffcc00A|r] 列王祭坛
+Ubertip="召唤英雄。复活被杀的英雄。"
+[Hamg]
+Name=大法师
+Propernames=Tenn Flamecaster,Nilas Arcanister,Andromath,Shal Lightbinder,Aran Spellweaver,Manath Magesinger,Landazar,Doril Magefont,Peril Spellbinder,Conjurus Rex,Fordred Aran,Dalar Dawnweaver,Kelen the Seeker
+Hotkey=A
+Tip=召唤 [|cffffcc00A|r] 大法师
+Ubertip="神秘的英雄，擅长远程攻击。可以学习暴风雪、召唤水元素、光辉光环和群体传送。|n|n|cffffcc00攻击陆地和空中单位。|r"
+Revivetip=Revive |cffffcc00A|rrchmage
+Awakentip=Revive |cffffcc00A|rrchmage
+[harm]
+Name=作坊
+Hotkey=W
+Tip=建立 [|cffffcc00W|r] 工坊
+Ubertip="生产攻城车、飞行器和迫击炮队。|n还包含照明弹、碎片碎片、弹幕、飞行机炸弹和高射炮升级。"
+[hars]
+Name=奥术圣殿
+Hotkey=R
+Tip=建造 [|cffffcc00r|r] 奥术圣殿
+Ubertip="训练牧师、女术士和破法者。|n还包含牧师和女术士、控制魔法和魔法哨兵的法术升级。"
+[hbar]
+Name=兵营
+Hotkey=B
+Tip=建造 [|cffffcc00B|r] 兵营
+Ubertip="初级部队生产大楼。训练步兵、步兵和骑士。|n还包含防御、长步枪和动物战争训练升级。"
+[hbla]
+Name=铁匠
+Hotkey=S
+Tip=建造 [|cffffcc00s|r] 铁匠
+Ubertip="包含改进装甲、武器和火药的升级。"
+[hcas]
+Name=城堡
+Hotkey=U
+Tip=|cffffcc00U|r升级到城堡
+Ubertip="升级到城堡可以生产更多类型的结构和单元。"
+[hdhw]
+Name=龙鹰骑士
+Hotkey=D
+Tip=训练 [|cffffcc00D|r] 龙鹰骑士
+Ubertip="精灵战士骑乘的迅捷飞行单位。拥有空中镣铐能力，可以暂时固定和解除敌方空中单位的武装。可以学习动物战争训练和云能力。|n|n|cffffcc00攻击陆地和空中单位。|r"
+[hhou]
+Name=农场
+Hotkey=F
+Tip=建造 [|cffffcc00F|r] 农场
+Ubertip="提供食物，增加可训练单位的最大数量。"
+[hfoo]
+Name=步兵
+Hotkey=F
+Tip=训练 [|cffffcc00F|r] 步兵
+Ubertip="多才多艺的步兵。可以学习防御能力。|n|n|cffffcc00攻击陆地单位。|r"
+[hgra]
+Name=狮鹫鸟舍
+Hotkey=G
+Tip=建造 [|cffffcc00G|r] 狮鹫鸟舍
+Ubertip="训练狮鹫骑士和龙鹰骑士。|n还包含风暴之锤和云升级。"
+[hctw]
+Name=大炮塔
+Hotkey=C
+Tip=升级到 [|cffffcc00C|r] 炮塔
+Ubertip="重型防御结构。对付成群结队的部队特别有效。可以学习魔法哨兵技能。|n|n|cffffcc00攻击陆地单位和树木。|r"
+[hgtw]
+Name=警卫塔
+Hotkey=G
+Tip=升级到 [|cffffcc00G|r] 警卫塔
+Ubertip="主要防御结构。可以学习魔法哨兵技能。|n|n|cffffcc00攻击陆地和空中单位。|r"
+[hwtw]
+Name=侦察塔
+Hotkey=T
+Tip=建造侦察 [|cffffcc00T|r] 塔
+Ubertip="基本观测塔。没有攻击力，但可以升级为守卫塔、奥术塔或炮塔。可以学习魔法哨兵技能。"
+[hatw]
+Name=奥术之塔
+Hotkey=N
+Tip=升级到 [|cffffcc00n|r] 奥术塔
+Ubertip="魔法防御塔。对敌方英雄和施法者特别有效。拥有回馈能力，使其攻击破坏魔法值，造成与所破坏魔法值相等的额外伤害。可以学习魔法哨兵技能。|n|n|cffffcc00攻击陆地和空中单位。"
+[hvlt]
+Name=奥术宝库
+Hotkey=V
+Tip=建造奥术 [|cffffcc00V|r] 避难所
+Ubertip="用可购买的物品创建一个商店。可用的物品取决于您的市政厅的升级级别（市政厅、要塞或城堡）以及您拥有的建筑物。"
+[hgyr]
+Name=飞行机
+Hotkey=F
+Tip=火车 [|cffffcc00F|r] 飞行器
+Ubertip="快速移动的飞行器。擅长侦察，对空中单位有效。可以学习飞行机炸弹和高射炮升级。|n可以看到隐形单位。|n|n|cffffcc00攻击空中单位。|r"
+[hkee]
+Name=保持
+Hotkey=U
+Tip=|cffffcc00U|r升级到保留
+Ubertip="升级到 Keep 可以生产更多类型的结构和单元。"
+[hkni]
+Name=骑士
+Hotkey=K
+Tip=训练 [|cffffcc00K|r] 骑士
+Ubertip="强大的骑马战士。可以学习动物战争训练。|n|n|cffffcc00攻击陆地单位。|r"
+[hlum]
+Name=木材厂
+Hotkey=L
+Tip=建造 [|cffffcc00L|r] 木材厂
+Ubertip="用作采伐木材的下车点。|n还包含木材收获和砌体的升级。"
+[Hmkg]
+Name=山王
+Propernames=Bor Stonebreaker,Munin Ironcliff,Thorgas Broadaxe,Kelv Sternhammer,Grim Thunderbrew,Buri Frostbeard,Huginn Ironcliff,Thordin Rockbeard,Bandis Forgefire,Gar Doomforge,Beazel Bludstone,Modi Stonesmith,Aggronor the Mighty
+Hotkey=M
+Tip=召唤 [|cffffcc00M|r] 山王
+UberTip="Warrior Hero, adept at offensive combat and disrupting enemy troops. Can learn Storm Bolt, Thunder Clap, Bash and Avatar. |n|n|cffffcc00Attacks land units.|r"
+Revivetip=Revive |cffffcc00M|rountain King
+Awakentip=Revive |cffffcc00M|rountain King
+[hmpr]
+Name=牧师
+Hotkey=P
+Tip=训练 [|cffffcc00P|r] 牧师
+Ubertip="支持施法者。最初可以施放治疗，增加受伤单位的生命。还可以学习驱散魔法和内火。|n|n|cffffcc00攻击陆地和空中单位。|r"
+Casterupgradename=Initiate, Adept, Master
+Casterupgradetip="- Heal","- Heal|n- Dispel Magic","- Heal|n- Dispel Magic|n- Inner Fire"
+[hmtm]
+Name=砂浆队
+Hotkey=M
+Tip=训练 [|cffffcc00M|r] 迫击炮队
+Ubertip="远程攻城武器。对建筑物造成异常伤害，但缓慢且易受攻击。可以学习碎片碎片和耀斑能力。|n|n|cffffcc00攻击陆地单位和树木。|r"
+[Hpal]
+Name=圣骑士
+Propernames=Granis Darkhammer,Jorn the Redeemer,Sage Truthbearer,Malak the Avenger,Gavinrad the Dire,Morlune the Mighty,Agamand the True,Ballador the Bright,Manadar the Healer,Zann the Defender,Arius the Seeker,Aurrius the Pure,Karnwield the Seeker,Buzan the Fearless
+Hotkey=L
+Tip=召唤 [|cffffcc00l|r] 圣骑士
+Ubertip="战士英雄，擅长防御和增强附近友军。可以学习圣光、圣盾、虔诚光环和复活。|n|n|cffffcc00攻击陆地单位。|r"
+Revivetip=Revive Pa|cffffcc00l|radin
+Awakentip=Revive Pa|cffffcc00l|radin
+[hpea]
+Name=农民
+Hotkey=P
+Tip=火车 [|cffffcc00P|r] 农民
+Ubertip="基本工人单位。可以收获黄金和木材，建造结构和维修。可以成为民兵。|n|n|cffffcc00攻击陆地单位和树木。|r"
+[hrif]
+Name=步枪兵
+Hotkey=R
+Tip=训练 [|cffffcc00R|r] 步兵
+Ubertip="高技能的神枪手，对空中单位有效。可以获得长步枪升级。|n|n|cffffcc00攻击陆地和空中单位。|r"
+[hsor]
+Name=巫婆
+Hotkey=S
+Tip=训练 [|cffffcc00S|r] 女术士
+Ubertip="多才多艺的施法者。最初可以施放减速，降低敌方单位的移动和攻击速度。还可以学习隐身术和变形术。|n|n|cffffcc00攻击陆地和空中单位。|r"
+Casterupgradename=Initiate, Adept, Master
+Casterupgradetip="- Slow","- Slow|n- Invisibility","- Slow|n- Invisibility|n- Polymorph"
+[hspt]
+Name=法术破坏者
+Hotkey=B
+Tip=训练法术 [|cffffcc00B|r] 破坏者
+Ubertip="训练有素的精灵战士摧毁施法者。最初有 Spell Steal，它可以操纵增益对你有利，Spell Immunity 和 Feedback。也可以学习控制魔法。|n|n|cffffcc00攻击陆地单位。|r"
+[hmtt]
+Name=攻城引擎
+Hotkey=E
+Tip=Train Siege [|cffffcc00E|r] 引擎
+Ubertip="重型装甲车辆，可有效摧毁建筑物。可以通过弹幕能力升级。|n|n|cffffcc00攻击建筑物。|r"
+[hrtt]
+Name=攻城引擎
+Hotkey=E
+Tip=Train Siege [|cffffcc00E|r] 引擎
+Ubertip="重型装甲车辆，可有效摧毁建筑物。拥有弹幕能力，可以向附近的敌方空军单位发射火箭。|n|n|cffffcc00攻击建筑物。|r"
+[htow]
+Name=市政厅
+Hotkey=H
+Tip=建镇 [|cffffcc00H|r] 大厅
+Ubertip="初级结构，用于训练农民和接收收集的资源。可以升级到 Keep，然后升级到 Castle，以生产更多类型的结构和单位。"
+[hwat]
+Name=水元素
+[hwt2]
+Name=水元素
+[hwt3]
+Name=水元素
+[hgry]
+Name=狮鹫骑士
+Hotkey=G
+Tip=训练 [|cffffcc00G|r] 狮鹫骑士
+Ubertip="强大的飞行生物，由矮人掷锤者骑乘。可以学习动物战争训练和风暴之锤能力。|n|n|cffffcc00攻击陆地和空中单位。|r"
+[hphx]
+Name=凤凰
+[hpxe]
+Name=凤凰蛋
+[h0AY]
+Name="科技馆"
+Hotkey=S
+Tip="研究技术 3"
+Ubertip="包含改进装甲、武器和火药的升级。"
+[h09R]
+Name="备件堆：Gobbo"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h09Q]
+Name="手榴弹假人"
+Hotkey=P
+Tip=训练 [|cffffcc00P|r] 牧师
+Ubertip="支持施法者。最初可以施放治疗，增加受伤单位的生命。还可以学习驱散魔法和内火。|n|n|cffffcc00攻击陆地和空中单位。|r"
+Casterupgradename=Initiate, Adept, Master
+Casterupgradetip="- Heal","- Heal|n- Dispel Magic","- Heal|n- Dispel Magic|n- Inner Fire"
+[h09T]
+Name="发电厂"
+Hotkey=D
+Tip="建造发电厂 [|cffffcc00D|r]"
+Ubertip="|cffFFFF80能力：|cffFFFF00电力建筑|r|n为 180 范围内的所有建筑物提供动力，使它们 +2 护甲。此外，防御塔获得 +50% 伤害，特殊建筑获得 +0.25 法力/秒。产生蠕变的结构训练更强的蠕变：|n-100 额外生命值|n-2 额外护甲|n-20% 额外伤害"
+[h09V]
+Name="发电厂：传送"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h09U]
+Name="发电厂：围栏"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h09X]
+Name="魔法学校"
+Hotkey=S
+Tip="建造魔法学校 [|cffffcc00S|r]"
+Ubertip="|cffFFFF80火车：|cffFFFF00女术士|n|cffFFFF80升级：|cffFFFF001|n|n|cffFFAC00女巫：|r|n|cffFFFF80攻击：|r魔法 (|cffFFFF00500|r rng,|cffFFFF00 27|r dps)|n|cffFFFF80盔甲：|r无装甲 (|cffFFFF002|r)|n|cffFFFF80生命值：|cffFFFF00550|r|n|cffFFFF80能力：|r|n-治疗波（|cffFFFF00150hp，2 个目标|r）|n-链闪电 (|cffFFFF0025%, 150dmg|r)"
+[h09W]
+Name="种族禁令"
+Hotkey=K
+Tip=训练 [|cffffcc00K|r] 骑士
+Ubertip="强大的骑马战士。可以学习动物战争训练。|n|n|cffffcc00攻击陆地单位。|r"
+[h09Z]
+Name="腐败的"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h09Y]
+Name="堕落的毁灭古树"
+Hotkey=R
+Tip="升级到堕落的毁灭古树 [|cffffcc00R|r]"
+Ubertip="|cffFF8204传奇建筑|r|n|cffFFFF80火车：|cffFFFF00堕落的歼灭者|n|n|cffFFAC00堕落的歼灭者：|r|n|cffFFFF80攻击：|r普通（|cffFFFF00近战|r，|cffFFFF00 120|r dps）|n|cffFFFF80盔甲：|r重型 (|cffFFFF007|r)|n|cffFFFF80生命值：|cffFFFF001800|r|n|cffFFFF80能力：|r|n-传奇法术抗性 (|cffFFFF0070%|r)|n-免疫|n-分裂攻击 (|cffFFFF0040%|r)|n-暴击 (|cffFFFF0015%, x2|r)|n-削弱攻击（|cffFFFF00-100% 伤害|r）|n- 尖刺迷（|cffFFFF00250dmg，3.5 秒眩晕|r）|n|n|cffFF0000你必须先关闭单位生产才能升级！|r"
+[h0A2]
+Name="重炮手"
+Hotkey=Q
+Tip="训练重型机枪手"
+Ubertip="|n|cffFFFF80攻击：|r穿刺 (|cffFFFF00550|r rng,|cffFFFF00 47|r dps)|n|cffFFFF80盔甲：|r中等 (|cffFFFF003|r)|n|cffFFFF80生命值：|cffFFFF00500|r|n|cffFFFF80能力：|r|n|n|cff80FF00仅限地面|r|n该单位无法攻击飞行的敌人|n|n|cff80FF00飞溅伤害|r|n该单位的攻击命中目标周围 180 范围内的所有单位。距离目标越远的单位受到的伤害越少|n|n|cff80FF00致命一击|r|n每次攻击有 20% 几率造成 2 倍正常伤害"
+[h0A1]
+Name="射手营地"
+Hotkey=R
+Tip="升级到射手营地 [|cffffcc00R|r]"
+Ubertip="|cffFFFF80火车： |cffFFFF00神射手|n|n|cffFFAC00射手：|r|n|cffFFFF80攻击：|r穿刺 (|cffFFFF00800|r rng,|cffFFFF00 69|r dps)|n|cffFFFF80攻击：|r穿刺 (|cffFFFF00500|r rng,|cffFFFF00 28|r dps)|n|cffFFFF80盔甲：|r中等 (|cffFFFF001|r)|n|cffFFFF80生命值：|cffFFFF00450|r|n|cffFFFF80能力：|r|n- 不能攻击地面|n-空中暴击 (|cffFFFF0040%, 3x|r)|n|n|cffFF0000你必须先关闭单位生产才能升级！|r"
+[h0A0]
+Name="人类建造"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h0AX]
+Name="科技馆"
+Hotkey=S
+Tip="研究技术 2"
+Ubertip="包含改进装甲、武器和火药的升级。"
+[h0AW]
+Name="科技帐篷"
+Hotkey=S
+Tip=建造 [|cffffcc00s|r] 铁匠
+Ubertip="包含改进装甲、武器和火药的升级。"
+[h0AT]
+Name="科技小屋"
+Hotkey=S
+Tip="研究技术1"
+Ubertip="研究 1 级技术允许您建造更多的怪物建筑、一座塔（如果您的种族有）和一些便宜的特价商品。"
+[h02O]
+Name="静止图腾"
+Hotkey=X
+Tip="建造静止图腾 [|cffffcc00X|r]"
+Ubertip="|cffFF8204传奇建筑|r|n|n|cffFFFF80能力：|cffFFFF00全球停滞|r|n眩晕所有敌方单位 4.5 秒。|n|n|cffFFFF80冷却时间：|cffFFFF00 35-45 |r秒"
+[h030]
+Name="高等火元素"
+Ubertip="|n|cffFFFF80攻击：|r混乱 (|cffFFFF00400|r rng|r,|cffFFFF00 65|r dps)|n|cffFFFF80盔甲：|r中等 (|cffFFFF005|r)|n|cffFFFF80生命值：|cffFFFF00850|r|n|cffFFFF80能力：|r|n|cff80FF00喷火|r|n攻击时有 15% 几率施放火焰吐息（对锥形区域内的敌人造成 125 伤害）"
+Hotkey=Q
+Tip="训练高等火元素"
+[h02N]
+Name="蛇岩"
+Hotkey=D
+Tip="建造蛇岩 [|cffffcc00D|r]"
+Ubertip="|cffFFFF80能力：|cffFFFF00毒区|r|n向随机敌方单位附近的区域喷毒。所有被这种毒药击中的单位的护甲降低 5，攻击和移动速度降低 20%，并随着时间的推移受到伤害。毒药持续 5 秒，每秒造成 30 点伤害。|n|n|cffFFFF80冷却时间：|cffFFFF00 12 |r秒"
+[h032]
+Name="皇家产卵场"
+Hotkey=R
+Tip="升级到皇家产卵场 [|cffffcc00R|r]"
+Ubertip="|cffFFFF80火车：|cffFFFF00纳迦皇家卫队|n|n|cffFFAC00娜迦皇家卫队：|r|n|cffFFFF80攻击：|r穿刺 (|cffFFFF00近战|r,|cffFFFF00 78|r dps)|n|cffFFFF80盔甲：|r重型 (|cffFFFF009|r)|n|cffFFFF80生命值：|cffFFFF001100|r|n|cffFFFF80能力：|r|n-暴击 (|cffFFFF0010%, x2|r)|n-分裂攻击 (|cffFFFF0025%|r)|n|n|cffFF0000你必须先关闭单位生产才能升级！|r"
+[h02Q]
+Name="熊怪小屋"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h031]
+Name="高级战士大厅"
+Hotkey=R
+Tip="升级到高级战士大厅 [|cffffcc00R|r]"
+Ubertip="|cffFFFF80火车： |cffFFFF00斧王|n|n|cffFFAC00斧王：|r|n|cffFFFF80攻击：|r普通（|cffFFFF00近战|r，|cffFFFF00 65|r dps）|n|cffFFFF80盔甲：|r重型 (|cffFFFF0010|r)|n|cffFFFF80生命值：|cffFFFF001000|r|n|cffFFFF80能力：|r|n-暴击 (|cffFFFF0030%, 3x|r)|n-粉碎 (|cffFFFF0035%, 130 dmg|r)|n|n|cffFF0000你必须先关闭单位生产才能升级！|r"
+[h02P]
+Name="飞龙氏族营地"
+Hotkey=R
+Tip="建造飞龙氏族营地 [|cffffcc00R|r]"
+Ubertip="|cffFFFF80火车：|cffFFFF00飞龙骑士|n|n|cffFFAC00飞龙骑士：|r|n|cffFFFF80攻击：|r穿刺 (|cffFFFF00400|r rng,|cffFFFF00 30|r dps)|n|cffFFFF80盔甲：|r无装甲 (|cffFFFF002|r)|n|cffFFFF80生命值：|cffFFFF00440|r|n|cffFFFF80能力：|r|n-飞行|n-轻微毒药攻击（|cffFFFF0020% 减速|r）"
+[h02K]
+Name="科多农场"
+Hotkey=A
+Tip="建造科多农场 [|cffffcc00A|r]"
+Ubertip="|cffFFFF80火车：|cffFFFF00科多|n|cffFFFF80升级：|cffFFFF003|n|n|cffFFAC00科多兽：|r|n|cffFFFF80攻击：|r穿刺 (|cffFFFF00近战|r,|cffFFFF00 24|r dps)|n|cffFFFF80盔甲：|r光 (|cffFFFF004|r)|n|cffFFFF80生命值：|cffFFFF001000|r"
+[h02J]
+Name="蜘蛛蛋：岩石基地"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h02M]
+Name="冬眠古树：猫头鹰"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h02L]
+Name="冬眠古树：根"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h038]
+Name="教会"
+Hotkey=R
+Tip="升级为教堂 [|cffffcc00R|r]"
+Ubertip="|cffFFFF80火车： |cffFFFF00圣骑士|n|n|cffFFAC00圣骑士：|r|n|cffFFFF80攻击：|r英雄 (|cffFFFF00近战|r,|cffFFFF00 67|r dps)|n|cffFFFF80盔甲：|r重型 (|cffFFFF009|r)|n|cffFFFF80生命值：|cffFFFF00850|r|n|cffFFFF80能力：|r|n-分裂攻击 (|cffFFFF0025%|r)|n-重击（|cffFFFF0020%，25dmg，2 秒|r）|n-复活|n-祝福（|cffFFFF00+6 护甲，+20 马力/秒|r）|n-护甲光环 (|cffFFFF00+4)|n|n|cffFF0000你必须先关闭单位生产才能升级！|r"
+[h02W]
+Name="次级水元素"
+Ubertip="|n|cffFFFF80攻击：1|r正常 (|cffFFFF0030|r rng|r,|cffFFFF00 28|r dps)|n|cffFFFF80攻击：2|r穿刺 (|cffFFFF00300|r rng|r,|cffFFFF00 18|r dps)|n|cffFFFF80盔甲：|r中等 (|cffFFFF001|r)|n|cffFFFF80生命值：|cffFFFF00350|r|n|cffFFFF80能力：|r|n|n|cff80FF00液态|r|n在 40% 的情况下，攻击会穿过水元素的身体而不造成任何伤害"
+Hotkey=Q
+Tip="培养小水元素"
+[h037]
+Name="教堂"
+Hotkey=A
+Tip="建造教堂 [|cffffcc00A|r]"
+Ubertip="|cffFFFF80火车： |cffFFFF00十字军|n|cffFFFF80升级：|cffFFFF001|n|n|cffFFAC00十字军：|r|n|cffFFFF80攻击：|r英雄 (|cffFFFF00近战|r,|cffFFFF00 42|r dps)|n|cffFFFF80盔甲：|r重 (|cffFFFF006|r)|n|cffFFFF80生命值：|cffFFFF00600|r|n|cffFFFF80能力：|r|n-分裂攻击 (|cffFFFF0025%|r)|n-重击（|cffFFFF0020%，25dmg，2 秒|r）|n-祝福（|cffFFFF00+6 护甲，+16 马力/秒|r）"
+[h02V]
+Name=铁匠
+Hotkey=S
+Tip=""
+Ubertip=""
+[h02Y]
+Name="高等水元素"
+Ubertip="|n|cffFFFF80攻击：|r正常 (|cffFFFF00450|r rng|r,|cffFFFF00 45|r dps)|n|cffFFFF80盔甲：|r光 (|cffFFFF007|r)|n|cffFFFF80生命值：|cffFFFF00550|r|n|cffFFFF80能力：|r|n|n|cff80FF00液态|r|n在 40% 的攻击中穿过水元素的身体不造成伤害|n|cff80FF00伟大的魔术师|r|n创造一个敌方单位的幻象。幻象造成 33% 的伤害并承受 250% 的伤害。|n|cff80FF00轻微飞溅伤害|r。"
+Hotkey=Q
+Tip="训练高等水元素"
+[h039]
+Name="据点"
+Hotkey=R
+Tip="升级到要塞 [|cffffcc00R|r]"
+Ubertip="|cffFFFF80火车：|cffFFFF00后卫|n|n|cffFFAC00后卫：|r|n|cffFFFF80攻击：|r普通（|cffFFFF00近战|r，|cffFFFF00 38|r dps）|n|cffFFFF80盔甲：|r重型 (|cffFFFF007|r)|n|cffFFFF80生命值：|cffFFFF00575|r|n|cffFFFF80能力：|r|n-防守|n|n|cffFF0000你必须先关闭单位生产才能升级！|r"
+[h02X]
+Name="水元素"
+Ubertip="|n|cffFFFF80攻击：|r正常 (|cffFFFF00400|r rng|r,|cffFFFF00 28|r dps)|n|cffFFFF80盔甲：|r光 (|cffFFFF003|r)|n|cffFFFF80生命值：|cffFFFF00300|r|n|cffFFFF80能力：|r|n|n|cff80FF00液态|r|n25%的攻击穿过水元素的身体，不造成伤害|n|cff80FF00魔术师|r|n制造敌方单位的幻象。幻象造成 25% 的伤害并承受 300% 的伤害。|n|cff80FF00轻微飞溅伤害|r。"
+Hotkey=Q
+Tip="训练水元素"
+[h02S]
+Name="巨石：布什"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h034]
+Name="大地元素"
+Ubertip="|n|cffFFFF80攻击：|r围攻 (|cffFFFF00近战|r,|cffFFFF00 50|r dps)|n|cffFFFF80盔甲：|r无装甲 (|cffFFFF004|r)|n|cffFFFF80生命值：|cffFFFF00700|r|n|cffFFFF80能力：|r|n|n|cff80FF00粉碎|r|n在 80 范围内造成 60 点伤害"
+Hotkey=Q
+Tip="火车地球元素"
+[h033]
+Name="种族选择器"
+Hotkey=K
+Tip=训练 [|cffffcc00K|r] 骑士
+Ubertip="强大的骑马战士。可以学习动物战争训练。|n|n|cffffcc00攻击陆地单位。|r"
+[h02R]
+Name="仪式图腾"
+Hotkey=F
+Tip="建造仪式图腾 [|cffffcc00F|r]"
+Ubertip="|cffFFFF80能力：|cffFFFF00部落祝福|r|n永久给予一个随机友方单位 +20 伤害、+20% 攻击速度、3 点护甲和 200 点生命值。还给出以下之一：|n- 拆除 (x1.5)|n- 致命一击 (25%, x2)|n- 闪避 (30%)|n|n|cffFFFF80冷却时间：|cffFFFF00 10 |r秒"
+[h036]
+Name="防御科多兽农场"
+Hotkey=E
+Tip="升级到防御科多兽农场 [|cffffcc00E|r]"
+Ubertip="|cffFFFF80火车：|cffFFFF00防御型科多兽骑士|n|n|cffFFAC00防御科多兽骑士：|r|n|cffFFFF80攻击：|r穿刺 (|cffFFFF00320|r rng,|cffFFFF00 33|r dps)|n|cffFFFF80盔甲：|r光 (|cffFFFF005|r)|n|cffFFFF80生命值：|cffFFFF001200|r|n|cffFFFF80能力：|r|n-护甲光环 (|cffFFFF00+4|r)|n|n|cffFF0000你必须先关闭单位生产才能升级！|r"
+[h02U]
+Name="进阶战士馆"
+Hotkey=R
+Tip="升级到高级战士大厅 [|cffffcc00R|r]"
+Ubertip="|cffFFFF80火车： |cffFFFF00老兵咕噜|n|cffFFFF80升级：|cffFFFF001|n|n|cffFFAC00老兵咕噜：|r|n|cffFFFF80攻击：|r普通（|cffFFFF00近战|r，|cffFFFF00 30|r dps）|n|cffFFFF80盔甲：|r重 (|cffFFFF006|r)|n|cffFFFF80生命值：|cffFFFF00575|r|n|cffFFFF80能力：|r|n-暴击 (|cffFFFF0025%, 2x|r)|n|n|cffFF0000你必须先关闭单位生产才能升级！|r"
+[h035]
+Name="进攻型科多兽农场"
+Hotkey=W
+Tip="升级到进攻型科多兽农场 [|cffffcc00W|r]"
+Ubertip="|cffFFFF80火车：|cffFFFF00进攻型科多兽骑士|n|n|cffFFAC00进攻型科多兽骑士：|r|n|cffFFFF80攻击：|r穿刺 (|cffFFFF00320|r rng,|cffFFFF00 33|r dps)|n|cffFFFF80盔甲：|r光 (|cffFFFF005|r)|n|cffFFFF80生命值：|cffFFFF001200|r|n|cffFFFF80能力：|r|n-近战伤害光环 (|cffFFFF00+30%|r)|n|n|cffFF0000你必须先关闭单位生产才能升级！|r"
+[h02T]
+Name="巨石：岩石"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h03A]
+Name="后卫"
+Hotkey=Q
+Tip="训练后卫"
+Ubertip="|n|cffFFFF80攻击：|r普通（|cffFFFF00近战|r，|cffFFFF00 38|r dps）|n|cffFFFF80盔甲：|r重型 (|cffFFFF007|r)|n|cffFFFF80生命值：|cffFFFF00575|r|n|cffFFFF80能力：|r|n|n|cff80FF00保卫|r|n50% 几率反射某些类型的远程攻击。还将远程攻击造成的伤害降低至 40%，将法术伤害降低至 50%"
+[h03B]
+Name="十字军"
+Hotkey=Q
+Tip="火车十字军"
+Ubertip="|n|cffFFFF80攻击：|r英雄 (|cffFFFF00近战|r,|cffFFFF00 42|r dps)|n|cffFFFF80盔甲：|r重 (|cffFFFF006|r)|n|cffFFFF80生命值：|cffFFFF00600|r|n|cffFFFF80能力：|r|n|n|cff80FF00分裂攻击|r|n每次命中对本单位前方 175 范围内的所有敌人造成 25% 的正常伤害|n|n|cff80FF00重击|r|n每次攻击有 20% 几率眩晕 2 秒并造成 25 额外伤害|n|n|cff80FF00祝福|r|n增加一名盟友的 4 点护甲和 16 马力/秒的生命恢复速度|n|cff8080FF冷却时间：|r7|n|cff8080FF法力消耗：|r33"
+[h02Z]
+Name="火元素"
+Ubertip="|n|cffFFFF80攻击：|r混乱 (|cffFFFF00400|r rng|r,|cffFFFF00 38|r dps)|n|cffFFFF80盔甲：|r中等 (|cffFFFF003|r)|n|cffFFFF80生命值：|cffFFFF00465|r"
+Hotkey=Q
+Tip="火车火元素"
+[h03G]
+Name="大混沌堡垒"
+Hotkey=R
+Tip="升级到大混沌堡垒 [|cffffcc00R|r]"
+Ubertip="|cffFFFF80火车： |cffFFFF00混沌冠军|n|n|cffFFAC00混沌冠军：|r|n|cffFFFF80攻击：|r普通（|cffFFFF00近战|r，|cffFFFF00 59|r dps）|n|cffFFFF80盔甲：|r中等 (|cffFFFF008|r)|n|cffFFFF80生命值：|cffFFFF00850|r|n|cffFFFF80能力：|r|n-暴击 (|cffFFFF0010%, x2|r)|n-咆哮 (|cffFFFF00+25% 伤害|r)|n-分裂攻击 (|cffFFFF0035%|r)|n|n|cffFF0000你必须先关闭单位生产才能升级！|r"
+[h03I]
+Name="蔚蓝巢穴"
+Hotkey=A
+Tip="构建 Azure Nest [|cffffcc00A|r]"
+Ubertip="|cffFFFF80火车：|cffFFFF00碧蓝幼龙|n|n|cffFFAC00蔚蓝幼龙：|r|n|cffFFFF80攻击：|r混乱 (|cffFFFF00250|r rng,|cffFFFF00 33|r dps)|n|cffFFFF80盔甲：|r重 (|cffFFFF004|r)|n|cffFFFF80生命值：|cffFFFF00650|r|n|cffFFFF80能力：|r|n-飞行|n- 溅射伤害|n- 寒冷的攻击"
+[h03J]
+Name="冰巨魔巫毒酒廊"
+Hotkey=R
+Tip="升级到冰巨魔巫毒休息室 [|cffffcc00R|r]"
+Ubertip="|cffFFFF80火车：|cffFFFF00冰巨魔巫医|n|n|cffFFAC00冰巨魔巫医：|r|n|cffFFFF80攻击：|r魔法 (|cffFFFF00370|r rng,|cffFFFF00 48|r dps)|n|cffFFFF80盔甲：|r光 (|cffFFFF003|r)|n|cffFFFF80生命值：|cffFFFF00650|r|n|cffFFFF80能力：|r|n- 寒冷的攻击|n-冰霜攻击 (|cffFFFF0010%, 10sec, 20dps|r)|n-冰霜护甲 (|cffFFFF00+7|r)|n|n|cffFF0000你必须先关闭单位生产才能升级！|r"
+[h03C]
+Name="圣骑士"
+Hotkey=Q
+Tip="火车 圣骑士"
+Ubertip="|n|cffFFFF80攻击：|r英雄 (|cffFFFF00近战|r,|cffFFFF00 67|r dps)|n|cffFFFF80盔甲：|r重型 (|cffFFFF009|r)|n|cffFFFF80生命值：|cffFFFF00850|r|n|cffFFFF80能力：|r|n|n|cff80FF00分裂攻击|r|n每次命中对本单位前方 175 范围内的所有敌人造成 25% 的正常伤害|n|n|cff80FF00重击|r|n每次攻击有 20% 几率眩晕 2 秒并造成 25 额外伤害|n|n|cff80FF00复活|r|n使友军非传奇单位起死回生|n|cff8080FF冷却时间：|r40|n|cff8080FF法力消耗：|r103|n|n|cff80FF00祝福|r|n增加一名盟友的 6 点护甲，生命恢复速度提高 20 马力/秒|n|cff8080FF冷却时间：|r8|n|cff8080FF法力消耗：|r50|n|n|cff80FF00护甲光环|r|n增加300范围内友军4点护甲"
+[h03D]
+Name="游侠大厅"
+Hotkey=R
+Tip="升级到游侠大厅 [|cffffcc00R|r]"
+Ubertip="|cffFFFF80火车： |cffFFFF00游侠|n|cffFFFF80升级：|cffFFFF001|n|n|cffFFAC00游侠：|r|n|cffFFFF80攻击：|r穿刺 (|cffFFFF00425|r rng,|cffFFFF00 50|r dps)|n|cffFFFF80盔甲：|r光 (|cffFFFF003|r)|n|cffFFFF80生命值：|cffFFFF00500|r|n|cffFFFF80能力：|r|n-多重射击（|cffFFFF003 个目标|r）|n-闪避 (|cffFFFF0015%|r)|n|n|cffFF0000你必须先关闭单位生产才能升级！|r"
+[h03E]
+Name="亚马逊大厅"
+Hotkey=R
+Tip="升级到亚马逊大厅 [|cffffcc00R|r]"
+Ubertip="|cffFF8204传奇建筑|r|n|cffFFFF80火车：|cffFFFF00亚马逊|n|n|cffFFAC00亚马逊:|r|n|cffFFFF80攻击：|r穿刺 (|cffFFFF00460|r rng,|cffFFFF00 100|r dps)|n|cffFFFF80盔甲：|r光 (|cffFFFF005|r)|n|cffFFFF80生命值：|cffFFFF00900|r|n|cffFFFF80能力：|r|n-免疫|n-传奇法术抗性 (|cffFFFF0070%|r)|n-多重射击（|cffFFFF007 个目标|r）|n-闪避 (|cffFFFF0025%|r)|n|n|cffFF0000你必须先关闭单位生产才能升级！|r"
+[h03F]
+Name="长老殿"
+Hotkey=R
+Tip="升级至长老殿 [|cffffcc00R|r]"
+Ubertip="|cffFFFF80火车：|cffFFFF00剑圣长老|n|n|cffFFAC00长老剑圣：|r|n|cffFFFF80攻击：|r普通（|cffFFFF00近战|r，|cffFFFF00 90|r dps）|n|cffFFFF80盔甲：|r重型 (|cffFFFF0010|r)|n|cffFFFF80生命值：|cffFFFF00750|r|n|cffFFFF80能力：|r|n-暴击 (|cffFFFF0030%, 3x|r)|n-闪避 (|cffFFFF0020%|r)|n-反馈（|cffFFFF0025 法力|r）|n-法术抗性 (|cffFFFF0025%|r)|n|n|cffFF0000你必须先关闭单位生产才能升级！|r"
+[h021]
+Name="鱼人村"
+Hotkey=R
+Tip="升级到鱼人村 [|cffffcc00R|r]"
+Ubertip="|cffFFFF80火车： |cffFFFF00鱼人冠军|n|cffFFFF80升级：|cffFFFF001|n|n|cffFFAC00鱼人冠军：|r|n|cffFFFF00同时训练两个鱼人|r|n|cffFFFF80攻击：|r普通（|cffFFFF00近战|r，|cffFFFF00 36|r dps）|n|cffFFFF80盔甲：|r无装甲 (|cffFFFF006|r)|n|cffFFFF80生命值：|cffFFFF00520|r|n|cffFFFF80能力：|r|n-分裂攻击 (|cffFFFF0025%|r)|n-闪避 (|cffFFFF008%|r)|n-重击（|cffFFFF0015%，25dmg，2 秒|r）|n-暴击 (|cffFFFF0010%, x2|r)|n|n|cffFF0000你必须先关闭单位生产才能升级！|r"
+[h01P]
+Name="头骨堆"
+Hotkey=F
+Tip="建造骷髅堆 [|cffffcc00F|r]"
+Ubertip="|cffFFFF80升级：|cffFFFF001|r|n|n|cffFFFF80能力：|cffFFFF00复活|r|n从一具随机尸体中复活一个骷髅。|n提升更大骷髅的几率：5%|n|n|cffFFFF80冷却时间：|cffFFFF00 12 |r秒"
+[h020]
+Name="鱼人营地"
+Hotkey=Q
+Tip="建造鱼人营地 [|cffffcc00Q|r]"
+Ubertip="|cffFFFF80火车：|cffFFFF00鱼人战士|n|cffFFFF80升级：|cffFFFF002|n|n|cffFFAC00鱼人战士：|r|n|cffFFFF00同时训练两个鱼人|r|n|cffFFFF80攻击：|r普通（|cffFFFF00近战|r，|cffFFFF00 24|r dps）|n|cffFFFF80盔甲：|r无装甲 (|cffFFFF004|r)|n|cffFFFF80生命值：|cffFFFF00325|r|n|cffFFFF80能力：|r|n-暴击 (|cffFFFF0010%, x2|r)|n|n|cffFF0000你必须先关闭单位生产才能升级！|r"
+[h01O]
+Name="灵魂炮塔"
+Hotkey=Y
+Tip="建造灵魂炮塔 [|cffffcc00Y|r]"
+Ubertip="|cffFFAC00基地防御|r：|n这是保护关键位置的塔。|n|n|cffFFFF80攻击类型：|cffFFFF00混乱|n|cffFFFF80范围：|cffFFFF00 800|n|cffFFFF80平均DPS：|cffFFFF00 75|r|n|n|cffFFFF80能力：|r|n-灵魂窃取（|cffFFFF005% 几率|r）|n-虚弱的灵魂（|cffFFFF00-3 护甲|r）"
+[h01N]
+Name="地穴"
+Hotkey=E
+Tip="建造地穴 [|cffffcc00E|r]"
+Ubertip="|cffFFFF80火车：|cffFFFF00吸血鬼|n|cffFFFF80升级：|cffFFFF001|n|n|cffFFAC00吸血鬼：|r|n|cffFFFF80攻击：|r穿刺 (|cffFFFF00近战|r,|cffFFFF00 35|r dps)|n|cffFFFF80盔甲：|r英雄 (|cffFFFF003|r)|n|cffFFFF80生命值：|cffFFFF00425|r|n|cffFFFF80能力：|r|n- 培养小吸血鬼|n-吸血鬼光环 (|cffFFFF0030%|r)|n-吸血鬼攻击 (|cffFFFF0070%|r)"
+[h01M]
+Name="橡皮擦（1级）"
+Hotkey=D
+Tip="构建橡皮擦（1 级）[|cffffcc00D|r]"
+Ubertip="|cffFF8204传奇建筑|r|n|cffFFFF80升级：|cffFFFF002|r|n|n|cffFFFF80能力：|cffFFFF00擦除|r|n杀死 90% 属于敌方且具有相同类型的单位。|n|n|cffFFFF80冷却时间：|cffFFFF00 50 |r秒 |cffFFFF00-10|r每次升级秒。"
+[h01L]
+Name="闹鬼的矿井"
+Hotkey=R
+Tip="建造闹鬼的矿井 [|cffffcc00R|r]"
+Ubertip="|cffFFFF80火车： |cffFFFF00女妖|n|n|cffFFAC00女妖：|r|n|cffFFFF80攻击：|r魔法 (|cffFFFF00350|r rng,|cffFFFF00 48|r dps)|n|cffFFFF80盔甲：|r神圣的 (|cffFFFF002|r)|n|cffFFFF80生命值：|cffFFFF00310|r|n|cffFFFF80能力：|r|n-恐惧光环 (|cffFFFF00-15% 伤害|r)|n-星界锁链（|cffFFFF0030% 减速|r）"
+[h01K]
+Name="白骨神殿"
+Hotkey=W
+Tip="建造白骨神殿 [|cffffcc00W|r]"
+Ubertip="|cffFFFF80火车： |cffFFFF00死灵法师|n|cffFFFF80升级：|cffFFFF002|n|n|cffFFAC00死灵法师：|r|n|cffFFFF80攻击：|r魔法 (|cffFFFF00380|r rng,|cffFFFF00 30|r dps)|n|cffFFFF80盔甲：|r无装甲 (|cffFFFF001|r)|n|cffFFFF80生命值：|cffFFFF00300|r|n|cffFFFF80能力：|r|n- 复活死者"
+[h01J]
+Name="永恒的远古"
+Hotkey=R
+Tip="打造永恒古树 [|cffffcc00R|r]"
+Ubertip="|cffFF8204传奇建筑|r|n|cffFFFF80火车： |cffFFFF00古代守护者|n|n|cffFFAC00古代守护者 |r|n|cffFFFF80攻击：|r混乱 (|cffFFFF00550|r rng|r,|cffFFFF00 69|r dps)|n|cffFFFF80盔甲：|r中等 (|cffFFFF005|r)|n|cffFFFF80生命值：|cffFFFF001000|r|n|cffFFFF80能力：|r|n-树精芽|n-虚体|n-自然光环 (|cffFFFF0010-15hp/sec|r)|n|n|cffFF0000你必须先关闭单位生产才能升级！|r"
+[h01I]
+Name="小恶魔牢笼"
+Hotkey=Q
+Tip="建造小恶魔牢笼 [|cffffcc00Q|r]"
+Ubertip="|cffFFFF80火车：|cffFFFF00色狼|n|cffFFFF80升级：|cffFFFF001|n|n|cffFFAC00色狼：|r|n|cffFFFF80攻击：|r正常 (|cffFFFF00275|r rng,|cffFFFF00 20|r dps)|n|cffFFFF80盔甲：|r光 (|cffFFFF003|r)|n|cffFFFF80生命值：|cffFFFF00250|r"
+[h029]
+Name="战士大厅"
+Hotkey=Q
+Tip="建造战士大厅 [|cffffcc00Q|r]"
+Ubertip="|cffFFFF80火车：|cffFFFF00咕噜|n|cffFFFF80升级：|cffFFFF002|n|n|cffFFAC00咕噜声：|r|n|cffFFFF80攻击：|r普通（|cffFFFF00近战|r，|cffFFFF00 18|r dps）|n|cffFFFF80盔甲：|r重 (|cffFFFF004|r)|n|cffFFFF80生命值：|cffFFFF00325|r"
+[h01X]
+Name="橡皮擦（3级）"
+Hotkey=R
+Tip="升级到橡皮擦（3 级）[|cffffcc00R|r]"
+Ubertip="|cffFF8204传奇建筑|r|n|n|cffFFFF80能力：|cffFFFF00擦除|r|n击杀 90% 属于敌方且类型相同的单位|n|n|cffFFFF80冷却时间：|cffFFFF00 50 |r秒 |cffFFFF00-10|r每次升级秒。"
+[h028]
+Name="巨石"
+Hotkey=S
+Tip="构建单体 [|cffffcc00S|r]"
+Ubertip="|cffFFFF80火车： |cffFFFF00山地巨人|n|n|cffFFAC00山巨人 |r|n|cffFFFF80攻击：|r普通（|cffFFFF00近战|r，|cffFFFF00 83|r dps）|n|cffFFFF80盔甲：|r强化 (|cffFFFF008|r)|n|cffFFFF80生命值：|cffFFFF001050|r|n|cffFFFF80能力：|r|n- 抓树|n-嘲讽|n-硬化皮肤|n-抗性皮肤|n-粉碎 (|cffFFFF0030%, 200dmg, 175 AoE|r)"
+[h01W]
+Name="橡皮擦（2级）"
+Hotkey=R
+Tip="升级到橡皮擦（2 级）[|cffffcc00R|r]"
+Ubertip="|cffFF8204传奇建筑|r|n|cffFFFF80升级：|cffFFFF001|r|n|n|cffFFFF80能力：|cffFFFF00擦除|r|n击杀 90% 属于敌方且类型相同的单位|n|n|cffFFFF80冷却时间：|cffFFFF00 50 |r秒 |cffFFFF00-10|r每次升级秒。"
+[h027]
+Name="翡翠龙栖"
+Hotkey=A
+Tip="建造翡翠龙巢 [|cffffcc00A|r]"
+Ubertip="|cffFFFF80火车： |cffFFFF00翡翠龙|n|n|cffFFAC00翡翠龙 |r|n|cffFFFF80攻击：|r混乱 (|cffFFFF00250|r rng|r,|cffFFFF00 46|r dps)|n|cffFFFF80盔甲：|r重 (|cffFFFF004|r)|n|cffFFFF80生命值：|cffFFFF00700|r|n|cffFFFF80能力：|r|n-溅|n-再生"
+[h01V]
+Name="小吸血鬼"
+Hotkey=F
+Tip=训练 [|cffffcc00F|r] 步兵
+Ubertip="近战单位弱。"
+[h026]
+Name="大恶魔牢笼"
+Hotkey=R
+Tip="升级到大恶魔牢笼 [|cffffcc00R|r]"
+Ubertip="|cffFFFF80火车：|cffFFFF00羽毛恶魔|n|n|cffFFAC00羽毛恶魔：|r|n|cffFFFF80攻击：|r正常 (|cffFFFF00310|r rng,|cffFFFF00 57|r dps)|n|cffFFFF80盔甲：|r光 (|cffFFFF004|r)|n|cffFFFF80生命值：|cffFFFF00750|r|n|cffFFFF80能力：|r|n-弹跳攻击（|cffFFFF002 个目标|r）|n-羽毛光环 (|cffFFFF0035%|r)|n|n|cffFF0000你必须先关闭单位生产才能升级！|r"
+[h01U]
+Name="吸血鬼"
+Hotkey=Q
+Tip="火车吸血鬼"
+Ubertip="|n|cffFFFF80攻击：|r穿刺 (|cffFFFF00近战|r,|cffFFFF00 35|r dps)|n|cffFFFF80盔甲：|r英雄 (|cffFFFF003|r)|n|cffFFFF80生命值：|cffFFFF00425|r|n|cffFFFF80能力：|r|n|n|cff80FF00培养小吸血鬼|r|n每当吸血鬼杀死一个活着的单位时，它都会从中产生一个小型吸血鬼。|n|n|cff80FF00吸血鬼光环|r|n900 范围内的友军近战单位获得 30% 生命偷取|n|n|cff80FF00吸血鬼袭击|r|n恢复 70% 的攻击伤害"
+[h025]
+Name="血之泉"
+Hotkey=R
+Tip="建造鲜血之泉 [|cffffcc00R|r]"
+Ubertip="|cffFFFF80火车：|cffFFFF00血魔|n|n|cffFFAC00血魔：|r|n|cffFFFF80攻击：|r混乱（|cffFFFF00近战|r，|cffFFFF00 45|r dps）|n|cffFFFF80盔甲：|r不同 (|cffFFFF006|r)|n|cffFFFF80生命值：|cffFFFF00570|r|n|cffFFFF80能力：|r|n- 混乱的存在"
+[h01T]
+Name="屠宰场"
+Hotkey=A
+Tip="建造屠宰场 [|cffffcc00A|r]"
+Ubertip="|cffFFFF80火车：|cffFFFF00血肉傀儡|n|n|cffFFAC00血肉傀儡:|r|n|cffFFFF80攻击：|r围攻 (|cffFFFF00近战|r,|cffFFFF00 78|r dps)|n|cffFFFF80盔甲：|r中等 (|cffFFFF009|r)|n|cffFFFF80生命值：|cffFFFF001200|r|n|cffFFFF80能力：|r|n-拆除 (|cffFFFF00x1.5|r)|n-粉碎 (|cffFFFF0035%, 125 dmg|r)"
+[h024]
+Name="大熊巢穴"
+Hotkey=R
+Tip="建造大熊巢穴 [|cffffcc00R|r]"
+Ubertip="|cffFFFF80火车：|cffFFFF00大熊|n|n|cffFFAC00大熊|r|n|cffFFFF80攻击：|r普通 (|cffFFFF00近战|r,|cffFFFF00 57|r dps)|n|cffFFFF80盔甲：|r无装甲 (|cffFFFF008|r)|n|cffFFFF80生命值：|cffFFFF001100|r|n|cffFFFF80能力：|r|n- 狂暴之怒|n-分裂 (|cffFFFF0035%|r)|n-暴击 (|cffFFFF0030%, 2x|r)|n-重击 (|cffFFFF0030%, 1 秒, 65dmg|r)|n|n|cffFF0000你必须先关闭单位生产才能升级！|r"
+[h01S]
+Name="龙墓"
+Hotkey=S
+Tip="建造龙墓 [|cffffcc00S|r]"
+Ubertip="|cffFFFF80火车：|cffFFFF00冰霜巨龙|n|n|cffFFAC00冰霜巨龙：|r|n|cffFFFF80攻击：|r正常 (|cffFFFF00325|r rng,|cffFFFF00 77|r dps)|n|cffFFFF80盔甲：|r光 (|cffFFFF004|r)|n|cffFFFF80生命值：|cffFFFF001200|r|n|cffFFFF80能力：|r|n-飞行|n- 溅射伤害|n- 寒冷的攻击"
+[h023]
+Name="森林熊的巢穴"
+Hotkey=R
+Tip="建造森林熊巢穴[|cffffcc00R|r]"
+Ubertip="|cffFFFF80火车： |cffFFFF00森林熊|n|cffFFFF80升级：|cffFFFF001|n|n|cffFFAC00大熊|r|n|cffFFFF80攻击：|r普通（|cffFFFF00近战|r，|cffFFFF00 48|r dps）|n|cffFFFF80盔甲：|r无装甲 (|cffFFFF005|r)|n|cffFFFF80生命值：|cffFFFF00680|r|n|cffFFFF80能力：|r|n- 狂暴之怒|n-分裂 (|cffFFFF0030%|r)|n-暴击 (|cffFFFF0020%, 2x|r)|n-重击 (|cffFFFF0015%, 0.5 秒, 50dmg|r)"
+[h01R]
+Name="腐烂的干草车"
+Hotkey=Q
+Tip="建造腐烂的干草车 [|cffffcc00Q|r]"
+Ubertip="|cffFFFF80火车：|cffFFFF00僵尸|n|cffFFFF80升级：|cffFFFF002|n|n|cffFFAC00僵尸：|r|n|cffFFFF80攻击：|r混乱（|cffFFFF00近战|r，|cffFFFF00 15|r dps）|n|cffFFFF80盔甲：|r中等 (|cffFFFF003|r)|n|cffFFFF80生命值：|cffFFFF00265|r|n|cffFFFF80能力：|r|n-Rot (|cffFFFF008 dps|r)"
+[h022]
+Name="鱼人要塞"
+Hotkey=R
+Tip="升级到鱼人要塞 [|cffffcc00R|r]"
+Ubertip="|cffFFFF80火车：|cffFFFF00鱼人刺客|n|n|cffFFAC00鱼人刺客：|r|n|cffFFFF00同时训练两个鱼人|r|n|cffFFFF80攻击：|r普通（|cffFFFF00近战|r，|cffFFFF00 50|r dps）|n|cffFFFF80盔甲：|r无装甲 (|cffFFFF008|r)|n|cffFFFF80生命值：|cffFFFF00750|r|n|cffFFFF80能力：|r|n-重击（|cffFFFF0015%，25dmg，2 秒|r）|n-暴击 (|cffFFFF0020%, 2x|r)|n-闪避 (|cffFFFF0015%|r)|n-反馈（|cffFFFF0025 法力|r）|n-分裂攻击 (|cffFFFF0030%|r)|n|n|cffFF0000你必须先关闭单位生产才能升级！|r"
+[h01Q]
+Name="腐朽圣殿"
+Hotkey=X
+Tip="建造腐朽圣殿 [|cffffcc00X|r]"
+Ubertip="|cffFFFF80能力：|cffFFFF00衰变|r|n每秒对所有非机械敌方单位造成 8 点伤害。不堆叠，所以不要建造两次！"
+[h02A]
+Name="大风古树"
+Hotkey=F
+Tip="建造烈风古树 [|cffffcc00F|r]"
+Ubertip="|cffFFFF80能力：|cffFFFF00旋风|r|n在随机敌方单位附近召唤一个游荡的龙卷风，降低 25% 的移动和攻击速度，并在 250 范围内造成 30 dps，持续 7 秒。建筑物受到 50% 的伤害。|n|n|cffFFFF80冷却时间：|cffFFFF00 14 |r秒"
+[h01Y]
+Name="蛇神庙"
+Hotkey=E
+Tip="建造蛇神庙 [|cffffcc00E|r]"
+Ubertip="|cffFFFF80火车：|cffFFFF00飞蛇|n|n|cffFFAC00翼蛇：|r|n|cffFFFF80攻击：|r魔法 (|cffFFFF00420|r rng,|cffFFFF00 33|r dps)|n|cffFFFF80盔甲：|r光 (|cffFFFF002|r)|n|cffFFFF80生命值：|cffFFFF00450|r|n|cffFFFF80能力：|r|n-飞行|n-弹跳攻击（|cffFFFF003 个目标|r）"
+[h01Z]
+Name="娜迦泉"
+Hotkey=S
+Tip="建造娜迦泉 [|cffffcc00S|r]"
+Ubertip="|cffFFFF80火车：|cffFFFF00娜迦海妖|n|n|cffFFAC00娜迦海妖：|r|n|cffFFFF80攻击：|r混乱 (|cffFFFF00400|r rng,|cffFFFF00 50|r dps)|n|cffFFFF80盔甲：|r无装甲 (|cffFFFF003|r)|n|cffFFFF80生命值：|cffFFFF00550|r|n|cffFFFF80能力：|r|n-清除|n-召唤龙虾"
+[h02H]
+Name="巨魔小屋"
+Hotkey=E
+Tip="建造巨魔小屋 [|cffffcc00E|r]"
+Ubertip="|cffFFFF80火车： |cffFFFF00巨魔狂战士|n|cffFFFF80升级：|cffFFFF001|n|n|cffFFAC00巨魔狂战士：|r|n|cffFFFF80攻击：|r正常 (|cffFFFF00300|r rng,|cffFFFF00 30|r dps)|n|cffFFFF80盔甲：|r中等 (|cffFFFF003|r)|n|cffFFFF80生命值：|cffFFFF00450|r|n|cffFFFF80能力：|r|n-狂暴 (|cffFFFF00+200%|r)"
+[h02I]
+Name="兽人攻城工厂"
+Hotkey=S
+Tip="建造兽人攻城工厂 [|cffffcc00S|r]"
+Ubertip="|cffFFFF80火车： |cffFFFF00弹射器|n|n|cffFFAC00弹射器：|r|n|cffFFFF80攻击：|r围城 (|cffFFFF001000|r rng,|cffFFFF00 27|r dps)|n|cffFFFF80盔甲：|r中等 (|cffFFFF005|r)|n|cffFFFF80生命值：|cffFFFF00475|r|n|cffFFFF80能力：|r|n- 不能攻击空气|n- 溅射伤害|n-燃烧弹药 (|cffFFFF0048dps|r)"
+[h02F]
+Name="蜘蛛蛋巢：骨头"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h02G]
+Name="蜘蛛蛋巢：木头"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h02D]
+Name="古树"
+Hotkey=X
+Tip="建造古树 [|cffffcc00X|r]"
+Ubertip="|cffFF8204传奇建筑|r|n|n|cffFFFF80能力：|cffFFFF00狂野变身|r|n将非机械敌人转化为敌对的森林生物（转化几率：33%）。|n|cffFFFF80冷却时间：|cffFFFF00 50 |r秒"
+[h02E]
+Name="蜘蛛蛋袋：网"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h02B]
+Name="萨满帐篷"
+Hotkey=W
+Tip="建造萨满帐篷 [|cffffcc00W|r]"
+Ubertip="|cffFFFF80火车： |cffFFFF00萨满|n|n|cffFFAC00萨满：|r|n|cffFFFF80攻击：|r魔法 (|cffFFFF00350|r rng,|cffFFFF00 26|r dps)|n|cffFFFF80盔甲：|r无装甲 (|cffFFFF001|r)|n|cffFFFF80生命值：|cffFFFF00340|r|n|cffFFFF80能力：|r|n-萨满的增益（|cffFFFF00+4护甲，+30%dmg|r）"
+[h02C]
+Name="远古守护者"
+Hotkey=D
+Tip="打造远古守护者 [|cffffcc00D|r]"
+Ubertip="|cffFFFF80能力：|cffFFFF00驱逐|r|n使敌方单位变得虚无缥缈。灵体生物不能攻击，但他们可以施法，而某些施法在他们身上的效果会更大。|n|n|cffFFFF80冷却时间：|cffFFFF00 12 |r秒"
+[h04M]
+Name="暗影远古"
+Hotkey=R
+Tip="升级为暗影远古 [|cffffcc00R|r]"
+Ubertip="|cffFFFF80火车：|cffFFFF00暗影龙|n|n|cffFFAC00暗影幼龙：|r|n|cffFFFF80攻击：|r魔法 (|cffFFFF00400|r rng,|cffFFFF00 45|r dps)|n|cffFFFF80盔甲：|r中等 (|cffFFFF004|r)|n|cffFFFF80生命值：|cffFFFF00700|r|n|cffFFFF80能力：|r|n-飞行|n-虚空球 (|cffFFFF00+25dmg|r)|n|n|cffFF0000你必须先关闭单位生产才能升级！|r"
+[h04L]
+Name="虚空传送门"
+Hotkey=W
+Tip="建造虚空传送门 [|cffffcc00W|r]"
+Ubertip="|cffFFFF80火车：|cffFFFF00虚空行者|n|cffFFFF80升级：|cffFFFF001|n|n|cffFFAC00虚空行者：|r|n|cffFFFF80攻击：|r魔法 (|cffFFFF00380|r rng,|cffFFFF00 25|r dps)|n|cffFFFF80盔甲：|r光 (|cffFFFF002|r)|n|cffFFFF80生命值：|cffFFFF00375|r|n|cffFFFF80能力：|r|n-焚化 (|cffFFFF00+5 伤害/击中|r)|n-腐蚀光环（|cffFFFF00-2 护甲|r）"
+[h050]
+Name="柱子毁了"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h04O]
+Name="下界远古"
+Hotkey=E
+Tip="建造虚空远古 [|cffffcc00E|r]"
+Ubertip="|cffFFFF80火车：|cffFFFF00下界幼龙|n|cffFFFF80升级：|cffFFFF001|n|n|cffFFAC00下界幼龙：|r|n|cffFFFF80攻击：|r魔法 (|cffFFFF00400|r rng,|cffFFFF00 26|r dps)|n|cffFFFF80盔甲：|r中等 (|cffFFFF002|r)|n|cffFFFF80生命值：|cffFFFF00425|r|n|cffFFFF80能力：|r|n-飞行|n-虚空球 (|cffFFFF00+20dmg|r)"
+[h04N]
+Name="深渊之门"
+Hotkey=R
+Tip="升级到深渊之门 [|cffffcc00R|r]"
+Ubertip="|cffFFFF80火车：|cffFFFF00虚空守护者|n|n|cffFFAC00虚空守护者：|r|n|cffFFFF80攻击：|r魔法 (|cffFFFF00400|r rng,|cffFFFF00 50|r dps)|n|cffFFFF80盔甲：|r光 (|cffFFFF004|r)|n|cffFFFF80生命值：|cffFFFF00740|r|n|cffFFFF80能力：|r|n-焚化 (|cffFFFF00+5 伤害/击中|r)|n-腐蚀光环（|cffFFFF00-4 护甲|r）|n|n|cffFF0000你必须先关闭单位生产才能升级！|r"
+[h04Q]
+Name="地狱之门"
+Hotkey=A
+Tip="建造地狱之门 [|cffffcc00A|r]"
+Ubertip="|cffFFFF80火车：|cffFFFF00地狱机器|n|cffFFFF80升级：|cffFFFF001|n|n|cffFFAC00地狱机器：|r|n|cffFFFF80攻击：|r围城 (|cffFFFF00600|r rng,|cffFFFF00 45|r dps)|n|cffFFFF80盔甲：|r重 (|cffFFFF003|r)|n|cffFFFF80生命值：|cffFFFF00600|r|n|cffFFFF80能力：|r|n- 不能攻击空气|n-引爆 (|cffFFFF00100dmg|r)"
+[h052]
+Name="闪电（阿里）"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h051]
+Name="元素生成器"
+Hotkey=P
+Tip="|cffFFD900选择元素领域|r"
+Ubertip="大自然的力量本身被召唤为他们的主人而战。自然种族专注于强大的单位和治疗增益，比普通种族稍微贵一些，但更好。"
+[h04P]
+Name="地狱之门"
+Hotkey=R
+Tip="升级到地狱之门 [|cffffcc00R|r]"
+Ubertip="|cffFFFF80火车：|cffFFFF00地狱火坦克|n|n|cffFFAC00地狱火坦克：|r|n|cffFFFF80攻击：|r围城 (|cffFFFF00600|r rng,|cffFFFF00 57|r dps)|n|cffFFFF80盔甲：|r重 (|cffFFFF004|r)|n|cffFFFF80生命值：|cffFFFF00850|r|n|cffFFFF80能力：|r|n- 不能攻击空气|n-线路损坏 (|cffFFFF0050dmg|r)|n-引爆 (|cffFFFF00150dmg|r)|n|n|cffFF0000你必须先关闭单位生产才能升级！|r"
+[h054]
+Name="墓地"
+Hotkey=R
+Tip="升级到墓地 [|cffffcc00R|r]"
+Ubertip="|cffFFFF80火车：|cffFFFF00吸血鬼领主|n|n|cffFFAC00吸血鬼领主：|r|n|cffFFFF80攻击：|r穿刺 (|cffFFFF00近战|r,|cffFFFF00 80|r dps)|n|cffFFFF80盔甲：|r英雄 (|cffFFFF004|r)|n|cffFFFF80生命值：|cffFFFF00650|r|n|cffFFFF80能力：|r|n- 培养吸血鬼|n-吸血鬼光环 (|cffFFFF0030%|r)|n-吸血鬼攻击 (|cffFFFF00100%|r)|n|n|cffFF0000你必须先关闭单位生产才能升级！|r"
+[h04S]
+Name="地狱犬神殿"
+Hotkey=R
+Tip="建造地狱犬神殿 [|cffffcc00R|r]"
+Ubertip="|cffFFFF80火车： |cffFFFF00地狱犬|n|n|cffFFAC00地狱犬：|r|n|cffFFFF80攻击：|r穿刺 (|cffFFFF00近战|r,|cffFFFF00 37|r dps)|n|cffFFFF80盔甲：|r中等 (|cffFFFF007|r)|n|cffFFFF80生命值：|cffFFFF00650|r|n|cffFFFF80能力：|r|n-缓慢光环 (|cffFFFF00-12%|r)"
+[h04R]
+Name="被遗忘者"
+Hotkey=F
+Tip="建造被遗忘的 [|cffffcc00F|r]"
+Ubertip="|cffFFFF80能力：|cffFFFF00触手监狱|r|n在一个随机敌方单位周围制造 5 条攻击性触手。抬起的触手的致命一击较少。|n|n|cffFFFF80冷却时间：|cffFFFF00 12 |r秒"
+[h053]
+Name="闪电（科鲁斯库斯）"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h056]
+Name="骷髅神殿"
+Hotkey=R
+Tip="升级至骷髅神殿 [|cffffcc00R|r]"
+Ubertip="|cffFFFF80能力：|cffFFFF00复活死者（更大）|r|n从随机尸体中复活一具骷髅。|n提升更大骷髅的几率：30%|n|n|cffFFFF80冷却时间：|cffFFFF00 14 |r秒"
+[h04U]
+Name="恶魔雕像"
+Hotkey=S
+Tip="建造恶魔雕像 [|cffffcc00S|r]"
+Ubertip="|cffFFFF80火车： |cffFFFF00梦魇|n|n|cffFFAC00梦魇：|r|n|cffFFFF80攻击：|r混乱 (|cffFFFF00530|r rng,|cffFFFF00 64|r dps)|n|cffFFFF80盔甲：|r中等 (|cffFFFF004|r)|n|cffFFFF80生命值：|cffFFFF001000|r|n|cffFFFF80能力：|r|n- 溅射伤害|n-超车 (|cffFFFF0010%|r)"
+[h055]
+Name="死灵高堡"
+Hotkey=R
+Tip="升级至死灵高堡 [|cffffcc00R|r]"
+Ubertip="|cffFF8204传奇建筑|r|n|cffFFFF80火车：|cffFFFF00巫妖王|n|n|cffFFAC00巫妖王：|r|n|cffFFFF80攻击：|r魔法 (|cffFFFF00500|r rng,|cffFFFF00 66|r dps)|n|cffFFFF80盔甲：|r无装甲 (|cffFFFF006|r)|n|cffFFFF80生命值：|cffFFFF00950|r|n|cffFFFF80能力：|r|n-传奇法术抗性 (|cffFFFF0070%|r)|n-免疫|n- 衰减攻击|n- 复活死者|n- 浸出生活|n|n|cffFF0000你必须先关闭单位生产才能升级！|r"
+[h04T]
+Name="腐败之眼"
+Hotkey=X
+Tip="建造腐败之眼 [|cffffcc00X|r]"
+Ubertip="|cffFF8204传奇建筑|r|n|n|cffFFFF80能力：|cffFFFF00腐败的目光|r|n使所有敌方单位的护甲降低 6。"
+[h04W]
+Name="腐化的战争古树"
+Hotkey=R
+Tip="升级为堕落的战争古树 [|cffffcc00R|r]"
+Ubertip="|cffFFFF80火车：|cffFFFF00腐化的树精|n|cffFFFF80升级：|cffFFFF001|n|n|cffFFAC00腐化的树精：|r|n|cffFFFF80攻击：|r普通（|cffFFFF00近战|r，|cffFFFF00 38|r dps）|n|cffFFFF80盔甲：|r重型 (|cffFFFF005|r)|n|cffFFFF80生命值：|cffFFFF00640|r|n|cffFFFF80能力：|r|n-分裂攻击 (|cffFFFF0025%|r)|n-暴击 (|cffFFFF0010%, x2|r)|n-削弱攻击（|cffFFFF00-55% 伤害|r）|n|n|cffFF0000你必须先关闭单位生产才能升级！|r"
+[h058]
+Name="裂缝（Coruscus）"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h04V]
+Name="腐化的战斗古树"
+Hotkey=Q
+Tip="建造堕落的战斗古树 [|cffffcc00Q|r]"
+Ubertip="|cffFFFF80火车：|cffFFFF00腐败的耳鼻喉科|n|cffFFFF80升级：|cffFFFF002|n|n|cffFFAC00腐化的耳鼻喉科：|r|n|cffFFFF80攻击：|r普通（|cffFFFF00近战|r，|cffFFFF00 19|r dps）|n|cffFFFF80盔甲：|r重 (|cffFFFF004|r)|n|cffFFFF80生命值：|cffFFFF00320|r|n|cffFFFF80能力：|r|n-削弱攻击（|cffFFFF00-27% 伤害|r）"
+[h057]
+Name="火柱（Coruscus）"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h04Y]
+Name="柱子"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h059]
+Name="正义的金色神殿"
+Hotkey=X
+Tip="建造金色正义神殿 [|cffffcc00X|r]"
+Ubertip="|cffFFFF80能力：|cffFFFF00优雅的光环|r|n每当一个友军单位死亡时，该单位有 16% 的几率（每个后续神殿 +4%）复活。无法复活传奇和机械单位并复活两次。"
+[h04X]
+Name="救援假人"
+Hotkey=P
+Tip=训练 [|cffffcc00P|r] 牧师
+Ubertip="支持施法者。最初可以施放治疗，增加受伤单位的生命。还可以学习驱散魔法和内火。|n|n|cffffcc00攻击陆地和空中单位。|r"
+Casterupgradename=Initiate, Adept, Master
+Casterupgradetip="- Heal","- Heal|n- Dispel Magic","- Heal|n- Dispel Magic|n- Inner Fire"
+[h04Z]
+Name="受污染的农场"
+Hotkey=R
+Tip="升级到污染农场 [|cffffcc00R|r]"
+Ubertip="|cffFFFF80火车：|cffFFFF00窒息的僵尸|n|cffFFFF80升级：|cffFFFF001|n|n|cffFFAC00窒息僵尸：|r|n|cffFFFF80攻击：|r混乱（|cffFFFF00近战|r，|cffFFFF00 27|r dps）|n|cffFFFF80盔甲：|r中等 (|cffFFFF005|r)|n|cffFFFF80生命值：|cffFFFF00500|r|n|cffFFFF80能力：|r|n-瘟疫攻击 (|cffFFFF008 dps|r)|n-Rot (|cffFFFF0012 dps|r)|n|n|cffFF0000你必须先关闭单位生产才能升级！|r"
+[h05A]
+Name="HandOfJusticeDummy"
+Hotkey=P
+Tip=训练 [|cffffcc00P|r] 牧师
+Ubertip="支持施法者。最初可以施放治疗，增加受伤单位的生命。还可以学习驱散魔法和内火。|n|n|cffffcc00攻击陆地和空中单位。|r"
+Casterupgradename=Initiate, Adept, Master
+Casterupgradetip="- Heal","- Heal|n- Dispel Magic","- Heal|n- Dispel Magic|n- Inner Fire"
+[h05B]
+Name="龙卷风（中庭）"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h05C]
+Name="神射手"
+Hotkey=Q
+Tip="训练神射手"
+Ubertip="|n|cffFFFF80攻击：|r穿刺 (|cffFFFF00800|r rng,|cffFFFF00 69|r dps)|n|cffFFFF80攻击：|r穿刺 (|cffFFFF00500|r rng,|cffFFFF00 28|r dps)|n|cffFFFF80盔甲：|r中等 (|cffFFFF001|r)|n|cffFFFF80生命值：|cffFFFF00450|r|n|cffFFFF80能力：|r|n|n|cff80FF00仅空气|r|n该单位无法攻击地面敌人|n|n|cff80FF00空中暴击|r|n每次攻击有 40% 几率击中空中单位，造成 3 倍正常伤害"
+[h05D]
+Name="枪手大厅"
+Hotkey=E
+Tip="升级到枪手大厅 [|cffffcc00E|r]"
+Ubertip="|cffFFFF80火车：|cffFFFF00重炮手|n|n|cffFFAC00重炮手：|r|n|cffFFFF80攻击：|r穿刺 (|cffFFFF00550|r rng,|cffFFFF00 47|r dps)|n|cffFFFF80盔甲：|r中等 (|cffFFFF003|r)|n|cffFFFF80生命值：|cffFFFF00500|r|n|cffFFFF80能力：|r|n- 不能攻击空气|n- 溅射伤害|n-暴击 (|cffFFFF0020%, 2x|r)|n|n|cffFF0000你必须先关闭单位生产才能升级！|r"
+[h05E]
+Name="捕手小屋"
+Hotkey=R
+Tip="升级到捕兽人小屋 [|cffffcc00R|r]"
+Ubertip="|cffFFFF80火车： |cffFFFF00巨魔捕手|n|n|cffFFAC00巨魔捕手：|r|n|cffFFFF80攻击：|r正常 (|cffFFFF00325|r rng,|cffFFFF00 38|r dps)|n|cffFFFF80盔甲：|r中等 (|cffFFFF004|r)|n|cffFFFF80生命值：|cffFFFF00600|r|n|cffFFFF80能力：|r|n-圈套|n-狂暴 (|cffFFFF00+200%|r)|n|n|cffFF0000你必须先关闭单位生产才能升级！|r"
+[h05F]
+Name="勒奈喷泉"
+Hotkey=R
+Tip="升级到 Lernaean 喷泉 [|cffffcc00R|r]"
+Ubertip="|cffFF8204传奇建筑|r|n|cffFFFF80火车： |cffFFFF00古代九头蛇|n|n|cffFFAC00古代九头蛇：|r|n|cffFFFF80攻击：|r混乱 (|cffFFFF00500|r rng,|cffFFFF00 123|r dps)|n|cffFFFF80盔甲：|r中等 (|cffFFFF008|r)|n|cffFFFF80生命值：|cffFFFF001500|r|n|cffFFFF80能力：|r|n-传奇法术抗性 (|cffFFFF0070%|r)|n-免疫|n- 三重攻击|n-分裂|n|n|cffFF0000你必须先关闭单位生产才能升级！|r"
+[h05G]
+Name="英雄雕像"
+Hotkey=X
+Tip="建造英雄雕像 [|cffffcc00X|r]"
+Ubertip="|cffFFFF80能力：|cffFFFF00呼吁武装|r|n属于雕像所有者的每 5 个（每个后续雕像 -1）产卵结构将产生额外的单位。"
+[h05H]
+Name="吸血鬼领主"
+Hotkey=Q
+Tip="训练吸血鬼领主"
+Ubertip="|n|cffFFFF80攻击：|r穿刺 (|cffFFFF00近战|r,|cffFFFF00 80|r dps)|n|cffFFFF80盔甲：|r英雄 (|cffFFFF004|r)|n|cffFFFF80生命值：|cffFFFF00650|r|n|cffFFFF80能力：|r|n|n|cff80FF00培养吸血鬼|r|n每当吸血鬼领主杀死一个活着的单位时，它都会从中产生一个吸血鬼。|n|n|cff80FF00吸血鬼光环|r|n900 范围内的友军近战单位获得 30% 生命偷取|n|n|cff80FF00吸血鬼袭击|r|n恢复 100% 的攻击伤害"
+[h05I]
+Name="魔法塔遗迹"
+Hotkey=Y
+Tip="建造魔法塔遗迹 [|cffffcc00Y|r]"
+Ubertip="|cffFFFF80能力：|cffFFFF00混沌之现|r|n向随机敌方单位发送混沌力量。|n这些力量对目标单位具有以下效果之一：|n- 单位爆炸（没有赏金）|n-单位死亡（你获得赏金）|n-单位变身为为你而战的突变体|n- 单位是六边形|n-单位受到500点伤害|n-单位被治愈，获得 400 额外生命值 (50%) 和 +25 伤害 (50%)|n-单位被眩晕6秒并受到200点法术伤害|n- 什么都没有发生|n|n|cffFFFF80冷却时间：|cffFFFF00 10 |r秒"
+[h05J]
+Name="飞机厂"
+Hotkey=Q
+Tip="建飞机厂[|cffffcc00Q|r]"
+Ubertip="|cffFFFF80火车： |cffFFFF00旋翼飞行器|n|cffFFFF80升级：|cffFFFF001|n|n|cffFFAC00旋翼飞行器：|r|n|cffFFFF80攻击：|r穿刺 (|cffFFFF00500|r rng,|cffFFFF00 25|r dps)|n|cffFFFF80攻击：|r穿刺 (|cffFFFF00500|r rng,|cffFFFF00 20|r dps)|n|cffFFFF80盔甲：|r光 (|cffFFFF004|r)|n|cffFFFF80生命值：|cffFFFF00300|r|n|cffFFFF80能力：|r|n-飞行|n- 不能攻击地面|n-重击（|cffFFFF0030%，40dmg，1.2 秒|r）"
+[h05K]
+Name="龙卷风（丘脑）"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h05L]
+Name="能量塔"
+Hotkey=Y
+Tip="建造能量塔 [|cffffcc00Y|r]"
+Ubertip="|cffFFAC00基地防御|r：|n这是保护关键位置的塔。|n|n|cffFFFF80攻击类型：|cffFFFF00混乱|n|cffFFFF80范围：|cffFFFF00 600|n|cffFFFF80平均DPS：|cffFFFF00 65|r|n|n|cffFFFF80能力：|r|n-弹跳攻击（|cffFFFF003 个目标|r）|n-能量爆发"
+[h03N]
+Name="大地元素"
+Ubertip="|n|cffFFFF80攻击：|r围攻 (|cffFFFF00近战|r,|cffFFFF00 86|r dps)|n|cffFFFF80盔甲：|r无装甲 (|cffFFFF008|r)|n|cffFFFF80生命值：|cffFFFF001300|r|n|cffFFFF80能力：|r|n|n|cff80FF00粉碎|r|n在 100 范围内造成 120 点伤害|n|n|cff80FF00拼写阻力|r|n有 15% 法术抗性。"
+Hotkey=Q
+Tip="训练大地元素"
+[h03M]
+Name="污秽粮仓"
+Hotkey=R
+Tip="升级到污秽粮仓 [|cffffcc00R|r]"
+Ubertip="|cffFFFF80火车： |cffFFFF00瘟疫携带者|n|n|cffFFAC00瘟疫携带者：|r|n|cffFFFF80攻击：|r混乱（|cffFFFF00近战|r，|cffFFFF00 52|r dps）|n|cffFFFF80盔甲：|r中等 (|cffFFFF006|r)|n|cffFFFF80生命值：|cffFFFF001050|r|n|cffFFFF80能力：|r|n-瘟疫攻击 (|cffFFFF0015 dps|r)|n-瘟疫云 (|cffFFFF0020 dps|r)|n|n|cffFF0000你必须先关闭单位生产才能升级！|r"
+[h03L]
+Name="大冰霜发射器"
+Hotkey=R
+Tip="升级到大冰霜发射器 [|cffffcc00R|r]"
+Ubertip="|cffFFFF80能力：|cffFFFF00大寒冰箭|r|n向随机敌方建筑发射巨大的冰霜箭。撞击时，这支箭会冻结 250 范围内的所有物体，持续 12 秒，并造成 100 点混乱伤害。|n|n|cffFFFF80冷却时间：|cffFFFF00 15 |r秒"
+[h03K]
+Name="冰巨魔小屋"
+Hotkey=E
+Tip="建造冰巨魔小屋 [|cffffcc00E|r]"
+Ubertip="|cffFFFF80Trains: |cffFFFF00冰巨魔暗影牧师|n|cffFFFF80升级：|cffFFFF001|n|n|cffFFAC00冰巨魔暗牧：|r|n|cffFFFF80攻击：|r魔法 (|cffFFFF00350|r rng,|cffFFFF00 27|r dps)|n|cffFFFF80盔甲：|r光 (|cffFFFF001|r)|n|cffFFFF80生命值：|cffFFFF00350|r|n|cffFFFF80能力：|r|n-冰霜攻击 (|cffFFFF0010%, 7sec, 15dps|r)|n-冰霜护甲 (|cffFFFF00+3.5|r)"
+[h043]
+Name="霜爪"
+Hotkey=R
+Tip="升级为霜爪 [|cffffcc00R|r]"
+Ubertip="|cffFFFF80火车： |cffFFFF00古旺迪古|n|n|cffFFAC00古代万迪古：|r|n|cffFFFF80攻击：|r穿刺 (|cffFFFF00近战|r,|cffFFFF00 78|r dps)|n|cffFFFF80盔甲：|r中等 (|cffFFFF007|r)|n|cffFFFF80生命值：|cffFFFF001400|r|n|cffFFFF80能力：|r|n-粉碎 (|cffFFFF0030%, 140 dmg|r)|n-嚎叫（|cffFFFF00-4 护甲，-30% 伤害|r）|n|n|cffFF0000你必须先关闭单位生产才能升级！|r"
+[h03R]
+Name="高等闪电元素"
+Ubertip="|n|cffFFFF80攻击：|r魔法 (|cffFFFF00400|r rng|r,|cffFFFF00 61|r dps)|n|cffFFFF80盔甲：|r重 (|cffFFFF008|r)|n|cffFFFF80生命值：|cffFFFF00800|r|n|cffFFFF80能力：|r|n|n|cff80FF00闪电攻击|r|n对最多 5 个目标造成 40 点额外伤害|n|n|cff80FF00闪电盾|r|n30% 几率电击近战攻击者 1 秒。"
+Hotkey=Q
+Tip="训练高等闪电元素"
+[h042]
+Name="全球闪电之柱"
+Hotkey=E
+Tip="建造地球闪电之柱 [|cffffcc00E|r]"
+Ubertip="|cffFFFF80火车： |cffFFFF00闪电元素：|n|cffFFFF80升级：|cffFFFF001|n|n|cffFFAC00闪电元素：|r|n|cffFFFF80攻击：|r魔法 (|cffFFFF00350|r rng|r,|cffFFFF00 25|r dps)|n|cffFFFF80盔甲：|r重 (|cffFFFF004|r)|n|cffFFFF80生命值：|cffFFFF00450|r|n|cffFFFF80能力：|r|n-闪电攻击 (|cffFFFF0025dmg, 3targets|r)|n-闪电之盾 (|cffFFFF0015%|r)|n|n|cffFF0000你必须先关闭单位生产才能升级！|r"
+[h03Q]
+Name="冰塔"
+Hotkey=Y
+Tip="建造冰塔 [|cffffcc00Y|r]"
+Ubertip="|cffFFAC00基地防御|r：|n这是保护关键位置的塔。|n|n|cffFFFF80攻击类型：|cffFFFF00普通的|n|cffFFFF80范围：|cffFFFF00 700|n|cffFFFF80平均DPS：|cffFFFF00 73|r|n|n|cffFFFF80能力：|r|n- 溅射伤害|n- 寒冷的攻击"
+[h041]
+Name="大裂隙"
+Hotkey=R
+Tip="升级到大裂隙 [|cffffcc00R|r]"
+Ubertip="|cffFFFF80火车： |cffFFFF00大地元素：|n|n|cffFFAC00大地元素：|r|n|cffFFFF80攻击：|r围攻 (|cffFFFF00近战|r,|cffFFFF00 83|r dps)|n|cffFFFF80盔甲：|r无装甲 (|cffFFFF008|r)|n|cffFFFF80生命值：|cffFFFF001300|r|n|cffFFFF80能力：|r|n-粉碎 (|cffFFFF0025%, 120dmg|r)|n-法术抗性|n|n|cffFF0000你必须先关闭单位生产才能升级！|r"
+[h03P]
+Name="闪电元素"
+Ubertip="|n|cffFFFF80攻击：|r魔法 (|cffFFFF00350|r rng|r,|cffFFFF00 28r dps)|n|cffFFFF80盔甲：|r重 (|cffFFFF004|r)|n|cffFFFF80生命值：|cffFFFF00450|r|n|cffFFFF80能力：|r|n|n|cff80FF00闪电攻击|r|n对最多 3 个目标造成 25 点额外伤害|n|cff80FF00闪电盾|r|n有 15% 的几率电击近战攻击者 1 秒。"
+Hotkey=Q
+Tip="训练闪电元素"
+[h040]
+Name="磊"
+Hotkey=A
+Tip="建造岩石桩 [|cffffcc00A|r]"
+Ubertip="|cffFFFF80火车： |cffFFFF00地元素：|n|cffFFFF80升级：|cffFFFF001|n|n|cffFFAC00大地元素：|r|n|cffFFFF80攻击：|r围攻 (|cffFFFF00近战|r,|cffFFFF00 50|r dps)|n|cffFFFF80盔甲：|r无装甲(|cffFFFF005|r)|n|cffFFFF80生命值：|cffFFFF00650|r|n|cffFFFF80能力：|r|n-粉碎 (|cffFFFF0020%, 60dmg|r)"
+[h03O]
+Name="世界冰柜"
+Hotkey=X
+Tip="建造世界冰柜 [|cffffcc00X|r]"
+Ubertip="|cffFF8204传奇建筑|r|n|n|cffFFFF80能力：|cffFFFF00冬季来临|r|n发射三个冰霜球，向随机方向飞行，攻击随机敌人造成 60 dps 法术伤害，冻结随机空中和地面单位。|n|n|cffFFFF80冷却时间：|cffFFFF00 40 |r秒"
+[h047]
+Name="凉拌蘑菇"
+Hotkey=F
+Tip="建造冷冻蘑菇 [|cffffcc00F|r]"
+Ubertip="|cffFFFF80能力：|cffFFFF00冷冻爆破|r|n冻结一个空中单位，使其昏迷 4 秒并造成 200 点伤害。|n|n|cffFFFF80冷却时间：|cffFFFF00 7 |r秒"
+[h03V]
+Name="元素大师"
+Ubertip="|n|cffFFFF80攻击：|r混乱 (|cffFFFF00500|r rng|r,|cffFFFF00 65 dps)|n|cffFFFF80盔甲：|r正常 (|cffFFFF006|r)|n|cffFFFF80生命值：|cffFFFF00950|r|n|cffFFFF80能力：|r|n|n|cff80FF00传奇法术抗性|r|n对该单位造成的法术伤害降低 70%|n|n|cff80FF00元素知识|r|n每 7 秒施放一次随机伤害法术。"
+Hotkey=Q
+Tip="培养元素大师"
+[h046]
+Name="烈焰祭坛"
+Hotkey=R
+Tip="升级至烈焰祭坛 [|cffffcc00R|r]"
+Ubertip="|cffFFFF80火车： |cffFFFF00高等火元素：|n|cffFFFF80升级：|cffFFFF001|n|n|cffFFAC00高等火元素：|r|n|cffFFFF80攻击：|r混乱 (|cffFFFF00450|r rng|r,|cffFFFF00 65|r dps)|n|cffFFFF80盔甲：|r正常 (|cffFFFF005|r)|n|cffFFFF80生命值：|cffFFFF00850|r|n|cffFFFF80能力：|r|n-火焰吐息 (|cffFFFF0020%, 100dmg|r)|n|n-燃烧光环（对附近敌人造成 30 dmg\s）|n|n|cffFF0000你必须先关闭单位生产才能升级！|r"
+[h03U]
+Name="冰屋"
+Hotkey=W
+Tip="建造冰屋 [|cffffcc00W|r]"
+Ubertip="|cffFFFF80火车： |cffFFFF00Hrimthrusa|n|n|cffFFAC00Hrimthrusa:|r|n|cffFFFF80攻击：|r穿刺 (|cffFFFF00380|r rng,|cffFFFF00 33|r dps)|n|cffFFFF80盔甲：|r重 (|cffFFFF002|r)|n|cffFFFF80生命值：|cffFFFF00325|r|n|cffFFFF80能力：|r|n-冰霜攻击 (|cffFFFF005%, 7sec, 15dps|r)"
+[h045]
+Name="火祭坛"
+Hotkey=R
+Tip="建造火祭坛 [|cffffcc00R|r]"
+Ubertip="|cffFFFF80火车： |cffFFFF00火元素：|n|cffFFFF80升级：|cffFFFF001|n|n|cffFFAC00火元素：|r|n|cffFFFF80攻击：|r混乱 (|cffFFFF00400|r rng|r,|cffFFFF00 38|r dps)|n|cffFFFF80盔甲：|r正常 (|cffFFFF003|r)|n|cffFFFF80生命值：|cffFFFF00465"
+[h03T]
+Name="冰爪"
+Hotkey=R
+Tip="打造冰爪 [|cffffcc00R|r]"
+Ubertip="|cffFFFF80火车： |cffFFFF00万迪古|n|cffFFFF80升级：|cffFFFF001|n|n|cffFFAC00万迪古:|r|n|cffFFFF80攻击：|r穿刺 (|cffFFFF00近战|r,|cffFFFF00 46|r dps)|n|cffFFFF80盔甲：|r中等 (|cffFFFF005|r)|n|cffFFFF80生命值：|cffFFFF00800|r|n|cffFFFF80能力：|r|n-粉碎 (|cffFFFF0025%, 80 dmg|r)"
+[h044]
+Name="圣埃尔莫之火皮拉尔"
+Hotkey=E
+Tip="升级为圣埃尔莫之火之皮拉尔 [|cffffcc00E|r]"
+Ubertip="|cffFFFF80火车： |cffFFFF00高等闪电元素：|n|n|cffFFAC00高等闪电元素：|r|n|cffFFFF80攻击：|r魔法 (|cffFFFF00400|r rng|r,|cffFFFF00 61|r dps)|n|cffFFFF80盔甲：|r重 (|cffFFFF008|r)|n|cffFFFF80生命值：|cffFFFF00800|r|n|cffFFFF80能力：|r|n-闪电攻击 (|cffFFFF0040dmg, 5targets|r)|n-闪电之盾 (|cffFFFF0030%|r)|n|n|cffFF0000你必须先关闭单位生产才能升级！|r"
+[h03S]
+Name="水晶皇宫"
+Hotkey=S
+Tip="建造水晶宫 [|cffffcc00S|r]"
+Ubertip="|cffFFFF80火车：|cffFFFF00冰雪女王|n|n|cffFFAC00冰雪女王:|r|n|cffFFFF80攻击：|r混乱 (|cffFFFF00450|r rng,|cffFFFF00 56|r dps)|n|cffFFFF80盔甲：|r无装甲 (|cffFFFF004|r)|n|cffFFFF80生命值：|cffFFFF00650|r|n|cffFFFF80能力：|r|n-冰霜新星|n-冰霜攻击 (|cffFFFF0020%, 12.5sec, 30dps|r)|n-水晶光环 (|cffFFFF00+0.5 法力/秒|r)"
+[h03Z]
+Name="魔法喷泉"
+Hotkey=R
+Tip="升级到魔法喷泉 [|cffffcc00R|r]"
+Ubertip="|cffFFFF80火车： |cffFFFF00高等水元素：|n|n|cffFFAC00高等水元素：|r|n|cffFFFF80攻击：|r正常 (|cffFFFF00450|r rng|r,|cffFFFF00 50|r dps)|n|cffFFFF80盔甲：|r中等 (|cffFFFF007|r)|n|cffFFFF80生命值：|cffFFFF00650|r|n|cffFFFF80能力：|r|n-伟大的魔术师 (|cffFFFF0020%|r)|n-液态 (|cffFFFF0040%|r)|n|n|cffFF0000你必须先关闭单位生产才能升级！|r"
+[h03Y]
+Name="金色喷泉"
+Hotkey=R
+Tip="建造金色喷泉 [|cffffcc00R|r]"
+Ubertip="|cffFFFF80火车： |cffFFFF00水元素：|n|cffFFFF80升级：|cffFFFF001|n|n|cffFFAC00水元素：|r|n|cffFFFF80攻击：|r正常 (|cffFFFF00400|r rng|r,|cffFFFF00 28|r dps)|n|cffFFFF80盔甲：|r中等 (|cffFFFF003|r)|n|cffFFFF80生命值：|cffFFFF00300|r|n|cffFFFF80能力：|r|n-液态 (|cffFFFF0025%|r)|n-魔术师|n|n|cffFF0000你必须先关闭单位生产才能升级！|r"
+[h03X]
+Name="泉水"
+Hotkey=W
+Tip="建造水泉[|cffffcc00W|r]"
+Ubertip="|cffFFFF80火车： |cffFFFF00小水元素：|n|cffFFFF80升级：|cffFFFF001|n|n|cffFFAC00次等水元素：|r|n|cffFFFF80攻击：1|r正常 (|cffFFFF0030|r rng|r,|cffFFFF00 28|r dps)|n|cffFFFF80攻击：2|r穿刺 (|cffFFFF00300|r rng|r,|cffFFFF00 18|r dps)|n|cffFFFF80盔甲：|r中等 (|cffFFFF001|r)|n|cffFFFF80生命值：|cffFFFF00300|r|n|cffFFFF80能力：|r|n-液态 (|cffFFFF0060%|r)"
+[h049]
+Name="白雪皑皑的岩石"
+Hotkey=Q
+Tip="建造雪岩 [|cffffcc00Q|r]"
+Ubertip="|cffFFFF80火车：|cffFFFF00霜狼|n|cffFFFF80升级：|cffFFFF002|n|n|cffFFAC00霜狼：|r|n|cffFFFF80攻击：|r普通（|cffFFFF00近战|r，|cffFFFF00 20|r dps）|n|cffFFFF80盔甲：|r无装甲 (|cffFFFF004|r)|n|cffFFFF80生命值：|cffFFFF00280|r|n|cffFFFF80能力：|r|n-暴击 (|cffFFFF0010%, 1.5x|r)"
+[h048]
+Name="冰霜发射器"
+Hotkey=D
+Tip="构建 Frost Launcher [|cffffcc00D|r]"
+Ubertip="|cffFFFF80升级：|cffFFFF001|r|n|n|cffFFFF80能力：|cffFFFF00冰霜螺栓|r|n向随机敌方建筑发射冰霜箭矢。撞击时，此螺栓会冻结结构 10 秒并对其造成 50 点混乱伤害。|n|n|cffFFFF80冷却时间：|cffFFFF00 12 |r秒"
+[h03W]
+Name="冰川"
+Hotkey=R
+Tip="升级到冰川 [|cffffcc00R|r]"
+Ubertip="|cffFFFF80火车： |cffFFFF00Magnataur|n|n|cffFFAC00巨龙：|r|n|cffFFFF80攻击：|r普通（|cffFFFF00近战|r，|cffFFFF00 90|r dps）|n|cffFFFF80盔甲：|r无装甲 (|cffFFFF008|r)|n|cffFFFF80生命值：|cffFFFF001200|r|n|cffFFFF80能力：|r|n-践踏（|cffFFFF003.5 秒，75 伤害|r）|n-暴击 (|cffFFFF0015%, 3x|r)|n-分裂攻击 (|cffFFFF0040%|r)|n|n|cffFF0000你必须先关闭单位生产才能升级！|r"
+[h04B]
+Name="死灵神殿"
+Hotkey=R
+Tip="升级到死灵神殿 [|cffffcc00R|r]"
+Ubertip="|cffFFFF80火车：|cffFFFF00强大的死灵法师|n|cffFFFF80升级：|cffFFFF001|n|n|cffFFAC00强大的死灵法师：|r|n|cffFFFF80攻击：|r魔法 (|cffFFFF00400|r rng,|cffFFFF00 46|r dps)|n|cffFFFF80盔甲：|r无装甲 (|cffFFFF003|r)|n|cffFFFF80生命值：|cffFFFF00550|r|n|cffFFFF80能力：|r|n-腐肉群 (|cffFFFF0025%, 70dmg|r)|n- 复活大死神|n|n|cffFF0000你必须先关闭单位生产才能升级！|r"
+[h04C]
+Name="风流纪念碑"
+Hotkey=R
+Tip="升级为风流纪念碑[|cffffcc00R|r]"
+Ubertip="|cffFFFF80火车： |cffFFFF00风元素：|n|cffFFFF80升级：|cffFFFF001|n|n|cffFFAC00风元素：|r|n|cffFFFF80攻击：1|r穿刺 (|cffFFFF00450|r rng|r,|cffFFFF00 43|r dps)|n|cffFFFF80攻击：2|r穿刺 (|cffFFFF00450|r rng|r,|cffFFFF00 37|r dps)|n|cffFFFF80盔甲：|r无装甲 (|cffFFFF004|r)|n|cffFFFF80生命值：|cffFFFF00675|r|n|cffFFFF80能力：|r能力：|r|n-飞行|n-大风（|cffFFFF0020% 缓慢（空气）|r）|n|n|cffFF0000你必须先关闭单位生产才能升级！|r"
+[h04A]
+Name="困风"
+Hotkey=Q
+Tip="建造受困狂风 [|cffffcc00Q|r]"
+Ubertip="|cffFFFF80火车： |cffFFFF00次级风元素：|n|cffFFFF80升级：|cffFFFF001|n|n|cffFFAC00次级风元素：|r|n|cffFFFF80攻击：|r穿刺 (|cffFFFF00400|r rng|r,|cffFFFF00 30|r dps)|n|cffFFFF80盔甲：|r无装甲 (|cffFFFF002|r)|n|cffFFFF80生命值：|cffFFFF00325|r|n|cffFFFF80能力：|r|n-飞行|n- 不能攻击地面"
+[h04F]
+Name="冰冷的岩石"
+Hotkey=R
+Tip="升级到冰冷的岩石 [|cffffcc00R|r]"
+Ubertip="|cffFFFF80火车： |cffFFFF00北极熊|n|cffFFFF80升级：|cffFFFF001|n|n|cffFFAC00北极熊：|r|n|cffFFFF80攻击：|r普通 (|cffFFFF00近战|r,|cffFFFF00 43|r dps)|n|cffFFFF80盔甲：|r无装甲 (|cffFFFF005|r)|n|cffFFFF80生命值：|cffFFFF00550|r|n|cffFFFF80能力：|r|n-分裂攻击 (|cffFFFF0027%|r)|n-暴击 (|cffFFFF0010%, x2|r)|n|n|cffFF0000你必须先关闭单位生产才能升级！|r"
+[h04G]
+Name="冻结假人"
+Hotkey=P
+Tip=训练 [|cffffcc00P|r] 牧师
+Ubertip="支持施法者。最初可以施放治疗，增加受伤单位的生命。还可以学习驱散魔法和内火。|n|n|cffffcc00攻击陆地和空中单位。|r"
+Casterupgradename=Initiate, Adept, Master
+Casterupgradetip="- Heal","- Heal|n- Dispel Magic","- Heal|n- Dispel Magic|n- Inner Fire"
+[h04D]
+Name="和风纪念馆"
+Hotkey=R
+Tip="升级到 Zephyros 纪念馆 [|cffffcc00R|r]"
+Ubertip="|cffFFFF80火车： |cffFFFF00高等风元素：|n|n|cffFFAC00高等风元素：|r|n|cffFFFF80攻击：|r穿刺 (|cffFFFF00450|r rng|r,|cffFFFF00 75|r dps)|n|cffFFFF80盔甲：|r中等 (|cffFFFF009|r)|n|cffFFFF80生命值：|cffFFFF001350|r|n|cffFFFF80能力：|r能力：|r|n-飞行|n-大风（|cffFFFF0035% 缓慢（空气）|r）|n|n|cffFF0000你必须先关闭单位生产才能升级！|r"
+[h04E]
+Name="长老知识之塔"
+Hotkey=R
+Tip="升级到上古知识之塔 [|cffffcc00R|r]"
+Ubertip="|cffFF8204传奇建筑|r|n|cffFFFF80火车： |cffFFFF00元素大师：|n|n|cffFFAC00元素大师：|r|n|cffFFFF80攻击：|r混乱 (|cffFFFF00500|r rng|r,|cffFFFF00 65|r dps)|n|cffFFFF80盔甲：|r正常 (|cffFFFF006|r)|n|cffFFFF80生命值：|cffFFFF00950|r|n|cffFFFF80能力：|r|n-传奇法术抗性 (|cffFFFF0070%|r)|n- 元素知识|n|n|cffFF0000你必须先关闭单位生产才能升级！|r"
+[h04J]
+Name="恶魔雕像"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h04K]
+Name="痛苦之井"
+Hotkey=D
+Tip="建造痛苦之井 [|cffffcc00D|r]"
+Ubertip="|cffFFFF80能力：|cffFFFF00疼痛之触|r|n对一个随机敌方单位造成 180 点法术伤害（消耗 4 MP）。|n|n|cffFFFF80冷却时间：|cffFFFF00 2 |r秒"
+[h04H]
+Name="AdvancedFreezeDummy"
+Hotkey=P
+Tip=训练 [|cffffcc00P|r] 牧师
+Ubertip="支持施法者。最初可以施放治疗，增加受伤单位的生命。还可以学习驱散魔法和内火。|n|n|cffffcc00攻击陆地和空中单位。|r"
+Casterupgradename=Initiate, Adept, Master
+Casterupgradetip="- Heal","- Heal|n- Dispel Magic","- Heal|n- Dispel Magic|n- Inner Fire"
+[h04I]
+Name="梦魇"
+Hotkey=Q
+Tip="火车梦魇"
+Ubertip="|n|cffFFFF80攻击：|r混乱 (|cffFFFF00530|r rng,|cffFFFF00 70|r dps)|n|cffFFFF80盔甲：|r中等 (|cffFFFF004|r)|n|cffFFFF80生命值：|cffFFFF001000|r|n|cffFFFF80能力：|r|n|n|cff80FF00飞溅伤害|r|n该单位的攻击命中目标周围 180 范围内的所有单位。距离目标越远的单位受到的伤害越少|n|n|cff80FF00超车|r|n每次攻击有 7% 几率控制被攻击单位"
+[h06V]
+Name="核弹假人"
+Hotkey=P
+Tip=训练 [|cffffcc00P|r] 牧师
+Ubertip="支持施法者。最初可以施放治疗，增加受伤单位的生命。还可以学习驱散魔法和内火。|n|n|cffffcc00攻击陆地和空中单位。|r"
+Casterupgradename=Initiate, Adept, Master
+Casterupgradetip="- Heal","- Heal|n- Dispel Magic","- Heal|n- Dispel Magic|n- Inner Fire"
+[h06W]
+Name="核爆炸假人"
+Hotkey=P
+Tip=训练 [|cffffcc00P|r] 牧师
+Ubertip="支持施法者。最初可以施放治疗，增加受伤单位的生命。还可以学习驱散魔法和内火。|n|n|cffffcc00攻击陆地和空中单位。|r"
+Casterupgradename=Initiate, Adept, Master
+Casterupgradetip="- Heal","- Heal|n- Dispel Magic","- Heal|n- Dispel Magic|n- Inner Fire"
+[h06X]
+Name="核弹启动假人"
+Hotkey=P
+Tip=训练 [|cffffcc00P|r] 牧师
+Ubertip="支持施法者。最初可以施放治疗，增加受伤单位的生命。还可以学习驱散魔法和内火。|n|n|cffffcc00攻击陆地和空中单位。|r"
+Casterupgradename=Initiate, Adept, Master
+Casterupgradetip="- Heal","- Heal|n- Dispel Magic","- Heal|n- Dispel Magic|n- Inner Fire"
+[h06Y]
+Name="龙鹰传送门"
+Hotkey=R
+Tip="建造龙鹰传送门 [|cffffcc00R|r]"
+Ubertip="|cffFFFF80火车：|cffFFFF00龙鹰骑士|n|n|cffFFAC00龙鹰骑士：|r|n|cffFFFF80攻击：|r穿刺 (|cffFFFF00450|r rng,|cffFFFF00 46|r dps)|n|cffFFFF80盔甲：|r重 (|cffFFFF003|r)|n|cffFFFF80生命值：|cffFFFF00650|r|n|cffFFFF80能力：|r|n-飞行|n-太阳罢工"
+[h073]
+Name="艾露恩的灯笼"
+Hotkey=Y
+Tip="建造艾露恩的灯笼 [|cffffcc00Y|r]"
+Ubertip="|cffFFAC00基地防御|r：|n这是保护关键位置的塔。|n|n|cffFFFF80攻击类型：|cffFFFF00魔法|n|cffFFFF80范围：|cffFFFF00 850|n|cffFFFF80平均DPS：|cffFFFF00 87|r|n|n|cffFFFF80能力：|r|n-反馈（|cffFFFF0035 法力|r）"
+[h06R]
+Name="旋翼机"
+Hotkey=Q
+Tip="火车旋翼机"
+Ubertip="|n|cffFFFF80攻击：|r穿刺 (|cffFFFF00500|r rng,|cffFFFF00 45|r dps)|n|cffFFFF80攻击：|r围城 (|cffFFFF00100|r rng,|cffFFFF00 36|r dps)|n|cffFFFF80盔甲：|r光 (|cffFFFF006|r)|n|cffFFFF80生命值：|cffFFFF00625|r|n|cffFFFF80能力：|r|n|n|cff80FF00飞行|r|n这个单位在飞|n|n|cff80FF00仅空气|r|n该单位无法攻击地面敌人|n|n|cff80FF00重击|r|n每次攻击有 50% 几率眩晕 1.2 秒并造成 60 额外伤害"
+[h06S]
+Name="重型坦克"
+Hotkey=Q
+Tip="火车重型坦克"
+Ubertip="|n|cffFFFF80攻击：|r正常 (|cffFFFF00400|r rng,|cffFFFF00 62|r dps)|n|cffFFFF80盔甲：|r重型 (|cffFFFF0012|r)|n|cffFFFF80生命值：|cffFFFF00800|r|n|cffFFFF80能力：|r|n|n|cff80FF00仅限地面|r|n该单位无法攻击飞行的敌人|n|n|cff80FF00重型坦克装甲|r|n使对该单位造成的所有攻击伤害降低 24。不能将伤害降低到 5 以下。"
+[h06T]
+Name="轻型坦克"
+Hotkey=Q
+Tip="火车轻型坦克"
+Ubertip="|n|cffFFFF80攻击：|r正常 (|cffFFFF00375|r rng,|cffFFFF00 33|r dps)|n|cffFFFF80盔甲：|r重型 (|cffFFFF005|r)|n|cffFFFF80生命值：|cffFFFF00400|r|n|cffFFFF80能力：|r|n|n|cff80FF00仅限地面|r|n该单位无法攻击飞行的敌人|n|n|cff80FF00轻型坦克装甲|r|n使对该单位造成的所有攻击伤害降低 12。不能将伤害降低到 5 以下。"
+[h06U]
+Name="矿层"
+Hotkey=Q
+Tip="火车矿层"
+Ubertip="|n|cffFFFF80攻击：|r普通（|cffFFFF00近战|r，|cffFFFF00 42|r dps）|n|cffFFFF80盔甲：|r重 (|cffFFFF006|r)|n|cffFFFF80生命值：|cffFFFF00640|r|n|cffFFFF80能力：|r|n|n|cff80FF00轻型坦克装甲|r|n使对该单位造成的所有攻击伤害降低 12。不能将伤害降低到 5 以下。|n|n|cff80FF00埋我的|r|n埋下一个地雷，当敌人踩到它时会爆炸。对150范围内的敌人造成250点伤害，对300范围内的敌人造成125点伤害。被摧毁时爆炸（小范围伤害100）"
+[h070]
+Name="海尔夫攻城工厂"
+Hotkey=A
+Tip="建造Highelf攻城工厂[|cffffcc00A|r]"
+Ubertip="|cffFFFF80火车： |cffFFFF00Ballista|n|n|cffFFAC00弩炮：|r|n|cffFFFF80攻击：|r围城 (|cffFFFF00850|r rng,|cffFFFF00 31|r dps)|n|cffFFFF80盔甲：|r中等 (|cffFFFF003|r)|n|cffFFFF80生命值：|cffFFFF00500|r|n|cffFFFF80能力：|r|n- 不能攻击空气|n-线路损坏"
+[h06P]
+Name="机械制造商"
+Hotkey=P
+Tip="|cffFFD900选择机甲联盟|r"
+Ubertip="聪明的地精修补匠和机械师聚集在一起组建他们自己的军队！他们的单位有大量的溅射伤害和高护甲，但缺乏远程和魔法攻击。他们有一个弹跳攻击的好塔。"
+[h06Q]
+Name="旋翼飞行器"
+Hotkey=Q
+Tip="火车 旋翼飞行器"
+Ubertip="|n|cffFFFF80攻击：|r穿刺 (|cffFFFF00500|r rng,|cffFFFF00 25|r dps)|n|cffFFFF80攻击：|r穿刺 (|cffFFFF00500|r rng,|cffFFFF00 20|r dps)|n|cffFFFF80盔甲：|r光 (|cffFFFF004|r)|n|cffFFFF80生命值：|cffFFFF00300|r|n|cffFFFF80能力：|r|n|n|cff80FF00飞行|r|n这个单位在飞|n|n|cff80FF00仅空气|r|n该单位无法攻击地面敌人|n|n|cff80FF00重击|r|n每次攻击有 30% 几率眩晕 1.2 秒并造成 40 额外伤害"
+[h07L]
+Name="阴影公会"
+Hotkey=R
+Tip="升级到暗影公会 [|cffffcc00R|r]"
+Ubertip="|cffFFFF80火车：|cffFFFF00皇家刺客|n|n|cffFFAC00皇家刺客：|r|n|cffFFFF80攻击：|r穿刺 (|cffFFFF00近战|r,|cffFFFF00 60|r dps)|n|cffFFFF80盔甲：|r中等 (|cffFFFF002|r)|n|cffFFFF80生命值：|cffFFFF00575|r|n|cffFFFF80能力：|r|n-闪避 (|cffFFFF0025%|r)|n-反馈（|cffFFFF0060 法力，x2.2|r）|n-背刺 (|cffFFFF00300 伤害|r)|n|n|cffFF0000你必须先关闭单位生产才能升级！|r"
+[h07N]
+Name="烧焦的豪宅"
+Hotkey=R
+Tip="升级为焦化府邸 [|cffffcc00R|r]"
+Ubertip="|cffFFFF80火车：|cffFFFF00复仇的化身|n|n|cffFFAC00复仇的化身：|r|n|cffFFFF80攻击：|r魔法（|cffFFFF00近战|r，|cffFFFF00 77|r dps）|n|cffFFFF80盔甲：|r光 (|cffFFFF008|r)|n|cffFFFF80生命值：|cffFFFF00700|r|n|cffFFFF80能力：|r|n-法术减少|n-腐蚀攻击（|cffFFFF00-7 护甲|r）|n-闪避 (|cffFFFF0040%|r)|n-击杀治疗 (|cffFFFF0015%|r)|n-复仇 (|cffFFFF00350 伤害|r)|n|n|cffFF0000你必须先关闭单位生产才能升级！|r"
+[h07M]
+Name="阴影之家"
+Hotkey=E
+Tip="建造阴影之屋 [|cffffcc00E|r]"
+Ubertip="|cffFFFF80火车：|cffFFFF00刺客|n|cffFFFF80升级：|cffFFFF001|n|n|cffFFAC00刺客：|r|n|cffFFFF80攻击：|r穿刺 (|cffFFFF00近战|r,|cffFFFF00 30|r dps)|n|cffFFFF80盔甲：|r中等 (|cffFFFF001|r)|n|cffFFFF80生命值：|cffFFFF00375|r|n|cffFFFF80能力：|r|n-闪避 (|cffFFFF0015%|r)|n-反馈（|cffFFFF0040 法力，x1.7|r）|n-背刺 (|cffFFFF00150 伤害|r)"
+[h07H]
+Name="荒野方尖碑"
+Hotkey=F
+Tip="建造荒野方尖碑 [|cffffcc00F|r]"
+Ubertip="|cffFFFF80能力：|cffFFFF00荒野抵抗|r|n使一个友方随机单位获得荒野抗性，使其永久减少 40% 的法术伤害，并有 40% 的几率减少 40 点受到的攻击伤害。有额外几率瞄准尚未获得增益的单位。|n|n|cffFFFF80冷却时间：|cffFFFF00 9 |r秒"
+[h07I]
+Name="星陨方尖碑"
+Hotkey=X
+Tip="建造星陨方尖碑 [|cffffcc00X|r]"
+Ubertip="|cffFF8204传奇建筑|r|n|n|cffFFFF80能力：|cffFFFF00星陨|r|n星星从天而降，随机围绕一个敌方单位对其区域内的所有敌人造成伤害，持续 8 秒，击中时造成 120 点伤害。建筑物只受到这种伤害的 40%。|n|n|cffFFFF80冷却时间：|cffFFFF00 32 |r秒"
+[h07D]
+Name="月亮祭坛"
+Hotkey=R
+Tip="升级到月亮祭坛 [|cffffcc00R|r]"
+Ubertip="|cffFFFF80训练： |cffFFFF00贤者德鲁伊|n|n|cffFFAC00贤者德鲁伊：|r|n|cffFFFF80攻击：|r混乱 (|cffFFFF00375|r rng,|cffFFFF00 46|r dps)|n|cffFFFF80盔甲：|r无装甲 (|cffFFFF003|r)|n|cffFFFF80生命值：|cffFFFF00550|r|n|cffFFFF80能力：|r|n-质量纠缠 (|cffFFFF006sec, 35dps|r)|n|n|cffFF0000你必须先关闭单位生产才能升级！|r"
+[h07C]
+Name="血法师"
+Hotkey=
+Tip="火车向导"
+Ubertip="一个强大的高等精灵巫师，使用强大的魔法治愈朋友并禁用敌人。"
+Casterupgradename=
+Casterupgradetip=
+[h07B]
+Name="巫婆"
+Hotkey=Q
+Tip="火车女术士"
+Ubertip="|n|cffFFFF80攻击：|r魔法 (|cffFFFF00500|r rng,|cffFFFF00 27|r dps)|n|cffFFFF80盔甲：|r无装甲 (|cffFFFF002|r)|n|cffFFFF80生命值：|cffFFFF00550|r|n|cffFFFF80能力：|r|n|n|cff80FF00治疗波|r|n向一名盟友施放治疗波，最多可击中 2 个目标。治疗第一个目标 150 点生命值，每次弹跳减少 40%|n|cff8080FF冷却时间：|r8|n|cff8080FF法力消耗：|r50|n|n|cff80FF00链闪电|r|n每次攻击有 25% 的几率施放一道链光，最多可击中 3 个敌人，对第一个敌人造成 150 点伤害，每次弹跳减少 30%"
+Casterupgradename=
+Casterupgradetip=
+[h05Y]
+Name="风球"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h05Z]
+Name="咒语之书"
+Hotkey=F
+Tip="建造咒法之书 [|cffffcc00F|r]"
+Ubertip="|cffFFFF80能力：|cffFFFF00元素浩劫|r|n施放咒语之一：|n- 石尖刺：每个尖刺刺穿地面单位造成 100dmg 并眩晕 0.5 秒，飞行单位受到 50dmg 伤害。|n- 闪电风暴：每次闪电造成100dmg的飞行和眩晕0.5s，地面单位受到50dmg的伤害。|n|cffFFFF80持续时间：|cffFFFF00 6 秒|r秒。|n|cffFFFF80冷却时间：|cffFFFF00 16 |r 秒。"
+[h05W]
+Name="土地效应"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h069]
+Name="备件堆"
+Hotkey=F
+Tip="构建备件堆 [|cffffcc00F|r]"
+Ubertip="|cffFFFF80能力：|cffFFFF00组装 Gobbo 机械师|r|n每 12 秒组装一个 Gobbo 机械师，持续 30 秒，并发现可以修复的磨损建筑物和机械单元。"
+[h05X]
+Name="坦克厂"
+Hotkey=W
+Tip="建造坦克工厂 [|cffffcc00W|r]"
+Ubertip="|cffFFFF80火车： |cffFFFF00轻型坦克|n|cffFFFF80升级：|cffFFFF004|n|n|cffFFAC00轻型坦克：|r|n|cffFFFF80攻击：|r正常 (|cffFFFF00375|r rng,|cffFFFF00 33|r dps)|n|cffFFFF80盔甲：|r重型 (|cffFFFF005|r)|n|cffFFFF80生命值：|cffFFFF00400|r|n|cffFFFF80能力：|r|n- 不能攻击空气|n-轻型坦克装甲（|cffFFFF00-12 伤害|r）"
+[h05U]
+Name="木材厂"
+Hotkey=S
+Tip="建造木材厂 [|cffffcc00S|r]"
+Ubertip="|cffFFFF80火车：|cffFFFF00地精粉碎机|n|n|cffFFAC00地精粉碎机:|r|n|cffFFFF80攻击：|r刺穿 (|cffFFFF00近战|r,|cffFFFF00 56|r dps)|n|cffFFFF80盔甲：|r中等 (|cffFFFF009|r)|n|cffFFFF80生命值：|cffFFFF001000|r|n|cffFFFF80能力：|r|n- 诱导愤怒|n-引爆 (|cffFFFF0050dmg|r)|n-碎纸机攻击"
+[h066]
+Name="咒语之书"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h05V]
+Name="魔像工厂"
+Hotkey=A
+Tip="建造魔像工厂 [|cffffcc00A|r]"
+Ubertip="|cffFFFF80火车：|cffFFFF00铁傀儡|n|cffFFFF80升级：|cffFFFF001|n|n|cffFFAC00铁傀儡：|r|n|cffFFFF80攻击：|r英雄 (|cffFFFF00近战|r,|cffFFFF00 46|r dps)|n|cffFFFF80盔甲：|r中等 (|cffFFFF0012|r)|n|cffFFFF80生命值：|cffFFFF00525|r|n|cffFFFF80能力：|r|n-法术抗性 (|cffFFFF0030%|r)|n-粉碎 (|cffFFFF0025%, 60 dmg|r)|n-重击（|cffFFFF0015%，40dmg，2 秒|r）"
+[h067]
+Name="元素守卫塔"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h05S]
+Name="闪电球"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h064]
+Name="链接器"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h05T]
+Name="枪史密斯"
+Hotkey=R
+Tip="建造枪史密斯 [|cffffcc00R|r]"
+Ubertip="|cffFFFF80火车： |cffFFFF00火焰枪手|n|cffFFFF80升级：|cffFFFF001|n|n|cffFFAC00火焰枪手：|r|n|cffFFFF80攻击：|r混乱 (|cffFFFF0070|r rng,|cffFFFF00 37|r dps)|n|cffFFFF80盔甲：|r光 (|cffFFFF004|r)|n|cffFFFF80生命值：|cffFFFF00500|r|n|cffFFFF80能力：|r|n- 不能攻击空气|n-线路损坏"
+[h065]
+Name="元素方尖碑"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h05Q]
+Name="火球"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h062]
+Name="魔法扭曲者"
+Hotkey=S
+Tip="构建魔法扭曲器 [|cffffcc00S|r]"
+Ubertip="|cffFFFF80能力：|cffFFFF00魔法扭曲|r|n在敌人 uinit 附近制造魔法扭曲，大大降低其自然魔法抗性。 （-100%，冷却时间：10 秒）"
+[h05R]
+Name="红盾发生器"
+Hotkey=R
+Tip="升级到红盾发生器 [|cffffcc00R|r]"
+Ubertip="|cffFFFF80能力：|cffFFFF00大能量护盾|r|n为一个随机的友方单位提供能量护盾，使其护甲+4，并保护其免受大多数敌人的伤害。如果保护被破坏，单位将恢复 150 hp。|n|n|cffFFFF80冷却时间：|cffFFFF00 7 |r秒"
+[h063]
+Name="链接器"
+Hotkey=X
+Tip="构建链接器 [|cffffcc00X|r]"
+Ubertip="|cffFF8204传奇建筑|r|n|n|cffFFFF80能力：|cffFFFF00链接|r|n如果元素被杀死，链接器会给被杀者的灵魂一个与杀手链接的机会。元素之魂最多可对敌人造成最大生命值的 40% 的伤害。"
+[h05O]
+Name="丰蒂斯豪利时"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h060]
+Name="元素方尖碑"
+Hotkey=D
+Tip="构建元素方尖碑 [|cffffcc00D|r]"
+Ubertip="|cffFFFF80能力：|cffFFFF00附魔|r|n给予随机单位元素护盾：|n- 大地之盾：+7 护甲|n- 气盾：+20% IAS\MS，20% 伤害抗性|n- 火盾：燃烧随机敌人（15dps，80 AoE）|n|n|cffFFFF80冷却时间：|cffFFFF00 10 |r秒"
+[h05P]
+Name="火神"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h061]
+Name="元素守卫塔"
+Hotkey=Z
+Tip="建造元素守卫塔 [|cffffcc00Z|r]"
+Ubertip="|cffFFAC00基地防御|r：|n这是保护关键位置的塔。|n|n|cffFFFF80攻击类型：|cffFFFF00混乱|n|cffFFFF80范围：|cffFFFF00 850|n|cffFFFF80平均DPS：|cffFFFF00 59|r|n|n|cffFFFF80能力：|r|n元素性质（为构建的结构提供 3 个随机能力中的 1 个）：|n- 放电：每 0.5 秒对一个随机敌方单位造成 30 点伤害。|n-巨石：有 35% 的几率使敌方单位昏迷 3 秒并造成 100 额外伤害|n-献祭：在 350 范围内造成 30 伤害/秒"
+[h05M]
+Name="拆除实验室"
+Hotkey=E
+Tip="建造拆除实验室 [|cffffcc00E|r]"
+Ubertip="|cffFFFF80火车：|cffFFFF00疯狂的地精|n|n|cffFFAC00疯狂的哥布林：|r|n|cffFFFF80盔甲：|r无装甲 (|cffFFFF000|r)|n|cffFFFF80生命值：|cffFFFF00175|r|n|cffFFFF80能力：|r|n-自杀（|cffFFFF00275 伤害|r）|n-引爆 (|cffFFFF00150dmg|r)"
+[h05N]
+Name="阿尼玛"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h06K]
+Name="核弹发射器"
+Hotkey=S
+Tip=""
+Ubertip="pwned！"
+[h06J]
+Name="蓝盾发生器"
+Hotkey=X
+Tip="建造蓝盾发生器 [|cffffcc00X|r]"
+Ubertip="|cffFFFF80升级：|cffFFFF001|r|n|n|cffFFFF80能力：|cffFFFF00能量护盾|r|n为一个随机友方单位提供能量护盾，使其护甲+2。保护被屏蔽的单位免受某些负面法术的伤害。|n|n|cffFFFF80冷却时间：|cffFFFF00 7 |r秒"
+[h06B]
+Name="小精灵"
+Hotkey=F
+Tip=训练 [|cffffcc00F|r] 步兵
+Ubertip="多才多艺的步兵。可以学习防御能力。|n|n|cffffcc00攻击陆地单位。|r"
+[h099]
+Name="突击坦克"
+Hotkey=Q
+Tip="火车突击坦克"
+Ubertip="|n|cffFFFF80攻击：|r混乱 (|cffFFFF00550|r rng,|cffFFFF00 50|r dps)|n|cffFFFF80盔甲：|r重 (|cffFFFF008|r)|n|cffFFFF80生命值：|cffFFFF00700|r|n|cffFFFF80能力：|r|n|n|cff80FF00仅限地面|r|n该单位无法攻击飞行的敌人|n|n|cff80FF00飞溅伤害|r|n该单位的攻击命中目标周围 150 范围内的所有单位。距离目标越远的单位受到的伤害越少|n|n|cff80FF00中型坦克装甲|r|n使对该单位造成的所有攻击伤害降低 18。不能将伤害降低到 5 以下。"
+[h08X]
+Name="射箭场"
+Hotkey=Q
+Tip="建造射箭场 [|cffffcc00Q|r]"
+Ubertip="|cffFFFF80火车： |cffFFFF00弓箭手|n|cffFFFF80升级：|cffFFFF001|n|n|cffFFAC00弓箭手：|r|n|cffFFFF80攻击：|r穿刺 (|cffFFFF00450|r rng,|cffFFFF00 28|r dps)|n|cffFFFF80盔甲：|r无装甲 (|cffFFFF002|r)|n|cffFFFF80生命值：|cffFFFF00320|r|n|cffFFFF80能力：|r|n-爆头 (|cffFFFF0010%, 50dmg|r)|n-闪避 (|cffFFFF0015%|r)"
+[h08Y]
+Name="射箭塔"
+Hotkey=R
+Tip="升级到射箭塔 [|cffffcc00R|r]"
+Ubertip="|cffFFFF80火车： |cffFFFF00弓箭手大师|n|n|cffFFAC00弓箭手大师：|r|n|cffFFFF80攻击：|r穿刺 (|cffFFFF00500|r rng,|cffFFFF00 84|r dps)|n|cffFFFF80盔甲：|r无装甲 (|cffFFFF004|r)|n|cffFFFF80生命值：|cffFFFF00525|r|n|cffFFFF80能力：|r|n-爆头（|cffFFFF0020%，125dmg|r）|n-闪避 (|cffFFFF0025%|r)|n|n|cffFF0000你必须先关闭单位生产才能升级！|r"
+[h08Z]
+Name="射箭目标"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h091]
+Name="精灵构建2"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h08P]
+Name="银色空地"
+Hotkey=D
+Tip="建造银色空地 [|cffffcc00D|r]"
+Ubertip="|cffFFFF80能力：|cffFFFF00月光祝福|r|n祝福一个被攻击的随机友方单位周围的一切。受祝福的单位最多恢复 250 点生命值、50 点法力值和 +5 点护甲，持续 5 秒。|n|n|cffFFFF80冷却时间：|cffFFFF00 20 |r秒"
+[h092]
+Name="破法者科多农场"
+Hotkey=R
+Tip="升级到 Spellbreaker Kodo Farm [|cffffcc00R|r]"
+Ubertip="|cffFFFF80Trains: |cffFFFF00Spellbreaker Kodo Rider|n|n|cffFFAC00破法者科多骑士：|r|n|cffFFFF80攻击：|r穿刺 (|cffFFFF00320|r rng,|cffFFFF00 33|r dps)|n|cffFFFF80盔甲：|r光 (|cffFFFF005|r)|n|cffFFFF80生命值：|cffFFFF001200|r|n|cffFFFF80能力：|r|n-法术抗性 (|cffFFFF0070%|r)|n|n|cffFF0000你必须先关闭单位生产才能升级！|r"
+[h08Q]
+Name="火"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h093]
+Name="堡垒效应"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h08R]
+Name="小火"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h094]
+Name="堡垒效应 2"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h08S]
+Name="Orb3 大"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h08T]
+Name="Orb9"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h096]
+Name="魔像工厂：黄金"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h08U]
+Name="FrostOrbDummy"
+Hotkey=P
+Tip=训练 [|cffffcc00P|r] 牧师
+Ubertip="支持施法者。最初可以施放治疗，增加受伤单位的生命。还可以学习驱散魔法和内火。|n|n|cffffcc00攻击陆地和空中单位。|r"
+Casterupgradename=Initiate, Adept, Master
+Casterupgradetip="- Heal","- Heal|n- Dispel Magic","- Heal|n- Dispel Magic|n- Inner Fire"
+[h097]
+Name="珍贵魔像工厂"
+Hotkey=R
+Tip="升级至珍贵魔像工厂 [|cffffcc00R|r]"
+Ubertip="|cffFF8204传奇建筑|r|n|cffFFFF80火车：|cffFFFF00坚毅魔像|n|n|cffFFAC00坚毅魔像：|r|n|cffFFFF80攻击：|r英雄 (|cffFFFF00近战|r,|cffFFFF00 92|r dps)|n|cffFFFF80盔甲：|r神圣的 (|cffFFFF0015|r)|n|cffFFFF80生命值：|cffFFFF00950|r|n|cffFFFF80能力：|r|n-免疫|n-极度法术抗性（|cffFFFF0090%|r）|n-重击（|cffFFFF0050%，100dmg，2 秒|r）|n-粉碎 (|cffFFFF0040%, 150 dmg|r)|n|n|cffFF0000你必须先关闭单位生产才能升级！|r"
+[h08V]
+Name="Orb18"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h098]
+Name="火箭坦克"
+Hotkey=Q
+Tip="火车火箭坦克"
+Ubertip="|n|cffFFFF80攻击：|r正常 (|cffFFFF00400|r rng,|cffFFFF00 76|r dps)|n|cffFFFF80盔甲：|r重型 (|cffFFFF0012|r)|n|cffFFFF80生命值：|cffFFFF00900|r|n|cffFFFF80能力：|r|n|n|cff80FF00仅限地面|r|n该单位无法攻击飞行的敌人|n|n|cff80FF00重型坦克装甲|r|n使对该单位造成的所有攻击伤害降低 24。不能将伤害降低到 5 以下。|n|n|cff80FF00AA火箭|r|n向 850 范围内的随机飞行敌人发射火箭弹。每枚火箭造成 75 点伤害。"
+[h08W]
+Name="塔"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h09J]
+Name="矿层厂"
+Hotkey=R
+Tip="升级到矿层工厂 [|cffffcc00R|r]"
+Ubertip="|cffFFFF80火车： |cffFFFF00矿层|n|n|cffFFAC00矿层：|r|n|cffFFFF80攻击：|r普通（|cffFFFF00近战|r，|cffFFFF00 42|r dps）|n|cffFFFF80盔甲：|r重型 (|cffFFFF007|r)|n|cffFFFF80生命值：|cffFFFF00640|r|n|cffFFFF80能力：|r|n-轻型坦克装甲（|cffFFFF00-12 伤害|r）|n-地雷（|cffFFFF00250 伤害|r）|n|n|cffFF0000你必须先关闭单位生产才能升级！|r"
+[h09I]
+Name="突击坦克厂"
+Hotkey=E
+Tip="升级到突击坦克工厂 [|cffffcc00E|r]"
+Ubertip="|cffFFFF80火车： |cffFFFF00突击坦克|n|n|cffFFAC00突击坦克：|r|n|cffFFFF80攻击：|r混乱 (|cffFFFF00550|r rng,|cffFFFF00 50|r dps)|n|cffFFFF80盔甲：|r重 (|cffFFFF008|r)|n|cffFFFF80生命值：|cffFFFF00700|r|n|cffFFFF80能力：|r|n- 不能攻击空气|n- 溅射伤害|n-中型坦克装甲 (|cffFFFF00-18 dmg|r)|n|n|cffFF0000你必须先关闭单位生产才能升级！|r"
+[h09L]
+Name="轰炸机厂"
+Hotkey=R
+Tip="升级为轰炸机工厂 [|cffffcc00R|r]"
+Ubertip="|cffFFFF80火车： |cffFFFF00旋翼机|n|n|cffFFAC00旋翼机：|r|n|cffFFFF80攻击：|r穿刺 (|cffFFFF00500|r rng,|cffFFFF00 45|r dps)|n|cffFFFF80攻击：|r围城 (|cffFFFF00100|r rng,|cffFFFF00 36|r dps)|n|cffFFFF80盔甲：|r光 (|cffFFFF006|r)|n|cffFFFF80生命值：|cffFFFF00625|r|n|cffFFFF80能力：|r|n-飞行|n- 不能攻击地面|n-重击（|cffFFFF0050%，60dmg，1.2 秒|r）|n|n|cffFF0000你必须先关闭单位生产才能升级！|r"
+[h09K]
+Name="飞机：围栏"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h09N]
+Name="阿森纳：垃圾1"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h09M]
+Name="地雷假人"
+Hotkey=P
+Tip=训练 [|cffffcc00P|r] 牧师
+Ubertip="支持施法者。最初可以施放治疗，增加受伤单位的生命。还可以学习驱散魔法和内火。|n|n|cffffcc00攻击陆地和空中单位。|r"
+Casterupgradename=Initiate, Adept, Master
+Casterupgradetip="- Heal","- Heal|n- Dispel Magic","- Heal|n- Dispel Magic|n- Inner Fire"
+[h09P]
+Name="兵工厂"
+Hotkey=R
+Tip="升级到阿森纳 [|cffffcc00R|r]"
+Ubertip="|cffFFFF80火车：|cffFFFF00火焰枪中士|n|n|cffFFAC00火枪中士：|r|n|cffFFFF80攻击：|r混乱 (|cffFFFF0070|r rng,|cffFFFF00 66|r dps)|n|cffFFFF80盔甲：|r光 (|cffFFFF007|r)|n|cffFFFF80生命值：|cffFFFF00700|r|n|cffFFFF80能力：|r|n- 不能攻击空气|n-线路损坏|n-星界手榴弹|n|n|cffFF0000你必须先关闭单位生产才能升级！|r"
+[h09O]
+Name="阿森纳：垃圾2"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h09B]
+Name="重型坦克厂"
+Hotkey=W
+Tip="升级为重型坦克工厂 [|cffffcc00W|r]"
+Ubertip="|cffFFFF80火车： |cffFFFF00重型坦克|n|cffFFFF80升级：|cffFFFF001|n|n|cffFFAC00重型坦克：|r|n|cffFFFF80攻击：|r正常 (|cffFFFF00400|r rng,|cffFFFF00 62|r dps)|n|cffFFFF80盔甲：|r重型 (|cffFFFF0012|r)|n|cffFFFF80生命值：|cffFFFF00800|r|n|cffFFFF80能力：|r|n- 不能攻击空气|n-重型坦克装甲 (|cffFFFF00-24 dmg|r)|n|n|cffFF0000你必须先关闭单位生产才能升级！|r"
+[h09A]
+Name="坦克工厂：大矿"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h09D]
+Name="坦克工厂：符文1"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h09C]
+Name="坦克工厂：火盆"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h09F]
+Name="坦克工厂：我的"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h09E]
+Name="坦克厂：炉火"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h09H]
+Name="火箭坦克厂"
+Hotkey=R
+Tip="升级到火箭坦克工厂 [|cffffcc00R|r]"
+Ubertip="|cffFFFF80火车： |cffFFFF00火箭坦克|n|n|cffFFAC00火箭坦克：|r|n|cffFFFF80攻击：|r正常 (|cffFFFF00400|r rng,|cffFFFF00 76|r dps)|n|cffFFFF80盔甲：|r重型 (|cffFFFF0012|r)|n|cffFFFF80生命值：|cffFFFF00900|r|n|cffFFFF80能力：|r|n- 不能攻击空气|n-重型坦克装甲 (|cffFFFF00-24 dmg|r)|n-AA 火箭队 (|cffFFFF0075 dps|r)|n|n|cffFF0000你必须先关闭单位生产才能升级！|r"
+[h09G]
+Name="坦克工厂：Runes2"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h088]
+Name="月亮神社"
+Hotkey=W
+Tip="建造月亮神殿 [|cffffcc00W|r]"
+Ubertip="|cffFFFF80火车：|cffFFFF00德鲁伊|n|cffFFFF80升级：|cffFFFF001|n|n|cffFFAC00德鲁伊：|r|n|cffFFFF80攻击：|r混乱 (|cffFFFF00375|r rng,|cffFFFF00 31|r dps)|n|cffFFFF80盔甲：|r无装甲 (|cffFFFF001|r)|n|cffFFFF80生命值：|cffFFFF00325|r|n|cffFFFF80能力：|r|n-纠缠 (|cffFFFF005sec, 15dps|r)"
+[h089]
+Name="暗夜精灵建造者"
+Hotkey=P
+Tip="|cffFFD900选择暗夜精灵|r"
+Ubertip="暗夜精灵从精灵联盟中分裂出来，为他们的女神艾露恩而战。他们是脆弱的生物，但他们知道如何躲避敌人的打击并保护自己免受有害魔法的伤害。他们有一个反馈塔。"
+[h07O]
+Name="被掠夺的小屋"
+Hotkey=R
+Tip="建造劫掠小屋 [|cffffcc00R|r]"
+Ubertip="|cffFFFF80火车：|cffFFFF00复仇之魂|n|cffFFFF80升级：|cffFFFF001|n|n|cffFFAC00复仇之魂：|r|n|cffFFFF80攻击：|r魔法（|cffFFFF00近战|r，|cffFFFF00 37|r dps）|n|cffFFFF80盔甲：|r光 (|cffFFFF005|r)|n|cffFFFF80生命值：|cffFFFF00425|r|n|cffFFFF80能力：|r|n-腐蚀攻击（|cffFFFF00-4 护甲|r）|n-法术减少|n-闪避 (|cffFFFF0030%|r)|n-击杀治疗 (|cffFFFF0012%|r)"
+[h08K]
+Name="Orb8"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h08J]
+Name="Orb7"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h08I]
+Name="Orb6"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h08H]
+Name="Orb5"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h090]
+Name="精灵构建"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h08O]
+Name="工厂2"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h08N]
+Name="植物"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h08M]
+Name="Orb2High"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h08L]
+Name="绞"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h08C]
+Name="星陨"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h08B]
+Name="月神光束"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h08A]
+Name="传送"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h08G]
+Name="Orb4"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h08F]
+Name="Orb3"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h08E]
+Name="Orb2"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h08D]
+Name="宝珠1"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h01D]
+Name="混沌堡垒"
+Hotkey=W
+Tip="建造混沌堡垒 [|cffffcc00W|r]"
+Ubertip="|cffFFFF80火车：|cffFFFF00混沌战士|n|cffFFFF80升级：|cffFFFF001|n|n|cffFFAC00混沌战士：|r|n|cffFFFF80攻击：|r普通（|cffFFFF00近战|r，|cffFFFF00 27|r dps）|n|cffFFFF80盔甲：|r中等 (|cffFFFF005|r)|n|cffFFFF80生命值：|cffFFFF00400|r|n|cffFFFF80能力：|r|n-分裂攻击 (|cffFFFF0025%|r)"
+[h01C]
+Name="贪婪祭坛"
+Hotkey=E
+Tip="建造贪婪祭坛 [|cffffcc00E|r]"
+Ubertip="|cffFFFF80火车：|cffFFFF00魅魔|n|n|cffFFAC00魅魔：|r|n|cffFFFF80攻击：|r魔法 (|cffFFFF00360|r rng,|cffFFFF00 35|r dps)|n|cffFFFF80盔甲：|r光 (|cffFFFF002|r)|n|cffFFFF80生命值：|cffFFFF00450|r|n|cffFFFF80能力：|r|n-诅咒（|cffFFFF0035% 未命中|r）"
+[h01B]
+Name="爬行动物池"
+Hotkey=A
+Tip="建立爬虫池 [|cffffcc00A|r]"
+Ubertip="|cffFFFF80火车：|cffFFFF00龙龟|n|n|cffFFAC00龙龟：|r|n|cffFFFF80攻击：|r围城 (|cffFFFF00550|r rng,|cffFFFF00 54|r dps)|n|cffFFFF80盔甲：|r重 (|cffFFFF008|r)|n|cffFFFF80生命值：|cffFFFF00650|r|n|cffFFFF80能力：|r|n-重击（|cffFFFF0015%，25dmg，2 秒|r）|n-刺壳 (|cffFFFF0060%|r)"
+[h01A]
+Name="自然建设者"
+Hotkey=P
+Tip="|cffFFD900选择自然力量|r"
+Ubertip="大自然的力量本身被召唤为他们的主人而战。自然种族专注于强大的单位和治疗增益，比普通种族稍微贵一些，但更好。"
+[h01H]
+Name="生命之古"
+Hotkey=R
+Tip="升级为生命古树 [|cffffcc00R|r]"
+Ubertip="|cffFFFF80火车： |cffFFFF00丛林守护者|n|cffFFFF80升级：|cffFFFF001|n|n|cffFFAC00树林的守护者|r|n|cffFFFF80攻击：|r穿刺 (|cffFFFF00500|r rng|r,|cffFFFF00 50|r dps)|n|cffFFFF80盔甲：|r中等 (|cffFFFF005|r)|n|cffFFFF80生命值：|cffFFFF00700|r|n|cffFFFF80能力：|r|n-召唤树人|n-法术抗性 (|cffFFFF0020%|r)|n-自然之触 (|cffFFFF00150hp, 3armor|r)|n|n|cffFF0000你必须先关闭单位生产才能升级！|r"
+[h01G]
+Name="拆除假人"
+Hotkey=P
+Tip=训练 [|cffffcc00P|r] 牧师
+Ubertip="支持施法者。最初可以施放治疗，增加受伤单位的生命。还可以学习驱散魔法和内火。|n|n|cffffcc00攻击陆地和空中单位。|r"
+Casterupgradename=Initiate, Adept, Master
+Casterupgradetip="- Heal","- Heal|n- Dispel Magic","- Heal|n- Dispel Magic|n- Inner Fire"
+[h01F]
+Name="火山"
+Hotkey=F
+Tip="建造火山 [|cffffcc00F|r]"
+Ubertip="|cffFFFF80能力：|cffFFFF00喷发|r|n随机伤害一个敌方单位周围的区域，造成 180 dps 法术伤害。不能同时损坏超过 5 个单位。对建筑物仅造成 40% 的伤害。|n|n|cffFFFF80冷却时间：|cffFFFF00 14 |r秒"
+[h01E]
+Name="毁灭神殿"
+Hotkey=X
+Tip="建造毁灭神殿 [|cffffcc00X|r]"
+Ubertip="|cffFF8204传奇建筑|r|n|n|cffFFFF80能力：|cffFFFF00地狱之拳|r|n摧毁一个随机的敌方建筑。无法摧毁传说中的建筑或主城。你不会为被摧毁的建筑物获得赏金。|n|n|cffFFFF80冷却时间：|cffFFFF00 40 |r秒"
+[h00Z]
+Name="魔法之城"
+Hotkey=D
+Tip="建造魔法之城 [|cffffcc00D|r]"
+Ubertip="|cffFFFF80能力：|cffFFFF00十六进制|r|n将随机敌方单位变成绵羊，持续 50 秒。|n|n|cffFFFF80冷却时间：|cffFFFF00 15 |r秒"
+[h00Y]
+Name="熊怪小屋"
+Hotkey=W
+Tip="建造熊怪小屋 [|cffffcc00W|r]"
+Ubertip="|cffFFFF80火车：|cffFFFF00熊怪萨满|n|cffFFFF80升级：|cffFFFF001|n|n|cffFFAC00熊怪萨满 |r|n|cffFFFF80攻击：|r魔法 (|cffFFFF00400|r rng|r,|cffFFFF00 37|r dps)|n|cffFFFF80盔甲：|r光 (|cffFFFF001|r)|n|cffFFFF80生命值：|cffFFFF00450|r|n|cffFFFF80能力：|r|n-复兴 (|cffFFFF00200hp|r)"
+[h019]
+Name="兽人建造者"
+Hotkey=P
+Tip="|cffFFD900选择兽人部落|r"
+Ubertip="兽人部落训练强悍的战士并用萨满魔法支持他们。他们的斧头大师在整个战场上都令人恐惧。兽人可以使用防空塔。"
+[h00X]
+Name="至尊魔法之塔"
+Hotkey=R
+Tip="升级至无上魔法之塔 [|cffffcc00R|r]"
+Ubertip="|cffFF8204传奇建筑|r|n|cffFFFF80火车：|cffFFFF00向导|n|n|cffFFAC00向导：|r|n|cffFFFF80攻击：|r混乱 (|cffFFFF00650|r rng,|cffFFFF00 55|r dps)|n|cffFFFF80盔甲：|r无装甲 (|cffFFFF004|r)|n|cffFFFF80生命值：|cffFFFF00800|r|n|cffFFFF80能力：|r|n-传奇法术抗性 (|cffFFFF0070%|r)|n-免疫|n-治疗波（|cffFFFF00300hp，6 个目标|r）|n-链闪电 (|cffFFFF0030%, 230dmg|r)|n-火弩箭 (|cffFFFF0075 伤害|r)|n|n|cffFF0000你必须先关闭单位生产才能升级！|r"
+[h013]
+Name="成长古树"
+Hotkey=E
+Tip="建造成长古树 [|cffffcc00E|r]"
+Ubertip="|cffFFFF80火车： |cffFFFF00树妖|n|cffFFFF80升级：|cffFFFF002|n|n|cffFFAC00树精 |r|n|cffFFFF80攻击：|r穿刺 (|cffFFFF00500|r rng|r,|cffFFFF00 37|r dps)|n|cffFFFF80盔甲：|r中等 (|cffFFFF003|r)|n|cffFFFF80生命值：|cffFFFF00500|r|n|cffFFFF80能力：|r|n-法术抗性 (|cffFFFF0015%|r)|n-自然之触 (|cffFFFF0075hp, 2armor|r)"
+[h00R]
+Name="蜘蛛卵孵化场"
+Hotkey=R
+Tip="建造蜘蛛卵孵化场 [|cffffcc00R|r]"
+Ubertip="|cffFFFF80火车：|cffFFFF00育母|n|n|cffFFAC00育母|r|n|cffFFFF00同时训练两只蜘蛛|r|n|cffFFFF80攻击：|r穿刺 (|cffFFFF00近战|r,|cffFFFF00 70|r dps)|n|cffFFFF80盔甲：|r无装甲 (|cffFFFF006|r)|n|cffFFFF80生命值：|cffFFFF00800|r|n|cffFFFF80能力：|r|n-感染|n-网络|n-产卵|n-缓慢毒药（|cffFFFF0025% 缓慢，12dmg/秒|r）|n|n|cffFF0000你必须先关闭单位生产才能升级！|r"
+[h014]
+Name="奥术之塔"
+Hotkey=Y
+Tip="建造奥术之塔 [|cffffcc00Y|r]"
+Ubertip="|cffFFAC00基地防御|r：|n这是保护关键位置的塔。|n|n|cffFFFF80攻击类型：|cffFFFF00魔法|n|cffFFFF80范围：|cffFFFF00 675|n|cffFFFF80平均DPS：|cffFFFF00 39|r|n|n|cffFFFF80能力：|r|n-多重射击（|cffFFFF005 个目标|r）"
+[h00S]
+Name="猎人大厅"
+Hotkey=Q
+Tip="建造猎人大厅 [|cffffcc00Q|r]"
+Ubertip="|cffFFFF80火车： |cffFFFF00女猎人|n|cffFFFF80升级：|cffFFFF002|n|n|cffFFAC00女猎手：|r|n|cffFFFF80攻击：|r穿刺 (|cffFFFF00400|r rng,|cffFFFF00 27|r dps)|n|cffFFFF80盔甲：|r光 (|cffFFFF001|r)|n|cffFFFF80生命值：|cffFFFF00300|r|n|cffFFFF80能力：|r|n-闪避 (|cffFFFF008%|r)"
+[h011]
+Name="夜精灵攻城工厂"
+Hotkey=S
+Tip="建造夜精灵攻城工厂 [|cffffcc00S|r]"
+Ubertip="|cffFFFF80火车：|cffFFFF00Glaive Thrower|n|n|cffFFAC00投刃者：|r|n|cffFFFF80攻击：|r围攻 (|cffFFFF001000|r rng,|cffFFFF00 26|r dps)|n|cffFFFF80盔甲：|r重 (|cffFFFF002|r)|n|cffFFFF80生命值：|cffFFFF00400|r|n|cffFFFF80能力：|r|n- 不能攻击空气|n-弹跳攻击（|cffFFFF004 个目标|r）"
+[h00P]
+Name="精灵建造者"
+Hotkey=P
+Tip="|cffFFD900选择精灵联盟|r"
+Ubertip="精灵种族聚集在一起保卫他们的领地。精灵使用强大的魔法来削弱敌人并帮助友方单位。他们有一个相当不错的攻城武器和一个带有多重射击的低射程塔。"
+[h012]
+Name="熊怪居所"
+Hotkey=R
+Tip="建造熊怪居所 [|cffffcc00R|r]"
+Ubertip="|cffFFFF80Trains: |cffFFFF00熊怪长老萨满|n|n|cffFFAC00熊怪长老萨满 |r|n|cffFFFF80攻击：|r魔法 (|cffFFFF00450|r rng|r,|cffFFFF00 40|r dps)|n|cffFFFF80盔甲：|r光 (|cffFFFF003|r)|n|cffFFFF80生命值：|cffFFFF00650|r|n|cffFFFF80能力：|r|n-马纳本|n-复兴（|cffFFFF00400hp|r）|n|n|cffFF0000你必须先关闭单位生产才能升级！|r"
+[h00Q]
+Name="蜘蛛蛋巢"
+Hotkey=R
+Tip="升级为蜘蛛蛋巢 [|cffffcc00R|r]"
+Ubertip="|cffFFFF80火车：|cffFFFF00巨型蜘蛛|n|cffFFFF80升级：|cffFFFF001|n|n|cffFFAC00巨型蜘蛛 |r|n|cffFFFF00同时训练两只蜘蛛|r|n|cffFFFF80攻击：|r穿刺 (|cffFFFF00近战|r,|cffFFFF00 53|r dps)|n|cffFFFF80盔甲：|r无装甲 (|cffFFFF004|r)|n|cffFFFF80生命值：|cffFFFF00480|r|n|cffFFFF80能力：|r|n-网络|n-缓慢毒药（|cffFFFF0015% 缓慢，8dmg/秒|r）|n-Spawn (|cffFFFF001 黑蜘蛛|r)|n|n|cffFF0000你必须先关闭单位生产才能升级！|r"
+[h017]
+Name="北方建设者"
+Hotkey=P
+Tip="|cffFFD900选择北域|r"
+Ubertip="北欧生物团结一致，反对所有想要入侵他们心爱的冰冷平原和山脉的人。他们使用强大的冰冻魔法。北欧人可以用令人毛骨悚然的飞溅塔保卫他们的建筑物。"
+[h00V]
+Name="血精灵战争学院"
+Hotkey=E
+Tip="建立血精灵战争学院 [|cffffcc00E|r]"
+Ubertip="|cffFFFF80火车：|cffFFFF00嗜血者|n|n|cffFFAC00嗜血者：|r|n|cffFFFF80攻击：|r魔法 (|cffFFFF00360|r rng,|cffFFFF00 38|r dps)|n|cffFFFF80盔甲：|r中等 (|cffFFFF003|r)|n|cffFFFF80生命值：|cffFFFF00525|r|n|cffFFFF80能力：|r|n-弹跳攻击（|cffFFFF003 个目标|r）|n-精灵之火（|cffFFFF00-6 护甲|r）"
+[h018]
+Name="亡灵建造者"
+Hotkey=P
+Tip="|cffFFD900选择亡灵部队|r"
+Ubertip="亡灵部队使用死灵魔法使死去的单位复活。他们给敌人带来死亡和疾病。亡灵建造者能够建造一座精神塔来保卫你的基地。"
+[h00W]
+Name="向导"
+Hotkey=Q
+Tip="火车向导"
+Ubertip="|n|cffFFFF80攻击：|r混乱 (|cffFFFF00650|r rng,|cffFFFF00 55|r dps)|n|cffFFFF80盔甲：|r无装甲 (|cffFFFF004|r)|n|cffFFFF80生命值：|cffFFFF00800|r|n|cffFFFF80能力：|r|n|n|cff80FF00传奇法术抗性|r|n对该单位造成的法术伤害降低 70%|n|n|cff80FF00免疫|r|n该单位免疫某些负面效果|n|n|cff80FF00治疗波|r|n向一名盟友施放治疗波，最多可击中 6 个目标。治疗第一个目标 300 点生命值，每次反弹减少 30%|n|cff8080FF冷却时间：|r12|n|cff8080FF法力消耗：|r70|n|n|cff80FF00链闪电|r|n每次攻击有 30% 的几率施放一道链光，最多可击中 7 个敌人，对第一个敌人造成 230 点伤害，每次弹跳减少 20%|n|n|cff80FF00火弩箭|r|n每 3 秒向一个随机敌方单位或建筑物施放一道火焰箭。火弩箭在撞击时造成 75 点法术伤害。目标燃烧 4 秒，每秒受到 25 点额外伤害。"
+Casterupgradename=
+Casterupgradetip=
+[h015]
+Name="狮鹫岩"
+Hotkey=R
+Tip="建造狮鹫岩 [|cffffcc00R|r]"
+Ubertip="|cffFFFF80火车： |cffFFFF00狮鹫骑士|n|n|cffFFAC00狮鹫骑士：|r|n|cffFFFF80攻击：|r魔法 (|cffFFFF00450|r rng,|cffFFFF00 23|r dps)|n|cffFFFF80盔甲：|r中等 (|cffFFFF002|r)|n|cffFFFF80生命值：|cffFFFF00500|r|n|cffFFFF80能力：|r|n-飞行|n-重击（|cffFFFF0015%，25dmg，2 秒|r）|n-链闪电 (|cffFFFF0010%, 150dmg|r)"
+[h00T]
+Name="荣誉殿堂"
+Hotkey=W
+Tip="建造荣誉殿堂 [|cffffcc00W|r]"
+Ubertip="|cffFFFF80火车： |cffFFFF00刀锋战士|n|cffFFFF80升级：|cffFFFF001|n|n|cffFFAC00剑圣：|r|n|cffFFFF80攻击：|r普通 (|cffFFFF00近战|r,|cffFFFF00 39|r dps)|n|cffFFFF80盔甲：|r重型 (|cffFFFF007|r)|n|cffFFFF80生命值：|cffFFFF00450|r|n|cffFFFF80能力：|r|n-闪避 (|cffFFFF0015%|r)|n-暴击 (|cffFFFF0025%, 2.5x|r)|n-法术抗性 (|cffFFFF0015%|r)"
+[h016]
+Name="狮鹫骑士"
+Hotkey=Q
+Tip="训练狮鹫骑士"
+Ubertip="|n|cffFFFF80攻击：|r魔法 (|cffFFFF00450|r rng,|cffFFFF00 23|r dps)|n|cffFFFF80盔甲：|r中等 (|cffFFFF002|r)|n|cffFFFF80生命值：|cffFFFF00500|r|n|cffFFFF80能力：|r|n|n|cff80FF00飞行|r|n这个单位在飞|n|n|cff80FF00重击|r|n每次攻击有 15% 几率眩晕 2 秒并造成 25 额外伤害|n|n|cff80FF00链闪电|r|n每次攻击有 10% 的几率施放一道链光，最多可击中 5 个敌人，对第一个敌人造成 150 点伤害，每次弹跳减少 25%"
+[h00U]
+Name="嗜血者"
+Hotkey=Q
+Tip="训练嗜血者"
+Ubertip="|n|cffFFFF80攻击：|r魔法 (|cffFFFF00360|r rng,|cffFFFF00 38|r dps)|n|cffFFFF80盔甲：|r中等 (|cffFFFF003|r)|n|cffFFFF80生命值：|cffFFFF00525|r|n|cffFFFF80能力：|r|n|n|cff80FF00弹跳攻击|r|n该单位的攻击最多可击中 3 个敌人，每次弹跳造成的伤害降低 30%|n|n|cff80FF00仙火|r|n使敌人的护甲降低 6 点，持续 30 秒|n|cff8080FF冷却时间：|r6|n|cff8080FF法力消耗：|r20"
+[h00J]
+Name="沼泽井"
+Hotkey=W
+Tip="建造沼泽井 [|cffffcc00W|r]"
+Ubertip="|cffFFFF80火车： |cffFFFF00Suumpmolk|n|cffFFFF80升级：|cffFFFF001|n|n|cffFFAC00Suumpmolk:|r|n|cffFFFF80攻击：|r正常 (|cffFFFF00325|r rng,|cffFFFF00 27|r dps)|n|cffFFFF80盔甲：|r中等 (|cffFFFF003|r)|n|cffFFFF80生命值：|cffFFFF00380|r|n|cffFFFF80能力：|r|n-毒药攻击（|cffFFFF0035% 减速|r）"
+[h00K]
+Name="约尔海门"
+Hotkey=S
+Tip="建造 Hjordhejmen [|cffffcc00S|r]"
+Ubertip="|cffFFFF80火车：|cffFFFF00术士|n|n|cffFFAC00术士：|r|n|cffFFFF80攻击：|r混乱 (|cffFFFF00160|r rng,|cffFFFF00 17|r dps)|n|cffFFFF80盔甲：|r无装甲 (|cffFFFF001|r)|n|cffFFFF80生命值：|cffFFFF00320|r|n|cffFFFF80能力：|r|n-密室（|cffFFFF00175 法术伤害|r）"
+[h00H]
+Name="鱼人小屋"
+Hotkey=Q
+Tip="建造鱼人小屋 [|cffffcc00Q|r]"
+Ubertip="|cffFFFF80火车： |cffFFFF00鱼人|n|cffFFFF80升级：|cffFFFF003|n|n|cffFFAC00鱼人：|r|n|cffFFFF00同时训练两个鱼人|r|n|cffFFFF80攻击：|r普通（|cffFFFF00近战|r，|cffFFFF00 12|r dps）|n|cffFFFF80盔甲：|r无装甲 (|cffFFFF002|r)|n|cffFFFF80生命值：|cffFFFF00180|r"
+[h00I]
+Name="古代金字塔"
+Hotkey=D
+Tip="建造远古金字塔 [|cffffcc00D|r]"
+Ubertip="|cffFFFF80能力：|cffFFFF00地震|r|n在一个随机敌方单位下方分裂地球，对该区域内的所有敌方地面单位造成伤害并减速。造成 50 点法术伤害，减速 50%，持续 6 秒。|n|n|cffFFFF80冷却时间：|cffFFFF00 8 |r秒"
+[h00N]
+Name="潮汐守护者"
+Hotkey=X
+Tip="建造潮汐守护者 [|cffffcc00X|r]"
+Ubertip="|cffFFFF80能力：|cffFFFF00海啸|r|n向随机敌方单位发出巨浪。波浪击中沿途的所有地面单位，造成 220 点伤害。|n|n|cffFFFF80冷却时间：|cffFFFF00 20 |r秒"
+[h010]
+Name="加拉尔霍恩"
+Hotkey=D
+Tip="建造 Gjallarhorn [|cffffcc00D|r]"
+Ubertip="|cffFFFF80能力：|cffFFFF00圣力|r|n提高附近友军单位（最多 5 个单位）的攻击速度（+50%）。|n|n|cffFFFF80冷却时间：|cffFFFF00 8 |r秒"
+[h00O]
+Name="混沌建造者"
+Hotkey=P
+Tip="|cffFFFF00选择混沌军团|r"
+Ubertip="混沌力量召唤可怕的恶魔并使用破坏性魔法击败他们的敌人。混沌没有攻城单位，但有很多具有混沌伤害的强力单位。混沌没有塔！"
+[h00L]
+Name="生命之花"
+Hotkey=F
+Tip=建造 [|cffffcc00F|r] 农场
+Ubertip="提供食物，增加可训练单位的最大数量。"
+[h00M]
+Name="警笛神谕"
+Hotkey=F
+Tip="构建警报神谕 [|cffffcc00F|r]"
+Ubertip="|cffFFFF80能力：|cffFFFF00控制敌人|r|n获得随机敌方单位的控制权。|n|n|cffFFFF80冷却时间：|cffFFFF00 16 |r秒"
+[h00A]
+Name="死亡坑"
+Hotkey=D
+Tip="建造死亡坑 [|cffffcc00D|r]"
+Ubertip="|cffFFFF80能力：|cffFFFF00猝死|r|n立即杀死一个随机敌方单位。|n|n|cffFFFF80冷却时间：|cffFFFF00 15 |r秒"
+[h00C]
+Name="人类建设者"
+Hotkey=P
+Tip="|cffFFD900选择人类联盟|r"
+Ubertip="人类使用许多廉价单位来超越敌人。他们可以使用大炮摧毁敌人的基地，而不必直接攻击它。这个种族有一个基本的防御塔。"
+[h00B]
+Name="奇迹之泉"
+Hotkey=A
+Tip="建造奇迹之泉 [|cffffcc00A|r]"
+Ubertip="|cffFFFF80火车：|cffFFFF00仙龙|n|n|cffFFAC00仙龙：|r|n|cffFFFF80攻击：|r魔法 (|cffFFFF00350|r rng,|cffFFFF00 28|r dps)|n|cffFFFF80盔甲：|r光 (|cffFFFF002|r)|n|cffFFFF80生命值：|cffFFFF00460|r|n|cffFFFF80能力：|r|n-飞行|n-治愈（|cffFFFF00175 马力|r）|n-反馈（|cffFFFF0025 法力|r）"
+[h00E]
+Name="纳迦建造者"
+Hotkey=P
+Tip="|cffFFD900选择娜迦派系|r"
+Ubertip="Nagas 拥有高于平均水平的强大单位，具有很高的生命值恢复。此外，他们还可以使用许多昂贵的特殊建筑。但请注意，这场比赛没有塔！"
+[h00D]
+Name="假"
+Hotkey=P
+Tip=训练 [|cffffcc00P|r] 牧师
+Ubertip="支持施法者。最初可以施放治疗，增加受伤单位的生命。还可以学习驱散魔法和内火。|n|n|cffffcc00攻击陆地和空中单位。|r"
+Casterupgradename=Initiate, Adept, Master
+Casterupgradetip="- Heal","- Heal|n- Dispel Magic","- Heal|n- Dispel Magic|n- Inner Fire"
+[h00G]
+Name="珊瑚雕像"
+Hotkey=Y
+Tip="建造珊瑚雕像 [|cffffcc00Y|r]"
+Ubertip="|cffFFFF80能力：|cffFFFF00修复|r|n恢复附近友军单位的生命值，并在 650 范围内以 2.5 hp/s 的速度修复附近的建筑物。修复效果叠加。"
+[h00F]
+Name="产卵地"
+Hotkey=R
+Tip="建造产卵场 [|cffffcc00R|r]"
+Ubertip="|cffFFFF80火车：|cffFFFF00娜迦守护者|n|cffFFFF80升级：|cffFFFF001|n|n|cffFFAC00纳迦守护者：|r|n|cffFFFF80攻击：|r穿刺 (|cffFFFF00近战|r,|cffFFFF00 51|r dps)|n|cffFFFF80盔甲：|r重 (|cffFFFF006|r)|n|cffFFFF80生命值：|cffFFFF00650|r|n|cffFFFF80能力：|r|n-分裂攻击 (|cffFFFF0035%|r)"
+[h009]
+Name="龙巢"
+Hotkey=A
+Tip="建造龙巢 [|cffffcc00A|r]"
+Ubertip="|cffFFFF80火车：|cffFFFF00红龙|n|n|cffFFAC00红龙：|r|n|cffFFFF80攻击：|r混乱 (|cffFFFF00400|r rng,|cffFFFF00 50|r dps)|n|cffFFFF80盔甲：|r重 (|cffFFFF003|r)|n|cffFFFF80生命值：|cffFFFF00850|r|n|cffFFFF80能力：|r|n-飞行|n- 溅射伤害"
+[h008]
+Name="宝物盒"
+Hotkey=V
+Tip="建造宝箱 [|cffffcc00V|r]"
+Ubertip="您建造的第一个宝箱会使您的收入增加 25%，每隔 1 个 TB 会比之前的一个少 15%（即第二个为 21.25%，第三个为 18.06%，依此类推）。|n小心，它很脆弱！"
+[h000]
+Name="兵营"
+Hotkey=Q
+Tip="建造兵营 [|cffffcc00Q|r]"
+Ubertip="|cffFFFF80火车： |cffFFFF00步兵|n|cffFFFF80升级：|cffFFFF001|n|n|cffFFAC00步兵：|r|n|cffFFFF80攻击：|r普通（|cffFFFF00近战|r，|cffFFFF00 18|r dps）|n|cffFFFF80盔甲：|r重 (|cffFFFF004|r)|n|cffFFFF80生命值：|cffFFFF00260|r"
+[h001]
+Name="炮兵"
+Hotkey=F
+Tip="建造火炮 [|cffffcc00F|r]"
+Ubertip="|cffFFFF80能力：|cffFFFF00火炮|r|n向敌方基地发射火炮手榴弹。冲击时造成 200-300 攻城伤害。不是很准确，但如果它击中就会毁灭性的。造成大量溅射伤害。|n|n|cffFFFF80范围：|cffFFFF00 300|r|n|cffFFFF80冷却时间：|cffFFFF00 12 |r秒"
+[h002]
+Name="蜘蛛蛋手拿包"
+Hotkey=Q
+Tip="打造蜘蛛蛋手拿包 [|cffffcc00Q|r]"
+Ubertip="|cffFFFF80火车：|cffFFFF00黑蜘蛛|n|cffFFFF80升级：|cffFFFF002|n|n|cffFFAC00黑蜘蛛 |r|n|cffFFFF00同时训练两只蜘蛛|r|n|cffFFFF80攻击：|r穿刺 (|cffFFFF00近战|r,|cffFFFF00 30|r dps)|n|cffFFFF80盔甲：|r无装甲 (|cffFFFF001|r)|n|cffFFFF80生命值：|cffFFFF00240|r|n|cffFFFF80能力：|r|n-缓慢毒药（|cffFFFF0010% 缓慢，5dmg/秒|r）"
+[h003]
+Name="狙击巢"
+Hotkey=W
+Tip="建造狙击巢 [|cffffcc00W|r]"
+Ubertip="|cffFFFF80火车：|cffFFFF00狙击手|n|cffFFFF80升级：|cffFFFF002|n|n|cffFFAC00狙击手：|r|n|cffFFFF80攻击：|r穿刺 (|cffFFFF00500|r rng,|cffFFFF00 22|r dps)|n|cffFFFF80盔甲：|r中等 (|cffFFFF000|r)|n|cffFFFF80生命值：|cffFFFF00270|r|n|cffFFFF80能力：|r|n-暴击 (|cffFFFF0010%, 1.5x|r)"
+[h004]
+Name="武器实验室"
+Hotkey=E
+Tip="建造武器实验室 [|cffffcc00E|r]"
+Ubertip="|cffFFFF80火车： |cffFFFF00迫击炮|n|n|cffFFAC00砂浆:|r|n|cffFFFF80攻击：|r围城 (|cffFFFF001000|r rng,|cffFFFF00 21|r dps)|n|cffFFFF80盔甲：|r光 (|cffFFFF000|r)|n|cffFFFF80生命值：|cffFFFF00280|r|n|cffFFFF80能力：|r|n- 不能攻击空气|n- 溅射伤害"
+[h005]
+Name="光之方尖碑"
+Hotkey=F
+Tip="建造光之方尖碑 [|cffffcc00F|r]"
+Ubertip="|cffFFFF80能力：|cffFFFF00光束|r|n向随机可见的敌方单位发射光束，造成 140 点伤害。|n|n|cffFFFF80冷却时间：|cffFFFF00 5 |r秒"
+[h006]
+Name="瞭望塔"
+Hotkey=Y
+Tip="建造瞭望塔 [|cffffcc00Y|r]"
+Ubertip="|cffFFAC00基地防御|r：|n这是保护关键位置的塔。|n|n|cffFFFF80攻击类型：|cffFFFF00刺穿|n|cffFFFF80范围：|cffFFFF00 950|n|cffFFFF80平均DPS：|cffFFFF00 90|r"
+[h007]
+Name="魔门"
+Hotkey=S
+Tip="建造魔门 [|cffffcc00S|r]"
+Ubertip="|cffFFFF80火车：|cffFFFF00地狱火|n|n|cffFFAC00地狱火：|r|n|cffFFFF80攻击：|r混乱（|cffFFFF00近战|r，|cffFFFF00 85|r dps）|n|cffFFFF80盔甲：|r重型 (|cffFFFF007|r)|n|cffFFFF80生命值：|cffFFFF001600|r|n|cffFFFF80能力：|r|n-可以攻击空气|n-献祭 (|cffFFFF0030dps|r)"
+[tec3]
+Name="技术等级 3"
+Hotkey=P
+Tip=训练 [|cffffcc00P|r] 牧师
+Ubertip="支持施法者。最初可以施放治疗，增加受伤单位的生命。还可以学习驱散魔法和内火。|n|n|cffffcc00攻击陆地和空中单位。|r"
+Casterupgradename=Initiate, Adept, Master
+Casterupgradetip="- Heal","- Heal|n- Dispel Magic","- Heal|n- Dispel Magic|n- Inner Fire"
+[tec2]
+Name="技术等级 2"
+Hotkey=P
+Tip=训练 [|cffffcc00P|r] 牧师
+Ubertip="支持施法者。最初可以施放治疗，增加受伤单位的生命。还可以学习驱散魔法和内火。|n|n|cffffcc00攻击陆地和空中单位。|r"
+Casterupgradename=Initiate, Adept, Master
+Casterupgradetip="- Heal","- Heal|n- Dispel Magic","- Heal|n- Dispel Magic|n- Inner Fire"
+[tec1]
+Name="技术等级 1"
+Hotkey=P
+Tip=训练 [|cffffcc00P|r] 牧师
+Ubertip="支持施法者。最初可以施放治疗，增加受伤单位的生命。还可以学习驱散魔法和内火。|n|n|cffffcc00攻击陆地和空中单位。|r"
+Casterupgradename=Initiate, Adept, Master
+Casterupgradetip="- Heal","- Heal|n- Dispel Magic","- Heal|n- Dispel Magic|n- Inner Fire"
+[h06C]
+Name="拱"
+Hotkey=F
+Tip=建造 [|cffffcc00F|r] 农场
+Ubertip="提供食物，增加可训练单位的最大数量。"
+[h06D]
+Name="神风工厂"
+Hotkey=E
+Tip="升级到神风队工厂 [|cffffcc00E|r]"
+Ubertip="|cffFFFF80火车：|cffFFFF00神风哥布林|n|n|cffFFAC00神风哥布林：|r|n|cffFFFF80盔甲：|r无装甲 (|cffFFFF000|r)|n|cffFFFF80生命值：|cffFFFF00200|r|n|cffFFFF80能力：|r|n-自杀（|cffFFFF00350 伤害|r）|n-引爆 (|cffFFFF00150dmg|r)|n-飞行。"
+[h06E]
+Name="萨满小屋"
+Hotkey=W
+Tip="升级为萨满小屋 [|cffffcc00W|r]"
+Ubertip="|cffFFFF80火车： |cffFFFF00粗壮萨满|n|n|cffFFAC00粗壮萨满：|r|n|cffFFFF80攻击：|r魔法 (|cffFFFF00350|r rng,|cffFFFF00 34|r dps)|n|cffFFFF80盔甲：|r无装甲 (|cffFFFF002|r)|n|cffFFFF80生命值：|cffFFFF00420|r|n|cffFFFF80能力：|r|n-萨满的增益（|cffFFFF00+5护甲，+45%dmg|r）|n-法术抗性：25%"
+[h06F]
+Name="攻城坦克"
+Hotkey=G
+Tip="火车攻城坦克"
+Ubertip="|n|cffFFFF80攻击：|r围城 (|cffFFFF001150|r rng,|cffFFFF00 30|r dps)|n|cffFFFF80盔甲：|r正常 (|cffFFFF005|r)|n|cffFFFF80生命值：|cffFFFF00500|r|n|cffFFFF80能力：|r|n|n|cff80FF00仅限地面|r|n该单位无法攻击飞行的敌人|n|n|cff80FF00飞溅伤害|r|n该单位的攻击命中目标周围 180 范围内的所有单位。距离目标越远的单位受到的伤害越少|n|n|cff80FF00中型坦克装甲|r|n使对该单位造成的所有攻击伤害降低 18。不能将伤害降低到 5 以下。"
+[h06G]
+Name="攻城坦克厂"
+Hotkey=E
+Tip="升级为攻城坦克工厂 [|cffffcc00E|r]"
+Ubertip="|cffFFFF80火车：|cffFFFF00攻城坦克|n|n|cffFFAC00攻城坦克：|r|n|cffFFFF80攻击：|r围城 (|cffFFFF001250|r rng,|cffFFFF00 30|r dps)|n|cffFFFF80盔甲：|r中等 (|cffFFFF005|r)|n|cffFFFF80生命值：|cffFFFF00500|r|n|cffFFFF80能力：|r|n- 不能攻击空气|n- 溅射伤害|n-中型坦克装甲 (|cffFFFF00-18 dmg|r)|n|n|cffFF0000你必须先关闭单位生产才能升级！|r"
+[h06H]
+Name="警卫塔"
+Hotkey=Z
+Tip="建造守卫塔[|cffffcc00Z|r]"
+Ubertip="|cffFFAC00基地防御|r：|n这是保护关键位置的塔。|n|n|cffFFFF80攻击类型：|cffFFFF00刺穿|n|cffFFFF80范围：|cffFFFF00 800|n|cffFFFF80平均DPS：|cffFFFF00 95|r"
+[h06I]
+Name="神圣的仙人掌"
+Hotkey=D
+Tip="建造神圣仙人掌 [|cffffcc00D|r]"
+Ubertip="|cffFFFF80能力：|cffFFFF00仙人掌药水|r|n用致幻孢子毒化随机活的敌人，将其送入梦境持续 7 秒（造成 7 dps），有 25% 的几率对双方队伍产生敌意。|n|n|cffFFFF80冷却时间：|cffFFFF0010|r秒"
+[h06L]
+Name="流沙祭坛"
+Hotkey=F
+Tip="建造金沙祭坛[|cffffcc00F|r]"
+Ubertip="|cffFFFF80能力：|cffFFFF00流沙|r|n在随机敌方单位下制造流沙。流沙持续 12 秒，受影响的敌人移动和攻击速度变慢，中间的单位可能会被淹死。|n|n|cffFFFF80冷却时间：|cffFFFF00 12 |r秒"
+[h06M]
+Name="风暴神殿"
+Hotkey=X
+Tip="建造风暴神殿[|cffffcc00X|r]"
+Ubertip="|cffFFFF80能力：|cffFFFF00风暴的呼唤|r|n召唤伟大的沙尘暴：|n- 敌人移动和攻击速度较慢（-50%），错过 75% 的攻击|n- 沙流对敌人造成 15 dmg\s。|n风暴持续8秒，冷却45秒"
+[h06N]
+Name="沙漠建设者"
+Hotkey=P
+Tip="|cffFFD900选择沙漠居民|r"
+Ubertip="沙漠居民使用稀有而强大的生物和神秘的仪式来迷惑和战胜它的敌人。"
+[h03H]
+Name="AltarOfSand：云"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h068]
+Name="城堡大门"
+Hotkey=U
+Tip=|cffffcc00U|r升级到城堡
+Ubertip="升级到城堡可以生产更多类型的结构和单元。"
+[h06A]
+Name="城堡大门"
+Hotkey=U
+Tip=|cffffcc00U|r升级到城堡
+Ubertip="升级到城堡可以生产更多类型的结构和单元。"
+[h06O]
+Name="腐朽圣殿"
+Hotkey=X
+Tip="升级至腐朽圣殿 [|cffffcc00X|r]"
+Ubertip="|cffFFFF80能力：|cffFFFF00大衰变|r|n每秒对所有非机械敌方单位造成 10 点伤害。不堆叠，所以不要建造两次！"
+[h06Z]
+Name="腐朽圣殿"
+Hotkey=X
+Tip="升级至腐朽圣殿 [|cffffcc00X|r]"
+Ubertip="|cffFFFF80能力：|cffFFFF00最大衰减|r|n对非机械单位造成 12 dps，对机械敌方单位造成 3 dps。不堆叠，所以不要建造两次！"
+[h071]
+Name="女族长"
+Hotkey=S
+Tip=""
+Ubertip=""
+[h072]
+Name="圣坛"
+Hotkey=X
+Tip="建造圣坛 [|cffffcc00X|r]"
+Ubertip="|cffFFFF80火车： |cffFFFF00圣斗士|n|n|cffFFAC00圣斗士：|r|n|cffFFFF80攻击：|r英雄 (|cffFFFF00近战|r,|cffFFFF00 87|r dps)|n|cffFFFF80盔甲：|r重型 (|cffFFFF0012|r)|n|cffFFFF80生命值：|cffFFFF001400|r|n|cffFFFF80能力：|r|n-分裂攻击 (|cffFFFF0040%|r)|n-祷告|n-保护光环(|cffFFFF00+7|r)|n- 耐拼写|n|n|cffFF0000你必须先关闭单位生产才能升级！|r"
+[h074]
+Name="圣武士"
+Hotkey=Q
+Tip="圣武士"
+Ubertip="|n|cffFFFF80攻击：|r英雄 (|cffFFFF00近战|r,|cffFFFF00 87|r dps)|n|cffFFFF80盔甲：|r重型 (|cffFFFF0012|r)|n|cffFFFF80生命值：|cffFFFF001400|r|n|cffFFFF80能力：|r|n|n|cff80FF00分裂攻击|r|n对附近的敌人造成40%的命中伤害|n|n|cff80FF00祷告|r|n祝福战士和附近的单位，可以使非传奇的友方单位起死回生（治疗 50hp\mp，在 8 秒内增加 30% 的伤害和 3 点护甲，复活 3-5 个单位）。|n|cff8080FF冷却时间：|r20s|n|n|cff80FF00保护光环|r|n增加 450 范围内友军的 7 点护甲|n|n|cff80FF00法术抗性|r|n对负面法术有 50% 的抗性"
+[h075]
+Name="无畏"
+Hotkey=Q
+Tip="火车无畏"
+Ubertip="|n|cffFFFF80攻击：|r正常 (|cffFFFF00400|r rng,|cffFFFF00 62|r dps)|n|cffFFFF80盔甲：|r重型 (|cffFFFF0012|r)|n|cffFFFF80生命值：|cffFFFF00800|r|n|cffFFFF80能力：|r|n|n|cff80FF00仅限地面|r|n该单位无法攻击飞行的敌人|n|n|cff80FF00重型坦克装甲|r|n使对该单位造成的所有攻击伤害降低 24。不能将伤害降低到 5 以下。"
+[h076]
+Name="原始巢穴"
+Hotkey=A
+Tip="升级到太古龙坛[|cffffcc00A|r]"
+Ubertip="|cffFFFF80火车： |cffFFFF00太古青龙|n|n|cffFFAC00太古青龙：|r|n|cffFFFF80攻击：|r混乱 (|cffFFFF00400|r rng,|cffFFFF00 70|r dps)|n|cffFFFF80盔甲：|r重 (|cffFFFF006|r)|n|cffFFFF80生命值：|cffFFFF001400|r|n|cffFFFF80能力：|r|n-飞行|n- 溅射伤害|n- 令人毛骨悚然的光环|n- 冰冷的呼吸|n- 传奇法术抗性（50%）|n|cffFF0000你必须先关闭单位生产才能升级！|r"
+[h077]
+Name="无畏工厂"
+Hotkey=E
+Tip="升级到无畏工厂 [|cffffcc00E|r]"
+Ubertip="|cffFF8204传奇建筑|r|n|cffFFFF80火车：|cffFFFF00无畏坦克|n|n|cffFFAC00无畏坦克：|r|n|cffFFFF80攻击：|r混乱 (|cffFFFF00550|r rng,|cffFFFF00 50|r dps)|n|cffFFFF80盔甲：|r重 (|cffFFFF008|r)|n|cffFFFF80生命值：|cffFFFF00700|r|n|cffFFFF80能力：|r|n- 不能攻击空气|n- 溅射伤害|n-中型坦克装甲 (|cffFFFF00-18 dmg|r)|n|n|cffFF0000你必须先关闭单位生产才能升级！|r"

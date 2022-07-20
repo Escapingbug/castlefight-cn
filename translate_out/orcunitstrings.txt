@@ -1,0 +1,267 @@
+[oalt]
+Name=风暴祭坛
+Hotkey=A
+Tip=建造 [|cffffcc00A|r] 风暴祭坛
+Ubertip="召唤英雄。复活被杀的英雄。"
+[oang]
+Name=祖先守护者
+[obar]
+Name=兵营
+Hotkey=B
+Tip=建造 [|cffffcc00B|r] 兵营
+Ubertip="初级部队生产大楼。训练咕噜、猎头和破坏者。|n还包含狂战士力量、狂战士、巨魔再生和燃烧石油升级。"
+[obea]
+Name=野兽派
+Hotkey=E
+Tip=建造 [|cffffcc00e|r] 野兽派
+Ubertip="训练突袭者、科多兽、巨魔蝙蝠骑士和风骑士。|n还包含 Ensnare、Envenomed Spears、Liquid Fire 和 War Drums 升级。"
+[Obla]
+Name=刀剑大师
+Propernames=Tojara,Nikoro,Kajind,Mikasa,Samuro,Akinos,Mazuru,Yozshura,Daisho,Kigami,Arashicage,Moogul the Sly,Jubei
+Hotkey=B
+Tip=召唤 [|cffffcc00B|r] 剑圣
+Ubertip="狡猾的英雄，擅长快速杀死单个单位并在敌人之间制造混乱。可以学习镜像、疾风步、暴击和剑刃风暴。|n|n|cffffcc00攻击陆地单位。|r"
+Revivetip=Revive |cffffcc00B|rlademaster
+Awakentip=Revive |cffffcc00B|rlademaster
+[ocat]
+Name=破坏者
+Hotkey=D
+Tip=训练 [|cffffcc00D|r] 破坏者
+Ubertip="远程攻城武器。对建筑物有效，但速度慢且易受攻击。可以学习燃烧之油的能力。|n|n|cffffcc00攻击陆地单位和树木。|r"
+[odoc]
+Name=巨魔巫医
+Hotkey=W
+Tip=训练巨魔 [|cffffcc00W|r] 巫医
+Ubertip="支持施法者。最初可以施放哨兵守卫，它会召唤一个隐形探测器。还可以学习停滞陷阱和治疗结界。|n|n|cffffcc00攻击陆地和空中单位。|r"
+Casterupgradename=Initiate, Adept, Master
+Casterupgradetip="- Sentry Ward","- Sentry Ward|n- Stasis Trap","- Sentry Ward|n- Stasis Trap|n- Healing Ward"
+[otot]
+Name=停滞陷阱
+[oeye]
+Name=哨兵守卫
+[Ofar]
+Name=远见者
+Propernames=Gar'dal Grimsight,Negal Fireye,Kazil Darkeye,Magis Coldeye,Bale Bleakstare,Gorr Grimwolf,Kag'ar Winterfang,Nazgrel,Morg Wolfsong,Kazragore,Fenris'ar Gul'
+Hotkey=F
+Tip=召唤 [|cffffcc00F|r] 远先知
+Ubertip="神秘英雄，擅长远程攻击和侦察。可以学习闪电链、远视、野性精神和地震。|n|n|cffffcc00攻击陆地和空中单位。|r"
+Revivetip=Revive |cffffcc00F|rar Seer
+Awakentip=Revive |cffffcc00F|rar Seer
+[ofor]
+Name=战争磨坊
+Hotkey=M
+Tip=建造战争 [|cffffcc00M|r] 磨坊
+Ubertip="用作采伐木材的下车点。|n还包含改进装甲、近战武器、远程武器、强化防御和尖刺路障的升级。"
+[ofrt]
+Name=堡垒
+Hotkey=U
+Tip=|cffffcc00U|r升级到堡垒
+Ubertip="升级到 Fortress 可以生产更多类型的结构和单元。"
+[ogre]
+Name=大厅
+Hotkey=H
+Tip=建造伟大的 [|cffffcc00H|r] 大厅
+Ubertip="主要结构，用于训练苦工和接收收集的资源。可以升级到要塞，然后升级到要塞，以生产更多类型的结构和单位。"
+[ogru]
+Name=咕噜声
+Hotkey=G
+Tip=训练 [|cffffcc00G|r] 咕噜声
+Ubertip="野蛮的兽人战士。可以学习狂暴之力。|n|n|cffffcc00攻击陆地单位。|r"
+[ohun]
+Name=巨魔猎头
+Hotkey=T
+Tip=训练 [|cffffcc00T|r] 巨魔猎头者
+Ubertip="多功能长矛投掷器，对空中单位有效。可以学习巨魔再生。可以升级为具有狂暴能力的巨魔狂战士。|n|n|cffffcc00攻击陆地和空中单位。|r"
+[otbk]
+Name=巨魔狂战士
+Hotkey=T
+Tip=训练 [|cffffcc00T|r] 巨魔狂战士
+Ubertip="多功能长矛投掷器，对空中单位有效。拥有狂暴能力，可以造成更多伤害，但受到攻击时会受到更多伤害。可以学习巨魔再生。|n|n|cffffcc00攻击陆地和空中单位。|r"
+[ohwd]
+Name=治愈病房
+[okod]
+Name=科多兽
+Hotkey=K
+Tip=训练 [|cffffcc00K|r] 科多兽
+Ubertip="由兽人鼓手骑乘的笨重的战兽。拥有战鼓和吞噬能力。战鼓给予附近友军单位的攻击伤害加成。吞噬可以让科多兽吃掉一个目标敌方单位。可以获得战鼓升级。|n|n|cffffcc00攻击陆地和空中单位。|r"
+[osld]
+Name=精神旅馆
+Hotkey=S
+Tip=建造 [|cffffcc00S|r] 精神小屋
+Ubertip="施法者生产大楼。训练萨满、巫医和灵魂行者。|n还包含萨满、巫医和灵魂行者的法术升级。"
+[opeo]
+Name=日工
+Hotkey=P
+Tip=训练 [|cffffcc00P|r] 苦工
+Ubertip="基本工人单位。可以收获黄金和木材、建造结构和修理。也可以进入兽人洞穴内部对其进行攻击。|n|n|cffffcc00攻击陆地单位和树木。|r"
+[orai]
+Name=掠夺者
+Hotkey=R
+Tip=训练 [|cffffcc00R|r] 掠夺者
+Ubertip="高度机动的狼骑手。对建筑物有效。可以学习诱捕能力。|n|n|cffffcc00攻击陆地单位。|r"
+[oshm]
+Name=萨满
+Hotkey=S
+Tip=训练 [|cffffcc00S|r] 萨满
+Ubertip="初级施法者。最初可以施放净化，减缓并消除正面和负面的增益。还可以学习闪电之盾和嗜血。|n|n|cffffcc00攻击陆地和空中单位。|r"
+Casterupgradename=Initiate, Adept, Master
+Casterupgradetip="- Purge","- Purge|n- Lightning Shield","- Purge|n- Lightning Shield|n- Bloodlust"
+[ostr]
+Name=据点
+Hotkey=U
+Tip=|cffffcc00U|r升级到要塞
+Ubertip="升级到要塞以生产更多类型的结构和单位。"
+[osw1]
+Name=狼灵
+[osw2]
+Name=恐狼
+[osw3]
+Name=影狼
+[osp1]
+Name=毒蛇守卫
+[osp2]
+Name=毒蛇守卫
+[osp3]
+Name=毒蛇守卫
+[otau]
+Name=牛头人
+Hotkey=T
+Tip=训练 [|cffffcc00T|r] 牛头人
+Ubertip="强大的战士。可以学习粉碎能力。|n|n|cffffcc00攻击陆地单位。|r"
+[otbr]
+Name=巨魔蝙蝠骑士
+Hotkey=B
+Tip=训练巨魔 [|cffffcc00B|r] 蝙蝠骑士
+Ubertip="具有令人难以置信的感知的轻型飞行装置。擅长破坏建筑物。拥有不稳定的混合物能力，可以让巨魔蝙蝠骑士爆炸，对附近的敌方空中单位造成伤害。可以学习液态火和巨魔再生。|n|n|cffffcc00攻击陆地单位。|r"
+[Oshd]
+Name=暗影猎手
+Propernames=Zul'kis,Zul'abar,Zul'rajas,Zul'maran,Jo Jo Headshrinker,Shaka-zahn,Shakti-lar,Mezil-kree
+Hotkey=H
+Tip=召唤暗影 [|cffffcc00H|r] 猎人
+Ubertip="狡猾的英雄，擅长治疗魔法和巫毒诅咒。可以学习治疗波、妖术、毒蛇守卫和大坏巫毒。|n|n|cffffcc00攻击陆地和空中单位。|r"
+Revivetip=Revive Shadow |cffffcc00H|runter
+Awakentip=Revive Shadow |cffffcc00H|runter
+[Otch]
+Name=牛头人酋长
+Propernames=Marn Thunderhorn,Tygore Dusthoof,Tam Windtotem,Durn Harpyslayer,Kam Ghoststeer,Kel Stonebull,Mull Stormhoof,Grok Bloodhorn,Malar Plainstrider,Taur Runetotem
+Hotkey=T
+Tip=召唤 [|cffffcc00T|r] 牛头人酋长
+Ubertip="战士英雄，在吸收伤害和近战格斗方面表现出色。可以学习冲击波、战争践踏、耐力光环和轮回。|n|n|cffffcc00攻击陆地单位。|r"
+Revivetip=Revive |cffffcc00T|rauren Chieftain
+Awakentip=Revive |cffffcc00T|rauren Chieftain
+[otrb]
+Name=兽人地洞
+Hotkey=O
+Tip=建造 [|cffffcc00O|r] 兽人洞穴
+Ubertip="提供食物，增加可训练单位的最大数量。苦工可以驻扎在里面攻击敌方单位。可以学习强化防御升级。|n|n|cffffcc00攻击陆地和空中单位。|r"
+[orbr]
+Name=强化兽人地洞
+Hotkey=O
+Tip=建造强化的 [|cffffcc00O|r] 兽人洞穴
+Ubertip="提供食物，增加可训练单位的最大数量。苦工可以驻扎在里面攻击敌方单位。|n|n|cffffcc00攻击陆地和空中单位。|r"
+[otto]
+Name=牛头人图腾
+Hotkey=T
+Tip=建造 [|cffffcc00T|r] 牛头人图腾
+Ubertip="训练牛头人。|n还包含粉碎升级。"
+[ovln]
+Name=巫毒酒廊
+Hotkey=V
+Tip=建造 [|cffffcc00V|r] 巫毒酒廊
+Ubertip="用可购买的物品创建一个商店。可用的物品取决于您的大会堂的升级级别（大会堂、要塞或要塞）以及您拥有的建筑物。"
+[owyv]
+Name=驭风者
+Hotkey=W
+Tip=训练 [|cffffcc00W|r] 驭风者
+Ubertip="高度机动的飞行生物。擅长侦察。可以学习毒矛。|n|n|cffffcc00攻击陆地和空中单位。|r"
+[owtw]
+Name=瞭望塔
+Hotkey=W
+Tip=建造 [|cffffcc00W|r] 瞭望塔
+Ubertip="防御结构。可以学习强化防御升级。|n|n|cffffcc00攻击陆地和空中单位。|r"
+[ospw]
+DependencyOr=ospm
+Name=灵行者
+Hotkey=T
+Tip=培训精神|cffffcc00t|r沃克
+Ubertip="神秘的牛头人施法者。拥有空灵形态，可以让他避免物理伤害。还有精神链接，它允许单位分配传入的伤害。可以学习祛魅和祖灵。|n|n|cffffcc00攻击陆地和空中单位。|r"
+Casterupgradename=Initiate, Adept, Master
+Casterupgradetip="- Ethereal Form|n- Spirit Link","- Ethereal Form|n- Spirit Link|n- Disenchant","- Ethereal Form|n- Spirit Link|n- Disenchant|n- Ancestral Spirit"
+[ospm]
+Name=灵行者
+Hotkey=T
+Tip=培训精神|cffffcc00t|r沃克
+Ubertip="神秘的牛头人施法者。拥有空灵形态，可以让他避免物理伤害。还有精神链接，它允许单位分配传入的伤害。可以学习祛魅和祖灵。|n|n|cffffcc00攻击陆地和空中单位。|r"
+Casterupgradename=Initiate, Adept, Master
+Casterupgradetip="- Ethereal Form|n- Spirit Link","- Ethereal Form|n- Spirit Link|n- Disenchant","- Ethereal Form|n- Spirit Link|n- Disenchant|n- Ancestral Spirit"
+[o007]
+Name="科多"
+Hotkey=Q
+Tip="火车 科多兽"
+Ubertip="|n|cffFFFF80攻击：|r穿刺 (|cffFFFF00近战|r,|cffFFFF00 24|r dps)|n|cffFFFF80盔甲：|r光 (|cffFFFF006|r)|n|cffFFFF80生命值：|cffFFFF001000|r"
+[o008]
+Name="进攻型科多兽骑士"
+Hotkey=Q
+Tip="训练进攻型科多兽骑士"
+Ubertip="|n|cffFFFF80攻击：|r穿刺 (|cffFFFF00320|r rng,|cffFFFF00 33|r dps)|n|cffFFFF80盔甲：|r光 (|cffFFFF007|r)|n|cffFFFF80生命值：|cffFFFF001200|r|n|cffFFFF80能力：|r|n|n|cff80FF00近战伤害光环|r|n900范围内友军近战单位的伤害提高30%"
+[o009]
+Name="飞龙骑士"
+Hotkey=Q
+Tip="火车飞龙骑士"
+Ubertip="|n|cffFFFF80攻击：|r穿刺 (|cffFFFF00400|r rng,|cffFFFF00 30|r dps)|n|cffFFFF80盔甲：|r无装甲 (|cffFFFF002|r)|n|cffFFFF80生命值：|cffFFFF00440|r|n|cffFFFF80能力：|r|n|n|cff80FF00飞行|r|n这个单位在飞|n|n|cff80FF00轻微毒药攻击|r|n该单位的攻击会使敌人中毒，使其移动速度和攻击速度降低 20%，每秒造成 4 点伤害。毒药持续 3 秒。"
+[o003]
+Name="萨满"
+Hotkey=Q
+Tip="训练萨满"
+Ubertip="|n|cffFFFF80攻击：|r魔法 (|cffFFFF00350|r rng,|cffFFFF00 26|r dps)|n|cffFFFF80盔甲：|r无装甲 (|cffFFFF001|r)|n|cffFFFF80生命值：|cffFFFF00340|r|n|cffFFFF80能力：|r|n|n|cff80FF00萨满迷|r|n增加一个友军4点护甲，伤害提高30%。 buff持续30秒。不与十字军/圣骑士的祝福叠加。|n|cff8080FF冷却时间：|r6|n|cff8080FF"
+Casterupgradename=
+Casterupgradetip=
+[o004]
+Name="老兵咕噜"
+Hotkey=Q
+Tip="训练老兵咕噜"
+Ubertip="|n|cffFFFF80攻击：|r普通（|cffFFFF00近战|r，|cffFFFF00 30|r dps）|n|cffFFFF80盔甲：|r重 (|cffFFFF006|r)|n|cffFFFF80生命值：|cffFFFF00575|r|n|cffFFFF80能力：|r|n|n|cff80FF00致命一击|r|n每次攻击有 25% 几率造成 2 倍正常伤害"
+[o005]
+Name="斧王"
+Hotkey=Q
+Tip="训练斧王"
+Ubertip="|n|cffFFFF80攻击：|r普通（|cffFFFF00近战|r，|cffFFFF00 65|r dps）|n|cffFFFF80盔甲：|r重型 (|cffFFFF0010|r)|n|cffFFFF80生命值：|cffFFFF001000|r|n|cffFFFF80能力：|r|n|n|cff80FF00致命一击|r|n每次攻击有 30% 几率造成 3 倍正常伤害|n|n|cff80FF00粉碎|r|n每次攻击有 35% 的几率对 200 范围内的所有敌人造成 130 点伤害"
+[o006]
+Name="防御科多兽骑手"
+Hotkey=Q
+Tip="训练防御科多兽骑士"
+Ubertip="|n|cffFFFF80攻击：|r穿刺 (|cffFFFF00320|r rng,|cffFFFF00 33|r dps)|n|cffFFFF80盔甲：|r光 (|cffFFFF007|r)|n|cffFFFF80生命值：|cffFFFF001200|r|n|cffFFFF80能力：|r|n|n|cff80FF00护甲光环|r|n增加 900 范围内友军 4 点护甲"
+[o000]
+Name="防空塔"
+Hotkey=Y
+Tip="建造防空塔 [|cffffcc00Y|r]"
+Ubertip="|cffFFAC00基地防御|r：|n这是保护关键位置的塔。|n|n|cffFF8000攻击1 |r（空中）|n|cffFFFF80攻击类型：|cffFFFF00普通的|n|cffFFFF80范围：|cffFFFF00 900|n|cffFFFF80平均DPS：|cffFFFF00 175|r|n|n|cffFF8000攻击2 |r（地面）|n|cffFFFF80攻击类型：|cffFFFF00普通的|n|cffFFFF80范围：|cffFFFF00 700|n|cffFFFF80平均DPS：|cffFFFF00 47|r|n|n|cffFFFF80能力：|r|n-毒箭（|cffFFFF0025% 减速，35 伤害|r）"
+[o001]
+Name="弹射"
+Hotkey=Q
+Tip="火车弹射器"
+Ubertip="|n|cffFFFF80攻击：|r围城 (|cffFFFF001000|r rng,|cffFFFF00 27|r dps)|n|cffFFFF80盔甲：|r中等 (|cffFFFF005|r)|n|cffFFFF80生命值：|cffFFFF00475|r|n|cffFFFF80能力：|r|n|n|cff80FF00仅限地面|r|n该单位无法攻击飞行的敌人|n|n|cff80FF00飞溅伤害|r|n该单位的攻击会命中目标周围 160 范围内的所有单位。距离目标越远的单位受到的伤害越少|n|n|cff80FF00燃烧弹药|r|n这些单位的攻击会造成 225 范围的燃烧，持续 2.5 秒，每秒对该区域的地面单位造成 48 点伤害"
+[o002]
+Name="咕噜声"
+Hotkey=Q
+Tip="火车咕噜"
+Ubertip="|n|cffFFFF80攻击：|r普通（|cffFFFF00近战|r，|cffFFFF00 18|r dps）|n|cffFFFF80盔甲：|r重 (|cffFFFF004|r)|n|cffFFFF80生命值：|cffFFFF00325|r"
+[o00B]
+Name="破法者科多兽骑士"
+Hotkey=Q
+Tip="训练 Spellbreaker Kodo Rider"
+Ubertip="|n|cffFFFF80攻击：|r穿刺 (|cffFFFF00320|r rng,|cffFFFF00 33|r dps)|n|cffFFFF80盔甲：|r光 (|cffFFFF007|r)|n|cffFFFF80生命值：|cffFFFF001200|r|n|cffFFFF80能力：|r|n|n|cff80FF00法术抗力|r|n对该单位造成的法术伤害降低 70%"
+[o00A]
+Name="冰巨魔巫医"
+Hotkey=Q
+Tip="火车冰巨魔巫医"
+Ubertip="|n|cffFFFF80攻击：|r魔法 (|cffFFFF00370|r rng,|cffFFFF00 48|r dps)|n|cffFFFF80盔甲：|r光 (|cffFFFF003|r)|n|cffFFFF80生命值：|cffFFFF00650|r|n|cffFFFF80能力：|r|n|n|cff80FF00冰冷攻击|r|n所有被击中的单位都会被冰冻 5 秒|n|n|cff80FF00冰霜攻击|r|n对地面单位和建筑的每次攻击有 10% 的几率将目标冻结在地面上 6 秒，每秒造成 20 点伤害|n|n|cff80FF00冰霜盔甲|r|n对一名盟友施放冰霜护甲，获得 7 点护甲加成。所有击中装甲单位的近战单位都会被冰缓 6 秒。护甲持续 45 秒|n|cff8080FF冷却时间：|r8|n|cff8080FF法力消耗：|r35"
+Casterupgradename=
+Casterupgradetip=
+[o00F]
+Name="粗壮的萨满"
+Hotkey=Q
+Tip="训练粗壮萨满"
+Ubertip="|n|cffFFFF80攻击：|r魔法 (|cffFFFF00350|r rng,|cffFFFF00 43|r dps)|n|cffFFFF80盔甲：|r无装甲 (|cffFFFF002|r)|n|cffFFFF80生命值：|cffFFFF00420|r|n|cffFFFF80能力：|r|n|n|cff80FF00萨满迷|r|n增加一个友军5点护甲，伤害提高45%。 buff持续30秒。不与十字军/圣骑士的祝福叠加。|n|cff8080FF冷却时间：|r6|n|ncff80FF00法术抗性：25%"
+Casterupgradename=
+Casterupgradetip=

@@ -1,0 +1,110 @@
+[Resm]
+Name=月之力量,改良之月之力量,高级之月之力量
+Tip=升级到 [|cffffcc00M|r] 月亮的力量，升级到 [|cffffcc00M|r] 月亮的强化力量，升级到 |cffffcc00M|r 月亮的高级力量
+Ubertip="增加弓箭手、女猎手、投刃者和角鹰兽骑士的伤害。","进一步增加弓箭手、女猎手、投刃者和角鹰兽骑手的伤害。","进一步增加弓箭手、女猎手、投刃者和角鹰兽骑士。"
+Hotkey=M,M,M
+[Resw]
+Name=野性之力，野性之力提升，野性之力进阶
+Tip=升级到 [|cffffcc00W|r] Wild 的力量，升级到 [|cffffcc00W|r] Wild 的强化力量，升级到 |cffffcc00W|rwild 的高级力量
+Ubertip="增加熊形态的利爪德鲁伊、风暴乌鸦形态的利爪德鲁伊、树妖、山地巨人、精灵龙、角鹰兽和奇美拉的伤害。","进一步提高熊形态的利爪德鲁伊的伤害，暴风乌鸦形态的利爪德鲁伊、树妖、山地巨人、精灵龙、角鹰兽和奇美拉。","进一步增加熊形态的利爪德鲁伊、暴风乌鸦形态的利爪德鲁伊、树妖、山巨人、精灵龙、角鹰兽和奇美拉。"
+Hotkey=W,W,W
+[Rema]
+Name=月之铠甲,改良月之铠甲,高级月之铠甲
+Tip=升级到月球 [|cffffcc00A|r] 护甲，升级到改进的月球 [|cffffcc00A|r] 护甲，升级到高级月球 |cffffcc00A|rrmor
+Ubertip="增加弓箭手、女猎手和角鹰兽骑士的护甲。","进一步增加弓箭手、女猎手和角鹰兽骑士的护甲。","进一步增加弓箭手、女猎手和角鹰兽骑士的护甲。"
+Hotkey=A,A,A
+[Rerh]
+Name=强化皮革、改良强化皮革、高级强化皮革
+Tip=升级到 [|cffffcc00R|r] 加强皮，升级到改进的 [|cffffcc00R|r] 加强皮，升级到高级 [|cffffcc00R|r] 加强皮
+Ubertip="增加熊形态的利爪德鲁伊、风暴乌鸦形态的利爪德鲁伊、树妖、山地巨人、仙灵龙、角鹰兽和奇美拉的护甲。","进一步提高熊形态的利爪德鲁伊的护甲，暴风乌鸦形态的利爪德鲁伊、树妖、山地巨人、仙灵龙、角鹰兽和奇美拉。","进一步增加熊形态的利爪德鲁伊、暴风乌鸦形态的利爪德鲁伊、树妖、山脉巨人、精灵龙、角鹰兽和奇美拉。"
+Hotkey=R,R,R
+[Reuv]
+Name=超视
+Tip=升级到 [|cffffcc00U|r] Ultravision
+Ubertip="使暗夜精灵能够在夜间看到和白天一样远。"
+Hotkey=U
+[Renb]
+Name=大自然的祝福'
+Tip=研究 [|cffffcc00N|r] 自然的祝福'
+Ubertip="升级所有远古和树人的移动速度和护甲。"
+Hotkey=N
+[Reib]
+Name=改进的弓
+Tip=研究 [|cffffcc00I|r] 改进的弓
+Ubertip="增加弓箭手和角鹰兽骑士的攻击范围。"
+Hotkey=I
+[Remk]
+Name=枪法
+Tip=研究 [|cffffcc00M|r] 枪法
+Ubertip="<Remk,base1> 增加弓箭手和角鹰兽骑士的伤害。"
+Hotkey=M
+[Resc]
+Name=哨兵
+Tip=研究 [|cffffcc00S|r] 哨兵
+Ubertip="使女猎手能够将她的猫头鹰同伴送到附近的一棵树上并提供视野。|n可以看到隐形单位。"
+Hotkey=S
+[Remg]
+Name=升级月刃
+Tip=升级月亮 [|cffffcc00G|r] 战刃
+Ubertip="使女猎手能够用她的弹刃攻击攻击额外的单位。"
+Hotkey=G
+[Redt]
+Name=利爪大师训练的德鲁伊，利爪大师训练的德鲁伊
+Tip=[|cffffcc00a|r] 利爪大师训练的德鲁伊，[|cffffcc00a|r] 利爪大师训练的德鲁伊
+Ubertip="增加他们暗夜精灵形态的魔法容量、魔法回复速度、生命值，并赋予他们风暴乌鸦形态的能力。","增加他们暗夜精灵形态的魔法容量、魔法回复速度、生命值，并赋予他们施放飓风的能力."
+Hotkey=A,A
+[Redc]
+Name=Druid of the Claw Adept Training, Druid of the Claw Master Training
+Tip=[|cffffcc00l|r] 利爪大师训练的德鲁伊，[|cffffcc00l|r] 利爪大师训练的德鲁伊
+Ubertip="增加他们暗夜精灵形态的魔法容量、魔法回复速度、生命值、攻击伤害，并赋予他们回春能力。","增加他们暗夜精灵形态的魔法容量、魔法回复速度、生命值、攻击伤害并给予他们熊形式。"
+Hotkey=L,L
+[Resi]
+Name=废除魔法
+Tip=研究 [|cffffcc00s|r] 废除魔法
+Ubertip="使树妖能够驱散敌方单位的正面增益，以及友方单位的负面增益。|n对召唤的单位造成伤害。"
+Hotkey=S
+[Reht]
+Name=角鹰兽驯服
+Tip=研究 [|cffffcc00i|r] 驯服角鹰兽
+Ubertip="训练角鹰兽让弓箭手骑上它们。这使他们可以攻击空中和地面单位。"
+Hotkey=I
+[Recb]
+Name=腐蚀性呼吸
+Tip=研究腐蚀性 [|cffffcc00B|r] 呼吸
+Ubertip="使奇美拉能够向敌方建筑物投掷腐蚀性胆汁。"
+Hotkey=B
+[Repb]
+Name=斩首之刃
+Tip=研究 [|cffffcc00p|r] Vorpal Blades
+Ubertip="允许 Glaive Thrower 发射的战刃击穿最初的地面目标并伤害后面的目标。还允许他们攻击树木。"
+Hotkey=P
+[Rers]
+Name=抗性皮肤
+Tip=研究 [|cffffcc00t|r] 抗性皮肤
+Ubertip="增加山地巨人对法术伤害的抵抗力。"
+Hotkey=T
+[Rehs]
+Name=硬化皮肤
+Tip=研究 [|cffffcc00H|r] 硬化皮肤
+Ubertip="增加山地巨人对攻击伤害的抵抗力。"
+Hotkey=H
+[Reeb]
+Name=爪印
+Tip=研究 [|cffffcc00M|r] 爪印
+Ubertip="允许利爪德鲁伊在熊形态下施放咆哮。"
+Hotkey=M
+[Reec]
+Name=利爪印记
+Tip=研究 [|cffffcc00M|r] 利爪印记
+Ubertip="允许利爪德鲁伊在风暴乌鸦形态下施放精灵之火。"
+Hotkey=M
+[Rews]
+Name=好春天
+Tip=研究 [|cffffcc00e|r] 井泉
+Ubertip="月井可储存的法力值增加<Rews,base1>，其法力回复率增加<Rews,base2,%>%。"
+Hotkey=E
+[Repm]
+Name=背包
+Tip=研究 [|cffffcc00B|r] 背包
+Ubertip="赋予特定暗夜精灵地面单位携带物品的能力。"
+Hotkey=B

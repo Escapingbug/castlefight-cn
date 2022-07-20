@@ -1,0 +1,257 @@
+[TWN1]
+Name=市政厅或大会堂或生命之树或墓地
+[TWN2]
+Name=要塞或要塞或时代之树或死者大厅
+[TWN3]
+Name=城堡或堡垒或永恒之树或黑色城堡
+[TALT]
+Name=祭坛
+[mdpb]
+Name=美杜莎鹅卵石
+Hotkey=P
+Tip=购买美杜莎 [|cffffcc00P|r] 卵石
+Ubertip="使用时将目标敌方非英雄单位变成石头。一个被美杜莎卵石变成石头的单位将永久从游戏中移除。"
+Description=Turns target unit to stone.
+[ofir]
+Name=火球
+Hotkey=F
+Tip=购买 [|cffffcc00F|r] 火球
+Ubertip="携带时对英雄的攻击附加<AIfb,DataA1>额外火焰伤害。英雄的攻击也会在攻击空中时变为远程攻击，并对附近的敌方单位造成溅射伤害。"
+Description=Attacks also do fire damage.
+[oli2]
+Name=闪电之球
+Hotkey=L
+Tip=购买 [|cffffcc00L|r] 闪电宝珠
+Ubertip="携带时对英雄的攻击附加<AIll,DataA1>额外伤害。英雄的攻击在空中攻击时也会变为远程攻击，并有一定几率解除魔法并降低敌人的移动速度<AIlp,Dur1>秒。|n|cffffcc00对被召唤的单位造成<AIpg,DataC1>额外伤害。"
+Description=Attacks cause lightning damage.
+[oven]
+Name=毒液宝珠
+Hotkey=V
+Tip=购买 [|cffffcc00V|r] 毒液宝珠
+Ubertip="携带时对英雄的攻击附加<AIpb,DataA1>额外伤害。英雄的攻击在攻击空气和毒害敌方单位 <Apo2,Dur1> 秒时也会变为远程攻击。"
+Description=Attacks cause poison damage.
+[ocor]
+Name=腐化之珠
+Hotkey=B
+Tip=购买Or|cffffcc00b|r腐败的
+Ubertip="携带时对英雄的攻击附加<AIcb,DataA1>额外伤害。英雄的攻击也会在攻击空中时变为远程攻击，并在 <AIcb,Dur1> 秒内降低敌方单位的护甲。"
+Description=Attacks reduce armor.
+[phea]
+Name=治疗药水
+Hotkey=P
+Tip=购买 [|cffffcc00P|r] 治疗药水
+Ubertip="使用时治疗 <AIh1,DataA1> 生命值。"
+Description=Restores lost hit points.
+[pman]
+Name=法力药水
+Hotkey=M
+Tip=购买 [|cffffcc00M|r] 法力药水
+Ubertip="使用时恢复 <AIm1,DataA1> 法力。"
+Description=Restores lost mana.
+[shea]
+Name=治疗卷轴
+Hotkey=H
+Tip=[|cffffcc00H|r] 治疗购买卷轴
+Ubertip="使用时为英雄周围所有友方非机械单位恢复 <AIha,DataA1> 生命值。"
+Description=Restores hit points to nearby units.
+[stwp]
+Name=回城卷轴
+Hotkey=T
+Tip=[|cffffcc00T|r]回城购买卷轴
+Ubertip="将英雄及其附近的任何部队传送到目标友好的市政厅。"
+Description=Transports troops to friendly town hall.
+[rnec]
+Name=死灵法杖
+Hotkey=R
+Tip=购买 [|cffffcc00R|r] 死灵法杖
+Ubertip="用一具尸体制造两个骷髅战士。|n包含 <rnec,uses> 费用。"
+Description=Creates two Skeleton Warriors from a corpse.
+[pams]
+Name=反魔法药水
+Hotkey=A
+Tip=购买 [|cffffcc00A|r] 抗魔法药水
+Ubertip="使英雄对魔法法术免疫 <AIxs,Dur1> 秒。"
+Description=Renders Hero immune to magic.
+[hslv]
+Name=治疗药膏
+Hotkey=H
+Tip=购买 [|cffffcc00H|r] 治疗药膏
+Ubertip="|cff87ceeb非战斗消耗品|r|n使用时在 <AIrl,Dur1> 秒内通过 <AIrl,DataA1> 恢复目标单位的生命值。|n包含 <hslv,uses> 费用。"
+Description=Regenerates lost hit points over time.
+[plcl]
+Name=次级清晰度药水
+Hotkey=C
+Tip=购买次级 [|cffffcc00C|r] 清晰药水
+Ubertip="|cff87ceeb非战斗消耗品|r|n使用时在 <AIpl,Dur1> 秒内通过 <AIpl,DataB1> 恢复英雄的法力值。"
+Description=Regenerates mana over time.
+[sreg]
+Name=再生卷轴
+Hotkey=R
+Tip=[|cffffcc00R|r] 再生购买卷轴
+Ubertip="|cff87ceeb非战斗消耗品|r|n使用时在 <AIsl,Dur1> 秒内以 <AIsl,DataA1> 为英雄周围区域内所有友方非机械单位恢复生命值。"
+Description=Regenerates the health of nearby units.
+[skul]
+Name=牺牲头骨
+Hotkey=K
+Tip=购买祭祀 [|cffffcc00k|r] 骷髅
+Ubertip="在目标位置制造一片枯萎区域。"
+Description=Creates Blight at a target location.
+[moon]
+Name=月长石
+Hotkey=N
+Tip=购买 [|cffffcc00n|r] 月长石
+Ubertip="导致日食阻挡太阳并创造一个人造的夜晚。|n持续 <AIct,Dur1> 秒。"
+Description=Makes it night time.
+[tgrh]
+Name=小礼堂
+Hotkey=G
+Tip=购买 Tiny [|cffffcc00G|r] 大会堂
+Ubertip="在目标位置创建一个大厅。人类、暗夜精灵和亡灵玩家将获得与种族相同的市政厅。"
+Description="Creates a Great Hall."
+[tsct]
+Name=象牙塔
+Hotkey=V
+Tip=购买 [|cffffcc00v|r] 象牙塔
+Ubertip="在目标位置创建侦察塔。"
+Description="Creates a Scout Tower."
+[spre]
+Name=保护人员
+Hotkey=E
+Tip=[|cffffcc00e|r] 保存采购人员
+Ubertip="将目标友方单位传送到其最高级别的市政厅。"
+Description=Teleports a target unit home.
+[mcri]
+Name=机械小动物
+Hotkey=E
+Tip=购买 [|cffffcc00e|r] 机械小动物
+Ubertip="创建一个玩家控制的小动物，可用于侦察敌人。"
+Description=Creates a mechanical critter.
+[ssan]
+Name=庇护所的工作人员
+Hotkey=N
+Tip=[|cffffcc00n|r] 庇护所的采购人员
+Ubertip="将目标单位传送到最高级别的市政厅，使该单位昏迷并每秒恢复 <ANsa,DataE1> 生命值。持续到单位完全治愈。"
+Description=Heals and teleports a unit.
+[shas]
+Name=速度卷轴
+Hotkey=S
+Tip=[|cffffcc00S|r]速度购买卷轴
+Ubertip="将英雄和附近友军单位的移动速度提高到最大移动速度。|n持续 <AIsa,Dur1> 秒。"
+Description=Increases movement speed of units.
+[dust]
+Name=外观之尘
+Hotkey=D
+Tip=购买 [|cffffcc00D|r] 外观灰尘
+Ubertip="显示英雄周围区域内的敌方隐形单位。|n包含 <dust,uses> 电荷。|n持续 <AItb,Dur1> 秒。"
+Description=Reveals invisible units.
+[I00C]
+Name="爆炸地雷"
+Hotkey=C
+Tip="爆炸"
+Ubertip="炸毁这个地雷，为你的建筑腾出空间"
+Description=Boosts attack damage by 9.
+[I00D]
+Name="科技帐篷"
+Hotkey=G
+Tip="购买科技帐篷"
+Ubertip="在目标位置建造科技帐篷。您可以在那里研究新的技术水平，从而训练更高级别的单位。|n|n警告：如果这座建筑被摧毁，你就不能再科技了！"
+Description="Builds a tech tent at a target location. You can research new tech levels there allowing you to train higher tier units.|n|nWARNING: If this building is destroyed, you cannot tech anymore!"
+[I00A]
+Name="Drum'n'Bass 低音发生器"
+Hotkey=W
+Tip="购买 Drum'n'Bass 贝斯发生器"
+Ubertip="使所有友方单位的移动速度提高 15%，攻击速度提高 25%。 |cffFF0000不叠加，请勿重复购买！|r"
+Description="Increases the movementspeed of all friendly units by 15% and their attackspeed by 25%."
+[I00B]
+Name="核弹发射器"
+Hotkey=G
+Tip="购买 Nuke 发射器"
+Ubertip="在目标位置建立一个 Nuke Launcher。它将定期向敌方基地发射核导弹。"
+Description="Builds a Nuke Launcher"
+[I009]
+Name="恢复符文"
+Hotkey=B
+Tip="购买恢复符文"
+Ubertip="修理建筑物并治疗所有者附近的单位。与其他符文和珊瑚雕像堆叠。"
+Description="Repairs buildings and heals units near owner. Stacks with other Runes and Coral Statues."
+[I008]
+Name="双倍伤害"
+Tip="购买双倍伤害"
+Ubertip="使所有友方单位的伤害提高 100%，持续 30 秒。"
+Description="Increases the damage of all allied units by 100% for 30 seconds."
+[I007]
+Name="四重伤害"
+Tip="购买四伤害"
+Ubertip="30秒内对所有友方单位造成的伤害提高300%。"
+Description="Increases the damage of all allied units by 300% for 30 seconds."
+[I006]
+Name="闪电之球"
+Hotkey=T
+Tip="购买闪电球"
+Ubertip="允许您的工人每分钟向目标敌方单位发射一次链式闪电。闪电链击中 10 个目标，对第一个目标造成 1000 点伤害。"
+Description="Allows your worker to fire a chainlightning at target enemy unit once every minute. The chainlightning hits 10 targets, dealing 1000 damage to the first target."
+[I005]
+Name="石头卷轴"
+Hotkey=R
+Tip="购买石卷轴"
+Ubertip="使用时，该卷轴会治疗 400 点生命值、200 点法力值，并在 30 秒内为大范围内的所有友军单位提供 8 点额外护甲。"
+Description="When used, the scroll heals 400 hitpoints, 200 mana and gives 8 bonus armor for 30 seconds to all allied units in a huge area."
+[I004]
+Name="奶酪"
+Tip="买奶酪"
+Ubertip="允许您建造一个更传奇的结构。"
+Description="Allowing you to build one more legendary structure."
+[I003]
+Name="Drum'n'Bass 低音鼓"
+Tip="购买 Drum'n'Bass 低音鼓"
+Ubertip="给予所有友军单位 +30% 伤害。 |cffFF0000每个结果都会造成 +15% 的伤害|r"
+Description="Gives +30% damage to allied units."
+[I001]
+Name="爆破法杖"
+Hotkey=B
+Tip="购买爆破法杖"
+Ubertip="每秒向 750 范围内的随机敌人发射一枚魔法弹丸。投射物造成 50 点法术伤害。"
+Description="Launches one magic projectile per second at a random nearby enemy. Projectiles deal 50 spell damage."
+[I000]
+Name="金子"
+Hotkey=S
+Tip="金子"
+Ubertip="金子"
+Description="Gold"
+[I031]
+Name="双爆法杖"
+Hotkey=B
+Tip="购买爆破法杖"
+Ubertip="每秒向 750 范围内的随机敌人发射两枚魔法弹丸。投射物造成 50 点法术伤害。"
+Description="Launches two magic projectiles per second at a random nearby enemy. Projectile deal 50 spell damage."
+[I032]
+Name="四爆法杖"
+Hotkey=B
+Tip="购买爆破法杖"
+Ubertip="每秒向 750 范围内的随机敌人发射四颗魔法弹丸。投射物造成 50 点法术伤害。"
+Description="Launches four magic projectiles per second at a random nearby enemy. Projectile deal 50 spell damage."
+[I013]
+Name="Drum'n'Bass 低音鼓"
+Tip="购买 Drum'n'Bass 低音鼓"
+Ubertip="给予所有友军单位 +45% 伤害。 |cffFF0000每个结果都会造成 +15% 的伤害|r"
+Description="Gives +45% damage to allied units."
+[I014]
+Name="Drum'n'Bass 低音鼓"
+Tip="购买 Drum'n'Bass 低音鼓"
+Ubertip="给予所有友军单位 +60% 伤害。 |cffFF0000每个结果都会造成 +15% 的伤害|r"
+Description="Gives +60% damage to allied units."
+[I015]
+Name="Drum'n'Bass 低音鼓"
+Tip="购买 Drum'n'Bass 低音鼓"
+Ubertip="给予所有友军单位 +75% 伤害。 |cffFF0000每个结果都会造成 +15% 的伤害|r"
+Description="Gives +75% damage to allied units."
+[I016]
+Name="Drum'n'Bass 低音鼓"
+Tip="购买 Drum'n'Bass 低音鼓"
+Ubertip="给予所有友军单位 +90% 伤害。 |cffFF0000下一个后果不会给予更多的额外伤害！|r"
+Description="Gives +90% damage to allied units."
+[I002]
+Name="毁灭性打击"
+Tip="购买毁灭性打击"
+Ubertip="杀死目标区域内的所有敌方单位。|n如果您没有使用过 DS，请勿购买！"
+Description="Kills all enemy's units in the target area.|nDo not buy if you hadn't used  your DS!"

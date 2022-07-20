@@ -1,0 +1,22 @@
+﻿STRING 1
+{
+玩家 1
+}
+
+STRING 2
+{
+势力 1
+}
+
+STRING 3
+// 可破坏: B002 (WALL), Name (名字)
+{
+墙
+}
+
+STRING 4
+// 可破坏: B004 (WALL), Name (名字)
+{
+墙
+}
+

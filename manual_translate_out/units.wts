@@ -1,0 +1,82 @@
+﻿STRING 1
+{
+玩家 1
+}
+
+STRING 2
+{
+势力 1
+}
+
+STRING 3
+// 单位: hmtm (迫击炮小队), Ubertip (提示工具 - 扩展的)
+{
+|n|cffFFFF80攻击类型:|r 攻城(|cffFFFF001000|r 攻击范围,|cffFFFF00 21|r 每秒伤害)|n|cffFFFF80护甲类型:|r 轻甲(|cffFFFF000|r)|n|cffFFFF80伤害: |cffFFFF00280|r|n|cffFFFF80技能:|r|n|n|cff80FF00仅对地|r|n该单位不可对空|n|n|cff80FF00范围伤害|r|n220 范围以内造成范围伤害，距离中心越远受到伤害越低
+}
+
+STRING 4
+// 单位: hmtm (迫击炮小队), Hotkey (热键)
+{
+Q
+}
+
+STRING 5
+// 单位: hmtm (迫击炮小队), Tip (提示工具 - 基础)
+{
+训练迫击炮小队
+}
+
+STRING 6
+// 单位: hcas (主城), Name (名字)
+{
+主城
+}
+
+STRING 7
+// 单位: hrif (Sniper), Ubertip (提示工具 - 扩展的)
+{
+|n|cffFFFF80Attack:|r Pierce (|cffFFFF00500|r rng,|cffFFFF00 22|r dps)|n|cffFFFF80Armor:|r Medium (|cffFFFF000|r)|n|cffFFFF80Hitpoints: |cffFFFF00270|r|n|cffFFFF80Abilities:|r|n|n|cff80FF00Critical Strike|r|n10% chance on each attack to hit for 1.5 times of the normal damage
+}
+
+STRING 8
+// 单位: hrif (Sniper), Name (名字)
+{
+Sniper
+}
+
+STRING 9
+// 单位: hrif (Sniper), Hotkey (热键)
+{
+Q
+}
+
+STRING 10
+// 单位: hrif (Sniper), Tip (提示工具 - 基础)
+{
+Trains Sniper
+}
+
+STRING 11
+// 单位: hfoo (Footman), Ubertip (提示工具 - 扩展的)
+{
+|n|cffFFFF80Attack:|r Normal (|cffFFFF00melee|r,|cffFFFF00 18|r dps)|n|cffFFFF80Armor:|r Heavy (|cffFFFF004|r)|n|cffFFFF80Hitpoints: |cffFFFF00260|r
+}
+
+STRING 12
+// 单位: hfoo (Footman), Hotkey (热键)
+{
+Q
+}
+
+STRING 13
+// 单位: hfoo (Footman), Tip (提示工具 - 基础)
+{
+Trains Footman
+}
+
+STRING 14
+// 单位: hfoo (Footman), Name (名字)
+{
+Footman
+}
+

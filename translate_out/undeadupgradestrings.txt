@@ -1,0 +1,90 @@
+[Rusp]
+Name=毁灭者形态
+Tip=研究 [|cffffcc00t|r] 驱逐舰形态
+Ubertip="允许黑曜石雕像转变为毁灭者，这是一个必须吞噬魔法来维持其法力值的大型飞行单位。毁灭者拥有技能免疫、吞噬魔法、吸收法力和毁灭之球。|n|n|cffffcc00攻击陆地和空中单位。|r"
+Hotkey=T
+[Rume]
+Name=邪恶力量，提升邪恶力量，高级邪恶力量
+Tip=升级到邪恶 [|cffffcc00S|r] 力量，升级到强化邪恶 [|cffffcc00S|r] 力量，升级到高级邪恶 |cffffcc00S|r 力量
+Ubertip="增加食尸鬼、肉车、憎恶、骷髅战士和骷髅法师的攻击力。","进一步提高食尸鬼、肉车、憎恶、骷髅战士和骷髅法师的攻击力。","进一步提高攻击力食尸鬼，肉车，憎恶，骷髅战士和骷髅法师。"
+Hotkey=S,S,S
+[Rura]
+Name=生物攻击,改进的生物攻击,高级生物攻击
+Tip=升级为生物[|cffffcc00A|r]攻击，升级为改良生物[|cffffcc00A|r]攻击，升级为高级生物|cffffcc00A|r攻击
+Ubertip="增加地穴恶魔、石像鬼、毁灭者和冰霜巨龙的攻击伤害。","进一步增加地穴恶魔、石像鬼、毁灭者和冰霜巨龙的攻击伤害。","进一步增加地穴恶魔、石像鬼、毁灭者和冰霜巨龙。"
+Hotkey=A,A,A
+[Ruar]
+Name=不洁护甲,改良不洁护甲,高级不洁护甲
+Tip=升级到 [|cffffcc00U|r] 不洁护甲，升级到改进的 [|cffffcc00U|r] 不洁护甲，升级到高级 [|cffffcc00U|r] 不洁护甲
+Ubertip="增加食尸鬼、憎恶、骷髅战士和骷髅法师的护甲。","进一步增加食尸鬼、憎恶、骷髅战士和骷髅法师的护甲。","进一步增加食尸鬼、憎恶、骷髅战士和骷髅战士的护甲和骷髅法师。"
+Hotkey=U,U,U
+[Rucr]
+Name=生物甲壳，改良型生物甲壳，高级生物甲壳
+Tip=升级至生物 [|cffffcc00C|r] 甲壳，升级至改良生物 [|cffffcc00C|r] 甲壳，升级至高级生物 |cffffcc00C|r甲壳
+Ubertip="增加地穴恶魔、石像鬼、毁灭者和冰霜巨龙的护甲。","进一步增加地穴恶魔、石像鬼、毁灭者和冰霜巨龙的护甲。","进一步增加地穴恶魔、石像鬼、毁灭者的护甲，和冰霜巨龙。"
+Hotkey=C,C,C
+[Ruac]
+Name=蚕食
+Tip=研究 [|cffffcc00C|r] 蚕食
+Ubertip="使食尸鬼和憎恶者能够使用食人化能力。 Cannibalize 消耗附近的尸体来恢复生命值。"
+Hotkey=C
+[Rugf]
+Name=食尸鬼狂热
+Tip=研究食尸鬼狂热|cffffcc00z|ry
+Ubertip="使食尸鬼的攻击率提高<Rugf,base1,%>%，并提高他们的移动速度。"
+Hotkey=Z
+[Ruwb]
+Name=网络
+Tip=研究 [|cffffcc00W|r] 网络
+Ubertip="使地穴恶魔能够使用网络能力。蛛网将一个目标敌方空中单位用蛛网束缚，迫使其降落在地面上。蹼类单位可以像陆地单位一样被击中。"
+Hotkey=W
+[Rusf]
+Name=石头形态
+Tip=研究 [|cffffcc00S|r] 石形态
+Ubertip="使石像鬼能够呈现石像形态。石像形态将石像鬼变成了具有高护甲、技能免疫和再生能力的雕像。石像鬼不能以这种形式攻击。"
+Hotkey=S
+[Rune]
+Name=死灵法师训练，死灵法师大师训练
+Tip=N[|cffffcc00e|r] ecromancer Adept Training,N[|cffffcc00e|r] ecromancer Master Training
+Ubertip="增加死灵法师的法力容量、法力恢复速度、生命值，并赋予他们施放邪恶狂怒的能力。"
+Hotkey=E,E
+[Ruba]
+Name=女妖精通培训，女妖大师培训
+Tip=B[|cffffcc00a|r] anshee Adept Training,B[|cffffcc00a|r] anshee Master Training
+Ubertip="提高女妖的法力容量、法力恢复速度、生命值，并赋予他们施放反魔法外壳的能力。"
+Hotkey=A,A
+[Rufb]
+Name=冰冷的呼吸
+Tip=研究冻结 [|cffffcc00B|r] 呼吸
+Ubertip="使冰霜巨龙能够使用冰冻吐息能力。在建筑物上施放时，会暂时停止生产。"
+Hotkey=B
+[Rusl]
+Name=骨骼长寿
+Tip=研究 [|cffffcc00S|r] 骨骼长寿
+Ubertip="提升骷髅战士和骷髅法师的持续时间 <Rusl,base1> 秒。"
+Hotkey=S
+[Rupc]
+Name=疾病云
+Tip=研究 [|cffffcc00D|r] 疾病云
+Ubertip="给予憎恶一种疾病云光环，每秒对附近的敌方单位造成 <Aap1,DataB1> 伤害，持续 <Aap1,DataA1> 秒。肉车在攻击的任何地方都会造成疾病云，每秒对附近的敌方单位造成 <Aap2,DataB1> 伤害，持续 <Aap2,DataA1> 秒。|n不死生物对疾病云免疫。"
+Hotkey=D
+[Rusm]
+Name=骨骼精通
+Tip=研究骨骼 [|cffffcc00M|r] 精通
+Ubertip="使死者复活创造的两个骷髅之一成为骷髅法师。"
+Hotkey=M
+[Rubu]
+Name=地洞
+Tip=研究 [|cffffcc00B|r] 洞穴
+Ubertip="地穴恶魔获得了挖洞的能力。 Burrowed Crypt Fiends 是隐形的并且会增加生命值恢复速度，但不能攻击。"
+Hotkey=B
+[Ruex]
+Name=挖掘尸体
+Tip=研究 [|cffffcc00E|r] 挖掘尸体
+Ubertip="使肉车能够生成尸体。"
+Hotkey=E
+[Rupm]
+Name=背包
+Tip=研究 [|cffffcc00B|r] 背包
+Ubertip="赋予特定不死族地面单位携带物品的能力。"
+Hotkey=B

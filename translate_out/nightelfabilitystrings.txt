@@ -1,0 +1,721 @@
+[Avng]
+Name=复仇之魂
+Tip=[|cffffcc00V|r] 复仇之魂
+Ubertip="从尸体中复活无敌的野性灵魂。持续 <Avng,Dur1> 秒或直到化身死亡。"
+Hotkey=V
+Untip="|cffc3dbff右击激活自动施法。"
+Unubertip="|cffc3dbff右键单击以禁用自动施法。"
+[Bvng]
+Bufftip=复仇之魂
+Buffubertip="复仇就在这里。"
+[Amfl]
+Name=法力耀斑
+Tip=法力 [|cffffcc00F|r] 闪光
+Untip=停止法力 [|cffffcc00F|r] 闪光
+Ubertip="使精灵龙在施法时引导负面的魔法能量，对附近的敌人造成伤害。也增加精灵龙的护甲<Amfl,DataE1>。|n持续 <Amfl,Dur1> 秒。"
+Unubertip="停止引导法力闪耀。"
+Hotkey=F
+Unhotkey=F
+[Bmfl]
+Bufftip=法力耀斑
+Buffubertip="这个单位有法力闪光；附近施法的敌方单位会受到伤害。"
+[Bmfa]
+Bufftip=法力耀斑
+Buffubertip="这个单位有法力闪光；附近施法的敌方单位会受到伤害。"
+[Apsh]
+Name=相移
+Tip=阶段|cffffcc00e|r转移
+Ubertip="使该单位在受到伤害时消失，暂时避免任何进一步的伤害。|n持续 <Apsh,Dur1> 秒。"
+Untip="|cffc3dbff|cffc3dbff右击激活自动投射。|r|r"
+Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Hotkey=E
+Unhotkey=E
+[Bpsh]
+Bufftip=相移
+Buffubertip="该单位已不复存在，暂时无法受到伤害。"
+[Aetl]
+Name=空灵
+Tip=空灵
+Ubertip="灵体生物不能攻击，但可以施法，并且会受到魔法攻击和法术的额外伤害。"
+Hotkey=E
+[Asp1]
+Name=领域
+[Agra]
+Name=战争俱乐部
+Tip=|cffffcc00W|rar 俱乐部
+Ubertip="捡起一棵树，给予山地巨人围攻伤害，并增加攻击范围。|n持续 <Agra,DataE1> 罢工。"
+Hotkey=W
+[Assk]
+Name=硬化皮肤
+Tip=硬化皮肤
+Ubertip="<Assk,DataC1> 伤害减少对山地巨人的所有攻击。攻击不能低于 <Assk,DataB1> 伤害。"
+Hotkey=K
+[Arsk]
+Name=抗性皮肤
+Tip=抗性皮肤
+Ubertip="减少负面法术的持续时间并使山地巨人免疫某些法术。"
+Hotkey=E
+[Atau]
+Name=嘲讽
+Tip=|cffffcc00T|r阿姨
+Ubertip="最近的 <Atau,DataA1> 敌人被迫攻击这个单位。"
+Hotkey=T
+[Btau]
+Bufftip=嘲讽
+Buffubertip="该单位已被嘲讽，现在免疫。"
+[AEbl]
+Name=眨
+Tip=|cffffcc00B|rlink - [|cffffcc00Level [|cffffcc00B|r] 1|r],Blink - [|cffffcc00Level 2|r],|cffffcc00B|rlink - [|cffffcc00Level 3|r]
+Ubertip="将守望者传送一小段距离，允许她进出战斗。","将守望者传送一小段距离，允许她进出战斗。","将守望者传送一小段距离，允许她进出战斗。"
+Hotkey=B
+Researchtip="Learn |cffffcc00B|rlink - [|cffffcc00Level %d|r]"
+Researchubertip="Short distance teleportation that allows the Warden to move in and out of combat. |n|n|cffffcc00Level 1|r - <AEbl,Cool1> second cooldown, <AEbl,Cost1> mana. |n|cffffcc00Level 2|r - <AEbl,Cool2> second cooldown, <AEbl,Cost2> mana. |n|cffffcc00Level 3|r - <AEbl,Cool3> second cooldown, <AEbl,Cost3> mana."
+Researchhotkey=B
+[AEfk]
+Name=刀迷
+Tip=|cffffcc00F|ran of Knives - [|cffffcc00Level [|cffffcc00F|r] 1|r],Fan of Knives - [|cffffcc00Level 2|r],|cffffcc00F|ran of Knives - [|cffffcc00Level 3|r]
+Ubertip="守望者投掷一连串飞刀，对附近的敌人造成伤害。每把刀都会造成 <AEfk,DataA1> 伤害。","守望者掷出一连串的刀，对附近的敌人造成伤害。每把刀都会造成 <AEfk,DataA2> 伤害。","守望者扔出一连串的刀来伤害附近的敌人。每把刀都会造成 <AEfk,DataA3> 伤害。"
+Hotkey=F
+Researchtip="Learn |cffffcc00F|ran of Knives - [|cffffcc00Level %d|r]"
+Researchubertip="The Warden hurls a flurry of knives, damaging nearby enemies. |n|n|cffffcc00Level 1|r - <AEfk,DataA1> damage per target. |n|cffffcc00Level 2|r - <AEfk,DataA2> damage per target. |n|cffffcc00Level 3|r - <AEfk,DataA3> damage per target."
+Researchhotkey=F
+[AEsh]
+Name=暗影打击
+Tip=[|cffffcc00d|r] 暗影打击 - [|cffffcc00Level 1|r],[|cffffcc00d|r] 暗影打击 - [|cffffcc00Level 2|r],[|cffffcc00d|r] 暗影打击 - [|cffffcc00Level 3|r]
+Ubertip="向目标敌方单位投掷一把毒匕首，造成<AEsh,DataE1>初始伤害，并在<AEsh,Dur1>秒内每<AEsh,Cast1>秒造成<AEsh,DataA1>伤害。毒药会在短时间内降低目标单位的移动速度。","向目标敌方单位投掷一把毒匕首，造成<AEsh,DataE2>初始伤害，每<AEsh,Cast2>造成<AEsh,DataA2>伤害<AEsh,Dur2> 秒。毒药会在短时间内降低目标单位的移动速度。","向目标敌方单位投掷一把毒匕首，造成<AEsh,DataE3>初始伤害，每<AEsh,Cast3>造成<AEsh,DataA3>伤害<AEsh,Dur3> 秒。毒药会在短时间内降低目标单位的移动速度。"
+Hotkey=D
+Researchtip="Learn Sha|cffffcc00d|row Strike - [|cffffcc00Level %d|r]"
+Researchubertip="Hurls a poisoned dagger which deals large initial damage, and then deals damage over time. The poisoned unit has its movement speed slowed for a short duration. |n|n|cffffcc00Level 1|r - <AEsh,DataE1> strike damage, <AEsh,DataA1> duration damage. |n|cffffcc00Level 2|r - <AEsh,DataE2> strike damage, <AEsh,DataA2> duration damage. |n|cffffcc00Level 3|r - <AEsh,DataE3> strike damage, <AEsh,DataA3> duration damage."
+Researchhotkey=D
+[BEsh]
+Bufftip=暗影打击
+Buffubertip="该单位被暗影打击击中；它会随着时间的推移受到伤害并且移动得更慢。"
+[BEsi]
+Bufftip=暗影打击
+Buffubertip="该单位被暗影打击击中；它会随着时间的推移受到伤害并且移动得更慢。"
+[AEsv]
+Name=复仇
+Tip=|cffffcc00V|r承诺
+Ubertip="创造一个强大的化身，从附近的尸体中召唤无敌的灵魂来攻击你的敌人。当复仇的化身死亡时，灵魂消失了。|n持续 <AEsv,Dur1> 秒。"
+Hotkey=V
+Researchtip="Learn |cffffcc00V|rengeance"
+Researchubertip="Creates a powerful avatar that summons invulnerable spirits from nearby corpses to attack your enemies. When the Avatar of Vengeance dies, the spirits vanish. |nLasts <AEsv,Dur1> seconds."
+Researchhotkey=V
+[BEsv]
+Bufftip=复仇
+Buffubertip="复仇很生气。"
+[Slo2]
+Name=加载小精灵
+Tip=|cffffcc00L|r负载小精灵
+Ubertip="加载一个目标友方小精灵。"
+Hotkey=L
+[Amgl]
+Name=月刃
+Tip=月刃
+Ubertip="使女猎手能够用她的弹刃攻击攻击额外的单位。"
+[Aspo]
+Name=慢毒
+Tip=慢毒
+Ubertip="每秒造成<Aspo,DataA1>伤害的毒药攻击，在<Aspo,Dur1>秒内使目标敌人的移动速度降低<Aspo,DataB1,%>%，攻击速度降低<Aspo,DataC1,%>%。"
+[Bspo]
+Bufftip=慢毒
+Buffubertip="该单位被慢毒击中；它的移动速度和攻击速度已经降低，并且会随着时间的推移受到伤害。"
+[Bssd]
+Bufftip=慢毒
+Buffubertip="该单位被慢毒击中；它的移动速度和攻击速度已经降低，并且会随着时间的推移受到伤害。"
+[Ashm]
+Name=暗影融合
+Tip=H[|cffffcc00i|r] ide
+Ubertip="阻止该单位自动捕获敌人，使其能够影遁并在夜间不被发现。"
+Hotkey=I
+[Aesn]
+Name=哨兵
+Tip=S[|cffffcc00e|r] 哨兵
+Ubertip="将一只猫头鹰送到附近的一棵树上，以揭示它周围的区域。|n可以看到隐形单位。"
+Hotkey=E
+[Aeat]
+Name=吃树
+Tip=|cffffcc00E|r在树
+Ubertip="消耗一棵树以在 <Aeat,Dur1> 秒内恢复 <Aeat,DataC1> 生命值。"
+Hotkey=E
+[Ambt]
+Name=补充法力和生命
+Tip=|cffffcc00R|r补充法力和生命
+Ubertip="补充目标友方单位的生命值和法力值。"
+Untip="|cffc3dbff|cffc3dbff右击激活自动投射。|r|r"
+Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Hotkey=R
+Unhotkey=R
+Order=replenish
+[Awha]
+Name=收集
+Tip=|cffffcc00G|r其他
+Ubertip="从纠缠金矿中开采黄金并从树上采伐木材。"
+Hotkey=G
+[Adtn]
+Name=起爆
+Tip=|cffffcc00D|r酮酸盐
+Ubertip="摧毁小精灵，驱散所有魔法增益并从小精灵周围区域内的每个单位吸取 <Adtn,DataA1> 法力值。|n|cffffcc00对被召唤的单位造成 <Adtn,DataB1> 伤害。|r"
+Hotkey=D
+[Awhe]
+Name=愈合
+Tip=治愈|cffffcc00l|r
+Ubertip="治疗附近的友方受伤单位。"
+Untip="|cffc3dbff右击激活自动施法。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Hotkey=L
+Unhotkey=L
+[Aent]
+Name=纠缠金矿
+Tip=纠缠[|cffffcc00G|r]金矿
+Ubertip="纠缠金矿，让小精灵进入并开采黄金。"
+Hotkey=G
+[Aenc]
+Name=加载
+Tip=|cffffcc00L|r负载
+Ubertip="命令小精灵进入金矿。"
+Hotkey=L
+Untip=|cffffcc00U|r全部下载
+Unubertip="移除金矿中的所有小精灵。"
+Unhotkey=U
+[Aroo]
+Name=根
+Tip=|cffffcc00R|r根
+Ubertip="将远古者的根部埋入地下，使其无法移动，但允许其建造单位。对于远古守护者来说，这使它可以向空中投掷巨大的岩石来伤害敌方单位。还提供远古强化盔甲。"
+Hotkey=R
+Untip=[|cffffcc00r|r] 连根拔起
+Unubertip="允许远古者将自己拉出地面以便移动。还提供远古重型盔甲。"
+Unhotkey=R
+[Abrf]
+Name=熊形态
+Tip=熊 [|cffffcc00F|r] 形式
+Ubertip="将德鲁伊变成熊，减慢法力恢复速度，但使他成为一名出色的战士。"
+Hotkey=F
+Untip=暗夜精灵 [|cffffcc00F|r] 形态
+Unubertip="将德鲁伊变成暗夜精灵。"
+Unhotkey=F
+[Sbr2]
+[Arav]
+Name=风暴乌鸦形态
+Tip=风暴乌鸦 [|cffffcc00F|r] 形态
+Ubertip="将德鲁伊变成风暴乌鸦，赋予他飞行的能力。"
+Hotkey=F
+Untip=暗夜精灵 [|cffffcc00F|r] 形态
+Unubertip="将德鲁伊变成暗夜精灵。"
+Unhotkey=F
+[Sra2]
+[Aadm]
+Name=废除魔法
+Tip=A[|cffffcc00b|r] bolish 魔法
+Ubertip="驱散敌方单位的正面增益，以及友方单位的负面增益。|n|cffffcc00对被召唤的单位造成 <Aadm,DataB1> 伤害。|r"
+Untip="|cffc3dbff右击激活自动施法。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Hotkey=B
+Unhotkey=B
+[Amim]
+Name=技能免疫
+Tip=技能免疫
+Ubertip="使该单位免疫所有法术。"
+[Ault]
+Name=超视
+[Aco2]
+Name=角鹰兽山
+Tip=[|cffffcc00u|r] 角鹰兽山
+Ubertip="骑上角鹰兽，使弓箭手可以从空中攻击。|n|n|cffffcc00攻击陆地和空中单位。|r"
+Hotkey=U
+Order=coupletarget
+[Aco3]
+Name=拿起弓箭手
+Tip=选择 [|cffffcc00u|r] 向上弓箭手
+Ubertip="拿起一个弓箭手，使弓箭手可以从空中攻击。|n|n|cffffcc00攻击陆地和空中单位。|r"
+Hotkey=U
+Order=coupletarget
+[Adec]
+Name=下马
+Tip=[|cffffcc00u|r] 下马弓箭手 & 角鹰兽
+Ubertip="从角鹰兽身上卸下弓箭手。"
+Hotkey=U
+[Acor]
+Name=腐蚀性呼吸
+Tip=腐蚀性呼吸
+Ubertip="投掷一个对建筑物有效的腐蚀性胆汁球。"
+[Bcor]
+Bufftip=腐蚀性呼吸
+Buffubertip="这座建筑被腐蚀吐息击中；随着时间的推移，它会受到损害。"
+[AEmb]
+Name=法力燃烧
+Tip=法力 [|cffffcc00B|r] 燃烧 - [|cffffcc00Level 1|r],法力 [|cffffcc00B|r] 燃烧 - [|cffffcc00Level 2|r],法力 [|cffffcc00B|r] 燃烧 - [|cffffcc00Level 3|r]
+Ubertip="发射一束负能量，最多燃烧目标敌方单位的<AEmb,DataA1>点法力值。法力燃烧，造成与燃烧的法力值相等的伤害。","发射一束负能量，最多燃烧目标敌方单位的法力值 <AEmb,DataA2> 点。法力燃烧，造成与燃烧的法力值相等的伤害。","发射一束负能量，最多燃烧目标敌方单位的法力值 <AEmb,DataA3> 点。法力燃烧，造成等同于燃烧的法力量的伤害。"
+Hotkey=B
+Researchtip="Learn Mana |cffffcc00B|rurn - [|cffffcc00Level %d|r]"
+Researchubertip="Sends a bolt of negative energy that burns a target enemy unit's mana. Burned mana combusts, dealing damage to the target equal to the amount of mana burned. |n|n|cffffcc00Level 1|r - Burns up to <AEmb,DataA1> mana. |n|cffffcc00Level 2|r - Burns up to <AEmb,DataA2> mana. |n|cffffcc00Level 3|r - Burns up to <AEmb,DataA3> mana."
+Researchhotkey=B
+[AEim]
+Name=献祭
+Tip=激活 [|cffffcc00l|r] 献祭 - [|cffffcc00Level 1|r]，激活 [|cffffcc00l|r] 献祭 - [|cffffcc00Level 2|r]，激活 [|cffffcc00l|r] 献祭 - [|cffffcc00Level 3|r]
+Ubertip="激活献祭使该单位陷入火焰之中，每秒对附近的敌方陆地单位造成 <AEim,DataA1> 伤害。|n消耗法力直到停用。","激活献祭使该单位陷入火焰之中，每秒对附近的敌方陆地单位造成 <AEim,DataA2> 伤害。|n消耗法力直到停用。","激活献祭使该单位陷入火焰之中，每秒对附近的敌方陆地单位造成 <AEim,DataA3> 伤害。|n消耗法力直到停用。"
+Unubertip="停用献祭以停止消耗法力。"
+Hotkey=L
+Untip=停用 [|cffffcc00l|r] 献祭
+Unhotkey=L
+Researchtip="Learn Immo|cffffcc00l|ration - [|cffffcc00Level %d|r]"
+Researchubertip="Engulfs the Demon Hunter in flames, causing damage to nearby enemy land units. |nDrains mana until deactivated. |n|n|cffffcc00Level 1|r - <AEim,DataA1> damage per second. |n|cffffcc00Level 2|r - <AEim,DataA2> damage per second. |n|cffffcc00Level 3|r - <AEim,DataA3> damage per second."
+Researchhotkey=L
+[BEim]
+Bufftip=献祭
+Buffubertip="这个单位有献祭；附近的敌方地面单位会随着时间的推移受到伤害。"
+[AEev]
+Name=逃避
+Tip=闪避 - [|cffffcc00Level 1|r],闪避 - [|cffffcc00Level 2|r],闪避 - [|cffffcc00Level 3|r]
+Ubertip="给予 <AEev,DataA1,%>% 机会避免攻击。","给予 <AEev,DataA2,%>% 机会避免攻击。","给予 <AEev,DataA3,%>% 机会避免攻击。"
+Researchtip="Learn |cffffcc00E|rvasion - [|cffffcc00Level %d|r]"
+Researchubertip="Gives a percent chance to avoid attacks. |n|n|cffffcc00Level 1|r - <AEev,DataA1,%>% chance that an opponent misses. |n|cffffcc00Level 2|r - <AEev,DataA2,%>% chance that an opponent misses. |n|cffffcc00Level 3|r - <AEev,DataA3,%>% chance that an opponent misses."
+Researchhotkey=E
+[AEme]
+Name=变态
+Tip=[|cffffcc00t|r] 变态
+Ubertip="将恶魔猎手变成强大的恶魔，具有远程攻击和 <AEme,DataE1> 额外生命值。|n持续 <AEme,HeroDur1> 秒。"
+Hotkey=T
+Researchtip=Learn Me|cffffcc00t|ramorphosis
+Researchubertip="Transforms the Demon Hunter into a powerful Demon with a ranged attack and <AEme,DataE1> bonus hit points. |nLasts <AEme,HeroDur1> seconds."
+Researchhotkey=T
+Globalmessage=
+Globalsound=
+[BEme]
+Bufftip=变态
+Buffubertip="使用远程攻击将恶魔猎手变成强大的恶魔。"
+[AEer]
+Name=纠缠根
+Tip=|cffffcc00E|r纠缠根 - [|cffffcc00Level [|cffffcc00E|r] 1|r],纠缠根 - [|cffffcc00Level 2|r],|cffffcc00E|r纠缠根 - [|cffffcc00Level 3|r]
+Ubertip="使根从地面爆裂，使目标敌方单位定身并缴械 <AEer,Dur1> 秒，每秒造成 <AEer,DataA1> 伤害。","使根从地面爆裂，定身并缴械目标敌方单位 <AEer,Dur2> 秒，每秒造成 <AEer,DataA2> 伤害。","使树根从地面爆裂，在 <AEer,Dur3> 秒内固定并缴械目标敌方单位，并造成 < AEer,DataA3>每秒伤害。"
+Hotkey=E
+Researchtip="Learn |cffffcc00E|rntangling Roots - [|cffffcc00Level %d|r]"
+Researchubertip="Causes roots to burst from the ground, immobilizing, disarming and damaging a target enemy temporarily. |n|n|cffffcc00Level 1|r - <AEer,DataA1> damage per second for <AEer,Dur1> seconds. |n|cffffcc00Level 2|r - <AEer,DataA2> damage per second for <AEer,Dur2> seconds. |n|cffffcc00Level 3|r - <AEer,DataA3> damage per second for <AEer,Dur3> seconds."
+Researchhotkey=E
+[BEer]
+Bufftip=纠缠根
+Buffubertip="该单位已被纠缠根须击中；它不能移动并随着时间的推移受到伤害。"
+[AEfn]
+Name=自然的力量
+Tip=|cffffcc00F|r自然之力 - [|cffffcc00Level [|cffffcc00F|r] 1|r],自然之力 - [|cffffcc00Level 2|r],|cffffcc00F|r自然之力 - [|cffffcc00Level 3|r]
+Ubertip="将一小块树转换为 <AEfn,DataA1> 树。树人有 <efon,realHP> 生命值并造成 <efon,mindmg1> - <efon,maxdmg1> 伤害。可以学习自然的祝福。|n持续 <AEfn,Dur1> 秒。|n|n|cffffcc00攻击陆地单位。|r","将大面积的树木转化为 <AEfn,DataA2> 树人。树人有 <efon,realHP> 生命值并造成 <efon,mindmg1> - <efon,maxdmg1> 伤害。可以学习自然的祝福。|n持续 <AEfn,Dur2> 秒。|n|n|cffffcc00攻击陆地单位。|r","将大面积的树木转化为 <AEfn,DataA3> 树人。树人有 <efon,realHP> 生命值并造成 <efon,mindmg1> - <efon,maxdmg1> 伤害。可以学习自然的祝福。|n持续 <AEfn,Dur3> 秒。|n|n|cffffcc00攻击陆地单位。|r"
+Hotkey=F
+Researchtip="Learn |cffffcc00F|rorce of Nature - [|cffffcc00Level %d|r]"
+Researchubertip="Converts an area of trees into Treants. Treants have <efon,realHP> hit points and deal <efon,mindmg1> - <efon,maxdmg1> damage. Can learn Nature's Blessing. |n|n|cffffcc00Attacks land units.|r |n|n|cffffcc00Level 1|r - Raises <AEfn,DataA1> Treants for <AEfn,Dur1> seconds. |n|cffffcc00Level 2|r - Raises <AEfn,DataA2> Treants for <AEfn,Dur2> seconds. |n|cffffcc00Level 3|r - Raises <AEfn,DataA3> Treants for <AEfn,Dur3> seconds."
+Researchhotkey=F
+[BEfn]
+Bufftip=自然的力量
+Buffubertip="被召唤的单位会受到驱散的伤害。"
+[AEah]
+Name=荆棘光环
+Tip=荆棘灵气 - [|cffffcc00Level 1|r],荆棘灵气 - [|cffffcc00Level 2|r],荆棘灵气 - [|cffffcc00Level 3|r]
+Ubertip="为附近友军单位提供伤害护盾的光环，对敌方单位造成 <AEah,DataA1,%>% 的近战攻击伤害。","为附近友军单位提供伤害护盾的光环，造成 <AEah ,DataA2,%>% 一个敌方单位的近战攻击伤害返回给它。","给附近的友方单位一个伤害护盾的光环，它可以将一个敌方单位的近战攻击伤害的 <AEah,DataA3,%>% 返还给它它。"
+Researchtip="Learn Tho|cffffcc00r|rns Aura - [|cffffcc00Level %d|r]"
+Researchubertip="An aura that gives friendly nearby units a damage shield, which returns a percentage of a melee attacker's damage back to it. |n|n|cffffcc00Level 1|r - Returns <AEah,DataA1,%>% damage. |n|cffffcc00Level 2|r - Returns <AEah,DataA2,%>% damage. |n|cffffcc00Level 3|r - Returns <AEah,DataA3,%>% damage."
+Researchhotkey=R
+[BEah]
+Bufftip=荆棘光环
+Buffubertip="该单位受到荆棘光环的影响；攻击它的近战单位会受到伤害。"
+[AEtq]
+Name=宁静
+Tip=|cffffcc00T|r安宁
+Ubertip="使治疗能量雨倾盆而下，每秒为友方友方单位恢复 <AEtq,DataA1> 点生命值。|n持续 <AEtq,Dur1> 秒。"
+Hotkey=T
+Researchtip="Learn |cffffcc00T|rranquility"
+Researchubertip="Causes rains of healing energy to pour down in a large area, healing friendly allied units for <AEtq,DataA1> hit points per second. |nLasts <AEtq,Dur1> seconds."
+Researchhotkey=T
+Globalmessage=
+Globalsound=
+[AEst]
+Name=侦察
+Tip=S[|cffffcc00c|r] cout - [|cffffcc00Level 1|r],S[|cffffcc00c|r] cout - [|cffffcc00Level 2|r],S[|cffffcc00c|r] cout - [|cffffcc00Level 3|r]
+Ubertip="召唤一个猫头鹰侦察兵，可以用来侦察。|n可以看到隐形单位。|n持续 <AEst,Dur1> 秒。","召唤一个快速的猫头鹰侦察兵，可用于侦察。|n可以看到隐形单位。|n持续 <AEst,Dur2> 秒。","召唤一个非常快速的猫头鹰侦察兵，可用于侦察。|n可以看到隐形单位。|n持续 <AEst,Dur3> 秒。"
+Hotkey=C
+Researchtip="Learn S|cffffcc00c|rout - [|cffffcc00Level %d|r]"
+Researchubertip="Temporarily summons an Owl Scout, which can be used to scout the map. |nCan see invisible units. |n|n|cffffcc00Level 1|r - Summons an Owl Scout for <AEst,Cost1> mana. |n|cffffcc00Level 2|r - Summons a better Owl Scout for <AEst,Cost2> mana. |n|cffffcc00Level 3|r - Summons the best Owl Scout for <AEst,Cost3> mana."
+Researchhotkey=C
+[BEst]
+Bufftip=侦察
+Buffubertip="被召唤的单位会受到驱散的伤害。"
+[AHfa]
+Name=灼热之箭
+Tip=[|cffffcc00r|r] 灼热之箭 - [|cffffcc00Level 1|r],[|cffffcc00r|r] 灼热之箭 - [|cffffcc00Level 2|r],[|cffffcc00r|r] 灼热之箭 - [|cffffcc00Level 3|r]
+Ubertip="对敌人的攻击增加 <AHfa,DataA1> 额外火焰伤害，但每次射击都会消耗法力。","为攻击增加 <AHfa,DataA2> 额外火焰伤害，但每次射击都会消耗法力。","对一次攻击附加 <AHfa,DataA3> 额外火焰伤害，但每次射击都会消耗法力值。"
+Untip="|cffc3dbff右击激活自动施法。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Hotkey=R
+Unhotkey=R
+Researchtip="Learn Sea|cffffcc00r|ring Arrows - [|cffffcc00Level %d|r]"
+Researchubertip="Increases the damage of the Priestess' attack by adding fire. |n|n|cffffcc00Level 1|r - <AHfa,DataA1> bonus damage. |n|cffffcc00Level 2|r - <AHfa,DataA2> bonus damage. |n|cffffcc00Level 3|r - <AHfa,DataA3> bonus damage."
+Researchhotkey=R
+[AEar]
+Name=绝杀光环
+Tip=真击光环 - [|cffffcc00Level 1|r],真击光环 - [|cffffcc00Level 2|r],真击光环 - [|cffffcc00Level 3|r]
+Ubertip="一种给附近友军单位远程攻击造成<AEar,DataA1,%>% 额外伤害的光环。","给附近友军单位远程攻击造成<AEar,DataA2,%>% 额外伤害的光环。" ”一种光环，可以使附近的友方单位对其远程攻击造成<AEar,DataA3,%>% 的额外伤害。"
+Researchtip="Learn |cffffcc00T|rrueshot Aura - [|cffffcc00Level %d|r]"
+Researchubertip="An aura that gives friendly nearby units bonus damage to their ranged attacks. |n|n|cffffcc00Level 1|r - Increases base ranged damage by <AEar,DataA1,%>%. |n|cffffcc00Level 2|r - Increases base ranged damage by <AEar,DataA2,%>%. |n|cffffcc00Level 3|r - Increases base ranged damage by <AEar,DataA3,%>%."
+Researchhotkey=T
+[BEar]
+Bufftip=绝杀光环
+Buffubertip="该单位受到真击光环的影响；它的远程攻击会造成更多伤害。"
+[AEsf]
+Name=星陨
+Tip=[|cffffcc00f|r] 星陨
+Ubertip="召唤流星波，对附近的敌方单位造成伤害。每一波都会造成 <AEsf,DataA1> 伤害。|n持续 <AEsf,Dur1> 秒。"
+Hotkey=F
+Researchtip=Learn Star|cffffcc00f|rall
+Researchubertip="Calls down waves of falling stars that damage nearby enemy units. Each wave deals <AEsf,DataA1> damage. |nLasts for <AEsf,Dur1> seconds."
+Researchhotkey=F
+[Afae]
+Name=精灵之火
+Tip=[|cffffcc00r|r] 精灵之火
+Ubertip="将目标敌方单位的护甲降低 <Afae,DataA1> 并提供该单位的视野。|n持续 <Afae,Dur1> 秒。"
+Untip="|cffc3dbff右击激活自动施法。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Hotkey=R
+Unhotkey=R
+[Afa2]
+Name=精灵之火
+Tip=[|cffffcc00r|r] 精灵之火
+Ubertip="将目标敌方单位的护甲降低 <Afae,DataA1> 并提供该单位的视野。|n持续 <Afae,Dur1> 秒。"
+Untip="|cffc3dbff右击激活自动施法。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Hotkey=R
+Unhotkey=R
+[Bfae]
+Bufftip=精灵之火
+Buffubertip="这个单位有精灵之火；它减少了装甲并且可以被敌人看到。"
+[Acyc]
+Name=气旋
+Tip=|cffffcc00C|r旋风
+Ubertip="将目标非机械敌方单位抛向空中，使其无法移动、攻击或施法，并阻止其他人对其进行攻击或施法。|n持续 <Acyc,Dur1> 秒。"
+Hotkey=C
+[Bcyc]
+Bufftip=气旋
+Buffubertip="该装置在旋风分离器中；它不能移动、攻击或施法。"
+[Bcy2]
+Bufftip=气旋
+Buffubertip="该装置在旋风分离器中；它不能移动、攻击或施法。"
+[Arej]
+Name=复兴
+Tip=R[|cffffcc00e|r] 青春
+Ubertip="在 <Arej,Dur1> 秒内为目标友方单位治疗 <Arej,DataA1> 点生命值。"
+Hotkey=E
+[Brej]
+Bufftip=复兴
+Buffubertip="这个单位有回春；随着时间的推移，它正在治疗生命值。"
+[Aren]
+Name=更新
+Tip=|cffffcc00R|r更新
+Ubertip="更新友方暗夜精灵建筑、友方建筑和友方机械单位。"
+Untip="|cffc3dbff右击激活自动施法。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Hotkey=R
+Unhotkey=R
+[Aroa]
+Name=怒吼
+Tip=|cffffcc00R|r桨
+Ubertip="使附近的友方单位获得<Aroa,DataA1,%>% 的伤害加成。|n持续 <Aroa,Dur1> 秒。"
+Hotkey=R
+[Ara2]
+Name=怒吼
+Tip=|cffffcc00R|r桨
+Ubertip="为附近的友方单位提供 <Ara2,DataA1,%>% 的伤害加成。|n持续 <Ara2,Dur1> 秒。"
+Hotkey=R
+[Broa]
+Bufftip=怒吼
+Buffubertip="这个单位有咆哮；它的攻击伤害增加了。"
+[Alit]
+Name=闪电攻击
+[Bbar]
+Bufftip=树皮
+Buffubertip="这个单位有树皮；它增加了护甲。"
+[Atol]
+[BEia]
+EditorName=Immolation (Caster)
+[Beat]
+EditorName=Eat Tree
+[Bgra]
+EditorName=War Club
+[AEsd]
+EditorName=Starfall (Target)
+[AEtr]
+EditorName=Tranquility (Target)
+[Bult]
+EditorName=Ultravision
+[XEsf]
+EditorName=Starfall (Effect)
+[XEtq]
+EditorName=Tranquility (Effect)
+[XEsn]
+EditorName=Sentinel (Effect)
+[Xfns]
+EditorName=Building Damage - Night Elf Small
+[Xfnm]
+EditorName=Building Damage - Night Elf Medium
+[Xfnl]
+EditorName=Building Damage - Night Elf Large
+[A0EX]
+Name="ELE：放电"
+Tip="释放"
+Ubertip="每 0.4 秒对 650 范围内的随机敌方单位造成 25 点伤害。"
+[A0EV]
+Name="ELE：博尔德"
+Tip="博尔德"
+Ubertip="有 50% 的几率使单位昏迷 3 秒并造成 100 额外伤害。"
+[A0EW]
+Name="ELE：雾之盾"
+Tip="雾之盾"
+Ubertip="防止对该塔的任何近战攻击。"
+[A0DU]
+Name="NAT：自然之力"
+Tip=|cffffcc00F|r自然之力 - [|cffffcc00Level [|cffffcc00F|r] 1|r],自然之力 - [|cffffcc00Level 2|r],|cffffcc00F|r自然之力 - [|cffffcc00Level 3|r]
+Ubertip="将一小块树转换为 <AEfn,DataA1> 树。树人有 <efon,realHP> 生命值并造成 <efon,mindmg1> - <efon,maxdmg1> 伤害。可以学习自然的祝福。|n持续 <AEfn,Dur1> 秒。|n|n|cffffcc00攻击陆地单位。|r","将大面积的树木转化为 <AEfn,DataA2> 树人。树人有 <efon,realHP> 生命值并造成 <efon,mindmg1> - <efon,maxdmg1> 伤害。可以学习自然的祝福。|n持续 <AEfn,Dur2> 秒。|n|n|cffffcc00攻击陆地单位。|r","将大面积的树木转化为 <AEfn,DataA3> 树人。树人有 <efon,realHP> 生命值并造成 <efon,mindmg1> - <efon,maxdmg1> 伤害。可以学习自然的祝福。|n持续 <AEfn,Dur3> 秒。|n|n|cffffcc00攻击陆地单位。|r"
+Hotkey=F
+Researchtip="Learn |cffffcc00F|rorce of Nature - [|cffffcc00Level %d|r]"
+Researchubertip="Converts an area of trees into Treants. Treants have <efon,realHP> hit points and deal <efon,mindmg1> - <efon,maxdmg1> damage. Can learn Nature's Blessing. |n|n|cffffcc00Attacks land units.|r |n|n|cffffcc00Level 1|r - Raises <AEfn,DataA1> Treants for <AEfn,Dur1> seconds. |n|cffffcc00Level 2|r - Raises <AEfn,DataA2> Treants for <AEfn,Dur2> seconds. |n|cffffcc00Level 3|r - Raises <AEfn,DataA3> Treants for <AEfn,Dur3> seconds."
+Researchhotkey=F
+[A0AW]
+Name="NAT：熊怪萨满（回春）"
+Tip=R[|cffffcc00e|r] 青春
+Ubertip="在 <Arej,Dur1> 秒内为目标友方单位治疗 <Arej,DataA1> 点生命值。"
+Hotkey=E
+[A0AX]
+Name="NAT：熊怪长老萨满（回春）"
+Tip=R[|cffffcc00e|r] 青春
+Ubertip="在 <Arej,Dur1> 秒内为目标友方单位治疗 <Arej,DataA1> 点生命值。"
+Hotkey=E
+[A0BC]
+Name="NAT：Mounatin Giant（抓斗树）"
+Tip=|cffffcc00W|rar 俱乐部
+Ubertip="捡起一棵树，给予山地巨人围攻伤害，并增加攻击范围。|n持续 <Agra,DataE1> 罢工。"
+Hotkey=W
+[A0BE]
+Name="NAT：山巨人（硬化皮肤）"
+Tip=硬化皮肤
+Ubertip="<Assk,DataC1> 伤害减少对山地巨人的所有攻击。攻击不能低于 <Assk,DataB1> 伤害。"
+Hotkey=K
+[A0BI]
+Name="NAT：山地巨人（嘲讽）"
+Tip=|cffffcc00T|r阿姨
+Ubertip="最近的 <Atau,DataA1> 敌人被迫攻击这个单位。"
+Hotkey=T
+[A0C3]
+Name="NAT：熊怪长老萨满（法力燃烧）"
+Tip=法力 [|cffffcc00B|r] 燃烧 - [|cffffcc00Level 1|r],法力 [|cffffcc00B|r] 燃烧 - [|cffffcc00Level 2|r],法力 [|cffffcc00B|r] 燃烧 - [|cffffcc00Level 3|r]
+Ubertip="发射一束负能量，最多燃烧目标敌方单位的<AEmb,DataA1>点法力值。法力燃烧，造成与燃烧的法力值相等的伤害。","发射一束负能量，最多燃烧目标敌方单位的法力值 <AEmb,DataA2> 点。法力燃烧，造成与燃烧的法力值相等的伤害。","发射一束负能量，最多燃烧目标敌方单位的法力值 <AEmb,DataA3> 点。法力燃烧，造成等同于燃烧的法力量的伤害。"
+Hotkey=B
+Researchtip="Learn Mana |cffffcc00B|rurn - [|cffffcc00Level %d|r]"
+Researchubertip="Sends a bolt of negative energy that burns a target enemy unit's mana. Burned mana combusts, dealing damage to the target equal to the amount of mana burned. |n|n|cffffcc00Level 1|r - Burns up to <AEmb,DataA1> mana. |n|cffffcc00Level 2|r - Burns up to <AEmb,DataA2> mana. |n|cffffcc00Level 3|r - Burns up to <AEmb,DataA3> mana."
+Researchhotkey=B
+[A0A0]
+Name=硬化皮肤
+Tip=硬化皮肤
+Ubertip="<Assk,DataC1> 伤害减少对山地巨人的所有攻击。攻击不能低于 <Assk,DataB1> 伤害。"
+Hotkey=K
+[A05V]
+Name="CHA：羽毛恶魔（荆棘光环）"
+Tip=荆棘灵气 - [|cffffcc00Level 1|r],荆棘灵气 - [|cffffcc00Level 2|r],荆棘灵气 - [|cffffcc00Level 3|r]
+Ubertip="为附近友军单位提供伤害护盾的光环，对敌方单位造成 <AEah,DataA1,%>% 的近战攻击伤害。","为附近友军单位提供伤害护盾的光环，造成 <AEah ,DataA2,%>% 一个敌方单位的近战攻击伤害返回给它。","给附近的友方单位一个伤害护盾的光环，它可以将一个敌方单位的近战攻击伤害的 <AEah,DataA3,%>% 返还给它它。"
+Researchtip="Learn Tho|cffffcc00r|rns Aura - [|cffffcc00Level %d|r]"
+Researchubertip="An aura that gives friendly nearby units a damage shield, which returns a percentage of a melee attacker's damage back to it. |n|n|cffffcc00Level 1|r - Returns <AEah,DataA1,%>% damage. |n|cffffcc00Level 2|r - Returns <AEah,DataA2,%>% damage. |n|cffffcc00Level 3|r - Returns <AEah,DataA3,%>% damage."
+Researchhotkey=R
+[A070]
+Name="flag_legend"
+Tip=月刃
+Ubertip="使女猎手能够用她的弹刃攻击攻击额外的单位。"
+[A079]
+Name="NEL：德鲁伊（治疗雨）"
+Tip=|cffffcc00T|r安宁
+Ubertip="使治疗能量雨倾盆而下，每秒为友方友方单位恢复 <AEtq,DataA1> 点生命值。|n持续 <AEtq,Dur1> 秒。"
+Hotkey=T
+Researchtip="Learn |cffffcc00T|rranquility"
+Researchubertip="Causes rains of healing energy to pour down in a large area, healing friendly allied units for <AEtq,DataA1> hit points per second. |nLasts <AEtq,Dur1> seconds."
+Researchhotkey=T
+Globalmessage=
+Globalsound=
+[A07A]
+Name=纠缠根
+Tip=|cffffcc00E|r纠缠根 - [|cffffcc00Level [|cffffcc00E|r] 1|r],纠缠根 - [|cffffcc00Level 2|r],|cffffcc00E|r纠缠根 - [|cffffcc00Level 3|r]
+Ubertip="使根从地面爆裂，使目标敌方单位定身并缴械 <AEer,Dur1> 秒，每秒造成 <AEer,DataA1> 伤害。","使根从地面爆裂，定身并缴械目标敌方单位 <AEer,Dur2> 秒，每秒造成 <AEer,DataA2> 伤害。","使树根从地面爆裂，在 <AEer,Dur3> 秒内固定并缴械目标敌方单位，并造成 < AEer,DataA3>每秒伤害。"
+Hotkey=E
+Researchtip="Learn |cffffcc00E|rntangling Roots - [|cffffcc00Level %d|r]"
+Researchubertip="Causes roots to burst from the ground, immobilizing, disarming and damaging a target enemy temporarily. |n|n|cffffcc00Level 1|r - <AEer,DataA1> damage per second for <AEer,Dur1> seconds. |n|cffffcc00Level 2|r - <AEer,DataA2> damage per second for <AEer,Dur2> seconds. |n|cffffcc00Level 3|r - <AEer,DataA3> damage per second for <AEer,Dur3> seconds."
+Researchhotkey=E
+[A07B]
+Name=抗性皮肤
+Tip=抗性皮肤
+Ubertip="减少负面法术的持续时间并使山地巨人免疫某些法术。"
+Hotkey=E
+[A07Q]
+Name=纠缠根
+Tip=|cffffcc00E|r纠缠根 - [|cffffcc00Level [|cffffcc00E|r] 1|r],纠缠根 - [|cffffcc00Level 2|r],|cffffcc00E|r纠缠根 - [|cffffcc00Level 3|r]
+Ubertip="使根从地面爆裂，使目标敌方单位定身并缴械 <AEer,Dur1> 秒，每秒造成 <AEer,DataA1> 伤害。","使根从地面爆裂，定身并缴械目标敌方单位 <AEer,Dur2> 秒，每秒造成 <AEer,DataA2> 伤害。","使树根从地面爆裂，在 <AEer,Dur3> 秒内固定并缴械目标敌方单位，并造成 < AEer,DataA3>每秒伤害。"
+Hotkey=E
+Researchtip="Learn |cffffcc00E|rntangling Roots - [|cffffcc00Level %d|r]"
+Researchubertip="Causes roots to burst from the ground, immobilizing, disarming and damaging a target enemy temporarily. |n|n|cffffcc00Level 1|r - <AEer,DataA1> damage per second for <AEer,Dur1> seconds. |n|cffffcc00Level 2|r - <AEer,DataA2> damage per second for <AEer,Dur2> seconds. |n|cffffcc00Level 3|r - <AEer,DataA3> damage per second for <AEer,Dur3> seconds."
+Researchhotkey=E
+[A07V]
+Name=月刃
+Tip="恢复光环"
+Ubertip="|cffFFFF80能力：|cffFFFF00恢复区|r|n在 650 范围内恢复附近友军单位的生命值，并在 700 范围内以 2.5 hp/s 的速度修复附近的建筑物。修复效果堆栈。"
+[A07W]
+Name=月刃
+Tip="光射线"
+Ubertip="对随机可见的敌人造成 150 点伤害。免疫冰霜发射器，伤害魔法免疫单位。|n|cffFFFF80冷却时间：|cffFFFF00 5 |r秒"
+[A07T]
+Name="NEL：星陨"
+Tip=[|cffffcc00f|r] 星陨
+Ubertip="召唤流星波，对附近的敌方单位造成伤害。每一波都会造成 <AEsf,DataA1> 伤害。|n持续 <AEsf,Dur1> 秒。"
+Hotkey=F
+Researchtip=Learn Star|cffffcc00f|rall
+Researchubertip="Calls down waves of falling stars that damage nearby enemy units. Each wave deals <AEsf,DataA1> damage. |nLasts for <AEsf,Dur1> seconds."
+Researchhotkey=F
+[A07Y]
+Name=领域
+[A08D]
+Name=硬化皮肤
+Tip=硬化皮肤
+Ubertip="<Assk,DataC1> 伤害减少对山地巨人的所有攻击。攻击不能低于 <Assk,DataB1> 伤害。"
+Hotkey=K
+[A08T]
+Name="NEL：星陨 (-na)"
+Tip=[|cffffcc00f|r] 星陨
+Ubertip="召唤流星波，对附近的敌方单位造成伤害。每一波都会造成 <AEsf,DataA1> 伤害。|n持续 <AEsf,Dur1> 秒。"
+Hotkey=F
+Researchtip=Learn Star|cffffcc00f|rall
+Researchubertip="Calls down waves of falling stars that damage nearby enemy units. Each wave deals <AEsf,DataA1> damage. |nLasts for <AEsf,Dur1> seconds."
+Researchhotkey=F
+[A09Y]
+Name=硬化皮肤
+Tip=硬化皮肤
+Ubertip="<Assk,DataC1> 伤害减少对山地巨人的所有攻击。攻击不能低于 <Assk,DataB1> 伤害。"
+Hotkey=K
+[A09W]
+Name=慢毒
+Tip="大毒攻击"
+Ubertip="每秒造成 25 点伤害，并使攻击和移动速度降低 60%。持续 8 秒"
+[A09U]
+Name="能量爆发_"
+Tip="能量爆发"
+Ubertip="该单位的攻击弹跳 2 次，每次弹跳造成的伤害减少 0.3。|n这座塔受到静电防护罩的保护，其攻击者可能会被闪电放电（80 dmg）损坏。"
+[A09Z]
+Name=硬化皮肤
+Tip=硬化皮肤
+Ubertip="<Assk,DataC1> 伤害减少对山地巨人的所有攻击。攻击不能低于 <Assk,DataB1> 伤害。"
+Hotkey=K
+[A001]
+Name=眨
+Tip="闪烁 [|cffffcc00D|r] [D]","|cffffcc00B|rlink - [|cffffcc00Level 2|r]","|cffffcc00B|rlink - [|cffffcc00Level 3|r]"
+Ubertip="将工人传送一小段距离","将守望者传送一小段距离，允许她进出战斗。","将守望者传送一小段距离，允许她进出战斗。"
+Hotkey=D
+Researchtip="Learn |cffffcc00B|rlink - [|cffffcc00Level %d|r]"
+Researchubertip="Short distance teleportation that allows the Warden to move in and out of combat. |n|n|cffffcc00Level 1|r - <AEbl,Cool1> second cooldown, <AEbl,Cost1> mana. |n|cffffcc00Level 2|r - <AEbl,Cool2> second cooldown, <AEbl,Cost2> mana. |n|cffffcc00Level 3|r - <AEbl,Cool3> second cooldown, <AEbl,Cost3> mana."
+Researchhotkey=B
+[A00C]
+Name=慢毒
+Tip="缓毒”、“强毒攻击”"
+Ubertip="每秒造成<Aspo,DataA1>伤害，并在<Aspo,Dur1>秒内减慢目标敌人移动<Aspo,DataB1,%>%和<Aspo,DataC1,%>%攻击的毒药攻击。", “每秒造成 20 点伤害，并使攻击和移动速度降低 70%。持续 8 秒"
+[A00G]
+Name=相移
+Tip=阶段|cffffcc00e|r转移
+Ubertip="使该单位在受到伤害时消失，暂时避免任何进一步的伤害。|n持续 <Apsh,Dur1> 秒。"
+Untip="|cffc3dbff|cffc3dbff右击激活自动投射。|r|r"
+Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Hotkey=E
+Unhotkey=E
+[A00H]
+Name="触发攻击"
+Tip=[|cffffcc00r|r] 灼热之箭 - [|cffffcc00Level 1|r],[|cffffcc00r|r] 灼热之箭 - [|cffffcc00Level 2|r],[|cffffcc00r|r] 灼热之箭 - [|cffffcc00Level 3|r]
+Ubertip="对敌人的攻击增加 <AHfa,DataA1> 额外火焰伤害，但每次射击都会消耗法力。","为攻击增加 <AHfa,DataA2> 额外火焰伤害，但每次射击都会消耗法力。","对一次攻击附加 <AHfa,DataA3> 额外火焰伤害，但每次射击都会消耗法力值。"
+Untip="|cffc3dbff右击激活自动施法。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Hotkey=R
+Unhotkey=R
+Researchtip="Learn Sea|cffffcc00r|ring Arrows - [|cffffcc00Level %d|r]"
+Researchubertip="Increases the damage of the Priestess' attack by adding fire. |n|n|cffffcc00Level 1|r - <AHfa,DataA1> bonus damage. |n|cffffcc00Level 2|r - <AHfa,DataA2> bonus damage. |n|cffffcc00Level 3|r - <AHfa,DataA3> bonus damage."
+Researchhotkey=R
+[A02Q]
+Name=硬化皮肤
+Tip=硬化皮肤
+Ubertip="<Assk,DataC1> 伤害减少对山地巨人的所有攻击。攻击不能低于 <Assk,DataB1> 伤害。"
+Hotkey=K
+[A052]
+Name="COR：暗影龙（伤害反射）"
+Tip=艾露恩的恩典
+Ubertip="将穿刺攻击的伤害降低到<Aegr,DataA1,%>%，将法术和魔法攻击的伤害降低到<Aegr,DataE1,%>%。"
+[A0FE]
+Name="防风罩"
+Tip=艾露恩的恩典
+Ubertip="将穿刺攻击的伤害降低到<Aegr,DataA1,%>%，将法术和魔法攻击的伤害降低到<Aegr,DataE1,%>%。"
+[A0ET]
+Name="NAT：废除"
+Tip=A[|cffffcc00b|r] bolish 魔法
+Ubertip="驱散敌方单位的正面增益，以及友方单位的负面增益。|n|cffffcc00对被召唤的单位造成 <Aadm,DataB1> 伤害。|r"
+Untip="|cffc3dbff右击激活自动施法。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Hotkey=B
+Unhotkey=B
+[A0FZ]
+Name="ELE：旋风"
+Tip=|cffffcc00C|r旋风
+Ubertip="将目标非机械敌方单位抛向空中，使其无法移动、攻击或施法，并阻止其他人对其进行攻击或施法。|n持续 <Acyc,Dur1> 秒。"
+Hotkey=C
+[A0A6]
+Name=纠缠根
+Tip=|cffffcc00E|r纠缠根 - [|cffffcc00Level [|cffffcc00E|r] 1|r],纠缠根 - [|cffffcc00Level 2|r],|cffffcc00E|r纠缠根 - [|cffffcc00Level 3|r]
+Ubertip="使根从地面爆裂，使目标敌方单位定身并缴械 <AEer,Dur1> 秒，每秒造成 <AEer,DataA1> 伤害。","使根从地面爆裂，定身并缴械目标敌方单位 <AEer,Dur2> 秒，每秒造成 <AEer,DataA2> 伤害。","使树根从地面爆裂，在 <AEer,Dur3> 秒内固定并缴械目标敌方单位，并造成 < AEer,DataA3>每秒伤害。"
+Hotkey=E
+Researchtip="Learn |cffffcc00E|rntangling Roots - [|cffffcc00Level %d|r]"
+Researchubertip="Causes roots to burst from the ground, immobilizing, disarming and damaging a target enemy temporarily. |n|n|cffffcc00Level 1|r - <AEer,DataA1> damage per second for <AEer,Dur1> seconds. |n|cffffcc00Level 2|r - <AEer,DataA2> damage per second for <AEer,Dur2> seconds. |n|cffffcc00Level 3|r - <AEer,DataA3> damage per second for <AEer,Dur3> seconds."
+Researchhotkey=E
+[A0GW]
+Name="防御2"
+Tip=艾露恩的恩典
+Ubertip="将穿刺攻击的伤害降低到<Aegr,DataA1,%>%，将法术和魔法攻击的伤害降低到<Aegr,DataE1,%>%。"
+[A0HY]
+Name="仙人掌睡觉"
+Tip=|cffffcc00E|r纠缠根 - [|cffffcc00Level [|cffffcc00E|r] 1|r],纠缠根 - [|cffffcc00Level 2|r],|cffffcc00E|r纠缠根 - [|cffffcc00Level 3|r]
+Ubertip="使根从地面爆裂，使目标敌方单位定身并缴械 <AEer,Dur1> 秒，每秒造成 <AEer,DataA1> 伤害。","使根从地面爆裂，定身并缴械目标敌方单位 <AEer,Dur2> 秒，每秒造成 <AEer,DataA2> 伤害。","使树根从地面爆裂，在 <AEer,Dur3> 秒内固定并缴械目标敌方单位，并造成 < AEer,DataA3>每秒伤害。"
+Hotkey=E
+Researchtip="Learn |cffffcc00E|rntangling Roots - [|cffffcc00Level %d|r]"
+Researchubertip="Causes roots to burst from the ground, immobilizing, disarming and damaging a target enemy temporarily. |n|n|cffffcc00Level 1|r - <AEer,DataA1> damage per second for <AEer,Dur1> seconds. |n|cffffcc00Level 2|r - <AEer,DataA2> damage per second for <AEer,Dur2> seconds. |n|cffffcc00Level 3|r - <AEer,DataA3> damage per second for <AEer,Dur3> seconds."
+Researchhotkey=E
+[A0IR]
+Name="NAT.ult phis 抗性"
+Tip=硬化皮肤
+Ubertip="<Assk,DataC1> 伤害减少对山地巨人的所有攻击。攻击不能低于 <Assk,DataB1> 伤害。"
+Hotkey=K
+[A0IP]
+Name="NATult抵抗"
+Tip=艾露恩的恩典
+Ubertip="将穿刺攻击的伤害降低到<Aegr,DataA1,%>%，将法术和魔法攻击的伤害降低到<Aegr,DataE1,%>%。"
+[B027]
+Bufftip=急速
+Buffubertip=该单位的攻击速度和移动速度增加。
+EditorName=ELE: Enchant (Haste)
+[B00M]
+Bufftip=冷冻
+Buffubertip=这个单位被冻在地上。它不能移动并随着时间的推移受到伤害。
+[B00K]
+Bufftip=战斗口号
+Buffubertip=这个单位的伤害增加了。
+[B00V]
+Bufftip=羽毛光环
+Buffubertip=这个单位受到羽毛笔光环的影响。近战攻击者受到伤害。
+[B017]
+Bufftip=原野的祝福
+Buffubertip=这个单位可以抵抗法术和攻击。
+[B02M]
+Bufftip=万维网
+Buffubertip=这个单位被旋风所吸引。
+[B02N]
+Bufftip=二战
+Buffubertip=这个单位被旋风所吸引。
+[B02P]
+Bufftip=蛇毒
+Buffubertip=本机中毒；它会随着时间的推移受到伤害并缓慢移动。
+EditorName=Snakes Poison
+[B02Y]
+Bufftip=祝福
+Buffubertip=该单位的伤害和护甲增加。

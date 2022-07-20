@@ -1,0 +1,105 @@
+[Rhss]
+Name=控制魔法
+Tip=研究控制 [|cffffcc00g|r] 魔法
+Ubertip="使 Spell Breakers 能够控制敌人的召唤单位。"
+Hotkey=G
+[Rhme]
+Name=铁锻剑，钢锻剑，秘银锻剑
+Tip=升级为铁铸 [|cffffcc00S|r] 剑，升级为钢铸 [|cffffcc00S|r] 剑，升级为秘银锻造 |cffffcc00S|rwords
+Ubertip="增加民兵、步兵、破法者、龙鹰骑士、狮鹫骑士和骑士的攻击伤害。","进一步增加民兵、步兵、破法者、龙鹰骑士、狮鹫骑士和骑士的攻击伤害。","进一步增加民兵、步兵、破法者、龙鹰骑士、狮鹫骑士和骑士的攻击伤害。"
+Hotkey=S,S,S
+[Rhra]
+Name=黑火药,精制火药,灌魔火药
+Tip=升级为黑色[|cffffcc00G|r]火药，升级为精制[|cffffcc00G|r]火药，升级为灌魔|cffffcc00G|r火药
+Ubertip="增加步枪兵、迫击炮小队、攻城车和飞行器的远程攻击伤害。","进一步增加步枪兵、迫击炮小队、攻城车和飞行器的远程攻击伤害。","进一步增加步枪兵的远程攻击伤害，迫击炮队、攻城车和飞行器。"
+Hotkey=G,G,G
+[Rhar]
+Name=镀铁、镀钢、镀秘银
+Tip=升级为铁 [|cffffcc00P|r] 电镀，升级为钢 [|cffffcc00P|r] 电镀，升级为秘银 |cffffcc00P|r电镀
+Ubertip="增加民兵、步兵、破法者、骑士、飞行器和攻城车的护甲。","进一步增加民兵、步兵、破法者、骑士、飞行器和攻城车的护甲。","进一步增加民兵、步兵、破法者、骑士、飞行器和攻城车。"
+Hotkey=P,P,P
+[Rhla]
+Name=镶嵌皮甲、强化皮甲、龙皮甲
+Tip=升级到铆钉皮革 [|cffffcc00A|r] 护甲，升级到强化皮革 [|cffffcc00A|r] 护甲，升级到龙皮 |cffffcc00A|rrmor
+Ubertip="增加步枪兵、迫击炮小队、龙鹰骑士和狮鹫骑士的护甲。","进一步增加步枪兵、迫击炮小队、龙鹰骑士和狮鹫骑士的护甲。","进一步增加步枪兵、迫击炮小队、龙鹰骑士和狮鹫骑士的护甲。狮鹫骑士。"
+Hotkey=A,A,A
+[Rhac]
+Name=改良砌体、高级砌体、灌魔砌体
+Tip=升级到改进的 [|cffffcc00M|r] 石工，升级到高级 [|cffffcc00M|r] 石工，升级到灌魔的 |cffffcc00M|r石工
+Ubertip="增加人类建筑的护甲和生命值。","进一步增加人类建筑的护甲和生命值。","进一步增加人类建筑的盔甲和生命值。"
+Hotkey=M,M,M
+[Rhgb]
+Name=飞行机器炸弹
+Tip=研究飞行器 [|cffffcc00B|r] 炸弹
+Ubertip="允许飞行机器攻击陆地单位。"
+Hotkey=B
+[Rhlh]
+Name=改进的木材采伐，先进的木材采伐
+Tip=改进的 [|cffffcc00L|r] 木材收割，高级 [|cffffcc00L|r] 木材收割
+Ubertip="农民可以携带的木材数量增加 <Rhlh,mod1>。","进一步增加农民可以携带的木材数量 <Rhlh,mod1>。"
+Hotkey=L,L
+[Rhde]
+Name=防守
+Tip=研究 [|cffffcc00D|r] 防守
+UberTip="Allows Footmen to use the Defend ability, which increases their defensive capabilities against Piercing attacks."
+Hotkey=D
+[Rhan]
+Name=动物战争训练
+Tip=研究 [|cffffcc00A|r] 动物战争训练
+Ubertip="将骑士、龙鹰骑士和狮鹫骑士的最大生命值提高 <Rhan,base1>。"
+Hotkey=A
+[Rhpt]
+Name=牧师熟练训练，牧师大师训练
+Tip=祭司|cffffcc00t|r熟练的培训，Pris|cffffcc00t|r大师培训
+Ubertip="增加牧师的法力容量、法力恢复速度、生命值，并赋予他们施放解除魔法的能力。","增加牧师的法力容量、法力恢复速度、生命值，并赋予他们施放内火的能力。"
+Hotkey=T,T
+[Rhst]
+Name=女术士熟练训练，女术士大师训练
+Tip=S[|cffffcc00o|r] orceress Adept Training,S[|cffffcc00o|r] orceress Master Training
+Ubertip="增加女术士的法力容量、法力恢复速度、生命值，并赋予她们施放隐身的能力。"
+Hotkey=O,O
+[Rhri]
+Name=长步枪
+Tip=升级到 [|cffffcc00L|r] 长步枪
+Ubertip="增加步枪兵的攻击范围。"
+Hotkey=L
+[Rhse]
+Name=魔法哨兵
+Tip=研究 [|cffffcc00M|r] 魔法哨兵
+Ubertip="为人类塔提供检测隐形单位的能力。"
+Hotkey=M
+[Rhfl]
+Name=耀斑
+Tip=研究进展|cffffcc00r|re
+Ubertip="为迫击炮队提供耀斑能力。耀斑可用于显示地图的任何区域。|n可以看到隐形单位。"
+Hotkey=R
+[Rhhb]
+Name=风暴之锤
+Tip=研究风暴 [|cffffcc00H|r] 锤
+Ubertip="使狮鹫骑士的攻击对多个单位造成伤害。"
+Hotkey=H
+[Rhrt]
+Name=弹幕
+Tip=研究栏|cffffcc00g|re
+Ubertip="升级攻城引擎，赋予它们弹幕能力，使它们能够伤害附近的敌方空中单位。"
+Hotkey=G
+[Rhpm]
+Name=背包
+Tip=研究 [|cffffcc00B|r] 背包
+Ubertip="赋予特定人类地面单位携带物品的能力。"
+Hotkey=B
+[Rhfc]
+Name=高射炮
+Tip=研究型高射炮 [|cffffcc00C|r] 大炮
+Ubertip="升级飞行器上的武器，使其对空中单位进行区域效果伤害攻击。"
+Hotkey=C
+[Rhfs]
+Name=分片碎片
+Tip=研究碎片 [|cffffcc00S|r] 碎片
+Ubertip="升级迫击炮小队的迫击炮弹，以增加他们对非装甲和中型装甲单位的伤害。"
+Hotkey=S
+[Rhcd]
+Name=云
+Tip=研究 [|cffffcc00C|r] 云
+Ubertip="为龙鹰骑士提供云能力，阻止远程建筑物的攻击。"
+Hotkey=C

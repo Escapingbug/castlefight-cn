@@ -1,0 +1,362 @@
+[AIat]
+Name=物品伤害加成
+[AIde]
+Name=物品护甲加成
+[AIhe]
+Name=物品治疗
+[AIha]
+Name=物品区域治疗
+[AIvi]
+Name=物品临时隐身
+[AIma]
+Name=物品法力回复
+[AIra]
+Name=物品区域治疗/法力回复
+[AIda]
+Name=物品临时区域护甲加成
+[AIta]
+Name=物品区域检测
+[AIfi]
+Name=物品 火弩箭
+[AIil]
+Name=物品幻象
+[BIil]
+Bufftip=错觉
+Buffubertip="这个单位是一种幻觉；它会受到敌人的额外伤害。"
+[AIfb]
+Name=物品攻击火力奖励
+[AIpb]
+Name=物品攻击毒加成
+[AIcb]
+Name=物品攻击腐蚀加成
+[BIcb]
+Bufftip=腐败
+Buffubertip="该单位被腐蚀球击中；它的护甲暂时减少了。"
+[AItp]
+Name=物品城镇传送门
+[AImi]
+Name=物品永久生命增益
+[AIab]
+Name=物品英雄属性奖励
+[AIml]
+Name=物品生命奖励
+[Arel]
+Name=物品生命再生
+[Aami]
+Name=物品 反魔法外壳
+[AImm]
+Name=物品法力加成
+[AIas]
+Name=物品攻击速度加成
+[AIaa]
+Name=物品攻击伤害增益
+[AImi]
+Name=物品生命增益
+[AIt9]
+Name=物品伤害加成
+[AId2]
+Name=物品护甲加成
+[AId3]
+Name=物品护甲加成
+[AId7]
+Name=物品护甲加成
+[AIh1]
+Name=物品治疗
+[AIm1]
+Name=物品法力回复
+[AIfc]
+Name=飞毯
+[AIrl]
+Name=治疗药膏
+[BIrl]
+Bufftip=再生
+Buffubertip="这个单位有再生；它的生命值会随着时间的推移而恢复。"
+[AIpl]
+Name=次级清晰度药水
+[BIrm]
+Bufftip=清晰药水
+Buffubertip="这个单位喝了澄清药水；它的法力会随着时间的推移而恢复。"
+[AIsl]
+Name=再生卷轴
+[BIrg]
+Bufftip=复兴
+Buffubertip="该单位将随着时间的推移恢复生命值和法力值。"
+[Ablp]
+Name=枯萎病放置
+[AIct]
+Name=更改时间
+[AIsr]
+Name=法术伤害减免
+[AIbl]
+Name=建造小城堡
+[AIbg]
+Name=建造小礼堂
+[AIbt]
+Name=建造小型侦察塔
+[Ashs]
+Name=暗影魔杖
+[Bshs]
+Bufftip=暗影魔杖
+Buffubertip="这个单位被暗影之杖击中；它被显示给敌方玩家。"
+[ANpr]
+Name=保护人员
+[Amec]
+Name=机械小动物
+[Bmec]
+Bufftip=机械小动物
+Buffubertip="被召唤的单位会受到驱散的伤害。"
+[ANss]
+Name=法术护盾
+[BNss]
+Bufftip=法术护盾
+Buffubertip="阻挡咒语的防护罩。"
+[Aspb]
+Name=拼写书
+[AIrd]
+Name=复活死者（物品）
+[ANsa]
+Name=庇护所的工作人员
+[BNsa]
+Bufftip=避难所
+Buffubertip="该单位受圣域法杖的影响；它的生命值会随着时间的推移而恢复，但它不能移动、攻击或施法。"
+[AIsa]
+Name=急速卷轴
+[AItb]
+Name=外观之尘
+[Bdet]
+Bufftip=外观之尘
+Buffubertip="外观之尘向敌方玩家揭示隐形单位。"
+[AIsb]
+Name=缓慢之球
+[AIll]
+Name=闪电球（新）
+[AIxs]
+Name=物品 反魔法外壳
+[AIpg]
+Name=物品清除
+[AIdd]
+Name=防守
+[AIdd]
+Name=被动防御
+[Btrv]
+EditorName=Teleport Reveal
+[A0EQ]
+Name="不工作"
+[A0D6]
+Name="ELE：附魔（岩盾）"
+[A0DB]
+Name="ELE：元素守卫塔（巨石）"
+Tip="有 65% 的几率使单位昏迷 3 秒并造成 100 额外伤害。"
+[A0BV]
+Name="咒语抵抗 99"
+[A0C7]
+Name=物品生命再生
+[A0C6]
+Name=物品生命再生
+[A0C9]
+Name=拼写书
+[A0C8]
+Name=物品伤害加成
+[A0CC]
+Name=物品护甲加成
+[A0CB]
+Name=物品护甲加成
+[A0CF]
+Name="法术抵抗 50"
+[A0CD]
+Name=物品护甲加成
+[A0CH]
+Name="ELE：闪电元素（球）"
+[A0CI]
+Name="ELE：高等闪电元素（球）"
+[A0CM]
+Name="ELE：高等火元素（喷火球）"
+[A0AY]
+Name="法术抵抗 15"
+[A0AZ]
+Name="咒语抵抗 20"
+[A0BB]
+Name="NAT：翡翠龙（护甲减少）"
+[A0C2]
+Name="NAT：熊怪长老萨满（法力燃烧球）"
+[A0A9]
+Name=近战闪电伤害加成
+[A0A5]
+Name=拼写书
+Ubertip="命令拥有玩家购买物品。"
+Tip="发出买单"
+[A0AN]
+Name="法术抗性 25%"
+[A0AM]
+Name="建造科技帐篷"
+[A0AL]
+Name="法术抗性 15"
+[A0AI]
+Name="咒语抵抗 90"
+[A0AH]
+Name="法术抵抗 70"
+[A0AC]
+Name=闪电球（新）
+[A05N]
+Name="UND：强大的死灵法师（腐尸群）"
+[A06T]
+Name=物品生命奖励
+[A06U]
+Name=物品伤害加成
+[A06Z]
+Name=法术护盾
+[A07S]
+Name="建造核弹筒"
+[A088]
+Name=物品伤害加成
+[A089]
+Name=物品护甲加成
+[A08C]
+Name="NEL：荒野方尖碑（法术抗性40）"
+[A08A]
+Name=物品临时区域护甲加成
+[A08K]
+Name="咒语抵抗 90"
+[A08L]
+Name="防御+4"
+[A08O]
+Name="法术抵抗 70"
+[A093]
+Name="法术抵抗 30"
+[A09C]
+Name=物品攻击速度加成
+[A09Q]
+Name="机甲护盾"
+[A09M]
+Name="堆叠生命奖金"
+[A00Z]
+Name="HEL：巫师（闪电）"
+[A00J]
+Name=拼写书
+[A01B]
+Name=近战闪电伤害加成
+[A03B]
+Name=物品攻击速度加成
+[A03A]
+Name=物品伤害加成
+[A035]
+Name="ORC：进攻型科多兽（伤害光环）"
+[A02H]
+Name=闪电链
+[A02G]
+Name="卷轴治疗"
+[A02F]
+Name="伤害加 30"
+[A046]
+Name="冻结20p"
+[A048]
+Name=近战闪电伤害加成
+[A049]
+Name=近战闪电伤害加成
+[A03X]
+Name=近战闪电伤害加成
+[A03L]
+Name=物品生命奖励
+[A03E]
+Name="四重伤害"
+Ubertip="为附近的友方单位提供 <AIrr,DataA1,%>% 的伤害加成。|n持续 <AIrr,Dur1> 秒。"
+[A03D]
+Name=物品生命奖励
+[A03F]
+Name="双倍伤害"
+Ubertip="为附近的友方单位提供 <AIrr,DataA1,%>% 的伤害加成。|n持续 <AIrr,Dur1> 秒。"
+[A04W]
+Name=闪电球（新）
+[A04P]
+Name=闪电球（新）
+[A04N]
+Name=闪电球（新）
+[A054]
+Name=闪电球（新）
+[A04S]
+Name="COR：腐败之眼"
+[A0F3]
+Name=拼写书
+[A0FF]
+Name="投掷巨石 35p"
+[A0FG]
+Name="空气盾牌"
+[A0FH]
+Name="火盾一"
+[A0FI]
+Name="大地之盾"
+[A0FL]
+Name="翡翠龙盔甲 -4"
+[A0FM]
+Name="ELE：巨石塔"
+[A0FN]
+Name="MECH：能量爆裂塔"
+Ubertip="该单位的攻击弹跳 2 次，每次弹跳造成的伤害减少 0.3。能量爆发可以造成额外伤害（对第一个目标80，跳跃4次）"
+Tip="能量塔"
+[A0FR]
+Name="错觉"
+[A0FS]
+Name="错觉"
+[A0FT]
+Name="施展幻术（较小）"
+[A0FU]
+Name="施展幻觉（更大）"
+[A0G0]
+Name="ELE：演员 WW"
+[A0G5]
+Name="DST：盲 16%"
+[A0GG]
+Name="定义-3"
+[A0H7]
+Name=法术护盾
+[A0H8]
+Name="魔像 SR"
+[A0GJ]
+Name="伤害加 45"
+[A0HE]
+Name="伤害加 60"
+[A0HF]
+Name="伤害加 75"
+[A0HG]
+Name="伤害加 90"
+[A0HJ]
+Name="-100% 法术抗性"
+[A0HN]
+Name="双倍伤害"
+Ubertip="为附近的友方单位提供 <AIrr,DataA1,%>% 的伤害加成。|n持续 <AIrr,Dur1> 秒。"
+[A0HO]
+Name="开发罢工"
+Ubertip="为附近的友方单位提供 <AIrr,DataA1,%>% 的伤害加成。|n持续 <AIrr,Dur1> 秒。"
+[A0HX]
+Name="DST：蝾螈"
+[A03G]
+Name="法术抗性 50%"
+[A0I1]
+Name="祈祷：治疗+法力"
+[A0I2]
+Name="祈祷：+dmg +盔甲"
+Ubertip="为附近的友方单位提供 <AIrr,DataA1,%>% 的伤害加成。|n持续 <AIrr,Dur1> 秒。"
+[A0IJ]
+Name="冻结（腿）"
+[B01Q]
+Bufftip=影之香
+Buffubertip=该单位的护甲减少
+[B01C]
+Bufftip=石头卷轴
+Buffubertip=这个单位的护甲增加了。
+[B016]
+Bufftip=月光祝福
+Buffubertip=这个单位的护甲增加了。
+[B02E]
+Bufftip=地盾
+Buffubertip=+35% 投掷巨石|n+10 护甲
+[B02G]
+Bufftip=防火盾
+Buffubertip=随机燃烧附近的敌人，持续 15dps。
+[B02H]
+Bufftip=防风罩
+Buffubertip=+30% IAS +20%MS|n+30% 法术和伤害抗性|n50% 几率偏转魔法攻击
+[B02K]
+Bufftip=生命流失
+Buffubertip=巫妖的受害者
+EditorName=Life drain

@@ -1,0 +1,669 @@
+[Arpl]
+Name=枯萎精华
+Tip=[|cffffcc00B|r] 枯萎精华
+Ubertip="为附近的友方单位恢复 <Arpl,DataA1> 生命值。"
+Untip="|cffc3dbff|cffc3dbff右击激活自动投射。|r|r"
+Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Hotkey=B
+Unhotkey=B
+[Brpl]
+Bufftip=枯萎精华
+Buffubertip="该单位已被枯萎精华击中；它的一些生命值已经恢复。"
+[Arpm]
+Name=灵触
+Tip=精神之触|cffffcc00c|rh
+Ubertip="为附近的友方单位恢复 <Arpm,DataB1> 法力值。"
+Untip="|cffc3dbff|cffc3dbff右击激活自动投射。|r|r"
+Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Hotkey=C
+Unhotkey=C
+Order=replenishmana
+Orderon=replenishmanaon
+Orderoff=replenishmanaoff
+[Brpm]
+Bufftip=灵触
+Buffubertip="该单位已被灵魂之触击中；它的部分法力值已经恢复。"
+[Aexh]
+Name=挖掘尸体
+Tip=挖掘尸体
+Ubertip="每 <Aexh,Dur1> 秒在肉车内生成一具尸体。"
+[Aave]
+Name=毁灭者形态
+[Afak]
+Name=毁灭之球
+Tip="|cffffcc00O|r湮灭之rb"
+Ubertip="为毁灭者的攻击附加<Afak,DataA1>额外伤害，并使其攻击造成范围伤害。"
+Untip="|cffc3dbff|cffc3dbff右击激活自动投射。|r|r"
+Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Hotkey=O
+Unhotkey=O
+[Advm]
+Name=吞噬魔法
+Tip="|cffffcc00D|r吞噬魔法"
+Ubertip="消耗区域内单位的所有魔法增益。每个被魔法吞噬的单位都会给予毁灭者 <Advm,DataA1> 生命值和 <Advm,DataB1> 法力值。|n|cffffcc00对被召唤的单位造成 <Advm,DataE1> 伤害。|r"
+Hotkey=D
+[Aabs]
+Name=吸收法力
+Tip="A[|cffffcc00b|r] 吸收法力"
+Ubertip="从你的一个单位中获取所有法力值并将其提供给毁灭者。"
+Hotkey=B
+[Abur]
+Name=地洞
+Tip=|cffffcc00B|r尿道
+Untip=[|cffffcc00b|r] 开洞
+Ubertip="地穴恶魔钻入地下，变得隐形，并获得每秒 <ucrm,regenHP> 生命值的再生速度。|n地穴恶魔在钻地时无法攻击。"
+Unubertip="地穴恶魔从地下弹出并再次可见。"
+Hotkey=B
+Unhotkey=B
+[Abu2]
+Name=地洞
+Tip=|cffffcc00B|r尿道
+Untip=[|cffffcc00b|r] 开洞
+Ubertip="腐肉甲虫钻入地下并变得隐形。"
+Unubertip="腐肉甲虫从地下弹出并再次可见。"
+Hotkey=B
+Unhotkey=B
+[Abu3]
+Name=地洞
+Tip=|cffffcc00B|r尿道
+Untip=[|cffffcc00b|r] 开洞
+Ubertip="腐肉甲虫钻入地下并变得隐形。"
+Unubertip="腐肉甲虫从地下弹出并再次可见。"
+Hotkey=B
+Unhotkey=B
+[AUim]
+Name=穿刺
+Tip=穿刺|cffffcc00e|r - [|cffffcc001级|r],Impal|cffffcc00e|r - [|cffffcc002级|r],Impal|cffffcc00e|r - [|cffffcc003级|r]
+Ubertip="用地穴领主的巨爪猛击地面，将带刺的卷须直线射出，造成 <AUim,DataC1> 伤害并将敌方地面单位抛向空中，使其昏迷 <AUim,Dur1> 秒。", "用地穴领主的巨爪猛击地面，将尖刺的卷须直线射出，造成 <AUim,DataC2> 伤害，并将敌方地面单位抛向空中，使其昏迷 <AUim,Dur2> 秒。", "用地穴领主的巨爪猛击地面，将尖刺的卷须直线射出，造成 <AUim,DataC3> 伤害，并将敌方地面单位抛向空中，使其昏迷 <AUim,Dur3> 秒。"
+Hotkey=E
+Researchtip="Learn Impal|cffffcc00e|r - [|cffffcc00Level %d|r]"
+Researchubertip="Slams the ground with the Crypt Lord's massive claws, shooting spiked tendrils out in a straight line, dealing damage and hurling enemy ground units into the air in their wake. |n|n|cffffcc00Level 1|r - <AUim,DataC1> damage, <AUim,Dur1> second stun. |n|cffffcc00Level 2|r - <AUim,DataC2> damage, <AUim,Dur2> second stun. |n|cffffcc00Level 3|r - <AUim,DataC3> damage, <AUim,Dur3> second stun."
+Researchhotkey=E
+[BUim]
+Bufftip=穿刺
+Buffubertip="这个单位被刺穿了；它在空中停留了很短的时间。"
+[AUts]
+Name=尖刺甲壳
+Tip=尖刺甲壳 - [|cffffcc00Level 1|r],尖刺甲壳 - [|cffffcc00Level 2|r],尖刺甲壳 - [|cffffcc00Level 3|r]
+Ubertip="用有机倒钩增强地穴领主的几丁质盔甲，给予地穴领主 <AUts,DataC1> 额外护甲并返回 <AUts,DataA1,%>% 的近战攻击伤害给敌人。","用有机倒刺增强地穴领主的几丁质盔甲，给予他 <AUts,DataC2> 额外护甲并将 <AUts,DataA2,%>% 的近战攻击伤害返还给敌人。","用有机倒钩增强地穴领主的几丁质护甲，给予他 <AUts,DataC3> 额外护甲和返回<AUts,DataA3,%>%的近战攻击伤害给敌人。"
+Researchtip="Learn |cffffcc00S|rpiked Carapace - [|cffffcc00Level %d|r]"
+Researchubertip="The Crypt Lord forms barbed layers of chitinous armor that increases its defense and returns damage to enemy melee attackers.  |n|n|cffffcc00Level 1|r - <AUts,DataA1,%>% damage returned, <AUts,DataC1> bonus armor. |n|cffffcc00Level 2|r -  <AUts,DataA2,%>% damage returned, <AUts,DataC2> bonus armor. |n|cffffcc00Level 3|r -  <AUts,DataA3,%>% damage returned, <AUts,DataC3> bonus armor."
+Researchhotkey=S
+[AUcb]
+Name=腐肉甲虫
+Tip=|cffffcc00C|rarion 甲虫 - [|cffffcc00Level [|cffffcc00C|r] 1|r],Carrion Beetles - [|cffffcc00Level 2|r],|cffffcc00C|rarion 甲虫 - [|cffffcc00Level 3|r]
+Ubertip="从目标尸体生成 <AUcb,DataA1> 甲壳虫。甲虫有 <ucs1,realHP> 生命值，并造成 <ucs1,mindmg1> - <ucs1,maxdmg1> 伤害。甲虫是永久性的，直到被杀死。|n<AUcb,DataE1> 甲虫的最大值。","从目标尸体中生成 <AUcb,DataA2> 甲虫。甲虫有 <ucs2,realHP> 生命值，并造成 <ucs2,mindmg1> - <ucs2,maxdmg1> 伤害，并且可以挖洞。甲虫是永久性的，直到被杀死。|n<AUcb,DataE2> 甲虫的最大值。","从目标尸体中生成 <AUcb,DataA3> 甲虫。甲虫有 <ucs3,realHP> 生命值，并造成 <ucs3,mindmg1> - <ucs3,maxdmg1> 伤害，并且可以挖洞。甲虫是永久性的，直到被杀死。|n<AUcb,DataE3> 甲虫的最大值。"
+Hotkey=C
+Researchtip="Learn |cffffcc00C|rarrion Beetles - [|cffffcc00Level %d|r]"
+Researchubertip="The Crypt Lord progenerates <AUcb,DataA1> Carrion Beetle from a target corpse to attack the Crypt Lord's enemies. Beetles are permanent, but only <AUcb,DataE1> can be controlled at a time. |n|n|cffffcc00Level 1|r - <ucs1,realHP> hit points, <ucs1,mindmg1> - <ucs1,maxdmg1> damage. |n|cffffcc00Level 2|r - <ucs2,realHP> hit points, <ucs2,mindmg1> - <ucs2,maxdmg1> damage, Beetles can burrow. |n|cffffcc00Level 3|r - <ucs3,realHP> hit points, <ucs3,mindmg1> - <ucs3,maxdmg1> damage, Beetles can burrow."
+Researchhotkey=C
+Untip="|cffc3dbff右击激活自动施法。"
+Unubertip="|cffc3dbff右键单击以禁用自动施法。"
+[BUcb]
+Bufftip=腐肉甲虫
+Buffubertip="被召唤的单位会受到驱散的伤害。"
+[AUls]
+Name=蝗虫群
+Tip=|cffffcc00L|r奥克斯特群
+Ubertip="制造一群愤怒的蝗虫，撕咬附近的敌方单位。当他们咀嚼敌人的肉时，他们会将其转化为一种物质，当他们返回时可以恢复地穴领主的生命值。|n持续 <AUls,HeroDur1> 秒。"
+Hotkey=L
+Researchtip="Learn |cffffcc00L|rocust Swarm"
+Researchubertip="Creates a swarm of angry locusts that bite and tear at nearby enemy units. As they chew the enemy flesh, they convert it into a substance that restores hit points to the Crypt Lord when they return. |nLasts <AUls,HeroDur1> seconds."
+Researchhotkey=L
+[BUlo]
+Bufftip=刺槐
+[Amtc]
+Name=货舱
+[Atru]
+Name=真实视域
+Tip=真实视域
+Ubertip="显示附近的隐形单位。"
+[Aaha]
+Name=收集
+Tip=|cffffcc00G|r其他
+Ubertip="从闹鬼的金矿中开采黄金。"
+Untip=|cffffcc00R|r返回资源
+Unubertip="将携带的资源归还到最近的市政厅。"
+Hotkey=G
+Unhotkey=R
+[Auns]
+Name=取消召唤建筑
+Tip=|cffffcc00U|rnsummon 大厦
+Ubertip="取消召唤您的建筑以重新获得 <Auns,DataA1,%>% 的已用资源。"
+Hotkey=U
+[Buns]
+Bufftip=取消召唤
+[Agyd]
+Name=创建尸体
+[Alam]
+Name=牺牲
+Tip=[|cffffcc00c|r] 牺牲
+Ubertip="瞄准一个祭祀坑以牺牲侍僧并将其变成阴影。阴影是可以看到隐形单位的隐形灵魂。|n阴影无法攻击。"
+Hotkey=C
+[Asac]
+Name=牺牲
+Tip=[|cffffcc00c|r] 牺牲
+Ubertip="以一名侍僧为目标，将其献祭并将其转化为暗影。阴影是可以看到隐形单位的隐形灵魂。|n阴影无法攻击。"
+Hotkey=C
+[Acan]
+Name=蚕食
+Tip=|cffffcc00C|r蚕食
+Ubertip="消耗附近的尸体每秒治疗 <Acan,DataA1> 点生命值。"
+Hotkey=C
+[Acn2]
+Name=蚕食
+Tip=|cffffcc00C|r蚕食
+Ubertip="消耗附近的尸体每秒治疗 <Acn2,DataA1> 点生命值。"
+Hotkey=C
+[Aspa]
+Name=蜘蛛攻击
+[Bspa]
+Bufftip=小蜘蛛
+[Aweb]
+Name=网络
+Tip=|cffffcc00网络|r网络
+Untip="|cffc3dbff|cffc3dbff右击激活自动施法。"
+Ubertip="将目标敌方空中单位用织带束缚，迫使其倒地。蹼类单位可以像陆地单位一样被击中。|n持续 <Aweb,Dur1> 秒。"
+Unubertip="|cffc3dbff右键单击以禁用自动施法。"
+Hotkey=W
+Unhotkey=W
+[Bweb]
+Bufftip=网络
+Buffubertip="这个单元是网状的；它被粘在地上，无法移动。"
+[Bwea]
+Bufftip=网络
+Buffubertip="这个单元是网状的；它被粘在地上，无法移动。"
+[Astn]
+Name=石头形态
+Tip=石头 [|cffffcc00F|r] 形式
+Ubertip="将石像鬼变成一尊不受法术影响的雕像，获得额外的护甲并具有每秒 <Astn,DataE1> 生命值的再生速度。|n石像鬼不能以这种形式攻击。"
+Hotkey=F
+Untip=石像鬼 [|cffffcc00F|r] 形式
+Unubertip="将石像鬼送回空中。"
+Unhotkey=F
+[Amel]
+Name=获取尸体
+Tip=获取 [|cffffcc00C|r] 尸体
+Ubertip="捡起附近的尸体以备后用。"
+Untip="|cffc3dbff右击激活自动施法。"
+Unubertip="|cffc3dbff右键单击以禁用自动施法。"
+Hotkey=C
+Unhotkey=C
+[Amed]
+Name=掉落尸体
+Tip=|cffffcc00D|r删除所有尸体
+Ubertip="掉落所有尸体以供立即使用。"
+Hotkey=D
+[Aapl]
+Name=疾病云
+Tip=疾病云
+Ubertip="用疾病云感染附近的敌方生活单位。疾病云每秒造成 <Aap1,DataB1> 伤害。|n持续 <Aap1,DataA1> 秒。"
+[Aap1]
+Name=疾病云
+Tip=疾病云
+Ubertip="用疾病云感染附近的敌方生活单位。疾病云每秒造成 <Aap1,DataB1> 伤害。|n持续 <Aap1,DataA1> 秒。"
+[Aap2]
+Name=疾病云
+[Bapl]
+Bufftip=疾病
+Buffubertip="本单位有病；随着时间的推移，它会受到损害。"
+[Apts]
+Name=疾病云
+Tip=疾病云
+Ubertip="每次攻击都会掉落一个疾病云。疾病云每秒造成 <Aap1,DataB1> 伤害。|n持续 <Aap1,DataA1> 秒。"
+[Afrb]
+Name=冰霜之息
+[Afra]
+Name=冰霜攻击
+Tip=冰霜攻击
+Ubertip="为该单位的攻击添加冰冷效果，降低敌方单位的移动速度。"
+[Afrz]
+Name=冰冷的呼吸
+Tip=冰冷的呼吸
+Ubertip="在建筑上使用时，会暂时停止所有建筑活动。|n持续 <Afrz,Dur1> 秒。"
+[Bfrz]
+Bufftip=冰冷的呼吸
+Buffubertip="这栋楼已经结冰了；它的能力无法使用，也无法修复。"
+[Arai]
+Name=复活
+Tip=|cffffcc00起|r死了
+Untip="|cffc3dbff右击激活自动施法。"
+Ubertip="从尸体中复活<Arai,DataA1>骷髅。"
+Unubertip="|cffc3dbff右键单击以禁用自动施法。"
+Hotkey=R
+Unhotkey=R
+[Brai]
+Bufftip=骷髅仆从
+Buffubertip="被召唤的单位会受到驱散的伤害。"
+[Auhf]
+Name=邪恶狂乱
+Tip=|cffffcc00U|rnholy 狂热
+Ubertip="将目标单位的攻击率提高 <Auhf,DataA1,%>%，但每秒消耗 <Auhf,DataB1> 点生命值。|n持续 <Auhf,Dur1> 秒。"
+Hotkey=U
+[Buhf]
+Bufftip=邪恶狂乱
+Buffubertip="这个单位有邪恶狂乱；它的攻击速度增加，但它会随着时间的推移受到伤害。"
+[Acrs]
+Name=诅咒
+Tip=|cffffcc00课程|r课程
+Ubertip="诅咒一个目标敌方单位，使其有 <Acrs,DataA1,%>% 的几率在一次攻击中失手。|n持续 <Acrs,Dur1> 秒。"
+Untip="|cffc3dbff右击激活自动施法。"
+Unubertip="|cffc3dbff右键单击以禁用自动施法。"
+Hotkey=C
+Unhotkey=C
+[Bcrs]
+Bufftip=诅咒
+Buffubertip="这个单位被诅咒了；它在攻击时可能会错过。"
+[Aams]
+Name=反魔法壳
+Tip=A[|cffffcc00n|r] 反魔壳
+Ubertip="制造一道屏障，阻止法术影响目标单位。|n持续 <Aams,Dur1> 秒。"
+Hotkey=N
+[Bams]
+Bufftip=反魔法壳
+Buffubertip="这个单位有反魔法壳；它不能成为法术的目标。它可以被驱散。"
+[Bam2]
+Bufftip=反魔法壳
+Buffubertip="这个单位有反魔法壳；伤害法术必须破坏外壳才能影响单位。"
+[Apos]
+Name=拥有
+Tip=P[|cffffcc00o|r] 占有
+Ubertip="置换敌人的灵魂，让你永久控制它，但会摧毁施法者的身体。|n附身不能用于<Apos,DataA1>级别以上的飞行单位、英雄或小兵。"
+Hotkey=O
+[Bpos]
+Bufftip=拥有
+Buffubertip="这个单位被占有。"
+[AUdc]
+Name=死亡线圈
+Tip=死亡 [|cffffcc00C|r] 线圈 - [|cffffcc00Level 1|r]，死亡 [|cffffcc00C|r] 线圈 - [|cffffcc00Level 2|r]，死亡 [|cffffcc00C|r] 线圈 - [|cffffcc00Level 3|r]
+Ubertip="可以治疗友方亡灵单位生命值 <AUdc,DataA1> 的死亡线圈，或对敌方活体单位造成一半伤害。","可以治疗友方亡灵单位 <AUdc,DataA2> 的死亡线圈生命值，或对敌方活体单位造成一半伤害。","死亡线圈可以治愈友方亡灵单位 <AUdc,DataA3> 生命值，或对敌方活体单位造成一半伤害。"
+Hotkey=C
+Researchtip="Learn Death |cffffcc00C|roil - [|cffffcc00Level %d|r]"
+Researchubertip="A coil of death that can damage an enemy living unit or heal a friendly Undead unit. |n|n|cffffcc00Level 1|r - Heals for <AUdc,DataA1> hit points. |n|cffffcc00Level 2|r - Heals for <AUdc,DataA2> hit points. |n|cffffcc00Level 3|r - Heals for <AUdc,DataA3> hit points."
+Researchhotkey=C
+[AUau]
+Name=邪恶光环
+Tip=邪恶灵气 - [|cffffcc00Level 1|r],邪恶灵气 - [|cffffcc00Level 2|r],邪恶灵气 - [|cffffcc00Level 3|r]
+Ubertip="增加附近友军单位的移动速度 <AUau,DataA1,%>% 和生命恢复速度。","增加附近友方单位的移动速度 <AUau,DataA2,%>% 和生命恢复速度。","增加附近的友方单位的移动速度增加<AUau,DataA3,%>%和生命恢复速度。"
+Researchtip="Learn |cffffcc00U|rnholy Aura - [|cffffcc00Level %d|r]"
+Researchubertip="Increases the movement speed and life regeneration rate of nearby friendly units. |n|n|cffffcc00Level 1|r - <AUau,DataA1,%>% movement, minor regeneration bonus. |n|cffffcc00Level 2|r - <AUau,DataA2,%>% movement, moderate regeneration bonus. |n|cffffcc00Level 3|r - <AUau,DataA3,%>% movement, greater regeneration bonus."
+Researchhotkey=U
+[BUau]
+Bufftip=邪恶光环
+Buffubertip="该单位受到邪恶光环的影响；它具有提高的移动速度和生命值恢复速度。"
+[AUdp]
+Name=死亡契约
+Tip=D[|cffffcc00e|r]eath Pact - [|cffffcc00Level 1|r],D[|cffffcc00e|r]eath Pact - [|cffffcc00Level 2|r],D[|cffffcc00e|r]eath Pact - [|cffffcc00Level 3|r]
+Ubertip="杀死一个目标友方亡灵单位，将其 <AUdp,DataB1,%>% 的生命值给予死亡骑士。","杀死一个目标友方亡灵单位，将其 <AUdp,DataB2,%>% 的生命值给予死亡骑士死亡骑士。","杀死一个目标友方亡灵单位，将 <AUdp,DataB3,%>% 的生命值给予死亡骑士。"
+Hotkey=E
+Researchtip="Learn D|cffffcc00e|rath Pact - [|cffffcc00Level %d|r]"
+Researchubertip="Kills a target friendly Undead unit, giving a percentage of its hit points to the Death Knight. |n|n|cffffcc00Level 1|r - <AUdp,DataB1,%>% conversion. |n|cffffcc00Level 2|r - <AUdp,DataB2,%>% conversion. |n|cffffcc00Level 3|r - <AUdp,DataB3,%>% conversion."
+Researchhotkey=E
+[AUan]
+Name=动画死者
+Tip=动画 [|cffffcc00D|r] 死亡
+Ubertip="在区域内复活<AUan,DataA1>个死亡单位，为死亡骑士战斗<AUan,Dur1>秒。动画单位是无敌的。"
+Hotkey=D
+Researchtip="Learn Animate |cffffcc00D|read"
+Researchubertip="Raises <AUan,DataA1> dead units in an area to fight for the Death Knight for <AUan,Dur1> seconds. Animated units are invulnerable."
+Researchhotkey=D
+Globalmessage=
+Globalsound=
+[BUan]
+Bufftip=动画死者
+Buffubertip="被召唤的单位会受到驱散的伤害。"
+[AUcs]
+Name=腐肉群
+Tip=|cffffcc00C|rarrion Swarm - [|cffffcc00Level [|cffffcc00C|r] 1|r],Carrion Swarm - [|cffffcc00Level 2|r],|cffffcc00C|rarrion Swarm - [|cffffcc00Level 3|r]
+Ubertip="派出一群蝙蝠对锥形内的每个敌方单位造成 <AUcs,DataA1> 伤害。","派出一群蝙蝠对锥形内的每个敌方单位造成 <AUcs,DataA2> 伤害。","发送一个成群的蝙蝠对锥形范围内的每个敌方单位造成 <AUcs,DataA3> 伤害。"
+Hotkey=C
+Researchtip="Learn |cffffcc00C|rarrion Swarm - [|cffffcc00Level %d|r]"
+Researchubertip="Sends a horde of bats to damage enemies. |n|n|cffffcc00Level 1|r - <AUcs,DataA1> damage per unit. |n|cffffcc00Level 2|r - <AUcs,DataA2> damage per unit. |n|cffffcc00Level 3|r - <AUcs,DataA3> damage per unit."
+Researchhotkey=C
+[AUsl]
+Name=睡觉
+Tip=[|cffffcc00e|r] 睡眠 - [|cffffcc001 级|r],[|cffffcc00e|r] 睡眠 - [|cffffcc002 级|r],[|cffffcc00e|r] 睡眠 - [|cffffcc003 级|r]
+Ubertip="使目标敌方单位休眠 <AUsl,Dur1> 秒。一个休眠的单位可以通过攻击它来唤醒。","使一个目标敌方单位休眠 <AUsl,Dur2> 秒。一个休眠的单位可以通过攻击它来唤醒。","使一个目标敌方单位休眠 <AUsl,Dur3> 秒。一个沉睡的单位可以通过攻击它来唤醒。"
+Hotkey=E
+Researchtip="Learn Sl|cffffcc00e|rep - [|cffffcc00Level %d|r]"
+Researchubertip="Puts a target enemy unit to sleep. A sleeping unit can be awoken by attacking it. |n|n|cffffcc00Level 1|r - <AUsl,Dur1> second sleep for <AUsl,Cost1> mana. |n|cffffcc00Level 2|r - <AUsl,Dur2> second sleep for <AUsl,Cost2> mana. |n|cffffcc00Level 3|r - <AUsl,Dur3> second sleep for <AUsl,Cost3> mana."
+Researchhotkey=E
+[BUsl]
+Bufftip=睡觉
+Buffubertip="本机正在睡觉；它不能移动、攻击或施法。攻击它会唤醒它。"
+[AUav]
+Name=吸血光环
+Tip=吸血光环 - [|cffffcc00Level 1|r],吸血光环 - [|cffffcc00Level 2|r],吸血光环 - [|cffffcc00Level 3|r]
+Ubertip="附近友军近战单位在击中敌方单位时获得 <AUav,DataA1,%>% 的攻击伤害。","附近的友方近战单位在击中敌方单位时获得 <AUav,DataA2,%>% 的攻击伤害。" "附近友军近战单位在击中敌方单位时获得 <AUav,DataA3,%>% 的攻击伤害。"
+Researchtip="Learn |cffffcc00V|rampiric Aura - [|cffffcc00Level %d|r]"
+Researchubertip="Nearby friendly melee units gain hit points when they hit enemy units. |n|n|cffffcc00Level 1|r - Gains <AUav,DataA1,%>% of attack damage. |n|cffffcc00Level 2|r - Gains <AUav,DataA2,%>% of attack damage. |n|cffffcc00Level 3|r - Gains <AUav,DataA3,%>% of attack damage."
+Researchhotkey=V
+[BUav]
+Bufftip=吸血光环
+Buffubertip="该单位受到吸血鬼光环的影响；它对敌方单位造成的伤害将恢复生命值。"
+[AUfn]
+Name=冰霜新星
+Tip=Frost [|cffffcc00N|r] Nova - [|cffffcc00Level 1|r],Frost [|cffffcc00N|r] Nova - [|cffffcc00Level 2|r],Frost [|cffffcc00N|r] Nova - [|cffffcc00Level 3|r]
+Ubertip="用一波冰霜冲击敌方单位，对目标造成 <AUfn,DataB1> 伤害，并造成 <AUfn,DataA1> 新星伤害。冰霜伤害会使单位的移动和攻击速度减慢 <AUfn,Dur1> 秒。","向敌方单位发射一波冰霜，对目标造成 <AUfn,DataB2> 伤害，并造成 <AUfn,DataA2> 新星伤害。冰霜伤害会使单位的移动和攻击速度减慢 <AUfn,Dur2> 秒。","向敌方单位发射一波冰霜，对目标造成 <AUfn,DataB3> 伤害，并造成 <AUfn,DataA3> 新星伤害。冰霜伤害会使单位的移动和攻击速度减慢 <AUfn,Dur3> 秒。"
+Hotkey=N
+Researchtip="Learn Frost |cffffcc00N|rova - [|cffffcc00Level %d|r]"
+Researchubertip="Blasts enemy units around a target enemy unit with a wave of damaging frost that slows movement and attack rate. |n|n|cffffcc00Level 1|r - <AUfn,DataB1> target damage, <AUfn,DataA1> nova damage. |n|cffffcc00Level 2|r - <AUfn,DataB2> target damage, <AUfn,DataA2> nova damage. |n|cffffcc00Level 3|r - <AUfn,DataB3> target damage, <AUfn,DataA3> nova damage."
+Researchhotkey=N
+[AUfu]
+Name=冰霜护甲
+Tip=|cffffcc00F|rrost 护甲 - [|cffffcc00Level [|cffffcc00F|r] 1|r],Frost 护甲 - [|cffffcc00Level 2|r],|cffffcc00F|rrost 护甲 - [|cffffcc00Level 3|r]
+Ubertip="在目标友方单位周围制造一层冰霜护盾。护盾会增加 <AUfu,DataB1> 护甲并减缓攻击它的近战单位 <AUfu,Dur1> 秒。|n持续 <AUfu,DataA1> 秒。","在目标友方单位周围制造一层冰霜护盾。护盾会增加 <AUfa,DataB2> 护甲并减缓攻击它的近战单位 <AUfa,Dur1> 秒。|n持续 <AUfa,DataA2> 秒。","在目标友方单位周围制造一层冰霜护盾。护盾会增加 <AUfa,DataB3> 护甲并减缓攻击它的近战单位 <AUfa,Dur1> 秒。|n持续 <AUfa,DataA3> 秒。"
+Untip="|cffc3dbff右击激活自动施法。"
+Unubertip="|cffc3dbff右键单击以禁用自动施法。"
+Hotkey=F
+Researchtip="Learn |cffffcc00F|rrost Armor - [|cffffcc00Level %d|r]"
+Researchubertip="Creates a shield of frost around a target friendly unit. The shield adds armor and slows melee units that attack it. |n|n|cffffcc00Level 1|r - Adds <AUfu,DataB1> armor. |n|cffffcc00Level 2|r - Adds <AUfu,DataB2> armor. |n|cffffcc00Level 3|r - Adds <AUfu,DataB3> armor."
+Researchhotkey=F
+[BUfa]
+Bufftip=冰霜护甲
+Buffubertip="这个单位有冰霜护甲；它增加了护甲，攻击它的近战单位的移动速度和攻击率会在短时间内降低。"
+[AUdr]
+Name=黑暗仪式
+Tip=黑暗 [|cffffcc00R|r] 仪式 - [|cffffcc00Level 1|r]，黑暗 [|cffffcc00R|r] 仪式 - [|cffffcc00Level 2|r]，黑暗 [|cffffcc00R|r] 仪式 - [|cffffcc00Level 3|r]
+Ubertip="牺牲一个目标友方亡灵单位，将其 <AUdr,DataA1,%>% 的生命值转化为巫妖的法力值。","牺牲一个目标友方亡灵单位，将其 <AUdr,DataA2,%>% 的生命值转化为巫妖的法力值。","牺牲一个目标友方亡灵单位，将其 <AUdr,DataA3,%>% 的生命值转化为巫妖的法力值。"
+Hotkey=R
+Researchtip="Learn Dark |cffffcc00R|ritual - [|cffffcc00Level %d|r]"
+Researchubertip="Sacrifices a target friendly Undead unit to convert its hit points into mana for the Lich. |n|n|cffffcc00Level 1|r - <AUdr,DataA1,%>% of hit points to mana. |n|cffffcc00Level 2|r - <AUdr,DataA2,%>% of hit points to mana. |n|cffffcc00Level 3|r - <AUdr,DataA3,%>% of hit points to mana."
+Researchhotkey=R
+[AUdd]
+Name=死亡与衰败
+Tip=|cffffcc00D|r死亡与衰败
+Ubertip="每秒对其作用范围内的所有物体造成 <AUdd,DataA1,%>% 基础生命值的伤害。还破坏树木。|n持续 <AUdd,Dur1> 秒。"
+Hotkey=D
+Researchtip="Learn |cffffcc00D|reath And Decay"
+Researchubertip="Damages everything in its area of effect by <AUdd,DataA1,%>% of its base hit points per second. Also destroys trees."
+Researchhotkey=D
+[BUdd]
+Bufftip=死亡与衰败
+Buffubertip="这个单位在死亡与衰变之下；随着时间的推移，它会受到损害。"
+[Acri]
+Name=削弱
+Tip=|cffffcc00C|r波纹
+Ubertip="使目标敌方单位的移动速度降低<Acri,DataA1,%>%，攻击率降低<Acri,DataB1,%>%，伤害降低<Acri,DataC1,%>%。|n持续 <Acri,Dur1> 秒。"
+Hotkey=C
+[Bcri]
+Bufftip=削弱
+Buffubertip="这个单位是残废的；它的移动速度、攻击率和伤害已经降低。"
+[Arst]
+Name=恢复
+Tip=|cffffcc00R|r存储
+Ubertip="以资源为代价修理机械单元和结构。"
+Untip="|cffc3dbff右击激活自动施法。"
+Unubertip="|cffc3dbff右键单击以禁用自动施法。"
+Hotkey=R
+Unhotkey=R
+[AUin]
+Name=地狱火
+Tip=我[|cffffcc00n|r] nferno
+Ubertip="从天而降召唤一个地狱火，造成<AUin,DataA1>伤害并眩晕一个区域内的敌方陆地单位<AUin,Dur1>秒。地狱火持续 <AUin,DataB1> 秒。"
+Hotkey=N
+Researchtip=Learn I|cffffcc00n|rferno
+Researchubertip="Calls an Infernal down from the sky, dealing <AUin,DataA1> damage and stunning enemy land units for <AUin,Dur1> seconds in an area. The Infernal lasts <AUin,DataB1> seconds."
+Researchhotkey=N
+[BUcs]
+EditorName=Carrion Swarm (Caster)
+[BUsp]
+EditorName=Sleep (Pause)
+[BUst]
+EditorName=Sleep (Stun)
+[BUts]
+EditorName=Spiked Carapace
+[Bplg]
+EditorName=Disease Cloud
+[BUad]
+EditorName=Animate Dead (Extra)
+[XUdd]
+EditorName=Death And Decay (Effect)
+[Xfus]
+EditorName=Building Damage - Undead Small
+[Xfum]
+EditorName=Building Damage - Undead Medium
+[Xful]
+EditorName=Building Damage - Undead Large
+[A0AS]
+Name="NAT：育母（网络）"
+Tip=|cffffcc00网络|r网络
+Untip="|cffc3dbff|cffc3dbff右击激活自动施法。"
+Ubertip="将目标敌方空中单位用织带束缚，迫使其倒地。蹼类单位可以像陆地单位一样被击中。|n持续 <Aweb,Dur1> 秒。"
+Unubertip="|cffc3dbff右键单击以禁用自动施法。"
+Hotkey=W
+Unhotkey=W
+[A0AR]
+Name="NAT：巨型蜘蛛（网络）"
+Tip=|cffffcc00网络|r网络
+Untip="|cffc3dbff|cffc3dbff右击激活自动施法。"
+Ubertip="将目标敌方空中单位用织带束缚，迫使其倒地。蹼类单位可以像陆地单位一样被击中。|n持续 <Aweb,Dur1> 秒。"
+Unubertip="|cffc3dbff右键单击以禁用自动施法。"
+Hotkey=W
+Unhotkey=W
+[A0BF]
+Name="NAT：山地巨人（伤害降低%）"
+Tip=尖刺甲壳 - [|cffffcc00Level 1|r],尖刺甲壳 - [|cffffcc00Level 2|r],尖刺甲壳 - [|cffffcc00Level 3|r]
+Ubertip="用有机倒钩增强地穴领主的几丁质盔甲，给予地穴领主 <AUts,DataC1> 额外护甲并返回 <AUts,DataA1,%>% 的近战攻击伤害给敌人。","用有机倒刺增强地穴领主的几丁质盔甲，给予他 <AUts,DataC2> 额外护甲并将 <AUts,DataA2,%>% 的近战攻击伤害返还给敌人。","用有机倒钩增强地穴领主的几丁质护甲，给予他 <AUts,DataC3> 额外护甲和返回<AUts,DataA3,%>%的近战攻击伤害给敌人。"
+Researchtip="Learn |cffffcc00S|rpiked Carapace - [|cffffcc00Level %d|r]"
+Researchubertip="The Crypt Lord forms barbed layers of chitinous armor that increases its defense and returns damage to enemy melee attackers.  |n|n|cffffcc00Level 1|r - <AUts,DataA1,%>% damage returned, <AUts,DataC1> bonus armor. |n|cffffcc00Level 2|r -  <AUts,DataA2,%>% damage returned, <AUts,DataC2> bonus armor. |n|cffffcc00Level 3|r -  <AUts,DataA3,%>% damage returned, <AUts,DataC3> bonus armor."
+Researchhotkey=S
+[A0AB]
+Name=削弱
+Tip=|cffffcc00C|r波纹
+Ubertip="使目标敌方单位的移动速度降低<Acri,DataA1,%>%，攻击率降低<Acri,DataB1,%>%，伤害降低<Acri,DataC1,%>%。|n持续 <Acri,Dur1> 秒。"
+Hotkey=C
+[A05L]
+Name=复活
+Tip=|cffffcc00起|r死了
+Untip="|cffc3dbff右击激活自动施法。"
+Ubertip="从尸体中复活<Arai,DataA1>骷髅。"
+Unubertip="|cffc3dbff右键单击以禁用自动施法。"
+Hotkey=R
+Unhotkey=R
+[A05M]
+Name=腐肉群
+Tip=|cffffcc00C|rarrion Swarm - [|cffffcc00Level [|cffffcc00C|r] 1|r],Carrion Swarm - [|cffffcc00Level 2|r],|cffffcc00C|rarrion Swarm - [|cffffcc00Level 3|r]
+Ubertip="派出一群蝙蝠对锥形内的每个敌方单位造成 <AUcs,DataA1> 伤害。","派出一群蝙蝠对锥形内的每个敌方单位造成 <AUcs,DataA2> 伤害。","发送一个成群的蝙蝠对锥形范围内的每个敌方单位造成 <AUcs,DataA3> 伤害。"
+Hotkey=C
+Researchtip="Learn |cffffcc00C|rarrion Swarm - [|cffffcc00Level %d|r]"
+Researchubertip="Sends a horde of bats to damage enemies. |n|n|cffffcc00Level 1|r - <AUcs,DataA1> damage per unit. |n|cffffcc00Level 2|r - <AUcs,DataA2> damage per unit. |n|cffffcc00Level 3|r - <AUcs,DataA3> damage per unit."
+Researchhotkey=C
+[A05R]
+Name=疾病云
+Tip=疾病云
+Ubertip="用疾病云感染附近的敌方生活单位。疾病云每秒造成 <Aap1,DataB1> 伤害。|n持续 <Aap1,DataA1> 秒。"
+[A064]
+Name=冰霜之息
+[A069]
+Name=毁灭之球
+Tip="|cffffcc00O|r湮灭之rb"
+Ubertip="为毁灭者的攻击附加<Afak,DataA1>额外伤害，并使其攻击造成范围伤害。"
+Untip="|cffc3dbff|cffc3dbff右击激活自动投射。|r|r"
+Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Hotkey=O
+Unhotkey=O
+[A087]
+Name="UND 巫妖王：死亡契约"
+Tip=D[|cffffcc00e|r]eath Pact - [|cffffcc00Level 1|r],D[|cffffcc00e|r]eath Pact - [|cffffcc00Level 2|r],D[|cffffcc00e|r]eath Pact - [|cffffcc00Level 3|r]
+Ubertip="杀死一个目标友方亡灵单位，将其 <AUdp,DataB1,%>% 的生命值给予死亡骑士。","杀死一个目标友方亡灵单位，将其 <AUdp,DataB2,%>% 的生命值给予死亡骑士死亡骑士。","杀死一个目标友方亡灵单位，将 <AUdp,DataB3,%>% 的生命值给予死亡骑士。"
+Hotkey=E
+Researchtip="Learn D|cffffcc00e|rath Pact - [|cffffcc00Level %d|r]"
+Researchubertip="Kills a target friendly Undead unit, giving a percentage of its hit points to the Death Knight. |n|n|cffffcc00Level 1|r - <AUdp,DataB1,%>% conversion. |n|cffffcc00Level 2|r - <AUdp,DataB2,%>% conversion. |n|cffffcc00Level 3|r - <AUdp,DataB3,%>% conversion."
+Researchhotkey=E
+[A085]
+Name=复活
+Tip=|cffffcc00起|r死了
+Untip="|cffc3dbff右击激活自动施法。"
+Ubertip="从尸体中复活<Arai,DataA1>骷髅。"
+Unubertip="|cffc3dbff右键单击以禁用自动施法。"
+Hotkey=R
+Unhotkey=R
+[A086]
+Name="巫妖DnD"
+Tip=|cffffcc00D|r死亡与衰败
+Ubertip="每秒对其作用范围内的所有物体造成 <AUdd,DataA1,%>% 基础生命值的伤害。还破坏树木。|n持续 <AUdd,Dur1> 秒。"
+Hotkey=D
+Researchtip="Learn |cffffcc00D|reath And Decay"
+Researchubertip="Damages everything in its area of effect by <AUdd,DataA1,%>% of its base hit points per second. Also destroys trees."
+Researchhotkey=D
+[A096]
+Name="中冶集团"
+Tip=|cffffcc00R|r补充法力
+Ubertip="补充一个目标友方单位的法力值。"
+Untip="|cffc3dbff|cffc3dbff右击激活自动投射。|r|r"
+Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Hotkey=R
+Unhotkey=R
+Order=replenish
+[A01Y]
+Name=复活
+Tip=|cffffcc00起|r死了
+Untip="|cffc3dbff右击激活自动施法。"
+Ubertip="从尸体中复活<Arai,DataA1>骷髅。"
+Unubertip="|cffc3dbff右键单击以禁用自动施法。"
+Hotkey=R
+Unhotkey=R
+[A01G]
+Name=诅咒
+Tip=|cffffcc00课程|r课程
+Ubertip="诅咒一个目标敌方单位，使其有 <Acrs,DataA1,%>% 的几率在一次攻击中失手。|n持续 <Acrs,Dur1> 秒。"
+Untip="|cffc3dbff右击激活自动施法。"
+Unubertip="|cffc3dbff右键单击以禁用自动施法。"
+Hotkey=C
+Unhotkey=C
+[A03C]
+Name=冰霜攻击
+Tip=冰霜攻击
+Ubertip="为该单位的攻击添加冰冷效果，降低敌方单位的移动速度。"
+[A03Y]
+Name=冰霜之息
+[A04X]
+Name="地狱飞溅"
+Tip=|cffffcc00C|rarrion Swarm - [|cffffcc00Level [|cffffcc00C|r] 1|r],Carrion Swarm - [|cffffcc00Level 2|r],|cffffcc00C|rarrion Swarm - [|cffffcc00Level 3|r]
+Ubertip="派出一群蝙蝠对锥形内的每个敌方单位造成 <AUcs,DataA1> 伤害。","派出一群蝙蝠对锥形内的每个敌方单位造成 <AUcs,DataA2> 伤害。","发送一个成群的蝙蝠对锥形范围内的每个敌方单位造成 <AUcs,DataA3> 伤害。"
+Hotkey=C
+Researchtip="Learn |cffffcc00C|rarrion Swarm - [|cffffcc00Level %d|r]"
+Researchubertip="Sends a horde of bats to damage enemies. |n|n|cffffcc00Level 1|r - <AUcs,DataA1> damage per unit. |n|cffffcc00Level 2|r - <AUcs,DataA2> damage per unit. |n|cffffcc00Level 3|r - <AUcs,DataA3> damage per unit."
+Researchhotkey=C
+[A04Z]
+Name=毁灭之球
+Tip="|cffffcc00O|r湮灭之rb"
+Ubertip="为毁灭者的攻击附加<Afak,DataA1>额外伤害，并使其攻击造成范围伤害。"
+Untip="|cffc3dbff|cffc3dbff右击激活自动投射。|r|r"
+Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Hotkey=O
+Unhotkey=O
+[A055]
+Name=削弱
+Tip=|cffffcc00C|r波纹
+Ubertip="使目标敌方单位的移动速度降低<Acri,DataA1,%>%，攻击率降低<Acri,DataB1,%>%，伤害降低<Acri,DataC1,%>%。|n持续 <Acri,Dur1> 秒。"
+Hotkey=C
+[A04F]
+Name=冰冷的呼吸
+Tip=冰冷的呼吸
+Ubertip="在建筑上使用时，会暂时停止所有建筑活动。|n持续 <Afrz,Dur1> 秒。"
+[A04K]
+Name=冰冷的呼吸
+Tip=冰冷的呼吸
+Ubertip="在建筑上使用时，会暂时停止所有建筑活动。|n持续 <Afrz,Dur1> 秒。"
+[A0E2]
+Name=冰霜新星
+Tip=Frost [|cffffcc00N|r] Nova - [|cffffcc00Level 1|r],Frost [|cffffcc00N|r] Nova - [|cffffcc00Level 2|r],Frost [|cffffcc00N|r] Nova - [|cffffcc00Level 3|r]
+Ubertip="用一波冰霜冲击敌方单位，对目标造成 <AUfn,DataB1> 伤害，并造成 <AUfn,DataA1> 新星伤害。冰霜伤害会使单位的移动和攻击速度减慢 <AUfn,Dur1> 秒。","向敌方单位发射一波冰霜，对目标造成 <AUfn,DataB2> 伤害，并造成 <AUfn,DataA2> 新星伤害。冰霜伤害会使单位的移动和攻击速度减慢 <AUfn,Dur2> 秒。","向敌方单位发射一波冰霜，对目标造成 <AUfn,DataB3> 伤害，并造成 <AUfn,DataA3> 新星伤害。冰霜伤害会使单位的移动和攻击速度减慢 <AUfn,Dur3> 秒。"
+Hotkey=N
+Researchtip="Learn Frost |cffffcc00N|rova - [|cffffcc00Level %d|r]"
+Researchubertip="Blasts enemy units around a target enemy unit with a wave of damaging frost that slows movement and attack rate. |n|n|cffffcc00Level 1|r - <AUfn,DataB1> target damage, <AUfn,DataA1> nova damage. |n|cffffcc00Level 2|r - <AUfn,DataB2> target damage, <AUfn,DataA2> nova damage. |n|cffffcc00Level 3|r - <AUfn,DataB3> target damage, <AUfn,DataA3> nova damage."
+Researchhotkey=N
+[A0EU]
+Name="术士法术"
+Tip=Frost [|cffffcc00N|r] Nova - [|cffffcc00Level 1|r],Frost [|cffffcc00N|r] Nova - [|cffffcc00Level 2|r],Frost [|cffffcc00N|r] Nova - [|cffffcc00Level 3|r]
+Ubertip="用一波冰霜冲击敌方单位，对目标造成 <AUfn,DataB1> 伤害，并造成 <AUfn,DataA1> 新星伤害。冰霜伤害会使单位的移动和攻击速度减慢 <AUfn,Dur1> 秒。","向敌方单位发射一波冰霜，对目标造成 <AUfn,DataB2> 伤害，并造成 <AUfn,DataA2> 新星伤害。冰霜伤害会使单位的移动和攻击速度减慢 <AUfn,Dur2> 秒。","向敌方单位发射一波冰霜，对目标造成 <AUfn,DataB3> 伤害，并造成 <AUfn,DataA3> 新星伤害。冰霜伤害会使单位的移动和攻击速度减慢 <AUfn,Dur3> 秒。"
+Hotkey=N
+Researchtip="Learn Frost |cffffcc00N|rova - [|cffffcc00Level %d|r]"
+Researchubertip="Blasts enemy units around a target enemy unit with a wave of damaging frost that slows movement and attack rate. |n|n|cffffcc00Level 1|r - <AUfn,DataB1> target damage, <AUfn,DataA1> nova damage. |n|cffffcc00Level 2|r - <AUfn,DataB2> target damage, <AUfn,DataA2> nova damage. |n|cffffcc00Level 3|r - <AUfn,DataB3> target damage, <AUfn,DataA3> nova damage."
+Researchhotkey=N
+[A0FP]
+Name="巫妖饲养"
+Tip=""
+Untip="|cffc3dbff右击激活自动施法。"
+Ubertip="从尸体中复活<Arai,DataA1>骷髅。"
+Unubertip="|cffc3dbff右键单击以禁用自动施法。"
+Hotkey=R
+Unhotkey=R
+[A0G6]
+Name="DST：荆棘"
+Tip=尖刺甲壳 - [|cffffcc00Level 1|r],尖刺甲壳 - [|cffffcc00Level 2|r],尖刺甲壳 - [|cffffcc00Level 3|r]
+Ubertip="用有机倒钩增强地穴领主的几丁质盔甲，给予地穴领主 <AUts,DataC1> 额外护甲并返回 <AUts,DataA1,%>% 的近战攻击伤害给敌人。","用有机倒刺增强地穴领主的几丁质盔甲，给予他 <AUts,DataC2> 额外护甲并将 <AUts,DataA2,%>% 的近战攻击伤害返还给敌人。","用有机倒钩增强地穴领主的几丁质护甲，给予他 <AUts,DataC3> 额外护甲和返回<AUts,DataA3,%>%的近战攻击伤害给敌人。"
+Researchtip="Learn |cffffcc00S|rpiked Carapace - [|cffffcc00Level %d|r]"
+Researchubertip="The Crypt Lord forms barbed layers of chitinous armor that increases its defense and returns damage to enemy melee attackers.  |n|n|cffffcc00Level 1|r - <AUts,DataA1,%>% damage returned, <AUts,DataC1> bonus armor. |n|cffffcc00Level 2|r -  <AUts,DataA2,%>% damage returned, <AUts,DataC2> bonus armor. |n|cffffcc00Level 3|r -  <AUts,DataA3,%>% damage returned, <AUts,DataC3> bonus armor."
+Researchhotkey=S
+[A0G7]
+Name="DST：荆棘 75"
+Tip=尖刺甲壳 - [|cffffcc00Level 1|r],尖刺甲壳 - [|cffffcc00Level 2|r],尖刺甲壳 - [|cffffcc00Level 3|r]
+Ubertip="用有机倒钩增强地穴领主的几丁质盔甲，给予地穴领主 <AUts,DataC1> 额外护甲并返回 <AUts,DataA1,%>% 的近战攻击伤害给敌人。","用有机倒刺增强地穴领主的几丁质盔甲，给予他 <AUts,DataC2> 额外护甲并将 <AUts,DataA2,%>% 的近战攻击伤害返还给敌人。","用有机倒钩增强地穴领主的几丁质护甲，给予他 <AUts,DataC3> 额外护甲和返回<AUts,DataA3,%>%的近战攻击伤害给敌人。"
+Researchtip="Learn |cffffcc00S|rpiked Carapace - [|cffffcc00Level %d|r]"
+Researchubertip="The Crypt Lord forms barbed layers of chitinous armor that increases its defense and returns damage to enemy melee attackers.  |n|n|cffffcc00Level 1|r - <AUts,DataA1,%>% damage returned, <AUts,DataC1> bonus armor. |n|cffffcc00Level 2|r -  <AUts,DataA2,%>% damage returned, <AUts,DataC2> bonus armor. |n|cffffcc00Level 3|r -  <AUts,DataA3,%>% damage returned, <AUts,DataC3> bonus armor."
+Researchhotkey=S
+[A0GA]
+Name="DST：蚕食"
+Tip=|cffffcc00C|r蚕食
+Ubertip="消耗附近的尸体每秒治疗 <Acan,DataA1> 点生命值。"
+Hotkey=C
+[A0IL]
+Name="屈服"
+Tip=穿刺|cffffcc00e|r - [|cffffcc001级|r],Impal|cffffcc00e|r - [|cffffcc002级|r],Impal|cffffcc00e|r - [|cffffcc003级|r]
+Ubertip="用地穴领主的巨爪猛击地面，将带刺的卷须直线射出，造成 <AUim,DataC1> 伤害并将敌方地面单位抛向空中，使其昏迷 <AUim,Dur1> 秒。", "用地穴领主的巨爪猛击地面，将尖刺的卷须直线射出，造成 <AUim,DataC2> 伤害，并将敌方地面单位抛向空中，使其昏迷 <AUim,Dur2> 秒。", "用地穴领主的巨爪猛击地面，将尖刺的卷须直线射出，造成 <AUim,DataC3> 伤害，并将敌方地面单位抛向空中，使其昏迷 <AUim,Dur3> 秒。"
+Hotkey=E
+Researchtip="Learn Impal|cffffcc00e|r - [|cffffcc00Level %d|r]"
+Researchubertip="Slams the ground with the Crypt Lord's massive claws, shooting spiked tendrils out in a straight line, dealing damage and hurling enemy ground units into the air in their wake. |n|n|cffffcc00Level 1|r - <AUim,DataC1> damage, <AUim,Dur1> second stun. |n|cffffcc00Level 2|r - <AUim,DataC2> damage, <AUim,Dur2> second stun. |n|cffffcc00Level 3|r - <AUim,DataC3> damage, <AUim,Dur3> second stun."
+Researchhotkey=E
+[B001]
+Bufftip=腐烂
+Buffubertip=这个单位正在腐烂。
+[B003]
+Bufftip=瘟疫
+Buffubertip=这个单位很麻烦。它会减慢并随着时间的推移受到伤害。
+[B024]
+Bufftip=自然光环
+Buffubertip=该单位受到自然光环的影响；它具有增加的生命值再生。
+EditorName=Natures Aura
+[B01S]
+Bufftip=穿刺
+Buffubertip=这个单位惊呆了
+[B00P]
+Bufftip=腐化的速度
+Buffubertip=该单位的攻击速度降低。
+EditorName=Corrupted: Felhound
+[B00G]
+Bufftip=毒
+Buffubertip=这个单位中毒了。它的攻击速度和移动速度降低，并随着时间的推移受到伤害。
+[B00U]
+Bufftip=大瘟疫
+Buffubertip=这个单位很麻烦。它会减慢并随着时间的推移受到伤害。
+[B015]
+Bufftip=冷冻
+Buffubertip=这个单位惊呆了
+[B014]
+Bufftip=刺骨的寒冷
+Buffubertip=这个单位行动非常缓慢。
+[B00R]
+Bufftip=破损的武器
+Buffubertip=该单位的伤害降低。
+EditorName=Corrupted: Ent
+[B013]
+Bufftip=活力光环
+Buffubertip=这个单位的再生速度更快。
+[B02S]
+EditorName=Quills
+[B02W]
+Bufftip=被沙盾减速
+Buffubertip=该单位的攻击速度降低。
+EditorName=Sandshield
+[B02Z]
+Bufftip=冰冷的光环
+Buffubertip=本机的速度降低。
+EditorName=Chiling aura
+[B031]
+Bufftip=成功的
+Buffubertip=这个单位被沙子淹死了。

@@ -1,0 +1,58 @@
+﻿STRING 1
+{
+玩家 1
+}
+
+STRING 2
+{
+势力 1
+}
+
+STRING 3
+// 技能: ANic (COR: Void Walker (Incinerate)), Ubertip (提示工具 - 普通 - 扩展的)
+{
+对同一目标的每次攻击造成的伤害比前一次多 3 点。如果目标死亡，它会爆炸，在 90 范围内对敌人造成 50 点法术伤害，在 180 范围内对单位造成一半伤害
+}
+
+STRING 4
+// 技能: ANic (COR: Void Walker (Incinerate)), Name (名字)
+{
+COR: 虚空行者(焚化)
+}
+
+STRING 5
+// 技能: ANic (COR: Void Walker (Incinerate)), Tip (提示工具 - 普通)
+{
+焚化
+}
+
+STRING 6
+// 技能: Ahrp (修理), Unhotkey (热键 - 关闭)
+{
+F
+}
+
+STRING 7
+// 技能: Ahrp (修理), Hotkey (热键 - 普通)
+{
+F
+}
+
+STRING 8
+// 技能: Ashs (__LA), Name (名字)
+{
+__LA
+}
+
+STRING 9
+// 技能: Alit (_LA), Name (名字)
+{
+_LA
+}
+
+STRING 10
+// 技能: AIsr (spellresist 33), Name (名字)
+{
+spellresist 33
+}
+
