@@ -46,13 +46,25 @@ F_SID_KEY_RE = re.compile('FdrFJe":"(.*?)"')
 BL_KEY_RE = re.compile('cfb2h":"(.*?)"')
 
 
+@dataclass
+class TranslationRequest:
+    """
+    which file does this request belongs, such as "campaignabilitystrings"
+    """
+    belongs: str
+    """
+    the text to be translated
+    """
+    text: str
+
+
 class Strings(ABC):
     """
     The strings content that needs translation
     """
 
     @abstractmethod
-    def translate(self) -> Generator[str, str, None]:
+    def translate(self) -> Generator[TranslationRequest, str, None]:
         pass
 
     @abstractmethod
@@ -79,6 +91,7 @@ class IniLikeStrings(Strings):
         content: List["IniLikeStrings.Item"]
 
     def __init__(self, path: Path, translate_keys: List[str] = TRANSLATION_KEYS):
+        self.belongs = path.stem
         self.translate_keys = translate_keys
         self.sections: List[
             "IniLikeStrings.Section"
@@ -97,12 +110,12 @@ class IniLikeStrings(Strings):
                 assert cur_section
                 cur_section.content.append(self.Item(key, value))
 
-    def translate(self) -> Generator[str, str, None]:
+    def translate(self) -> Generator[TranslationRequest, str, None]:
         for sec in self.sections:
             for item in sec.content:
                 if item.key in self.translate_keys:
                     logger.debug(f"value before {item.value}")
-                    item.value = yield item.value
+                    item.value = yield TranslationRequest(self.belongs, item.value)
                     assert item.value
                     logger.debug(f"item value {item.value}")
         logger.debug(f"strings translate done")
@@ -138,13 +151,13 @@ class GooglePartTranslator(PartTranslator):
 
 class TemplateBasedMixin:
     def __init__(self, template_key: str, max_workers: int = 8):
-        self.translations: List[Tuple[re.Pattern, str]] = []
+        self.translations: List[Tuple[re.Pattern, str, str | None]] = []
         self.executor = concurrent.futures.ProcessPoolExecutor(max_workers=max_workers)
         self.setup_translations(template_key=template_key)
 
     def setup_translations(self, template_key: str):
         for trans in TEMPLATE.get(template_key) or []:
-            self.translations.append((re.compile(trans["regex"]), trans["content"]))
+            self.translations.append((re.compile(trans["regex"]), trans["content"], trans.get("target")))
 
     @staticmethod
     def translate_zipped(zipped: Tuple[Tuple[re.Pattern, str], str]) -> str | None:
@@ -162,10 +175,13 @@ class TemplateBasedMixin:
             if result is not None:
                 return result
 
-    def rewrite(self, text: str) -> str:
+    def rewrite(self, text: str, belongs: str) -> str:
         # rewrite can only be sequential
-        for regex, content in self.translations:
-            text = regex.sub(content, text)
+        for regex, content, target in self.translations:
+            if target is None or (target and target == belongs):
+                res = regex.sub(content, text)
+                logger.debug(f"rewrite: {text} ({regex}) => {res}")
+                text = res
         return text
 
 
@@ -390,11 +406,11 @@ class TranslationDriver:
     async def translate(self):
         logger.debug(f"begin translating {self.path}")
         translate_procedure = self.strings.translate()
-        string = next(translate_procedure)
+        req = next(translate_procedure)
         try:
             while True:
-                logger.debug(f"begin async translate {string}")
-                result = await TRANSLATION_PIPELINE.translate(string)
+                logger.debug(f"begin async translate {req.text} ({req.belongs})")
+                result = await TRANSLATION_PIPELINE.translate(req.text)
                 logger.debug(f"got result {result}")
                 string = translate_procedure.send(result)
         except StopIteration:

@@ -1,3 +1,6 @@
+############ common ############
+
+# untranslated terms
 [[rewrite]]
 regex = "dmg"
 content = "伤害"
@@ -11,20 +14,19 @@ regex = "rng"
 content = "射程"
 
 [[rewrite]]
-regex = "逃避"
-content = "闪避"
+regex = "hp\\/s"
+content = "生命值每秒"
 
-[[rewrite]]
-regex = "意见反馈"
-content = "反馈"
-
-[[rewrite]]
-regex = "有翼的蛇"
-content = "翼蛇"
-
+# incorrect tranlation of Trains
 [[rewrite]]
 regex = "火车"
 content = "训练"
+
+[[translate]]
+regex = "Trains: "
+content = "训练："
+
+# attack/armor type
 
 [[rewrite]]
 regex = "攻击：\\|r魔法"
@@ -37,6 +39,10 @@ content = "伤害类型：|r普通"
 [[rewrite]]
 regex = "攻击：\\|r刺穿"
 content = "伤害类型：|r穿刺"
+
+[[rewrite]]
+regex = "围城"
+content = "攻城"
 
 [[rewrite]]
 regex = "攻击：\\|r围攻"
@@ -71,100 +77,6 @@ regex = "护甲：\\|r重重型"
 content = "护甲：|r重型"
 
 [[rewrite]]
-regex = "Suumpmolk"
-content = "剧毒蜥蜴"
-
-[[rewrite]]
-regex = "苏普莫克"
-content = "剧毒蜥蜴"
-
-[[rewrite]]
-regex = "哈比"
-content = "鹰身女妖"
-
-[[rewrite]]
-regex = "本机"
-content = "该单位"
-
-[[rewrite]]
-regex = "此单元"
-content = "该单位"
-
-[[rewrite]]
-# 奶酪
-regex = "更传奇的结构"
-content = "额外的传奇建筑"
-
-[[rewrite]]
-# 腐败种族
-regex = "腐败的企业集团"
-content = "腐败集团"
-
-[[rewrite]]
-regex = "随机比赛"
-content = "随机种族"
-
-[[rewrite]]
-regex = "产生蠕变的结构训练更强的蠕变"
-content = "生产建筑训练的单位将变强"
-
-[[rewrite]]
-regex = "尖刺迷"
-content = "尖刺重击"
-
-[[rewrite]]
-regex = "Nagas"
-content = "娜迦"
-
-[[rewrite]]
-regex = "马力"
-content = "生命值"
-
-[[rewrite]]
-regex = "后卫"
-content = "防御者"
-
-[[rewrite]]
-regex = "进阶战士馆"
-content = "高级战士大厅"
-
-[[rewrite]]
-regex = "刀剑大师"
-content = "剑圣"
-
-[[rewrite]]
-regex = "橡皮擦"
-content = "抹杀塔"
-
-[[rewrite]]
-regex = "永恒的远古"
-content = "永恒古树"
-
-[[rewrite]]
-regex = "色狼"
-content = "小恶魔"
-
-[[rewrite]]
-regex = "咕噜声"
-content = "兽人战士"
-
-[[rewrite]]
-regex = "咕噜"
-content = "兽人战士"
-
-[[rewrite]]
-regex = "构建单体"
-content = "建造巨石"
-
-[[rewrite]]
-regex = "羽毛恶魔"
-content = "大恶魔"
-
-[[rewrite]]
-regex = "弹射器"
-content = "投石车"
-
-[[rewrite]]
 regex = "护甲：\\|r重型型"
 content = "护甲：|r重型"
 
@@ -180,6 +92,357 @@ content = "护甲：|r城甲"
 regex = "盔甲：\\|r神圣的"
 content = "护甲：|r神圣"
 
-[[translate]]
-regex = "Trains: "
-content = "训练："
+# ability names correction
+
+[[rewrite]]
+regex = "逃避"
+content = "闪避"
+
+[[rewrite]]
+regex = "意见反馈"
+content = "反馈"
+
+[[rewrite]]
+regex = "有翼的蛇"
+content = "翼蛇"
+
+# compaignabilitystrings
+
+[[rewrite]]
+# 选择亡灵部队
+regex = "精神塔"
+content = "幽魂塔"
+target = "campaignabilitystrings"
+
+[[rewrite]]
+regex = "以前的"
+content = "上一页"
+target = "campaignabilitystrings"
+
+[[rewrite]]
+# 奶酪
+regex = "更传奇的结构"
+content = "额外的传奇建筑"
+target = "campaignabilitystrings"
+
+[[rewrite]]
+# 腐败种族
+regex = "腐败的企业集团"
+content = "腐败集团"
+target = "campaignabilitystrings"
+
+[[rewrite]]
+regex = "随机比赛"
+content = "随机种族"
+target = "campaignabilitystrings"
+
+[[rewrite]]
+regex = "Nagas "
+content = "娜迦"
+target = "campaignabilitystrings"
+
+[[rewrite]]
+regex = "沙漠竞赛"
+content = "沙漠种族"
+target = "campaignabilitystrings"
+
+[[rewrite]]
+regex = "\\|cffFF0000每个结果都会造成"
+content = "后续购买的每一个将提供"
+target = "campaignabilitystrings"
+
+[[rewrite]]
+regex = "下一个后果"
+content = "接下来购买的"
+target = "campaignabilitystrings"
+
+[[rewrite]]
+regex = " DS"
+content = "大招"
+target = "campaignabilitystrings"
+
+[[rewrite]]
+regex = "魔法弹丸"
+content = "魔法飞弹"
+target = "campaignabilitystrings"
+
+[[rewrite]]
+regex = "石头卷轴"
+content = "守护卷轴"
+target = "campaignabilitystrings"
+
+[[rewrite]]
+regex = "投射物"
+content = "魔法飞弹"
+target = "campaignabilitystrings"
+
+############### campaignunitstrings #########
+
+[[rewrite]]
+regex = "射手"
+content = "弓箭手"
+target = "campaignunitstrings"
+
+[[rewrite]]
+regex = "肉傀儡"
+content = "血肉傀儡"
+target = "campaignunitstrings"
+
+[[rewrite]]
+regex = "血肉魔像"
+content = "血肉傀儡"
+target = "campaignunitstrings"
+
+[[rewrite]]
+regex = "刀剑大师"
+content = "剑圣"
+target = "campaignunitstrings"
+
+[[rewrite]]
+regex = "堕落的保护者"
+content = "腐化的保护者"
+target = "campaignunitstrings"
+
+[[rewrite]]
+regex = "长老剑圣"
+content = "剑圣大师"
+target = "campaignunitstrings"
+
+[[rewrite]]
+regex = "Suumpmolk"
+content = "剧毒蜥蜴"
+target = "campaignunitstrings"
+
+[[rewrite]]
+regex = "苏普莫克"
+content = "剧毒蜥蜴"
+target = "campaignunitstrings"
+
+[[rewrite]]
+regex = "冰雪皇后"
+content = "冰雪女王"
+target = "campaignunitstrings"
+
+[[rewrite]]
+regex = "仅空气"
+content = "仅飞行单位"
+target = "campaignunitstrings"
+
+[[rewrite]]
+regex = "羽毛恶魔"
+content = "大恶魔"
+
+[[rewrite]]
+regex = "羽毛笔恶魔"
+content = "大恶魔"
+target = "campaignunitstrings"
+
+[[rewrite]]
+regex = "火焰枪手中士"
+content = "火枪中士"
+target = "campaignunitstrings"
+
+[[rewrite]]
+regex = "哈比女巫"
+content = "鹰身女巫"
+target = "campaignunitstrings"
+
+[[rewrite]]
+regex = "盲人"
+content = "致盲"
+target = "campaignunitstrings"
+
+[[rewrite]]
+regex = "哈比"
+content = "鹰身女妖"
+target = "campaignunitstrings"
+
+[[rewrite]]
+regex = "沙金兽皮"
+content = "沙王巢穴"
+target = "campaignunitstrings"
+
+[[rewrite]]
+regex = "桑金的皮"
+content = "沙王巢穴"
+target = "campaignunitstrings"
+
+[[rewrite]]
+regex = "沙地兽皮"
+content = "沙王巢穴"
+target = "campaignunitstrings"
+
+[[rewrite]]
+regex = "桑金"
+content = "沙王"
+target = "campaignunitstrings"
+
+[[rewrite]]
+regex = "沙金"
+content = "沙王"
+target = "campaignunitstrings"
+
+[[rewrite]]
+regex = "MonstrousSandkin"
+content = "巨型沙王"
+target = "campaignunitstrings"
+
+############ commonabilitystrings #########
+
+[[rewrite]]
+regex = "本机"
+content = "该单位"
+target = "commonabilitystrings"
+
+[[rewrite]]
+regex = "此单元"
+content = "该单位"
+target = "commonabilitystrings"
+
+
+
+############## humanabilitystrings #######
+[[rewrite]]
+regex = "伊尔"
+content = "治疗"
+target = "humanabilitystrings"
+
+[[rewrite]]
+regex = "自动投射"
+content = "自动施法"
+target = "humanabilitystrings"
+
+######### humanunitstrings ##########
+[[rewrite]]
+regex = "产生蠕变的结构训练更强的蠕变"
+content = "生产建筑训练的单位将变强"
+target = "humanunitstrings"
+
+[[rewrite]]
+regex = "尖刺迷"
+content = "尖刺重击"
+target = "humanunitstrings"
+
+[[rewrite]]
+regex = "马力"
+content = "生命值"
+target = "humanunitstrings"
+
+[[rewrite]]
+regex = "后卫"
+content = "防御者"
+target = "humanunitstrings"
+
+[[rewrite]]
+regex = "进阶战士馆"
+content = "高级战士大厅"
+target = "humanunitstrings"
+
+[[rewrite]]
+regex = "永恒的远古"
+content = "永恒古树"
+target = "humanunitstrings"
+
+[[rewrite]]
+regex = "色狼"
+content = "小恶魔"
+target = "humanunitstrings"
+
+[[rewrite]]
+regex = "咕噜声"
+content = "兽人战士"
+target = "humanunitstrings"
+
+[[rewrite]]
+regex = "咕噜"
+content = "兽人战士"
+target = "humanunitstrings"
+
+[[rewrite]]
+regex = "骷髅堆"
+content = "头骨堆"
+target = "humanunitstrings"
+
+[[rewrite]]
+regex = "构建单体"
+content = "建造巨石"
+target = "humanunitstrings"
+
+[[rewrite]]
+regex = "血之泉"
+content = "鲜血之泉"
+target = "humanunitstrings"
+
+[[rewrite]]
+regex = "鲜鲜血之泉"
+content = "鲜血之泉"
+target = "humanunitstrings"
+
+[[rewrite]]
+regex = "堆叠"
+content = "叠加"
+target = "humanunitstrings"
+
+[[rewrite]]
+regex = "下界"
+content = "虚空"
+target = "humanunitstrings"
+
+[[rewrite]]
+regex = "耳鼻喉科"
+content = "树人"
+
+[[rewrite]]
+regex = "并复活两次"
+content = "以及无法复活两次"
+target = "humanunitstrings"
+
+[[rewrite]]
+regex = "勒奈"
+content = "九头蛇"
+target = "humanunitstrings"
+
+[[rewrite]]
+regex = " Lernaean "
+content = "九头蛇"
+target = "humanunitstrings"
+
+[[rewrite]]
+regex = "古旺迪古"
+content = "远古雪怪"
+target = "humanunitstrings"
+
+[[rewrite]]
+regex = "古代万迪古"
+content = "远古雪怪"
+target = "humanunitstrings"
+
+[[rewrite]]
+regex = "凉拌蘑菇"
+content = "冷冻蘑菇"
+target = "humanunitstrings"
+
+[[rewrite]]
+regex = "质量纠缠"
+content = "缠绕根须"
+target = "humanunitstrings"
+
+[[rewrite]]
+regex = " uinit "
+content = "单位"
+target = "humanunitstrings"
+
+[[rewrite]]
+regex = "万迪古"
+content = "雪怪"
+target = "humanunitstrings"
+
+[[rewrite]]
+regex = "元素生成器"
+content = "元素建造者"
+target = "humanunitstrings"
+
+[[rewrite]]
+regex = "弹射器"
+content = "投石车"
+target = "humanunitstrings"

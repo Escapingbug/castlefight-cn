@@ -54,7 +54,7 @@ Ubertip="使用强大的大炮对空中单位造成范围伤害。"
 [Aroc]
 Name=弹幕
 Tip=弹幕
-Ubertip="向附近的敌方空中单位发射强力火箭，每次命中造成 <hrtt,mindmg2> - <hrtt,maxdmg2> 伤害。"
+Ubertip="向附近的敌方空中单位发射强力火箭，每次命中造成 <hrtt,min伤害2> - <hrtt,max伤害2> 伤害。"
 [Srtt]
 Requires=Rhrt
 [Asph]
@@ -64,7 +64,7 @@ Name=法术窃取
 Tip=法术 [|cffffcc00t|r] 偷窃
 Ubertip="窃取敌方单位的正增益并将其应用于附近的友方单位，或从友方单位获取负增益并将其应用于附近的敌方单位。"
 Untip="|cffc3dbff右击激活自动施法。|r"
-Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动施法。|r"
 Hotkey=T
 Unhotkey=T
 [Aclf]
@@ -138,7 +138,7 @@ Name=内火
 Tip=内 [|cffffcc00F|r] 火
 Ubertip="使目标友方单位的伤害提高<Ainf,DataA1,%>%，护甲提高<Ainf,DataB1>。|n持续 <Ainf,Dur1> 秒。"
 Untip="|cffc3dbff右击激活自动施法。|r"
-Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动施法。|r"
 Hotkey=F
 Unhotkey=F
 [Binf]
@@ -151,10 +151,10 @@ UberTip="Removes all buffs from units in a target area. |n|cffffcc00Deals <Adis,
 Hotkey=D
 [Ahea]
 Name=愈合
-Tip=H[|cffffcc00e|r] 伊尔
+Tip=H[|cffffcc00e|r] 治疗
 Ubertip="为目标友方非机械受伤单位治疗 <Ahea,DataA1> 点生命值。"
 Untip="|cffc3dbff右击激活自动施法。|r"
-Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动施法。|r"
 Hotkey=E
 Unhotkey=E
 [Bhea]
@@ -168,7 +168,7 @@ Name=减缓
 Tip=慢|cffffcc00慢|r
 Ubertip="使目标敌方单位的攻击速度降低<Aslo,DataB1,%>%，移动速度降低<Aslo,DataA1,%>%。|n持续 <Aslo,Dur1> 秒。"
 Untip="|cffc3dbff右击激活自动施法。|r"
-Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动施法。|r"
 Hotkey=W
 Unhotkey=W
 [Bslo]
@@ -204,7 +204,7 @@ Buffubertip="这个单位被暴雪破坏了。"
 [AHwe]
 Name=召唤水元素
 Tip=召唤 [|cffffcc00W|r] 水元素 - [|cffffcc00Level 1|r],召唤 [|cffffcc00W|r] 水元素 - [|cffffcc00Level 2|r],召唤 [|cffffcc00W|r] 水元素 - [|cffffcc00Level 3|r]
-Ubertip="召唤一个水元素攻击大法师的敌人。拥有 <hwat,realHP> 生命值并造成 <hwat,mindmg1> - <hwat,maxdmg1> 伤害。|n持续 <AHwe,Dur1> 秒。|n|n|cffffcc00攻击陆地和空中单位。|r","召唤水元素攻击大法师的敌人。拥有 <hwt2,realHP> 生命值并造成 <hwt2,mindmg1> - <hwt2,maxdmg1> 伤害。|n持续 <AHwe,Dur1> 秒。|n|n|cffffcc00攻击陆地和空中单位。|r","召唤水元素攻击大法师的敌人。拥有 <hwt3,realHP> 生命值并造成 <hwt3,mindmg1> - <hwt3,maxdmg1> 伤害。|n持续 <AHwe,Dur1> 秒。|n|n|cffffcc00攻击陆地和空中单位。|r"
+Ubertip="召唤一个水元素攻击大法师的敌人。拥有 <hwat,realHP> 生命值并造成 <hwat,min伤害1> - <hwat,max伤害1> 伤害。|n持续 <AHwe,Dur1> 秒。|n|n|cffffcc00攻击陆地和空中单位。|r","召唤水元素攻击大法师的敌人。拥有 <hwt2,realHP> 生命值并造成 <hwt2,min伤害1> - <hwt2,max伤害1> 伤害。|n持续 <AHwe,Dur1> 秒。|n|n|cffffcc00攻击陆地和空中单位。|r","召唤水元素攻击大法师的敌人。拥有 <hwt3,realHP> 生命值并造成 <hwt3,min伤害1> - <hwt3,max伤害1> 伤害。|n持续 <AHwe,Dur1> 秒。|n|n|cffffcc00攻击陆地和空中单位。|r"
 ResearchUberTip="Summons a water elemental to attack the Archmage's enemies. |nLasts <AHwe,Dur1> seconds. |n|n|cffffcc00Attacks land and air units.|r |n|n|cffffcc00Level 1|r - <hwat,realHP> hit points, <hwat,mindmg1> - <hwat,maxdmg1> damage. |n|cffffcc00Level 2|r - <hwt2,realHP> hit points, <hwt2,mindmg1> - <hwt2,maxdmg1> damage. |n|cffffcc00Level 3|r - <hwt3,realHP> hit points, <hwt3,mindmg1> - <hwt3,maxdmg1> damage."
 Hotkey=W
 Researchtip="Learn Summon |cffffcc00W|rater Elemental - [|cffffcc00Level %d|r]"
@@ -379,18 +379,18 @@ Name="ELE：奥尼斯·阿里斯"
 Name="ELE：风元素（效果）"
 [A0BT]
 Name="NAT：槽的守护者（自然接触）"
-Tip=H[|cffffcc00e|r] 伊尔
+Tip=H[|cffffcc00e|r] 治疗
 Ubertip="为目标友方非机械受伤单位治疗 <Ahea,DataA1> 点生命值。"
 Untip="|cffc3dbff右击激活自动施法。|r"
-Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动施法。|r"
 Hotkey=E
 Unhotkey=E
 [A0CG]
 Name="NEL：精灵龙（治疗）"
-Tip=H[|cffffcc00e|r] 伊尔
+Tip=H[|cffffcc00e|r] 治疗
 Ubertip="为目标友方非机械受伤单位治疗 <Ahea,DataA1> 点生命值。"
 Untip="|cffc3dbff右击激活自动施法。|r"
-Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动施法。|r"
 Hotkey=E
 Unhotkey=E
 [A0D1]
@@ -414,7 +414,7 @@ Name="NAT：远古熊（狂暴）"
 Tip=内 [|cffffcc00F|r] 火
 Ubertip="使目标友方单位的伤害提高<Ainf,DataA1,%>%，护甲提高<Ainf,DataB1>。|n持续 <Ainf,Dur1> 秒。"
 Untip="|cffc3dbff右击激活自动施法。|r"
-Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动施法。|r"
 Hotkey=F
 Unhotkey=F
 [A0B7]
@@ -422,7 +422,7 @@ Name="NAT：熊（狂暴）"
 Tip=内 [|cffffcc00F|r] 火
 Ubertip="使目标友方单位的伤害提高<Ainf,DataA1,%>%，护甲提高<Ainf,DataB1>。|n持续 <Ainf,Dur1> 秒。"
 Untip="|cffc3dbff右击激活自动施法。|r"
-Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动施法。|r"
 Hotkey=F
 Unhotkey=F
 [A0BL]
@@ -442,26 +442,26 @@ Researchubertip="Gives a chance that an attack will do <AHbh,DataC1> bonus damag
 Researchhotkey=B
 [A0C0]
 Name="NAT: 熊怪萨满 (rejuvenation (dummy))"
-Tip=H[|cffffcc00e|r] 伊尔
+Tip=H[|cffffcc00e|r] 治疗
 Ubertip="为目标友方非机械受伤单位治疗 <Ahea,DataA1> 点生命值。"
 Untip="|cffc3dbff右击激活自动施法。|r"
-Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动施法。|r"
 Hotkey=E
 Unhotkey=E
 [A0C1]
 Name="NAT: 熊怪长老萨满 (rejuvenation (dummy))"
-Tip=H[|cffffcc00e|r] 伊尔
+Tip=H[|cffffcc00e|r] 治疗
 Ubertip="为目标友方非机械受伤单位治疗 <Ahea,DataA1> 点生命值。"
 Untip="|cffc3dbff右击激活自动施法。|r"
-Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动施法。|r"
 Hotkey=E
 Unhotkey=E
 [A0A7]
 Name=愈合
-Tip=H[|cffffcc00e|r] 伊尔
+Tip=H[|cffffcc00e|r] 治疗
 Ubertip="为目标友方非机械受伤单位治疗 <Ahea,DataA1> 点生命值。"
 Untip="|cffc3dbff右击激活自动施法。|r"
-Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动施法。|r"
 Hotkey=E
 Unhotkey=E
 [A0A4]
@@ -602,10 +602,10 @@ Tip=凤凰火
 Ubertip="射出一道道火焰，点燃附近的敌人。"
 [A004]
 Name="NAT：树妖（自然接触）"
-Tip=H[|cffffcc00e|r] 伊尔
+Tip=H[|cffffcc00e|r] 治疗
 Ubertip="为目标友方非机械受伤单位治疗 <Ahea,DataA1> 点生命值。"
 Untip="|cffc3dbff右击激活自动施法。|r"
-Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动施法。|r"
 Hotkey=E
 Unhotkey=E
 [A003]
@@ -626,10 +626,10 @@ Tip=反馈
 Ubertip="这座塔的攻击每击中任何单位都会破坏 <Afbt,DataA1> 法力值，造成与所破坏的法力值相等的额外伤害。|n|n此外，这座塔的攻击会对召唤的单位造成<Afbt,DataE1>额外伤害。"
 [A00X]
 Name="HEL：巫师（治愈（假人））"
-Tip=H[|cffffcc00e|r] 伊尔
+Tip=H[|cffffcc00e|r] 治疗
 Ubertip="为目标友方非机械受伤单位治疗 <Ahea,DataA1> 点生命值。"
 Untip="|cffc3dbff右击激活自动施法。|r"
-Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动施法。|r"
 Hotkey=E
 Unhotkey=E
 [A00B]
@@ -686,7 +686,7 @@ Name=减缓
 Tip=慢|cffffcc00慢|r
 Ubertip="使目标敌方单位的攻击速度降低<Aslo,DataB1,%>%，移动速度降低<Aslo,DataA1,%>%。|n持续 <Aslo,Dur1> 秒。"
 Untip="|cffc3dbff右击激活自动施法。|r"
-Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动施法。|r"
 Hotkey=W
 Unhotkey=W
 [A01H]
@@ -715,7 +715,7 @@ Name="萨满法术"
 Tip=内 [|cffffcc00F|r] 火
 Ubertip="使目标友方单位的伤害提高<Ainf,DataA1,%>%，护甲提高<Ainf,DataB1>。|n持续 <Ainf,Dur1> 秒。"
 Untip="|cffc3dbff右击激活自动施法。|r"
-Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动施法。|r"
 Hotkey=F
 Unhotkey=F
 [A02D]
@@ -742,23 +742,23 @@ Name="HUM：十字军（内火）"
 Tip=内 [|cffffcc00F|r] 火
 Ubertip="使目标友方单位的伤害提高<Ainf,DataA1,%>%，护甲提高<Ainf,DataB1>。|n持续 <Ainf,Dur1> 秒。"
 Untip="|cffc3dbff右击激活自动施法。|r"
-Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动施法。|r"
 Hotkey=F
 Unhotkey=F
 [A03O]
 Name=弹幕
 Tip=弹幕
-Ubertip="向附近的敌方空中单位发射强力火箭，每次命中造成 <hrtt,mindmg2> - <hrtt,maxdmg2> 伤害。"
+Ubertip="向附近的敌方空中单位发射强力火箭，每次命中造成 <hrtt,min伤害2> - <hrtt,max伤害2> 伤害。"
 [A03N]
 Name=弹幕
 Tip=弹幕
-Ubertip="向附近的敌方空中单位发射强力火箭，每次命中造成 <hrtt,mindmg2> - <hrtt,maxdmg2> 伤害。"
+Ubertip="向附近的敌方空中单位发射强力火箭，每次命中造成 <hrtt,min伤害2> - <hrtt,max伤害2> 伤害。"
 [A03I]
 Name="HUM：内心之火（圣骑士）"
 Tip=内 [|cffffcc00F|r] 火
 Ubertip="使目标友方单位的伤害提高<Ainf,DataA1,%>%，护甲提高<Ainf,DataB1>。|n持续 <Ainf,Dur1> 秒。"
 Untip="|cffc3dbff右击激活自动施法。|r"
-Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动施法。|r"
 Hotkey=F
 Unhotkey=F
 [A03H]
@@ -771,10 +771,10 @@ Researchubertip="Brings back to life the corpses of <AHre,DataA1> friendly nearb
 Researchhotkey=R
 [A03K]
 Name="HUM：十字军/圣骑士治疗"
-Tip=H[|cffffcc00e|r] 伊尔
+Tip=H[|cffffcc00e|r] 治疗
 Ubertip="为目标友方非机械受伤单位治疗 <Ahea,DataA1> 点生命值。"
 Untip="|cffc3dbff右击激活自动施法。|r"
-Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动施法。|r"
 Hotkey=E
 Unhotkey=E
 [A03J]
@@ -828,13 +828,13 @@ Name="萨满法术"
 Tip=内 [|cffffcc00F|r] 火
 Ubertip="使目标友方单位的伤害提高<Ainf,DataA1,%>%，护甲提高<Ainf,DataB1>。|n持续 <Ainf,Dur1> 秒。"
 Untip="|cffc3dbff右击激活自动施法。|r"
-Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动施法。|r"
 Hotkey=F
 Unhotkey=F
 [A0GZ]
 Name="九头蛇 3x"
 Tip=弹幕
-Ubertip="向附近的敌方空中单位发射强力火箭，每次命中造成 <hrtt,mindmg2> - <hrtt,maxdmg2> 伤害。"
+Ubertip="向附近的敌方空中单位发射强力火箭，每次命中造成 <hrtt,min伤害2> - <hrtt,max伤害2> 伤害。"
 [A0H3]
 Name="女族长视觉"
 [A0HA]
@@ -846,7 +846,7 @@ Name="DST：窃取咒语"
 Tip=法术 [|cffffcc00t|r] 偷窃
 Ubertip="窃取敌方单位的正增益并将其应用于附近的友方单位，或从友方单位获取负增益并将其应用于附近的敌方单位。"
 Untip="|cffc3dbff右击激活自动施法。|r"
-Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动施法。|r"
 Hotkey=T
 Unhotkey=T
 [A0HZ]
@@ -858,10 +858,10 @@ Researchubertip="Gives additional armor to nearby friendly units. |n|n|cffffcc00
 Researchhotkey=V
 [A0I0]
 Name="祷告"
-Tip=H[|cffffcc00e|r] 伊尔
+Tip=H[|cffffcc00e|r] 治疗
 Ubertip="为目标友方非机械受伤单位治疗 <Ahea,DataA1> 点生命值。"
 Untip="|cffc3dbff右击激活自动施法。|r"
-Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
+Unubertip="|cffc3dbff右键单击以禁用自动施法。|r"
 Hotkey=E
 Unhotkey=E
 [A0I3]
@@ -881,9 +881,9 @@ Ubertip="射出一道道火焰，点燃附近的敌人。"
 [A0IN]
 Name="珊瑚自愈"
 Tip="恢复 (|cffffcc00E|r)"
-Ubertip="|cffFFFF80能力：|cffFFFF00修复|r|n恢复附近友军单位的生命值，并在 650 范围内以 2.5 hp/s 的速度修复附近的建筑物。修复效果叠加。"
+Ubertip="|cffFFFF80能力：|cffFFFF00修复|r|n恢复附近友军单位的生命值，并在 650 范围内以 2.5 生命值每秒 的速度修复附近的建筑物。修复效果叠加。"
 Untip="恢复 (|cffffcc00E|r)"
-Unubertip="|cffFFFF80能力：|cffFFFF00修复|r|n恢复附近友军单位的生命值，并在 650 范围内以 2.5 hp/s 的速度修复附近的建筑物。修复效果叠加。"
+Unubertip="|cffFFFF80能力：|cffFFFF00修复|r|n恢复附近友军单位的生命值，并在 650 范围内以 2.5 生命值每秒 的速度修复附近的建筑物。修复效果叠加。"
 Hotkey=H
 Unhotkey=H
 [B002]

@@ -13,7 +13,7 @@ Buffubertip="该目标部分着火，如果​​它死了会燃烧，对附近�
 Name=召唤熔岩产卵
 Tip=Summon Lava [|cffffcc00w|r] Spawn n - [|cffffcc00Level 1|r],Summon Lava [|cffffcc00w|r] Spawn n - [|cffffcc00Level 2|r],Summon Lava [|cffffcc00w|r] Spawn n - [|cffffcc00Level 3|r]
 Researchtip="Learn Summon Lava Spa|cffffcc00w|rn - [|cffffcc00Level %d|r]"
-Ubertip="召唤熔岩之卵，一种有弹性且致命的火焰生物。当熔岩卵造成伤害时，它会消耗目标的肉，从而助长其火焰并最终分裂成两个健康的熔岩卵。|n|n拥有 <nlv1,realHP> 生命值并造成 <nlv1,mindmg1> - <nlv1,maxdmg1> 伤害。|n持续 <ANlm,Dur1> 秒。|n|n|cffffcc00攻击地面和空中单位。|r","召唤熔岩之卵，一种有弹性且致命的火焰生物。当熔岩卵造成伤害时，它会消耗目标的肉，从而助长其火焰并最终分裂成两个健康的熔岩卵。|n|n拥有 <nlv2,realHP> 生命值并造成 <nlv2,mindmg1> - <nlv2,maxdmg1> 伤害。|n持续 <ANlm,Dur2> 秒。|n|n|cffffcc00攻击地面和空中单位。|r","召唤熔岩之卵，一种有弹性且致命的火焰生物。当熔岩卵造成伤害时，它会消耗目标的肉，从而助长其火焰并最终分裂成两个健康的熔岩卵。|n|n拥有 <nlv3,realHP> 生命值并造成 <nlv3,mindmg1> - <nlv3,maxdmg1> 伤害。|n持续 <ANlm,Dur3> 秒。|n|n|cffffcc00攻击地面和空中单位。|r"
+Ubertip="召唤熔岩之卵，一种有弹性且致命的火焰生物。当熔岩卵造成伤害时，它会消耗目标的肉，从而助长其火焰并最终分裂成两个健康的熔岩卵。|n|n拥有 <nlv1,realHP> 生命值并造成 <nlv1,min伤害1> - <nlv1,max伤害1> 伤害。|n持续 <ANlm,Dur1> 秒。|n|n|cffffcc00攻击地面和空中单位。|r","召唤熔岩之卵，一种有弹性且致命的火焰生物。当熔岩卵造成伤害时，它会消耗目标的肉，从而助长其火焰并最终分裂成两个健康的熔岩卵。|n|n拥有 <nlv2,realHP> 生命值并造成 <nlv2,min伤害1> - <nlv2,max伤害1> 伤害。|n持续 <ANlm,Dur2> 秒。|n|n|cffffcc00攻击地面和空中单位。|r","召唤熔岩之卵，一种有弹性且致命的火焰生物。当熔岩卵造成伤害时，它会消耗目标的肉，从而助长其火焰并最终分裂成两个健康的熔岩卵。|n|n拥有 <nlv3,realHP> 生命值并造成 <nlv3,min伤害1> - <nlv3,max伤害1> 伤害。|n持续 <ANlm,Dur3> 秒。|n|n|cffffcc00攻击地面和空中单位。|r"
 Researchubertip="Summons a Lava Spawn, a resilient and deadly fire creature. As a Lava Spawn deals damage, it consumes the flesh of its target, eventually splitting into two healthy Lava Spawns.|nLasts <ANlm,Dur1> seconds.|n|n|cffffcc00Level 1|r - <nlv1,realHP> hit points, <nlv1,mindmg1> - <nlv1,maxdmg1> damage.|n|cffffcc00Level 2|r - <nlv2,realHP> hit points, <nlv2,mindmg1> - <nlv2,maxdmg1> damage.|n|cffffcc00Level 3|r - <nlv3,realHP> hit points, <nlv3,mindmg1> - <nlv3,maxdmg1> damage.|n|n|cffffcc00Attacks ground and air units.|r"
 Hotkey=W
 Researchhotkey=W
@@ -530,14 +530,14 @@ EditorName=Healing Spray (Effect)
 Name="ELE：高等火元素（分裂）"
 Tip=Summon Lava [|cffffcc00w|r] Spawn n - [|cffffcc00Level 1|r],Summon Lava [|cffffcc00w|r] Spawn n - [|cffffcc00Level 2|r],Summon Lava [|cffffcc00w|r] Spawn n - [|cffffcc00Level 3|r]
 Researchtip="Learn Summon Lava Spa|cffffcc00w|rn - [|cffffcc00Level %d|r]"
-Ubertip="召唤熔岩之卵，一种有弹性且致命的火焰生物。当熔岩卵造成伤害时，它会消耗目标的肉，从而助长其火焰并最终分裂成两个健康的熔岩卵。|n|n拥有 <nlv1,realHP> 生命值并造成 <nlv1,mindmg1> - <nlv1,maxdmg1> 伤害。|n持续 <ANlm,Dur1> 秒。|n|n|cffffcc00攻击地面和空中单位。|r","召唤熔岩之卵，一种有弹性且致命的火焰生物。当熔岩卵造成伤害时，它会消耗目标的肉，从而助长其火焰并最终分裂成两个健康的熔岩卵。|n|n拥有 <nlv2,realHP> 生命值并造成 <nlv2,mindmg1> - <nlv2,maxdmg1> 伤害。|n持续 <ANlm,Dur2> 秒。|n|n|cffffcc00攻击地面和空中单位。|r","召唤熔岩之卵，一种有弹性且致命的火焰生物。当熔岩卵造成伤害时，它会消耗目标的肉，从而助长其火焰并最终分裂成两个健康的熔岩卵。|n|n拥有 <nlv3,realHP> 生命值并造成 <nlv3,mindmg1> - <nlv3,maxdmg1> 伤害。|n持续 <ANlm,Dur3> 秒。|n|n|cffffcc00攻击地面和空中单位。|r"
+Ubertip="召唤熔岩之卵，一种有弹性且致命的火焰生物。当熔岩卵造成伤害时，它会消耗目标的肉，从而助长其火焰并最终分裂成两个健康的熔岩卵。|n|n拥有 <nlv1,realHP> 生命值并造成 <nlv1,min伤害1> - <nlv1,max伤害1> 伤害。|n持续 <ANlm,Dur1> 秒。|n|n|cffffcc00攻击地面和空中单位。|r","召唤熔岩之卵，一种有弹性且致命的火焰生物。当熔岩卵造成伤害时，它会消耗目标的肉，从而助长其火焰并最终分裂成两个健康的熔岩卵。|n|n拥有 <nlv2,realHP> 生命值并造成 <nlv2,min伤害1> - <nlv2,max伤害1> 伤害。|n持续 <ANlm,Dur2> 秒。|n|n|cffffcc00攻击地面和空中单位。|r","召唤熔岩之卵，一种有弹性且致命的火焰生物。当熔岩卵造成伤害时，它会消耗目标的肉，从而助长其火焰并最终分裂成两个健康的熔岩卵。|n|n拥有 <nlv3,realHP> 生命值并造成 <nlv3,min伤害1> - <nlv3,max伤害1> 伤害。|n持续 <ANlm,Dur3> 秒。|n|n|cffffcc00攻击地面和空中单位。|r"
 Researchubertip="Summons a Lava Spawn, a resilient and deadly fire creature. As a Lava Spawn deals damage, it consumes the flesh of its target, eventually splitting into two healthy Lava Spawns.|nLasts <ANlm,Dur1> seconds.|n|n|cffffcc00Level 1|r - <nlv1,realHP> hit points, <nlv1,mindmg1> - <nlv1,maxdmg1> damage.|n|cffffcc00Level 2|r - <nlv2,realHP> hit points, <nlv2,mindmg1> - <nlv2,maxdmg1> damage.|n|cffffcc00Level 3|r - <nlv3,realHP> hit points, <nlv3,mindmg1> - <nlv3,maxdmg1> damage.|n|n|cffffcc00Attacks ground and air units.|r"
 Hotkey=W
 Researchhotkey=W
 [A0E9]
 Name="大地元素"
-Tip="火车地球元素"
-Ubertip="|n|cffFFFF80攻击：|r围攻 (|cffFFFF00近战|r,|cffFFFF00 50|r dps)|n|cffFFFF80盔甲：|r英雄 (|cffFFFF004|r)|n|cffFFFF80生命值：|cffFFFF00450|r|n|cffFFFF80能力：|r|n|n|cff80FF00粉碎|r|n在 200 范围内以 20% 的几率造成 100 点伤害，在 300 范围内造成一半伤害|n|n|cff80FF00地球的力量|r|n造成与元素当前生命成正比的额外伤害 (50dmg*currentHP/maxHP)"
+Tip="训练地球元素"
+Ubertip="|n|cffFFFF80伤害类型：|r 攻城 (|cffFFFF00近战|r,|cffFFFF00 50|r 每秒伤害)|n|cffFFFF80护甲：|r英雄 (|cffFFFF004|r)|n|cffFFFF80生命值：|cffFFFF00450|r|n|cffFFFF80能力：|r|n|n|cff80FF00粉碎|r|n在 200 范围内以 20% 的几率造成 100 点伤害，在 300 范围内造成一半伤害|n|n|cff80FF00地球的力量|r|n造成与元素当前生命成正比的额外伤害 (50伤害*currentHP/maxHP)"
 Untip="|cffc3dbff右击激活自动施法。|r"
 Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
 Hotkey=R
@@ -545,15 +545,15 @@ Unhotkey=R
 [A0E8]
 Name="高等水元素"
 Tip="训练高等水元素"
-Ubertip="|n|cffFFFF80攻击：1|r正常 (|cffFFFF0030|r rng|r,|cffFFFF00 66|r dps)|n|cffFFFF80攻击：2|r穿刺 (|cffFFFF00380|r rng|r,|cffFFFF00 66|r dps)|n|cffFFFF80盔甲：|r中等 (|cffFFFF007|r)|n|cffFFFF80生命值：|cffFFFF00650|r|n|cffFFFF80能力：|r|n|n|cff80FF00错觉|r|n攻击时有 20% 的几率创建自己的副本。幻象只造成 60% 的攻击并受到双倍伤害|n|n|cff80FF00液态|r|n在 80% 的情况下，攻击会穿过水元素的身体而不会造成任何伤害"
+Ubertip="|n|cffFFFF80攻击：1|r正常 (|cffFFFF0030|r 射程|r,|cffFFFF00 66|r 每秒伤害)|n|cffFFFF80攻击：2|r穿刺 (|cffFFFF00380|r 射程|r,|cffFFFF00 66|r 每秒伤害)|n|cffFFFF80护甲：|r中型 (|cffFFFF007|r)|n|cffFFFF80生命值：|cffFFFF00650|r|n|cffFFFF80能力：|r|n|n|cff80FF00错觉|r|n攻击时有 20% 的几率创建自己的副本。幻象只造成 60% 的攻击并受到双倍伤害|n|n|cff80FF00液态|r|n在 80% 的情况下，攻击会穿过水元素的身体而不会造成任何伤害"
 Untip=" "
 Unubertip=" "
 Hotkey=R
 Unhotkey=R
 [A0E7]
 Name="水元素"
-Tip="火车水元素"
-Ubertip="|n|cffFFFF80攻击：1|r正常 (|cffFFFF0030|r rng|r,|cffFFFF00 40|r dps)|n|cffFFFF80攻击：2|r穿刺 (|cffFFFF00340|r rng|r,|cffFFFF00 29|r dps)|n|cffFFFF80盔甲：|r中等 (|cffFFFF003|r)|n|cffFFFF80生命值：|cffFFFF00500|r|n|cffFFFF80能力：|r|n|n|cff80FF00液态|r|n在 80% 的情况下，攻击会穿过水元素的身体而不会造成任何伤害"
+Tip="训练水元素"
+Ubertip="|n|cffFFFF80攻击：1|r正常 (|cffFFFF0030|r 射程|r,|cffFFFF00 40|r 每秒伤害)|n|cffFFFF80攻击：2|r穿刺 (|cffFFFF00340|r 射程|r,|cffFFFF00 29|r 每秒伤害)|n|cffFFFF80护甲：|r中型 (|cffFFFF003|r)|n|cffFFFF80生命值：|cffFFFF00500|r|n|cffFFFF80能力：|r|n|n|cff80FF00液态|r|n在 80% 的情况下，攻击会穿过水元素的身体而不会造成任何伤害"
 Untip="|cffc3dbff右击激活自动施法。|r"
 Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
 Hotkey=R
@@ -561,7 +561,7 @@ Unhotkey=R
 [A0DV]
 Name="ELE：ObeliskOfElements（虚拟）"
 Tip="附魔"
-Ubertip="为随机友军单位提供元素护盾并为其治疗 100hp：|n- 大地之盾：+5 护甲，35% 巨石投掷（100dmg 1.5 秒眩晕）|n- 气盾：+20% IAS\MS，+20% 法术和伤害抗性|n- 火盾：燃烧随机敌人（25dps，150 AoE）|n|n|cffFFFF80冷却时间：|cffFFFF00 10 |r秒"
+Ubertip="为随机友军单位提供元素护盾并为其治疗 100hp：|n- 大地之盾：+5 护甲，35% 巨石投掷（100伤害 1.5 秒眩晕）|n- 气盾：+20% IAS\MS，+20% 法术和伤害抗性|n- 火盾：燃烧随机敌人（25每秒伤害，150 AoE）|n|n|cffFFFF80冷却时间：|cffFFFF00 10 |r秒"
 Untip="|cffc3dbff右击激活自动施法。|r"
 Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
 Hotkey=R
@@ -569,15 +569,15 @@ Unhotkey=R
 [A0EE]
 Name="高等火元素"
 Tip="训练高等火元素"
-Ubertip="|n|cffFFFF80攻击：|r混乱 (|cffFFFF00450|r rng|r,|cffFFFF00 51|r dps)|n|cffFFFF80盔甲：|r重型 (|cffFFFF007|r)|n|cffFFFF80生命值：|cffFFFF00900|r|n|cffFFFF80能力：|r|n|ncff80FF00火焰吐息|r|n攻击时有 15% 几率施放火焰吐息（150 伤害）"
+Ubertip="|n|cffFFFF80伤害类型：|r 混乱 (|cffFFFF00450|r 射程|r,|cffFFFF00 51|r 每秒伤害)|n|cffFFFF80护甲：|r重型 (|cffFFFF007|r)|n|cffFFFF80生命值：|cffFFFF00900|r|n|cffFFFF80能力：|r|n|ncff80FF00火焰吐息|r|n攻击时有 15% 几率施放火焰吐息（150 伤害）"
 Untip="|cffc3dbff右击激活自动施法。|r"
 Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
 Hotkey=R
 Unhotkey=R
 [A0ED]
 Name="火元素"
-Tip="火车火元素"
-Ubertip="|n|cffFFFF80攻击：|r混乱 (|cffFFFF00400|r rng|r,|cffFFFF00 34|r dps)|n|cffFFFF80盔甲：|r重 (|cffFFFF003|r)|n|cffFFFF80生命值：|cffFFFF00525|r"
+Tip="训练火元素"
+Ubertip="|n|cffFFFF80伤害类型：|r 混乱 (|cffFFFF00400|r 射程|r,|cffFFFF00 34|r 每秒伤害)|n|cffFFFF80护甲：|r重型 (|cffFFFF003|r)|n|cffFFFF80生命值：|cffFFFF00525|r"
 Untip="|cffc3dbff右击激活自动施法。|r"
 Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
 Hotkey=R
@@ -585,7 +585,7 @@ Unhotkey=R
 [A0EC]
 Name="高等闪电元素"
 Tip="训练高等闪电元素"
-Ubertip="|n|cffFFFF80攻击：|r法术 (|cffFFFF00400|r rng|r,|cffFFFF00 1|r dps)|n|cffFFFF80盔甲：|r重型 (|cffFFFF009|r)|n|cffFFFF80生命值：|cffFFFF00800|r|n|cffFFFF80能力：|r|n|n|cff80FF00闪电攻击|r|n对 600 范围内的 5 个目标造成 80 点伤害|n|n|cff80FF00闪电盾|r|n每当元素被近战单位攻击时，攻击者有 30% 的几率被眩晕 4 秒"
+Ubertip="|n|cffFFFF80攻击：|r法术 (|cffFFFF00400|r 射程|r,|cffFFFF00 1|r 每秒伤害)|n|cffFFFF80护甲：|r重型 (|cffFFFF009|r)|n|cffFFFF80生命值：|cffFFFF00800|r|n|cffFFFF80能力：|r|n|n|cff80FF00闪电攻击|r|n对 600 范围内的 5 个目标造成 80 点伤害|n|n|cff80FF00闪电盾|r|n每当元素被近战单位攻击时，攻击者有 30% 的几率被眩晕 4 秒"
 Untip="|cffc3dbff右击激活自动施法。|r"
 Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
 Hotkey=R
@@ -593,7 +593,7 @@ Unhotkey=R
 [A0EB]
 Name="闪电元素"
 Tip="训练闪电元素"
-Ubertip="|n|cffFFFF80攻击：|r法术 (|cffFFFF00350|r rng|r,|cffFFFF00 1|r dps)|n|cffFFFF80盔甲：|r重 (|cffFFFF003|r)|n|cffFFFF80生命值：|cffFFFF00450|r|n|cffFFFF80能力：|r|n|n|cff80FF00闪电攻击|r|n对 600 范围内的 3 个目标造成 50 点伤害|n|n|cff80FF00闪电盾|r|n每当元素被近战单位攻击时，攻击者有 15% 的几率被眩晕 2 秒"
+Ubertip="|n|cffFFFF80攻击：|r法术 (|cffFFFF00350|r 射程|r,|cffFFFF00 1|r 每秒伤害)|n|cffFFFF80护甲：|r重型 (|cffFFFF003|r)|n|cffFFFF80生命值：|cffFFFF00450|r|n|cffFFFF80能力：|r|n|n|cff80FF00闪电攻击|r|n对 600 范围内的 3 个目标造成 50 点伤害|n|n|cff80FF00闪电盾|r|n每当元素被近战单位攻击时，攻击者有 15% 的几率被眩晕 2 秒"
 Untip="|cffc3dbff右击激活自动施法。|r"
 Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
 Hotkey=R
@@ -601,7 +601,7 @@ Unhotkey=R
 [A0EA]
 Name="大地元素"
 Tip="训练大地元素"
-Ubertip="|n|cffFFFF80攻击：|r围攻 (|cffFFFF00近战|r,|cffFFFF00 83|r dps)|n|cffFFFF80盔甲：|r英雄 (|cffFFFF008|r)|n|cffFFFF80生命值：|cffFFFF00950|r|n|cffFFFF80能力：|r|n|n|cff80FF00粉碎|r|n在 200 范围内造成 200 点伤害，在 200 范围内造成 25% 伤害，在 300 范围内造成一半伤害|n|n|cff80FF00地球的力量|r|n造成与元素当前生命成比例的额外伤害 (100dmg*currentHP/maxHP)"
+Ubertip="|n|cffFFFF80伤害类型：|r 攻城 (|cffFFFF00近战|r,|cffFFFF00 83|r 每秒伤害)|n|cffFFFF80护甲：|r英雄 (|cffFFFF008|r)|n|cffFFFF80生命值：|cffFFFF00950|r|n|cffFFFF80能力：|r|n|n|cff80FF00粉碎|r|n在 200 范围内造成 200 点伤害，在 200 范围内造成 25% 伤害，在 300 范围内造成一半伤害|n|n|cff80FF00地球的力量|r|n造成与元素当前生命成比例的额外伤害 (100伤害*currentHP/maxHP)"
 Untip="|cffc3dbff右击激活自动施法。|r"
 Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
 Hotkey=R
@@ -615,7 +615,7 @@ Ubertip="使攻击有 <ACbh,DataA1>% 的几率造成 <ACbh,DataC1> 额外伤害�
 [A0EH]
 Name="高等风元素"
 Tip="训练大风元素"
-Ubertip="|n|cffFFFF80攻击：1|r穿刺 (|cffFFFF00450|r rng|r,|cffFFFF00 55|r dps)|n|cffFFFF80攻击：2|r穿刺 (|cffFFFF00450|r rng|r,|cffFFFF00 43|r dps)|n|cffFFFF80盔甲：|r中等 (|cffFFFF009|r)|n|cffFFFF80生命值：|cffFFFF001300|r|n|cffFFFF80能力：|r|n|n|cff80FF00飞行|r|n这个单位在飞|n|n|cff80FF00大风|r|n500范围内敌方空中单位的攻击和移动速度降低35%"
+Ubertip="|n|cffFFFF80攻击：1|r穿刺 (|cffFFFF00450|r 射程|r,|cffFFFF00 55|r 每秒伤害)|n|cffFFFF80攻击：2|r穿刺 (|cffFFFF00450|r 射程|r,|cffFFFF00 43|r 每秒伤害)|n|cffFFFF80护甲：|r中型 (|cffFFFF009|r)|n|cffFFFF80生命值：|cffFFFF001300|r|n|cffFFFF80能力：|r|n|n|cff80FF00飞行|r|n这个单位在飞|n|n|cff80FF00大风|r|n500范围内敌方空中单位的攻击和移动速度降低35%"
 Untip="|cffc3dbff右击激活自动施法。|r"
 Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
 Hotkey=R
@@ -623,7 +623,7 @@ Unhotkey=R
 [A0EI]
 Name="ELE：咒语之书"
 Tip="元素之雨"
-Ubertip="|cffFFFF80能力：|cffFFFF00元素浩劫|r|n施放咒语之一：|n- 石钉：100dmg + 冲击地面，50dmg 飞行，|n- 闪电风暴：100dmg 和对飞行的冲击，50 dmg 对地面|n在 300 范围内，持续 6 秒。|n|cffFFFF80冷却时间：|cffFFFF00 16 |r秒"
+Ubertip="|cffFFFF80能力：|cffFFFF00元素浩劫|r|n施放咒语之一：|n- 石钉：100伤害 + 冲击地面，50伤害 飞行，|n- 闪电风暴：100伤害 和对飞行的冲击，50 伤害 对地面|n在 300 范围内，持续 6 秒。|n|cffFFFF80冷却时间：|cffFFFF00 16 |r秒"
 Untip="|cffc3dbff右击激活自动施法。|r"
 Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
 Hotkey=R
@@ -631,15 +631,15 @@ Unhotkey=R
 [A0EF]
 Name="次级风元素"
 Tip="训练次级风元素"
-Ubertip="|n|cffFFFF80攻击：|r穿刺 (|cffFFFF00400|r rng|r,|cffFFFF00 30|r dps)|n|cffFFFF80盔甲：|r中等 (|cffFFFF002|r)|n|cffFFFF80生命值：|cffFFFF00350|r|n|cffFFFF80能力：|r|n|n|cff80FF00飞行|r|n这个单位在飞"
+Ubertip="|n|cffFFFF80攻击：|r穿刺 (|cffFFFF00400|r 射程|r,|cffFFFF00 30|r 每秒伤害)|n|cffFFFF80护甲：|r中型 (|cffFFFF002|r)|n|cffFFFF80生命值：|cffFFFF00350|r|n|cffFFFF80能力：|r|n|n|cff80FF00飞行|r|n这个单位在飞"
 Untip="|cffc3dbff右击激活自动施法。|r"
 Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
 Hotkey=R
 Unhotkey=R
 [A0EG]
 Name="风元素"
-Tip="火车风元素"
-Ubertip="|n|cffFFFF80攻击：1|r穿刺 (|cffFFFF00450|r rng|r,|cffFFFF00 43|r dps)|n|cffFFFF80攻击：2|r穿刺 (|cffFFFF00450|r rng|r,|cffFFFF00 37|r dps)|n|cffFFFF80盔甲：|r中等 (|cffFFFF004|r)|n|cffFFFF80生命值：|cffFFFF00550|r|n|cffFFFF80能力：|r|n|n|cff80FF00飞行|r|n这个单位在飞|n|n|cff80FF00大风|r|n500范围内敌方空中单位的攻击和移动速度降低20%"
+Tip="训练风元素"
+Ubertip="|n|cffFFFF80攻击：1|r穿刺 (|cffFFFF00450|r 射程|r,|cffFFFF00 43|r 每秒伤害)|n|cffFFFF80攻击：2|r穿刺 (|cffFFFF00450|r 射程|r,|cffFFFF00 37|r 每秒伤害)|n|cffFFFF80护甲：|r中型 (|cffFFFF004|r)|n|cffFFFF80生命值：|cffFFFF00550|r|n|cffFFFF80能力：|r|n|n|cff80FF00飞行|r|n这个单位在飞|n|n|cff80FF00大风|r|n500范围内敌方空中单位的攻击和移动速度降低20%"
 Untip="|cffc3dbff右击激活自动施法。|r"
 Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
 Hotkey=R
@@ -665,7 +665,7 @@ Unhotkey=B
 [A0CY]
 Name="ELE：元素之雨"
 Tip="元素之雨"
-Ubertip="从接下来的 3 个法术中施放 1 个：|n- 季风（40dmg/秒，5 秒）|n- 流星雨 200dmg，15dmg/秒，3 秒）|n- 暴风雪（25dmg/波，7 波）|n|n|cffFFFF80冷却时间：|cffFFFF00 14 |r秒"
+Ubertip="从接下来的 3 个法术中施放 1 个：|n- 季风（40伤害/秒，5 秒）|n- 流星雨 200伤害，15伤害/秒，3 秒）|n- 暴风雪（25伤害/波，7 波）|n|n|cffFFFF80冷却时间：|cffFFFF00 14 |r秒"
 Untip="|cffc3dbff右击激活自动施法。|r"
 Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
 Hotkey=R
@@ -680,7 +680,7 @@ Hotkey=R
 Unhotkey=R
 [A0CT]
 Name="ELE：水元素（闪避）"
-Tip=逃避
+Tip=闪避
 Ubertip="提供 <ACes,DataA1,%>% 的几率避免攻击。"
 [A0D8]
 Name="ELE：元素守卫塔（献祭）"
@@ -710,7 +710,7 @@ Researchhotkey=N
 [A0DT]
 Name="次级水元素"
 Tip="培养小水元素"
-Ubertip="|n|cffFFFF80攻击：1|r正常 (|cffFFFF0030|r rng|r,|cffFFFF00 38|r dps)|n|cffFFFF80攻击：2|r穿刺 (|cffFFFF00300|r rng|r,|cffFFFF00 18|r dps)|n|cffFFFF80盔甲：|r中等 (|cffFFFF001|r)|n|cffFFFF80生命值：|cffFFFF00300|r|n|cffFFFF80能力：|r|n|n|cff80FF00液态|r|n在 60% 的情况下，攻击会穿过水元素的身体而不造成任何伤害"
+Ubertip="|n|cffFFFF80攻击：1|r正常 (|cffFFFF0030|r 射程|r,|cffFFFF00 38|r 每秒伤害)|n|cffFFFF80攻击：2|r穿刺 (|cffFFFF00300|r 射程|r,|cffFFFF00 18|r 每秒伤害)|n|cffFFFF80护甲：|r中型 (|cffFFFF001|r)|n|cffFFFF80生命值：|cffFFFF00300|r|n|cffFFFF80能力：|r|n|n|cff80FF00液态|r|n在 60% 的情况下，攻击会穿过水元素的身体而不造成任何伤害"
 Untip="|cffc3dbff右击激活自动施法。|r"
 Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
 Hotkey=R
@@ -749,7 +749,7 @@ Hotkey=R
 Unhotkey=R
 [A0BW]
 Name="NAT：远古守护者（虚体）"
-Tip=逃避
+Tip=闪避
 Ubertip="提供 <ACev,DataA1,%>% 的几率避免攻击。"
 [A0CA]
 Name=缓慢光环
@@ -779,7 +779,7 @@ Hotkey=F
 Name="ELE：火元素（分体）"
 Tip=Summon Lava [|cffffcc00w|r] Spawn n - [|cffffcc00Level 1|r],Summon Lava [|cffffcc00w|r] Spawn n - [|cffffcc00Level 2|r],Summon Lava [|cffffcc00w|r] Spawn n - [|cffffcc00Level 3|r]
 Researchtip="Learn Summon Lava Spa|cffffcc00w|rn - [|cffffcc00Level %d|r]"
-Ubertip="召唤熔岩之卵，一种有弹性且致命的火焰生物。当熔岩卵造成伤害时，它会消耗目标的肉，从而助长其火焰并最终分裂成两个健康的熔岩卵。|n|n拥有 <nlv1,realHP> 生命值并造成 <nlv1,mindmg1> - <nlv1,maxdmg1> 伤害。|n持续 <ANlm,Dur1> 秒。|n|n|cffffcc00攻击地面和空中单位。|r","召唤熔岩之卵，一种有弹性且致命的火焰生物。当熔岩卵造成伤害时，它会消耗目标的肉，从而助长其火焰并最终分裂成两个健康的熔岩卵。|n|n拥有 <nlv2,realHP> 生命值并造成 <nlv2,mindmg1> - <nlv2,maxdmg1> 伤害。|n持续 <ANlm,Dur2> 秒。|n|n|cffffcc00攻击地面和空中单位。|r","召唤熔岩之卵，一种有弹性且致命的火焰生物。当熔岩卵造成伤害时，它会消耗目标的肉，从而助长其火焰并最终分裂成两个健康的熔岩卵。|n|n拥有 <nlv3,realHP> 生命值并造成 <nlv3,mindmg1> - <nlv3,maxdmg1> 伤害。|n持续 <ANlm,Dur3> 秒。|n|n|cffffcc00攻击地面和空中单位。|r"
+Ubertip="召唤熔岩之卵，一种有弹性且致命的火焰生物。当熔岩卵造成伤害时，它会消耗目标的肉，从而助长其火焰并最终分裂成两个健康的熔岩卵。|n|n拥有 <nlv1,realHP> 生命值并造成 <nlv1,min伤害1> - <nlv1,max伤害1> 伤害。|n持续 <ANlm,Dur1> 秒。|n|n|cffffcc00攻击地面和空中单位。|r","召唤熔岩之卵，一种有弹性且致命的火焰生物。当熔岩卵造成伤害时，它会消耗目标的肉，从而助长其火焰并最终分裂成两个健康的熔岩卵。|n|n拥有 <nlv2,realHP> 生命值并造成 <nlv2,min伤害1> - <nlv2,max伤害1> 伤害。|n持续 <ANlm,Dur2> 秒。|n|n|cffffcc00攻击地面和空中单位。|r","召唤熔岩之卵，一种有弹性且致命的火焰生物。当熔岩卵造成伤害时，它会消耗目标的肉，从而助长其火焰并最终分裂成两个健康的熔岩卵。|n|n拥有 <nlv3,realHP> 生命值并造成 <nlv3,min伤害1> - <nlv3,max伤害1> 伤害。|n持续 <ANlm,Dur3> 秒。|n|n|cffffcc00攻击地面和空中单位。|r"
 Researchubertip="Summons a Lava Spawn, a resilient and deadly fire creature. As a Lava Spawn deals damage, it consumes the flesh of its target, eventually splitting into two healthy Lava Spawns.|nLasts <ANlm,Dur1> seconds.|n|n|cffffcc00Level 1|r - <nlv1,realHP> hit points, <nlv1,mindmg1> - <nlv1,maxdmg1> damage.|n|cffffcc00Level 2|r - <nlv2,realHP> hit points, <nlv2,mindmg1> - <nlv2,maxdmg1> damage.|n|cffffcc00Level 3|r - <nlv3,realHP> hit points, <nlv3,mindmg1> - <nlv3,maxdmg1> damage.|n|n|cffffcc00Attacks ground and air units.|r"
 Hotkey=W
 Researchhotkey=W
@@ -790,7 +790,7 @@ Ubertip="召唤火焰波对区域内的单位造成伤害。每波造成 <ACrg,D
 Hotkey=F
 [A0CS]
 Name="ELE：次级水元素（闪避）"
-Tip=逃避
+Tip=闪避
 Ubertip="提供 <ACes,DataA1,%>% 的几率避免攻击。"
 [A0B4]
 Name="NAT：远古熊（爆击）"
@@ -869,7 +869,7 @@ Unhotkey=C
 [A0BO]
 Name="NAT：大风古树（假人）"
 Tip="气旋"
-Ubertip="使敌方单位的攻击和移动速度降低 25%，并在 250 范围内造成 30 dps，持续 7 秒。建筑物受到 50% 的伤害。|n|n|cffFFFF80冷却时间：|cffFFFF00 14 |r秒"
+Ubertip="使敌方单位的攻击和移动速度降低 25%，并在 250 范围内造成 30 每秒伤害，持续 7 秒。建筑物受到 50% 的伤害。|n|n|cffFFFF80冷却时间：|cffFFFF00 14 |r秒"
 Untip="|cffc3dbff右击激活自动施法。|r"
 Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
 Hotkey=R
@@ -877,7 +877,7 @@ Unhotkey=R
 [A0BP]
 Name="NAT: 大风古树 (dummy, -na)"
 Tip="气旋"
-Ubertip="使敌方单位的攻击和移动速度降低 25%，并在 250 范围内造成 40 dps，持续 7 秒。|n|n|cffFFFF80冷却时间：|cffFFFF00 14 |r秒"
+Ubertip="使敌方单位的攻击和移动速度降低 25%，并在 250 范围内造成 40 每秒伤害，持续 7 秒。|n|n|cffFFFF80冷却时间：|cffFFFF00 14 |r秒"
 Untip="|cffc3dbff右击激活自动施法。|r"
 Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
 Hotkey=R
@@ -901,7 +901,7 @@ Tip=H[|cffffcc00e|r] 正弦波
 Ubertip="召唤一波治疗能量波，最多反弹 <AChv,DataB1> 次，对主要目标造成 <AChv,DataA1> 伤害。每次跳跃治疗的伤害都会减少。"
 Hotkey=E
 [A0A3]
-Name="疯子死 dmg"
+Name="疯子死 伤害"
 [A0AQ]
 Name="NAT：巨型蜘蛛（->黑蜘蛛）"
 [A0B2]
@@ -938,8 +938,8 @@ Name="40% 飞溅"
 Tip=分裂攻击
 Ubertip="该生物的攻击力足以使 <ACce,DataA1,%>% 的伤害击穿主要攻击单位附近的敌人。"
 [A05J]
-Name="逃避"
-Tip=逃避
+Name="闪避"
+Tip=闪避
 Ubertip="提供 <ACev,DataA1,%>% 的几率避免攻击。"
 [A05K]
 Name=重击
@@ -1057,8 +1057,8 @@ Unhotkey=R
 [A06J]
 Name=生成九头蛇
 [A074]
-Name="逃避"
-Tip=逃避
+Name="闪避"
+Tip=闪避
 Ubertip="提供 <ACev,DataA1,%>% 的几率避免攻击。"
 [A06P]
 Name="NOR：冷冻蘑菇"
@@ -1077,8 +1077,8 @@ Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
 Hotkey=R
 Unhotkey=R
 [A073]
-Name="逃避"
-Tip=逃避
+Name="闪避"
+Tip=闪避
 Ubertip="提供 <ACev,DataA1,%>% 的几率避免攻击。"
 [A06R]
 Name=寄生虫
@@ -1137,8 +1137,8 @@ Name=重击
 Tip=重击
 Ubertip="使攻击有 <ACbh,DataA1>% 的几率造成 <ACbh,DataC1> 额外伤害并眩晕对手 <ACbh,Dur1> 秒。"
 [A08M]
-Name=逃避
-Tip=逃避
+Name=闪避
+Tip=闪避
 Ubertip="提供 <ACev,DataA1,%>% 的几率避免攻击。"
 [A090]
 Name=重击
@@ -1293,8 +1293,8 @@ Name="35% 飞溅"
 Tip=分裂攻击
 Ubertip="该生物的攻击力足以使 <ACce,DataA1,%>% 的伤害击穿主要攻击单位附近的敌人。"
 [A00T]
-Name="逃避"
-Tip=逃避
+Name="闪避"
+Tip=闪避
 Ubertip="提供 <ACes,DataA1,%>% 的几率避免攻击。"
 [A00R]
 Name=拆除
@@ -1336,8 +1336,8 @@ Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
 Hotkey=R
 Unhotkey=R
 [A00U]
-Name="逃避"
-Tip=逃避
+Name="闪避"
+Tip=闪避
 Ubertip="提供 <ACev,DataA1,%>% 的几率避免攻击。"
 [A00Y]
 Name="HEL：巫师（治疗）"
@@ -1644,7 +1644,7 @@ Hotkey=E
 Researchhotkey=E
 [A03P]
 Name="帮助：弓箭手"
-Tip=逃避
+Tip=闪避
 Ubertip="提供 <ACev,DataA1,%>% 的几率避免攻击。"
 [A044]
 Name=寄生虫
@@ -1783,7 +1783,7 @@ Unhotkey=X
 [A04I]
 Name=寄生虫
 Tip="冬季来临"
-Ubertip="发射三个冰霜球，飞向随机方向，攻击随机敌人造成 60 dps 法术伤害，眩晕随机空中单位，冻结随机地面单位并冰冻附近的每个单位。|n|n|cffFFFF80冷却时间：|cffFFFF00 35 |r秒"
+Ubertip="发射三个冰霜球，飞向随机方向，攻击随机敌人造成 60 每秒伤害 法术伤害，眩晕随机空中单位，冻结随机地面单位并冰冻附近的每个单位。|n|n|cffFFFF80冷却时间：|cffFFFF00 35 |r秒"
 Untip="|cffc3dbff右击激活自动施法。|r"
 Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
 Hotkey=R
@@ -1860,7 +1860,7 @@ Hotkey=R
 Unhotkey=R
 [A0FO]
 Name="ELE：漏水更大"
-Tip=逃避
+Tip=闪避
 Ubertip="提供 <ACes,DataA1,%>% 的几率避免攻击。"
 [A0FV]
 Name="神风敢死队"
@@ -1925,7 +1925,7 @@ Unhotkey=R
 [A0GF]
 Name="仙人掌"
 Tip="仙人掌药水"
-Ubertip="|cffFFFF80能力：|cffFFFF00仙人掌药水|r|n用致幻孢子毒化随机活的敌人，将其送入梦境持续 7 秒（造成 7 dps），有 25% 的几率对双方队伍产生敌意。|n|n|cffFFFF80冷却时间：|cffFFFF0010|r秒"
+Ubertip="|cffFFFF80能力：|cffFFFF00仙人掌药水|r|n用致幻孢子毒化随机活的敌人，将其送入梦境持续 7 秒（造成 7 每秒伤害），有 25% 的几率对双方队伍产生敌意。|n|n|cffFFFF80冷却时间：|cffFFFF0010|r秒"
 Untip="|cffc3dbff右击激活自动施法。|r"
 Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
 Hotkey=R
@@ -1933,13 +1933,13 @@ Unhotkey=R
 [A0GK]
 Name="沙尘暴能力"
 Tip="沙暴"
-Ubertip="对整个区域施放沙尘暴，致盲并减慢敌人（70% 失手率，-30% AS\MS），沙流造成 20 dmg\s|n|n|cffFFFF80持续时间：|cffFFFF00 8.5 |r秒|n|cffFFFF80冷却时间：|cffFFFF00 36 |r秒"
+Ubertip="对整个区域施放沙尘暴，致盲并减慢敌人（70% 失手率，-30% AS\MS），沙流造成 20 伤害\s|n|n|cffFFFF80持续时间：|cffFFFF00 8.5 |r秒|n|cffFFFF80冷却时间：|cffFFFF00 36 |r秒"
 Untip="|cffc3dbff右击激活自动施法。|r"
 Unubertip="|cffc3dbff右键单击以禁用自动投射。|r"
 Hotkey=R
 Unhotkey=R
 [A0GN]
-Name="矿工死亡 dmg"
+Name="矿工死亡 伤害"
 [A0GO]
 Name="65aoe飞溅"
 Tip=分裂攻击
@@ -1971,8 +1971,8 @@ Tip=[|cffffcc00e|r] 沉默
 Ubertip="使目标区域内的所有敌人在 <ACsi,Dur1> 秒内停止施法。"
 Hotkey=E
 [A07D]
-Name="逃避"
-Tip=逃避
+Name="闪避"
+Tip=闪避
 Ubertip="提供 <ACev,DataA1,%>% 的几率避免攻击。"
 [A0BR]
 Name="恢复符文"
@@ -2029,7 +2029,7 @@ Researchhotkey=D
 [A0H6]
 Name="UND：腐朽圣殿"
 Tip="最大衰减"
-Ubertip="对机械敌方单位造成 3 dps。"
+Ubertip="对机械敌方单位造成 3 每秒伤害。"
 [A01I]
 Name="火山2"
 Tip=[|cffffcc00F|r] 火雨
@@ -2108,7 +2108,7 @@ Tip=[|cffffcc00e|r] 沉默
 Ubertip="使目标区域内的所有敌人在 <ACsi,Dur1> 秒内停止施法。"
 Hotkey=E
 [A0HR]
-Name="SF dmg2bld"
+Name="SF 伤害2bld"
 [A0HS]
 Name="星效"
 Tip=|cffffcc00我|r地狱
@@ -2222,11 +2222,11 @@ Researchhotkey=R
 [A0IA]
 Name="el.book AoE 伤害"
 [A0IB]
-Name="el.book AoE dmg bld"
+Name="el.book AoE 伤害 bld"
 [A0IE]
-Name="dmg 2 空气"
+Name="伤害 2 空气"
 [A0IF]
-Name="星陨大厦 dmg"
+Name="星陨大厦 伤害"
 [A0II]
 Name="冰冷的呼吸"
 Tip=酸 [|cffffcc00B|r] 炸弹 - [|cffffcc00Level 1|r]，酸 [|cffffcc00B|r] 炸弹 - [|cffffcc00Level 2|r]，酸 [|cffffcc00B|r] 炸弹 - [|cffffcc00Level 3|r]

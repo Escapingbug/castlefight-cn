@@ -26,7 +26,7 @@ Awakentip=Revive |cffffcc00D|reath Knight
 Hotkey=D
 [uban]
 Name=女妖
-Tip=火车 [|cffffcc00B|r] 女妖
+Tip=训练 [|cffffcc00B|r] 女妖
 Ubertip="配套脚轮。最初可以施放诅咒，这会导致敌方单位偶尔在战斗中失手。还可以学习反魔法壳和附身。|n|n|cffffcc00攻击陆地和空中单位。|r"
 Hotkey=B
 Casterupgradename=Initiate, Adept, Master
@@ -56,12 +56,12 @@ Ubertip="飞行重型攻击生物。可以学习冰冻呼吸能力。|n|n|cffffc
 Hotkey=F
 [ugar]
 Name=石像鬼
-Tip=火车 [|cffffcc00a|r] 石像鬼
+Tip=训练 [|cffffcc00a|r] 石像鬼
 Ubertip="飞行攻击生物。可以学习石形态能力。|n|n|cffffcc00攻击陆地和空中单位。|r"
 Hotkey=A
 [ugrm]
 Name=石形石像鬼
-Tip=火车 [|cffffcc00a|r] 石像鬼
+Tip=训练 [|cffffcc00a|r] 石像鬼
 Ubertip="飞行攻击生物。|n|n|cffffcc00攻击陆地和空中单位。|r"
 Hotkey=A
 [ugho]
@@ -149,7 +149,7 @@ Ubertip="升级以创建一个防御结构，可以造成冰冷伤害并减慢�
 Hotkey=N
 [umtw]
 Name=肉车
-Tip=火车 [|cffffcc00M|r] 肉车
+Tip=训练 [|cffffcc00M|r] 肉车
 Ubertip="尸体储存机。也可用作远程攻城武器。对建筑物造成异常伤害，但缓慢且易受攻击。可以学习疾病云能力。|n|n|cffffcc00攻击陆地单位和树木。|r"
 Hotkey=M
 [ubon]
@@ -201,8 +201,8 @@ Ubertip="基本攻击单位和木材收割机。可以学习食人魔和食尸�
 Hotkey=G
 [u007]
 Name="瘟疫携带者"
-Tip="火车瘟疫携带者"
-Ubertip="|n|cffFFFF80攻击：|r混乱（|cffFFFF00近战|r，|cffFFFF00 52|r dps）|n|cffFFFF80盔甲：|r中等 (|cffFFFF006|r)|n|cffFFFF80生命值：|cffFFFF001050|r|n|cffFFFF80能力：|r|n|n|cff80FF00瘟疫袭击|r|n被瘟疫携带者击中的单位移动速度降低 30%，每秒受到 15 点伤害，持续 15 秒|n|n|cff80FF00瘟疫云|r|n用瘟疫感染 350 范围内的有机体敌人，每秒造成 20 点伤害"
+Tip="训练瘟疫携带者"
+Ubertip="|n|cffFFFF80伤害类型：|r 混乱（|cffFFFF00近战|r，|cffFFFF00 52|r 每秒伤害）|n|cffFFFF80护甲：|r中型 (|cffFFFF006|r)|n|cffFFFF80生命值：|cffFFFF001050|r|n|cffFFFF80能力：|r|n|n|cff80FF00瘟疫袭击|r|n被瘟疫携带者击中的单位移动速度降低 30%，每秒受到 15 点伤害，持续 15 秒|n|n|cff80FF00瘟疫云|r|n用瘟疫感染 350 范围内的有机体敌人，每秒造成 20 点伤害"
 Hotkey=Q
 [u006]
 Name="堕落的建造者"
@@ -211,14 +211,14 @@ Ubertip="这些曾经友好的生物被邪恶的恶魔腐蚀，变成了黑暗�
 [u005]
 Name="死灵法师"
 Tip="训练死灵法师"
-Ubertip="|n|cffFFFF80攻击：|r魔法 (|cffFFFF00380|r rng,|cffFFFF00 30|r dps)|n|cffFFFF80盔甲：|r无装甲 (|cffFFFF001|r)|n|cffFFFF80生命值：|cffFFFF00350|r|n|cffFFFF80能力：|r|n|n|cff80FF00死而复生|r|n举起骷髅|n|cff8080FF冷却时间：|r45|n|cff8080FF法力消耗：|r75"
+Ubertip="|n|cffFFFF80伤害类型：|r魔法 (|cffFFFF00380|r 射程,|cffFFFF00 30|r 每秒伤害)|n|cffFFFF80护甲：|r 无甲 (|cffFFFF001|r)|n|cffFFFF80生命值：|cffFFFF00350|r|n|cffFFFF80能力：|r|n|n|cff80FF00死而复生|r|n举起骷髅|n|cff8080FF冷却时间：|r45|n|cff8080FF法力消耗：|r75"
 Hotkey=Q
 Casterupgradename=
 Casterupgradetip=
 [u00D]
 Name="巫妖王"
 Tip="训练巫妖王"
-Ubertip="|n|cffFFFF80攻击：|r魔法 (|cffFFFF00500|r rng,|cffFFFF00 75|r dps)|n|cffFFFF80盔甲：|r无装甲 (|cffFFFF005|r)|n|cffFFFF80生命值：|cffFFFF00900|r|n|cffFFFF80能力：|r|n|n|cff80FF00传奇法术抗性|r|n对该单位造成的法术伤害降低 70%|n|n|cff80FF00免疫|r|n该单位免疫某些负面效果|n|n|cff80FF00衰减攻击|r|n攻击时有 20% 几率偷取最多 200 点生命值或 15% 几率施放死亡凋零（在 300 范围内持续 5 秒，每秒消耗受影响敌人 8% 的生命）|n|n|cff80FF00骷髅大师|r|n从尸体中复活骷髅|n|cff8080FF冷却时间：|r25|n|cff8080FF法力消耗：|r100"
+Ubertip="|n|cffFFFF80伤害类型：|r魔法 (|cffFFFF00500|r 射程,|cffFFFF00 75|r 每秒伤害)|n|cffFFFF80护甲：|r 无甲 (|cffFFFF005|r)|n|cffFFFF80生命值：|cffFFFF00900|r|n|cffFFFF80能力：|r|n|n|cff80FF00传奇法术抗性|r|n对该单位造成的法术伤害降低 70%|n|n|cff80FF00免疫|r|n该单位免疫某些负面效果|n|n|cff80FF00衰减攻击|r|n攻击时有 20% 几率偷取最多 200 点生命值或 15% 几率施放死亡凋零（在 300 范围内持续 5 秒，每秒消耗受影响敌人 8% 的生命）|n|n|cff80FF00骷髅大师|r|n从尸体中复活骷髅|n|cff8080FF冷却时间：|r25|n|cff8080FF法力消耗：|r100"
 Hotkey=Q
 Casterupgradename=
 Casterupgradetip=
@@ -255,6 +255,6 @@ Ubertip="基本攻击单位和木材收割机。可以学习食人魔和食尸�
 Hotkey=G
 [u000]
 Name="冰霜巨龙"
-Tip="火车冰霜巨龙"
-Ubertip="|n|cffFFFF80攻击：|r正常 (|cffFFFF00325|r rng,|cffFFFF00 77|r dps)|n|cffFFFF80盔甲：|r光 (|cffFFFF005|r)|n|cffFFFF80生命值：|cffFFFF001200|r|n|cffFFFF80能力：|r|n|n|cff80FF00飞行|r|n这个单位在飞|n|n|cff80FF00飞溅伤害|r|n该单位的攻击命中目标周围 225 范围内的所有单位。距离目标越远的单位受到的伤害越少|n|n|cff80FF00冰冷攻击|r|n所有被击中的单位都会被冰冻 5 秒"
+Tip="训练冰霜巨龙"
+Ubertip="|n|cffFFFF80伤害类型：|r普通 (|cffFFFF00325|r 射程,|cffFFFF00 77|r 每秒伤害)|n|cffFFFF80护甲：|r轻型 (|cffFFFF005|r)|n|cffFFFF80生命值：|cffFFFF001200|r|n|cffFFFF80能力：|r|n|n|cff80FF00飞行|r|n这个单位在飞|n|n|cff80FF00飞溅伤害|r|n该单位的攻击命中目标周围 225 范围内的所有单位。距离目标越远的单位受到的伤害越少|n|n|cff80FF00冰冷攻击|r|n所有被击中的单位都会被冰冻 5 秒"
 Hotkey=Q

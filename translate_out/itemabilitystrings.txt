@@ -334,7 +334,7 @@ Name="法术抗性 50%"
 [A0I1]
 Name="祈祷：治疗+法力"
 [A0I2]
-Name="祈祷：+dmg +盔甲"
+Name="祈祷：+伤害 +盔甲"
 Ubertip="为附近的友方单位提供 <AIrr,DataA1,%>% 的伤害加成。|n持续 <AIrr,Dur1> 秒。"
 [A0IJ]
 Name="冻结（腿）"
@@ -352,7 +352,7 @@ Bufftip=地盾
 Buffubertip=+35% 投掷巨石|n+10 护甲
 [B02G]
 Bufftip=防火盾
-Buffubertip=随机燃烧附近的敌人，持续 15dps。
+Buffubertip=随机燃烧附近的敌人，持续 15每秒伤害。
 [B02H]
 Bufftip=防风罩
 Buffubertip=+30% IAS +20%MS|n+30% 法术和伤害抗性|n50% 几率偏转魔法攻击

@@ -29,18 +29,18 @@ Ubertip="修理工人附近的建筑物。与其他符文和珊瑚雕像堆叠�
 Hotkey=
 [IBA5]
 Name=渠道
-Tip="石头卷轴"
+Tip="守护卷轴"
 Ubertip="使用时，该卷轴会治疗 400 点生命值、200 点法力值，并在 30 秒内为大范围内的所有友军单位提供 8 点额外护甲。"
 Hotkey=
 [IBA4]
 Name=渠道
 Tip="奶酪"
-Ubertip="允许您建造一个更传奇的结构。"
+Ubertip="允许您建造一个额外的传奇建筑。"
 Hotkey=
 [IBA7]
 Name=渠道
 Tip="爆破法杖"
-Ubertip="每秒向附近的随机敌人发射一枚魔法弹丸。投射物造成 60 点法术伤害。"
+Ubertip="每秒向附近的随机敌人发射一枚魔法飞弹。魔法飞弹造成 60 点法术伤害。"
 Hotkey=
 [IBA6]
 Name=渠道
@@ -110,7 +110,7 @@ Hotkey=C
 [A0DI]
 Name=渠道
 Tip="|cffFFD900选择娜迦派系|r"
-Ubertip="Nagas 拥有高于平均水平的强大单位，具有很高的生命值恢复。此外，他们还可以使用许多昂贵的特殊建筑。但请注意，这场比赛没有塔！"
+Ubertip="娜迦拥有高于平均水平的强大单位，具有很高的生命值恢复。此外，他们还可以使用许多昂贵的特殊建筑。但请注意，这场比赛没有塔！"
 Hotkey=C
 [A0DJ]
 Name=渠道
@@ -125,7 +125,7 @@ Hotkey=C
 [A0DL]
 Name=渠道
 Tip="|cffFFD900选择亡灵部队|r"
-Ubertip="亡灵部队使用死灵魔法使死去的单位复活。他们给敌人带来死亡和疾病。亡灵建造者能够建造一座精神塔来保卫你的基地。"
+Ubertip="亡灵部队使用死灵魔法使死去的单位复活。他们给敌人带来死亡和疾病。亡灵建造者能够建造一座幽魂塔来保卫你的基地。"
 Hotkey=C
 [A0DE]
 Name=渠道
@@ -134,7 +134,7 @@ Ubertip="精灵种族聚集在一起保卫他们的领地。精灵使用强大�
 Hotkey=C
 [A0DF]
 Name=渠道
-Tip="|cffFFD900选择腐败的企业集团|r"
+Tip="|cffFFD900选择腐败集团|r"
 Ubertip="这些曾经友好的生物被邪恶的恶魔腐蚀，变成了黑暗的爪牙。他们使用黑暗魔法来影响他们的敌人，并且可以建造一座具有溅射伤害的塔。"
 Hotkey=C
 [A0DG]
@@ -149,13 +149,13 @@ Ubertip="兽人部落训练强悍的战士并用萨满魔法支持他们。他�
 Hotkey=C
 [A0DQ]
 Name=渠道
-Tip="以前的"
+Tip="上一页"
 Ubertip="上一页。"
 Hotkey=C
 [A0DR]
 Name=渠道
-Tip="|cffFFD900随机比赛|r"
-Ubertip="您将获得随机比赛。"
+Tip="|cffFFD900随机种族|r"
+Ubertip="您将获得随机种族。"
 Hotkey=C
 [A0DS]
 Name="元素建筑"
@@ -308,7 +308,7 @@ Tip=|cffffcc00C|r频道
 Ubertip="引导强大的守护魔法。"
 Hotkey=C
 [A0GL]
-Name="沙漠竞赛"
+Name="沙漠种族"
 Tip="|cffFFD900选择沙漠平原|r"
 Ubertip="沙漠居民使用强大的生物和神秘的仪式来迷惑和战胜它的敌人。"
 Hotkey=C

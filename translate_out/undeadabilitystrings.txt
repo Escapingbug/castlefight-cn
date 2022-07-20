@@ -92,7 +92,7 @@ Researchhotkey=S
 [AUcb]
 Name=腐肉甲虫
 Tip=|cffffcc00C|rarion 甲虫 - [|cffffcc00Level [|cffffcc00C|r] 1|r],Carrion Beetles - [|cffffcc00Level 2|r],|cffffcc00C|rarion 甲虫 - [|cffffcc00Level 3|r]
-Ubertip="从目标尸体生成 <AUcb,DataA1> 甲壳虫。甲虫有 <ucs1,realHP> 生命值，并造成 <ucs1,mindmg1> - <ucs1,maxdmg1> 伤害。甲虫是永久性的，直到被杀死。|n<AUcb,DataE1> 甲虫的最大值。","从目标尸体中生成 <AUcb,DataA2> 甲虫。甲虫有 <ucs2,realHP> 生命值，并造成 <ucs2,mindmg1> - <ucs2,maxdmg1> 伤害，并且可以挖洞。甲虫是永久性的，直到被杀死。|n<AUcb,DataE2> 甲虫的最大值。","从目标尸体中生成 <AUcb,DataA3> 甲虫。甲虫有 <ucs3,realHP> 生命值，并造成 <ucs3,mindmg1> - <ucs3,maxdmg1> 伤害，并且可以挖洞。甲虫是永久性的，直到被杀死。|n<AUcb,DataE3> 甲虫的最大值。"
+Ubertip="从目标尸体生成 <AUcb,DataA1> 甲壳虫。甲虫有 <ucs1,realHP> 生命值，并造成 <ucs1,min伤害1> - <ucs1,max伤害1> 伤害。甲虫是永久性的，直到被杀死。|n<AUcb,DataE1> 甲虫的最大值。","从目标尸体中生成 <AUcb,DataA2> 甲虫。甲虫有 <ucs2,realHP> 生命值，并造成 <ucs2,min伤害1> - <ucs2,max伤害1> 伤害，并且可以挖洞。甲虫是永久性的，直到被杀死。|n<AUcb,DataE2> 甲虫的最大值。","从目标尸体中生成 <AUcb,DataA3> 甲虫。甲虫有 <ucs3,realHP> 生命值，并造成 <ucs3,min伤害1> - <ucs3,max伤害1> 伤害，并且可以挖洞。甲虫是永久性的，直到被杀死。|n<AUcb,DataE3> 甲虫的最大值。"
 Hotkey=C
 Researchtip="Learn |cffffcc00C|rarrion Beetles - [|cffffcc00Level %d|r]"
 Researchubertip="The Crypt Lord progenerates <AUcb,DataA1> Carrion Beetle from a target corpse to attack the Crypt Lord's enemies. Beetles are permanent, but only <AUcb,DataE1> can be controlled at a time. |n|n|cffffcc00Level 1|r - <ucs1,realHP> hit points, <ucs1,mindmg1> - <ucs1,maxdmg1> damage. |n|cffffcc00Level 2|r - <ucs2,realHP> hit points, <ucs2,mindmg1> - <ucs2,maxdmg1> damage, Beetles can burrow. |n|cffffcc00Level 3|r - <ucs3,realHP> hit points, <ucs3,mindmg1> - <ucs3,maxdmg1> damage, Beetles can burrow."

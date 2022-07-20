@@ -11,7 +11,7 @@ Ubertip="防御古。扎根于地面时，可以向附近的敌方单位投掷�
 [echm]
 Name=嵌合体
 Hotkey=C
-Tip=火车 [|cffffcc00C|r] 奇美拉
+Tip=训练 [|cffffcc00C|r] 奇美拉
 Ubertip="飞两头龙。可以学习腐蚀吐息。|n|n|cffffcc00攻击陆地单位。|r"
 [edoc]
 Name=利爪德鲁伊
@@ -86,7 +86,7 @@ Propernames=Kathris Starsong,Adora Nightshade,Mora Moonsinger,Felore Moonray,Ana
 Name=典狱长
 Hotkey=W
 Tip=召唤 [|cffffcc00W|r] 守望者
-Ubertip="狡猾的英雄，擅长进入和逃避战斗。可以学习闪现、刀扇、暗影打击和复仇。|n|n|cffffcc00攻击陆地单位。|r"
+Ubertip="狡猾的英雄，擅长进入和闪避战斗。可以学习闪现、刀扇、暗影打击和复仇。|n|n|cffffcc00攻击陆地单位。|r"
 Revivetip=Revive |cffffcc00W|rarden
 Awakentip=Revive |cffffcc00W|rarden
 Propernames=Alsa Iron-cell,The Iron Raven,Marin Bladewing,Shalis Darkhunter,Sira Moonwarden,Saithis,Malace Shade,Kiri Starstalker,Anaya Felgrove,Mirana Starlight,Felhala Starmoon,Drelanim Whisperwind,Cordana Felsong,Nalmeena Darkfollow
@@ -166,7 +166,7 @@ Ubertip="空中突击单位和施法者的守护者。训练角鹰兽、利爪�
 Name=嵌合体栖息地
 Hotkey=C
 Tip=创造 [|cffffcc00C|r] Chimaera Roost
-Ubertip="火车奇美拉。|n还包含腐蚀呼吸升级。"
+Ubertip="训练奇美拉。|n还包含腐蚀呼吸升级。"
 [emow]
 Name=月亮井
 Hotkey=M
@@ -177,7 +177,7 @@ Name=复仇的化身
 [emtg]
 Name=山巨人
 Hotkey=G
-Tip=火车山 [|cffffcc00G|r] 巨人
+Tip=训练山 [|cffffcc00G|r] 巨人
 Ubertip="庞大的近战单位，可以扰乱敌方攻击者并承受难以置信的惩罚。具有嘲讽和战争俱乐部的能力。可以学习硬化皮肤和抗性皮肤。|n|n|cffffcc00攻击陆地单位。|r"
 [efdr]
 Name=精灵龙
@@ -194,22 +194,22 @@ Name=树人
 Name="远古守护者"
 Hotkey=Q
 Tip="训练古代守护者"
-Ubertip="|n|cffFFFF80攻击：|r混乱 (|cffFFFF00550|r rng|r,|cffFFFF00 70|r dps)|n|cffFFFF80盔甲：|r中等 (|cffFFFF004|r)|n|cffFFFF80生命值：|cffFFFF001000|r|n|cffFFFF80能力：|r|n|n|cff80FF00自然光环|r|n为 160\350 范围内的所有友军单位提供最高 15\10 hp 再生|n|n|cff80FF00虚体|r|n有 20% 的几率躲避攻击|n|n|cff80FF00树芽菜|r|n远古守护者召唤 5 棵树环绕他的位置，保护他免受近战攻击。 3 秒后，树木变成树人攻击敌人|n|cff8080FF冷却时间：|r30|n|cff8080FF法力消耗：|r200"
+Ubertip="|n|cffFFFF80伤害类型：|r 混乱 (|cffFFFF00550|r 射程|r,|cffFFFF00 70|r 每秒伤害)|n|cffFFFF80护甲：|r中型 (|cffFFFF004|r)|n|cffFFFF80生命值：|cffFFFF001000|r|n|cffFFFF80能力：|r|n|n|cff80FF00自然光环|r|n为 160\350 范围内的所有友军单位提供最高 15\10 hp 再生|n|n|cff80FF00虚体|r|n有 20% 的几率躲避攻击|n|n|cff80FF00树芽菜|r|n远古守护者召唤 5 棵树环绕他的位置，保护他免受近战攻击。 3 秒后，树木变成树人攻击敌人|n|cff8080FF冷却时间：|r30|n|cff8080FF法力消耗：|r200"
 [e00B]
 Name="复仇之魂"
-Ubertip="|n|cffFFFF80攻击：|r魔法（|cffFFFF00近战|r，|cffFFFF00 37|r dps）|n|cffFFFF80盔甲：|r光 (|cffFFFF005|r)|n|cffFFFF80生命值：|cffFFFF00425|r|n|cffFFFF80能力：|r|n|n|cff80FF00腐蚀攻击|r|n攻击时，使被攻击单位的护甲降低 4 点，持续 1.5 秒|n|n|cff80FF00法术减少|r|n减少对该单位施放负面法术的持续时间，并使其免疫某些法术|n|n|cff80FF00逃避|r|n30% 几率躲避攻击|n|n|cff80FF00击杀治愈|r|n该单位每杀死一个敌人，就会获得 14% 的治疗。"
+Ubertip="|n|cffFFFF80伤害类型：|r魔法（|cffFFFF00近战|r，|cffFFFF00 37|r 每秒伤害）|n|cffFFFF80护甲：|r轻型 (|cffFFFF005|r)|n|cffFFFF80生命值：|cffFFFF00425|r|n|cffFFFF80能力：|r|n|n|cff80FF00腐蚀攻击|r|n攻击时，使被攻击单位的护甲降低 4 点，持续 1.5 秒|n|n|cff80FF00法术减少|r|n减少对该单位施放负面法术的持续时间，并使其免疫某些法术|n|n|cff80FF00闪避|r|n30% 几率躲避攻击|n|n|cff80FF00击杀治愈|r|n该单位每杀死一个敌人，就会获得 14% 的治疗。"
 Hotkey=Q
 Tip="培养复仇之魂"
 [e00A]
 Name="复仇的化身"
-Ubertip="|n|cffFFFF80攻击：|r魔法（|cffFFFF00近战|r，|cffFFFF00 77|r dps）|n|cffFFFF80盔甲：|r光 (|cffFFFF008|r)|n|cffFFFF80生命值：|cffFFFF00700|r|n|cffFFFF80能力：|r|n|n|cff80FF00法术减少|r|n减少对该单位施放负面法术的持续时间，并使其免疫某些法术|n|n|cff80FF00腐蚀攻击|r|n攻击时，使被攻击单位的护甲降低 7 点，持续 1.5 秒|n|n|cff80FF00逃避|r|n40% 几率躲避攻击|n|n|cff80FF00击杀治愈|r|n该单位每杀死一个敌人，就会获得 20% 的治疗。|n|n|cff80FF00复仇|r|n死亡后，该单位对其杀手造成 350 点混乱伤害。不会损坏建筑物。"
+Ubertip="|n|cffFFFF80伤害类型：|r魔法（|cffFFFF00近战|r，|cffFFFF00 77|r 每秒伤害）|n|cffFFFF80护甲：|r轻型 (|cffFFFF008|r)|n|cffFFFF80生命值：|cffFFFF00700|r|n|cffFFFF80能力：|r|n|n|cff80FF00法术减少|r|n减少对该单位施放负面法术的持续时间，并使其免疫某些法术|n|n|cff80FF00腐蚀攻击|r|n攻击时，使被攻击单位的护甲降低 7 点，持续 1.5 秒|n|n|cff80FF00闪避|r|n40% 几率躲避攻击|n|n|cff80FF00击杀治愈|r|n该单位每杀死一个敌人，就会获得 20% 的治疗。|n|n|cff80FF00复仇|r|n死亡后，该单位对其杀手造成 350 点混乱伤害。不会损坏建筑物。"
 Hotkey=Q
-Tip="复仇的火车阿凡达"
+Tip="复仇的训练阿凡达"
 [e009]
 Name="丛林守护者"
 Hotkey=Q
 Tip="训练丛林守护者"
-Ubertip="|n|cffFFFF80攻击：|r穿刺 (|cffFFFF00450|r rng|r,|cffFFFF00 50|r dps)|n|cffFFFF80盔甲：|r中等 (|cffFFFF005|r)|n|cffFFFF80生命值：|cffFFFF00800|r|n|cffFFFF80能力：|r|n|n|cff80FF00法术抗性|r|n丛林守护者受到的法术伤害降低 20%|n|n|cff80FF00自然之触|r|n治疗 150 hp 并为目标增加 3 点护甲|n|cff8080FF冷却时间：|r8|n|cff8080FF法力消耗：|r25|n|n|cff80FF00召唤树人|r|n用荆棘技能召唤 2 个树人（从受到的近战伤害中返回 10%）|n|cff8080FF冷却时间：|r25|n|cff8080FF法力消耗：|r100"
+Ubertip="|n|cffFFFF80攻击：|r穿刺 (|cffFFFF00450|r 射程|r,|cffFFFF00 50|r 每秒伤害)|n|cffFFFF80护甲：|r中型 (|cffFFFF005|r)|n|cffFFFF80生命值：|cffFFFF00800|r|n|cffFFFF80能力：|r|n|n|cff80FF00法术抗性|r|n丛林守护者受到的法术伤害降低 20%|n|n|cff80FF00自然之触|r|n治疗 150 hp 并为目标增加 3 点护甲|n|cff8080FF冷却时间：|r8|n|cff8080FF法力消耗：|r25|n|n|cff80FF00召唤树人|r|n用荆棘技能召唤 2 个树人（从受到的近战伤害中返回 10%）|n|cff8080FF冷却时间：|r25|n|cff8080FF法力消耗：|r100"
 [e008]
 Name="假"
 Hotkey=W
@@ -219,54 +219,54 @@ Ubertip=""
 Name="德鲁伊"
 Hotkey=Q
 Tip="训练德鲁伊"
-Ubertip="|n|cffFFFF80攻击：|r混乱 (|cffFFFF00375|r rng,|cffFFFF00 31|r dps)|n|cffFFFF80盔甲：|r无装甲 (|cffFFFF001|r)|n|cffFFFF80生命值：|cffFFFF00325|r|n|cffFFFF80能力：|r|n|n|cff80FF00纠缠|r|n缠住一个地面单位 5 秒，每秒造成 15 点伤害|n|cff8080FF冷却时间：|r14|n|cff8080FF法力消耗：|r30"
+Ubertip="|n|cffFFFF80伤害类型：|r 混乱 (|cffFFFF00375|r 射程,|cffFFFF00 31|r 每秒伤害)|n|cffFFFF80护甲：|r 无甲 (|cffFFFF001|r)|n|cffFFFF80生命值：|cffFFFF00325|r|n|cffFFFF80能力：|r|n|n|cff80FF00纠缠|r|n缠住一个地面单位 5 秒，每秒造成 15 点伤害|n|cff8080FF冷却时间：|r14|n|cff8080FF法力消耗：|r30"
 Casterupgradename=
 Casterupgradetip=
 [e006]
 Name="树妖"
 Hotkey=Q
-Tip="火车 树妖"
-Ubertip="|n|cffFFFF80攻击：|r穿刺 (|cffFFFF00400|r rng|r,|cffFFFF00 37|r dps)|n|cffFFFF80盔甲：|r中等 (|cffFFFF003|r)|n|cffFFFF80生命值：|cffFFFF00500|r|n|cffFFFF80能力：|r|n|n|cff80FF00自然之触|r|n治疗 75 点生命值并为目标增加 2 点护甲|n|cff8080FF冷却时间：|r20|n|cff8080FF法力消耗：|r35"
+Tip="训练 树妖"
+Ubertip="|n|cffFFFF80攻击：|r穿刺 (|cffFFFF00400|r 射程|r,|cffFFFF00 37|r 每秒伤害)|n|cffFFFF80护甲：|r中型 (|cffFFFF003|r)|n|cffFFFF80生命值：|cffFFFF00500|r|n|cffFFFF80能力：|r|n|n|cff80FF00自然之触|r|n治疗 75 点生命值并为目标增加 2 点护甲|n|cff8080FF冷却时间：|r20|n|cff8080FF法力消耗：|r35"
 [e005]
 Name="弩炮"
 Hotkey=Q
-Tip="火车弩炮"
-Ubertip="|n|cffFFFF80攻击：|r围城 (|cffFFFF00850|r rng,|cffFFFF00 31|r dps)|n|cffFFFF80盔甲：|r中等 (|cffFFFF003|r)|n|cffFFFF80生命值：|cffFFFF00500|r|n|cffFFFF80能力：|r|n|n|cff80FF00仅限地面|r|n该单位无法攻击飞行的敌人|n|n|cff80FF00线路损坏|r|n该单位的攻击命中目标后方 200.0 范围内的所有单位"
+Tip="训练弩炮"
+Ubertip="|n|cffFFFF80攻击：|r攻城 (|cffFFFF00850|r 射程,|cffFFFF00 31|r 每秒伤害)|n|cffFFFF80护甲：|r中型 (|cffFFFF003|r)|n|cffFFFF80生命值：|cffFFFF00500|r|n|cffFFFF80能力：|r|n|n|cff80FF00仅限地面|r|n该单位无法攻击飞行的敌人|n|n|cff80FF00线路损坏|r|n该单位的攻击命中目标后方 200.0 范围内的所有单位"
 [e003]
 Name="游侠"
 Hotkey=Q
-Tip="火车游侠"
-Ubertip="|n|cffFFFF80攻击：|r穿刺 (|cffFFFF00425|r rng,|cffFFFF00 62|r dps)|n|cffFFFF80盔甲：|r光 (|cffFFFF003|r)|n|cffFFFF80生命值：|cffFFFF00500|r|n|cffFFFF80能力：|r|n|n|cff80FF00多发|r|n同时向 3 个目标射击|n|n|cff80FF00逃避|r|n15% 几率躲避攻击"
+Tip="训练游侠"
+Ubertip="|n|cffFFFF80攻击：|r穿刺 (|cffFFFF00425|r 射程,|cffFFFF00 62|r 每秒伤害)|n|cffFFFF80护甲：|r轻型 (|cffFFFF003|r)|n|cffFFFF80生命值：|cffFFFF00500|r|n|cffFFFF80能力：|r|n|n|cff80FF00多发|r|n同时向 3 个目标射击|n|n|cff80FF00闪避|r|n15% 几率躲避攻击"
 [e004]
 Name="亚马逊"
 Hotkey=Q
-Tip="亚马逊火车"
-Ubertip="|n|cffFFFF80攻击：|r穿刺 (|cffFFFF00460|r rng,|cffFFFF00 100|r dps)|n|cffFFFF80盔甲：|r光 (|cffFFFF005|r)|n|cffFFFF80生命值：|cffFFFF00900|r|n|cffFFFF80能力：|r|n|n|cff80FF00免疫|r|n该单位免疫某些负面效果|n|n|cff80FF00传奇法术抗性|r|n对该单位造成的法术伤害降低 70%|n|n|cff80FF00多发|r|n同时向 7 个目标射击|n|n|cff80FF00逃避|r|n25% 几率躲避攻击"
+Tip="亚马逊训练"
+Ubertip="|n|cffFFFF80攻击：|r穿刺 (|cffFFFF00460|r 射程,|cffFFFF00 100|r 每秒伤害)|n|cffFFFF80护甲：|r轻型 (|cffFFFF005|r)|n|cffFFFF80生命值：|cffFFFF00900|r|n|cffFFFF80能力：|r|n|n|cff80FF00免疫|r|n该单位免疫某些负面效果|n|n|cff80FF00传奇法术抗性|r|n对该单位造成的法术伤害降低 70%|n|n|cff80FF00多发|r|n同时向 7 个目标射击|n|n|cff80FF00闪避|r|n25% 几率躲避攻击"
 [e001]
 Name="女猎手"
 Hotkey=Q
-Tip="火车女猎手"
-Ubertip="|n|cffFFFF80攻击：|r穿刺 (|cffFFFF00400|r rng,|cffFFFF00 27|r dps)|n|cffFFFF80盔甲：|r光 (|cffFFFF001|r)|n|cffFFFF80生命值：|cffFFFF00300|r|n|cffFFFF80能力：|r|n|n|cff80FF00逃避|r|n8% 几率躲避攻击"
+Tip="训练女猎手"
+Ubertip="|n|cffFFFF80攻击：|r穿刺 (|cffFFFF00400|r 射程,|cffFFFF00 27|r 每秒伤害)|n|cffFFFF80护甲：|r轻型 (|cffFFFF001|r)|n|cffFFFF80生命值：|cffFFFF00300|r|n|cffFFFF80能力：|r|n|n|cff80FF00闪避|r|n8% 几率躲避攻击"
 [e002]
 Name="投刃者"
 Hotkey=Q
 Tip="训练投刃者"
-Ubertip="|n|cffFFFF80攻击：|r围攻 (|cffFFFF001000|r rng,|cffFFFF00 26|r dps)|n|cffFFFF80盔甲：|r重 (|cffFFFF002|r)|n|cffFFFF80生命值：|cffFFFF00400|r|n|cffFFFF80能力：|r|n|n|cff80FF00仅限地面|r|n该单位无法攻击飞行的敌人|n|n|cff80FF00弹跳攻击|r|n该单位的攻击最多可击中 4 个敌人，每次弹跳造成的伤害降低 30%"
+Ubertip="|n|cffFFFF80伤害类型：|r 攻城 (|cffFFFF001000|r 射程,|cffFFFF00 26|r 每秒伤害)|n|cffFFFF80护甲：|r重型 (|cffFFFF002|r)|n|cffFFFF80生命值：|cffFFFF00400|r|n|cffFFFF80能力：|r|n|n|cff80FF00仅限地面|r|n该单位无法攻击飞行的敌人|n|n|cff80FF00弹跳攻击|r|n该单位的攻击最多可击中 4 个敌人，每次弹跳造成的伤害降低 30%"
 [e000]
 Name="精灵龙"
 Hotkey=Q
 Tip="训练精灵龙"
-Ubertip="|n|cffFFFF80攻击：|r魔法 (|cffFFFF00350|r rng,|cffFFFF00 28|r dps)|n|cffFFFF80盔甲：|r光 (|cffFFFF002|r)|n|cffFFFF80生命值：|cffFFFF00460|r|n|cffFFFF80能力：|r|n|n|cff80FF00飞行|r|n这个单位在飞|n|n|cff80FF00治愈|r|n治疗一个友军单位 200 点生命值|n|cff8080FF冷却时间：|r6|n|cff8080FF法力消耗：|r20|n|n|cff80FF00意见反馈|r|n每次攻击最多燃烧 25 点法力值，造成相同数量的伤害"
+Ubertip="|n|cffFFFF80伤害类型：|r魔法 (|cffFFFF00350|r 射程,|cffFFFF00 28|r 每秒伤害)|n|cffFFFF80护甲：|r轻型 (|cffFFFF002|r)|n|cffFFFF80生命值：|cffFFFF00460|r|n|cffFFFF80能力：|r|n|n|cff80FF00飞行|r|n这个单位在飞|n|n|cff80FF00治愈|r|n治疗一个友军单位 200 点生命值|n|cff8080FF冷却时间：|r6|n|cff8080FF法力消耗：|r20|n|n|cff80FF00反馈|r|n每次攻击最多燃烧 25 点法力值，造成相同数量的伤害"
 [e00F]
 Name="山巨人"
 Hotkey=Q
-Tip="火车山地巨人"
-Ubertip="|n|cffFFFF80攻击：|r普通（|cffFFFF00近战|r，|cffFFFF00 83|r dps）|n|cffFFFF80盔甲：|r强化 (|cffFFFF008|r)|n|cffFFFF80生命值：|cffFFFF001050|r|n|cffFFFF80能力：|r|n|n|cff80FF00抓树|r|n捡起附近的一棵树，增加其伤害并将其转化为攻城类型。可以用树攻击空中单位。持续 10 次命中|n|n|cff80FF00粉碎|r|n30% 几率在 175 范围内造成 200 点伤害|n|n|cff80FF00硬化皮肤|r|n山地巨人受到的伤害减少 30|n|n|cff80FF00抗性皮肤|r|n巨人法术抗性为 50%|n|n|cff80FF00嘲讽|r|n在 240 范围内迫使附近的敌人攻击山地巨人|n|cff8080FF冷却时间：|r8"
+Tip="训练山地巨人"
+Ubertip="|n|cffFFFF80攻击：|r普通（|cffFFFF00近战|r，|cffFFFF00 83|r 每秒伤害）|n|cffFFFF80盔甲：|r强化 (|cffFFFF008|r)|n|cffFFFF80生命值：|cffFFFF001050|r|n|cffFFFF80能力：|r|n|n|cff80FF00抓树|r|n捡起附近的一棵树，增加其伤害并将其转化为攻城类型。可以用树攻击空中单位。持续 10 次命中|n|n|cff80FF00粉碎|r|n30% 几率在 175 范围内造成 200 点伤害|n|n|cff80FF00硬化皮肤|r|n山地巨人受到的伤害减少 30|n|n|cff80FF00抗性皮肤|r|n巨人法术抗性为 50%|n|n|cff80FF00嘲讽|r|n在 240 范围内迫使附近的敌人攻击山地巨人|n|cff8080FF冷却时间：|r8"
 [e00J]
 Name="贤者德鲁伊"
 Hotkey=Q
 Tip="训练贤者德鲁伊"
-Ubertip="|n|cffFFFF80攻击：|r混乱 (|cffFFFF00375|r rng,|cffFFFF00 46|r dps)|n|cffFFFF80盔甲：|r无装甲 (|cffFFFF003|r)|n|cffFFFF80生命值：|cffFFFF00550|r|n|cffFFFF80能力：|r|n|n|cff80FF00质量纠缠|r|n缠绕最多 3 个地面单位，持续 6 秒，每秒造成 35 点伤害|n|cff8080FF冷却时间：|r14|n|cff8080FF法力消耗：|r35"
+Ubertip="|n|cffFFFF80伤害类型：|r 混乱 (|cffFFFF00375|r 射程,|cffFFFF00 46|r 每秒伤害)|n|cffFFFF80护甲：|r 无甲 (|cffFFFF003|r)|n|cffFFFF80生命值：|cffFFFF00550|r|n|cffFFFF80能力：|r|n|n|cff80FF00质量纠缠|r|n缠绕最多 3 个地面单位，持续 6 秒，每秒造成 35 点伤害|n|cff8080FF冷却时间：|r14|n|cff8080FF法力消耗：|r35"
 Casterupgradename=
 Casterupgradetip=
 [e00E]

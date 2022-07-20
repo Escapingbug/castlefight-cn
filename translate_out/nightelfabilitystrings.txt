@@ -265,7 +265,7 @@ Researchhotkey=L
 Bufftip=献祭
 Buffubertip="这个单位有献祭；附近的敌方地面单位会随着时间的推移受到伤害。"
 [AEev]
-Name=逃避
+Name=闪避
 Tip=闪避 - [|cffffcc00Level 1|r],闪避 - [|cffffcc00Level 2|r],闪避 - [|cffffcc00Level 3|r]
 Ubertip="给予 <AEev,DataA1,%>% 机会避免攻击。","给予 <AEev,DataA2,%>% 机会避免攻击。","给予 <AEev,DataA3,%>% 机会避免攻击。"
 Researchtip="Learn |cffffcc00E|rvasion - [|cffffcc00Level %d|r]"
@@ -298,7 +298,7 @@ Buffubertip="该单位已被纠缠根须击中；它不能移动并随着时间�
 [AEfn]
 Name=自然的力量
 Tip=|cffffcc00F|r自然之力 - [|cffffcc00Level [|cffffcc00F|r] 1|r],自然之力 - [|cffffcc00Level 2|r],|cffffcc00F|r自然之力 - [|cffffcc00Level 3|r]
-Ubertip="将一小块树转换为 <AEfn,DataA1> 树。树人有 <efon,realHP> 生命值并造成 <efon,mindmg1> - <efon,maxdmg1> 伤害。可以学习自然的祝福。|n持续 <AEfn,Dur1> 秒。|n|n|cffffcc00攻击陆地单位。|r","将大面积的树木转化为 <AEfn,DataA2> 树人。树人有 <efon,realHP> 生命值并造成 <efon,mindmg1> - <efon,maxdmg1> 伤害。可以学习自然的祝福。|n持续 <AEfn,Dur2> 秒。|n|n|cffffcc00攻击陆地单位。|r","将大面积的树木转化为 <AEfn,DataA3> 树人。树人有 <efon,realHP> 生命值并造成 <efon,mindmg1> - <efon,maxdmg1> 伤害。可以学习自然的祝福。|n持续 <AEfn,Dur3> 秒。|n|n|cffffcc00攻击陆地单位。|r"
+Ubertip="将一小块树转换为 <AEfn,DataA1> 树。树人有 <efon,realHP> 生命值并造成 <efon,min伤害1> - <efon,max伤害1> 伤害。可以学习自然的祝福。|n持续 <AEfn,Dur1> 秒。|n|n|cffffcc00攻击陆地单位。|r","将大面积的树木转化为 <AEfn,DataA2> 树人。树人有 <efon,realHP> 生命值并造成 <efon,min伤害1> - <efon,max伤害1> 伤害。可以学习自然的祝福。|n持续 <AEfn,Dur2> 秒。|n|n|cffffcc00攻击陆地单位。|r","将大面积的树木转化为 <AEfn,DataA3> 树人。树人有 <efon,realHP> 生命值并造成 <efon,min伤害1> - <efon,max伤害1> 伤害。可以学习自然的祝福。|n持续 <AEfn,Dur3> 秒。|n|n|cffffcc00攻击陆地单位。|r"
 Hotkey=F
 Researchtip="Learn |cffffcc00F|rorce of Nature - [|cffffcc00Level %d|r]"
 Researchubertip="Converts an area of trees into Treants. Treants have <efon,realHP> hit points and deal <efon,mindmg1> - <efon,maxdmg1> damage. Can learn Nature's Blessing. |n|n|cffffcc00Attacks land units.|r |n|n|cffffcc00Level 1|r - Raises <AEfn,DataA1> Treants for <AEfn,Dur1> seconds. |n|cffffcc00Level 2|r - Raises <AEfn,DataA2> Treants for <AEfn,Dur2> seconds. |n|cffffcc00Level 3|r - Raises <AEfn,DataA3> Treants for <AEfn,Dur3> seconds."
@@ -470,7 +470,7 @@ Ubertip="防止对该塔的任何近战攻击。"
 [A0DU]
 Name="NAT：自然之力"
 Tip=|cffffcc00F|r自然之力 - [|cffffcc00Level [|cffffcc00F|r] 1|r],自然之力 - [|cffffcc00Level 2|r],|cffffcc00F|r自然之力 - [|cffffcc00Level 3|r]
-Ubertip="将一小块树转换为 <AEfn,DataA1> 树。树人有 <efon,realHP> 生命值并造成 <efon,mindmg1> - <efon,maxdmg1> 伤害。可以学习自然的祝福。|n持续 <AEfn,Dur1> 秒。|n|n|cffffcc00攻击陆地单位。|r","将大面积的树木转化为 <AEfn,DataA2> 树人。树人有 <efon,realHP> 生命值并造成 <efon,mindmg1> - <efon,maxdmg1> 伤害。可以学习自然的祝福。|n持续 <AEfn,Dur2> 秒。|n|n|cffffcc00攻击陆地单位。|r","将大面积的树木转化为 <AEfn,DataA3> 树人。树人有 <efon,realHP> 生命值并造成 <efon,mindmg1> - <efon,maxdmg1> 伤害。可以学习自然的祝福。|n持续 <AEfn,Dur3> 秒。|n|n|cffffcc00攻击陆地单位。|r"
+Ubertip="将一小块树转换为 <AEfn,DataA1> 树。树人有 <efon,realHP> 生命值并造成 <efon,min伤害1> - <efon,max伤害1> 伤害。可以学习自然的祝福。|n持续 <AEfn,Dur1> 秒。|n|n|cffffcc00攻击陆地单位。|r","将大面积的树木转化为 <AEfn,DataA2> 树人。树人有 <efon,realHP> 生命值并造成 <efon,min伤害1> - <efon,max伤害1> 伤害。可以学习自然的祝福。|n持续 <AEfn,Dur2> 秒。|n|n|cffffcc00攻击陆地单位。|r","将大面积的树木转化为 <AEfn,DataA3> 树人。树人有 <efon,realHP> 生命值并造成 <efon,min伤害1> - <efon,max伤害1> 伤害。可以学习自然的祝福。|n持续 <AEfn,Dur3> 秒。|n|n|cffffcc00攻击陆地单位。|r"
 Hotkey=F
 Researchtip="Learn |cffffcc00F|rorce of Nature - [|cffffcc00Level %d|r]"
 Researchubertip="Converts an area of trees into Treants. Treants have <efon,realHP> hit points and deal <efon,mindmg1> - <efon,maxdmg1> damage. Can learn Nature's Blessing. |n|n|cffffcc00Attacks land units.|r |n|n|cffffcc00Level 1|r - Raises <AEfn,DataA1> Treants for <AEfn,Dur1> seconds. |n|cffffcc00Level 2|r - Raises <AEfn,DataA2> Treants for <AEfn,Dur2> seconds. |n|cffffcc00Level 3|r - Raises <AEfn,DataA3> Treants for <AEfn,Dur3> seconds."
@@ -514,7 +514,7 @@ Tip=硬化皮肤
 Ubertip="<Assk,DataC1> 伤害减少对山地巨人的所有攻击。攻击不能低于 <Assk,DataB1> 伤害。"
 Hotkey=K
 [A05V]
-Name="CHA：羽毛恶魔（荆棘光环）"
+Name="CHA：大恶魔（荆棘光环）"
 Tip=荆棘灵气 - [|cffffcc00Level 1|r],荆棘灵气 - [|cffffcc00Level 2|r],荆棘灵气 - [|cffffcc00Level 3|r]
 Ubertip="为附近友军单位提供伤害护盾的光环，对敌方单位造成 <AEah,DataA1,%>% 的近战攻击伤害。","为附近友军单位提供伤害护盾的光环，造成 <AEah ,DataA2,%>% 一个敌方单位的近战攻击伤害返回给它。","给附近的友方单位一个伤害护盾的光环，它可以将一个敌方单位的近战攻击伤害的 <AEah,DataA3,%>% 返还给它它。"
 Researchtip="Learn Tho|cffffcc00r|rns Aura - [|cffffcc00Level %d|r]"
@@ -558,7 +558,7 @@ Researchhotkey=E
 [A07V]
 Name=月刃
 Tip="恢复光环"
-Ubertip="|cffFFFF80能力：|cffFFFF00恢复区|r|n在 650 范围内恢复附近友军单位的生命值，并在 700 范围内以 2.5 hp/s 的速度修复附近的建筑物。修复效果堆栈。"
+Ubertip="|cffFFFF80能力：|cffFFFF00恢复区|r|n在 650 范围内恢复附近友军单位的生命值，并在 700 范围内以 2.5 生命值每秒 的速度修复附近的建筑物。修复效果堆栈。"
 [A07W]
 Name=月刃
 Tip="光射线"
@@ -598,7 +598,7 @@ Ubertip="每秒造成 25 点伤害，并使攻击和移动速度降低 60%。持
 [A09U]
 Name="能量爆发_"
 Tip="能量爆发"
-Ubertip="该单位的攻击弹跳 2 次，每次弹跳造成的伤害减少 0.3。|n这座塔受到静电防护罩的保护，其攻击者可能会被闪电放电（80 dmg）损坏。"
+Ubertip="该单位的攻击弹跳 2 次，每次弹跳造成的伤害减少 0.3。|n这座塔受到静电防护罩的保护，其攻击者可能会被闪电放电（80 伤害）损坏。"
 [A09Z]
 Name=硬化皮肤
 Tip=硬化皮肤

@@ -197,40 +197,40 @@ Casterupgradetip="- Ethereal Form|n- Spirit Link","- Ethereal Form|n- Spirit Lin
 [o007]
 Name="科多"
 Hotkey=Q
-Tip="火车 科多兽"
-Ubertip="|n|cffFFFF80攻击：|r穿刺 (|cffFFFF00近战|r,|cffFFFF00 24|r dps)|n|cffFFFF80盔甲：|r光 (|cffFFFF006|r)|n|cffFFFF80生命值：|cffFFFF001000|r"
+Tip="训练 科多兽"
+Ubertip="|n|cffFFFF80攻击：|r穿刺 (|cffFFFF00近战|r,|cffFFFF00 24|r 每秒伤害)|n|cffFFFF80护甲：|r轻型 (|cffFFFF006|r)|n|cffFFFF80生命值：|cffFFFF001000|r"
 [o008]
 Name="进攻型科多兽骑士"
 Hotkey=Q
 Tip="训练进攻型科多兽骑士"
-Ubertip="|n|cffFFFF80攻击：|r穿刺 (|cffFFFF00320|r rng,|cffFFFF00 33|r dps)|n|cffFFFF80盔甲：|r光 (|cffFFFF007|r)|n|cffFFFF80生命值：|cffFFFF001200|r|n|cffFFFF80能力：|r|n|n|cff80FF00近战伤害光环|r|n900范围内友军近战单位的伤害提高30%"
+Ubertip="|n|cffFFFF80攻击：|r穿刺 (|cffFFFF00320|r 射程,|cffFFFF00 33|r 每秒伤害)|n|cffFFFF80护甲：|r轻型 (|cffFFFF007|r)|n|cffFFFF80生命值：|cffFFFF001200|r|n|cffFFFF80能力：|r|n|n|cff80FF00近战伤害光环|r|n900范围内友军近战单位的伤害提高30%"
 [o009]
 Name="飞龙骑士"
 Hotkey=Q
-Tip="火车飞龙骑士"
-Ubertip="|n|cffFFFF80攻击：|r穿刺 (|cffFFFF00400|r rng,|cffFFFF00 30|r dps)|n|cffFFFF80盔甲：|r无装甲 (|cffFFFF002|r)|n|cffFFFF80生命值：|cffFFFF00440|r|n|cffFFFF80能力：|r|n|n|cff80FF00飞行|r|n这个单位在飞|n|n|cff80FF00轻微毒药攻击|r|n该单位的攻击会使敌人中毒，使其移动速度和攻击速度降低 20%，每秒造成 4 点伤害。毒药持续 3 秒。"
+Tip="训练飞龙骑士"
+Ubertip="|n|cffFFFF80攻击：|r穿刺 (|cffFFFF00400|r 射程,|cffFFFF00 30|r 每秒伤害)|n|cffFFFF80护甲：|r 无甲 (|cffFFFF002|r)|n|cffFFFF80生命值：|cffFFFF00440|r|n|cffFFFF80能力：|r|n|n|cff80FF00飞行|r|n这个单位在飞|n|n|cff80FF00轻微毒药攻击|r|n该单位的攻击会使敌人中毒，使其移动速度和攻击速度降低 20%，每秒造成 4 点伤害。毒药持续 3 秒。"
 [o003]
 Name="萨满"
 Hotkey=Q
 Tip="训练萨满"
-Ubertip="|n|cffFFFF80攻击：|r魔法 (|cffFFFF00350|r rng,|cffFFFF00 26|r dps)|n|cffFFFF80盔甲：|r无装甲 (|cffFFFF001|r)|n|cffFFFF80生命值：|cffFFFF00340|r|n|cffFFFF80能力：|r|n|n|cff80FF00萨满迷|r|n增加一个友军4点护甲，伤害提高30%。 buff持续30秒。不与十字军/圣骑士的祝福叠加。|n|cff8080FF冷却时间：|r6|n|cff8080FF"
+Ubertip="|n|cffFFFF80伤害类型：|r魔法 (|cffFFFF00350|r 射程,|cffFFFF00 26|r 每秒伤害)|n|cffFFFF80护甲：|r 无甲 (|cffFFFF001|r)|n|cffFFFF80生命值：|cffFFFF00340|r|n|cffFFFF80能力：|r|n|n|cff80FF00萨满迷|r|n增加一个友军4点护甲，伤害提高30%。 buff持续30秒。不与十字军/圣骑士的祝福叠加。|n|cff8080FF冷却时间：|r6|n|cff8080FF"
 Casterupgradename=
 Casterupgradetip=
 [o004]
 Name="老兵咕噜"
 Hotkey=Q
 Tip="训练老兵咕噜"
-Ubertip="|n|cffFFFF80攻击：|r普通（|cffFFFF00近战|r，|cffFFFF00 30|r dps）|n|cffFFFF80盔甲：|r重 (|cffFFFF006|r)|n|cffFFFF80生命值：|cffFFFF00575|r|n|cffFFFF80能力：|r|n|n|cff80FF00致命一击|r|n每次攻击有 25% 几率造成 2 倍正常伤害"
+Ubertip="|n|cffFFFF80攻击：|r普通（|cffFFFF00近战|r，|cffFFFF00 30|r 每秒伤害）|n|cffFFFF80护甲：|r重型 (|cffFFFF006|r)|n|cffFFFF80生命值：|cffFFFF00575|r|n|cffFFFF80能力：|r|n|n|cff80FF00致命一击|r|n每次攻击有 25% 几率造成 2 倍正常伤害"
 [o005]
 Name="斧王"
 Hotkey=Q
 Tip="训练斧王"
-Ubertip="|n|cffFFFF80攻击：|r普通（|cffFFFF00近战|r，|cffFFFF00 65|r dps）|n|cffFFFF80盔甲：|r重型 (|cffFFFF0010|r)|n|cffFFFF80生命值：|cffFFFF001000|r|n|cffFFFF80能力：|r|n|n|cff80FF00致命一击|r|n每次攻击有 30% 几率造成 3 倍正常伤害|n|n|cff80FF00粉碎|r|n每次攻击有 35% 的几率对 200 范围内的所有敌人造成 130 点伤害"
+Ubertip="|n|cffFFFF80攻击：|r普通（|cffFFFF00近战|r，|cffFFFF00 65|r 每秒伤害）|n|cffFFFF80护甲：|r重型 (|cffFFFF0010|r)|n|cffFFFF80生命值：|cffFFFF001000|r|n|cffFFFF80能力：|r|n|n|cff80FF00致命一击|r|n每次攻击有 30% 几率造成 3 倍正常伤害|n|n|cff80FF00粉碎|r|n每次攻击有 35% 的几率对 200 范围内的所有敌人造成 130 点伤害"
 [o006]
 Name="防御科多兽骑手"
 Hotkey=Q
 Tip="训练防御科多兽骑士"
-Ubertip="|n|cffFFFF80攻击：|r穿刺 (|cffFFFF00320|r rng,|cffFFFF00 33|r dps)|n|cffFFFF80盔甲：|r光 (|cffFFFF007|r)|n|cffFFFF80生命值：|cffFFFF001200|r|n|cffFFFF80能力：|r|n|n|cff80FF00护甲光环|r|n增加 900 范围内友军 4 点护甲"
+Ubertip="|n|cffFFFF80攻击：|r穿刺 (|cffFFFF00320|r 射程,|cffFFFF00 33|r 每秒伤害)|n|cffFFFF80护甲：|r轻型 (|cffFFFF007|r)|n|cffFFFF80生命值：|cffFFFF001200|r|n|cffFFFF80能力：|r|n|n|cff80FF00护甲光环|r|n增加 900 范围内友军 4 点护甲"
 [o000]
 Name="防空塔"
 Hotkey=Y
@@ -239,29 +239,29 @@ Ubertip="|cffFFAC00基地防御|r：|n这是保护关键位置的塔。|n|n|cffF
 [o001]
 Name="弹射"
 Hotkey=Q
-Tip="火车弹射器"
-Ubertip="|n|cffFFFF80攻击：|r围城 (|cffFFFF001000|r rng,|cffFFFF00 27|r dps)|n|cffFFFF80盔甲：|r中等 (|cffFFFF005|r)|n|cffFFFF80生命值：|cffFFFF00475|r|n|cffFFFF80能力：|r|n|n|cff80FF00仅限地面|r|n该单位无法攻击飞行的敌人|n|n|cff80FF00飞溅伤害|r|n该单位的攻击会命中目标周围 160 范围内的所有单位。距离目标越远的单位受到的伤害越少|n|n|cff80FF00燃烧弹药|r|n这些单位的攻击会造成 225 范围的燃烧，持续 2.5 秒，每秒对该区域的地面单位造成 48 点伤害"
+Tip="训练弹射器"
+Ubertip="|n|cffFFFF80攻击：|r攻城 (|cffFFFF001000|r 射程,|cffFFFF00 27|r 每秒伤害)|n|cffFFFF80护甲：|r中型 (|cffFFFF005|r)|n|cffFFFF80生命值：|cffFFFF00475|r|n|cffFFFF80能力：|r|n|n|cff80FF00仅限地面|r|n该单位无法攻击飞行的敌人|n|n|cff80FF00飞溅伤害|r|n该单位的攻击会命中目标周围 160 范围内的所有单位。距离目标越远的单位受到的伤害越少|n|n|cff80FF00燃烧弹药|r|n这些单位的攻击会造成 225 范围的燃烧，持续 2.5 秒，每秒对该区域的地面单位造成 48 点伤害"
 [o002]
 Name="咕噜声"
 Hotkey=Q
-Tip="火车咕噜"
-Ubertip="|n|cffFFFF80攻击：|r普通（|cffFFFF00近战|r，|cffFFFF00 18|r dps）|n|cffFFFF80盔甲：|r重 (|cffFFFF004|r)|n|cffFFFF80生命值：|cffFFFF00325|r"
+Tip="训练咕噜"
+Ubertip="|n|cffFFFF80攻击：|r普通（|cffFFFF00近战|r，|cffFFFF00 18|r 每秒伤害）|n|cffFFFF80护甲：|r重型 (|cffFFFF004|r)|n|cffFFFF80生命值：|cffFFFF00325|r"
 [o00B]
 Name="破法者科多兽骑士"
 Hotkey=Q
 Tip="训练 Spellbreaker Kodo Rider"
-Ubertip="|n|cffFFFF80攻击：|r穿刺 (|cffFFFF00320|r rng,|cffFFFF00 33|r dps)|n|cffFFFF80盔甲：|r光 (|cffFFFF007|r)|n|cffFFFF80生命值：|cffFFFF001200|r|n|cffFFFF80能力：|r|n|n|cff80FF00法术抗力|r|n对该单位造成的法术伤害降低 70%"
+Ubertip="|n|cffFFFF80攻击：|r穿刺 (|cffFFFF00320|r 射程,|cffFFFF00 33|r 每秒伤害)|n|cffFFFF80护甲：|r轻型 (|cffFFFF007|r)|n|cffFFFF80生命值：|cffFFFF001200|r|n|cffFFFF80能力：|r|n|n|cff80FF00法术抗力|r|n对该单位造成的法术伤害降低 70%"
 [o00A]
 Name="冰巨魔巫医"
 Hotkey=Q
-Tip="火车冰巨魔巫医"
-Ubertip="|n|cffFFFF80攻击：|r魔法 (|cffFFFF00370|r rng,|cffFFFF00 48|r dps)|n|cffFFFF80盔甲：|r光 (|cffFFFF003|r)|n|cffFFFF80生命值：|cffFFFF00650|r|n|cffFFFF80能力：|r|n|n|cff80FF00冰冷攻击|r|n所有被击中的单位都会被冰冻 5 秒|n|n|cff80FF00冰霜攻击|r|n对地面单位和建筑的每次攻击有 10% 的几率将目标冻结在地面上 6 秒，每秒造成 20 点伤害|n|n|cff80FF00冰霜盔甲|r|n对一名盟友施放冰霜护甲，获得 7 点护甲加成。所有击中装甲单位的近战单位都会被冰缓 6 秒。护甲持续 45 秒|n|cff8080FF冷却时间：|r8|n|cff8080FF法力消耗：|r35"
+Tip="训练冰巨魔巫医"
+Ubertip="|n|cffFFFF80伤害类型：|r魔法 (|cffFFFF00370|r 射程,|cffFFFF00 48|r 每秒伤害)|n|cffFFFF80护甲：|r轻型 (|cffFFFF003|r)|n|cffFFFF80生命值：|cffFFFF00650|r|n|cffFFFF80能力：|r|n|n|cff80FF00冰冷攻击|r|n所有被击中的单位都会被冰冻 5 秒|n|n|cff80FF00冰霜攻击|r|n对地面单位和建筑的每次攻击有 10% 的几率将目标冻结在地面上 6 秒，每秒造成 20 点伤害|n|n|cff80FF00冰霜盔甲|r|n对一名盟友施放冰霜护甲，获得 7 点护甲加成。所有击中装甲单位的近战单位都会被冰缓 6 秒。护甲持续 45 秒|n|cff8080FF冷却时间：|r8|n|cff8080FF法力消耗：|r35"
 Casterupgradename=
 Casterupgradetip=
 [o00F]
 Name="粗壮的萨满"
 Hotkey=Q
 Tip="训练粗壮萨满"
-Ubertip="|n|cffFFFF80攻击：|r魔法 (|cffFFFF00350|r rng,|cffFFFF00 43|r dps)|n|cffFFFF80盔甲：|r无装甲 (|cffFFFF002|r)|n|cffFFFF80生命值：|cffFFFF00420|r|n|cffFFFF80能力：|r|n|n|cff80FF00萨满迷|r|n增加一个友军5点护甲，伤害提高45%。 buff持续30秒。不与十字军/圣骑士的祝福叠加。|n|cff8080FF冷却时间：|r6|n|ncff80FF00法术抗性：25%"
+Ubertip="|n|cffFFFF80伤害类型：|r魔法 (|cffFFFF00350|r 射程,|cffFFFF00 43|r 每秒伤害)|n|cffFFFF80护甲：|r 无甲 (|cffFFFF002|r)|n|cffFFFF80生命值：|cffFFFF00420|r|n|cffFFFF80能力：|r|n|n|cff80FF00萨满迷|r|n增加一个友军5点护甲，伤害提高45%。 buff持续30秒。不与十字军/圣骑士的祝福叠加。|n|cff8080FF冷却时间：|r6|n|ncff80FF00法术抗性：25%"
 Casterupgradename=
 Casterupgradetip=

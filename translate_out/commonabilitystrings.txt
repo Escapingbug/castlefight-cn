@@ -42,7 +42,7 @@ Tip=|cffffcc00R|r小牛皮
 Hotkey=R
 [Bdet]
 Bufftip=检测到
-Buffubertip="检测到此单元；敌方玩家可以看到它。"
+Buffubertip="检测到该单位；敌方玩家可以看到它。"
 [Bvul]
 Bufftip=刀枪不入
 Buffubertip="这个单位是无懈可击的；它不会受到攻击的伤害，也不会被法术作为目标。"
@@ -51,7 +51,7 @@ Bufftip=速度奖励
 Buffubertip="这个单位有速度加成；它比平时移动得更快。"
 [Bfro]
 Bufftip=减慢
-Buffubertip="本机减速；它的移动速度比平时慢。"
+Buffubertip="该单位减速；它的移动速度比平时慢。"
 [Arep]
 Name=修理
 Tip=|cffffcc00R|r修复
@@ -99,7 +99,7 @@ Bufftip=目瞪口呆
 Buffubertip="这个单位被惊呆了；它不能移动、攻击或施法。"
 [BPSE]
 Bufftip=目瞪口呆
-Buffubertip="本机不会移动。"
+Buffubertip="该单位不会移动。"
 [Xbdt]
 EditorName=Reveal (Effect)
 [Xbli]
@@ -108,13 +108,13 @@ EditorName=Blight (Effect)
 EditorName=Hero Dissipate (Effect)
 [B005]
 Bufftip=夺魂
-Buffubertip="本机不会移动。"
+Buffubertip="该单位不会移动。"
 [B029]
 Bufftip=减慢
-Buffubertip="本机减速；它的移动速度比平时慢。"
+Buffubertip="该单位减速；它的移动速度比平时慢。"
 [B00D]
 Bufftip=停滞
 Buffubertip=这个单位不能移动。
 [B00B]
 Bufftip=虚拟即时杀戮
-Buffubertip="本机不会移动。"
+Buffubertip="该单位不会移动。"

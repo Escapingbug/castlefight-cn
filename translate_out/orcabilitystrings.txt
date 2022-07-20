@@ -83,7 +83,7 @@ Buffubertip="这个单位是妖术的；它已经变成了一个小动物。"
 [AOsw]
 Name=毒蛇守卫
 Tip=Serpent [|cffffcc00W|r] 守卫 - [|cffffcc00Level 1|r],Serpent [|cffffcc00W|r] 守卫 - [|cffffcc00Level 2|r],Serpent [|cffffcc00W|r] 守卫 - [|cffffcc00Level 3|r]
-Ubertip="召唤一个无法移动的蛇形守卫攻击暗影猎手的敌人。守卫有 <osp1,realHP> 生命值，免疫魔法，并造成 <osp1,mindmg1> - <osp1,maxdmg1> 伤害。|n持续 <AOsw,Dur1> 秒。|n|n|cffffcc00攻击陆地和空中单位。|r","召唤一个无法移动的蛇形守卫攻击暗影猎手的敌人。守卫有 <osp2,realHP> 生命值，免疫魔法，并造成 <osp2,mindmg1> - <osp2,maxdmg1> 伤害。|n持续 <AOsw,Dur1> 秒。|n|n|cffffcc00攻击陆地和空中单位。|r","召唤一个无法移动的蛇形守卫攻击暗影猎手的敌人。守卫有 <osp3,realHP> 生命值，免疫魔法，并造成 <osp3,mindmg1> - <osp3,maxdmg1> 伤害。|n持续 <AOsw,Dur1> 秒。|n|n|cffffcc00攻击陆地和空中单位。|r"
+Ubertip="召唤一个无法移动的蛇形守卫攻击暗影猎手的敌人。守卫有 <osp1,realHP> 生命值，免疫魔法，并造成 <osp1,min伤害1> - <osp1,max伤害1> 伤害。|n持续 <AOsw,Dur1> 秒。|n|n|cffffcc00攻击陆地和空中单位。|r","召唤一个无法移动的蛇形守卫攻击暗影猎手的敌人。守卫有 <osp2,realHP> 生命值，免疫魔法，并造成 <osp2,min伤害1> - <osp2,max伤害1> 伤害。|n持续 <AOsw,Dur1> 秒。|n|n|cffffcc00攻击陆地和空中单位。|r","召唤一个无法移动的蛇形守卫攻击暗影猎手的敌人。守卫有 <osp3,realHP> 生命值，免疫魔法，并造成 <osp3,min伤害1> - <osp3,max伤害1> 伤害。|n持续 <AOsw,Dur1> 秒。|n|n|cffffcc00攻击陆地和空中单位。|r"
 Hotkey=W
 Researchtip="Learn Serpent |cffffcc00W|rard - [|cffffcc00Level %d|r]"
 Researchubertip="Summons an immobile serpentine ward to attack the Shadow Hunter's enemies. The ward is immune to magic. |nLasts <AOsw,Dur1> seconds. |n|n|cffffcc00Attacks land and air units.|r |n|n|cffffcc00Level 1|r - <osp1,realHP> hit points, <osp1,mindmg1> - <osp1,maxdmg1> damage. |n|cffffcc00Level 2|r - <osp2,realHP> hit points, <osp2,mindmg1> - <osp2,maxdmg1> damage. |n|cffffcc00Level 3|r - <osp3,realHP> hit points, <osp3,mindmg1> - <osp3,maxdmg1> damage."
@@ -293,7 +293,7 @@ Researchhotkey=F
 [AOsf]
 Name=野性精神
 Tip=野性精神|cffffcc00t|r - [|cffffcc00Level 1|r],野性精神|cffffcc00t|r - [|cffffcc00Level 2|r],野性精神|cffffcc00t|r - [|cffffcc003级|r]
-Ubertip="召唤<AOsf,DataB1>精灵狼同伴。每只狼都有 <osw1,realHP> 生命值并造成 <osw1,mindmg1> - <osw1,maxdmg1> 伤害。|n持续 <AOsf,Dur1> 秒。|n|n|cffffcc00攻击陆地单位。|r","召唤 <AOsf,DataB2> 具有暴击的狼灵伙伴。每只狼都有 <osw2,realHP> 生命值并造成 <osw2,mindmg1> - <osw2,maxdmg1> 伤害。|n持续 <AOsf,Dur2> 秒。|n|n|cffffcc00攻击陆地单位。|r","召唤 <AOsf,DataB3> 具有致命一击且在攻击前不可见的狼灵伙伴。每只狼都有 <osw3,realHP> 生命值并造成 <osw3,mindmg1> - <osw3,maxdmg1> 伤害。|n持续 <AOsf,Dur3> 秒。|n|n|cffffcc00攻击陆地单位。|r"
+Ubertip="召唤<AOsf,DataB1>精灵狼同伴。每只狼都有 <osw1,realHP> 生命值并造成 <osw1,min伤害1> - <osw1,max伤害1> 伤害。|n持续 <AOsf,Dur1> 秒。|n|n|cffffcc00攻击陆地单位。|r","召唤 <AOsf,DataB2> 具有暴击的狼灵伙伴。每只狼都有 <osw2,realHP> 生命值并造成 <osw2,min伤害1> - <osw2,max伤害1> 伤害。|n持续 <AOsf,Dur2> 秒。|n|n|cffffcc00攻击陆地单位。|r","召唤 <AOsf,DataB3> 具有致命一击且在攻击前不可见的狼灵伙伴。每只狼都有 <osw3,realHP> 生命值并造成 <osw3,min伤害1> - <osw3,max伤害1> 伤害。|n持续 <AOsf,Dur3> 秒。|n|n|cffffcc00攻击陆地单位。|r"
 Researchtip="Learn Feral Spiri|cffffcc00t|r - [|cffffcc00Level %d|r]."
 Researchubertip="Summons <AOsf,DataB1> Spirit Wolves to fight the Far Seer's enemies. |nLasts <AOsf,Dur1> seconds. |n|n|cffffcc00Level 1|r - <osw1,realHP> hit points, <osw1,mindmg1> - <osw1,maxdmg1> damage. |n|cffffcc00Level 2|r - <osw2,realHP> hit points, <osw2,mindmg1> - <osw2,maxdmg1> damage and Critical Strike. |n|cffffcc00Level 3|r - <osw3,realHP> hit points, <osw3,mindmg1> - <osw3,maxdmg1> damage, Critical Strike and Invisibility."
 Hotkey=T
@@ -396,7 +396,7 @@ Researchhotkey=E
 [A0BU]
 Name="NAT：丛林守护者（召唤树人）"
 Tip=野性精神|cffffcc00t|r - [|cffffcc00Level 1|r],野性精神|cffffcc00t|r - [|cffffcc00Level 2|r],野性精神|cffffcc00t|r - [|cffffcc003级|r]
-Ubertip="召唤<AOsf,DataB1>精灵狼同伴。每只狼都有 <osw1,realHP> 生命值并造成 <osw1,mindmg1> - <osw1,maxdmg1> 伤害。|n持续 <AOsf,Dur1> 秒。|n|n|cffffcc00攻击陆地单位。|r","召唤 <AOsf,DataB2> 具有暴击的狼灵伙伴。每只狼都有 <osw2,realHP> 生命值并造成 <osw2,mindmg1> - <osw2,maxdmg1> 伤害。|n持续 <AOsf,Dur2> 秒。|n|n|cffffcc00攻击陆地单位。|r","召唤 <AOsf,DataB3> 具有致命一击且在攻击前不可见的狼灵伙伴。每只狼都有 <osw3,realHP> 生命值并造成 <osw3,mindmg1> - <osw3,maxdmg1> 伤害。|n持续 <AOsf,Dur3> 秒。|n|n|cffffcc00攻击陆地单位。|r"
+Ubertip="召唤<AOsf,DataB1>精灵狼同伴。每只狼都有 <osw1,realHP> 生命值并造成 <osw1,min伤害1> - <osw1,max伤害1> 伤害。|n持续 <AOsf,Dur1> 秒。|n|n|cffffcc00攻击陆地单位。|r","召唤 <AOsf,DataB2> 具有暴击的狼灵伙伴。每只狼都有 <osw2,realHP> 生命值并造成 <osw2,min伤害1> - <osw2,max伤害1> 伤害。|n持续 <AOsf,Dur2> 秒。|n|n|cffffcc00攻击陆地单位。|r","召唤 <AOsf,DataB3> 具有致命一击且在攻击前不可见的狼灵伙伴。每只狼都有 <osw3,realHP> 生命值并造成 <osw3,min伤害1> - <osw3,max伤害1> 伤害。|n持续 <AOsf,Dur3> 秒。|n|n|cffffcc00攻击陆地单位。|r"
 Researchtip="Learn Feral Spiri|cffffcc00t|r - [|cffffcc00Level %d|r]."
 Researchubertip="Summons <AOsf,DataB1> Spirit Wolves to fight the Far Seer's enemies. |nLasts <AOsf,Dur1> seconds. |n|n|cffffcc00Level 1|r - <osw1,realHP> hit points, <osw1,mindmg1> - <osw1,maxdmg1> damage. |n|cffffcc00Level 2|r - <osw2,realHP> hit points, <osw2,mindmg1> - <osw2,maxdmg1> damage and Critical Strike. |n|cffffcc00Level 3|r - <osw3,realHP> hit points, <osw3,mindmg1> - <osw3,maxdmg1> damage, Critical Strike and Invisibility."
 Hotkey=T
@@ -517,7 +517,7 @@ Researchhotkey=E
 [A09A]
 Name="检查范围"
 Tip="显示范围","显示范围范围","显示范围范围","显示范围范围","显示范围范围","显示范围范围""
-Ubertip="显示这个建筑的范围","显示你这个塔的气场范围。 |cffFFFF00(600 rng)|r","显示这座塔的灵气范围。|n|cffFFFF00(700 rng)|r","显示这座塔的气场范围。|n|cffFFFF00(800 rng)|r","显示这座塔的灵气范围。|n|cffFFFF00(1000 rng)|r","显示这座塔的灵气范围。|n|cffFFFF00(1200 发)|r"
+Ubertip="显示这个建筑的范围","显示你这个塔的气场范围。 |cffFFFF00(600 射程)|r","显示这座塔的灵气范围。|n|cffFFFF00(700 射程)|r","显示这座塔的气场范围。|n|cffFFFF00(800 射程)|r","显示这座塔的灵气范围。|n|cffFFFF00(1000 射程)|r","显示这座塔的灵气范围。|n|cffFFFF00(1200 发)|r"
 Hotkey=B
 [A09V]
 Name=战鼓
@@ -553,7 +553,7 @@ Ubertip="每秒造成 <Aven,DataA1> 毒伤害。|n持续 <Aven,Dur1> 秒。"
 [A02S]
 Name=野性精神
 Tip=野性精神|cffffcc00t|r - [|cffffcc00Level 1|r],野性精神|cffffcc00t|r - [|cffffcc00Level 2|r],野性精神|cffffcc00t|r - [|cffffcc003级|r]
-Ubertip="召唤<AOsf,DataB1>精灵狼同伴。每只狼都有 <osw1,realHP> 生命值并造成 <osw1,mindmg1> - <osw1,maxdmg1> 伤害。|n持续 <AOsf,Dur1> 秒。|n|n|cffffcc00攻击陆地单位。|r","召唤 <AOsf,DataB2> 具有暴击的狼灵伙伴。每只狼都有 <osw2,realHP> 生命值并造成 <osw2,mindmg1> - <osw2,maxdmg1> 伤害。|n持续 <AOsf,Dur2> 秒。|n|n|cffffcc00攻击陆地单位。|r","召唤 <AOsf,DataB3> 具有致命一击且在攻击前不可见的狼灵伙伴。每只狼都有 <osw3,realHP> 生命值并造成 <osw3,mindmg1> - <osw3,maxdmg1> 伤害。|n持续 <AOsf,Dur3> 秒。|n|n|cffffcc00攻击陆地单位。|r"
+Ubertip="召唤<AOsf,DataB1>精灵狼同伴。每只狼都有 <osw1,realHP> 生命值并造成 <osw1,min伤害1> - <osw1,max伤害1> 伤害。|n持续 <AOsf,Dur1> 秒。|n|n|cffffcc00攻击陆地单位。|r","召唤 <AOsf,DataB2> 具有暴击的狼灵伙伴。每只狼都有 <osw2,realHP> 生命值并造成 <osw2,min伤害1> - <osw2,max伤害1> 伤害。|n持续 <AOsf,Dur2> 秒。|n|n|cffffcc00攻击陆地单位。|r","召唤 <AOsf,DataB3> 具有致命一击且在攻击前不可见的狼灵伙伴。每只狼都有 <osw3,realHP> 生命值并造成 <osw3,min伤害1> - <osw3,max伤害1> 伤害。|n持续 <AOsf,Dur3> 秒。|n|n|cffffcc00攻击陆地单位。|r"
 Researchtip="Learn Feral Spiri|cffffcc00t|r - [|cffffcc00Level %d|r]."
 Researchubertip="Summons <AOsf,DataB1> Spirit Wolves to fight the Far Seer's enemies. |nLasts <AOsf,Dur1> seconds. |n|n|cffffcc00Level 1|r - <osw1,realHP> hit points, <osw1,mindmg1> - <osw1,maxdmg1> damage. |n|cffffcc00Level 2|r - <osw2,realHP> hit points, <osw2,mindmg1> - <osw2,maxdmg1> damage and Critical Strike. |n|cffffcc00Level 3|r - <osw3,realHP> hit points, <osw3,mindmg1> - <osw3,maxdmg1> damage, Critical Strike and Invisibility."
 Hotkey=T

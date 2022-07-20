@@ -7,17 +7,17 @@ from auto_translate import TemplateBasedMixin, IniLikeStrings
 from pathlib import Path
 import logging
 
-logging.basicConfig()
+logging.basicConfig(level=logging.DEBUG)
 logger = logging.getLogger(__name__)
-logger.setLevel(logging.DEBUG)
+#logger.setLevel(logging.DEBUG)
 
 
 class TemplateRewritter(TemplateBasedMixin):
     def __init__(self) -> None:
         super().__init__("rewrite")
 
-    def rewrite(self, string: str) -> str:
-        return super().rewrite(string)
+    def rewrite(self, string: str, belongs: str) -> str:
+        return super().rewrite(string, belongs)
 
 
 class RewriteDir:
@@ -31,10 +31,10 @@ class RewriteDir:
             strings = IniLikeStrings(Path(f))
             procedure = strings.translate()
             try:
-                value = next(procedure)
+                req = next(procedure)
                 while True:
-                    res = self.rewritter.rewrite(value)
-                    value = procedure.send(res)
+                    res = self.rewritter.rewrite(req.text, req.belongs)
+                    req = procedure.send(res)
             except StopIteration:
                 pass
             strings.save(
