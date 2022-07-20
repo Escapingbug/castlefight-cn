@@ -9636,7 +9636,7 @@ local integer dE=GetPlayerId(p)
 if(Xx)then
 return
 endif
-call DisplayTextToForce(bj_FORCE_ALL_PLAYERS,qo[dE]+" |cffCA0000has left the game!|r")
+call DisplayTextToForce(bj_FORCE_ALL_PLAYERS,qo[dE]+" |cffCA0000离开了游戏!|r")
 call DE(dE)
 if(Vr[dE])then
 call TI(dE)
