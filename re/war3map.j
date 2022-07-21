@@ -79,7 +79,7 @@ integer array BuildingPrices
 integer array BuildingToItsTrained
 integer array PVToBuildingType
 real array BuildingIncomes
-integer array Ve
+integer array RegisteredBuilding
 real array BuildingPVWoodCost
 boolean array Xe
 integer array RaceBuildingArena
@@ -1642,9 +1642,9 @@ function SetupBuildingUpgrades takes integer buildingType,real ZV,boolean PX,int
     endif
     set BuildingIncomes[buildingPV]=unitPrice*ZV*.1
     if(PX)then
-        set Ve[buildingPV]=1
+        set RegisteredBuilding[buildingPV]=1
     else
-        set Ve[buildingPV]=-1
+        set RegisteredBuilding[buildingPV]=-1
     endif
     set UpgradeFrom[buildingPV]=upgradeFromBuilding
     set PVToBuildingType[buildingPV]=buildingType
@@ -1671,9 +1671,9 @@ function SetupSiegeBuildingUpgrades takes integer unitId,real ZV,boolean PX,inte
     endif
     set BuildingIncomes[id]=buildingCost*ZV*.1
     if(PX)then
-    set Ve[id]=1
+    set RegisteredBuilding[id]=1
     else
-    set Ve[id]=-1
+    set RegisteredBuilding[id]=-1
     endif
     set UpgradeFrom[id]=qX
     set Xe[id]=true
@@ -2687,18 +2687,18 @@ set i=i+1
 exitwhen i>=$C
 endloop
 endfunction
-function DR takes integer fR,boolean fl returns nothing
-local integer i=0
-loop
-exitwhen RaceWorkers[i]==fR or i>=raceNum
-set i=i+1
-endloop
-if(i>=raceNum)then
-return
-endif
-set yo[i]=fl
-set yo[raceNum+i]=fl
-call CR(i)
+function BanRace takes integer raceNum,boolean fl returns nothing
+    local integer i=0
+    loop
+        exitwhen RaceWorkers[i]==raceNum or i>=raceNum
+        set i=i+1
+    endloop
+    if(i>=raceNum)then
+        return
+    endif
+    set yo[i]=fl
+    set yo[raceNum+i]=fl
+    call CR(i)
 endfunction
 function FR takes integer fR,boolean fl,integer gR returns nothing
 local integer i=0
@@ -3525,7 +3525,7 @@ set pX=RaceBuildingArena[iI+i]
 set pv=GetUnitPointValueByType(pX)
 set pI=pI+(PlayerIncomeTaxed[dE]*GetRandomReal(2.,4.)/ IncomeTime)
 set fl=cr[pv]
-if(BuildingPrices[pv]<=pI and Ve[pv]>0 and UpgradeFrom[pv]==0 and(fl==4 or fl==5 or fl==6 or fl==7))then
+if(BuildingPrices[pv]<=pI and RegisteredBuilding[pv]>0 and UpgradeFrom[pv]==0 and(fl==4 or fl==5 or fl==6 or fl==7))then
 set vi[j]=pX
 set j=j+1
 if((fl==1 or fl==3 or fl==5 or fl==7))then
@@ -3550,7 +3550,7 @@ set bv=28.
 loop
 set pX=RaceBuildingArena[iI+i]
 set pv=GetUnitPointValueByType(pX)
-if((Ve[pv]>0 or BuildingPVWoodCost[pv]<=PI)and((UpgradeFrom[pv]==0)or(Ie[j*300+GetUnitPointValueByType(UpgradeFrom[pv])]>0))and(not dr[pv]or ff>0))then
+if((RegisteredBuilding[pv]>0 or BuildingPVWoodCost[pv]<=PI)and((UpgradeFrom[pv]==0)or(Ie[j*300+GetUnitPointValueByType(UpgradeFrom[pv])]>0))and(not dr[pv]or ff>0))then
 if(fr[pv]!=.0)then
 set uv=lI(pX,j)
 else
@@ -6159,8 +6159,8 @@ call SpawnVisualUnit(ce,'h067',270.,.0,.0)
 return false
 endfunction
 function Kb takes nothing returns boolean
-call SpawnVisualUnit(ce,'h064',270.,.0,.0)
-return false
+    call SpawnVisualUnit(ce,'h064',270.,.0,.0)
+    return false
 endfunction
 function Lb takes nothing returns nothing
 call BuildingTrains('h03Y','h02X')
@@ -9221,7 +9221,7 @@ set oD=RX(dE<7)
 endif
 call DisplayTextToForce(bj_FORCE_ALL_PLAYERS,PlayerNames[dE]+" has banned |cffFFFF00"+cR(oD))
 call XX(oD,dE<7)
-call DR(oD,false)
+call BanRace(oD,false)
 set xD=xD-1
 exitwhen xD<=0
 endloop
@@ -9240,7 +9240,7 @@ call FR(No[SC],false,ModuloInteger(PlayerForce[SC]+1,2))
 endif
 else
 if(UniqueRaceMode)then
-call DR(No[SC],false)
+call BanRace(No[SC],false)
 else
 call FR(No[SC],false,PlayerForce[SC])
 endif
@@ -9388,7 +9388,7 @@ call FR(To[SC],false,ModuloInteger(PlayerForce[SC]+1,2))
 endif
 else
 if(UniqueRaceMode)then
-call DR(To[SC],false)
+call BanRace(To[SC],false)
 else
 call FR(To[SC],false,PlayerForce[SC])
 endif
@@ -9481,7 +9481,7 @@ call InitPools()
 loop
 set oD=RX(true)
 call XX(oD,true)
-call DR(oD,false)
+call BanRace(oD,false)
 if(s=="")then
 set s=cR(oD)
 else
@@ -9572,7 +9572,7 @@ call IssueImmediateOrderById(u,dN)
 endif
 set dN=GetPlayerId(GetOwningPlayer(u))
 call eA(dN,u)
-if(Ve[GetUnitPointValue(u)]<0)then
+if(RegisteredBuilding[GetUnitPointValue(u)]<0)then
 set PlayerSpecialBuildingCount[dN]=PlayerSpecialBuildingCount[dN]+1
 endif
 else
@@ -9836,7 +9836,7 @@ function PlayerDoneBuildinAction takes nothing returns nothing
     local integer trainsUnits
     call EvaluteRegisteredAttach(theBuilding)
     set jo[playerId]=jo[playerId]+(BuildingPrices[buildingPV])
-    if(Ve[buildingPV]>0)then
+    if(RegisteredBuilding[buildingPV]>0)then
         if(Xe[buildingPV])then
             call PlayerAddLumber(theBuilding, (BuildingPrices[buildingPV]*3)/ 4)
         else
@@ -9844,7 +9844,7 @@ function PlayerDoneBuildinAction takes nothing returns nothing
         endif
     else
         set PlayerSpecialBuildingCount[playerId]=PlayerSpecialBuildingCount[playerId]+1
-        if(Ve[buildingPV]==0)then
+        if(RegisteredBuilding[buildingPV]==0)then
             call DisplayTextToPlayer(GetLocalPlayer(),.0,.0,"Unregistered special:"+GetUnitName(theBuilding))
         endif
     endif

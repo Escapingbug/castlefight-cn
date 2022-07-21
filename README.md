@@ -51,5 +51,6 @@
 尝试性的修改：
 
 - 获得 3 倍于基础收入之前不允许制造空中单位 [修改说明](./changes/air_unit_restriction.md)
+- 暂时停止元素种族（元素传说建筑存在报错，可能影响其功能） [修改说明](./changes/disallow_elemental.md)
 
 （修改结果位于 `manual_traslate_out`）

@@ -2905,10 +2905,12 @@ set uo[Yo]='h01A'
 set wo[Yo]='A0DN'
 set Wo[Yo]=CreateSound("Units\\NightElf\\Ent\\EntReady1.wav",false,false,false,$A,$A,"DefaultEAXON")
 set Yo=Yo+1
-set Uo[Yo]="Elementals' Universe"
-set uo[Yo]='h051'
-set wo[Yo]='A0DO'
-set Wo[Yo]=CreateSound("Units\\NightElf\\Wisp\\WispPissed3.wav",false,false,false,$A,$A,"DefaultEAXON")
+// modification!
+// No! Elemental's Have Severe Problem!
+// set Uo[Yo]="Elementals' Universe"
+// set uo[Yo]='h051'
+// set wo[Yo]='A0DO'
+// set Wo[Yo]=CreateSound("Units\\NightElf\\Wisp\\WispPissed3.wav",false,false,false,$A,$A,"DefaultEAXON")
 set Yo=Yo+1
 set Uo[Yo]="Desert Plains"
 set uo[Yo]='h06N'
