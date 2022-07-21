@@ -73,28 +73,28 @@ integer Yv
 integer Zv=32
 string ve=" !\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~"
 boolean ee=true
-constant group xe=CreateGroup()
-player oe
+constant group ErasingGroup=CreateGroup()
+player EraserIssuer
 integer array UnitPrices
-integer array MapToUnitType
-integer array ae
+integer array BuildingToItsTrained
+integer array PVToBuildingType
 real array ne
 integer array Ve
-real array Ee
+real array BuildingPVWoodCost
 boolean array Xe
-integer array Oe
-integer array Re
+integer array RaceBuildingArena
+integer array UpgradeFrom
 integer array Ie
-integer Ae
-integer Ne
+integer BuildingNums
+integer ChunkBase
 unit be
 trigger array Be
 unit ce
 real array Ce
 trigger array de
 unit De
-trigger array fe
-integer array Fe
+trigger array UnitSpellTrigger
+integer array UnitSpellWTF
 unit ge
 unit Ge
 timer he
@@ -151,10 +151,10 @@ boolean DuralRaceMode=false
 boolean haveArtillery=false
 boolean NoTreasureBox=false
 boolean NoBounty=false
-boolean NoSpecials=true
-boolean NoItem=true
+boolean HasSpecials=true
+boolean HaveItem=true
 boolean haveLegend=true
-boolean NoDS=true
+boolean HaveDS=true
 boolean UniqueRaceMode=false
 boolean CagingMode=true
 boolean EnableCastleGates=false
@@ -309,10 +309,10 @@ boolexpr Pi
 integer qi
 boolean Qi
 integer si='A01I'
-integer Si
-boolexpr ti
-integer Ti
-integer ui
+integer erasingUnitTypeId
+boolexpr EraserFilter
+integer ErasingCount
+integer ErasePossibilityBound
 boolexpr Ui
 integer wi='n01C'
 player Wi
@@ -1010,8 +1010,8 @@ function Nuke takes nothing returns nothing
         set i=i+1
         exitwhen i>$B
     endloop
-    call GroupEnumUnitsInRect(xe,bj_mapInitialPlayableArea,null)
-    call ForGroup(xe,function NukeUnit)
+    call GroupEnumUnitsInRect(ErasingGroup,bj_mapInitialPlayableArea,null)
+    call ForGroup(ErasingGroup,function NukeUnit)
 endfunction
 function IssueNuke takes integer issuePlayer returns nothing
     if(not VotingNuke[issuePlayer])then
@@ -1535,19 +1535,19 @@ exitwhen i>$B
 endloop
 return j
 endfunction
-function FX takes integer gX returns string
-local integer GX
-local string hX=""
-if(gX<Zv)then
-return hX
-endif
-loop
-exitwhen gX==0
-set GX=ModuloInteger(gX,256)-Zv
-set hX=SubString(ve,GX,GX+1)+hX
-set gX=gX/ 256
-endloop
-return hX
+function DisplayUnitId takes integer gX returns string
+    local integer GX
+    local string hX=""
+    if(gX<Zv)then
+    return hX
+    endif
+    loop
+    exitwhen gX==0
+    set GX=ModuloInteger(gX,256)-Zv
+    set hX=SubString(ve,GX,GX+1)+hX
+    set gX=gX/ 256
+    endloop
+    return hX
 endfunction
 function FindHostPlayer takes boolean isWestern returns player
     local integer i=0
@@ -1614,76 +1614,76 @@ function WarnForRS takes unit lX,unit fV returns boolean
     local real x=wr
     local real y=Wr
     local real d
-    set oe=GetOwningPlayer(fV)
-    if(IsPlayerInForce(oe,WesternForce))then
+    set EraserIssuer=GetOwningPlayer(fV)
+    if(IsPlayerInForce(EraserIssuer,WesternForce))then
         call DisplayTextToForce(WesternForce,PlayerNames[GetPlayerId(GetOwningPlayer(lX))]+": I'm going to use RS!!!")
-    elseif(IsPlayerInForce(oe,EasternForce))then
+    elseif(IsPlayerInForce(EraserIssuer,EasternForce))then
         call DisplayTextToForce(EasternForce,PlayerNames[GetPlayerId(GetOwningPlayer(lX))]+": I'm going to use RS!!!")
     endif
     call NX(lX,x,y,900.)
     return IssuePointOrderById(lX,$D0208,x,y)
 endfunction
-function LX takes integer mX returns nothing
-set Ne=mX*50
-set Ae=0
+function PrepareRaceBuildingSetup takes integer chunkNum returns nothing
+    set ChunkBase=chunkNum*50
+    set BuildingNums=0
 endfunction
-function MX takes integer unitType,real ZV,boolean PX,integer qX returns nothing
-    local integer pv=GetUnitPointValueByType(unitType)
-    local integer unitPrice=GetUnitGoldCost(unitType)
-    if(pv>8000)then
-    call DisplayTextToPlayer(GetLocalPlayer(),.0,.0," Wrong PV value for "+GetObjectName(unitType))
+function SetupBuildingUpgrades takes integer buildingType,real ZV,boolean PX,integer upgradeFromBuilding returns nothing
+    local integer buildingPV=GetUnitPointValueByType(buildingType)
+    local integer unitPrice=GetUnitGoldCost(buildingType)
+    if(buildingPV>8000)then
+    call DisplayTextToPlayer(GetLocalPlayer(),.0,.0," Wrong PV value for "+GetObjectName(buildingType))
     endif
-    if(UnitPrices[pv]!=0 and(unitType!='h008'))then
-        call DisplayTextToPlayer(GetLocalPlayer(),.0,.0,"!Check unit PV "+GetObjectName(unitType)+"/"+GetObjectName(ae[pv]))
+    if(UnitPrices[buildingPV]!=0 and(buildingType!='h008'))then
+        call DisplayTextToPlayer(GetLocalPlayer(),.0,.0,"!Check unit PV "+GetObjectName(buildingType)+"/"+GetObjectName(PVToBuildingType[buildingPV]))
     endif
-    set UnitPrices[pv]=unitPrice
+    set UnitPrices[buildingPV]=unitPrice
     if(unitPrice==0)then
-        call DisplayTextToPlayer(GetLocalPlayer(),.0,.0,GetObjectName(unitType)+" price "+I2S(unitPrice))
+        call DisplayTextToPlayer(GetLocalPlayer(),.0,.0,GetObjectName(buildingType)+" price "+I2S(unitPrice))
     endif
-    set ne[pv]=unitPrice*ZV*.1
+    set ne[buildingPV]=unitPrice*ZV*.1
     if(PX)then
-        set Ve[pv]=1
+        set Ve[buildingPV]=1
     else
-        set Ve[pv]=-1
+        set Ve[buildingPV]=-1
     endif
-    set Re[pv]=qX
-    set ae[pv]=unitType
-    set Ee[pv]=GetUnitWoodCost(unitType)
-    if(unitType=='h008')then
+    set UpgradeFrom[buildingPV]=upgradeFromBuilding
+    set PVToBuildingType[buildingPV]=buildingType
+    set BuildingPVWoodCost[buildingPV]=GetUnitWoodCost(buildingType)
+    if(buildingType=='h008')then // h008 <-- treasure box
     return
     endif
-    set Ae=Ae+1
-    set Oe[Ne]=Ae
-    set Oe[Ae+Ne]=unitType
+    set BuildingNums=BuildingNums+1
+    set RaceBuildingArena[ChunkBase]=BuildingNums
+    set RaceBuildingArena[BuildingNums+ChunkBase]=buildingType
 endfunction
-function sX takes integer pX,real ZV,boolean PX,integer qX returns nothing
-local integer id=GetUnitPointValueByType(pX)
-local integer QX=GetUnitGoldCost(pX)
-if(id>8000)then
-call DisplayTextToPlayer(GetLocalPlayer(),.0,.0," Wrong PV value for "+GetObjectName(pX))
-endif
-if(UnitPrices[id]!=0)then
-call DisplayTextToPlayer(GetLocalPlayer(),.0,.0,"!Check unit PV "+GetObjectName(pX)+"/"+GetObjectName(ae[id]))
-endif
-set UnitPrices[id]=QX
-if(QX==0)then
-call DisplayTextToPlayer(GetLocalPlayer(),.0,.0,GetObjectName(pX)+" price "+I2S(QX))
-endif
-set ne[id]=QX*ZV*.1
-if(PX)then
-set Ve[id]=1
-else
-set Ve[id]=-1
-endif
-set Re[id]=qX
-set Xe[id]=true
-set ae[id]=pX
-set Ae=Ae+1
-set Oe[Ne]=Ae
-set Oe[Ae+Ne]=pX
+function SetupSiegeBuildingUpgrades takes integer unitId,real ZV,boolean PX,integer qX returns nothing
+    local integer id=GetUnitPointValueByType(unitId)
+    local integer buildingCost=GetUnitGoldCost(unitId)
+    if(id>8000)then
+        call DisplayTextToPlayer(GetLocalPlayer(),.0,.0," Wrong PV value for "+GetObjectName(unitId))
+    endif
+    if(UnitPrices[id]!=0)then
+        call DisplayTextToPlayer(GetLocalPlayer(),.0,.0,"!Check unit PV "+GetObjectName(unitId)+"/"+GetObjectName(PVToBuildingType[id]))
+    endif
+    set UnitPrices[id]=buildingCost
+    if(buildingCost==0)then
+        call DisplayTextToPlayer(GetLocalPlayer(),.0,.0,GetObjectName(unitId)+" price "+I2S(buildingCost))
+    endif
+    set ne[id]=buildingCost*ZV*.1
+    if(PX)then
+    set Ve[id]=1
+    else
+    set Ve[id]=-1
+    endif
+    set UpgradeFrom[id]=qX
+    set Xe[id]=true
+    set PVToBuildingType[id]=unitId
+    set BuildingNums=BuildingNums+1
+    set RaceBuildingArena[ChunkBase]=BuildingNums
+    set RaceBuildingArena[BuildingNums+ChunkBase]=unitId
 endfunction
-function SetupUnitMapping takes integer pX,integer tX returns nothing
-    set MapToUnitType[GetUnitPointValueByType(pX)]=tX
+function BuildingTrains takes integer building,integer trained returns nothing
+    set BuildingToItsTrained[GetUnitPointValueByType(building)]=trained
 endfunction
 function SpawnCreep takes unit u,integer uX,real an,real x,real y returns nothing
     local integer HE=GetUnitUserData(u)
@@ -1712,6 +1712,9 @@ function UX takes unit u returns nothing
     set ju=null
     endif
 endfunction
+
+// Registers attach buildings, so that it looks different from the base building after upgrade.
+// This is more of a visual effect.
 function AttachRegister takes integer obj,code YX returns nothing
     local integer id=GetUnitPointValueByType(obj)
     if(Be[id]!=null)then
@@ -1730,7 +1733,7 @@ endfunction
 function ZX takes integer pX,real r returns nothing
     set Ce[GetUnitPointValueByType(pX)]=r
 endfunction
-function vO takes integer pX,code eO returns nothing
+function SetupSpecialBuildingAction takes integer pX,code eO returns nothing
     local integer id=GetUnitPointValueByType(pX)
     set de[id]=CreateTrigger()
     call TriggerAddAction(de[id],eO)
@@ -1742,21 +1745,21 @@ function xO takes unit u returns nothing
     call TriggerExecute(de[id])
     endif
 endfunction
-function oO takes integer pX,integer rO,code iO returns nothing
-    local integer id=GetUnitPointValueByType(pX)
-    if(fe[id]!=null)then
-    call DisplayTextToPlayer(GetLocalPlayer(),.0,.0,"!Spell registration error "+FX(pX))
+function RegisterSpell takes integer unitId,integer rO,code spellAction returns nothing
+    local integer id=GetUnitPointValueByType(unitId)
+    if(UnitSpellTrigger[id]!=null)then
+        call DisplayTextToPlayer(GetLocalPlayer(),.0,.0,"!Spell registration error "+DisplayUnitId(unitId))
     endif
-    set fe[id]=CreateTrigger()
-    call TriggerAddAction(fe[id],iO)
-    set Fe[id]=rO
+    set UnitSpellTrigger[id]=CreateTrigger()
+    call TriggerAddAction(UnitSpellTrigger[id],spellAction)
+    set UnitSpellWTF[id]=rO
 endfunction
 function aO takes unit u,integer rO,unit t returns nothing
 local integer id=GetUnitPointValue(u)
-if(fe[id]!=null and rO==Fe[id])then
+if(UnitSpellTrigger[id]!=null and rO==UnitSpellWTF[id])then
 set ge=u
 set Ge=t
-call TriggerExecute(fe[id])
+call TriggerExecute(UnitSpellTrigger[id])
 endif
 endfunction
 function nO takes nothing returns nothing
@@ -1764,7 +1767,7 @@ function nO takes nothing returns nothing
 endfunction
 function VO takes nothing returns boolean
 local unit u=GetFilterUnit()
-if(Le<$A and IsUnitEnemy(u,oe)and IsUnitType(u,UNIT_TYPE_SAPPER)and GetWidgetLife(u)>200. and GetUnitAbilityLevel(u,'A08H')<=0 and GetUnitAbilityLevel(u,'B012')<=0 and GetUnitAbilityLevel(u,'BHbn')<=0 and GetUnitAbilityLevel(u,'BOhx')<=0)then
+if(Le<$A and IsUnitEnemy(u,EraserIssuer)and IsUnitType(u,UNIT_TYPE_SAPPER)and GetWidgetLife(u)>200. and GetUnitAbilityLevel(u,'A08H')<=0 and GetUnitAbilityLevel(u,'B012')<=0 and GetUnitAbilityLevel(u,'BHbn')<=0 and GetUnitAbilityLevel(u,'BOhx')<=0)then
 set Le=Le+1
 endif
 set u=null
@@ -1774,12 +1777,12 @@ function EO takes nothing returns nothing
     local boolean XO
     local boolean OO
     set Le=0
-    set oe=Player(6)
-    call GroupEnumUnitsInRect(xe,WesternBuildArea,le)
+    set EraserIssuer=Player(6)
+    call GroupEnumUnitsInRect(ErasingGroup,WesternBuildArea,le)
     set OO=(Le>=$A)
     set Le=0
-    set oe=Player(0)
-    call GroupEnumUnitsInRect(xe,EasternBuildArea,le)
+    set EraserIssuer=Player(0)
+    call GroupEnumUnitsInRect(ErasingGroup,EasternBuildArea,le)
     set XO=(Le>=$A)
     if(OO)then
     if(not ke)then
@@ -2025,31 +2028,32 @@ function EnableNoBountyMode takes boolean enable returns nothing
     endloop
 endfunction
 function EnableNoSpecialsMode takes boolean enable returns nothing
-    set NoSpecials=enable
+    set HasSpecials=enable
     if(enable)then
-    call DisplayTextToForce(bj_FORCE_ALL_PLAYERS,"|cffC6FF00No Specials|r mode has been disabled.")
+        call DisplayTextToForce(bj_FORCE_ALL_PLAYERS,"|cffC6FF00No Specials|r mode has been disabled.")
     else
-    call DisplayTextToForce(bj_FORCE_ALL_PLAYERS,"|cffC6FF00No Specials|r has been chosen. You can't build special buildings except towers and Treasure Boxes.")
+        call DisplayTextToForce(bj_FORCE_ALL_PLAYERS,"|cffC6FF00No Specials|r has been chosen. You can't build special buildings except towers and Treasure Boxes.")
     endif
     set bj_forLoopAIndex=0
     set bj_forLoopAIndexEnd=$B
+    // 只有这些是 special?
     loop
-    exitwhen bj_forLoopAIndex>bj_forLoopAIndexEnd
-    call SetPlayerUnitAvailableBJ('h01P',enable,Player(bj_forLoopAIndex))
-    call SetPlayerUnitAvailableBJ('h056',enable,Player(bj_forLoopAIndex))
-    call SetPlayerUnitAvailableBJ('h014',enable,Player(bj_forLoopAIndex))
-    call SetPlayerUnitAvailableBJ('h03Q',enable,Player(bj_forLoopAIndex))
-    call SetPlayerUnitAvailableBJ('h01O',enable,Player(bj_forLoopAIndex))
-    call SetPlayerUnitAvailableBJ('o000',enable,Player(bj_forLoopAIndex))
-    call SetPlayerUnitAvailableBJ('h006',enable,Player(bj_forLoopAIndex))
-    call SetPlayerUnitAvailableBJ('n01J',enable,Player(bj_forLoopAIndex))
-    call SetPlayerUnitAvailableBJ('h073',enable,Player(bj_forLoopAIndex))
-    call SetPlayerUnitAvailableBJ('h05L',enable,Player(bj_forLoopAIndex))
-    set bj_forLoopAIndex=bj_forLoopAIndex+1
+        exitwhen bj_forLoopAIndex>bj_forLoopAIndexEnd
+        call SetPlayerUnitAvailableBJ('h01P',enable,Player(bj_forLoopAIndex)) // 头骨堆
+        call SetPlayerUnitAvailableBJ('h056',enable,Player(bj_forLoopAIndex)) // 骷髅神社 （？)
+        call SetPlayerUnitAvailableBJ('h014',enable,Player(bj_forLoopAIndex)) // 奥术塔
+        call SetPlayerUnitAvailableBJ('h03Q',enable,Player(bj_forLoopAIndex)) // 冰冻塔
+        call SetPlayerUnitAvailableBJ('h01O',enable,Player(bj_forLoopAIndex)) // 灵魂炮塔
+        call SetPlayerUnitAvailableBJ('o000',enable,Player(bj_forLoopAIndex)) // 防空塔
+        call SetPlayerUnitAvailableBJ('h006',enable,Player(bj_forLoopAIndex)) // 望塔
+        call SetPlayerUnitAvailableBJ('n01J',enable,Player(bj_forLoopAIndex)) // 腐化守卫者
+        call SetPlayerUnitAvailableBJ('h073',enable,Player(bj_forLoopAIndex)) // 艾露恩的灯笼
+        call SetPlayerUnitAvailableBJ('h05L',enable,Player(bj_forLoopAIndex)) // 能量塔
+        set bj_forLoopAIndex=bj_forLoopAIndex+1
     endloop
 endfunction
 function EnableNoItemMode takes boolean enable returns nothing
-    set NoItem=enable
+    set HaveItem=enable
     if(enable)then
     call DisplayTextToForce(bj_FORCE_ALL_PLAYERS,"|cffC6FF00No Items|r mode has been disabled.")
     else
@@ -2065,7 +2069,7 @@ function EnableNoLegendMode takes boolean enable returns nothing
     endif
 endfunction
 function EnableNoDevastatingStrikeMode takes boolean enable returns nothing
-    set NoDS=enable
+    set HaveDS=enable
     if(enable)then
         call DisplayTextToForce(bj_FORCE_ALL_PLAYERS,"|cffC6FF00No Devastating Strike|r mode has been disabled.")
     else
@@ -2525,20 +2529,20 @@ function InitialSetups takes nothing returns nothing
 endfunction
 function ER takes nothing returns boolean
 local unit u=GetFilterUnit()
-local boolean aX=GetWidgetLife(u)>.405 and IsUnitAlly(u,oe)and IsUnitType(u,UNIT_TYPE_SAPPER)and(Qo or GetUnitAbilityLevel(u,'A0F1')<=0)
+local boolean aX=GetWidgetLife(u)>.405 and IsUnitAlly(u,EraserIssuer)and IsUnitType(u,UNIT_TYPE_SAPPER)and(Qo or GetUnitAbilityLevel(u,'A0F1')<=0)
 set u=null
 return aX
 endfunction
 function XR takes nothing returns nothing
 local integer i=GetRandomInt(1,3)
-set oe=GetOwningPlayer(De)
+set EraserIssuer=GetOwningPlayer(De)
 set Qo=false
-call GroupEnumUnitsInRect(xe,bj_mapInitialPlayableArea,so)
-set bj_groupRandomCurrentPick=IX(xe)
+call GroupEnumUnitsInRect(ErasingGroup,bj_mapInitialPlayableArea,so)
+set bj_groupRandomCurrentPick=IX(ErasingGroup)
 if(bj_groupRandomCurrentPick==null)then
 set Qo=true
-call GroupEnumUnitsInRect(xe,bj_mapInitialPlayableArea,so)
-set bj_groupRandomCurrentPick=IX(xe)
+call GroupEnumUnitsInRect(ErasingGroup,bj_mapInitialPlayableArea,so)
+set bj_groupRandomCurrentPick=IX(ErasingGroup)
 if(bj_groupRandomCurrentPick==null)then
 return
 endif
@@ -2573,19 +2577,19 @@ set c=null
 endfunction
 function RR takes nothing returns nothing
 local unit c
-set oe=GetOwningPlayer(De)
-call GroupEnumUnitsInRect(xe,bj_mapInitialPlayableArea,li)
+set EraserIssuer=GetOwningPlayer(De)
+call GroupEnumUnitsInRect(ErasingGroup,bj_mapInitialPlayableArea,li)
 set bj_groupRandomConsidered=0
 set bj_groupRandomCurrentPick=null
-call ForGroup(xe,function GroupPickRandomUnitEnum)
+call ForGroup(ErasingGroup,function GroupPickRandomUnitEnum)
 if(bj_groupRandomCurrentPick==null)then
 return
 endif
 set c=CreateUnit(GetOwningPlayer(De),'e008',GetUnitX(De),GetUnitY(De),.0)
 call UnitAddAbility(c,'A030')
-call UnitShareVision(bj_groupRandomCurrentPick,oe,true)
+call UnitShareVision(bj_groupRandomCurrentPick,EraserIssuer,true)
 call IssueTargetOrderById(c,$D02B6,bj_groupRandomCurrentPick)
-call UnitShareVision(bj_groupRandomCurrentPick,oe,false)
+call UnitShareVision(bj_groupRandomCurrentPick,EraserIssuer,false)
 call UnitApplyTimedLife(c,'BTLF',30.)
 set c=De
 call TriggerSleepAction(.5)
@@ -2594,60 +2598,63 @@ call TriggerSleepAction(1.)
 call SetUnitAnimation(c,"stand")
 set c=null
 endfunction
-function IR takes nothing returns nothing
-local unit c=CreateUnit(GetOwningPlayer(ge),'e008',GetUnitX(ge),GetUnitY(ge),.0)
-call UnitAddAbility(c,'A06H')
-call IssueTargetOrderById(c,$D008A,Ge)
-call UnitApplyTimedLife(c,'BTLF',2.)
-set c=null
+function EnsnareAbility takes nothing returns nothing
+    local unit c=CreateUnit(GetOwningPlayer(ge),'e008',GetUnitX(ge),GetUnitY(ge),.0)
+    // A06H <- ensnare
+    call UnitAddAbility(c,'A06H')
+    call IssueTargetOrderById(c,$D008A,Ge)
+    call UnitApplyTimedLife(c,'BTLF',2.)
+    set c=null
 endfunction
 function AR takes nothing returns nothing
-call vO('h02R',function XR)
-call SetupUnitMapping('h02P','o009')
-call SetupUnitMapping('h02K','o007')
-call SetupUnitMapping('h092','o00B')
-call SetupUnitMapping('h035','o008')
-call SetupUnitMapping('h036','o006')
-call vO('h02O',function OR)
-call vO('h02N',function RR)
-call SetupUnitMapping('h029','o002')
-call SetupUnitMapping('h02U','o004')
-call SetupUnitMapping('h031','o005')
-call SetupUnitMapping('h02B','o003')
-call SetupUnitMapping('h06E','o00F')
-call SetupUnitMapping('h02I','o001')
+call SetupSpecialBuildingAction('h02R',function XR) // Ceremonial Totem
+call BuildingTrains('h02P','o009')
+call BuildingTrains('h02K','o007')
+call BuildingTrains('h092','o00B')
+call BuildingTrains('h035','o008')
+call BuildingTrains('h036','o006')
+call SetupSpecialBuildingAction('h02O',function OR) // Stasis Totem
+call SetupSpecialBuildingAction('h02N',function RR) // Serpent Rock
+call BuildingTrains('h029','o002')
+call BuildingTrains('h02U','o004')
+call BuildingTrains('h031','o005')
+call BuildingTrains('h02B','o003')
+call BuildingTrains('h06E','o00F')
+call BuildingTrains('h02I','o001')
 call ZX('o000',900.)
-call SetupUnitMapping('h02H','n00V')
-call SetupUnitMapping('h05E','n01O')
+call BuildingTrains('h02H','n00V')
+call BuildingTrains('h05E','n01O')
 endfunction
 function NR takes nothing returns nothing
-call LX(2)
-call MX('h02P',.2,true,0)
-call MX('h02K',.2,true,0)
-call MX('h092',.2,true,'h02K')
-call MX('h035',.2,true,'h02K')
-call MX('h036',.2,true,'h02K')
-call MX('h029',.2,true,0)
-call MX('h02U',.2,true,'h029')
-call MX('h031',.2,true,'h02U')
-call MX('h02B',.2,true,0)
-call MX('h06E',.2,true,'h02B')
-call sX('h02I',.18,true,0)
-call MX('h02H',.2,true,0)
-call MX('h05E',.2,true,'h02H')
-call MX('h02R',.12,false,0)
-call MX('h02O',.12,false,0)
-call MX('o000',.0,false,0)
-call MX('h02N',.09,false,0)
-call MX('h008',.05,false,0)
+call PrepareRaceBuildingSetup(2)
+call SetupBuildingUpgrades('h02P',.2,true,0)
+call SetupBuildingUpgrades('h02K',.2,true,0)
+call SetupBuildingUpgrades('h092',.2,true,'h02K')
+call SetupBuildingUpgrades('h035',.2,true,'h02K')
+call SetupBuildingUpgrades('h036',.2,true,'h02K')
+call SetupBuildingUpgrades('h029',.2,true,0)
+call SetupBuildingUpgrades('h02U',.2,true,'h029')
+call SetupBuildingUpgrades('h031',.2,true,'h02U')
+call SetupBuildingUpgrades('h02B',.2,true,0)
+call SetupBuildingUpgrades('h06E',.2,true,'h02B')
+call SetupSiegeBuildingUpgrades('h02I',.18,true,0) // <- orcish siege factory
+call SetupBuildingUpgrades('h02H',.2,true,0)
+call SetupBuildingUpgrades('h05E',.2,true,'h02H')
+call SetupBuildingUpgrades('h02R',.12,false,0)
+call SetupBuildingUpgrades('h02O',.12,false,0)
+call SetupBuildingUpgrades('o000',.0,false,0)
+call SetupBuildingUpgrades('h02N',.09,false,0)
+call SetupBuildingUpgrades('h008',.05,false,0)
 endfunction
 function Orc__RegisterUnitCasts takes nothing returns nothing
-call oO('n01O','A06I',function IR)
+    // n01O <- troll trapper
+    // A06I <- parasite (dummy?)
+    call RegisterSpell('n01O','A06I',function EnsnareAbility)
 endfunction
 function bR takes nothing returns nothing
     call AR()
     call NR()
-    call oO('n01O','A06I',function IR)
+    call RegisterSpell('n01O','A06I',function EnsnareAbility)
     set so=Filter(function ER)
 endfunction
 function BR takes integer tX returns integer
@@ -2901,21 +2908,21 @@ endfunction
 function qR takes nothing returns boolean
 local unit u=GetFilterUnit()
 local real r=GetWidgetLife(u)
-local boolean aX=r>.405 and IsUnitEnemy(u,oe)and IsUnitType(u,UNIT_TYPE_GROUND)and GetUnitAbilityLevel(u,'A0CV')>0 and GetUnitAbilityLevel(u,'BHbn')<=0 and r<=600.
+local boolean aX=r>.405 and IsUnitEnemy(u,EraserIssuer)and IsUnitType(u,UNIT_TYPE_GROUND)and GetUnitAbilityLevel(u,'A0CV')>0 and GetUnitAbilityLevel(u,'BHbn')<=0 and r<=600.
 set u=null
 return aX
 endfunction
 function QR takes nothing returns boolean
 local unit u=GetFilterUnit()
 local real r=GetWidgetLife(u)
-local boolean aX=r>.405 and IsUnitEnemy(u,oe)and IsUnitType(u,UNIT_TYPE_SAPPER)and IsUnitType(u,UNIT_TYPE_GROUND)and GetUnitAbilityLevel(u,'A08H')<=0 and GetUnitAbilityLevel(u,'B012')<=0 and GetUnitAbilityLevel(u,'BHbn')<=0 and((GetUnitState(u,UNIT_STATE_MAX_MANA)>15.)or r<500.)
+local boolean aX=r>.405 and IsUnitEnemy(u,EraserIssuer)and IsUnitType(u,UNIT_TYPE_SAPPER)and IsUnitType(u,UNIT_TYPE_GROUND)and GetUnitAbilityLevel(u,'A08H')<=0 and GetUnitAbilityLevel(u,'B012')<=0 and GetUnitAbilityLevel(u,'BHbn')<=0 and((GetUnitState(u,UNIT_STATE_MAX_MANA)>15.)or r<500.)
 set u=null
 return aX
 endfunction
 function sR takes nothing returns boolean
 local unit u=GetFilterUnit()
 local real r=GetWidgetLife(u)
-local boolean aX=r>.405 and IsUnitAlly(u,oe)and IsUnitType(u,ir)and GetUnitState(u,UNIT_STATE_MAX_LIFE)-r>ar
+local boolean aX=r>.405 and IsUnitAlly(u,EraserIssuer)and IsUnitType(u,ir)and GetUnitState(u,UNIT_STATE_MAX_LIFE)-r>ar
 set u=null
 return aX
 endfunction
@@ -2923,19 +2930,19 @@ function SR takes unit u returns nothing
 local integer uX=GetUnitPointValue(u)
 local integer id=GetHandleId(u)
 local unit tu
-set oe=GetOwningPlayer(u)
+set EraserIssuer=GetOwningPlayer(u)
 set tu=LoadUnitHandle(rx,'ASTR',id)
 if(uX==$81)then
-if(tu!=null and GetWidgetLife(tu)>.405 and IsUnitEnemy(tu,oe))then
+if(tu!=null and GetWidgetLife(tu)>.405 and IsUnitEnemy(tu,EraserIssuer))then
 if(GetUnitAbilityLevel(tu,'B012')>0 or GetUnitAbilityLevel(tu,'BHbn')>0 or not IssueTargetOrderById(u,$D000F,tu))then
 call RemoveSavedHandle(rx,'ASTR',id)
 endif
 elseif(GetUnitAbilityLevel(u,'B012')>0 or IssueImmediateOrderById(u,$D00A1))then
-call GroupEnumUnitsInRect(xe,hn,vr)
-set bj_groupRandomCurrentPick=IX(xe)
+call GroupEnumUnitsInRect(ErasingGroup,hn,vr)
+set bj_groupRandomCurrentPick=IX(ErasingGroup)
 if(bj_groupRandomCurrentPick==null)then
-call GroupEnumUnitsInRect(xe,hn,er)
-set bj_groupRandomCurrentPick=IX(xe)
+call GroupEnumUnitsInRect(ErasingGroup,hn,er)
+set bj_groupRandomCurrentPick=IX(ErasingGroup)
 endif
 if(bj_groupRandomCurrentPick==null)then
 if(GetRandomInt(0,99)<33)then
@@ -2946,7 +2953,7 @@ call SaveUnitHandle(rx,'ASTR',id,bj_groupRandomCurrentPick)
 call IssuePointOrderById(u,$D0012,GetUnitX(bj_groupRandomCurrentPick),GetUnitY(bj_groupRandomCurrentPick))
 endif
 else
-call IssuePointOrderByIdLoc(u,$D000F,xo[PlayerForce[GetPlayerId(oe)]])
+call IssuePointOrderByIdLoc(u,$D000F,xo[PlayerForce[GetPlayerId(EraserIssuer)]])
 endif
 endif
 endfunction
@@ -2955,35 +2962,35 @@ function tR takes nothing returns nothing
     set er=Filter(function QR)
     set xr=Filter(function sR)
 endfunction
-function TR takes integer pX,integer uR,integer UR,integer hp,integer wR,integer WR,integer yR,integer fl,integer YR returns nothing
-local integer i=GetUnitPointValueByType(pX)
-local integer zR
-local integer ut
-if(HaveSavedInteger(Fr,i,'tmp1'))then
-endif
-set Ir[i]=UR
-set Ar[i]=uR
-set Nr[i]=(hp*(1+.06*I2R(wR))/ I2R(YR))
-set br[i]=WR
-set Br[i]=yR
-call SaveInteger(Fr,pX,0,1)
-call SaveInteger(Fr,i,'tmp1',pX)
-set ut=MapToUnitType[i]
-if(ut!=0)then
-set zR=fl
-if(IsUnitIdType(ut,UNIT_TYPE_ATTACKS_FLYING))then
-set zR=zR+(2)
-endif
-if(IsUnitIdType(ut,UNIT_TYPE_ATTACKS_GROUND))then
-set zR=zR+(4)
-endif
-if(zR==0)then
-endif
-if(IsUnitIdType(ut,UNIT_TYPE_FLYING))then
-set zR=zR+(1)
-endif
-endif
-set cr[i]=zR
+function TR takes integer unitType,integer uR,integer UR,integer hp,integer wR,integer WR,integer yR,integer fl,integer YR returns nothing
+    local integer i=GetUnitPointValueByType(unitType)
+    local integer zR
+    local integer ut
+    if(HaveSavedInteger(Fr,i,'tmp1'))then
+    endif
+    set Ir[i]=UR
+    set Ar[i]=uR
+    set Nr[i]=(hp*(1+.06*I2R(wR))/ I2R(YR))
+    set br[i]=WR
+    set Br[i]=yR
+    call SaveInteger(Fr,unitType,0,1)
+    call SaveInteger(Fr,i,'tmp1',unitType)
+    set ut=BuildingToItsTrained[i]
+    if(ut!=0)then
+    set zR=fl
+    if(IsUnitIdType(ut,UNIT_TYPE_ATTACKS_FLYING))then
+        set zR=zR+(2)
+    endif
+    if(IsUnitIdType(ut,UNIT_TYPE_ATTACKS_GROUND))then
+        set zR=zR+(4)
+    endif
+    if(zR==0)then
+    endif
+    if(IsUnitIdType(ut,UNIT_TYPE_FLYING))then
+        set zR=zR+(1)
+    endif
+    endif
+    set cr[i]=zR
 endfunction
 function ZR takes string s returns nothing
 local integer i=0
@@ -3073,8 +3080,8 @@ set j=j+($A)
 endif
 set qr[j]=qr[j]+(Nr[pv])
 set aI=PlayerForce[dE]*300
-if(Re[pv]!=0)then
-set nI=GetUnitPointValueByType(Re[pv])
+if(UpgradeFrom[pv]!=0)then
+set nI=GetUnitPointValueByType(UpgradeFrom[pv])
 set fl=cr[nI]
 set j=iI+Ar[nI]
 if((fl==4 or fl==5 or fl==6 or fl==7))then
@@ -3101,8 +3108,8 @@ return GetUnitTypeId(GetFilterUnit())==Sr
 endfunction
 function EI takes integer XI,player p returns unit
 set Sr=XI
-call GroupEnumUnitsOfPlayer(xe,p,tr)
-return FirstOfGroup(xe)
+call GroupEnumUnitsOfPlayer(ErasingGroup,p,tr)
+return FirstOfGroup(ErasingGroup)
 endfunction
 function OI takes nothing returns nothing
 if(GetExpiredTimer()==Kr[0])then
@@ -3128,7 +3135,7 @@ local unit u=GetFilterUnit()
 local real uh=GetWidgetLife(u)
 local boolean aX=uh>50. and IsUnitType(u,UNIT_TYPE_SAPPER)and GetUnitAbilityLevel(u,'Avul')<=0 and GetUnitAbilityLevel(u,'A08H')<=0
 if(aX)then
-if(IsUnitEnemy(u,oe))then
+if(IsUnitEnemy(u,EraserIssuer))then
 set Tr=Tr+(uh)
 set Ur=Ur+1
 set wr=wr+(GetUnitX(u))
@@ -3151,8 +3158,8 @@ endif
 if(IsUnitType(GetAttacker(),UNIT_TYPE_SAPPER))then
 set ex=Ze+2
 set u=GetTriggerUnit()
-set oe=GetOwningPlayer(u)
-set xI=PlayerForce[GetPlayerId(oe)]
+set EraserIssuer=GetOwningPlayer(u)
+set xI=PlayerForce[GetPlayerId(EraserIssuer)]
 if(Vo[xI]<=0)then
 set u=null
 return false
@@ -3164,7 +3171,7 @@ set ur=1000.*NI
 set Ur=0
 set wr=.0
 set Wr=.0
-call GroupEnumUnitsInRange(xe,GetUnitX(u),GetUnitY(u),1400.,yr)
+call GroupEnumUnitsInRange(ErasingGroup,GetUnitX(u),GetUnitY(u),1400.,yr)
 if(Ur>0)then
 set wr=wr/(I2R(Ur))
 set Wr=Wr/(I2R(Ur))
@@ -3181,7 +3188,7 @@ endfunction
 function bI takes nothing returns boolean
 local unit u=GetFilterUnit()
 local real r=GetWidgetLife(u)
-local boolean aX=r>.405 and IsUnitAlly(u,oe)and IsUnitType(u,UNIT_TYPE_STRUCTURE)
+local boolean aX=r>.405 and IsUnitAlly(u,EraserIssuer)and IsUnitType(u,UNIT_TYPE_STRUCTURE)
 if(aX)then
 if(GetUnitState(u,UNIT_STATE_MAX_LIFE)-r>150. and r<Zr)then
 set Zr=r
@@ -3204,10 +3211,10 @@ if(u!=null and GetWidgetLife(u)>.405 and GetUnitState(u,UNIT_STATE_MAX_LIFE)-Get
 call NX(hr[i],GetUnitX(u),GetUnitY(u),500.)
 call IssueTargetOrderById(hr[i],$D0038,u)
 else
-set oe=Player(i)
+set EraserIssuer=Player(i)
 set zr=null
 set Zr=9999.
-call GroupEnumUnitsInRect(xe,bj_mapInitialPlayableArea,Yr)
+call GroupEnumUnitsInRect(ErasingGroup,bj_mapInitialPlayableArea,Yr)
 set Jr[PlayerForce[i]]=zr
 endif
 endif
@@ -3285,7 +3292,7 @@ set pX=GetUnitPointValueByType(ei[dE])
 if(UnitPrices[pX]>g or Cr[pX]>w)then
 return
 endif
-set tX=Re[pX]
+set tX=UpgradeFrom[pX]
 if(tX!=0)then
 set bu=EI(tX,Player(dE))
 if(bu!=null)then
@@ -3495,7 +3502,7 @@ return(Xi+Oi)/(1.+.06*Ie[OX*300+LI])
 endfunction
 function MI takes integer dE,integer ff returns nothing
 local integer iI=Hr[dE]*50
-local integer n=Oe[iI]
+local integer n=RaceBuildingArena[iI]
 local integer pX=0
 local integer i
 local integer j
@@ -3516,11 +3523,11 @@ endif
 set i=n
 set j=0
 loop
-set pX=Oe[iI+i]
+set pX=RaceBuildingArena[iI+i]
 set pv=GetUnitPointValueByType(pX)
 set pI=pI+(PlayerIncome[dE]*GetRandomReal(2.,4.)/ IncomeTime)
 set fl=cr[pv]
-if(UnitPrices[pv]<=pI and Ve[pv]>0 and Re[pv]==0 and(fl==4 or fl==5 or fl==6 or fl==7))then
+if(UnitPrices[pv]<=pI and Ve[pv]>0 and UpgradeFrom[pv]==0 and(fl==4 or fl==5 or fl==6 or fl==7))then
 set vi[j]=pX
 set j=j+1
 if((fl==1 or fl==3 or fl==5 or fl==7))then
@@ -3543,9 +3550,9 @@ set n=0
 set ik=IncomeTime*.012/(.01+PlayerIncome[dE])
 set bv=28.
 loop
-set pX=Oe[iI+i]
+set pX=RaceBuildingArena[iI+i]
 set pv=GetUnitPointValueByType(pX)
-if((Ve[pv]>0 or Ee[pv]<=PI)and((Re[pv]==0)or(Ie[j*300+GetUnitPointValueByType(Re[pv])]>0))and(not dr[pv]or ff>0))then
+if((Ve[pv]>0 or BuildingPVWoodCost[pv]<=PI)and((UpgradeFrom[pv]==0)or(Ie[j*300+GetUnitPointValueByType(UpgradeFrom[pv])]>0))and(not dr[pv]or ff>0))then
 if(fr[pv]!=.0)then
 set uv=lI(pX,j)
 else
@@ -3583,20 +3590,20 @@ if(jr[i])then
 if(not ni)then
 call DI()
 endif
-set oe=Player(i)
+set EraserIssuer=Player(i)
 if(hr[i]==null or GetWidgetLife(hr[i])<=.405)then
-call GroupEnumUnitsOfPlayer(xe,oe,Pi)
-set hr[i]=FirstOfGroup(xe)
+call GroupEnumUnitsOfPlayer(ErasingGroup,EraserIssuer,Pi)
+set hr[i]=FirstOfGroup(ErasingGroup)
 if(hr[i]!=null)then
 set Hr[i]=cI(GetUnitTypeId(hr[i]))
 if(GetUnitAbilityLevel(hr[i],'A005')>0)then
-call ForceAddPlayer(kr[PlayerForce[i]],oe)
+call ForceAddPlayer(kr[PlayerForce[i]],EraserIssuer)
 endif
 endif
 else
 set co=GetUnitCurrentOrder(hr[i])
 if((co==0 or co==$D0038)and GetRandomInt(0,99)<75)then
-set ff=GetPlayerState(oe,PLAYER_STATE_RESOURCE_FOOD_CAP)-GetPlayerState(oe,PLAYER_STATE_RESOURCE_FOOD_USED)
+set ff=GetPlayerState(EraserIssuer,PLAYER_STATE_RESOURCE_FOOD_CAP)-GetPlayerState(EraserIssuer,PLAYER_STATE_RESOURCE_FOOD_USED)
 if(ei[i]==0 or GetRandomInt(0,99)>86)then
 call MI(i,ff)
 if(ei[i]!=0)then
@@ -4201,7 +4208,7 @@ set fr[i]=$E1
 set Mr=true
 endfunction
 function wI takes unit u returns nothing
-call IssuePointOrderByIdLoc(u,$D000F,xo[PlayerForce[GetPlayerId(GetOwningPlayer(u))]])
+    call IssuePointOrderByIdLoc(u,$D000F,xo[PlayerForce[GetPlayerId(GetOwningPlayer(u))]])
 endfunction
 function WI takes unit u returns nothing
 if(IsUnitType(u,UNIT_TYPE_TAUREN))then
@@ -4479,7 +4486,7 @@ set i=i+1
 exitwhen i>$B
 endloop
 call DisplayTimedTextToForce(bj_FORCE_ALL_PLAYERS,20.,"Constructor: "+s+" - |cffFFFF00"+I2S(g))
-if(NoSpecials)then
+if(HasSpecials)then
 set g=VA()
 set s=""
 set i=0
@@ -5079,13 +5086,13 @@ call IssuePointOrderByIdLoc(u,$D0012,xo[PlayerForce[GetPlayerId(GetOwningPlayer(
 endfunction
 function YA takes nothing returns boolean
 local unit u=GetFilterUnit()
-local boolean aX=GetWidgetLife(u)>.405 and IsUnitEnemy(u,oe)and IsUnitType(u,UNIT_TYPE_SAPPER)and IsUnitType(u,UNIT_TYPE_GROUND)and GetUnitAbilityLevel(u,'Avul')<=0 and GetUnitAbilityLevel(u,'A08H')<=0
+local boolean aX=GetWidgetLife(u)>.405 and IsUnitEnemy(u,EraserIssuer)and IsUnitType(u,UNIT_TYPE_SAPPER)and IsUnitType(u,UNIT_TYPE_GROUND)and GetUnitAbilityLevel(u,'Avul')<=0 and GetUnitAbilityLevel(u,'A08H')<=0
 set u=null
 return aX
 endfunction
 function zA takes nothing returns boolean
 local unit u=GetFilterUnit()
-local boolean aX=GetWidgetLife(u)>100. and IsUnitEnemy(u,oe)and IsUnitType(u,UNIT_TYPE_SAPPER)and not IsUnitType(u,UNIT_TYPE_MECHANICAL)
+local boolean aX=GetWidgetLife(u)>100. and IsUnitEnemy(u,EraserIssuer)and IsUnitType(u,UNIT_TYPE_SAPPER)and not IsUnitType(u,UNIT_TYPE_MECHANICAL)
 set u=null
 return aX
 endfunction
@@ -5154,7 +5161,7 @@ return r
 endfunction
 function xN takes nothing returns boolean
 local unit u=GetFilterUnit()
-local boolean aX=GetWidgetLife(u)>.405 and IsUnitEnemy(u,oe)and IsUnitType(u,UNIT_TYPE_SAPPER)and GetUnitAbilityLevel(u,'Avul')<=0 and GetUnitAbilityLevel(u,'A08H')<=0
+local boolean aX=GetWidgetLife(u)>.405 and IsUnitEnemy(u,EraserIssuer)and IsUnitType(u,UNIT_TYPE_SAPPER)and GetUnitAbilityLevel(u,'Avul')<=0 and GetUnitAbilityLevel(u,'A08H')<=0
 set u=null
 return aX
 endfunction
@@ -5183,14 +5190,14 @@ local location nN
 loop
 set p=Player(i)
 set nN=xo[PlayerForce[i]]
-call GroupEnumUnitsOfPlayer(xe,p,null)
+call GroupEnumUnitsOfPlayer(ErasingGroup,p,null)
 loop
-set u=FirstOfGroup(xe)
+set u=FirstOfGroup(ErasingGroup)
 exitwhen u==null
 if(IsUnitType(u,UNIT_TYPE_SAPPER)and GetUnitCurrentOrder(u)==0 and GetWidgetLife(u)>.405 and GetUnitAbilityLevel(u,'A07I')<=0 and GetUnitAbilityLevel(u,'A07M')<=0 and GetUnitAbilityLevel(u,'A0ID')<=0)then
 call IssuePointOrderByIdLoc(u,$D000F,nN)
 endif
-call GroupRemoveUnit(xe,u)
+call GroupRemoveUnit(ErasingGroup,u)
 endloop
 set i=i-1
 exitwhen i<0
@@ -5243,15 +5250,15 @@ call GroupAddUnit(Li,u)
 endif
 endfunction
 function AN takes unit u returns nothing
-local integer NN=MapToUnitType[GetUnitPointValue(u)]
-call IssueImmediateOrderById(u,$D0008)
-call IssueImmediateOrderById(u,$D0008)
-call IssueImmediateOrderById(u,$D0008)
-call IssueImmediateOrderById(u,$D0008)
-call IssueImmediateOrderById(u,$D0008)
-call IssueImmediateOrderById(u,$D0008)
-call IssueImmediateOrderById(u,$D0008)
-call IssueImmediateOrderById(u,NN)
+    local integer NN=BuildingToItsTrained[GetUnitPointValue(u)]
+    call IssueImmediateOrderById(u,$D0008)
+    call IssueImmediateOrderById(u,$D0008)
+    call IssueImmediateOrderById(u,$D0008)
+    call IssueImmediateOrderById(u,$D0008)
+    call IssueImmediateOrderById(u,$D0008)
+    call IssueImmediateOrderById(u,$D0008)
+    call IssueImmediateOrderById(u,$D0008)
+    call IssueImmediateOrderById(u,NN)
 endfunction
 function bN takes nothing returns nothing
 local trigger t=GetTriggeringTrigger()
@@ -5283,7 +5290,7 @@ local trigger t
 local unit u=GetEnumUnit()
 local real dt
 if(GetWidgetLife(u)>.405)then
-set dt=I2R(qi-GetUnitBuildTime(MapToUnitType[GetUnitPointValue(u)]))
+set dt=I2R(qi-GetUnitBuildTime(BuildingToItsTrained[GetUnitPointValue(u)]))
 if(dt>0)then
 set t=CreateTrigger()
 call TriggerAddAction(t,function bN)
@@ -5335,15 +5342,15 @@ function cN takes nothing returns nothing
     set Ki=Filter(function zA)
     set Pi=Filter(function XN)
 endfunction
-function CN takes nothing returns nothing
+function MagicTowerRuinAction takes nothing returns nothing
 local unit c
 local integer i=GetRandomInt(0,8)
 local real dN
 local real DN
-set oe=GetOwningPlayer(De)
-call GroupEnumUnitsInRect(xe,bj_mapInitialPlayableArea,li)
+set EraserIssuer=GetOwningPlayer(De)
+call GroupEnumUnitsInRect(ErasingGroup,bj_mapInitialPlayableArea,li)
 call DestroyEffect(AddSpecialEffect("Abilities\\Spells\\Orc\\FeralSpirit\\feralspiritdone.mdl",GetUnitX(De),GetUnitY(De)))
-set bj_groupRandomCurrentPick=IX(xe)
+set bj_groupRandomCurrentPick=IX(ErasingGroup)
 if(bj_groupRandomCurrentPick==null)then
 return
 endif
@@ -5353,7 +5360,7 @@ return
 endif
 if(i==0)then
 call ExplodeUnitBJ(bj_groupRandomCurrentPick)
-set i=GetPlayerId(oe)
+set i=GetPlayerId(EraserIssuer)
 set Bo[i]=Bo[i]+1
 elseif(i==1)then
 call UnitDamageTarget(De,bj_groupRandomCurrentPick,50000.,true,false,ATTACK_TYPE_NORMAL,DAMAGE_TYPE_DEATH,WEAPON_TYPE_WHOKNOWS)
@@ -5369,89 +5376,89 @@ call UnitAddAbility(bj_groupRandomCurrentPick,'A06U')
 endif
 call SetUnitState(bj_groupRandomCurrentPick,UNIT_STATE_LIFE,GetUnitState(bj_groupRandomCurrentPick,UNIT_STATE_MAX_LIFE))
 elseif(i==4)then
-set c=CreateUnit(oe,'e008',GetUnitX(bj_groupRandomCurrentPick),GetUnitY(bj_groupRandomCurrentPick),.0)
+set c=CreateUnit(EraserIssuer,'e008',GetUnitX(bj_groupRandomCurrentPick),GetUnitY(bj_groupRandomCurrentPick),.0)
 call UnitAddAbility(c,'A018')
-call UnitShareVision(bj_groupRandomCurrentPick,oe,true)
+call UnitShareVision(bj_groupRandomCurrentPick,EraserIssuer,true)
 call IssueTargetOrderById(c,$D0216,bj_groupRandomCurrentPick)
-call UnitShareVision(bj_groupRandomCurrentPick,oe,false)
+call UnitShareVision(bj_groupRandomCurrentPick,EraserIssuer,false)
 call UnitApplyTimedLife(c,'BTLF',1.)
 set c=bj_groupRandomCurrentPick
 call TriggerSleepAction(1.)
 call wI(c)
 if(GetUnitTypeId(c)=='h03A')then
-call TriggerSleepAction(44.5)
-call IssueImmediateOrderById(c,$D0057)
-call TriggerSleepAction(.5)
-call wI(c)
+    call TriggerSleepAction(44.5)
+    call IssueImmediateOrderById(c,$D0057)
+    call TriggerSleepAction(.5)
+    call wI(c)
 endif
 set c=null
 elseif(i==5)then
-set c=CreateUnit(oe,'e008',GetUnitX(bj_groupRandomCurrentPick),GetUnitY(bj_groupRandomCurrentPick),.0)
+set c=CreateUnit(EraserIssuer,'e008',GetUnitX(bj_groupRandomCurrentPick),GetUnitY(bj_groupRandomCurrentPick),.0)
 call UnitAddAbility(c,'A06S')
-call UnitShareVision(bj_groupRandomCurrentPick,oe,true)
+call UnitShareVision(bj_groupRandomCurrentPick,EraserIssuer,true)
 call IssueTargetOrderById(c,$D007F,bj_groupRandomCurrentPick)
-call UnitShareVision(bj_groupRandomCurrentPick,oe,false)
+call UnitShareVision(bj_groupRandomCurrentPick,EraserIssuer,false)
 call UnitApplyTimedLife(c,'BTLF',1.2)
 set c=null
 elseif(i==6)then
-set i=GetPlayerId(oe)
+set i=GetPlayerId(EraserIssuer)
 set Bo[i]=Bo[i]+1
 call ShowUnit(bj_groupRandomCurrentPick,false)
 set dN=GetUnitX(bj_groupRandomCurrentPick)
 set DN=GetUnitY(bj_groupRandomCurrentPick)
 call DestroyEffect(AddSpecialEffect("Abilities\\Spells\\Orc\\FeralSpirit\\feralspiritdone.mdl",dN,DN))
-call wI(CreateUnit(oe,'n01S',dN,DN,GetUnitFacing(bj_groupRandomCurrentPick)))
+call wI(CreateUnit(EraserIssuer,'n01S',dN,DN,GetUnitFacing(bj_groupRandomCurrentPick)))
 call RemoveUnit(bj_groupRandomCurrentPick)
 endif
 endfunction
-function fN takes nothing returns boolean
-local unit u=GetFilterUnit()
-local boolean aX=GetWidgetLife(u)>.405 and IsUnitEnemy(u,oe)and GetUnitTypeId(u)==Si
-set u=null
-return aX
+function EraserFilterFunc takes nothing returns boolean
+    local unit u=GetFilterUnit()
+    local boolean isEraserTarget=GetWidgetLife(u)>.405 and IsUnitEnemy(u,EraserIssuer)and GetUnitTypeId(u)==erasingUnitTypeId
+    set u=null
+    return isEraserTarget
 endfunction
-function FN takes nothing returns nothing
-local unit u=GetEnumUnit()
-call DestroyEffect(AddSpecialEffectTarget("Abilities\\Spells\\Items\\AIil\\AIilTarget.mdl",u,"origin"))
-if(GetUnitAbilityLevel(u,'A070')<=0)then
-if(GetRandomInt(0,99)>ui)then
-call UnitDamageTarget(De,u,100500.,true,false,ATTACK_TYPE_CHAOS,DAMAGE_TYPE_DEATH,WEAPON_TYPE_WHOKNOWS)
-else
-call KillUnit(u)
-endif
-set Ti=Ti+1
-set ui=ui+1
-endif
-set u=null
+function EraseUnit takes nothing returns nothing
+    local unit u=GetEnumUnit()
+    call DestroyEffect(AddSpecialEffectTarget("Abilities\\Spells\\Items\\AIil\\AIilTarget.mdl",u,"origin"))
+    if(GetUnitAbilityLevel(u,'A070')<=0)then
+        if(GetRandomInt(0,99)>ErasePossibilityBound)then
+            call UnitDamageTarget(De,u,100500.,true,false,ATTACK_TYPE_CHAOS,DAMAGE_TYPE_DEATH,WEAPON_TYPE_WHOKNOWS)
+        else
+            call KillUnit(u)
+        endif
+        set ErasingCount=ErasingCount+1
+        set ErasePossibilityBound=ErasePossibilityBound+1
+    endif
+    set u=null
 endfunction
-function gN takes nothing returns nothing
-set oe=GetOwningPlayer(De)
-call GroupEnumUnitsInRect(xe,bj_mapInitialPlayableArea,li)
-call DestroyEffect(AddSpecialEffect("Abilities\\Spells\\Items\\TomeOfRetraining\\TomeOfRetrainingCaster.mdl",GetUnitX(De),GetUnitY(De)))
-set bj_groupRandomCurrentPick=IX(xe)
-if(bj_groupRandomCurrentPick==null)then
-return
-endif
-set Si=GetUnitTypeId(bj_groupRandomCurrentPick)
-call GroupEnumUnitsInRect(xe,bj_mapInitialPlayableArea,ti)
-set Ti=0
-set ui=GetRandomInt(30,70)
-call ForGroup(xe,function FN)
-call DisplayTextToPlayer(oe,.0,.0,"Eraser killed "+I2S(Ti)+" "+GetObjectName(Si)+"(s)")
+function EraserAction takes nothing returns nothing
+    set EraserIssuer=GetOwningPlayer(De)
+    call GroupEnumUnitsInRect(ErasingGroup,bj_mapInitialPlayableArea,li)
+    call DestroyEffect(AddSpecialEffect("Abilities\\Spells\\Items\\TomeOfRetraining\\TomeOfRetrainingCaster.mdl",GetUnitX(De),GetUnitY(De)))
+    set bj_groupRandomCurrentPick=IX(ErasingGroup)
+    if(bj_groupRandomCurrentPick==null)then
+        return
+    endif
+    set erasingUnitTypeId=GetUnitTypeId(bj_groupRandomCurrentPick)
+    call GroupEnumUnitsInRect(ErasingGroup,bj_mapInitialPlayableArea,EraserFilter)
+    set ErasingCount=0
+    set ErasePossibilityBound=GetRandomInt(30,70)
+    call ForGroup(ErasingGroup,function EraseUnit)
+    call DisplayTextToPlayer(EraserIssuer,.0,.0,"Eraser killed "+I2S(ErasingCount)+" "+GetObjectName(erasingUnitTypeId)+"(s)")
 endfunction
 function GN takes nothing returns nothing
 local real x
 local real y
 local unit c
-set oe=GetOwningPlayer(De)
-call GroupEnumUnitsInRect(xe,bj_mapInitialPlayableArea,ki)
-set bj_groupRandomCurrentPick=IX(xe)
+set EraserIssuer=GetOwningPlayer(De)
+call GroupEnumUnitsInRect(ErasingGroup,bj_mapInitialPlayableArea,ki)
+set bj_groupRandomCurrentPick=IX(ErasingGroup)
 if(bj_groupRandomCurrentPick==null)then
 return
 endif
 set x=GetUnitX(bj_groupRandomCurrentPick)+GetRandomReal(70.,70.)
 set y=GetUnitY(bj_groupRandomCurrentPick)+GetRandomReal(70.,70.)
-set c=CreateUnit(oe,'e008',x,y,.0)
+set c=CreateUnit(EraserIssuer,'e008',x,y,.0)
 call UnitAddAbility(c,si)
 call IssuePointOrderById(c,$D010E,x,y)
 call UnitApplyTimedLife(c,'BTLF',5.5)
@@ -5459,21 +5466,21 @@ set c=null
 endfunction
 function hN takes nothing returns boolean
 local unit u=GetFilterUnit()
-local boolean aX=GetWidgetLife(u)>.405 and IsUnitEnemy(u,oe)and IsUnitType(u,UNIT_TYPE_STRUCTURE)and GetPlayerId(GetOwningPlayer(u))<$C and GetUnitTypeId(u)!='hcas' and GetUnitAbilityLevel(u,'A06V')<=0
+local boolean aX=GetWidgetLife(u)>.405 and IsUnitEnemy(u,EraserIssuer)and IsUnitType(u,UNIT_TYPE_STRUCTURE)and GetPlayerId(GetOwningPlayer(u))<$C and GetUnitTypeId(u)!='hcas' and GetUnitAbilityLevel(u,'A06V')<=0
 set u=null
 return aX
 endfunction
 function HN takes nothing returns nothing
 local integer t
-set oe=GetOwningPlayer(De)
-call GroupEnumUnitsInRect(xe,bj_mapInitialPlayableArea,Ui)
-set bj_groupRandomCurrentPick=IX(xe)
+set EraserIssuer=GetOwningPlayer(De)
+call GroupEnumUnitsInRect(ErasingGroup,bj_mapInitialPlayableArea,Ui)
+set bj_groupRandomCurrentPick=IX(ErasingGroup)
 if(bj_groupRandomCurrentPick==null)then
 return
 endif
 call DestroyEffect(AddSpecialEffect("Abilities\\Spells\\Human\\MarkOfChaos\\MarkOfChaosTarget.mdl",GetUnitX(bj_groupRandomCurrentPick),GetUnitY(bj_groupRandomCurrentPick)))
 call KillUnit(bj_groupRandomCurrentPick)
-set t=PlayerForce[GetPlayerId(oe)]
+set t=PlayerForce[GetPlayerId(EraserIssuer)]
 set Xo[t]=Xo[t]+1
 call AO(3,t+1,I2S(Xo[t]))
 endfunction
@@ -5494,42 +5501,42 @@ function JN takes nothing returns boolean
     return false
 endfunction
 function kN takes nothing returns nothing
-call vO('h05I',function CN)
-call SetupUnitMapping('h025','n00L')
-call vO('h01M',function gN)
-call vO('h01W',function gN)
-call vO('h01X',function gN)
-call SetupUnitMapping('h01I','n00A')
-call SetupUnitMapping('h026','z000')
-call vO('h01F',function GN)
-call vO('h01E',function HN)
-call SetupUnitMapping('h01C','n008')
-call SetupUnitMapping('h01D','n009')
-call SetupUnitMapping('h03G','n00Z')
+call SetupSpecialBuildingAction('h05I',function MagicTowerRuinAction) // Magic Tower Ruin
+call BuildingTrains('h025','n00L')
+call SetupSpecialBuildingAction('h01M',function EraserAction) // Eraser (Level 1)
+call SetupSpecialBuildingAction('h01W',function EraserAction)
+call SetupSpecialBuildingAction('h01X',function EraserAction)
+call BuildingTrains('h01I','n00A')
+call BuildingTrains('h026','z000')
+call SetupSpecialBuildingAction('h01F',function GN)
+call SetupSpecialBuildingAction('h01E',function HN)
+call BuildingTrains('h01C','n008')
+call BuildingTrains('h01D','n009')
+call BuildingTrains('h03G','n00Z') // h03G  <- Greater Chaos Citadel
 call AttachRegister('h03G',function JN)
-call SetupUnitMapping('h009','n001')
-call SetupUnitMapping('h007','n000')
+call BuildingTrains('h009','n001')
+call BuildingTrains('h007','n000')
 endfunction
 function KN takes nothing returns nothing
-call LX(5)
-call MX('h025',.2,true,0)
-call MX('h01I',.2,true,0)
-call MX('h026',.2,true,'h01I')
-call MX('h01C',.2,true,0)
-call MX('h01D',.2,true,0)
-call MX('h03G',.2,true,'h01D')
-call MX('h009',.2,true,0)
-call MX('h007',.2,true,0)
-call MX('h05I',.09,false,0)
-call MX('h01M',.09,false,0)
-call MX('h01W',.09,false,'h01M')
-call MX('h01X',.09,false,'h01W')
-call MX('h01F',.09,false,0)
-call MX('h01E',.12,false,0)
-call MX('h008',.05,false,0)
+call PrepareRaceBuildingSetup(5)
+call SetupBuildingUpgrades('h025',.2,true,0)
+call SetupBuildingUpgrades('h01I',.2,true,0)
+call SetupBuildingUpgrades('h026',.2,true,'h01I')
+call SetupBuildingUpgrades('h01C',.2,true,0)
+call SetupBuildingUpgrades('h01D',.2,true,0)
+call SetupBuildingUpgrades('h03G',.2,true,'h01D')
+call SetupBuildingUpgrades('h009',.2,true,0)
+call SetupBuildingUpgrades('h007',.2,true,0)
+call SetupBuildingUpgrades('h05I',.09,false,0)
+call SetupBuildingUpgrades('h01M',.09,false,0)
+call SetupBuildingUpgrades('h01W',.09,false,'h01M')
+call SetupBuildingUpgrades('h01X',.09,false,'h01W')
+call SetupBuildingUpgrades('h01F',.09,false,0)
+call SetupBuildingUpgrades('h01E',.12,false,0)
+call SetupBuildingUpgrades('h008',.05,false,0)
 endfunction
 function Chaos___RegisterUnitCasts takes nothing returns nothing
-call oO('n00Z','A03S',function jN)
+call RegisterSpell('n00Z','A03S',function jN)
 endfunction
 function lN takes unit u,integer tX returns unit
 local unit n
@@ -5609,8 +5616,8 @@ endfunction
 function mN takes nothing returns nothing
     call kN()
     call KN()
-    call oO('n00Z','A03S',function jN)
-    set ti=Filter(function fN)
+    call RegisterSpell('n00Z','A03S',function jN)
+    set EraserFilter=Filter(function EraserFilterFunc)
     set Ui=Filter(function hN)
 endfunction
 function MN takes nothing returns nothing
@@ -5620,11 +5627,11 @@ local real x
 local real y
 local real an=GetRandomReal(0,6.28)
 local real r=GetRandomReal(45.,65.)
-set oe=p
-call GroupEnumUnitsInRect(xe,bj_mapInitialPlayableArea,ki)
+set EraserIssuer=p
+call GroupEnumUnitsInRect(ErasingGroup,bj_mapInitialPlayableArea,ki)
 set bj_groupRandomConsidered=0
 set bj_groupRandomCurrentPick=null
-set bj_groupRandomCurrentPick=IX(xe)
+set bj_groupRandomCurrentPick=IX(ErasingGroup)
 if(bj_groupRandomCurrentPick==null)then
 return
 endif
@@ -5642,11 +5649,11 @@ exitwhen i>=5
 endloop
 endfunction
 function pN takes nothing returns nothing
-set oe=GetOwningPlayer(De)
-call GroupEnumUnitsInRect(xe,bj_mapInitialPlayableArea,li)
+set EraserIssuer=GetOwningPlayer(De)
+call GroupEnumUnitsInRect(ErasingGroup,bj_mapInitialPlayableArea,li)
 set bj_groupRandomConsidered=0
 set bj_groupRandomCurrentPick=null
-call ForGroup(xe,function GroupPickRandomUnitEnum)
+call ForGroup(ErasingGroup,function GroupPickRandomUnitEnum)
 if(bj_groupRandomCurrentPick==null)then
 return
 endif
@@ -5678,8 +5685,8 @@ call SpawnCreep(ce,'h04J',191.,.0,.0)
 return false
 endfunction
 function QN takes nothing returns boolean
-call SpawnCreep(ce,'h09Z',270.,.0,.0)
-return false
+    call SpawnCreep(ce,'h09Z',270.,.0,.0) // h09z <- corrupted
+    return false
 endfunction
 function sN takes nothing returns boolean
 call SetUnitVertexColor(ce,82,0,$87,'f')
@@ -5689,52 +5696,52 @@ function SN takes nothing returns boolean
 call SpawnCreep(ce,'h08I',.0,.0,.0)
 return false
 endfunction
-function tN takes nothing returns nothing
+function SetupChaosRaceBuildings takes nothing returns nothing
 call ZX('n01J',800.)
-call SetupUnitMapping('h04V','n01I')
-call SetupUnitMapping('h04W','n01H')
-call SetupUnitMapping('h09Y','n027')
-call AttachRegister('h09Y',function QN)
-call SetupUnitMapping('h04U','h04I')
-call AttachRegister('h04U',function qN)
-call SetupUnitMapping('h04S','n01G')
-call vO('h04R',function MN)
-call SetupUnitMapping('h04Q','n01F')
-call SetupUnitMapping('h04P','n01E')
-call SetupUnitMapping('h04O','n01D')
-call SetupUnitMapping('h04M','n01B')
+call BuildingTrains('h04V','n01I')
+call BuildingTrains('h04W','n01H')
+call BuildingTrains('h09Y','n027')
+call AttachRegister('h09Y',function QN) // h09Y <- Corrupted Ancient of Annihilation
+call BuildingTrains('h04U','h04I')
+call AttachRegister('h04U',function qN) // h04U <- Demonic Statue
+call BuildingTrains('h04S','n01G')
+call SetupSpecialBuildingAction('h04R',function MN)
+call BuildingTrains('h04Q','n01F')
+call BuildingTrains('h04P','n01E')
+call BuildingTrains('h04O','n01D')
+call BuildingTrains('h04M','n01B')
 call AttachRegister('h04M',function sN)
-call SetupUnitMapping('h04L','n019')
-call SetupUnitMapping('h04N','n01A')
-call vO('h04K',function pN)
+call BuildingTrains('h04L','n019')
+call BuildingTrains('h04N','n01A')
+call SetupSpecialBuildingAction('h04K',function pN)
 call AttachRegister('h04K',function SN)
 endfunction
-function TN takes nothing returns nothing
-call LX(0)
-call MX('h04V',.2,true,0)
-call MX('h04W',.2,true,'h04V')
-call MX('h09Y',.2,false,'h04W')
-call MX('h04U',.2,true,0)
-call MX('h04S',.2,true,0)
-call sX('h04Q',.18,true,0)
-call sX('h04P',.18,true,'h04Q')
-call MX('h04O',.2,true,0)
-call MX('h04M',.2,true,'h04O')
-call MX('h04L',.2,true,0)
-call MX('h04N',.2,true,'h04L')
-call MX('n01J',.0,false,0)
-call MX('h04T',.12,false,0)
-call MX('h04R',.09,false,0)
-call MX('h04K',.09,false,0)
-call MX('h008',.05,false,0)
+function SetupCorruptedRaceBuildings takes nothing returns nothing
+call PrepareRaceBuildingSetup(0)
+call SetupBuildingUpgrades('h04V',.2,true,0)
+call SetupBuildingUpgrades('h04W',.2,true,'h04V')
+call SetupBuildingUpgrades('h09Y',.2,false,'h04W')
+call SetupBuildingUpgrades('h04U',.2,true,0)
+call SetupBuildingUpgrades('h04S',.2,true,0)
+call SetupSiegeBuildingUpgrades('h04Q',.18,true,0) // <-- hell's gate
+call SetupSiegeBuildingUpgrades('h04P',.18,true,'h04Q') // H04P <- hell's portal
+call SetupBuildingUpgrades('h04O',.2,true,0)
+call SetupBuildingUpgrades('h04M',.2,true,'h04O')
+call SetupBuildingUpgrades('h04L',.2,true,0)
+call SetupBuildingUpgrades('h04N',.2,true,'h04L')
+call SetupBuildingUpgrades('n01J',.0,false,0)
+call SetupBuildingUpgrades('h04T',.12,false,0)
+call SetupBuildingUpgrades('h04R',.09,false,0)
+call SetupBuildingUpgrades('h04K',.09,false,0)
+call SetupBuildingUpgrades('h008',.05,false,0)
 endfunction
 function Corrupted__RegisterUnitCasts takes nothing returns nothing
-call oO('n027','A0AE',function PN)
+call RegisterSpell('n027','A0AE',function PN)
 endfunction
 function uN takes nothing returns nothing
-    call tN()
-    call TN()
-    call oO('n027','A0AE',function PN)
+    call SetupChaosRaceBuildings()
+    call SetupCorruptedRaceBuildings()
+    call RegisterSpell('n027','A0AE',function PN)
 endfunction
 function UN takes nothing returns nothing
 local unit c
@@ -5743,13 +5750,13 @@ local player p=GetOwningPlayer(De)
 local real x
 local real y
 local unit u
-set oe=p
+set EraserIssuer=p
 set x=GetUnitX(De)
 set y=GetUnitY(De)
 call DestroyEffect(AddSpecialEffect("Abilities\\Spells\\Items\\TomeOfRetraining\\TomeOfRetrainingCaster.mdl",x,y))
-call GroupEnumUnitsInRect(xe,bj_mapInitialPlayableArea,ki)
+call GroupEnumUnitsInRect(ErasingGroup,bj_mapInitialPlayableArea,ki)
 set bj_groupRandomCurrentPick=null
-set bj_groupRandomCurrentPick=IX(xe)
+set bj_groupRandomCurrentPick=IX(ErasingGroup)
 if(bj_groupRandomCurrentPick==null or eN(bj_groupRandomCurrentPick))then
 return
 endif
@@ -5759,12 +5766,12 @@ set c=CreateUnit(GetOwningPlayer(De),'e00I',x,y,.0)
 call UnitApplyTimedLife(c,'BTLF',12.)
 loop
 call TriggerSleepAction(1.)
-set oe=p
-call GroupEnumUnitsInRange(xe,x,y,128.,ki)
+set EraserIssuer=p
+call GroupEnumUnitsInRange(ErasingGroup,x,y,128.,ki)
 loop
-set u=FirstOfGroup(xe)
+set u=FirstOfGroup(ErasingGroup)
 exitwhen(u==null)
-call GroupRemoveUnit(xe,u)
+call GroupRemoveUnit(ErasingGroup,u)
 if(GetUnitAbilityLevel(u,'A07H')<=0)then
 call UnitAddAbility(u,'A0IL')
 call IssueTargetOrderById(u,$D024B,u)
@@ -5786,10 +5793,10 @@ local unit c
 local unit t
 local integer i=4
 local player pl=GetOwningPlayer(De)
-set oe=pl
+set EraserIssuer=pl
 call DestroyEffect(AddSpecialEffect("Abilities\\Weapons\\ChimaeraAcidMissile\\ChimaeraAcidMissile.mdl",GetUnitX(De),GetUnitY(De)))
-call GroupEnumUnitsInRect(xe,bj_mapInitialPlayableArea,Ki)
-set bj_groupRandomCurrentPick=IX(xe)
+call GroupEnumUnitsInRect(ErasingGroup,bj_mapInitialPlayableArea,Ki)
+set bj_groupRandomCurrentPick=IX(ErasingGroup)
 if(bj_groupRandomCurrentPick==null)then
 return
 endif
@@ -5903,50 +5910,50 @@ call SpawnCreep(ce,'h03H',.0,.0,.0)
 return false
 endfunction
 function rb takes nothing returns nothing
-call LX($C)
-call SetupUnitMapping('n02O','n02S')
-call MX('n02O',.2,true,0)
-call SetupUnitMapping('n02I','n02T')
-call MX('n02I',.2,true,'n02O')
-call SetupUnitMapping('n02K','n02W')
-call MX('n02K',.2,true,0)
-call SetupUnitMapping('n031','n032')
-call MX('n031',.2,true,'n02K')
-call SetupUnitMapping('n033','n034')
-call MX('n033',.2,true,'n031')
-call SetupUnitMapping('n02L','n02X')
-call MX('n02L',.18,true,0)
-call SetupUnitMapping('n02R','n02Y')
-call MX('n02R',.18,true,'n02L')
-call SetupUnitMapping('n02J','n02V')
-call MX('n02J',.2,true,0)
-call SetupUnitMapping('n02N','n02U')
-call MX('n02N',.2,true,'n02J')
-call SetupUnitMapping('n02M','n02Z')
-call MX('n02M',.2,true,0)
-call SetupUnitMapping('n02P','n030')
-call MX('n02P',.2,true,0)
-call SetupUnitMapping('n036','n035')
-call MX('n036',.2,true,'n02P')
+call PrepareRaceBuildingSetup($C)
+call BuildingTrains('n02O','n02S')
+call SetupBuildingUpgrades('n02O',.2,true,0)
+call BuildingTrains('n02I','n02T')
+call SetupBuildingUpgrades('n02I',.2,true,'n02O')
+call BuildingTrains('n02K','n02W')
+call SetupBuildingUpgrades('n02K',.2,true,0)
+call BuildingTrains('n031','n032')
+call SetupBuildingUpgrades('n031',.2,true,'n02K')
+call BuildingTrains('n033','n034')
+call SetupBuildingUpgrades('n033',.2,true,'n031')
+call BuildingTrains('n02L','n02X')
+call SetupBuildingUpgrades('n02L',.18,true,0)
+call BuildingTrains('n02R','n02Y')
+call SetupBuildingUpgrades('n02R',.18,true,'n02L')
+call BuildingTrains('n02J','n02V')
+call SetupBuildingUpgrades('n02J',.2,true,0)
+call BuildingTrains('n02N','n02U')
+call SetupBuildingUpgrades('n02N',.2,true,'n02J')
+call BuildingTrains('n02M','n02Z')
+call SetupBuildingUpgrades('n02M',.2,true,0)
+call BuildingTrains('n02P','n030')
+call SetupBuildingUpgrades('n02P',.2,true,0)
+call BuildingTrains('n036','n035')
+call SetupBuildingUpgrades('n036',.2,true,'n02P')
 call ZX('h06H',800.)
-call MX('h06H',.0,false,0)
-call vO('h06L',function UN)
-call MX('h06L',.12,false,0)
-call vO('h06I',function wN)
-call MX('h06I',.12,false,0)
-call vO('h06M',function WN)
-call MX('h06M',.09,false,0)
+call SetupBuildingUpgrades('h06H',.0,false,0)
+call SetupSpecialBuildingAction('h06L',function UN)
+call SetupBuildingUpgrades('h06L',.12,false,0)
+call SetupSpecialBuildingAction('h06I',function wN)
+call SetupBuildingUpgrades('h06I',.12,false,0)
+call SetupSpecialBuildingAction('h06M',function WN)
+call SetupBuildingUpgrades('h06M',.09,false,0)
 call AttachRegister('h06M',function ob)
-call MX('h008',.05,false,0)
+call SetupBuildingUpgrades('h008',.05,false,0)
 endfunction
 function ib takes nothing returns nothing
-call oO('n030','A0G8',function yN)
-call oO('n035','A0G8',function yN)
-call oO('n02Y','A0GB',function YN)
-call oO('n02S','A0HK',function zN)
-call oO('n02T','A0HK',function zN)
-call oO('n034','A0H1',function eb)
-call oO('n032','A0G9',function ZN)
+call RegisterSpell('n030','A0G8',function yN)
+call RegisterSpell('n035','A0G8',function yN)
+call RegisterSpell('n02Y','A0GB',function YN)
+call RegisterSpell('n02S','A0HK',function zN)
+call RegisterSpell('n02T','A0HK',function zN)
+call RegisterSpell('n034','A0H1',function eb)
+call RegisterSpell('n032','A0G9',function ZN)
 endfunction
 function nb takes nothing returns boolean
 call SpawnCreep(ce,'h071',45.,.0,.0)
@@ -5998,13 +6005,13 @@ endfunction
 function Ob takes nothing returns nothing
 local unit c
 local integer i=GetRandomInt(0,99)
-set oe=GetOwningPlayer(De)
-call GroupEnumUnitsInRect(xe,bj_mapInitialPlayableArea,li)
-set bj_groupRandomCurrentPick=IX(xe)
+set EraserIssuer=GetOwningPlayer(De)
+call GroupEnumUnitsInRect(ErasingGroup,bj_mapInitialPlayableArea,li)
+set bj_groupRandomCurrentPick=IX(ErasingGroup)
 if(bj_groupRandomCurrentPick==null)then
 return
 endif
-set c=CreateUnit(oe,'e008',GetUnitX(bj_groupRandomCurrentPick),GetUnitY(bj_groupRandomCurrentPick),.0)
+set c=CreateUnit(EraserIssuer,'e008',GetUnitX(bj_groupRandomCurrentPick),GetUnitY(bj_groupRandomCurrentPick),.0)
 if(i>50)then
 call UnitAddAbility(c,Yi)
 else
@@ -6015,9 +6022,9 @@ call UnitApplyTimedLife(c,'BTLF',8.)
 set c=null
 endfunction
 function Rb takes nothing returns nothing
-set oe=GetOwningPlayer(De)
-call GroupEnumUnitsInRect(xe,bj_mapInitialPlayableArea,li)
-set bj_groupRandomCurrentPick=IX(xe)
+set EraserIssuer=GetOwningPlayer(De)
+call GroupEnumUnitsInRect(ErasingGroup,bj_mapInitialPlayableArea,li)
+set bj_groupRandomCurrentPick=IX(ErasingGroup)
 if(bj_groupRandomCurrentPick==null)then
 return
 endif
@@ -6030,22 +6037,22 @@ call DestroyEffect(AddSpecialEffectTarget("Abilities\\Spells\\Items\\AIam\\AIamT
 endfunction
 function Ib takes nothing returns boolean
 local unit u=GetFilterUnit()
-local boolean aX=GetWidgetLife(u)>.405 and IsUnitAlly(u,oe)and IsUnitType(u,UNIT_TYPE_SAPPER)and GetUnitAbilityLevel(u,'A0F4')<=0
+local boolean aX=GetWidgetLife(u)>.405 and IsUnitAlly(u,EraserIssuer)and IsUnitType(u,UNIT_TYPE_SAPPER)and GetUnitAbilityLevel(u,'A0F4')<=0
 set u=null
 return aX
 endfunction
 function Ab takes nothing returns boolean
 local unit u=GetFilterUnit()
-local boolean aX=GetWidgetLife(u)>.405 and IsUnitAlly(u,oe)and IsUnitType(u,UNIT_TYPE_SAPPER)and not IsUnitType(u,UNIT_TYPE_MECHANICAL)
+local boolean aX=GetWidgetLife(u)>.405 and IsUnitAlly(u,EraserIssuer)and IsUnitType(u,UNIT_TYPE_SAPPER)and not IsUnitType(u,UNIT_TYPE_MECHANICAL)
 set u=null
 return aX
 endfunction
 function Nb takes nothing returns nothing
 local integer i
 local integer ab
-set oe=GetOwningPlayer(De)
-call GroupEnumUnitsInRect(xe,bj_mapInitialPlayableArea,va)
-set bj_groupRandomCurrentPick=IX(xe)
+set EraserIssuer=GetOwningPlayer(De)
+call GroupEnumUnitsInRect(ErasingGroup,bj_mapInitialPlayableArea,va)
+set bj_groupRandomCurrentPick=IX(ErasingGroup)
 if(bj_groupRandomCurrentPick==null)then
 return
 endif
@@ -6158,18 +6165,18 @@ call SpawnCreep(ce,'h064',270.,.0,.0)
 return false
 endfunction
 function Lb takes nothing returns nothing
-call SetupUnitMapping('h03Y','h02X')
-call SetupUnitMapping('h03Z','h02Y')
-call SetupUnitMapping('h040','h034')
-call SetupUnitMapping('h041','h03N')
-call SetupUnitMapping('h042','h03P')
-call SetupUnitMapping('h044','h03R')
-call SetupUnitMapping('h045','h02Z')
-call SetupUnitMapping('h046','h030')
-call SetupUnitMapping('h04A','o00C')
-call SetupUnitMapping('h04C','o00D')
-call SetupUnitMapping('h04D','o00E')
-call SetupUnitMapping('h04E','h03V')
+call BuildingTrains('h03Y','h02X')
+call BuildingTrains('h03Z','h02Y')
+call BuildingTrains('h040','h034')
+call BuildingTrains('h041','h03N')
+call BuildingTrains('h042','h03P')
+call BuildingTrains('h044','h03R')
+call BuildingTrains('h045','h02Z')
+call BuildingTrains('h046','h030')
+call BuildingTrains('h04A','o00C')
+call BuildingTrains('h04C','o00D')
+call BuildingTrains('h04D','o00E')
+call BuildingTrains('h04E','h03V')
 call AttachRegister('h03Y',function bb)
 call AttachRegister('h03Z',function Bb)
 call AttachRegister('h040',function cb)
@@ -6186,34 +6193,34 @@ call AttachRegister('h05Z',function Jb)
 call AttachRegister('h060',function jb)
 call AttachRegister('h061',function kb)
 call AttachRegister('h063',function Kb)
-call vO('h060',function Nb)
-call vO('h05Z',function Ob)
-call vO('h062',function Rb)
+call SetupSpecialBuildingAction('h060',function Nb)
+call SetupSpecialBuildingAction('h05Z',function Ob)
+call SetupSpecialBuildingAction('h062',function Rb)
 call ZX('h061',850.)
 endfunction
 function mb takes nothing returns nothing
-call LX($B)
-call MX('h03Y',.2,true,0)
-call MX('h03Z',.2,true,'h03Y')
-call MX('h042',.2,true,0)
-call MX('h044',.2,true,'h042')
-call MX('h045',.2,true,0)
-call MX('h046',.2,true,'h045')
-call MX('h04E',.2,false,'h046')
-call MX('h04A',.2,true,0)
-call MX('h04C',.2,true,'h04A')
-call MX('h04D',.2,true,'h04C')
-call sX('h040',.18,true,0)
-call sX('h041',.18,true,'h040')
-call MX('h061',.0,false,0)
-call MX('h060',.12,false,0)
-call MX('h05Z',.09,false,0)
-call MX('h062',.12,false,0)
-call MX('h008',.05,false,0)
+call PrepareRaceBuildingSetup($B)
+call SetupBuildingUpgrades('h03Y',.2,true,0)
+call SetupBuildingUpgrades('h03Z',.2,true,'h03Y')
+call SetupBuildingUpgrades('h042',.2,true,0)
+call SetupBuildingUpgrades('h044',.2,true,'h042')
+call SetupBuildingUpgrades('h045',.2,true,0)
+call SetupBuildingUpgrades('h046',.2,true,'h045')
+call SetupBuildingUpgrades('h04E',.2,false,'h046')
+call SetupBuildingUpgrades('h04A',.2,true,0)
+call SetupBuildingUpgrades('h04C',.2,true,'h04A')
+call SetupBuildingUpgrades('h04D',.2,true,'h04C')
+call SetupSiegeBuildingUpgrades('h040',.18,true,0)
+call SetupSiegeBuildingUpgrades('h041',.18,true,'h040')
+call SetupBuildingUpgrades('h061',.0,false,0)
+call SetupBuildingUpgrades('h060',.12,false,0)
+call SetupBuildingUpgrades('h05Z',.09,false,0)
+call SetupBuildingUpgrades('h062',.12,false,0)
+call SetupBuildingUpgrades('h008',.05,false,0)
 endfunction
 function Mb takes nothing returns nothing
-call oO('h03V','A0E1',function Eb)
-call oO('e00G','A0F9',function Xb)
+call RegisterSpell('h03V','A0E1',function Eb)
+call RegisterSpell('e00G','A0F9',function Xb)
 endfunction
 function pb takes unit u returns nothing
 local integer i=GetRandomInt(0,99)
@@ -6267,7 +6274,7 @@ function Sb takes nothing returns nothing
 endfunction
 function tb takes nothing returns boolean
 local unit u=GetFilterUnit()
-local boolean aX=IsUnitType(u,UNIT_TYPE_FLYING)and GetWidgetLife(u)>.405 and IsUnitEnemy(u,oe)and IsUnitType(u,UNIT_TYPE_SAPPER)and not IsUnitType(u,UNIT_TYPE_MECHANICAL)
+local boolean aX=IsUnitType(u,UNIT_TYPE_FLYING)and GetWidgetLife(u)>.405 and IsUnitEnemy(u,EraserIssuer)and IsUnitType(u,UNIT_TYPE_SAPPER)and not IsUnitType(u,UNIT_TYPE_MECHANICAL)
 set u=null
 return aX
 endfunction
@@ -6277,15 +6284,15 @@ local real y
 local integer i=0
 local unit t
 local unit c
-set oe=GetOwningPlayer(ge)
+set EraserIssuer=GetOwningPlayer(ge)
 set x=GetUnitX(ge)
 set y=GetUnitY(ge)
-call GroupEnumUnitsInRange(xe,GetUnitX(Ge),GetUnitY(Ge),400.,xa)
+call GroupEnumUnitsInRange(ErasingGroup,GetUnitX(Ge),GetUnitY(Ge),400.,xa)
 loop
-set t=FirstOfGroup(xe)
+set t=FirstOfGroup(ErasingGroup)
 set i=i+1
 exitwhen i>4 or t==null
-call GroupRemoveUnit(xe,t)
+call GroupRemoveUnit(ErasingGroup,t)
 set c=CreateUnit(GetOwningPlayer(ge),'e008',x,y,.0)
 call UnitAddAbility(c,'A08U')
 call IssueTargetOrderById(c,$D007F,t)
@@ -6297,15 +6304,15 @@ endfunction
 function ub takes nothing returns nothing
 local unit c
 local integer r=GetRandomInt(0,99)
-set oe=GetOwningPlayer(De)
-call GroupEnumUnitsInRect(xe,bj_mapInitialPlayableArea,li)
+set EraserIssuer=GetOwningPlayer(De)
+call GroupEnumUnitsInRect(ErasingGroup,bj_mapInitialPlayableArea,li)
 set bj_groupRandomConsidered=0
 set bj_groupRandomCurrentPick=null
-call ForGroup(xe,function GroupPickRandomUnitEnum)
+call ForGroup(ErasingGroup,function GroupPickRandomUnitEnum)
 if(bj_groupRandomCurrentPick==null or eN(bj_groupRandomCurrentPick))then
 return
 endif
-set c=CreateUnit(oe,'e008',GetUnitX(bj_groupRandomCurrentPick),GetUnitY(bj_groupRandomCurrentPick),.0)
+set c=CreateUnit(EraserIssuer,'e008',GetUnitX(bj_groupRandomCurrentPick),GetUnitY(bj_groupRandomCurrentPick),.0)
 if(r<33)then
 call UnitAddAbility(c,'A018')
 elseif(r>66)then
@@ -6313,9 +6320,9 @@ call UnitAddAbility(c,'A0GY')
 else
 call UnitAddAbility(c,'A0GX')
 endif
-call UnitShareVision(bj_groupRandomCurrentPick,oe,true)
+call UnitShareVision(bj_groupRandomCurrentPick,EraserIssuer,true)
 call IssueTargetOrderById(c,$D0216,bj_groupRandomCurrentPick)
-call UnitShareVision(bj_groupRandomCurrentPick,oe,false)
+call UnitShareVision(bj_groupRandomCurrentPick,EraserIssuer,false)
 call UnitApplyTimedLife(c,'BTLF',1.)
 set c=bj_groupRandomCurrentPick
 call TriggerSleepAction(1.)
@@ -6348,49 +6355,49 @@ call SpawnCreep(ce,'h08Z',250.,46.,33.5)
 call SpawnCreep(ce,'h090',270.,-17.,18.)
 return false
 endfunction
-function yb takes nothing returns boolean
-call SetUnitVertexColor(ce,$FF,$FF,$FF,0)
-call SpawnCreep(ce,'h08Z',250.,46.,33.5)
-call SpawnCreep(ce,'h091',270.,-17.,18.)
-call SpawnCreep(ce,'h08Z',350.,-22.,-40.)
-return false
+function ArcheryTowerBuildAttach takes nothing returns boolean
+    call SetUnitVertexColor(ce,$FF,$FF,$FF,0)
+    call SpawnCreep(ce,'h08Z',250.,46.,33.5) // h08Z <- archery target
+    call SpawnCreep(ce,'h091',270.,-17.,18.) // ELF build2
+    call SpawnCreep(ce,'h08Z',350.,-22.,-40.)
+    return false
 endfunction
 function Yb takes nothing returns nothing
-call vO('h00Z',function ub)
+call SetupSpecialBuildingAction('h00Z',function ub)
 call ZX('h014',675.)
-call SetupUnitMapping('h09X','h07B')
-call SetupUnitMapping('h00X','h00W')
-call SetupUnitMapping('h00V','h00U')
-call SetupUnitMapping('h00T','n006')
-call SetupUnitMapping('h03F','n00Y')
-call SetupUnitMapping('h08X','n022')
+call BuildingTrains('h09X','h07B')
+call BuildingTrains('h00X','h00W')
+call BuildingTrains('h00V','h00U')
+call BuildingTrains('h00T','n006')
+call BuildingTrains('h03F','n00Y')
+call BuildingTrains('h08X','n022')
 call AttachRegister('h08X',function Wb)
-call SetupUnitMapping('h08Y','n023')
-call AttachRegister('h08Y',function yb)
-call SetupUnitMapping('h070','e005')
-call SetupUnitMapping('h06Y','n01Y')
+call BuildingTrains('h08Y','n023') // h08Y <- archery tower
+call AttachRegister('h08Y',function ArcheryTowerBuildAttach)
+call BuildingTrains('h070','e005')
+call BuildingTrains('h06Y','n01Y')
 endfunction
 function zb takes nothing returns nothing
-call LX(7)
-call MX('h09X',.2,true,0)
-call MX('h00X',.2,false,'h09X')
-call MX('h00V',.2,true,0)
-call MX('h00T',.2,true,0)
-call MX('h03F',.2,true,'h00T')
-call MX('h08X',.2,true,0)
-call MX('h08Y',.2,true,'h08X')
-call sX('h070',.18,true,0)
-call MX('h06Y',.2,true,0)
-call MX('h00Z',.12,false,0)
-call MX('h059',.12,false,0)
-call MX('h005',.12,false,0)
-call MX('h014',.0,false,0)
-call MX('h008',.05,false,0)
+call PrepareRaceBuildingSetup(7)
+call SetupBuildingUpgrades('h09X',.2,true,0)
+call SetupBuildingUpgrades('h00X',.2,false,'h09X')
+call SetupBuildingUpgrades('h00V',.2,true,0)
+call SetupBuildingUpgrades('h00T',.2,true,0)
+call SetupBuildingUpgrades('h03F',.2,true,'h00T')
+call SetupBuildingUpgrades('h08X',.2,true,0)
+call SetupBuildingUpgrades('h08Y',.2,true,'h08X')
+call SetupSiegeBuildingUpgrades('h070',.18,true,0)
+call SetupBuildingUpgrades('h06Y',.2,true,0)
+call SetupBuildingUpgrades('h00Z',.12,false,0)
+call SetupBuildingUpgrades('h059',.12,false,0)
+call SetupBuildingUpgrades('h005',.12,false,0)
+call SetupBuildingUpgrades('h014',.0,false,0)
+call SetupBuildingUpgrades('h008',.05,false,0)
 endfunction
 function Zb takes nothing returns nothing
-call oO('n01Y','A08V',function Tb)
-call oO('h07B','A0A7',function Ub)
-call oO('h00W','A00X',function wb)
+call RegisterSpell('n01Y','A08V',function Tb)
+call RegisterSpell('h07B','A0A7',function Ub)
+call RegisterSpell('h00W','A00X',function wb)
 endfunction
 function vB takes integer id returns integer
 if(oa[id]==0)then
@@ -6419,7 +6426,7 @@ function rB takes nothing returns nothing
 local unit u=GetEnumUnit()
 local unit c
 if(aa<5)then
-set c=CreateUnit(oe,'e008',GetUnitX(u),GetUnitY(u),.0)
+set c=CreateUnit(EraserIssuer,'e008',GetUnitX(u),GetUnitY(u),.0)
 call UnitAddAbility(c,'A016')
 call IssueTargetOrderById(c,$D0085,u)
 call UnitApplyTimedLife(c,'BTLF',1.)
@@ -6432,10 +6439,10 @@ function iB takes nothing returns nothing
 local real x=GetUnitX(De)
 local real y=GetUnitY(De)
 call DestroyEffect(AddSpecialEffect("Abilities\\Spells\\Other\\HowlOfTerror\\HowlCaster.mdl",x,y))
-set oe=GetOwningPlayer(De)
-call GroupEnumUnitsInRange(xe,x,y,510.,ia)
+set EraserIssuer=GetOwningPlayer(De)
+call GroupEnumUnitsInRange(ErasingGroup,x,y,510.,ia)
 set aa=0
-call ForGroup(xe,function rB)
+call ForGroup(ErasingGroup,function rB)
 endfunction
 function aB takes nothing returns nothing
 local unit u=ge
@@ -6446,7 +6453,7 @@ set u=null
 endfunction
 function nB takes nothing returns boolean
 local unit u=GetFilterUnit()
-local boolean aX=IsUnitAlly(u,oe)and GetWidgetLife(u)<=.405 and not IsUnitType(u,UNIT_TYPE_MECHANICAL)
+local boolean aX=IsUnitAlly(u,EraserIssuer)and GetWidgetLife(u)<=.405 and not IsUnitType(u,UNIT_TYPE_MECHANICAL)
 set u=null
 return aX
 endfunction
@@ -6464,9 +6471,9 @@ call IssueImmediateOrderById(c,$D00C4)
 call TriggerSleepAction(.1)
 call IssueImmediateOrderById(u,$D008F)
 call TriggerSleepAction(.1)
-set oe=p
-call GroupEnumUnitsInRange(xe,GetUnitX(c),GetUnitY(c),450.,na)
-if(FirstOfGroup(xe)!=null)then
+set EraserIssuer=p
+call GroupEnumUnitsInRange(ErasingGroup,GetUnitX(c),GetUnitY(c),450.,na)
+if(FirstOfGroup(ErasingGroup)!=null)then
 call IssueImmediateOrderById(c,$D007E)
 endif
 call UnitApplyTimedLife(c,'BTLF',1.2)
@@ -6480,9 +6487,9 @@ local unit u=ge
 call IssueTargetOrderById(u,$D0062,Ge)
 call UnitAddAbility(Ge,'A03L')
 call TriggerSleepAction(.8)
-set oe=GetOwningPlayer(u)
-call GroupEnumUnitsInRange(xe,GetUnitX(u),GetUnitY(u),650.,na)
-if(FirstOfGroup(xe)!=null)then
+set EraserIssuer=GetOwningPlayer(u)
+call GroupEnumUnitsInRange(ErasingGroup,GetUnitX(u),GetUnitY(u),650.,na)
+if(FirstOfGroup(ErasingGroup)!=null)then
 call IssueImmediateOrderById(u,$D007E)
 call TriggerSleepAction(.8)
 endif
@@ -6521,46 +6528,46 @@ call SpawnCreep(ce,'h08Z',220.,43.,27.5)
 return false
 endfunction
 function RB takes nothing returns nothing
-call SetupUnitMapping('h000','hfoo')
-call SetupUnitMapping('h039','h03A')
-call SetupUnitMapping('h003','hrif')
-call SetupUnitMapping('h0A1','h05C')
+call BuildingTrains('h000','hfoo')
+call BuildingTrains('h039','h03A')
+call BuildingTrains('h003','hrif')
+call BuildingTrains('h0A1','h05C')
 call AttachRegister('h0A1',function OB)
-call SetupUnitMapping('h05D','h0A2')
-call SetupUnitMapping('h004','hmtm')
+call BuildingTrains('h05D','h0A2')
+call BuildingTrains('h004','hmtm')
 call ZX('h006',950.)
-call SetupUnitMapping('h00K','n005')
+call BuildingTrains('h00K','n005')
 call ZX('h010',500.)
-call vO('h010',function iB)
-call SetupUnitMapping('h015','h016')
-call SetupUnitMapping('h037','h03B')
-call SetupUnitMapping('h038','h03C')
-call SetupUnitMapping('h072','h074')
+call SetupSpecialBuildingAction('h010',function iB)
+call BuildingTrains('h015','h016')
+call BuildingTrains('h037','h03B')
+call BuildingTrains('h038','h03C')
+call BuildingTrains('h072','h074')
 endfunction
-function IB takes nothing returns nothing
-call LX(1)
-call MX('h037',.2,true,0)
-call MX('h038',.2,true,'h037')
-call MX('h072',.2,true,'h038')
-call MX('h015',.2,true,0)
-call MX('h00K',.2,true,0)
-call sX('h004',.18,true,0)
-call MX('h003',.2,true,0)
-call MX('h000',.2,true,0)
-call MX('h039',.2,true,'h000')
-call MX('h0A1',.2,true,'h003')
-call MX('h05D',.2,true,'h003')
-call MX('h001',.09,false,0)
-call MX('h006',.0,false,0)
-call MX('h010',.12,false,0)
-call MX('h05G',.12,false,0)
-call MX('h008',.05,false,0)
+function SetupHumanRaceBuildings takes nothing returns nothing
+call PrepareRaceBuildingSetup(1)
+call SetupBuildingUpgrades('h037',.2,true,0) // h037 <-- chapel
+call SetupBuildingUpgrades('h038',.2,true,'h037')
+call SetupBuildingUpgrades('h072',.2,true,'h038')
+call SetupBuildingUpgrades('h015',.2,true,0)
+call SetupBuildingUpgrades('h00K',.2,true,0)
+call SetupSiegeBuildingUpgrades('h004',.18,true,0) // h004 <- weapon lab
+call SetupBuildingUpgrades('h003',.2,true,0)
+call SetupBuildingUpgrades('h000',.2,true,0)
+call SetupBuildingUpgrades('h039',.2,true,'h000')
+call SetupBuildingUpgrades('h0A1',.2,true,'h003')
+call SetupBuildingUpgrades('h05D',.2,true,'h003')
+call SetupBuildingUpgrades('h001',.09,false,0)
+call SetupBuildingUpgrades('h006',.0,false,0)
+call SetupBuildingUpgrades('h010',.12,false,0)
+call SetupBuildingUpgrades('h05G',.12,false,0)
+call SetupBuildingUpgrades('h008',.05,false,0)
 endfunction
 function AB takes nothing returns nothing
-call oO('h03B','A03K',function aB)
-call oO('h03C','A03K',function EB)
-call oO('h074','A0I0',function VB)
-call oO('n005','A00K',function XB)
+call RegisterSpell('h03B','A03K',function aB)
+call RegisterSpell('h03C','A03K',function EB)
+call RegisterSpell('h074','A0I0',function VB)
+call RegisterSpell('n005','A00K',function XB)
 endfunction
 function NB takes unit u returns nothing
     local real x=GetRandomReal(2000.,5700.)
@@ -6586,13 +6593,13 @@ set io[f]=io[f]-1
 endfunction
 function dB takes nothing returns boolean
 local unit u=GetFilterUnit()
-local boolean aX=GetWidgetLife(u)>.405 and IsUnitAlly(u,oe)and IsUnitType(u,UNIT_TYPE_SAPPER)
+local boolean aX=GetWidgetLife(u)>.405 and IsUnitAlly(u,EraserIssuer)and IsUnitType(u,UNIT_TYPE_SAPPER)
 set u=null
 return aX
 endfunction
 function DB takes nothing returns nothing
 call RB()
-call IB()
+call SetupHumanRaceBuildings()
 call AB()
 call TimerStart(CreateTimer(),11.,true,function BB)
 set na=Filter(function nB)
@@ -6600,21 +6607,21 @@ set ia=Filter(function dB)
 endfunction
 function fB takes nothing returns boolean
 local unit u=GetFilterUnit()
-local boolean aX=GetWidgetLife(u)>50. and IsUnitAlly(u,oe)and IsUnitType(u,UNIT_TYPE_SAPPER)and GetUnitAbilityLevel(u,'Avul')<=0 and GetUnitAbilityLevel(u,'A09L')<=0
+local boolean aX=GetWidgetLife(u)>50. and IsUnitAlly(u,EraserIssuer)and IsUnitType(u,UNIT_TYPE_SAPPER)and GetUnitAbilityLevel(u,'Avul')<=0 and GetUnitAbilityLevel(u,'A09L')<=0
 set u=null
 return aX
 endfunction
 function FB takes nothing returns boolean
 local unit u=GetFilterUnit()
-local boolean aX=GetWidgetLife(u)>50. and IsUnitAlly(u,oe)and IsUnitType(u,UNIT_TYPE_SAPPER)and GetUnitAbilityLevel(u,'Avul')<=0
+local boolean aX=GetWidgetLife(u)>50. and IsUnitAlly(u,EraserIssuer)and IsUnitType(u,UNIT_TYPE_SAPPER)and GetUnitAbilityLevel(u,'Avul')<=0
 set u=null
 return aX
 endfunction
 function gB takes nothing returns nothing
 local unit u
-set oe=GetOwningPlayer(De)
-call GroupEnumUnitsInRect(xe,bj_mapInitialPlayableArea,Xa)
-set bj_groupRandomCurrentPick=IX(xe)
+set EraserIssuer=GetOwningPlayer(De)
+call GroupEnumUnitsInRect(ErasingGroup,bj_mapInitialPlayableArea,Xa)
+set bj_groupRandomCurrentPick=IX(ErasingGroup)
 if(bj_groupRandomCurrentPick==null)then
 return
 endif
@@ -6628,9 +6635,9 @@ set u=null
 endfunction
 function GB takes nothing returns nothing
 local unit u
-set oe=GetOwningPlayer(De)
-call GroupEnumUnitsInRect(xe,bj_mapInitialPlayableArea,Xa)
-set bj_groupRandomCurrentPick=IX(xe)
+set EraserIssuer=GetOwningPlayer(De)
+call GroupEnumUnitsInRect(ErasingGroup,bj_mapInitialPlayableArea,Xa)
+set bj_groupRandomCurrentPick=IX(ErasingGroup)
 if(bj_groupRandomCurrentPick==null)then
 return
 endif
@@ -6661,12 +6668,12 @@ set c=CreateUnit(p,'e008',x,y,.0)
 call UnitAddAbility(c,'A09E')
 call IssueImmediateOrderById(c,$D0080)
 call UnitApplyTimedLife(c,'BTLF',3.)
-set oe=p
-call GroupEnumUnitsInRange(xe,x,y,300.,ki)
+set EraserIssuer=p
+call GroupEnumUnitsInRange(ErasingGroup,x,y,300.,ki)
 loop
-set t=FirstOfGroup(xe)
+set t=FirstOfGroup(ErasingGroup)
 exitwhen t==null
-call GroupRemoveUnit(xe,t)
+call GroupRemoveUnit(ErasingGroup,t)
 set sy=GetUnitState(t,UNIT_STATE_MANA)
 if(sy>.0)then
 if(sy<100.)then
@@ -6781,66 +6788,66 @@ endfunction
 function sB takes nothing returns nothing
 call AttachRegister('h09T',function kB)
 call ZX('h09T',180.)
-call SetupUnitMapping('h069','n01U')
+call BuildingTrains('h069','n01U')
 call AttachRegister('h069',function KB)
-call vO('h06J',function gB)
-call vO('h05R',function GB)
-call SetupUnitMapping('h05T','z002')
-call SetupUnitMapping('h09P','z003')
+call SetupSpecialBuildingAction('h06J',function gB)
+call SetupSpecialBuildingAction('h05R',function GB)
+call BuildingTrains('h05T','z002')
+call BuildingTrains('h09P','z003')
 call AttachRegister('h09P',function lB)
-call SetupUnitMapping('h05U','n01T')
-call SetupUnitMapping('h05M','n01V')
-call SetupUnitMapping('h06D','n02G')
-call SetupUnitMapping('h05J','h06Q')
-call SetupUnitMapping('h09L','h06R')
+call BuildingTrains('h05U','n01T')
+call BuildingTrains('h05M','n01V')
+call BuildingTrains('h06D','n02G')
+call BuildingTrains('h05J','h06Q')
+call BuildingTrains('h09L','h06R')
 call AttachRegister('h09L',function LB)
-call SetupUnitMapping('h05V','n01X')
-call SetupUnitMapping('h097','n024')
+call BuildingTrains('h05V','n01X')
+call BuildingTrains('h097','n024')
 call AttachRegister('h097',function QB)
-call SetupUnitMapping('h05X','h06T')
-call SetupUnitMapping('h09J','h06U')
+call BuildingTrains('h05X','h06T')
+call BuildingTrains('h09J','h06U')
 call AttachRegister('h09J',function mB)
-call SetupUnitMapping('h09I','h099')
+call BuildingTrains('h09I','h099')
 call AttachRegister('h09I',function MB)
-call SetupUnitMapping('h06G','h06F')
-call SetupUnitMapping('h077','h075')
+call BuildingTrains('h06G','h06F')
+call BuildingTrains('h077','h075')
 call AttachRegister('h077',function pB)
-call SetupUnitMapping('h09B','h06S')
+call BuildingTrains('h09B','h06S')
 call AttachRegister('h09B',function PB)
-call SetupUnitMapping('h09H','h098')
+call BuildingTrains('h09H','h098')
 call AttachRegister('h09H',function qB)
 call ZX('h05L',600.)
 call AttachRegister('h05L',function jB)
 endfunction
 function SB takes nothing returns nothing
-call LX(9)
-call MX('h05T',.2,true,0)
-call MX('h09P',.2,true,'h05T')
-call MX('h05U',.2,true,0)
-call MX('h05M',.2,true,0)
-call MX('h06D',.2,true,'h05M')
-call MX('h05J',.2,true,0)
-call MX('h09L',.2,true,'h05J')
-call MX('h05V',.2,true,0)
-call MX('h097',.2,false,'h05V')
-call MX('h05X',.2,true,0)
-call MX('h09J',.2,true,'h05X')
-call MX('h09I',.2,true,'h05X')
-call MX('h077',.2,false,'h09I')
-call MX('h06G',.18,true,'h05X')
-call MX('h09B',.2,true,'h05X')
-call MX('h09H',.2,true,'h09B')
-call MX('h09T',.12,false,0)
-call MX('h069',.12,false,0)
-call MX('h06J',.12,false,0)
-call MX('h05R',.12,false,'h06J')
-call MX('h05L',.0,false,0)
-call MX('h008',.05,false,0)
+call PrepareRaceBuildingSetup(9)
+call SetupBuildingUpgrades('h05T',.2,true,0)
+call SetupBuildingUpgrades('h09P',.2,true,'h05T')
+call SetupBuildingUpgrades('h05U',.2,true,0)
+call SetupBuildingUpgrades('h05M',.2,true,0)
+call SetupBuildingUpgrades('h06D',.2,true,'h05M')
+call SetupBuildingUpgrades('h05J',.2,true,0)
+call SetupBuildingUpgrades('h09L',.2,true,'h05J')
+call SetupBuildingUpgrades('h05V',.2,true,0)
+call SetupBuildingUpgrades('h097',.2,false,'h05V')
+call SetupBuildingUpgrades('h05X',.2,true,0)
+call SetupBuildingUpgrades('h09J',.2,true,'h05X')
+call SetupBuildingUpgrades('h09I',.2,true,'h05X')
+call SetupBuildingUpgrades('h077',.2,false,'h09I')
+call SetupBuildingUpgrades('h06G',.18,true,'h05X')
+call SetupBuildingUpgrades('h09B',.2,true,'h05X')
+call SetupBuildingUpgrades('h09H',.2,true,'h09B')
+call SetupBuildingUpgrades('h09T',.12,false,0)
+call SetupBuildingUpgrades('h069',.12,false,0)
+call SetupBuildingUpgrades('h06J',.12,false,0)
+call SetupBuildingUpgrades('h05R',.12,false,'h06J')
+call SetupBuildingUpgrades('h05L',.0,false,0)
+call SetupBuildingUpgrades('h008',.05,false,0)
 endfunction
 function tB takes nothing returns nothing
-call oO('z003','A09D',function hB)
-call oO('h06U','A095',function HB)
-call vO('h05L',function JB)
+call RegisterSpell('z003','A09D',function hB)
+call RegisterSpell('h06U','A095',function HB)
+call SetupSpecialBuildingAction('h05L',function JB)
 endfunction
 function TB takes nothing returns nothing
 call sB()
@@ -6851,37 +6858,37 @@ set Ea=Filter(function fB)
 endfunction
 function uB takes nothing returns nothing
 local unit c
-set oe=GetOwningPlayer(De)
-call GroupEnumUnitsInRect(xe,bj_mapInitialPlayableArea,li)
+set EraserIssuer=GetOwningPlayer(De)
+call GroupEnumUnitsInRect(ErasingGroup,bj_mapInitialPlayableArea,li)
 set bj_groupRandomConsidered=0
 set bj_groupRandomCurrentPick=null
-set bj_groupRandomCurrentPick=IX(xe)
+set bj_groupRandomCurrentPick=IX(ErasingGroup)
 if(bj_groupRandomCurrentPick==null)then
 return
 endif
 set c=CreateUnit(GetOwningPlayer(De),'e008',GetUnitX(De),GetUnitY(De),.0)
 call UnitAddAbility(c,'A00P')
-call UnitShareVision(bj_groupRandomCurrentPick,oe,true)
+call UnitShareVision(bj_groupRandomCurrentPick,EraserIssuer,true)
 call IssueTargetOrderById(c,$D00FA,bj_groupRandomCurrentPick)
-call UnitShareVision(bj_groupRandomCurrentPick,oe,false)
+call UnitShareVision(bj_groupRandomCurrentPick,EraserIssuer,false)
 call UnitApplyTimedLife(c,'BTLF',15.)
 set c=null
 endfunction
 function UB takes nothing returns nothing
 local unit c
-set oe=GetOwningPlayer(De)
-call GroupEnumUnitsInRect(xe,bj_mapInitialPlayableArea,li)
+set EraserIssuer=GetOwningPlayer(De)
+call GroupEnumUnitsInRect(ErasingGroup,bj_mapInitialPlayableArea,li)
 set bj_groupRandomConsidered=0
 set bj_groupRandomCurrentPick=null
-set bj_groupRandomCurrentPick=IX(xe)
+set bj_groupRandomCurrentPick=IX(ErasingGroup)
 if(bj_groupRandomCurrentPick==null or eN(bj_groupRandomCurrentPick))then
 return
 endif
 set c=CreateUnit(GetOwningPlayer(De),'e008',GetUnitX(bj_groupRandomCurrentPick),GetUnitY(bj_groupRandomCurrentPick),.0)
 call UnitAddAbility(c,'A00N')
-call UnitShareVision(bj_groupRandomCurrentPick,oe,true)
+call UnitShareVision(bj_groupRandomCurrentPick,EraserIssuer,true)
 call IssueTargetOrderById(c,$D0265,bj_groupRandomCurrentPick)
-call UnitShareVision(bj_groupRandomCurrentPick,oe,false)
+call UnitShareVision(bj_groupRandomCurrentPick,EraserIssuer,false)
 call UnitApplyTimedLife(c,'BTLF',1.5)
 set c=null
 endfunction
@@ -6897,15 +6904,15 @@ set u=null
 endfunction
 function yB takes nothing returns nothing
 local unit c
-set oe=GetOwningPlayer(De)
-call GroupEnumUnitsInRect(xe,bj_mapInitialPlayableArea,ki)
+set EraserIssuer=GetOwningPlayer(De)
+call GroupEnumUnitsInRect(ErasingGroup,bj_mapInitialPlayableArea,ki)
 set bj_groupRandomConsidered=0
 set bj_groupRandomCurrentPick=null
-set bj_groupRandomCurrentPick=IX(xe)
+set bj_groupRandomCurrentPick=IX(ErasingGroup)
 if(bj_groupRandomCurrentPick==null)then
 return
 endif
-set c=CreateUnit(oe,'e008',GetUnitX(bj_groupRandomCurrentPick),GetUnitY(bj_groupRandomCurrentPick),.0)
+set c=CreateUnit(EraserIssuer,'e008',GetUnitX(bj_groupRandomCurrentPick),GetUnitY(bj_groupRandomCurrentPick),.0)
 call UnitAddAbility(c,'A00B')
 call IssueImmediateOrderById(c,$D0080)
 call UnitApplyTimedLife(c,'BTLF',1.)
@@ -6925,48 +6932,48 @@ function YB takes nothing returns nothing
     set c=null
 endfunction
 function zB takes nothing returns nothing
-call SetupUnitMapping('h01Z','n00S')
-call vO('h00N',function uB)
-call vO('h00M',function UB)
+call BuildingTrains('h01Z','n00S')
+call SetupSpecialBuildingAction('h00N',function uB)
+call SetupSpecialBuildingAction('h00M',function UB)
 call AttachRegister('h00G',function wB)
-call vO('h00G',function WB)
-call SetupUnitMapping('h00J','n004')
-call SetupUnitMapping('h05F','n01P')
-call SetupUnitMapping('h01B','n007')
-call vO('h00I',function yB)
-call SetupUnitMapping('h020','n00I')
-call SetupUnitMapping('h021','n00J')
-call SetupUnitMapping('h022','n00K')
+call SetupSpecialBuildingAction('h00G',function WB)
+call BuildingTrains('h00J','n004')
+call BuildingTrains('h05F','n01P')
+call BuildingTrains('h01B','n007')
+call SetupSpecialBuildingAction('h00I',function yB)
+call BuildingTrains('h020','n00I')
+call BuildingTrains('h021','n00J')
+call BuildingTrains('h022','n00K')
 call ZX('h00G',650.)
-call SetupUnitMapping('h01Y','n00H')
-call SetupUnitMapping('h00F','n002')
-call SetupUnitMapping('h032','n00X')
+call BuildingTrains('h01Y','n00H')
+call BuildingTrains('h00F','n002')
+call BuildingTrains('h032','n00X')
 endfunction
 function ZB takes nothing returns nothing
-call LX(3)
-call MX('h01Z',.2,true,0)
-call MX('h00J',.2,true,0)
-call MX('h05F',.2,false,'h00J')
-call sX('h01B',.18,true,0)
-call MX('h020',.2,true,0)
-call MX('h021',.2,true,'h020')
-call MX('h022',.2,true,'h021')
-call MX('h01Y',.2,true,0)
-call MX('h00F',.2,true,0)
-call MX('h032',.2,true,'h00F')
-call MX('h00N',.09,false,0)
-call MX('h00I',.18,false,0)
-call MX('h00M',.18,false,0)
-call MX('h00G',.0,false,0)
-call MX('h008',.05,false,0)
+call PrepareRaceBuildingSetup(3)
+call SetupBuildingUpgrades('h01Z',.2,true,0)
+call SetupBuildingUpgrades('h00J',.2,true,0)
+call SetupBuildingUpgrades('h05F',.2,false,'h00J')
+call SetupSiegeBuildingUpgrades('h01B',.18,true,0)
+call SetupBuildingUpgrades('h020',.2,true,0)
+call SetupBuildingUpgrades('h021',.2,true,'h020')
+call SetupBuildingUpgrades('h022',.2,true,'h021')
+call SetupBuildingUpgrades('h01Y',.2,true,0)
+call SetupBuildingUpgrades('h00F',.2,true,0)
+call SetupBuildingUpgrades('h032',.2,true,'h00F')
+call SetupBuildingUpgrades('h00N',.09,false,0)
+call SetupBuildingUpgrades('h00I',.18,false,0)
+call SetupBuildingUpgrades('h00M',.18,false,0)
+call SetupBuildingUpgrades('h00G',.0,false,0)
+call SetupBuildingUpgrades('h008',.05,false,0)
 endfunction
 function Naga___RegisterUnitCasts takes nothing returns nothing
-    call oO('n00S','A02U',function YB)
+    call RegisterSpell('n00S','A02U',function YB)
 endfunction
 function vc takes nothing returns nothing
     call zB()
     call ZB()
-    call oO('n00S','A02U',function YB)
+    call RegisterSpell('n00S','A02U',function YB)
 endfunction
 function ec takes nothing returns boolean
 local unit u=GetFilterUnit()
@@ -6985,11 +6992,11 @@ local real r
 local unit u
 local real x2
 local real y2
-call GroupEnumUnitsInRange(xe,x,y,144.,Ia)
+call GroupEnumUnitsInRange(ErasingGroup,x,y,144.,Ia)
 loop
-set u=FirstOfGroup(xe)
+set u=FirstOfGroup(ErasingGroup)
 exitwhen u==null
-call GroupRemoveUnit(xe,u)
+call GroupRemoveUnit(ErasingGroup,u)
 if(u!=ge)then
 set r=GetRandomReal(160.,218.)
 set an=(GetRandomReal(135.,234.)+180.*PlayerForce[GetPlayerId(GetOwningPlayer(u))])*bj_DEGTORAD
@@ -7071,7 +7078,7 @@ endfunction
 function Vc takes nothing returns boolean
 local unit u=GetFilterUnit()
 local real r=GetWidgetLife(u)
-local boolean aX=r>.405 and IsUnitAlly(u,oe)and IsUnitType(u,UNIT_TYPE_SAPPER)and GetUnitAbilityLevel(u,'A08C')<=0 and GetUnitAbilityLevel(u,'Bhea')<=0 and GetUnitState(u,UNIT_STATE_MAX_LIFE)-r>200.
+local boolean aX=r>.405 and IsUnitAlly(u,EraserIssuer)and IsUnitType(u,UNIT_TYPE_SAPPER)and GetUnitAbilityLevel(u,'A08C')<=0 and GetUnitAbilityLevel(u,'Bhea')<=0 and GetUnitState(u,UNIT_STATE_MAX_LIFE)-r>200.
 set u=null
 return aX
 endfunction
@@ -7157,33 +7164,33 @@ call IssueTargetOrderById(ge,$D000F,Ge)
 endfunction
 function Nc takes nothing returns nothing
 local unit c
-set oe=GetOwningPlayer(De)
-call GroupEnumUnitsInRect(xe,bj_mapInitialPlayableArea,li)
+set EraserIssuer=GetOwningPlayer(De)
+call GroupEnumUnitsInRect(ErasingGroup,bj_mapInitialPlayableArea,li)
 set bj_groupRandomConsidered=0
 set bj_groupRandomCurrentPick=null
-call ForGroup(xe,function GroupPickRandomUnitEnum)
+call ForGroup(ErasingGroup,function GroupPickRandomUnitEnum)
 if(bj_groupRandomCurrentPick==null or eN(bj_groupRandomCurrentPick))then
 return
 endif
-set c=CreateUnit(oe,'e008',GetUnitX(bj_groupRandomCurrentPick),GetUnitY(bj_groupRandomCurrentPick),.0)
+set c=CreateUnit(EraserIssuer,'e008',GetUnitX(bj_groupRandomCurrentPick),GetUnitY(bj_groupRandomCurrentPick),.0)
 call UnitAddAbility(c,'A0BL')
-call UnitShareVision(bj_groupRandomCurrentPick,oe,true)
+call UnitShareVision(bj_groupRandomCurrentPick,EraserIssuer,true)
 call IssueTargetOrderById(c,$D0206,bj_groupRandomCurrentPick)
-call UnitShareVision(bj_groupRandomCurrentPick,oe,false)
+call UnitShareVision(bj_groupRandomCurrentPick,EraserIssuer,false)
 call UnitApplyTimedLife(c,'BTLF',1.)
 set c=null
 endfunction
 function bc takes nothing returns nothing
 local unit c
-set oe=GetOwningPlayer(De)
-call GroupEnumUnitsInRect(xe,bj_mapInitialPlayableArea,li)
+set EraserIssuer=GetOwningPlayer(De)
+call GroupEnumUnitsInRect(ErasingGroup,bj_mapInitialPlayableArea,li)
 set bj_groupRandomConsidered=0
 set bj_groupRandomCurrentPick=null
-call ForGroup(xe,function GroupPickRandomUnitEnum)
+call ForGroup(ErasingGroup,function GroupPickRandomUnitEnum)
 if(bj_groupRandomCurrentPick==null)then
 return
 endif
-set c=CreateUnit(oe,'e008',GetUnitX(bj_groupRandomCurrentPick),GetUnitY(bj_groupRandomCurrentPick),.0)
+set c=CreateUnit(EraserIssuer,'e008',GetUnitX(bj_groupRandomCurrentPick),GetUnitY(bj_groupRandomCurrentPick),.0)
 call UnitAddAbility(c,Oa)
 call IssuePointOrderById(c,$D0275,GetUnitX(bj_groupRandomCurrentPick),GetUnitY(bj_groupRandomCurrentPick))
 call UnitApplyTimedLife(c,'BTLF',5.)
@@ -7225,60 +7232,60 @@ call SpawnCreep(ce,'h02T',49.,-40.,20.)
 return false
 endfunction
 function Gc takes nothing returns nothing
-call SetupUnitMapping('n02C','n00T')
+call BuildingTrains('n02C','n00T')
 call AttachRegister('n02C',function Bc)
-call SetupUnitMapping('h002','n00U')
+call BuildingTrains('h002','n00U')
 call AttachRegister('h002',function Cc)
-call SetupUnitMapping('h00Q','n01N')
+call BuildingTrains('h00Q','n01N')
 call AttachRegister('h00Q',function dc)
-call SetupUnitMapping('h00R','n01W')
+call BuildingTrains('h00R','n01W')
 call AttachRegister('h00R',function Dc)
-call SetupUnitMapping('h00Y','n026')
-call SetupUnitMapping('h012','n028')
+call BuildingTrains('h00Y','n026')
+call BuildingTrains('h012','n028')
 call AttachRegister('h012',function fc)
-call SetupUnitMapping('h013','e006')
-call SetupUnitMapping('h01H','e009')
-call SetupUnitMapping('h01J','e00C')
-call SetupUnitMapping('h023','n029')
-call SetupUnitMapping('h024','n02B')
+call BuildingTrains('h013','e006')
+call BuildingTrains('h01H','e009')
+call BuildingTrains('h01J','e00C')
+call BuildingTrains('h023','n029')
+call BuildingTrains('h024','n02B')
 call AttachRegister('h024',function Fc)
-call SetupUnitMapping('h027','n02A')
-call SetupUnitMapping('h028','e00F')
+call BuildingTrains('h027','n02A')
+call BuildingTrains('h028','e00F')
 call AttachRegister('h028',function gc)
 call ZX('n02D',700.)
-call vO('h02D',function Ic)
-call vO('h02C',function Nc)
-call vO('h02A',function bc)
+call SetupSpecialBuildingAction('h02D',function Ic)
+call SetupSpecialBuildingAction('h02C',function Nc)
+call SetupSpecialBuildingAction('h02A',function bc)
 endfunction
 function hc takes nothing returns nothing
-call LX($A)
-call MX('h002',.2,true,0)
-call MX('h00Q',.2,true,'h002')
-call MX('h00R',.2,true,'h00Q')
-call MX('h00Y',.2,true,0)
-call MX('h012',.2,true,'h00Y')
-call MX('h013',.2,true,0)
-call MX('h01H',.2,true,'h013')
-call MX('h01J',.2,false,'h01H')
-call MX('h023',.2,true,0)
-call MX('h024',.2,true,'h023')
-call MX('h027',.2,true,0)
-call MX('h028',.2,true,0)
-call MX('n02D',.0,false,0)
-call MX('h02A',.12,false,0)
-call MX('h02C',.09,false,0)
-call MX('h02D',.12,false,0)
-call MX('h008',.05,false,0)
+call PrepareRaceBuildingSetup($A)
+call SetupBuildingUpgrades('h002',.2,true,0)
+call SetupBuildingUpgrades('h00Q',.2,true,'h002')
+call SetupBuildingUpgrades('h00R',.2,true,'h00Q')
+call SetupBuildingUpgrades('h00Y',.2,true,0)
+call SetupBuildingUpgrades('h012',.2,true,'h00Y')
+call SetupBuildingUpgrades('h013',.2,true,0)
+call SetupBuildingUpgrades('h01H',.2,true,'h013')
+call SetupBuildingUpgrades('h01J',.2,false,'h01H')
+call SetupBuildingUpgrades('h023',.2,true,0)
+call SetupBuildingUpgrades('h024',.2,true,'h023')
+call SetupBuildingUpgrades('h027',.2,true,0)
+call SetupBuildingUpgrades('h028',.2,true,0)
+call SetupBuildingUpgrades('n02D',.0,false,0)
+call SetupBuildingUpgrades('h02A',.12,false,0)
+call SetupBuildingUpgrades('h02C',.09,false,0)
+call SetupBuildingUpgrades('h02D',.12,false,0)
+call SetupBuildingUpgrades('h008',.05,false,0)
 endfunction
 function Hc takes nothing returns nothing
-call oO('n026','A0C0',function ic)
-call oO('n028','A0C1',function ac)
-call oO('e006','A004',function Ec)
-call oO('e009','A0BT',function Xc)
-call oO('e00C','A0BX',function xc)
-call oO('n01W','A0AV',function Oc)
-call oO('e00F','A0BJ',function nc)
-call oO('n03E','A0IS',function Ac)
+call RegisterSpell('n026','A0C0',function ic)
+call RegisterSpell('n028','A0C1',function ac)
+call RegisterSpell('e006','A004',function Ec)
+call RegisterSpell('e009','A0BT',function Xc)
+call RegisterSpell('e00C','A0BX',function xc)
+call RegisterSpell('n01W','A0AV',function Oc)
+call RegisterSpell('e00F','A0BJ',function nc)
+call RegisterSpell('n03E','A0IS',function Ac)
 endfunction
 function jc takes unit u returns nothing
 local real x=GetUnitX(u)
@@ -7312,17 +7319,17 @@ function Jc takes nothing returns nothing
 endfunction
 function kc takes nothing returns boolean
 local unit u=GetFilterUnit()
-local boolean aX=GetWidgetLife(u)>.405 and IsUnitAlly(u,oe)and IsUnitType(u,UNIT_TYPE_SAPPER)and GetUnitAbilityLevel(u,'A08C')<=0
+local boolean aX=GetWidgetLife(u)>.405 and IsUnitAlly(u,EraserIssuer)and IsUnitType(u,UNIT_TYPE_SAPPER)and GetUnitAbilityLevel(u,'A08C')<=0
 set u=null
 return aX
 endfunction
 function Kc takes nothing returns nothing
-set oe=GetOwningPlayer(De)
-call GroupEnumUnitsInRect(xe,bj_mapInitialPlayableArea,ga)
+set EraserIssuer=GetOwningPlayer(De)
+call GroupEnumUnitsInRect(ErasingGroup,bj_mapInitialPlayableArea,ga)
 call DestroyEffect(AddSpecialEffect("Abilities\\Spells\\Human\\Polymorph\\PolyMorphTarget.mdl",GetUnitX(De),GetUnitY(De)))
 set bj_groupRandomConsidered=0
 set bj_groupRandomCurrentPick=null
-call ForGroup(xe,function GroupPickRandomUnitEnum)
+call ForGroup(ErasingGroup,function GroupPickRandomUnitEnum)
 if(bj_groupRandomCurrentPick==null)then
 return
 endif
@@ -7333,7 +7340,7 @@ call UnitAddAbility(bj_groupRandomCurrentPick,'A08F')
 endfunction
 function lc takes nothing returns boolean
 local unit u=GetFilterUnit()
-local boolean aX=GetWidgetLife(u)>.405 and IsUnitAlly(u,oe)and IsUnitType(u,UNIT_TYPE_SAPPER)and(not IsUnitType(u,UNIT_TYPE_MECHANICAL))
+local boolean aX=GetWidgetLife(u)>.405 and IsUnitAlly(u,EraserIssuer)and IsUnitType(u,UNIT_TYPE_SAPPER)and(not IsUnitType(u,UNIT_TYPE_MECHANICAL))
 if(aX)then
 set ha=ha+1
 endif
@@ -7361,14 +7368,14 @@ set u=CreateUnit(p,'e008',dN,DN,.0)
 call UnitAddAbility(u,'A08A')
 call IssueImmediateOrderById(u,$D012D)
 call UnitApplyTimedLife(u,'BTLF',1.)
-set oe=p
+set EraserIssuer=p
 set ha=0
-call GroupEnumUnitsInRange(xe,dN,DN,250.,Ga)
+call GroupEnumUnitsInRange(ErasingGroup,dN,DN,250.,Ga)
 set mc=50.+300./(1.+.75*I2R(ha))
 loop
-set u=FirstOfGroup(xe)
+set u=FirstOfGroup(ErasingGroup)
 exitwhen u==null
-call GroupRemoveUnit(xe,u)
+call GroupRemoveUnit(ErasingGroup,u)
 call SetUnitState(u,UNIT_STATE_LIFE,GetWidgetLife(u)+mc)
 endloop
 set Ha[id]=Ha[id]-1
@@ -7393,11 +7400,11 @@ local real x
 local real y
 local boolean fl
 local unit c
-set oe=GetOwningPlayer(De)
-call GroupEnumUnitsInRect(xe,bj_mapInitialPlayableArea,li)
+set EraserIssuer=GetOwningPlayer(De)
+call GroupEnumUnitsInRect(ErasingGroup,bj_mapInitialPlayableArea,li)
 set bj_groupRandomConsidered=0
 set bj_groupRandomCurrentPick=null
-call ForGroup(xe,function GroupPickRandomUnitEnum)
+call ForGroup(ErasingGroup,function GroupPickRandomUnitEnum)
 if(bj_groupRandomCurrentPick==null)then
 return
 endif
@@ -7406,10 +7413,10 @@ set x=GetUnitX(bj_groupRandomCurrentPick)
 set y=GetUnitY(bj_groupRandomCurrentPick)
 set fl=not Ox
 if(fl)then
-set f=CreateFogModifierRadius(oe,FOG_OF_WAR_VISIBLE,x,y,1050.,true,false)
+set f=CreateFogModifierRadius(EraserIssuer,FOG_OF_WAR_VISIBLE,x,y,1050.,true,false)
 call FogModifierStart(f)
 endif
-set c=CreateUnit(oe,'e008',x,y,.0)
+set c=CreateUnit(EraserIssuer,'e008',x,y,.0)
 if(haveArtillery)then
 call UnitAddAbility(c,'A0HV')
 else
@@ -7435,7 +7442,7 @@ set c=null
 endfunction
 function Qc takes nothing returns boolean
 local unit u=GetFilterUnit()
-local boolean aX=GetWidgetLife(u)>.405 and IsUnitEnemy(u,oe)and IsUnitType(u,UNIT_TYPE_SAPPER)and IsUnitType(u,UNIT_TYPE_GROUND)and GetUnitAbilityLevel(u,'Avul')<=0 and GetUnitAbilityLevel(u,'A08H')<=0
+local boolean aX=GetWidgetLife(u)>.405 and IsUnitEnemy(u,EraserIssuer)and IsUnitType(u,UNIT_TYPE_SAPPER)and IsUnitType(u,UNIT_TYPE_GROUND)and GetUnitAbilityLevel(u,'Avul')<=0 and GetUnitAbilityLevel(u,'A08H')<=0
 if(aX and GetUnitAbilityLevel(u,'BEer')<=0 and GetUnitAbilityLevel(u,'B00M')<=0)then
 call GroupAddUnit(Fa,u)
 set u=null
@@ -7449,18 +7456,18 @@ local real x
 local real y
 local unit t
 local unit c
-set oe=GetOwningPlayer(ge)
+set EraserIssuer=GetOwningPlayer(ge)
 set x=GetUnitX(Ge)
 set y=GetUnitY(Ge)
 set bj_forLoopAIndex=3
 call GroupClear(Fa)
-call GroupEnumUnitsInRange(xe,x,y,300.,Ja)
+call GroupEnumUnitsInRange(ErasingGroup,x,y,300.,Ja)
 loop
 set t=FirstOfGroup(Fa)
 exitwhen bj_forLoopAIndex<=0 or t==null
 set bj_forLoopAIndex=bj_forLoopAIndex-1
 call GroupRemoveUnit(Fa,t)
-set c=CreateUnit(oe,'e008',x,y,.0)
+set c=CreateUnit(EraserIssuer,'e008',x,y,.0)
 if(GetRandomInt(0,99)<50)then
 call UnitAddAbility(c,'A07Q')
 elseif(GetRandomInt(0,99)<55)then
@@ -7468,9 +7475,9 @@ call UnitAddAbility(c,'A07A')
 else
 call UnitAddAbility(c,'A0A6')
 endif
-call UnitShareVision(t,oe,true)
+call UnitShareVision(t,EraserIssuer,true)
 call IssueTargetOrderById(c,$D00CB,t)
-call UnitShareVision(t,oe,false)
+call UnitShareVision(t,EraserIssuer,false)
 call UnitApplyTimedLife(c,'BTLF',7.)
 endloop
 set t=null
@@ -7524,54 +7531,54 @@ call SpawnCreep(ce,'h08Q',.0,.0,.0)
 return false
 endfunction
 function vC takes nothing returns nothing
-call vO('h07H',function Kc)
+call SetupSpecialBuildingAction('h07H',function Kc)
 call AttachRegister('h07H',function tc)
-call vO('h08P',function Mc)
+call SetupSpecialBuildingAction('h08P',function Mc)
 call AttachRegister('h08P',function Tc)
 call ZX('h073',850.)
-call vO('h07I',function Pc)
+call SetupSpecialBuildingAction('h07I',function Pc)
 call AttachRegister('h07I',function Uc)
-call SetupUnitMapping('h088','e007')
+call BuildingTrains('h088','e007')
 call AttachRegister('h088',function wc)
-call SetupUnitMapping('h07D','e00J')
+call BuildingTrains('h07D','e00J')
 call AttachRegister('h07D',function Wc)
-call SetupUnitMapping('h07M','n01Z')
+call BuildingTrains('h07M','n01Z')
 call AttachRegister('h07M',function yc)
-call SetupUnitMapping('h07L','n020')
+call BuildingTrains('h07L','n020')
 call AttachRegister('h07L',function Yc)
-call SetupUnitMapping('h07O','e00B')
+call BuildingTrains('h07O','e00B')
 call AttachRegister('h07O',function zc)
-call SetupUnitMapping('h07N','e00A')
+call BuildingTrains('h07N','e00A')
 call AttachRegister('h07N',function Zc)
-call SetupUnitMapping('h011','e002')
-call SetupUnitMapping('h00S','e001')
-call SetupUnitMapping('h03D','e003')
-call SetupUnitMapping('h03E','e004')
-call SetupUnitMapping('h00B','e000')
+call BuildingTrains('h011','e002')
+call BuildingTrains('h00S','e001')
+call BuildingTrains('h03D','e003')
+call BuildingTrains('h03E','e004')
+call BuildingTrains('h00B','e000')
 endfunction
 function eC takes nothing returns nothing
-call LX(8)
-call MX('h088',.2,true,0)
-call MX('h07D',.2,true,'h088')
-call MX('h07M',.2,true,0)
-call MX('h07L',.2,true,'h07M')
-call MX('h07O',.2,true,0)
-call MX('h07N',.2,true,'h07O')
-call sX('h011',.18,true,0)
-call MX('h00S',.2,true,0)
-call MX('h03D',.2,true,'h00S')
-call MX('h03E',.2,true,'h03D')
-call MX('h00B',.2,true,0)
-call MX('h07H',.12,false,0)
-call MX('h08P',.12,false,0)
-call MX('h073',.0,false,0)
-call MX('h07I',.09,false,0)
-call MX('h008',.05,false,0)
+call PrepareRaceBuildingSetup(8)
+call SetupBuildingUpgrades('h088',.2,true,0)
+call SetupBuildingUpgrades('h07D',.2,true,'h088')
+call SetupBuildingUpgrades('h07M',.2,true,0)
+call SetupBuildingUpgrades('h07L',.2,true,'h07M')
+call SetupBuildingUpgrades('h07O',.2,true,0)
+call SetupBuildingUpgrades('h07N',.2,true,'h07O')
+call SetupSiegeBuildingUpgrades('h011',.18,true,0)
+call SetupBuildingUpgrades('h00S',.2,true,0)
+call SetupBuildingUpgrades('h03D',.2,true,'h00S')
+call SetupBuildingUpgrades('h03E',.2,true,'h03D')
+call SetupBuildingUpgrades('h00B',.2,true,0)
+call SetupBuildingUpgrades('h07H',.12,false,0)
+call SetupBuildingUpgrades('h08P',.12,false,0)
+call SetupBuildingUpgrades('h073',.0,false,0)
+call SetupBuildingUpgrades('h07I',.09,false,0)
+call SetupBuildingUpgrades('h008',.05,false,0)
 endfunction
 function xC takes nothing returns nothing
-call oO('e007','A07P',function qc)
-call oO('e00J','A07R',function sc)
-call oO('e000','A0CG',function Sc)
+call RegisterSpell('e007','A07P',function qc)
+call RegisterSpell('e00J','A07R',function sc)
+call RegisterSpell('e000','A0CG',function Sc)
 endfunction
 function oC takes nothing returns nothing
     call vC()
@@ -7586,33 +7593,33 @@ function oC takes nothing returns nothing
 endfunction
 function rC takes nothing returns boolean
 local unit u=GetFilterUnit()
-local boolean aX=GetWidgetLife(u)>.405 and IsUnitEnemy(u,oe)and IsUnitType(u,UNIT_TYPE_SAPPER)and IsUnitType(u,UNIT_TYPE_FLYING)
+local boolean aX=GetWidgetLife(u)>.405 and IsUnitEnemy(u,EraserIssuer)and IsUnitType(u,UNIT_TYPE_SAPPER)and IsUnitType(u,UNIT_TYPE_FLYING)
 set u=null
 return aX
 endfunction
 function iC takes nothing returns nothing
 local unit c
-set oe=GetOwningPlayer(De)
-call GroupEnumUnitsInRect(xe,bj_mapInitialPlayableArea,ka)
+set EraserIssuer=GetOwningPlayer(De)
+call GroupEnumUnitsInRect(ErasingGroup,bj_mapInitialPlayableArea,ka)
 set bj_groupRandomConsidered=0
 set bj_groupRandomCurrentPick=null
-call ForGroup(xe,function GroupPickRandomUnitEnum)
+call ForGroup(ErasingGroup,function GroupPickRandomUnitEnum)
 if(bj_groupRandomCurrentPick==null or eN(bj_groupRandomCurrentPick))then
 return
 endif
-set c=CreateUnit(oe,'e008',GetUnitX(De),GetUnitY(De),.0)
+set c=CreateUnit(EraserIssuer,'e008',GetUnitX(De),GetUnitY(De),.0)
 call UnitAddAbility(c,'A0AK')
-call UnitShareVision(bj_groupRandomCurrentPick,oe,true)
+call UnitShareVision(bj_groupRandomCurrentPick,EraserIssuer,true)
 call UnitApplyTimedLife(c,'BTLF',6.)
 call IssueTargetOrderById(c,$D007F,bj_groupRandomCurrentPick)
 set c=bj_groupRandomCurrentPick
 call TriggerSleepAction(2.)
-call UnitShareVision(c,oe,false)
+call UnitShareVision(c,EraserIssuer,false)
 set c=null
 endfunction
 function aC takes nothing returns boolean
 local unit u=GetFilterUnit()
-local boolean aX=GetWidgetLife(u)>.405 and IsUnitEnemy(u,oe)and IsUnitType(u,UNIT_TYPE_STRUCTURE)and GetPlayerId(GetOwningPlayer(u))<$C and GetUnitTypeId(u)!='hcas'
+local boolean aX=GetWidgetLife(u)>.405 and IsUnitEnemy(u,EraserIssuer)and IsUnitType(u,UNIT_TYPE_STRUCTURE)and GetPlayerId(GetOwningPlayer(u))<$C and GetUnitTypeId(u)!='hcas'
 set u=null
 return aX
 endfunction
@@ -7620,17 +7627,17 @@ function nC takes nothing returns nothing
 local real x
 local real y
 local unit c
-set oe=GetOwningPlayer(De)
-call GroupEnumUnitsInRect(xe,bj_mapInitialPlayableArea,Ka)
+set EraserIssuer=GetOwningPlayer(De)
+call GroupEnumUnitsInRect(ErasingGroup,bj_mapInitialPlayableArea,Ka)
 set bj_groupRandomCurrentPick=null
-set bj_groupRandomCurrentPick=IX(xe)
+set bj_groupRandomCurrentPick=IX(ErasingGroup)
 if(bj_groupRandomCurrentPick==null)then
 return
 endif
 set x=GetUnitX(bj_groupRandomCurrentPick)
 set y=GetUnitY(bj_groupRandomCurrentPick)
 call DestroyEffect(AddSpecialEffect("Objects\\Spawnmodels\\Naga\\NagaDeath\\NagaDeath.mdl",GetUnitX(De),GetUnitY(De)))
-set c=CreateUnit(oe,'h04G',x,y,.0)
+set c=CreateUnit(EraserIssuer,'h04G',x,y,.0)
 call UnitApplyTimedLife(c,'BTLF',1.)
 set c=null
 endfunction
@@ -7638,18 +7645,18 @@ function VC takes nothing returns nothing
 local real x
 local real y
 local unit c
-set oe=GetOwningPlayer(De)
-call GroupEnumUnitsInRect(xe,bj_mapInitialPlayableArea,Ka)
+set EraserIssuer=GetOwningPlayer(De)
+call GroupEnumUnitsInRect(ErasingGroup,bj_mapInitialPlayableArea,Ka)
 set bj_groupRandomConsidered=0
 set bj_groupRandomCurrentPick=null
-set bj_groupRandomCurrentPick=IX(xe)
+set bj_groupRandomCurrentPick=IX(ErasingGroup)
 if(bj_groupRandomCurrentPick==null)then
 return
 endif
 set x=GetUnitX(bj_groupRandomCurrentPick)
 set y=GetUnitY(bj_groupRandomCurrentPick)
 call DestroyEffect(AddSpecialEffect("Objects\\Spawnmodels\\Naga\\NagaDeath\\NagaDeath.mdl",GetUnitX(De),GetUnitY(De)))
-set c=CreateUnit(oe,'h04H',x,y,.0)
+set c=CreateUnit(EraserIssuer,'h04H',x,y,.0)
 call UnitApplyTimedLife(c,'BTLF',1.)
 set c=null
 endfunction
@@ -7678,31 +7685,31 @@ set Ma[i]=Ma[i]+.03
 call SetUnitX(u,x)
 call SetUnitY(u,y)
 if(GetRandomInt(0,'d')>94)then
-set oe=GetOwningPlayer(u)
-call GroupEnumUnitsInRange(xe,x,y,550.,li)
+set EraserIssuer=GetOwningPlayer(u)
+call GroupEnumUnitsInRange(ErasingGroup,x,y,550.,li)
 set bj_groupRandomConsidered=0
 set bj_groupRandomCurrentPick=null
-call ForGroup(xe,function GroupPickRandomUnitEnum)
+call ForGroup(ErasingGroup,function GroupPickRandomUnitEnum)
 if(bj_groupRandomCurrentPick!=null)then
 if(IsUnitType(bj_groupRandomCurrentPick,UNIT_TYPE_FLYING))then
 set c=CreateUnit(GetOwningPlayer(De),'e008',GetUnitX(bj_groupRandomCurrentPick),GetUnitY(bj_groupRandomCurrentPick),.0)
 call UnitAddAbility(c,'A082')
-call UnitShareVision(bj_groupRandomCurrentPick,oe,true)
+call UnitShareVision(bj_groupRandomCurrentPick,EraserIssuer,true)
 call IssueTargetOrderById(c,$D007F,bj_groupRandomCurrentPick)
-call UnitShareVision(bj_groupRandomCurrentPick,oe,false)
+call UnitShareVision(bj_groupRandomCurrentPick,EraserIssuer,false)
 call UnitApplyTimedLife(c,'BTLF',2.)
 else
 set c=CreateUnit(GetOwningPlayer(De),'e008',GetUnitX(bj_groupRandomCurrentPick),GetUnitY(bj_groupRandomCurrentPick),.0)
 call UnitAddAbility(c,'A083')
-call UnitShareVision(bj_groupRandomCurrentPick,oe,true)
+call UnitShareVision(bj_groupRandomCurrentPick,EraserIssuer,true)
 call IssueTargetOrderById(c,$D007F,bj_groupRandomCurrentPick)
-call UnitShareVision(bj_groupRandomCurrentPick,oe,false)
+call UnitShareVision(bj_groupRandomCurrentPick,EraserIssuer,false)
 call UnitApplyTimedLife(c,'BTLF',2.)
 set c=CreateUnit(GetOwningPlayer(De),'e008',GetUnitX(bj_groupRandomCurrentPick),GetUnitY(bj_groupRandomCurrentPick),.0)
 call UnitAddAbility(c,'A04H')
-call UnitShareVision(bj_groupRandomCurrentPick,oe,true)
+call UnitShareVision(bj_groupRandomCurrentPick,EraserIssuer,true)
 call IssueTargetOrderById(c,$D00CB,bj_groupRandomCurrentPick)
-call UnitShareVision(bj_groupRandomCurrentPick,oe,false)
+call UnitShareVision(bj_groupRandomCurrentPick,EraserIssuer,false)
 call UnitApplyTimedLife(c,'BTLF',4.5)
 endif
 endif
@@ -7774,48 +7781,48 @@ call UnitApplyTimedLife(c,'BTLF',1.)
 set c=null
 endfunction
 function NC takes nothing returns nothing
-call vO('h047',function iC)
-call vO('h048',function nC)
-call vO('h03L',function VC)
-call vO('h03O',function XC)
-call SetupUnitMapping('h049','n017')
-call SetupUnitMapping('h04F','n018')
-call SetupUnitMapping('h03W','n016')
-call SetupUnitMapping('h03T','n012')
-call SetupUnitMapping('h043','n013')
-call SetupUnitMapping('h03S','n014')
+call SetupSpecialBuildingAction('h047',function iC)
+call SetupSpecialBuildingAction('h048',function nC)
+call SetupSpecialBuildingAction('h03L',function VC)
+call SetupSpecialBuildingAction('h03O',function XC)
+call BuildingTrains('h049','n017')
+call BuildingTrains('h04F','n018')
+call BuildingTrains('h03W','n016')
+call BuildingTrains('h03T','n012')
+call BuildingTrains('h043','n013')
+call BuildingTrains('h03S','n014')
 call AttachRegister('h03S',function OC)
-call SetupUnitMapping('h03K','n015')
-call SetupUnitMapping('h03J','o00A')
+call BuildingTrains('h03K','n015')
+call BuildingTrains('h03J','o00A')
 call ZX('h03Q',750.)
-call SetupUnitMapping('h03U','n011')
-call SetupUnitMapping('h03I','n010')
-call SetupUnitMapping('h076','n03A')
+call BuildingTrains('h03U','n011')
+call BuildingTrains('h03I','n010')
+call BuildingTrains('h076','n03A')
 endfunction
 function bC takes nothing returns nothing
-call LX(4)
-call MX('h049',.2,true,0)
-call MX('h04F',.2,true,'h049')
-call MX('h03W',.2,true,'h04F')
-call MX('h03T',.2,true,0)
-call MX('h043',.2,true,'h03T')
-call MX('h03S',.2,true,0)
-call MX('h03K',.2,true,0)
-call MX('h03J',.2,true,'h03K')
-call MX('h03U',.2,true,0)
-call MX('h03I',.2,true,0)
-call MX('h076',.2,true,'h03I')
-call MX('h047',.12,false,0)
-call MX('h03Q',.0,false,0)
-call MX('h048',.09,false,0)
-call MX('h03L',.09,false,'h048')
-call MX('h03O',.09,false,0)
-call MX('h008',.05,false,0)
+call PrepareRaceBuildingSetup(4)
+call SetupBuildingUpgrades('h049',.2,true,0)
+call SetupBuildingUpgrades('h04F',.2,true,'h049')
+call SetupBuildingUpgrades('h03W',.2,true,'h04F')
+call SetupBuildingUpgrades('h03T',.2,true,0)
+call SetupBuildingUpgrades('h043',.2,true,'h03T')
+call SetupBuildingUpgrades('h03S',.2,true,0)
+call SetupBuildingUpgrades('h03K',.2,true,0)
+call SetupBuildingUpgrades('h03J',.2,true,'h03K')
+call SetupBuildingUpgrades('h03U',.2,true,0)
+call SetupBuildingUpgrades('h03I',.2,true,0)
+call SetupBuildingUpgrades('h076',.2,true,'h03I')
+call SetupBuildingUpgrades('h047',.12,false,0)
+call SetupBuildingUpgrades('h03Q',.0,false,0)
+call SetupBuildingUpgrades('h048',.09,false,0)
+call SetupBuildingUpgrades('h03L',.09,false,'h048')
+call SetupBuildingUpgrades('h03O',.09,false,0)
+call SetupBuildingUpgrades('h008',.05,false,0)
 endfunction
 function BC takes nothing returns nothing
-call oO('n016','A05E',function RC)
-call oO('n013','A05C',function AC)
-call oO('n014','A044',function IC)
+call RegisterSpell('n016','A05E',function RC)
+call RegisterSpell('n013','A05C',function AC)
+call RegisterSpell('n014','A044',function IC)
 endfunction
 function cC takes nothing returns nothing
     call NC()
@@ -7921,10 +7928,10 @@ endfunction
 function GC takes nothing returns nothing
 local real x
 local real y
-call GroupEnumUnitsInRect(xe,bj_mapInitialPlayableArea,ta)
+call GroupEnumUnitsInRect(ErasingGroup,bj_mapInitialPlayableArea,ta)
 set bj_groupRandomConsidered=0
 set bj_groupRandomCurrentPick=null
-call ForGroup(xe,function GroupPickRandomUnitEnum)
+call ForGroup(ErasingGroup,function GroupPickRandomUnitEnum)
 if(bj_groupRandomCurrentPick==null)then
 return
 endif
@@ -7937,10 +7944,10 @@ endfunction
 function hC takes nothing returns nothing
 local real x
 local real y
-call GroupEnumUnitsInRect(xe,bj_mapInitialPlayableArea,ta)
+call GroupEnumUnitsInRect(ErasingGroup,bj_mapInitialPlayableArea,ta)
 set bj_groupRandomConsidered=0
 set bj_groupRandomCurrentPick=null
-call ForGroup(xe,function GroupPickRandomUnitEnum)
+call ForGroup(ErasingGroup,function GroupPickRandomUnitEnum)
 if(bj_groupRandomCurrentPick==null)then
 return
 endif
@@ -7952,11 +7959,11 @@ call RemoveUnit(bj_groupRandomCurrentPick)
 endfunction
 function HC takes nothing returns nothing
 local unit u
-set oe=GetOwningPlayer(De)
-call GroupEnumUnitsInRect(xe,bj_mapInitialPlayableArea,li)
+set EraserIssuer=GetOwningPlayer(De)
+call GroupEnumUnitsInRect(ErasingGroup,bj_mapInitialPlayableArea,li)
 set bj_groupRandomConsidered=0
 set bj_groupRandomCurrentPick=null
-call ForGroup(xe,function GroupPickRandomUnitEnum)
+call ForGroup(ErasingGroup,function GroupPickRandomUnitEnum)
 if(bj_groupRandomCurrentPick==null)then
 return
 endif
@@ -7971,43 +7978,43 @@ call SetUnitAnimation(u,"stand")
 set u=null
 endfunction
 function jC takes nothing returns nothing
-call SetupUnitMapping('h01K','u005')
-call SetupUnitMapping('h04B','u009')
-call SetupUnitMapping('h055','u00D')
+call BuildingTrains('h01K','u005')
+call BuildingTrains('h04B','u009')
+call BuildingTrains('h055','u00D')
 call ZX('h01O',800.)
-call SetupUnitMapping('h01T','n00E')
-call vO('h01P',function GC)
-call vO('h056',function hC)
-call SetupUnitMapping('h01P','n00D')
-call SetupUnitMapping('h056','n01L')
-call SetupUnitMapping('h01N','h01U')
-call SetupUnitMapping('h054','h05H')
-call SetupUnitMapping('h01L','u001')
-call SetupUnitMapping('h01S','u000')
-call vO('h00A',function HC)
-call SetupUnitMapping('h01R','n00B')
-call SetupUnitMapping('h04Z','n01K')
-call SetupUnitMapping('h03M','u007')
+call BuildingTrains('h01T','n00E')
+call SetupSpecialBuildingAction('h01P',function GC)
+call SetupSpecialBuildingAction('h056',function hC)
+call BuildingTrains('h01P','n00D')
+call BuildingTrains('h056','n01L')
+call BuildingTrains('h01N','h01U')
+call BuildingTrains('h054','h05H')
+call BuildingTrains('h01L','u001')
+call BuildingTrains('h01S','u000')
+call SetupSpecialBuildingAction('h00A',function HC)
+call BuildingTrains('h01R','n00B')
+call BuildingTrains('h04Z','n01K')
+call BuildingTrains('h03M','u007')
 endfunction
 function JC takes nothing returns nothing
-call LX(6)
-call MX('h01K',.2,true,0)
-call MX('h04B',.2,true,'h01K')
-call MX('h055',.2,false,'h04B')
-call sX('h01T',.18,true,0)
-call MX('h01P',.12,true,0)
-call MX('h056',.12,true,'h01P')
-call MX('h01N',.2,true,0)
-call MX('h054',.2,true,'h01N')
-call MX('h01L',.2,true,0)
-call MX('h01S',.2,true,0)
-call MX('h01R',.2,true,0)
-call MX('h04Z',.2,true,'h01R')
-call MX('h03M',.2,true,'h04Z')
-call MX('h01O',.0,false,0)
-call MX('h00A',.09,false,0)
-call MX('h01Q',.09,false,0)
-call MX('h008',.05,false,0)
+call PrepareRaceBuildingSetup(6)
+call SetupBuildingUpgrades('h01K',.2,true,0) // h01K <- temple of bone
+call SetupBuildingUpgrades('h04B',.2,true,'h01K') // h04B <- temple of necromancy
+call SetupBuildingUpgrades('h055',.2,false,'h04B') // h055 <-- high citadel of necromancy
+call SetupSiegeBuildingUpgrades('h01T',.18,true,0) // h01T <- slauter house
+call SetupBuildingUpgrades('h01P',.12,true,0) // h01P <- skull pile
+call SetupBuildingUpgrades('h056',.12,true,'h01P') // h056 <- skull shrine
+call SetupBuildingUpgrades('h01N',.2,true,0) // h01N <- crypt
+call SetupBuildingUpgrades('h054',.2,true,'h01N')
+call SetupBuildingUpgrades('h01L',.2,true,0)
+call SetupBuildingUpgrades('h01S',.2,true,0)
+call SetupBuildingUpgrades('h01R',.2,true,0)
+call SetupBuildingUpgrades('h04Z',.2,true,'h01R')
+call SetupBuildingUpgrades('h03M',.2,true,'h04Z')
+call SetupBuildingUpgrades('h01O',.0,false,0)
+call SetupBuildingUpgrades('h00A',.09,false,0)
+call SetupBuildingUpgrades('h01Q',.09,false,0)
+call SetupBuildingUpgrades('h008',.05,false,0)
 endfunction
 function kC takes nothing returns nothing
 endfunction
@@ -8158,16 +8165,16 @@ function GetGameConfigString takes nothing returns string
     if(NoBounty)then
     set aX=aX+("-nb")
     endif
-    if(not NoSpecials)then
+    if(not HasSpecials)then
     set aX=aX+("-ns")
     endif
-    if(not NoItem)then
+    if(not HaveItem)then
     set aX=aX+("-ni")
     endif
     if(not haveLegend)then
     set aX=aX+("-la")
     endif
-    if(not NoDS)then
+    if(not HaveDS)then
     set aX=aX+("-nrs")
     endif
     if(UniqueRaceMode)then
@@ -8786,12 +8793,12 @@ function RestartRound takes nothing returns nothing
     call DisableTrigger(eV)
     loop
     loop
-    call GroupEnumUnitsOfPlayer(xe,Player(j),DrawFilter)
+    call GroupEnumUnitsOfPlayer(ErasingGroup,Player(j),DrawFilter)
     loop
-    set u=FirstOfGroup(xe)
+    set u=FirstOfGroup(ErasingGroup)
     exitwhen(u==null)
     call RemoveUnit(u)
-    call GroupRemoveUnit(xe,u)
+    call GroupRemoveUnit(ErasingGroup,u)
     endloop
     set i=i+1
     call TriggerSleepAction(.02)
@@ -8997,7 +9004,7 @@ function StartGame takes nothing returns nothing
     call SetUnitX(MainCastle[0],GetLocationX(xo[1]))
     call SetUnitY(MainCastle[0],GetLocationY(xo[1]))
     call SetUnitColor(MainCastle[0],PLAYER_COLOR_RED)
-    if(not NoItem)then
+    if(not HaveItem)then
         call UnitRemoveAbility(MainCastle[0],'Aall')
         call UnitRemoveAbility(MainCastle[0],'Apit')
     endif
@@ -9007,7 +9014,7 @@ function StartGame takes nothing returns nothing
     call SetUnitX(MainCastle[1],GetLocationX(xo[0]))
     call SetUnitY(MainCastle[1],GetLocationY(xo[0]))
     call SetUnitColor(MainCastle[1],PLAYER_COLOR_GREEN)
-    if(not NoItem)then
+    if(not HaveItem)then
         call UnitRemoveAbility(MainCastle[1],'Aall')
         call UnitRemoveAbility(MainCastle[1],'Apit')
     endif
@@ -9099,7 +9106,7 @@ function StartGame takes nothing returns nothing
     call CreateItemLoc('I001',BuilderInitialPosition[6])
     endif
     endif
-    if(not NoDS)then
+    if(not HaveDS)then
     call UnitRemoveAbility(u,'A005')
     call UnitRemoveAbility(u,'A06E')
     else
@@ -9539,8 +9546,8 @@ set An=true
 endfunction
 function bD takes integer dE returns nothing
 local unit u
-call GroupEnumUnitsOfPlayer(xe,Player(dE),Pi)
-set u=FirstOfGroup(xe)
+call GroupEnumUnitsOfPlayer(ErasingGroup,Player(dE),Pi)
+set u=FirstOfGroup(ErasingGroup)
 if(u==null)then
 return
 endif
@@ -9560,7 +9567,7 @@ local unit u=GetEnumUnit()
 local integer dN
 if(IsUnitType(u,UNIT_TYPE_STRUCTURE))then
 call SetUnitOwner(u,ForcePickRandomPlayer(nV),true)
-set dN=(MapToUnitType[GetUnitPointValue((u))])
+set dN=(BuildingToItsTrained[GetUnitPointValue((u))])
 if(dN>0)then
 call IssueImmediateOrderById(u,dN)
 call IssueImmediateOrderById(u,dN)
@@ -9587,8 +9594,8 @@ call yO(dE)
 call bD(dE)
 call vX(BuilderInitialPosition[dE])
 call ForceAddPlayer(EmptyForce,p)
-call GroupEnumUnitsOfPlayer(xe,p,null)
-call ForGroup(xe,function BD)
+call GroupEnumUnitsOfPlayer(ErasingGroup,p,null)
+call ForGroup(ErasingGroup,function BD)
 set i=0
 loop
 set p=Player(i)
@@ -9626,8 +9633,8 @@ function CD takes integer dE returns nothing
     call ForceAddPlayer(PerPlayerForce[i],p)
     call SetPlayerName(p,PlayerNames2[i])
     call ZO(GetPlayerId(p))
-    call GroupEnumUnitsOfPlayer(xe,p,Pi)
-    set u=FirstOfGroup(xe)
+    call GroupEnumUnitsOfPlayer(ErasingGroup,p,Pi)
+    set u=FirstOfGroup(ErasingGroup)
     if(u!=null and GetUnitAbilityLevel(u,'A0A5')<=0)then
     call UnitAddAbility(u,'A0A5')
     endif
@@ -9844,7 +9851,7 @@ function PD takes nothing returns nothing
         endif
     endif
     call zI(NN,u)
-    set qD=(MapToUnitType[GetUnitPointValue((u))])
+    set qD=(BuildingToItsTrained[GetUnitPointValue((u))])
     if(qD!=0)then
         call rI(GetUnitTypeId(u),NN)
         if(vo[GetPlayerId(p)])then
@@ -9903,7 +9910,7 @@ endfunction
 function uD takes nothing returns boolean
     local unit u=GetTriggerUnit()
     local integer dN
-    if((MapToUnitType[GetUnitPointValue((u))])>0)then
+    if((BuildingToItsTrained[GetUnitPointValue((u))])>0)then
     set dN=GetPlayerId(GetOwningPlayer(u))
     set Co[dN]=Co[dN]+1
     endif
@@ -9912,7 +9919,7 @@ function uD takes nothing returns boolean
 endfunction
 function wD takes nothing returns boolean
 local unit u=GetFilterUnit()
-if(GetWidgetLife(u)>.405 and IsUnitAlly(u,oe)and IsUnitType(u,UNIT_TYPE_SAPPER))then
+if(GetWidgetLife(u)>.405 and IsUnitAlly(u,EraserIssuer)and IsUnitType(u,UNIT_TYPE_SAPPER))then
 if(GetUnitTypeId(u)==bj_forLoopAIndex)then
 call SetWidgetLife(u,GetWidgetLife(u)+bj_forLoopAIndexEnd)
 else
@@ -10033,7 +10040,7 @@ call DestroyEffect(AddSpecialEffectTarget("Units\\NightElf\\Wisp\\WispExplode.md
 call DestroyEffect(AddSpecialEffectTarget("Units\\NightElf\\Wisp\\WispExplode.mdl",c,"origin"))
 call DestroyEffect(AddSpecialEffectTarget("Units\\NightElf\\Wisp\\WispExplode.mdl",c,"origin"))
 call TriggerSleepAction(.2)
-set oe=p
+set EraserIssuer=p
 set ZD=haveAI
 set haveAI=false
 loop
