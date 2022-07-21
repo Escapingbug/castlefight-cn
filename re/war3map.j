@@ -75,10 +75,10 @@ string ve=" !\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`ab
 boolean ee=true
 constant group ErasingGroup=CreateGroup()
 player EraserIssuer
-integer array UnitPrices
+integer array BuildingPrices
 integer array BuildingToItsTrained
 integer array PVToBuildingType
-real array ne
+real array BuildingIncomes
 integer array Ve
 real array BuildingPVWoodCost
 boolean array Xe
@@ -126,7 +126,7 @@ integer vx
 integer ex
 real xx
 hashtable ox
-hashtable rx
+hashtable GameHashTable
 constant group ix=CreateGroup()
 constant group ax=CreateGroup()
 rect nx
@@ -174,8 +174,8 @@ boolean array vo
 integer array eo
 location array xo
 integer array oo
-integer array ro
-integer array io
+integer array HeroStatusUnitRecording
+integer array HeroStatusNumbers
 integer array ao
 rect array no
 integer array Vo
@@ -189,7 +189,7 @@ integer array No
 location array BuilderInitialPosition
 integer array Bo
 integer array Co
-integer array do
+integer array PlayerSpecialBuildingCount
 integer array Do
 real array fo
 integer array Fo
@@ -200,7 +200,7 @@ integer array Ho
 integer array jo
 integer array PayedGolds
 real array IncomeMultiplier
-integer array Ko
+integer array PlayerLumber
 constant force WesternForce=CreateForce()
 constant force EasternForce=CreateForce()
 constant force EmptyForce=CreateForce()
@@ -281,13 +281,13 @@ real Ei
 real Xi
 real Oi
 constant timer IncomeTimer=CreateTimer()
-real Ii=25.
-real array Ai
-integer array PlayerIncome
+real TaxIncreaseOn=25.
+real array PlayerIncome
+integer array PlayerIncomeTaxed
 string bi
 real array Bi
 real ci
-group Ci=CreateGroup()
+group CagedGroup=CreateGroup()
 timer di=CreateTimer()
 string Di
 timer fi=null
@@ -312,7 +312,7 @@ integer si='A01I'
 integer erasingUnitTypeId
 boolexpr EraserFilter
 integer ErasingCount
-integer ErasePossibilityBound
+integer ErasePossibBound
 boolexpr Ui
 integer wi='n01C'
 player Wi
@@ -416,7 +416,7 @@ sound TranquilitySound=null
 trigger PlayerLeaveTrigger=null
 trigger BuyItemTrigger=null
 trigger WorkerLeaveCastleTrigger=null
-trigger Yn=null
+trigger PlayerBuildTrigger=null
 trigger zn=null
 trigger Zn=null
 trigger vV=null
@@ -1140,23 +1140,23 @@ endfunction
 function LE takes nothing returns nothing
     call lE()
 endfunction
-function mE takes nothing returns nothing
-local integer i=0
-local unit u
-loop
-if(dv[i]==null)then
-set u=CreateUnit(Bv,'h06B',GetDestructableX(Cv[i]),GetDestructableY(Cv[i]),270.)
-call SetUnitFlyHeight(u,30.,85.)
-call IssueTargetOrderById(u,$D0003,Cv[i])
-set dv[i]=u
-endif
-set i=i+1
-exitwhen i>=24
-endloop
-set u=null
+function AncientTreeTransform takes nothing returns nothing
+    local integer i=0
+    local unit u
+    loop
+    if(dv[i]==null)then
+    set u=CreateUnit(Bv,'h06B',GetDestructableX(Cv[i]),GetDestructableY(Cv[i]),270.)
+    call SetUnitFlyHeight(u,30.,85.)
+    call IssueTargetOrderById(u,$D0003,Cv[i]) // smart (?)
+    set dv[i]=u
+    endif
+    set i=i+1
+    exitwhen i>=24
+    endloop
+    set u=null
 endfunction
 function NatureWispControl_StartCalling takes nothing returns nothing
-call TimerStart(cv,6.,true,function mE)
+call TimerStart(cv,6.,true,function AncientTreeTransform)
 endfunction
 function ME takes nothing returns nothing
 local integer i=0
@@ -1236,7 +1236,7 @@ function tE takes nothing returns nothing
     endif
 endfunction
 function TE takes nothing returns nothing
-local integer id=LoadInteger(rx,30,GetHandleId(GetExpiredTimer()))
+local integer id=LoadInteger(GameHashTable,30,GetHandleId(GetExpiredTimer()))
 set kv[id]=kv[id]-1
 if(kv[id]<0)then
 if(GetLocalPlayer()==Player(id))then
@@ -1259,7 +1259,7 @@ if(hv[p]==null)then
 set hv[p]=CreateTimer()
 set Hv[p]=CreateTimer()
 set jv[p]=CreateTimerDialog(Hv[p])
-call SaveInteger(rx,30,GetHandleId(hv[p]),p)
+call SaveInteger(GameHashTable,30,GetHandleId(hv[p]),p)
 endif
 call TimerDialogDisplay(jv[p],GetLocalPlayer()==Player(p))
 set Jv[p]=UE-3
@@ -1378,7 +1378,7 @@ call DestroyBoolExpr(f)
 set f=null
 call TriggerAddAction(mv,function oX)
 endfunction
-function VX takes nothing returns nothing
+function InitPools takes nothing returns nothing
 local integer i=0
 local integer j
 local integer k
@@ -1406,35 +1406,35 @@ exitwhen i>=raceNum
 endloop
 endfunction
 function XX takes integer EX,boolean OX returns nothing
-local integer i=0
-if(OX)then
-loop
-exitwhen Pv[i]==EX or i>=qv
-set i=i+1
-endloop
-if(i>=qv)then
-return
-endif
-set qv=qv-1
-set Pv[i]=Pv[qv]
-else
-loop
-exitwhen Qv[i]==EX or i>=sv
-set i=i+1
-endloop
-if(i>=sv)then
-return
-endif
-set sv=sv-1
-set Qv[i]=Qv[sv]
-endif
+    local integer i=0
+    if(OX)then
+        loop
+            exitwhen Pv[i]==EX or i>=qv
+            set i=i+1
+        endloop
+        if(i>=qv)then
+            return
+        endif
+        set qv=qv-1
+        set Pv[i]=Pv[qv]
+    else
+        loop
+            exitwhen Qv[i]==EX or i>=sv
+            set i=i+1
+        endloop
+        if(i>=sv)then
+            return
+        endif
+        set sv=sv-1
+        set Qv[i]=Qv[sv]
+    endif
 endfunction
-function RX takes boolean OX returns integer
-if(OX)then
-return Pv[GetRandomInt(0,qv-1)]
-else
-return Qv[GetRandomInt(0,sv-1)]
-endif
+function RX takes boolean isWestern returns integer
+    if(isWestern)then
+        return Pv[GetRandomInt(0,qv-1)]
+    else
+        return Qv[GetRandomInt(0,sv-1)]
+    endif
 endfunction
 function Utils___GetRandomUnitPersonal takes nothing returns nothing
     set yv[Yv]=GetEnumUnit()
@@ -1633,14 +1633,14 @@ function SetupBuildingUpgrades takes integer buildingType,real ZV,boolean PX,int
     if(buildingPV>8000)then
     call DisplayTextToPlayer(GetLocalPlayer(),.0,.0," Wrong PV value for "+GetObjectName(buildingType))
     endif
-    if(UnitPrices[buildingPV]!=0 and(buildingType!='h008'))then
+    if(BuildingPrices[buildingPV]!=0 and(buildingType!='h008'))then
         call DisplayTextToPlayer(GetLocalPlayer(),.0,.0,"!Check unit PV "+GetObjectName(buildingType)+"/"+GetObjectName(PVToBuildingType[buildingPV]))
     endif
-    set UnitPrices[buildingPV]=unitPrice
+    set BuildingPrices[buildingPV]=unitPrice
     if(unitPrice==0)then
         call DisplayTextToPlayer(GetLocalPlayer(),.0,.0,GetObjectName(buildingType)+" price "+I2S(unitPrice))
     endif
-    set ne[buildingPV]=unitPrice*ZV*.1
+    set BuildingIncomes[buildingPV]=unitPrice*ZV*.1
     if(PX)then
         set Ve[buildingPV]=1
     else
@@ -1662,14 +1662,14 @@ function SetupSiegeBuildingUpgrades takes integer unitId,real ZV,boolean PX,inte
     if(id>8000)then
         call DisplayTextToPlayer(GetLocalPlayer(),.0,.0," Wrong PV value for "+GetObjectName(unitId))
     endif
-    if(UnitPrices[id]!=0)then
+    if(BuildingPrices[id]!=0)then
         call DisplayTextToPlayer(GetLocalPlayer(),.0,.0,"!Check unit PV "+GetObjectName(unitId)+"/"+GetObjectName(PVToBuildingType[id]))
     endif
-    set UnitPrices[id]=buildingCost
+    set BuildingPrices[id]=buildingCost
     if(buildingCost==0)then
         call DisplayTextToPlayer(GetLocalPlayer(),.0,.0,GetObjectName(unitId)+" price "+I2S(buildingCost))
     endif
-    set ne[id]=buildingCost*ZV*.1
+    set BuildingIncomes[id]=buildingCost*ZV*.1
     if(PX)then
     set Ve[id]=1
     else
@@ -1685,7 +1685,7 @@ endfunction
 function BuildingTrains takes integer building,integer trained returns nothing
     set BuildingToItsTrained[GetUnitPointValueByType(building)]=trained
 endfunction
-function SpawnCreep takes unit u,integer uX,real an,real x,real y returns nothing
+function SpawnVisualUnit takes unit u,integer uX,real an,real x,real y returns nothing
     local integer HE=GetUnitUserData(u)
     local real mx=GetUnitX(u)+x
     local real my=GetUnitY(u)+y
@@ -1713,21 +1713,19 @@ function UX takes unit u returns nothing
     endif
 endfunction
 
-// Registers attach buildings, so that it looks different from the base building after upgrade.
-// This is more of a visual effect.
 function AttachRegister takes integer obj,code YX returns nothing
     local integer id=GetUnitPointValueByType(obj)
     if(Be[id]!=null)then
-    call DisplayTextToPlayer(GetLocalPlayer(),.0,.0,"Conflict in Attach registration! ("+GetObjectName(obj)+")")
+        call DisplayTextToPlayer(GetLocalPlayer(),.0,.0,"Conflict in Attach registration! ("+GetObjectName(obj)+")")
     endif
     set Be[id]=CreateTrigger()
     call TriggerAddCondition(Be[id],Condition(YX))
 endfunction
-function zX takes unit u returns nothing
+function EvaluteRegisteredAttach takes unit u returns nothing
     local integer id=GetUnitPointValue(u)
     if(Be[id]!=null)then
-    set ce=u
-    call TriggerEvaluate(Be[id])
+        set ce=u
+        call TriggerEvaluate(Be[id])
     endif
 endfunction
 function ZX takes integer pX,real r returns nothing
@@ -2093,10 +2091,10 @@ endfunction
 function SetTax takes integer taxMode returns nothing
     set TaxMode=taxMode
     if(TaxMode==1)then
-    set Ii=1000.
+    set TaxIncreaseOn=1000.
     call DisplayTextToForce(bj_FORCE_ALL_PLAYERS,"|cffC6FF00No Taxes|r has been chosen. You don't have to pay taxes on your income.")
     elseif(TaxMode==2)then
-    set Ii=12.5
+    set TaxIncreaseOn=12.5
     call DisplayTextToForce(bj_FORCE_ALL_PLAYERS,"|cffC6FF00High Taxes|r has been chosen. Tax rate increases 10% every 12.5 income.")
     endif
 endfunction
@@ -2232,40 +2230,40 @@ set i=i+1
 endloop
 endfunction
 function yO takes integer i returns nothing
-set IncomeMultiplier[i]=1.
-set fo[i]=.0
-set Ai[i]=.0
-set PlayerIncome[i]=0
-set Bo[i]=-1
-set Co[i]=-1
-set do[i]=-1
-set Do[i]=-1
-set Fo[i]=-1
-set go[i]=-1
-set Go[i]=-1
-set ho[i]=-1
-set Ho[i]=-1
-set jo[i]=-1
-set PayedGolds[i]=-1
-set Ko[i]=0
+    set IncomeMultiplier[i]=1.
+    set fo[i]=.0
+    set PlayerIncome[i]=.0
+    set PlayerIncomeTaxed[i]=0
+    set Bo[i]=-1
+    set Co[i]=-1
+    set PlayerSpecialBuildingCount[i]=-1
+    set Do[i]=-1
+    set Fo[i]=-1
+    set go[i]=-1
+    set Go[i]=-1
+    set ho[i]=-1
+    set Ho[i]=-1
+    set jo[i]=-1
+    set PayedGolds[i]=-1
+    set PlayerLumber[i]=0
 endfunction
-function YO takes integer i returns nothing
-set IncomeMultiplier[i]=1.
-set fo[i]=.0
-set Ai[i]=5.
-set PlayerIncome[i]=5
-set Bo[i]=0
-set Co[i]=0
-set do[i]=0
-set Do[i]=0
-set Fo[i]=0
-set go[i]=0
-set Go[i]=0
-set ho[i]=0
-set Ho[i]=0
-set jo[i]=0
-set PayedGolds[i]=0
-set Ko[i]='}'
+function SetupInitialIncomes takes integer i returns nothing
+    set IncomeMultiplier[i]=1.
+    set fo[i]=.0
+    set PlayerIncome[i]=5.
+    set PlayerIncomeTaxed[i]=5
+    set Bo[i]=0
+    set Co[i]=0
+    set PlayerSpecialBuildingCount[i]=0
+    set Do[i]=0
+    set Fo[i]=0
+    set go[i]=0
+    set Go[i]=0
+    set ho[i]=0
+    set Ho[i]=0
+    set jo[i]=0
+    set PayedGolds[i]=0
+    set PlayerLumber[i]='}'
 endfunction
 function zO takes integer dE returns string
 local playercolor pc=GetPlayerColor(Player(dE))
@@ -2413,7 +2411,7 @@ function InitialSetups takes nothing returns nothing
     local integer i=0
     local player p=Player($C)
     set ox=InitHashtable()
-    set rx=InitHashtable()
+    set GameHashTable=InitHashtable()
     set me=GetWorldBounds()
     set nx=Rect(-288.,3296.,-96.,3488.)
     loop
@@ -2464,8 +2462,8 @@ function InitialSetups takes nothing returns nothing
     call SetPlayerFlagBJ(PLAYER_STATE_GIVES_BOUNTY,true,Player(bj_forLoopAIndex))
     set PlayerNames[bj_forLoopAIndex]=zO(bj_forLoopAIndex)+GetPlayerName(Player(bj_forLoopAIndex))+"|r"
     set vo[bj_forLoopAIndex]=true
-    set io[bj_forLoopAIndex]=0
-    set ro[bj_forLoopAIndex]=0
+    set HeroStatusNumbers[bj_forLoopAIndex]=0
+    set HeroStatusUnitRecording[bj_forLoopAIndex]=0
     set bj_forLoopAIndex=bj_forLoopAIndex+1
     endloop
     call SetMapFlag(MAP_LOCK_RESOURCE_TRADING,true)
@@ -2657,16 +2655,16 @@ function bR takes nothing returns nothing
     call RegisterSpell('n01O','A06I',function EnsnareAbility)
     set so=Filter(function ER)
 endfunction
-function BR takes integer tX returns integer
-local integer i=0
-loop
-exitwhen RaceWorkers[i]==tX or i>=raceNum
-set i=i+1
-endloop
-if(i>=raceNum)then
-return-1
-endif
-return i
+function FindRaceByWorker takes integer worker returns integer
+    local integer i=0
+    loop
+        exitwhen RaceWorkers[i]==worker or i>=raceNum
+        set i=i+1
+    endloop
+    if(i>=raceNum)then
+        return -1
+    endif
+    return i
 endfunction
 function cR takes integer tX returns string
 local integer i=0
@@ -2931,11 +2929,11 @@ local integer uX=GetUnitPointValue(u)
 local integer id=GetHandleId(u)
 local unit tu
 set EraserIssuer=GetOwningPlayer(u)
-set tu=LoadUnitHandle(rx,'ASTR',id)
+set tu=LoadUnitHandle(GameHashTable,'ASTR',id)
 if(uX==$81)then
 if(tu!=null and GetWidgetLife(tu)>.405 and IsUnitEnemy(tu,EraserIssuer))then
 if(GetUnitAbilityLevel(tu,'B012')>0 or GetUnitAbilityLevel(tu,'BHbn')>0 or not IssueTargetOrderById(u,$D000F,tu))then
-call RemoveSavedHandle(rx,'ASTR',id)
+call RemoveSavedHandle(GameHashTable,'ASTR',id)
 endif
 elseif(GetUnitAbilityLevel(u,'B012')>0 or IssueImmediateOrderById(u,$D00A1))then
 call GroupEnumUnitsInRect(ErasingGroup,hn,vr)
@@ -2949,7 +2947,7 @@ if(GetRandomInt(0,99)<33)then
 call IssuePointOrderById(u,$D0012,GetRandomReal(-800.,800.)+GetUnitX(u),GetRandomReal(-500.,500.)+GetUnitY(u))
 endif
 else
-call SaveUnitHandle(rx,'ASTR',id,bj_groupRandomCurrentPick)
+call SaveUnitHandle(GameHashTable,'ASTR',id,bj_groupRandomCurrentPick)
 call IssuePointOrderById(u,$D0012,GetUnitX(bj_groupRandomCurrentPick),GetUnitY(bj_groupRandomCurrentPick))
 endif
 else
@@ -3276,7 +3274,7 @@ return p
 endif
 endfunction
 function dI takes nothing returns nothing
-local integer dE=CI(LoadInteger(rx,'TrAi',GetHandleId(GetTriggeringTrigger())))
+local integer dE=CI(LoadInteger(GameHashTable,'TrAi',GetHandleId(GetTriggeringTrigger())))
 local integer iI=Rr[dE]
 local integer n=2
 local integer m=6
@@ -3289,7 +3287,7 @@ if(ei[dE]==0)then
 return
 endif
 set pX=GetUnitPointValueByType(ei[dE])
-if(UnitPrices[pX]>g or Cr[pX]>w)then
+if(BuildingPrices[pX]>g or Cr[pX]>w)then
 return
 endif
 set tX=UpgradeFrom[pX]
@@ -3525,9 +3523,9 @@ set j=0
 loop
 set pX=RaceBuildingArena[iI+i]
 set pv=GetUnitPointValueByType(pX)
-set pI=pI+(PlayerIncome[dE]*GetRandomReal(2.,4.)/ IncomeTime)
+set pI=pI+(PlayerIncomeTaxed[dE]*GetRandomReal(2.,4.)/ IncomeTime)
 set fl=cr[pv]
-if(UnitPrices[pv]<=pI and Ve[pv]>0 and UpgradeFrom[pv]==0 and(fl==4 or fl==5 or fl==6 or fl==7))then
+if(BuildingPrices[pv]<=pI and Ve[pv]>0 and UpgradeFrom[pv]==0 and(fl==4 or fl==5 or fl==6 or fl==7))then
 set vi[j]=pX
 set j=j+1
 if((fl==1 or fl==3 or fl==5 or fl==7))then
@@ -3547,7 +3545,7 @@ endif
 set i=n
 set j=PlayerForce[dE]
 set n=0
-set ik=IncomeTime*.012/(.01+PlayerIncome[dE])
+set ik=IncomeTime*.012/(.01+PlayerIncomeTaxed[dE])
 set bv=28.
 loop
 set pX=RaceBuildingArena[iI+i]
@@ -3558,8 +3556,8 @@ set uv=lI(pX,j)
 else
 set uv=mI(pX,j)
 endif
-if(UnitPrices[pv]>pI)then
-set uv=uv/(1.+(UnitPrices[pv]-pI)*ik)
+if(BuildingPrices[pv]>pI)then
+set uv=uv/(1.+(BuildingPrices[pv]-pI)*ik)
 endif
 if(uv/ bv>1.1 or(uv/ bv>.75 and GetRandomInt(0,99)<30))then
 set bv=uv
@@ -3627,7 +3625,7 @@ exitwhen j>$B
 endloop
 endfunction
 function AILibrary_PrepareAI takes nothing returns nothing
-call ExecuteFunc("QI")
+    call ExecuteFunc("QI")
 endfunction
 function AILibrary_ResetBuildPlaces takes nothing returns nothing
 local integer i=0
@@ -3746,7 +3744,7 @@ call TriggerAddAction(xi[i],function dI)
 endif
 call ResetTrigger(xi[i])
 set h=GetHandleId(xi[i])
-call SaveInteger(rx,'TrAi',h,i)
+call SaveInteger(GameHashTable,'TrAi',h,i)
 set oi[i]=false
 set i=i+1
 exitwhen i>$B
@@ -3765,447 +3763,447 @@ set mr=false
 set sr=true
 endfunction
 function AILibrary_Sleep takes nothing returns nothing
-set mr=true
+    set mr=true
 endfunction
-function QI takes nothing returns nothing
-local integer i
-local integer ut
-local integer zR
-if(Mr)then
-return
-endif
-set Fr=InitHashtable()
-call vI()
-call tV()
-call TV(false)
-set Yr=Filter(function bI)
-call TimerStart(CreateTimer(),2.,true,function qI)
-call TimerStart(CreateTimer(),7.,true,function BI)
-call TriggerAddCondition(Pr,Condition(function AI))
-set yr=Filter(function II)
-set tr=Filter(function VI)
-set kr[0]=CreateForce()
-set kr[1]=CreateForce()
-set Kr[0]=CreateTimer()
-set Kr[1]=CreateTimer()
-set lr[0]=true
-set lr[1]=true
-set Lr[0]=Player($E)
-set Lr[1]=Player($E)
-call TR('h025',5,6,570,5,46,0,0,29)
-call TR('h009',5,2,850,5,46,30,0,32)
-call TR('h007',5,2,$640,7,92,$A,0,40)
-call TR('h01C',3,0,450,2,33,0,0,26)
-call TR('h01I',2,0,$FA,3,20,0,0,21)
-call TR('h026',2,0,700,4,56,20,0,32)
-call TR('h01D',2,1,400,5,27,5,0,23)
-call TR('h03G',2,1,850,8,60,$F,0,32)
-set i=GetUnitPointValueByType('h01M')
-set Cr[i]=GetUnitWoodCost('h01M')
-set dr[i]=true
-set Dr[i]=2+4+1
-set fr[i]=350
-set i=GetUnitPointValueByType('h01W')
-set Cr[i]=GetUnitWoodCost('h01W')
-set dr[i]=false
-set Dr[i]=2+4+1
-set fr[i]=400
-set i=GetUnitPointValueByType('h01X')
-set Cr[i]=GetUnitWoodCost('h01X')
-set dr[i]=false
-set Dr[i]=2+4+1
-set fr[i]=500
-set i=GetUnitPointValueByType('h01E')
-set Cr[i]=GetUnitWoodCost('h01E')
-set dr[i]=true
-set Dr[i]=2+4
-set fr[i]=350
-set i=GetUnitPointValueByType('h01F')
-set Cr[i]=GetUnitWoodCost('h01F')
-set dr[i]=false
-set Dr[i]=4+1
-set fr[i]=$FA
-set i=GetUnitPointValueByType('h05I')
-set Cr[i]=GetUnitWoodCost('h05I')
-set dr[i]=false
-set Dr[i]=2+4
-set fr[i]='}'
-call TR('h000',2,2,$FA,4,20,0,0,20)
-call TR('h039',2,2,575,8,38,0,0,29)
-call TR('h003',0,1,270,0,22,0,0,22)
-call TR('h05D',0,1,500,3,50,20,0,31)
-call TR('h0A1',0,1,450,1,45,0,0,30)
-call TR('h004',1,0,280,0,20,$F,0,25)
-call TR('h015',3,1,500,2,23,0,0,27)
-call TR('h037',4,2,600,6,42,5,0,28)
-call TR('h038',4,2,820,9,65,$F,0,41)
-call TR('h00K',6,6,320,1,32,25,0,30)
-call TR('h072',4,2,$578,$C,'d',25,0,52)
-set i=GetUnitPointValueByType('h05G')
-set Cr[i]=GetUnitWoodCost('h05G')
-set dr[i]=true
-set Dr[i]=0
-set fr[i]=$96
-set i=GetUnitPointValueByType('h072')
-set Cr[i]=GetUnitWoodCost('h072')
-set dr[i]=true
-set Dr[i]=0
-set fr[i]=$8C
-set i=GetUnitPointValueByType('h001')
-set Cr[i]=GetUnitWoodCost('h001')
-set dr[i]=false
-set Dr[i]=1
-set fr[i]=50
-call TR('h04S',0,1,650,7,37,8,0,27)
-call TR('h04V',2,2,320,4,19,5,0,21)
-call TR('h04W',2,2,640,5,38,$A,0,27)
-call TR('h09Y',2,2,$708,8,'x',$F,0,52)
-call TR('h04L',3,0,375,2,30,5,0,24)
-call TR('h04N',3,0,740,4,55,$A,0,34)
-call TR('h04O',3,1,425,2,27,5,0,26)
-call TR('h04M',3,1,700,4,45,$A,0,35)
-call TR('h04Q',1,2,600,3,45,8,0,30)
-call TR('h04P',1,2,850,4,60,24,0,37)
-call TR('h04U',5,1,$3E8,4,65,$F,0,41)
-set i=GetUnitPointValueByType('h09Y')
-set Cr[i]=GetUnitWoodCost('h09Y')
-set dr[i]=true
-set Dr[i]=0
-set fr[i]=0
-set i=GetUnitPointValueByType('h04T')
-set Cr[i]=GetUnitWoodCost('h04T')
-set dr[i]=true
-set Dr[i]=1
-set fr[i]=$B9
-set i=GetUnitPointValueByType('h04K')
-set Cr[i]=GetUnitWoodCost('h04K')
-set dr[i]=false
-set Dr[i]=2+4
-set fr[i]=$87
-set i=GetUnitPointValueByType('h04R')
-set Cr[i]=GetUnitWoodCost('h04R')
-set dr[i]=false
-set Dr[i]=4
-set fr[i]='}'
-call TR('h02K',0,0,$3E8,6,24,0,0,28)
-call TR('h092',0,0,$4B0,7,36,0,0,33)
-call TR('h035',0,0,$4B0,7,36,5,0,33)
-call TR('h036',0,0,$4B0,7,36,5,0,33)
-call TR('h02P',0,6,440,2,31,0,0,26)
-call TR('h029',2,2,325,4,18,0,0,20)
-call TR('h02U',2,2,575,6,30,0,0,25)
-call TR('h031',2,2,$3E8,$A,90,$A,0,37)
-call TR('h02H',2,1,450,3,30,0,0,25)
-call TR('h05E',2,1,600,4,38,0,0,29)
-call TR('h02B',3,6,340,1,28,0,0,23)
-call TR('h06E',3,6,420,2,43,0,0,28)
-call TR('h02I',1,1,475,5,35,35,0,34)
-set i=GetUnitPointValueByType('h02O')
-set Cr[i]=GetUnitWoodCost('h02O')
-set dr[i]=true
-set Dr[i]=0
-set fr[i]=$E6
-set i=GetUnitPointValueByType('h02R')
-set Cr[i]=GetUnitWoodCost('h02R')
-set dr[i]=false
-set Dr[i]=0
-set fr[i]=70
-set i=GetUnitPointValueByType('h02N')
-set Cr[i]=GetUnitWoodCost('h02N')
-set dr[i]=false
-set Dr[i]=2+4+1
-set fr[i]=$C3
-call TR('h00F',0,2,625,6,51,$A,0,27)
-call TR('h032',0,2,$44C,9,71,20,0,37)
-call TR('h020',2,6,650,4,48,0,0,23)
-call TR('h021',2,6,$44C,6,68,$A,0,32)
-call TR('h022',2,6,$5DC,8,'d',20,0,41)
-call TR('h01B',1,2,700,8,55,0,0,29)
-call TR('h01Z',5,6,750,4,70,$A,0,32)
-call TR('h01Y',3,0,450,2,34,$A,0,26)
-call TR('h00J',2,1,325,3,28,0,0,23)
-call TR('h05F',5,1,$672,9,$82,50,0,57)
-set i=GetUnitPointValueByType('h05F')
-set Cr[i]=GetUnitWoodCost('h05F')
-set dr[i]=true
-set Dr[i]=0
-set fr[i]=0
-set i=GetUnitPointValueByType('h00N')
-set Cr[i]=GetUnitWoodCost('h00N')
-set dr[i]=true
-set Dr[i]=4+1
-set fr[i]=$CD
-set i=GetUnitPointValueByType('h00I')
-set Cr[i]=GetUnitWoodCost('h00I')
-set dr[i]=false
-set Dr[i]=4+1
-set fr[i]=$A0
-set i=GetUnitPointValueByType('h00M')
-set Cr[i]=GetUnitWoodCost('h00M')
-set dr[i]=false
-set Dr[i]=0
-set fr[i]=95
-set i=GetUnitPointValueByType('h00G')
-set Cr[i]=GetUnitWoodCost('h00G')
-set dr[i]=false
-set Dr[i]=0
-set fr[i]=70
-call TR('h03U',0,2,325,2,33,0,0,23)
-call TR('h03T',0,1,800,5,46,0,0,28)
-call TR('h043',0,1,$5DC,7,80,$A,0,39)
-call TR('h049',2,6,280,4,20,0,0,21)
-call TR('h04F',2,6,550,5,43,$A,0,27)
-call TR('h03W',2,6,$4B0,8,95,25,0,39)
-call TR('h03K',3,0,350,1,27,0,0,23)
-call TR('h03J',3,0,650,3,50,0,0,30)
-call TR('h03I',5,2,650,4,33,20,0,29)
-call TR('h03S',5,6,650,4,58,0,0,35)
-call TR('h076',5,2,$640,6,73,30,0,55)
-set i=GetUnitPointValueByType('h03O')
-set Cr[i]=GetUnitWoodCost('h03O')
-set dr[i]=true
-set Dr[i]=1
-set fr[i]=$A0
-set i=GetUnitPointValueByType('h076')
-set Cr[i]=GetUnitWoodCost('h076')
-set dr[i]=true
-set Dr[i]=0
-set fr[i]=0
-set i=GetUnitPointValueByType('h048')
-set Cr[i]=GetUnitWoodCost('h048')
-set dr[i]=false
-set Dr[i]=0
-set fr[i]=75
-set i=GetUnitPointValueByType('h03L')
-set Cr[i]=GetUnitWoodCost('h03L')
-set dr[i]=false
-set Dr[i]=1
-set fr[i]='}'
-set i=GetUnitPointValueByType('h047')
-set Cr[i]=GetUnitWoodCost('h047')
-set dr[i]=false
-set Dr[i]=2
-set fr[i]=85
-call TR('h01P',3,0,$FA,2,17,0,0,25)
-call TR('h056',4,0,500,4,33,0,0,30)
-call TR('h01K',3,6,320,1,31,0,0,25)
-call TR('h04B',3,6,550,3,47,5,0,33)
-call TR('h055',3,6,900,5,75,$A,0,53)
-call TR('h01S',2,0,$4B0,5,74,25,0,40)
-call TR('h01N',0,4,425,3,36,5,0,26)
-call TR('h054',0,4,650,4,53,$A,0,38)
-call TR('h01L',3,5,310,2,48,5,0,29)
-call TR('h01T',1,1,$4B0,8,74,$A,0,33)
-call TR('h01R',5,1,265,3,22,2,0,21)
-call TR('h04Z',5,1,500,5,38,7,0,26)
-call TR('h03M',5,1,$41A,6,67,$F,0,36)
-set i=GetUnitPointValueByType('h055')
-set Cr[i]=GetUnitWoodCost('h055')
-set dr[i]=true
-set Dr[i]=0
-set fr[i]=0
-set i=GetUnitPointValueByType('h01Q')
-set Cr[i]=GetUnitWoodCost('h01Q')
-set dr[i]=true
-set Dr[i]=0
-set fr[i]=350
-set i=GetUnitPointValueByType('h00A')
-set Cr[i]=GetUnitWoodCost('h00A')
-set dr[i]=false
-set Dr[i]=0
-set fr[i]=95
-call TR('h00S',0,0,350,1,21,0,0,22)
-call TR('h03D',0,0,500,3,70,20,0,32)
-call TR('h03E',0,0,900,5,90,60,0,52)
-call TR('h07M',0,1,375,1,32,0,0,25)
-call TR('h07L',0,1,575,2,65,0,0,31)
-call TR('h07O',3,0,425,5,38,0,0,26)
-call TR('h07N',3,0,700,8,78,0,0,37)
-call TR('h00B',3,0,460,2,28,0,0,28)
-call TR('h011',1,2,400,2,32,20,0,33)
-call TR('h088',5,6,375,1,28,5,0,24)
-call TR('h07D',5,6,550,3,50,$F,0,30)
-set i=GetUnitPointValueByType('h03E')
-set Cr[i]=GetUnitWoodCost('h03E')
-set dr[i]=true
-set Dr[i]=0
-set fr[i]=0
-set i=GetUnitPointValueByType('h07I')
-set Cr[i]=GetUnitWoodCost('h07I')
-set dr[i]=true
-set Dr[i]=2+4+1
-set fr[i]=$FA
-set i=GetUnitPointValueByType('h07H')
-set Cr[i]=GetUnitWoodCost('h07H')
-set dr[i]=false
-set Dr[i]=0
-set fr[i]=55
-set i=GetUnitPointValueByType('h08P')
-set Cr[i]=GetUnitWoodCost('h08P')
-set dr[i]=false
-set Dr[i]=1
-set fr[i]=80
-call TR('h08X',0,6,320,2,28,0,0,24)
-call TR('h08Y',0,6,550,4,85,0,0,34)
-call TR('h06Y',0,2,650,3,46,5,0,30)
-call TR('h00T',2,2,450,7,38,0,0,26)
-call TR('h03F',2,2,760,$A,'x',0,0,38)
-call TR('h00V',3,1,525,3,38,$A,0,28)
-call TR('h09X',6,6,550,2,48,$A,0,33)
-call TR('h00X',5,6,800,4,65,40,0,54)
-call TR('h070',1,1,500,3,32,30,0,32)
-set i=GetUnitPointValueByType('h00X')
-set Cr[i]=GetUnitWoodCost('h00X')
-set dr[i]=true
-set Dr[i]=0
-set fr[i]=0
-set i=GetUnitPointValueByType('h059')
-set Cr[i]=GetUnitWoodCost('h059')
-set dr[i]=true
-set Dr[i]=0
-set fr[i]=$F0
-set i=GetUnitPointValueByType('h00Z')
-set Cr[i]=GetUnitWoodCost('h00Z')
-set dr[i]=false
-set Dr[i]=0
-set fr[i]=65
-set i=GetUnitPointValueByType('h005')
-set Cr[i]=GetUnitWoodCost('h005')
-set dr[i]=false
-set Dr[i]=0
-set fr[i]=70
-call TR('h05X',2,2,450,5,33,0,0,24)
-call TR('h09I',5,2,750,8,48,$F,0,34)
-call TR('h06G',1,1,550,5,30,30,0,33)
-call TR('h09B',2,2,900,$C,62,0,0,34)
-call TR('h09J',2,2,650,7,44,0,0,31)
-call TR('h05T',5,0,500,4,36,$A,0,26)
-call TR('h09P',5,0,700,7,65,$F,0,33)
-call TR('h05U',0,1,$3E8,9,58,$F,0,36)
-call TR('h05M',6,6,300,0,36,30,0,25)
-call TR('h06D',6,6,400,0,45,36,0,30)
-call TR('h09H',2,2,950,$C,76,0,2,41)
-call TR('h05J',0,0,300,4,28,0,0,23)
-call TR('h09L',0,0,625,6,50,0,0,32)
-call TR('h05V',5,1,550,$C,47,0,0,28)
-call TR('h097',5,5,950,$F,95,5,0,53)
-set i=GetUnitPointValueByType('h097')
-set Cr[i]=GetUnitWoodCost('h097')
-set dr[i]=true
-set Dr[i]=0
-set fr[i]=0
-set i=GetUnitPointValueByType('h06J')
-set Cr[i]=GetUnitWoodCost('h06J')
-set dr[i]=false
-set Dr[i]=0
-set fr[i]=45
-set i=GetUnitPointValueByType('h05R')
-set Cr[i]=GetUnitWoodCost('h05R')
-set dr[i]=false
-set Dr[i]=0
-set fr[i]=75
-set i=GetUnitPointValueByType('h069')
-set Cr[i]=GetUnitWoodCost('h069')
-set dr[i]=false
-set Dr[i]=0
-set fr[i]=60
-call TR('h002',0,6,500,1,36,0,0,23)
-call TR('h00Q',0,6,800,3,75,5,0,33)
-call TR('h00R',0,6,$4B0,6,'d',$A,0,45)
-call TR('h028',1,3,$44C,8,85,5,0,40)
-call TR('h00Y',3,0,450,1,37,0,0,25)
-call TR('h012',3,0,650,3,51,0,0,35)
-call TR('h013',0,1,500,3,37,0,0,26)
-call TR('h01H',0,1,950,5,60,5,0,37)
-call TR('h01J',5,1,$5DC,4,'d',0,0,57)
-call TR('h027',5,2,700,5,45,$F,0,30)
-call TR('h023',2,6,680,6,48,5,0,28)
-call TR('h024',2,6,$4E2,8,74,0,0,41)
-set i=GetUnitPointValueByType('h01J')
-set Cr[i]=GetUnitWoodCost('h01J')
-set dr[i]=true
-set Dr[i]=0
-set fr[i]=0
-set i=GetUnitPointValueByType('h02D')
-set Cr[i]=GetUnitWoodCost('h02D')
-set dr[i]=true
-set Dr[i]=2+4+1
-set fr[i]=$DC
-set i=GetUnitPointValueByType('h02C')
-set Cr[i]=GetUnitWoodCost('h02C')
-set dr[i]=false
-set Dr[i]=0
-set fr[i]=65
-set i=GetUnitPointValueByType('h02A')
-set Cr[i]=GetUnitWoodCost('h02A')
-set dr[i]=false
-set Dr[i]=1
-set fr[i]=95
-call TR('h045',5,1,480,3,38,0,0,27)
-call TR('h046',5,1,900,6,65,$A,0,39)
-call TR('h040',1,6,700,5,50,5,0,27)
-call TR('h041',1,6,$546,$A,85,$C,0,42)
-call TR('h03Y',2,0,330,3,25,0,0,23)
-call TR('h03Z',2,0,620,7,45,5,0,31)
-call TR('h042',3,2,450,3,40,5,0,26)
-call TR('h044',3,2,800,9,65,$F,0,40)
-call TR('h04A',0,6,325,2,30,0,0,23)
-call TR('h04C',0,6,600,4,40,0,0,33)
-call TR('h04D',0,6,480,3,38,0,0,45)
-call TR('h04E',5,1,950,6,70,25,0,54)
-set i=GetUnitPointValueByType('h04E')
-set Cr[i]=GetUnitWoodCost('h04E')
-set dr[i]=true
-set Dr[i]=0
-set fr[i]=0
-set i=GetUnitPointValueByType('h063')
-set Cr[i]=GetUnitWoodCost('h063')
-set dr[i]=true
-set Dr[i]=0
-set fr[i]=$AA
-set i=GetUnitPointValueByType('h060')
-set Cr[i]=GetUnitWoodCost('h060')
-set dr[i]=false
-set Dr[i]=0
-set fr[i]=60
-set i=GetUnitPointValueByType('h05Z')
-set Cr[i]=GetUnitWoodCost('h05Z')
-set dr[i]=false
-set Dr[i]=1
-set fr[i]=$82
-call TR('n02O',2,0,320,2,25,0,0,23)
-call TR('n02I',2,0,500,4,50,0,0,32)
-call TR('n02K',0,6,400,1,33,0,0,27)
-call TR('n031',0,6,680,3,50,0,0,35)
-call TR('n033',4,6,$4E2,6,70,0,0,56)
-call TR('n02L',1,2,650,5,55,5,0,27)
-call TR('n02R',1,2,$4B0,9,75,0,0,35)
-call TR('n02J',0,6,350,1,27,$A,0,24)
-call TR('n02N',0,6,750,4,58,$F,0,32)
-call TR('n02M',5,2,850,6,55,30,0,36)
-call TR('n02P',3,1,600,6,37,0,0,26)
-call TR('n036',3,1,$3E8,8,65,0,0,37)
-set i=GetUnitPointValueByType('n033')
-set Cr[i]=GetUnitWoodCost('n033')
-set dr[i]=true
-set Dr[i]=0
-set fr[i]=0
-set i=GetUnitPointValueByType('h06L')
-set Cr[i]=GetUnitWoodCost('h06L')
-set dr[i]=false
-set Dr[i]=4
-set fr[i]=$96
-set i=GetUnitPointValueByType('h06I')
-set Cr[i]=GetUnitWoodCost('h06I')
-set dr[i]=false
-set Dr[i]=0
-set fr[i]=$9B
-set i=GetUnitPointValueByType('h06M')
-set Cr[i]=GetUnitWoodCost('h06M')
-set dr[i]=true
-set Dr[i]=0
-set fr[i]=$E1
-set Mr=true
+function DoPrepareAI takes nothing returns nothing
+    local integer i
+    local integer ut
+    local integer zR
+    if(Mr)then
+    return
+    endif
+    set Fr=InitHashtable()
+    call vI()
+    call tV()
+    call TV(false)
+    set Yr=Filter(function bI)
+    call TimerStart(CreateTimer(),2.,true,function qI)
+    call TimerStart(CreateTimer(),7.,true,function BI)
+    call TriggerAddCondition(Pr,Condition(function AI))
+    set yr=Filter(function II)
+    set tr=Filter(function VI)
+    set kr[0]=CreateForce()
+    set kr[1]=CreateForce()
+    set Kr[0]=CreateTimer()
+    set Kr[1]=CreateTimer()
+    set lr[0]=true
+    set lr[1]=true
+    set Lr[0]=Player($E)
+    set Lr[1]=Player($E)
+    call TR('h025',5,6,570,5,46,0,0,29)
+    call TR('h009',5,2,850,5,46,30,0,32)
+    call TR('h007',5,2,$640,7,92,$A,0,40)
+    call TR('h01C',3,0,450,2,33,0,0,26)
+    call TR('h01I',2,0,$FA,3,20,0,0,21)
+    call TR('h026',2,0,700,4,56,20,0,32)
+    call TR('h01D',2,1,400,5,27,5,0,23)
+    call TR('h03G',2,1,850,8,60,$F,0,32)
+    set i=GetUnitPointValueByType('h01M')
+    set Cr[i]=GetUnitWoodCost('h01M')
+    set dr[i]=true
+    set Dr[i]=2+4+1
+    set fr[i]=350
+    set i=GetUnitPointValueByType('h01W')
+    set Cr[i]=GetUnitWoodCost('h01W')
+    set dr[i]=false
+    set Dr[i]=2+4+1
+    set fr[i]=400
+    set i=GetUnitPointValueByType('h01X')
+    set Cr[i]=GetUnitWoodCost('h01X')
+    set dr[i]=false
+    set Dr[i]=2+4+1
+    set fr[i]=500
+    set i=GetUnitPointValueByType('h01E')
+    set Cr[i]=GetUnitWoodCost('h01E')
+    set dr[i]=true
+    set Dr[i]=2+4
+    set fr[i]=350
+    set i=GetUnitPointValueByType('h01F')
+    set Cr[i]=GetUnitWoodCost('h01F')
+    set dr[i]=false
+    set Dr[i]=4+1
+    set fr[i]=$FA
+    set i=GetUnitPointValueByType('h05I')
+    set Cr[i]=GetUnitWoodCost('h05I')
+    set dr[i]=false
+    set Dr[i]=2+4
+    set fr[i]='}'
+    call TR('h000',2,2,$FA,4,20,0,0,20)
+    call TR('h039',2,2,575,8,38,0,0,29)
+    call TR('h003',0,1,270,0,22,0,0,22)
+    call TR('h05D',0,1,500,3,50,20,0,31)
+    call TR('h0A1',0,1,450,1,45,0,0,30)
+    call TR('h004',1,0,280,0,20,$F,0,25)
+    call TR('h015',3,1,500,2,23,0,0,27)
+    call TR('h037',4,2,600,6,42,5,0,28)
+    call TR('h038',4,2,820,9,65,$F,0,41)
+    call TR('h00K',6,6,320,1,32,25,0,30)
+    call TR('h072',4,2,$578,$C,'d',25,0,52)
+    set i=GetUnitPointValueByType('h05G')
+    set Cr[i]=GetUnitWoodCost('h05G')
+    set dr[i]=true
+    set Dr[i]=0
+    set fr[i]=$96
+    set i=GetUnitPointValueByType('h072')
+    set Cr[i]=GetUnitWoodCost('h072')
+    set dr[i]=true
+    set Dr[i]=0
+    set fr[i]=$8C
+    set i=GetUnitPointValueByType('h001')
+    set Cr[i]=GetUnitWoodCost('h001')
+    set dr[i]=false
+    set Dr[i]=1
+    set fr[i]=50
+    call TR('h04S',0,1,650,7,37,8,0,27)
+    call TR('h04V',2,2,320,4,19,5,0,21)
+    call TR('h04W',2,2,640,5,38,$A,0,27)
+    call TR('h09Y',2,2,$708,8,'x',$F,0,52)
+    call TR('h04L',3,0,375,2,30,5,0,24)
+    call TR('h04N',3,0,740,4,55,$A,0,34)
+    call TR('h04O',3,1,425,2,27,5,0,26)
+    call TR('h04M',3,1,700,4,45,$A,0,35)
+    call TR('h04Q',1,2,600,3,45,8,0,30)
+    call TR('h04P',1,2,850,4,60,24,0,37)
+    call TR('h04U',5,1,$3E8,4,65,$F,0,41)
+    set i=GetUnitPointValueByType('h09Y')
+    set Cr[i]=GetUnitWoodCost('h09Y')
+    set dr[i]=true
+    set Dr[i]=0
+    set fr[i]=0
+    set i=GetUnitPointValueByType('h04T')
+    set Cr[i]=GetUnitWoodCost('h04T')
+    set dr[i]=true
+    set Dr[i]=1
+    set fr[i]=$B9
+    set i=GetUnitPointValueByType('h04K')
+    set Cr[i]=GetUnitWoodCost('h04K')
+    set dr[i]=false
+    set Dr[i]=2+4
+    set fr[i]=$87
+    set i=GetUnitPointValueByType('h04R')
+    set Cr[i]=GetUnitWoodCost('h04R')
+    set dr[i]=false
+    set Dr[i]=4
+    set fr[i]='}'
+    call TR('h02K',0,0,$3E8,6,24,0,0,28)
+    call TR('h092',0,0,$4B0,7,36,0,0,33)
+    call TR('h035',0,0,$4B0,7,36,5,0,33)
+    call TR('h036',0,0,$4B0,7,36,5,0,33)
+    call TR('h02P',0,6,440,2,31,0,0,26)
+    call TR('h029',2,2,325,4,18,0,0,20)
+    call TR('h02U',2,2,575,6,30,0,0,25)
+    call TR('h031',2,2,$3E8,$A,90,$A,0,37)
+    call TR('h02H',2,1,450,3,30,0,0,25)
+    call TR('h05E',2,1,600,4,38,0,0,29)
+    call TR('h02B',3,6,340,1,28,0,0,23)
+    call TR('h06E',3,6,420,2,43,0,0,28)
+    call TR('h02I',1,1,475,5,35,35,0,34)
+    set i=GetUnitPointValueByType('h02O')
+    set Cr[i]=GetUnitWoodCost('h02O')
+    set dr[i]=true
+    set Dr[i]=0
+    set fr[i]=$E6
+    set i=GetUnitPointValueByType('h02R')
+    set Cr[i]=GetUnitWoodCost('h02R')
+    set dr[i]=false
+    set Dr[i]=0
+    set fr[i]=70
+    set i=GetUnitPointValueByType('h02N')
+    set Cr[i]=GetUnitWoodCost('h02N')
+    set dr[i]=false
+    set Dr[i]=2+4+1
+    set fr[i]=$C3
+    call TR('h00F',0,2,625,6,51,$A,0,27)
+    call TR('h032',0,2,$44C,9,71,20,0,37)
+    call TR('h020',2,6,650,4,48,0,0,23)
+    call TR('h021',2,6,$44C,6,68,$A,0,32)
+    call TR('h022',2,6,$5DC,8,'d',20,0,41)
+    call TR('h01B',1,2,700,8,55,0,0,29)
+    call TR('h01Z',5,6,750,4,70,$A,0,32)
+    call TR('h01Y',3,0,450,2,34,$A,0,26)
+    call TR('h00J',2,1,325,3,28,0,0,23)
+    call TR('h05F',5,1,$672,9,$82,50,0,57)
+    set i=GetUnitPointValueByType('h05F')
+    set Cr[i]=GetUnitWoodCost('h05F')
+    set dr[i]=true
+    set Dr[i]=0
+    set fr[i]=0
+    set i=GetUnitPointValueByType('h00N')
+    set Cr[i]=GetUnitWoodCost('h00N')
+    set dr[i]=true
+    set Dr[i]=4+1
+    set fr[i]=$CD
+    set i=GetUnitPointValueByType('h00I')
+    set Cr[i]=GetUnitWoodCost('h00I')
+    set dr[i]=false
+    set Dr[i]=4+1
+    set fr[i]=$A0
+    set i=GetUnitPointValueByType('h00M')
+    set Cr[i]=GetUnitWoodCost('h00M')
+    set dr[i]=false
+    set Dr[i]=0
+    set fr[i]=95
+    set i=GetUnitPointValueByType('h00G')
+    set Cr[i]=GetUnitWoodCost('h00G')
+    set dr[i]=false
+    set Dr[i]=0
+    set fr[i]=70
+    call TR('h03U',0,2,325,2,33,0,0,23)
+    call TR('h03T',0,1,800,5,46,0,0,28)
+    call TR('h043',0,1,$5DC,7,80,$A,0,39)
+    call TR('h049',2,6,280,4,20,0,0,21)
+    call TR('h04F',2,6,550,5,43,$A,0,27)
+    call TR('h03W',2,6,$4B0,8,95,25,0,39)
+    call TR('h03K',3,0,350,1,27,0,0,23)
+    call TR('h03J',3,0,650,3,50,0,0,30)
+    call TR('h03I',5,2,650,4,33,20,0,29)
+    call TR('h03S',5,6,650,4,58,0,0,35)
+    call TR('h076',5,2,$640,6,73,30,0,55)
+    set i=GetUnitPointValueByType('h03O')
+    set Cr[i]=GetUnitWoodCost('h03O')
+    set dr[i]=true
+    set Dr[i]=1
+    set fr[i]=$A0
+    set i=GetUnitPointValueByType('h076')
+    set Cr[i]=GetUnitWoodCost('h076')
+    set dr[i]=true
+    set Dr[i]=0
+    set fr[i]=0
+    set i=GetUnitPointValueByType('h048')
+    set Cr[i]=GetUnitWoodCost('h048')
+    set dr[i]=false
+    set Dr[i]=0
+    set fr[i]=75
+    set i=GetUnitPointValueByType('h03L')
+    set Cr[i]=GetUnitWoodCost('h03L')
+    set dr[i]=false
+    set Dr[i]=1
+    set fr[i]='}'
+    set i=GetUnitPointValueByType('h047')
+    set Cr[i]=GetUnitWoodCost('h047')
+    set dr[i]=false
+    set Dr[i]=2
+    set fr[i]=85
+    call TR('h01P',3,0,$FA,2,17,0,0,25)
+    call TR('h056',4,0,500,4,33,0,0,30)
+    call TR('h01K',3,6,320,1,31,0,0,25)
+    call TR('h04B',3,6,550,3,47,5,0,33)
+    call TR('h055',3,6,900,5,75,$A,0,53)
+    call TR('h01S',2,0,$4B0,5,74,25,0,40)
+    call TR('h01N',0,4,425,3,36,5,0,26)
+    call TR('h054',0,4,650,4,53,$A,0,38)
+    call TR('h01L',3,5,310,2,48,5,0,29)
+    call TR('h01T',1,1,$4B0,8,74,$A,0,33)
+    call TR('h01R',5,1,265,3,22,2,0,21)
+    call TR('h04Z',5,1,500,5,38,7,0,26)
+    call TR('h03M',5,1,$41A,6,67,$F,0,36)
+    set i=GetUnitPointValueByType('h055')
+    set Cr[i]=GetUnitWoodCost('h055')
+    set dr[i]=true
+    set Dr[i]=0
+    set fr[i]=0
+    set i=GetUnitPointValueByType('h01Q')
+    set Cr[i]=GetUnitWoodCost('h01Q')
+    set dr[i]=true
+    set Dr[i]=0
+    set fr[i]=350
+    set i=GetUnitPointValueByType('h00A')
+    set Cr[i]=GetUnitWoodCost('h00A')
+    set dr[i]=false
+    set Dr[i]=0
+    set fr[i]=95
+    call TR('h00S',0,0,350,1,21,0,0,22)
+    call TR('h03D',0,0,500,3,70,20,0,32)
+    call TR('h03E',0,0,900,5,90,60,0,52)
+    call TR('h07M',0,1,375,1,32,0,0,25)
+    call TR('h07L',0,1,575,2,65,0,0,31)
+    call TR('h07O',3,0,425,5,38,0,0,26)
+    call TR('h07N',3,0,700,8,78,0,0,37)
+    call TR('h00B',3,0,460,2,28,0,0,28)
+    call TR('h011',1,2,400,2,32,20,0,33)
+    call TR('h088',5,6,375,1,28,5,0,24)
+    call TR('h07D',5,6,550,3,50,$F,0,30)
+    set i=GetUnitPointValueByType('h03E')
+    set Cr[i]=GetUnitWoodCost('h03E')
+    set dr[i]=true
+    set Dr[i]=0
+    set fr[i]=0
+    set i=GetUnitPointValueByType('h07I')
+    set Cr[i]=GetUnitWoodCost('h07I')
+    set dr[i]=true
+    set Dr[i]=2+4+1
+    set fr[i]=$FA
+    set i=GetUnitPointValueByType('h07H')
+    set Cr[i]=GetUnitWoodCost('h07H')
+    set dr[i]=false
+    set Dr[i]=0
+    set fr[i]=55
+    set i=GetUnitPointValueByType('h08P')
+    set Cr[i]=GetUnitWoodCost('h08P')
+    set dr[i]=false
+    set Dr[i]=1
+    set fr[i]=80
+    call TR('h08X',0,6,320,2,28,0,0,24)
+    call TR('h08Y',0,6,550,4,85,0,0,34)
+    call TR('h06Y',0,2,650,3,46,5,0,30)
+    call TR('h00T',2,2,450,7,38,0,0,26)
+    call TR('h03F',2,2,760,$A,'x',0,0,38)
+    call TR('h00V',3,1,525,3,38,$A,0,28)
+    call TR('h09X',6,6,550,2,48,$A,0,33)
+    call TR('h00X',5,6,800,4,65,40,0,54)
+    call TR('h070',1,1,500,3,32,30,0,32)
+    set i=GetUnitPointValueByType('h00X')
+    set Cr[i]=GetUnitWoodCost('h00X')
+    set dr[i]=true
+    set Dr[i]=0
+    set fr[i]=0
+    set i=GetUnitPointValueByType('h059')
+    set Cr[i]=GetUnitWoodCost('h059')
+    set dr[i]=true
+    set Dr[i]=0
+    set fr[i]=$F0
+    set i=GetUnitPointValueByType('h00Z')
+    set Cr[i]=GetUnitWoodCost('h00Z')
+    set dr[i]=false
+    set Dr[i]=0
+    set fr[i]=65
+    set i=GetUnitPointValueByType('h005')
+    set Cr[i]=GetUnitWoodCost('h005')
+    set dr[i]=false
+    set Dr[i]=0
+    set fr[i]=70
+    call TR('h05X',2,2,450,5,33,0,0,24)
+    call TR('h09I',5,2,750,8,48,$F,0,34)
+    call TR('h06G',1,1,550,5,30,30,0,33)
+    call TR('h09B',2,2,900,$C,62,0,0,34)
+    call TR('h09J',2,2,650,7,44,0,0,31)
+    call TR('h05T',5,0,500,4,36,$A,0,26)
+    call TR('h09P',5,0,700,7,65,$F,0,33)
+    call TR('h05U',0,1,$3E8,9,58,$F,0,36)
+    call TR('h05M',6,6,300,0,36,30,0,25)
+    call TR('h06D',6,6,400,0,45,36,0,30)
+    call TR('h09H',2,2,950,$C,76,0,2,41)
+    call TR('h05J',0,0,300,4,28,0,0,23)
+    call TR('h09L',0,0,625,6,50,0,0,32)
+    call TR('h05V',5,1,550,$C,47,0,0,28)
+    call TR('h097',5,5,950,$F,95,5,0,53)
+    set i=GetUnitPointValueByType('h097')
+    set Cr[i]=GetUnitWoodCost('h097')
+    set dr[i]=true
+    set Dr[i]=0
+    set fr[i]=0
+    set i=GetUnitPointValueByType('h06J')
+    set Cr[i]=GetUnitWoodCost('h06J')
+    set dr[i]=false
+    set Dr[i]=0
+    set fr[i]=45
+    set i=GetUnitPointValueByType('h05R')
+    set Cr[i]=GetUnitWoodCost('h05R')
+    set dr[i]=false
+    set Dr[i]=0
+    set fr[i]=75
+    set i=GetUnitPointValueByType('h069')
+    set Cr[i]=GetUnitWoodCost('h069')
+    set dr[i]=false
+    set Dr[i]=0
+    set fr[i]=60
+    call TR('h002',0,6,500,1,36,0,0,23)
+    call TR('h00Q',0,6,800,3,75,5,0,33)
+    call TR('h00R',0,6,$4B0,6,'d',$A,0,45)
+    call TR('h028',1,3,$44C,8,85,5,0,40)
+    call TR('h00Y',3,0,450,1,37,0,0,25)
+    call TR('h012',3,0,650,3,51,0,0,35)
+    call TR('h013',0,1,500,3,37,0,0,26)
+    call TR('h01H',0,1,950,5,60,5,0,37)
+    call TR('h01J',5,1,$5DC,4,'d',0,0,57)
+    call TR('h027',5,2,700,5,45,$F,0,30)
+    call TR('h023',2,6,680,6,48,5,0,28)
+    call TR('h024',2,6,$4E2,8,74,0,0,41)
+    set i=GetUnitPointValueByType('h01J')
+    set Cr[i]=GetUnitWoodCost('h01J')
+    set dr[i]=true
+    set Dr[i]=0
+    set fr[i]=0
+    set i=GetUnitPointValueByType('h02D')
+    set Cr[i]=GetUnitWoodCost('h02D')
+    set dr[i]=true
+    set Dr[i]=2+4+1
+    set fr[i]=$DC
+    set i=GetUnitPointValueByType('h02C')
+    set Cr[i]=GetUnitWoodCost('h02C')
+    set dr[i]=false
+    set Dr[i]=0
+    set fr[i]=65
+    set i=GetUnitPointValueByType('h02A')
+    set Cr[i]=GetUnitWoodCost('h02A')
+    set dr[i]=false
+    set Dr[i]=1
+    set fr[i]=95
+    call TR('h045',5,1,480,3,38,0,0,27)
+    call TR('h046',5,1,900,6,65,$A,0,39)
+    call TR('h040',1,6,700,5,50,5,0,27)
+    call TR('h041',1,6,$546,$A,85,$C,0,42)
+    call TR('h03Y',2,0,330,3,25,0,0,23)
+    call TR('h03Z',2,0,620,7,45,5,0,31)
+    call TR('h042',3,2,450,3,40,5,0,26)
+    call TR('h044',3,2,800,9,65,$F,0,40)
+    call TR('h04A',0,6,325,2,30,0,0,23)
+    call TR('h04C',0,6,600,4,40,0,0,33)
+    call TR('h04D',0,6,480,3,38,0,0,45)
+    call TR('h04E',5,1,950,6,70,25,0,54)
+    set i=GetUnitPointValueByType('h04E')
+    set Cr[i]=GetUnitWoodCost('h04E')
+    set dr[i]=true
+    set Dr[i]=0
+    set fr[i]=0
+    set i=GetUnitPointValueByType('h063')
+    set Cr[i]=GetUnitWoodCost('h063')
+    set dr[i]=true
+    set Dr[i]=0
+    set fr[i]=$AA
+    set i=GetUnitPointValueByType('h060')
+    set Cr[i]=GetUnitWoodCost('h060')
+    set dr[i]=false
+    set Dr[i]=0
+    set fr[i]=60
+    set i=GetUnitPointValueByType('h05Z')
+    set Cr[i]=GetUnitWoodCost('h05Z')
+    set dr[i]=false
+    set Dr[i]=1
+    set fr[i]=$82
+    call TR('n02O',2,0,320,2,25,0,0,23)
+    call TR('n02I',2,0,500,4,50,0,0,32)
+    call TR('n02K',0,6,400,1,33,0,0,27)
+    call TR('n031',0,6,680,3,50,0,0,35)
+    call TR('n033',4,6,$4E2,6,70,0,0,56)
+    call TR('n02L',1,2,650,5,55,5,0,27)
+    call TR('n02R',1,2,$4B0,9,75,0,0,35)
+    call TR('n02J',0,6,350,1,27,$A,0,24)
+    call TR('n02N',0,6,750,4,58,$F,0,32)
+    call TR('n02M',5,2,850,6,55,30,0,36)
+    call TR('n02P',3,1,600,6,37,0,0,26)
+    call TR('n036',3,1,$3E8,8,65,0,0,37)
+    set i=GetUnitPointValueByType('n033')
+    set Cr[i]=GetUnitWoodCost('n033')
+    set dr[i]=true
+    set Dr[i]=0
+    set fr[i]=0
+    set i=GetUnitPointValueByType('h06L')
+    set Cr[i]=GetUnitWoodCost('h06L')
+    set dr[i]=false
+    set Dr[i]=4
+    set fr[i]=$96
+    set i=GetUnitPointValueByType('h06I')
+    set Cr[i]=GetUnitWoodCost('h06I')
+    set dr[i]=false
+    set Dr[i]=0
+    set fr[i]=$9B
+    set i=GetUnitPointValueByType('h06M')
+    set Cr[i]=GetUnitWoodCost('h06M')
+    set dr[i]=true
+    set Dr[i]=0
+    set fr[i]=$E1
+    set Mr=true
 endfunction
 function wI takes unit u returns nothing
     call IssuePointOrderByIdLoc(u,$D000F,xo[PlayerForce[GetPlayerId(GetOwningPlayer(u))]])
@@ -4223,37 +4221,37 @@ else
 call IssuePointOrderByIdLoc(u,$D000F,xo[PlayerForce[GetPlayerId(GetOwningPlayer(u))]])
 endif
 endfunction
-function yI takes integer dE returns real
-return Ai[dE]*IncomeMultiplier[dE]
+function GetIncome takes integer playerId returns real
+    return PlayerIncome[playerId]*IncomeMultiplier[playerId]
 endfunction
 function YI takes integer dE returns real
-local real i=yI(dE)
-local integer xI=PlayerForce[dE]
-if(i<150.)then
-set i=i*1.05-(.04*i)*(.05*i)
-else
-set i=i*.75
-endif
-return i*He[xI]*Io[xI]
+    local real i=GetIncome(dE)
+    local integer xI=PlayerForce[dE]
+    if(i<150.)then
+    set i=i*1.05-(.04*i)*(.05*i)
+    else
+    set i=i*.75
+    endif
+    return i*He[xI]*Io[xI]
 endfunction
-function zI takes integer dE,unit u returns nothing
-local integer tX=GetHandleId(u)
-local real iv=ne[GetUnitPointValue(u)]
-local real ZI=LoadReal(rx,'incm',tX)
-set Ai[dE]=Ai[dE]+(iv)
-if(ZI==null)then
-set ZI=.0
-endif
-call SaveReal(rx,'incm',tX,ZI+iv)
+function AdjustIncomeOnBuilt takes integer playerId,unit thebuilding returns nothing
+    local integer buildingHandle=GetHandleId(thebuilding)
+    local real buildingIncome=BuildingIncomes[GetUnitPointValue(thebuilding)]
+    local real buildingIncomeInTable=LoadReal(GameHashTable,'incm',buildingHandle)
+    set PlayerIncome[playerId]=PlayerIncome[playerId]+(buildingIncome)
+    if(buildingIncomeInTable==null)then
+        set buildingIncomeInTable=.0
+    endif
+    call SaveReal(GameHashTable,'incm',buildingHandle,buildingIncomeInTable+buildingIncome)
 endfunction
 function vA takes integer dE,unit u returns nothing
-set Ai[dE]=Ai[dE]-(LoadReal(rx,'incm',GetHandleId(u)))
+    set PlayerIncome[dE]=PlayerIncome[dE]-(LoadReal(GameHashTable,'incm',GetHandleId(u)))
 endfunction
 function eA takes integer dE,unit u returns nothing
-set Ai[dE]=Ai[dE]+(LoadReal(rx,'incm',GetHandleId(u)))
+    set PlayerIncome[dE]=PlayerIncome[dE]+(LoadReal(GameHashTable,'incm',GetHandleId(u)))
 endfunction
 function xA takes nothing returns nothing
-    set bi=bi+(" "+I2S(PlayerIncome[GetPlayerId(GetEnumPlayer())]))
+    set bi=bi+(" "+I2S(PlayerIncomeTaxed[GetPlayerId(GetEnumPlayer())]))
 endfunction
 function AddIncome takes nothing returns nothing
     local player p=GetEnumPlayer()
@@ -4261,7 +4259,7 @@ function AddIncome takes nothing returns nothing
     local integer ii
     local real mO=YI(id)
     set ci=ci+(mO)
-    set PlayerIncome[id]=R2I(mO)
+    set PlayerIncomeTaxed[id]=R2I(mO)
     set mO=mO*IncomeRate+fo[id]
     set ii=R2I(mO)
     if(ii>0)then
@@ -4282,8 +4280,8 @@ function IncomeAction takes nothing returns nothing
     call AO(4,2,I2S(R2I(ci)))
     if(not EnableStreamingIncome)then
     loop
-        if(PlayerIncome[i]>0)then
-            set bi="Income: |cffFFFF00"+I2S(PlayerIncome[i])
+        if(PlayerIncomeTaxed[i]>0)then
+            set bi="Income: |cffFFFF00"+I2S(PlayerIncomeTaxed[i])
             if(PerPlayerForce[i]!=null)then
                 call ForForce(PerPlayerForce[i],function xA)
             endif
@@ -4297,8 +4295,8 @@ endfunction
 function CheckIncome takes player p returns nothing
     local integer playerId=GetPlayerId(p)
     local string s="Your Treasure Box income multiplier is |cffFFFF00"+R2SW(IncomeMultiplier[playerId],1,2)
-    set s=s+("|r, your income is |cffFFFF00"+I2S(R2I(yI(playerId))))
-    set s=s+("|r. After paying taxes your income is |cffFFFF00"+I2S(PlayerIncome[playerId])+"|r.")
+    set s=s+("|r, your income is |cffFFFF00"+I2S(R2I(GetIncome(playerId))))
+    set s=s+("|r. After paying taxes your income is |cffFFFF00"+I2S(PlayerIncomeTaxed[playerId])+"|r.")
 call DisplayTextToPlayer(p,.0,.0,s)
 endfunction
 function ShowStat takes player p returns nothing
@@ -4310,7 +4308,7 @@ function ShowStat takes player p returns nothing
     endif
     call DisplayTimedTextToPlayer(p,.0,.0,15.,"Units killed: |cffFFFF00"+I2S(Bo[id])+"|r (|cffFFFF00"+I2S(GetPlayerState(Player(id),PLAYER_STATE_RESOURCE_GOLD)+jo[id]+PayedGolds[id]-Ho[id]-Do[id]-ho[id]-$FA)+"|r gold in total)")
     call DisplayTimedTextToPlayer(p,.0,.0,15.,"|cffFFFF00"+I2S(Co[id])+"|r creepspawning buildings")
-    call DisplayTimedTextToPlayer(p,.0,.0,15.,"Specials built: |cffFFFF00"+I2S(do[id])+"|r")
+    call DisplayTimedTextToPlayer(p,.0,.0,15.,"Specials built: |cffFFFF00"+I2S(PlayerSpecialBuildingCount[id])+"|r")
     call DisplayTimedTextToPlayer(p,.0,.0,15.,"Devastating Strike damage: |cffFFFF00"+I2S(Fo[id])+"|r (|cffFFFF00"+I2S(go[id])+"|r units killed)")
     call DisplayTimedTextToPlayer(p,.0,.0,15.,"----------------------------------------------------")
 endfunction
@@ -4333,13 +4331,13 @@ function VA takes nothing returns integer
 local integer j=1
 local integer i=0
 loop
-if(do[i]>do[j])then
+if(PlayerSpecialBuildingCount[i]>PlayerSpecialBuildingCount[j])then
 set j=i
 endif
 set i=i+1
 exitwhen i>$B
 endloop
-return do[j]
+return PlayerSpecialBuildingCount[j]
 endfunction
 function EA takes nothing returns integer
 local integer j=1
@@ -4349,7 +4347,7 @@ if(Co[i]>Co[j])then
 set j=i
 endif
 if(Co[i]>0)then
-call Log(I2S(i)+" built "+I2S(Co[i])+"/"+I2S(do[i]))
+call Log(I2S(i)+" built "+I2S(Co[i])+"/"+I2S(PlayerSpecialBuildingCount[i]))
 endif
 set i=i+1
 exitwhen i>$B
@@ -4492,7 +4490,7 @@ set s=""
 set i=0
 if(g>0)then
 loop
-if(do[i]==g)then
+if(PlayerSpecialBuildingCount[i]==g)then
 if(s=="")then
 set s=PlayerNames[i]
 else
@@ -4528,7 +4526,7 @@ set He[1]=1.
 endfunction
 function NA takes nothing returns nothing
 local timer t=GetExpiredTimer()
-local unit u=LoadUnitHandle(rx,'CaTm',GetHandleId(t))
+local unit u=LoadUnitHandle(GameHashTable,'CaTm',GetHandleId(t))
 if(u!=null)then
 call SetUnitPathing(u,true)
 call WI(u)
@@ -4539,37 +4537,37 @@ set u=null
 set t=null
 endfunction
 function bA takes nothing returns nothing
-local unit u=GetEnumUnit()
-local timer t
-local integer n=LoadInteger(rx,'CaCn',GetHandleId(u))
-if(GetUnitCurrentOrder(u)==0)then
-set n=n+1
-if(n>=3)then
-call SetUnitPathing(u,false)
-call WI(u)
-set t=CreateTimer()
-call TimerStart(t,3.,false,function NA)
-call SaveUnitHandle(rx,'CaTm',GetHandleId(t),u)
-set t=null
-set n=0
-endif
-else
-set n=0
-endif
-call SaveInteger(rx,'CaCn',GetHandleId(u),n)
-set u=null
+    local unit u=GetEnumUnit()
+    local timer t
+    local integer n=LoadInteger(GameHashTable,'CaCn',GetHandleId(u))
+    if(GetUnitCurrentOrder(u)==0)then
+    set n=n+1
+    if(n>=3)then
+    call SetUnitPathing(u,false)
+    call WI(u)
+    set t=CreateTimer()
+    call TimerStart(t,3.,false,function NA)
+    call SaveUnitHandle(GameHashTable,'CaTm',GetHandleId(t),u)
+    set t=null
+    set n=0
+    endif
+    else
+    set n=0
+    endif
+    call SaveInteger(GameHashTable,'CaCn',GetHandleId(u),n)
+    set u=null
 endfunction
 function BA takes nothing returns nothing
-call ForGroup(Ci,function bA)
+    call ForGroup(CagedGroup,function bA)
 endfunction
-function cA takes unit u returns nothing
-call SaveInteger(rx,'CaCn',GetHandleId(u),0)
-call GroupAddUnit(Ci,u)
+function IssueCaging takes unit u returns nothing
+    call SaveInteger(GameHashTable,'CaCn',GetHandleId(u),0)
+    call GroupAddUnit(CagedGroup,u)
 endfunction
-function CA takes nothing returns nothing
-if(CagingMode)then
-call TimerStart(di,1.,true,function BA)
-endif
+function CagingModeTimerAction takes nothing returns nothing
+    if(CagingMode)then
+        call TimerStart(di,1.,true,function BA)
+    endif
 endfunction
 function dA takes nothing returns nothing
 local integer i=0
@@ -4619,7 +4617,7 @@ set fA=MultiboardGetItem(Se,te[i],x+3)
 call MultiboardSetItemValue(fA,I2S(GetPlayerState(p,PLAYER_STATE_RESOURCE_LUMBER)))
 call MultiboardReleaseItem(fA)
 set fA=MultiboardGetItem(Se,te[i],x+4)
-call MultiboardSetItemValue(fA,I2S(PlayerIncome[i]))
+call MultiboardSetItemValue(fA,I2S(PlayerIncomeTaxed[i]))
 call MultiboardReleaseItem(fA)
 endif
 set i=i+1
@@ -5096,34 +5094,34 @@ local boolean aX=GetWidgetLife(u)>100. and IsUnitEnemy(u,EraserIssuer)and IsUnit
 set u=null
 return aX
 endfunction
-function ZA takes unit u,integer vN returns nothing
-local player p=GetOwningPlayer(u)
-local integer dE=GetPlayerId(p)
-if(LumberLimit>0)then
-if(Ko[dE]+vN>=LumberLimit)then
-set vN=LumberLimit-Ko[dE]
-if(vN<=0)then
-return
-endif
-set Ko[dE]=LumberLimit
-else
-set Ko[dE]=Ko[dE]+(vN)
-endif
-endif
-call AdjustPlayerStateBJ(vN,p,PLAYER_STATE_RESOURCE_LUMBER)
-set bj_lastCreatedTextTag=CreateTextTag()
-call SetTextTagText(bj_lastCreatedTextTag,I2S(vN),.024)
-call SetTextTagPos(bj_lastCreatedTextTag,GetUnitX(u)-36.,GetUnitY(u)-16.,.0)
-call SetTextTagColor(bj_lastCreatedTextTag,0,$C8,80,$FF)
-call SetTextTagPermanent(bj_lastCreatedTextTag,false)
-call SetTextTagLifespan(bj_lastCreatedTextTag,3.)
-call SetTextTagFadepoint(bj_lastCreatedTextTag,1.)
-call SetTextTagVelocity(bj_lastCreatedTextTag,0,.06)
-if(p!=GetLocalPlayer())then
-call SetTextTagVisibility(bj_lastCreatedTextTag,false)
-else
-call SetTextTagVisibility(bj_lastCreatedTextTag,true)
-endif
+function PlayerAddLumber takes unit u,integer lumber returns nothing
+    local player p=GetOwningPlayer(u)
+    local integer playerId=GetPlayerId(p)
+    if(LumberLimit>0)then
+        if(PlayerLumber[playerId]+lumber>=LumberLimit)then
+            set lumber=LumberLimit-PlayerLumber[playerId]
+            if(lumber<=0)then
+            return
+        endif
+            set PlayerLumber[playerId]=LumberLimit
+        else
+            set PlayerLumber[playerId]=PlayerLumber[playerId]+(lumber)
+        endif
+    endif
+    call AdjustPlayerStateBJ(lumber,p,PLAYER_STATE_RESOURCE_LUMBER)
+    set bj_lastCreatedTextTag=CreateTextTag()
+    call SetTextTagText(bj_lastCreatedTextTag,I2S(lumber),.024)
+    call SetTextTagPos(bj_lastCreatedTextTag,GetUnitX(u)-36.,GetUnitY(u)-16.,.0)
+    call SetTextTagColor(bj_lastCreatedTextTag,0,$C8,80,$FF)
+    call SetTextTagPermanent(bj_lastCreatedTextTag,false)
+    call SetTextTagLifespan(bj_lastCreatedTextTag,3.)
+    call SetTextTagFadepoint(bj_lastCreatedTextTag,1.)
+    call SetTextTagVelocity(bj_lastCreatedTextTag,0,.06)
+    if(p!=GetLocalPlayer())then
+    call SetTextTagVisibility(bj_lastCreatedTextTag,false)
+    else
+    call SetTextTagVisibility(bj_lastCreatedTextTag,true)
+    endif
 endfunction
 function eN takes unit u returns boolean
 local integer i
@@ -5232,108 +5230,108 @@ endfunction
 function EnumResetAnimation takes nothing returns nothing
 call SetUnitAnimation(GetEnumUnit(),"stand")
 endfunction
-function ON takes unit u,unit RN returns nothing
-local player p=GetOwningPlayer(RN)
-local boolean IN=GetUnitAbilityLevel(RN,'B01K')>0
-if(IN)then
-call UnitAddAbility(u,'A09M')
-call SetUnitAbilityLevel(u,'A09M',3)
-call UnitRemoveAbility(u,'A09M')
-call UnitAddAbility(u,'A09Q')
-call UnitAddAbility(u,'A09R')
-endif
-if(CagingMode and not IsUnitType(u,UNIT_TYPE_FLYING))then
-call cA(u)
-endif
-if(GetUnitAbilityLevel(u,'A07M')>=1)then
-call GroupAddUnit(Li,u)
-endif
+function SpawnAdditionalUnit takes unit u,unit RN returns nothing
+    local player p=GetOwningPlayer(RN)
+    local boolean IN=GetUnitAbilityLevel(RN,'B01K')>0
+    if(IN)then
+        call UnitAddAbility(u,'A09M')
+        call SetUnitAbilityLevel(u,'A09M',3)
+        call UnitRemoveAbility(u,'A09M')
+        call UnitAddAbility(u,'A09Q')
+        call UnitAddAbility(u,'A09R')
+    endif
+    if(CagingMode and not IsUnitType(u,UNIT_TYPE_FLYING))then
+        call IssueCaging(u)
+    endif
+    if(GetUnitAbilityLevel(u,'A07M')>=1)then
+        call GroupAddUnit(Li,u)
+    endif
 endfunction
-function AN takes unit u returns nothing
-    local integer NN=BuildingToItsTrained[GetUnitPointValue(u)]
-    call IssueImmediateOrderById(u,$D0008)
-    call IssueImmediateOrderById(u,$D0008)
-    call IssueImmediateOrderById(u,$D0008)
-    call IssueImmediateOrderById(u,$D0008)
-    call IssueImmediateOrderById(u,$D0008)
-    call IssueImmediateOrderById(u,$D0008)
-    call IssueImmediateOrderById(u,$D0008)
-    call IssueImmediateOrderById(u,NN)
+function SyncTraining takes unit building returns nothing
+    local integer toTrain=BuildingToItsTrained[GetUnitPointValue(building)]
+    call IssueImmediateOrderById(building,$D0008) // D0008 <- cancel
+    call IssueImmediateOrderById(building,$D0008)
+    call IssueImmediateOrderById(building,$D0008)
+    call IssueImmediateOrderById(building,$D0008)
+    call IssueImmediateOrderById(building,$D0008)
+    call IssueImmediateOrderById(building,$D0008)
+    call IssueImmediateOrderById(building,$D0008)
+    call IssueImmediateOrderById(building,toTrain)
 endfunction
 function bN takes nothing returns nothing
-local trigger t=GetTriggeringTrigger()
-local unit u
-local unit su
-local lightning l
-if(t!=null)then
-set u=LoadUnitHandle(rx,'SyTm',GetHandleId(t))
-if(u!=null)then
-set su=LoadUnitHandle(rx,'SyUn',GetHandleId(u))
-call SaveUnitHandle(rx,'SyTm',GetHandleId(t),null)
-if(su!=null and GetWidgetLife(su)>.405)then
-call AN(u)
-set l=AddLightning("LEAS",true,GetUnitX(u),GetUnitY(u),GetUnitX(su),GetUnitY(su))
-call SetLightningColor(l,1.,1.,1.,.7)
-call TriggerSleepAction(.5)
-call DestroyLightning(l)
-set l=null
-endif
-set u=null
-set su=null
-endif
-call DestroyTrigger(t)
-set t=null
-endif
-endfunction
+    local trigger t=GetTriggeringTrigger()
+    local unit u
+    local unit su
+    local lightning l
+    if(t!=null)then
+    set u=LoadUnitHandle(GameHashTable,'SyTm',GetHandleId(t))
+    if(u!=null)then
+    set su=LoadUnitHandle(GameHashTable,'SyUn',GetHandleId(u))
+    call SaveUnitHandle(GameHashTable,'SyTm',GetHandleId(t),null)
+    if(su!=null and GetWidgetLife(su)>.405)then
+    call SyncTraining(u)
+    set l=AddLightning("LEAS",true,GetUnitX(u),GetUnitY(u),GetUnitX(su),GetUnitY(su))
+    call SetLightningColor(l,1.,1.,1.,.7)
+    call TriggerSleepAction(.5)
+    call DestroyLightning(l)
+    set l=null
+    endif
+    set u=null
+    set su=null
+    endif
+    call DestroyTrigger(t)
+    set t=null
+    endif
+    endfunction
 function Functions_RunSyncTask takes nothing returns nothing
-local trigger t
-local unit u=GetEnumUnit()
-local real dt
-if(GetWidgetLife(u)>.405)then
-set dt=I2R(qi-GetUnitBuildTime(BuildingToItsTrained[GetUnitPointValue(u)]))
-if(dt>0)then
-set t=CreateTrigger()
-call TriggerAddAction(t,function bN)
-call SaveUnitHandle(rx,'SyTm',GetHandleId(t),u)
-call TriggerRegisterTimerEvent(t,dt-.05,false)
-set t=null
-else
-call AN(u)
-set Qi=true
-endif
-endif
-set u=null
+    local trigger t
+    local unit u=GetEnumUnit()
+    local real dt
+    if(GetWidgetLife(u)>.405)then
+    set dt=I2R(qi-GetUnitBuildTime(BuildingToItsTrained[GetUnitPointValue(u)]))
+    if(dt>0)then
+    set t=CreateTrigger()
+    call TriggerAddAction(t,function bN)
+    call SaveUnitHandle(GameHashTable,'SyTm',GetHandleId(t),u)
+    call TriggerRegisterTimerEvent(t,dt-.05,false)
+    set t=null
+    else
+    call SyncTraining(u)
+    set Qi=true
+    endif
+    endif
+    set u=null
 endfunction
-function BN takes unit u,unit RN returns nothing
-local player p=GetOwningPlayer(RN)
-local integer dE=GetPlayerId(p)
-local integer cc
-local boolean IN=GetUnitAbilityLevel(RN,'B01K')>0
-local group sg
-if(IN)then
-call UnitAddAbility(u,'A09M')
-call SetUnitAbilityLevel(u,'A09M',3)
-call UnitRemoveAbility(u,'A09M')
-call UnitAddAbility(u,'A09Q')
-call UnitAddAbility(u,'A09R')
-endif
-if(CagingMode and not IsUnitType(u,UNIT_TYPE_FLYING))then
-call cA(u)
-endif
-if(GetUnitAbilityLevel(u,'A07M')>=1)then
-call GroupAddUnit(Li,u)
-elseif(GetUnitAbilityLevel(u,'A09H')>0)then
-call ON(CreateUnit(p,GetUnitTypeId(u),GetUnitX(u),GetUnitY(u),.0),RN)
-endif
-set cc=io[dE]
-if(cc>0)then
-if(ro[dE]>=6-cc)then
-call ON(CreateUnit(p,GetUnitTypeId(u),GetUnitX(u),GetUnitY(u),.0),RN)
-set ro[dE]=0
-else
-set ro[dE]=ro[dE]+1
-endif
-endif
+function WhenUnitTrained takes unit u,unit unitOut returns nothing
+    local player p=GetOwningPlayer(unitOut)
+    local integer playerId=GetPlayerId(p)
+    local integer cc
+    local boolean armorPowered=GetUnitAbilityLevel(unitOut,'B01K')>0 // B01K <- power armor
+    local group sg
+    if(armorPowered)then
+        call UnitAddAbility(u,'A09M')
+        call SetUnitAbilityLevel(u,'A09M',3)
+        call UnitRemoveAbility(u,'A09M')
+        call UnitAddAbility(u,'A09Q')
+        call UnitAddAbility(u,'A09R')
+    endif
+    if(CagingMode and not IsUnitType(u,UNIT_TYPE_FLYING))then
+        call IssueCaging(u)
+    endif
+    if(GetUnitAbilityLevel(u,'A07M')>=1)then
+        call GroupAddUnit(Li,u)
+    elseif(GetUnitAbilityLevel(u,'A09H')>0)then
+        call SpawnAdditionalUnit(CreateUnit(p,GetUnitTypeId(u),GetUnitX(u),GetUnitY(u),.0),unitOut)
+    endif
+    set cc=HeroStatusNumbers[playerId]
+    if(cc>0)then
+        if(HeroStatusUnitRecording[playerId]>=6-cc)then
+            call SpawnAdditionalUnit(CreateUnit(p,GetUnitTypeId(u),GetUnitX(u),GetUnitY(u),.0),unitOut)
+            set HeroStatusUnitRecording[playerId]=0
+        else
+            set HeroStatusUnitRecording[playerId]=HeroStatusUnitRecording[playerId]+1
+        endif
+    endif
 endfunction
 function cN takes nothing returns nothing
     set li=Filter(function xN)
@@ -5421,13 +5419,13 @@ function EraseUnit takes nothing returns nothing
     local unit u=GetEnumUnit()
     call DestroyEffect(AddSpecialEffectTarget("Abilities\\Spells\\Items\\AIil\\AIilTarget.mdl",u,"origin"))
     if(GetUnitAbilityLevel(u,'A070')<=0)then
-        if(GetRandomInt(0,99)>ErasePossibilityBound)then
+        if(GetRandomInt(0,99)>ErasePossibBound)then
             call UnitDamageTarget(De,u,100500.,true,false,ATTACK_TYPE_CHAOS,DAMAGE_TYPE_DEATH,WEAPON_TYPE_WHOKNOWS)
         else
             call KillUnit(u)
         endif
         set ErasingCount=ErasingCount+1
-        set ErasePossibilityBound=ErasePossibilityBound+1
+        set ErasePossibBound=ErasePossibBound+1
     endif
     set u=null
 endfunction
@@ -5442,7 +5440,7 @@ function EraserAction takes nothing returns nothing
     set erasingUnitTypeId=GetUnitTypeId(bj_groupRandomCurrentPick)
     call GroupEnumUnitsInRect(ErasingGroup,bj_mapInitialPlayableArea,EraserFilter)
     set ErasingCount=0
-    set ErasePossibilityBound=GetRandomInt(30,70)
+    set ErasePossibBound=GetRandomInt(30,70)
     call ForGroup(ErasingGroup,function EraseUnit)
     call DisplayTextToPlayer(EraserIssuer,.0,.0,"Eraser killed "+I2S(ErasingCount)+" "+GetObjectName(erasingUnitTypeId)+"(s)")
 endfunction
@@ -5460,7 +5458,7 @@ set x=GetUnitX(bj_groupRandomCurrentPick)+GetRandomReal(70.,70.)
 set y=GetUnitY(bj_groupRandomCurrentPick)+GetRandomReal(70.,70.)
 set c=CreateUnit(EraserIssuer,'e008',x,y,.0)
 call UnitAddAbility(c,si)
-call IssuePointOrderById(c,$D010E,x,y)
+call IssuePointOrderById(c,$D010E,x,y) // rainoffire
 call UnitApplyTimedLife(c,'BTLF',5.5)
 set c=null
 endfunction
@@ -5493,19 +5491,19 @@ call IssueImmediateOrderById(c,$D00C4)
 call UnitApplyTimedLife(c,'BTLF',1.)
 set c=null
 endfunction
-function JN takes nothing returns boolean
-    call SpawnCreep(ce,'h094',74.,38.5,28.)
-    call SpawnCreep(ce,'h093',160.,-42.,-18.75)
-    call SpawnCreep(ce,'h093',250.,3.75,-55.5)
-    call SpawnCreep(ce,'h08Z',220.,43.,27.5)
+function GreaterChaosCitadelAttach takes nothing returns boolean
+    call SpawnVisualUnit(ce,'h094',74.,38.5,28.)
+    call SpawnVisualUnit(ce,'h093',160.,-42.,-18.75)
+    call SpawnVisualUnit(ce,'h093',250.,3.75,-55.5)
+    call SpawnVisualUnit(ce,'h08Z',220.,43.,27.5)
     return false
 endfunction
 function kN takes nothing returns nothing
 call SetupSpecialBuildingAction('h05I',function MagicTowerRuinAction) // Magic Tower Ruin
 call BuildingTrains('h025','n00L')
 call SetupSpecialBuildingAction('h01M',function EraserAction) // Eraser (Level 1)
-call SetupSpecialBuildingAction('h01W',function EraserAction)
-call SetupSpecialBuildingAction('h01X',function EraserAction)
+call SetupSpecialBuildingAction('h01W',function EraserAction) // level 2
+call SetupSpecialBuildingAction('h01X',function EraserAction) // level 3
 call BuildingTrains('h01I','n00A')
 call BuildingTrains('h026','z000')
 call SetupSpecialBuildingAction('h01F',function GN)
@@ -5513,7 +5511,7 @@ call SetupSpecialBuildingAction('h01E',function HN)
 call BuildingTrains('h01C','n008')
 call BuildingTrains('h01D','n009')
 call BuildingTrains('h03G','n00Z') // h03G  <- Greater Chaos Citadel
-call AttachRegister('h03G',function JN)
+call AttachRegister('h03G',function GreaterChaosCitadelAttach)
 call BuildingTrains('h009','n001')
 call BuildingTrains('h007','n000')
 endfunction
@@ -5681,11 +5679,11 @@ endloop
 set c=null
 endfunction
 function qN takes nothing returns boolean
-call SpawnCreep(ce,'h04J',191.,.0,.0)
+call SpawnVisualUnit(ce,'h04J',191.,.0,.0)
 return false
 endfunction
 function QN takes nothing returns boolean
-    call SpawnCreep(ce,'h09Z',270.,.0,.0) // h09z <- corrupted
+    call SpawnVisualUnit(ce,'h09Z',270.,.0,.0) // h09z <- corrupted
     return false
 endfunction
 function sN takes nothing returns boolean
@@ -5693,7 +5691,7 @@ call SetUnitVertexColor(ce,82,0,$87,'f')
 return false
 endfunction
 function SN takes nothing returns boolean
-call SpawnCreep(ce,'h08I',.0,.0,.0)
+call SpawnVisualUnit(ce,'h08I',.0,.0,.0)
 return false
 endfunction
 function SetupChaosRaceBuildings takes nothing returns nothing
@@ -5906,7 +5904,7 @@ call wI(ge)
 endif
 endfunction
 function ob takes nothing returns boolean
-call SpawnCreep(ce,'h03H',.0,.0,.0)
+call SpawnVisualUnit(ce,'h03H',.0,.0,.0)
 return false
 endfunction
 function rb takes nothing returns nothing
@@ -5956,7 +5954,7 @@ call RegisterSpell('n034','A0H1',function eb)
 call RegisterSpell('n032','A0G9',function ZN)
 endfunction
 function nb takes nothing returns boolean
-call SpawnCreep(ce,'h071',45.,.0,.0)
+call SpawnVisualUnit(ce,'h071',45.,.0,.0)
 return false
 endfunction
 function Vb takes nothing returns nothing
@@ -6072,96 +6070,96 @@ call UnitAddAbility(bj_groupRandomCurrentPick,'A0F4')
 call wI(bj_groupRandomCurrentPick)
 endfunction
 function Elementals__Animationh03X takes nothing returns boolean
-call SpawnCreep(ce,'h050',270.,.0,28.)
-call SpawnCreep(ce,'h050',90.,.0,-28.)
+call SpawnVisualUnit(ce,'h050',270.,.0,28.)
+call SpawnVisualUnit(ce,'h050',90.,.0,-28.)
 return false
 endfunction
 function bb takes nothing returns boolean
-call SpawnCreep(ce,'h04Y',270.,.0,28.)
-call SpawnCreep(ce,'h050',90.,.0,-28.)
+call SpawnVisualUnit(ce,'h04Y',270.,.0,28.)
+call SpawnVisualUnit(ce,'h050',90.,.0,-28.)
 return false
 endfunction
 function Bb takes nothing returns boolean
-call SpawnCreep(ce,'h04Y',270.,.0,28.)
-call SpawnCreep(ce,'h04Y',90.,.0,-28.)
+call SpawnVisualUnit(ce,'h04Y',270.,.0,28.)
+call SpawnVisualUnit(ce,'h04Y',90.,.0,-28.)
 return false
 endfunction
 function cb takes nothing returns boolean
-call SpawnCreep(ce,'h04Y',270.,.0,28.)
-call SpawnCreep(ce,'h050',90.,.0,-28.)
+call SpawnVisualUnit(ce,'h04Y',270.,.0,28.)
+call SpawnVisualUnit(ce,'h050',90.,.0,-28.)
 return false
 endfunction
 function Cb takes nothing returns boolean
-call SpawnCreep(ce,'h04Y',270.,.0,28.)
-call SpawnCreep(ce,'h04Y',90.,.0,-28.)
-call SpawnCreep(ce,'h058',270.,.0,.0)
+call SpawnVisualUnit(ce,'h04Y',270.,.0,28.)
+call SpawnVisualUnit(ce,'h04Y',90.,.0,-28.)
+call SpawnVisualUnit(ce,'h058',270.,.0,.0)
 return false
 endfunction
 function db takes nothing returns boolean
-call SpawnCreep(ce,'h04Y',270.,.0,28.)
-call SpawnCreep(ce,'h050',90.,.0,-28.)
-call SpawnCreep(ce,'h052',270.,.0,.0)
+call SpawnVisualUnit(ce,'h04Y',270.,.0,28.)
+call SpawnVisualUnit(ce,'h050',90.,.0,-28.)
+call SpawnVisualUnit(ce,'h052',270.,.0,.0)
 return false
 endfunction
 function Db takes nothing returns boolean
-call SpawnCreep(ce,'h04Y',270.,.0,28.)
-call SpawnCreep(ce,'h04Y',90.,.0,-28.)
-call SpawnCreep(ce,'h053',270.,.0,.0)
+call SpawnVisualUnit(ce,'h04Y',270.,.0,28.)
+call SpawnVisualUnit(ce,'h04Y',90.,.0,-28.)
+call SpawnVisualUnit(ce,'h053',270.,.0,.0)
 return false
 endfunction
 function fb takes nothing returns boolean
-call SpawnCreep(ce,'h04Y',270.,.0,28.)
-call SpawnCreep(ce,'h050',90.,.0,-28.)
-call SpawnCreep(ce,'h05O',270.,.0,.0)
+call SpawnVisualUnit(ce,'h04Y',270.,.0,28.)
+call SpawnVisualUnit(ce,'h050',90.,.0,-28.)
+call SpawnVisualUnit(ce,'h05O',270.,.0,.0)
 return false
 endfunction
 function Fb takes nothing returns boolean
-call SpawnCreep(ce,'h04Y',270.,.0,28.)
-call SpawnCreep(ce,'h04Y',90.,.0,-28.)
-call SpawnCreep(ce,'h057',270.,.0,.0)
-call SpawnCreep(ce,'h05P',270.,.0,.0)
+call SpawnVisualUnit(ce,'h04Y',270.,.0,28.)
+call SpawnVisualUnit(ce,'h04Y',90.,.0,-28.)
+call SpawnVisualUnit(ce,'h057',270.,.0,.0)
+call SpawnVisualUnit(ce,'h05P',270.,.0,.0)
 return false
 endfunction
 function gb takes nothing returns boolean
-call SpawnCreep(ce,'h050',270.,.0,28.)
-call SpawnCreep(ce,'h050',90.,.0,-28.)
+call SpawnVisualUnit(ce,'h050',270.,.0,28.)
+call SpawnVisualUnit(ce,'h050',90.,.0,-28.)
 return false
 endfunction
 function Gb takes nothing returns boolean
-call SpawnCreep(ce,'h04Y',270.,.0,28.)
-call SpawnCreep(ce,'h050',90.,.0,-28.)
-call SpawnCreep(ce,'h05K',90.,.0,.0)
+call SpawnVisualUnit(ce,'h04Y',270.,.0,28.)
+call SpawnVisualUnit(ce,'h050',90.,.0,-28.)
+call SpawnVisualUnit(ce,'h05K',90.,.0,.0)
 return false
 endfunction
 function hb takes nothing returns boolean
-call SpawnCreep(ce,'h04Y',270.,.0,28.)
-call SpawnCreep(ce,'h04Y',90.,.0,-28.)
-call SpawnCreep(ce,'h05B',90.,.0,.0)
+call SpawnVisualUnit(ce,'h04Y',270.,.0,28.)
+call SpawnVisualUnit(ce,'h04Y',90.,.0,-28.)
+call SpawnVisualUnit(ce,'h05B',90.,.0,.0)
 return false
 endfunction
 function Hb takes nothing returns boolean
-call SpawnCreep(ce,'h04Y',270.,.0,28.)
-call SpawnCreep(ce,'h04Y',90.,.0,-28.)
-call SpawnCreep(ce,'h05Y',270.,.0,.0)
-call SpawnCreep(ce,'h05Q',270.,.0,.0)
-call SpawnCreep(ce,'h05S',270.,.0,.0)
-call SpawnCreep(ce,'h05W',270.,.0,.0)
+call SpawnVisualUnit(ce,'h04Y',270.,.0,28.)
+call SpawnVisualUnit(ce,'h04Y',90.,.0,-28.)
+call SpawnVisualUnit(ce,'h05Y',270.,.0,.0)
+call SpawnVisualUnit(ce,'h05Q',270.,.0,.0)
+call SpawnVisualUnit(ce,'h05S',270.,.0,.0)
+call SpawnVisualUnit(ce,'h05W',270.,.0,.0)
 return false
 endfunction
 function jb takes nothing returns boolean
-call SpawnCreep(ce,'h065',300.,.0,.0)
+call SpawnVisualUnit(ce,'h065',300.,.0,.0)
 return false
 endfunction
 function Jb takes nothing returns boolean
-call SpawnCreep(ce,'h066',270.,.0,.0)
+call SpawnVisualUnit(ce,'h066',270.,.0,.0)
 return false
 endfunction
 function kb takes nothing returns boolean
-call SpawnCreep(ce,'h067',270.,.0,.0)
+call SpawnVisualUnit(ce,'h067',270.,.0,.0)
 return false
 endfunction
 function Kb takes nothing returns boolean
-call SpawnCreep(ce,'h064',270.,.0,.0)
+call SpawnVisualUnit(ce,'h064',270.,.0,.0)
 return false
 endfunction
 function Lb takes nothing returns nothing
@@ -6351,15 +6349,15 @@ set c=null
 endfunction
 function Wb takes nothing returns boolean
 call SetUnitVertexColor(ce,$FF,$FF,$FF,0)
-call SpawnCreep(ce,'h08Z',250.,46.,33.5)
-call SpawnCreep(ce,'h090',270.,-17.,18.)
+call SpawnVisualUnit(ce,'h08Z',250.,46.,33.5)
+call SpawnVisualUnit(ce,'h090',270.,-17.,18.)
 return false
 endfunction
 function ArcheryTowerBuildAttach takes nothing returns boolean
     call SetUnitVertexColor(ce,$FF,$FF,$FF,0)
-    call SpawnCreep(ce,'h08Z',250.,46.,33.5) // h08Z <- archery target
-    call SpawnCreep(ce,'h091',270.,-17.,18.) // ELF build2
-    call SpawnCreep(ce,'h08Z',350.,-22.,-40.)
+    call SpawnVisualUnit(ce,'h08Z',250.,46.,33.5) // h08Z <- archery target
+    call SpawnVisualUnit(ce,'h091',270.,-17.,18.) // ELF build2
+    call SpawnVisualUnit(ce,'h08Z',350.,-22.,-40.)
     return false
 endfunction
 function Yb takes nothing returns nothing
@@ -6521,10 +6519,10 @@ set u=null
 endfunction
 function OB takes nothing returns boolean
 call SetUnitVertexColor(ce,$FF,$FF,$FF,0)
-call SpawnCreep(ce,'h0A0',170.,31.25,-43.)
-call SpawnCreep(ce,'h0A0',80.,-38.,-40.25)
-call SpawnCreep(ce,'h0A0',350.,-30.25,30.)
-call SpawnCreep(ce,'h08Z',220.,43.,27.5)
+call SpawnVisualUnit(ce,'h0A0',170.,31.25,-43.)
+call SpawnVisualUnit(ce,'h0A0',80.,-38.,-40.25)
+call SpawnVisualUnit(ce,'h0A0',350.,-30.25,30.)
+call SpawnVisualUnit(ce,'h08Z',220.,43.,27.5)
 return false
 endfunction
 function RB takes nothing returns nothing
@@ -6569,27 +6567,27 @@ call RegisterSpell('h03C','A03K',function EB)
 call RegisterSpell('h074','A0I0',function VB)
 call RegisterSpell('n005','A00K',function XB)
 endfunction
-function NB takes unit u returns nothing
+function ArtilleryAttack takes unit u returns nothing
     local real x=GetRandomReal(2000.,5700.)
     local real y=GetRandomReal(-2200.,2200.)
     if(GetPlayerId(GetOwningPlayer(u))>5)then
-    set x=-x
+        set x=-x
     endif
-    call IssuePointOrderById(u,$D0010,x,y)
+    call IssuePointOrderById(u,$D0010,x,y) // attack ground
 endfunction
 function bB takes nothing returns nothing
-call NB(GetEnumUnit())
+call ArtilleryAttack(GetEnumUnit())
 endfunction
 function BB takes nothing returns nothing
 call ForGroup(ra,function bB)
 endfunction
-function cB takes unit u returns nothing
-local integer f=GetPlayerId(GetOwningPlayer(u))
-set io[f]=io[f]+1
+function StartHeroStatueRecord takes unit u returns nothing
+    local integer heroStatuePlayer=GetPlayerId(GetOwningPlayer(u))
+    set HeroStatusNumbers[heroStatuePlayer]=HeroStatusNumbers[heroStatuePlayer]+1
 endfunction
 function CB takes unit u returns nothing
 local integer f=GetPlayerId(GetOwningPlayer(u))
-set io[f]=io[f]-1
+set HeroStatusNumbers[f]=HeroStatusNumbers[f]-1
 endfunction
 function dB takes nothing returns boolean
 local unit u=GetFilterUnit()
@@ -6698,7 +6696,7 @@ local unit c=CreateUnit(p,'h09M',sx,sy,.0)
 set sx=sx+r*Cos(a)
 set sy=sy+r*Sin(a)
 call SetUnitState(ge,UNIT_STATE_MANA,GetUnitState(ge,UNIT_STATE_MANA)+GetRandomReal(-20.,16.))
-call IssuePointOrderById(c,$D0010,sx,sy)
+call IssuePointOrderById(c,$D0010,sx,sy) // attack ground
 call UnitApplyTimedLife(c,'BTLF',3.)
 call TriggerSleepAction(r/ 600.)
 call UnitApplyTimedLife(CreateUnit(p,'n025',sx,sy,.0),'BTLF',150.)
@@ -6706,7 +6704,7 @@ set c=null
 set p=null
 endfunction
 function jB takes nothing returns boolean
-call SpawnCreep(ce,'e00L',.0,.0,.0)
+call SpawnVisualUnit(ce,'e00L',.0,.0,.0)
 return false
 endfunction
 function JB takes nothing returns nothing
@@ -6718,71 +6716,71 @@ set c=null
 endif
 endfunction
 function kB takes nothing returns boolean
-call SpawnCreep(ce,'h09V',270.,.0,.0)
-call SpawnCreep(ce,'h09U',90.,20.,.0)
-call SpawnCreep(ce,'h09U',.0,.0,-20.)
-call SpawnCreep(ce,'h09U',270.,-20.,.0)
-call SpawnCreep(ce,'h09U',180.,.0,20.)
+call SpawnVisualUnit(ce,'h09V',270.,.0,.0)
+call SpawnVisualUnit(ce,'h09U',90.,20.,.0)
+call SpawnVisualUnit(ce,'h09U',.0,.0,-20.)
+call SpawnVisualUnit(ce,'h09U',270.,-20.,.0)
+call SpawnVisualUnit(ce,'h09U',180.,.0,20.)
 return false
 endfunction
 function KB takes nothing returns boolean
-call SpawnCreep(ce,'h09R',300.,3.5,65.25)
-call SpawnCreep(ce,'h09R',70.,-16.5,-51.)
-call SpawnCreep(ce,'h09N',238.,36.,53.)
-call SpawnCreep(ce,'h09O',314.,-38.,-39.5)
+call SpawnVisualUnit(ce,'h09R',300.,3.5,65.25)
+call SpawnVisualUnit(ce,'h09R',70.,-16.5,-51.)
+call SpawnVisualUnit(ce,'h09N',238.,36.,53.)
+call SpawnVisualUnit(ce,'h09O',314.,-38.,-39.5)
 return false
 endfunction
 function lB takes nothing returns boolean
-call SpawnCreep(ce,'h09O',279.,-45.5,24.75)
-call SpawnCreep(ce,'h09N',300.,31.,-32.25)
+call SpawnVisualUnit(ce,'h09O',279.,-45.5,24.75)
+call SpawnVisualUnit(ce,'h09N',300.,31.,-32.25)
 return false
 endfunction
 function LB takes nothing returns boolean
-call SpawnCreep(ce,'h09K',238.,.0,.0)
+call SpawnVisualUnit(ce,'h09K',238.,.0,.0)
 return false
 endfunction
 function mB takes nothing returns boolean
-call SpawnCreep(ce,'h09F',2.,36.25,41.)
-call SpawnCreep(ce,'h09F',2.,33.25,-33.5)
-call SpawnCreep(ce,'h09F',2.,-46.25,10.75)
-call SpawnCreep(ce,'h09A',45.,-5.25,17.)
+call SpawnVisualUnit(ce,'h09F',2.,36.25,41.)
+call SpawnVisualUnit(ce,'h09F',2.,33.25,-33.5)
+call SpawnVisualUnit(ce,'h09F',2.,-46.25,10.75)
+call SpawnVisualUnit(ce,'h09A',45.,-5.25,17.)
 return false
 endfunction
 function MB takes nothing returns boolean
-call SpawnCreep(ce,'h09D',225.,35.,-29.75)
-call SpawnCreep(ce,'h09D',45.,20.,22.5)
-call SpawnCreep(ce,'h09D',225.,-31.,26.25)
-call SpawnCreep(ce,'h09G',23.,-25.25,-36.)
+call SpawnVisualUnit(ce,'h09D',225.,35.,-29.75)
+call SpawnVisualUnit(ce,'h09D',45.,20.,22.5)
+call SpawnVisualUnit(ce,'h09D',225.,-31.,26.25)
+call SpawnVisualUnit(ce,'h09G',23.,-25.25,-36.)
 return false
 endfunction
 function pB takes nothing returns boolean
 call SetUnitFacing(ce,.7)
-call SpawnCreep(ce,'h09D',45.,35.,-29.75)
-call SpawnCreep(ce,'h09D',45.,20.,22.5)
-call SpawnCreep(ce,'h09D',-45.,-31.,26.25)
-call SpawnCreep(ce,'h09G',23.,-25.25,-36.)
+call SpawnVisualUnit(ce,'h09D',45.,35.,-29.75)
+call SpawnVisualUnit(ce,'h09D',45.,20.,22.5)
+call SpawnVisualUnit(ce,'h09D',-45.,-31.,26.25)
+call SpawnVisualUnit(ce,'h09G',23.,-25.25,-36.)
 return false
 endfunction
 function PB takes nothing returns boolean
-call SpawnCreep(ce,'h09C',33.,36.25,36.5)
-call SpawnCreep(ce,'h09C',13.,21.,-47.5)
-call SpawnCreep(ce,'h09C',319.,-46.25,11.75)
+call SpawnVisualUnit(ce,'h09C',33.,36.25,36.5)
+call SpawnVisualUnit(ce,'h09C',13.,21.,-47.5)
+call SpawnVisualUnit(ce,'h09C',319.,-46.25,11.75)
 return false
 endfunction
 function qB takes nothing returns boolean
-call SpawnCreep(ce,'h09C',33.,36.25,36.5)
-call SpawnCreep(ce,'h09C',13.,21.,-47.5)
-call SpawnCreep(ce,'h09C',319.,-46.25,11.75)
-call SpawnCreep(ce,'h09E',348.,-6.5,9.)
+call SpawnVisualUnit(ce,'h09C',33.,36.25,36.5)
+call SpawnVisualUnit(ce,'h09C',13.,21.,-47.5)
+call SpawnVisualUnit(ce,'h09C',319.,-46.25,11.75)
+call SpawnVisualUnit(ce,'h09E',348.,-6.5,9.)
 return false
 endfunction
 function Mechanical___Animationh05L takes nothing returns boolean
-    call SpawnCreep(ce,'h09K',45.,.0,.0)
+    call SpawnVisualUnit(ce,'h09K',45.,.0,.0)
 return false
 endfunction
 function QB takes nothing returns boolean
-call SpawnCreep(ce,'h096',180.,-45.75,21.75)
-call SpawnCreep(ce,'h096',110.,9.,-62.5)
+call SpawnVisualUnit(ce,'h096',180.,-45.75,21.75)
+call SpawnVisualUnit(ce,'h096',110.,9.,-62.5)
 return false
 endfunction
 function sB takes nothing returns nothing
@@ -6893,7 +6891,7 @@ call UnitApplyTimedLife(c,'BTLF',1.5)
 set c=null
 endfunction
 function wB takes nothing returns boolean
-call SpawnCreep(ce,'e00K',.0,.0,40.)
+call SpawnVisualUnit(ce,'e00K',.0,.0,40.)
 return false
 endfunction
 function WB takes nothing returns nothing
@@ -7197,38 +7195,38 @@ call UnitApplyTimedLife(c,'BTLF',5.)
 set c=null
 endfunction
 function Bc takes nothing returns boolean
-call SpawnCreep(ce,'h02J',270.,.0,.0)
+call SpawnVisualUnit(ce,'h02J',270.,.0,.0)
 return false
 endfunction
 function Cc takes nothing returns boolean
-call SpawnCreep(ce,'h02J',270.,.0,.0)
-call SpawnCreep(ce,'h02E',270.,.0,.0)
+call SpawnVisualUnit(ce,'h02J',270.,.0,.0)
+call SpawnVisualUnit(ce,'h02E',270.,.0,.0)
 return false
 endfunction
 function dc takes nothing returns boolean
-call SpawnCreep(ce,'h02J',270.,.0,.0)
-call SpawnCreep(ce,'h02E',270.,.0,.0)
-call SpawnCreep(ce,'h02F',270.,-25.,-25.)
+call SpawnVisualUnit(ce,'h02J',270.,.0,.0)
+call SpawnVisualUnit(ce,'h02E',270.,.0,.0)
+call SpawnVisualUnit(ce,'h02F',270.,-25.,-25.)
 return false
 endfunction
 function Dc takes nothing returns boolean
-call SpawnCreep(ce,'h02J',270.,.0,.0)
-call SpawnCreep(ce,'h02E',270.,.0,.0)
-call SpawnCreep(ce,'h02F',270.,-35.,-40.)
-call SpawnCreep(ce,'h02G',211.,-35.,35.)
+call SpawnVisualUnit(ce,'h02J',270.,.0,.0)
+call SpawnVisualUnit(ce,'h02E',270.,.0,.0)
+call SpawnVisualUnit(ce,'h02F',270.,-35.,-40.)
+call SpawnVisualUnit(ce,'h02G',211.,-35.,35.)
 return false
 endfunction
 function fc takes nothing returns boolean
-call SpawnCreep(ce,'h02Q',270.,-35.,30.)
+call SpawnVisualUnit(ce,'h02Q',270.,-35.,30.)
 return false
 endfunction
 function Fc takes nothing returns boolean
-call SpawnCreep(ce,'h02L',270.,.0,.0)
-call SpawnCreep(ce,'h02M',270.,25,20.)
+call SpawnVisualUnit(ce,'h02L',270.,.0,.0)
+call SpawnVisualUnit(ce,'h02M',270.,25,20.)
 return false
 endfunction
 function gc takes nothing returns boolean
-call SpawnCreep(ce,'h02T',49.,-40.,20.)
+call SpawnVisualUnit(ce,'h02T',49.,-40.,20.)
 return false
 endfunction
 function Gc takes nothing returns nothing
@@ -7490,44 +7488,44 @@ call wI(u)
 set u=null
 endfunction
 function tc takes nothing returns boolean
-call SpawnCreep(ce,'h08L',32.,12.,-11.5)
+call SpawnVisualUnit(ce,'h08L',32.,12.,-11.5)
 return false
 endfunction
 function Tc takes nothing returns boolean
-call SpawnCreep(ce,'h08D',116.,-3.,-10.5)
-call SpawnCreep(ce,'h08N',323.,20.,5.75)
+call SpawnVisualUnit(ce,'h08D',116.,-3.,-10.5)
+call SpawnVisualUnit(ce,'h08N',323.,20.,5.75)
 return false
 endfunction
 function Uc takes nothing returns boolean
-call SpawnCreep(ce,'h08A',.0,.0,.0)
+call SpawnVisualUnit(ce,'h08A',.0,.0,.0)
 return false
 endfunction
 function wc takes nothing returns boolean
-call SpawnCreep(ce,'h08K',.0,.0,.0)
+call SpawnVisualUnit(ce,'h08K',.0,.0,.0)
 return false
 endfunction
 function Wc takes nothing returns boolean
-call SpawnCreep(ce,'h08K',.0,.0,.0)
-call SpawnCreep(ce,'h08S',.0,.0,.0)
+call SpawnVisualUnit(ce,'h08K',.0,.0,.0)
+call SpawnVisualUnit(ce,'h08S',.0,.0,.0)
 return false
 endfunction
 function yc takes nothing returns boolean
-call SpawnCreep(ce,'h08N',226.,37.75,-41.5)
+call SpawnVisualUnit(ce,'h08N',226.,37.75,-41.5)
 return false
 endfunction
 function Yc takes nothing returns boolean
-call SpawnCreep(ce,'h08O',318,43.5,-41.75)
-call SpawnCreep(ce,'h08N',$E2,-38.25,40.25)
+call SpawnVisualUnit(ce,'h08O',318,43.5,-41.75)
+call SpawnVisualUnit(ce,'h08N',$E2,-38.25,40.25)
 return false
 endfunction
 function zc takes nothing returns boolean
-call SpawnCreep(ce,'h08K',.0,15.,.0)
-call SpawnCreep(ce,'h08R',.0,.0,.0)
+call SpawnVisualUnit(ce,'h08K',.0,15.,.0)
+call SpawnVisualUnit(ce,'h08R',.0,.0,.0)
 return false
 endfunction
 function Zc takes nothing returns boolean
-call SpawnCreep(ce,'h08M',.0,.0,.0)
-call SpawnCreep(ce,'h08Q',.0,.0,.0)
+call SpawnVisualUnit(ce,'h08M',.0,.0,.0)
+call SpawnVisualUnit(ce,'h08Q',.0,.0,.0)
 return false
 endfunction
 function vC takes nothing returns nothing
@@ -7890,7 +7888,7 @@ endfunction
 function FC takes nothing returns nothing
 local timer t=GetExpiredTimer()
 local integer id=GetHandleId(t)
-local unit u=LoadUnitHandle(rx,'lich',id)
+local unit u=LoadUnitHandle(GameHashTable,'lich',id)
 local unit tu
 if(u!=null and GetWidgetLife(u)>.405)then
 set id=GetRandomInt(0,99)
@@ -7901,7 +7899,7 @@ if(tu!=null and IssueTargetOrderById(u,$D00E5,tu))then
 call dC(GetOwningPlayer(u),tu,30)
 endif
 elseif(id>60)then
-set tu=LoadUnitHandle(rx,'lict',GetHandleId(u))
+set tu=LoadUnitHandle(GameHashTable,'lict',GetHandleId(u))
 if(tu!=null and GetWidgetLife(tu)>.405)then
 if(GetRandomInt(0,99)>60)then
 call fC(u,GetUnitX(tu),GetUnitY(tu))
@@ -7921,7 +7919,7 @@ set tu=null
 endfunction
 function gC takes unit u returns nothing
 local timer t=CreateTimer()
-call SaveUnitHandle(rx,'lich',GetHandleId(t),u)
+call SaveUnitHandle(GameHashTable,'lich',GetHandleId(t),u)
 call TimerStart(t,2.,false,function FC)
 set t=null
 endfunction
@@ -8628,7 +8626,7 @@ local unit u=GetTriggerUnit()
 local unit t=GetEventTargetUnit()
 local integer ut=GetUnitTypeId(u)
 if(ut=='u00D')then
-call SaveUnitHandle(rx,'lict',GetHandleId(u),t)
+call SaveUnitHandle(GameHashTable,'lict',GetHandleId(u),t)
 elseif(ut=='n02T' and not IsUnitType(u,UNIT_TYPE_STRUCTURE))then
 if(IssueImmediateOrderById(u,$D00A1))then
 call TriggerSleepAction(.1)
@@ -8646,7 +8644,7 @@ function Cd takes nothing returns nothing
 local unit s=GetEventDamageSource()
 local unit u=GetTriggerUnit()
 local integer dd
-if(LoadInteger(rx,'DCTm',GetHandleId(u))>Ze)then
+if(LoadInteger(GameHashTable,'DCTm',GetHandleId(u))>Ze)then
 set s=null
 set u=null
 return
@@ -8660,7 +8658,7 @@ call Ad(u)
 elseif(GetUnitAbilityLevel(u,'A0DX')>0)then
 call bd(GetEventDamageSource(),u)
 endif
-call SaveInteger(rx,'DCTm',GetHandleId(u),Ze+1)
+call SaveInteger(GameHashTable,'DCTm',GetHandleId(u),Ze+1)
 endif
 set u=null
 set s=null
@@ -8685,7 +8683,7 @@ local integer gd
 if(u!=null)then
 set gd=GetIssuedOrderId()
 if(GetUnitTypeId(u)=='h001' and gd==0)then
-call NB(u)
+call ArtilleryAttack(u)
 elseif(gd==$D0003)then
 set rn[GetPlayerId(GetOwningPlayer(u))]=Ye
 if(IsUnitType(u,UNIT_TYPE_SAPPER))then
@@ -8804,17 +8802,17 @@ function RestartRound takes nothing returns nothing
     call TriggerSleepAction(.02)
     exitwhen i>=4
     endloop
-    set io[j]=0
+    set HeroStatusNumbers[j]=0
     set oo[j]=0
     set j=j+1
     exitwhen(j>$C)
     endloop
     call EnableTrigger(eV)
     set VV=true
-    call FlushChildHashtable(rx,'incm')
-    call FlushChildHashtable(rx,'CaTm')
-    call FlushChildHashtable(rx,'ASTR')
-    call FlushChildHashtable(rx,'SyUn')
+    call FlushChildHashtable(GameHashTable,'incm')
+    call FlushChildHashtable(GameHashTable,'CaTm')
+    call FlushChildHashtable(GameHashTable,'ASTR')
+    call FlushChildHashtable(GameHashTable,'SyUn')
     set Ha[0]=0
     set Ha[1]=0
     call EnumItemsInRect(me,null,function ld)
@@ -8992,7 +8990,7 @@ function StartGame takes nothing returns nothing
         endif
     endif
     call hA()
-    call CA()
+    call CagingModeTimerAction()
     call DisplayTimedTextToForce(bj_FORCE_ALL_PLAYERS,9.5,"Get ready for round |cffFFCC00"+I2S(Round)+"|r!")
     call CinematicFadeBJ(0,4.,"ReplaceableTextures\\CameraMasks\\Black_mask.blp",0,0,0,6.)
     set bn=CreateFogModifierRectBJ(true,ForcePickRandomPlayer(WesternForce),FOG_OF_WAR_VISIBLE,EasternBuildArea)
@@ -9124,7 +9122,7 @@ function StartGame takes nothing returns nothing
     if(Pe[i]!=null)then
     call UnitAddAbility(u,'A0A5')
     endif
-    call YO(i)
+    call SetupInitialIncomes(i)
     else
     call yO(i)
     endif
@@ -9169,24 +9167,24 @@ function StartGame takes nothing returns nothing
     call NO(Te+1,0,"|cffFFCC00Modes:|r"+GetGameConfigString())
 endfunction
 function Common_InitPools takes nothing returns nothing
-call VX()
+    call InitPools()
 endfunction
 function Common_RelisePoolsAndResume takes nothing returns nothing
-set An=true
+    set An=true
 endfunction
 function yd takes integer id,boolean Yd returns nothing
-if(DuralRaceMode)then
-if(UniqueRaceMode)then
-call XX(id,not Yd)
-endif
-else
-if(UniqueRaceMode)then
-call XX(id,true)
-call XX(id,false)
-else
-call XX(id,Yd)
-endif
-endif
+    if(DuralRaceMode)then
+        if(UniqueRaceMode)then
+            call XX(id,not Yd)
+        endif
+    else
+        if(UniqueRaceMode)then
+            call XX(id,true)
+            call XX(id,false)
+        else
+            call XX(id,Yd)
+        endif
+    endif
 endfunction
 function zd takes nothing returns nothing
     call TriggerAddAction(Nn,function StartGame)
@@ -9199,7 +9197,7 @@ local integer xD
 local player p
 local integer oD
 local integer dE
-call VX()
+call InitPools()
 set Zd=CreateTimer()
 set vD=CreateTimerDialog(Zd)
 call TimerDialogSetTitle(vD,"Time to ban:")
@@ -9258,7 +9256,7 @@ local integer eD
 local player VD
 local integer i=0
 local integer dE
-call VX()
+call InitPools()
 set Zd=CreateTimer()
 set vD=CreateTimerDialog(Zd)
 call TimerDialogSetTitle(vD,"Time to select:")
@@ -9348,7 +9346,7 @@ local integer j=0
 local integer array ED
 local force f1
 local force f2
-call VX()
+call InitPools()
 if(CountPlayersInForceBJ(WesternForce)>=CountPlayersInForceBJ(EasternForce))then
 set f1=WesternForce
 set f2=EasternForce
@@ -9413,7 +9411,7 @@ local integer i=0
 local player p
 local integer oD
 local integer dE
-call VX()
+call InitPools()
 set Zd=CreateTimer()
 set vD=CreateTimerDialog(Zd)
 call TimerDialogSetTitle(vD,"Time to select:")
@@ -9479,7 +9477,7 @@ function Wd takes nothing returns nothing
 local integer xD=IAbsBJ(NumberOfBans)
 local string s=""
 local integer oD
-call VX()
+call InitPools()
 loop
 set oD=RX(true)
 call XX(oD,true)
@@ -9496,71 +9494,71 @@ call DisplayTextToForce(bj_FORCE_ALL_PLAYERS,s+" have banned by Random.")
 set An=true
 endfunction
 function QA takes nothing returns nothing
-local integer i=0
-local integer AD
-local integer rr
-local integer n
-local integer ND
-local player p
-call VX()
-call IO()
-if(Round==0)then
-set n=0
-loop
-set se[n]=0
-exitwhen n>39
-set n=n+1
-endloop
-endif
-loop
-set AD=Qe[i]
-set p=Player(AD)
-set n=0
-if(IsPlayerInForce(p,WesternForce))then
-loop
-set rr=RX(true)
-set ND=BR(rr)
-exitwhen se[ND]==0 or GetRandomInt(0,99)>89 or n>=24
-set n=n+1
-call TriggerSleepAction(.01)
-endloop
-call yd(rr,true)
-set se[ND]=se[ND]+1
-set No[AD]=rr
-elseif(IsPlayerInForce(p,EasternForce))then
-loop
-set rr=RX(false)
-set ND=BR(rr)
-exitwhen se[ND+20]==0 or GetRandomInt(0,99)>89 or n>=24
-set n=n+1
-call TriggerSleepAction(.01)
-endloop
-call yd(rr,false)
-set se[ND+20]=se[ND+20]+1
-set No[AD]=rr
-endif
-set i=i+1
-exitwhen i>$B
-endloop
-set An=true
-endfunction
-function bD takes integer dE returns nothing
-local unit u
-call GroupEnumUnitsOfPlayer(ErasingGroup,Player(dE),Pi)
-set u=FirstOfGroup(ErasingGroup)
-if(u==null)then
-return
-endif
-if(GetUnitAbilityLevel(u,'A005')>0)then
-set Vo[PlayerForce[dE]]=Vo[PlayerForce[dE]]-1
-if(Vo[PlayerForce[dE]]==0)then
-call AO(1,PlayerForce[dE]+1,"|cffFF00000|r")
-else
-call AO(1,PlayerForce[dE]+1,I2S(Vo[PlayerForce[dE]]))
-endif
-endif
-call RemoveUnit(u)
-set u=null
+    local integer i=0
+    local integer AD
+    local integer rr
+    local integer n
+    local integer ND
+    local player p
+    call InitPools()
+    call IO()
+    if(Round==0)then
+        set n=0
+        loop
+            set se[n]=0
+            exitwhen n>39
+            set n=n+1
+        endloop
+    endif
+    loop
+    set AD=Qe[i]
+    set p=Player(AD)
+    set n=0
+    if(IsPlayerInForce(p,WesternForce))then
+    loop
+        set rr=RX(true)
+        set ND=FindRaceByWorker(rr)
+        exitwhen se[ND]==0 or GetRandomInt(0,99)>89 or n>=24
+        set n=n+1
+        call TriggerSleepAction(.01)
+    endloop
+    call yd(rr,true)
+    set se[ND]=se[ND]+1
+    set No[AD]=rr
+    elseif(IsPlayerInForce(p,EasternForce))then
+    loop
+        set rr=RX(false)
+        set ND=FindRaceByWorker(rr)
+        exitwhen se[ND+20]==0 or GetRandomInt(0,99)>89 or n>=24
+        set n=n+1
+        call TriggerSleepAction(.01)
+    endloop
+    call yd(rr,false)
+    set se[ND+20]=se[ND+20]+1
+    set No[AD]=rr
+    endif
+    set i=i+1
+    exitwhen i>$B
+    endloop
+    set An=true
+    endfunction
+    function bD takes integer dE returns nothing
+    local unit u
+    call GroupEnumUnitsOfPlayer(ErasingGroup,Player(dE),Pi)
+    set u=FirstOfGroup(ErasingGroup)
+    if(u==null)then
+    return
+    endif
+    if(GetUnitAbilityLevel(u,'A005')>0)then
+    set Vo[PlayerForce[dE]]=Vo[PlayerForce[dE]]-1
+    if(Vo[PlayerForce[dE]]==0)then
+    call AO(1,PlayerForce[dE]+1,"|cffFF00000|r")
+    else
+    call AO(1,PlayerForce[dE]+1,I2S(Vo[PlayerForce[dE]]))
+    endif
+    endif
+    call RemoveUnit(u)
+    set u=null
 endfunction
 function BD takes nothing returns nothing
 local unit u=GetEnumUnit()
@@ -9575,7 +9573,7 @@ endif
 set dN=GetPlayerId(GetOwningPlayer(u))
 call eA(dN,u)
 if(Ve[GetUnitPointValue(u)]<0)then
-set do[dN]=do[dN]+1
+set PlayerSpecialBuildingCount[dN]=PlayerSpecialBuildingCount[dN]+1
 endif
 else
 call SetUnitOwner(u,ForcePickRandomPlayer(nV),true)
@@ -9825,78 +9823,81 @@ function BuilderLeaveCastleCond takes nothing returns boolean
     call DisplayTextToPlayer(dN,.0,.0,"|cffFF0000Your worker may not leave your castle!|r")
     endif
     if(CagingMode)then
-    call GroupRemoveUnit(Ci,u)
+    call GroupRemoveUnit(CagedGroup,u)
     endif
     set u=null
     return false
 endfunction
-function PD takes nothing returns nothing
-    local unit u=GetTriggerUnit()
-    local player p=GetOwningPlayer(u)
-    local integer NN=GetPlayerId(p)
-    local integer tX=GetUnitPointValue(u)
-    local integer qD
-    call zX(u)
-    set jo[NN]=jo[NN]+(UnitPrices[tX])
-    if(Ve[tX]>0)then
-        if(Xe[tX])then
-            call ZA(u,(UnitPrices[tX]*3)/ 4)
+function PlayerDoneBuildinAction takes nothing returns nothing
+    local unit theBuilding=GetTriggerUnit()
+    local player p=GetOwningPlayer(theBuilding)
+    local integer playerId=GetPlayerId(p)
+    local integer buildingPV=GetUnitPointValue(theBuilding)
+    local integer trainsUnits
+    call EvaluteRegisteredAttach(theBuilding)
+    set jo[playerId]=jo[playerId]+(BuildingPrices[buildingPV])
+    if(Ve[buildingPV]>0)then
+        if(Xe[buildingPV])then
+            call PlayerAddLumber(theBuilding, (BuildingPrices[buildingPV]*3)/ 4)
         else
-            call ZA(u,UnitPrices[tX])
+            call PlayerAddLumber(theBuilding, BuildingPrices[buildingPV])
         endif
     else
-        set do[NN]=do[NN]+1
-        if(Ve[tX]==0)then
-            call DisplayTextToPlayer(GetLocalPlayer(),.0,.0,"Unregistered special:"+GetUnitName(u))
+        set PlayerSpecialBuildingCount[playerId]=PlayerSpecialBuildingCount[playerId]+1
+        if(Ve[buildingPV]==0)then
+            call DisplayTextToPlayer(GetLocalPlayer(),.0,.0,"Unregistered special:"+GetUnitName(theBuilding))
         endif
     endif
-    call zI(NN,u)
-    set qD=(BuildingToItsTrained[GetUnitPointValue((u))])
-    if(qD!=0)then
-        call rI(GetUnitTypeId(u),NN)
+    call AdjustIncomeOnBuilt(playerId, theBuilding)
+    set trainsUnits=(BuildingToItsTrained[GetUnitPointValue((theBuilding))])
+    if(trainsUnits!=0)then
+        // train unit buildings
+        call rI(GetUnitTypeId(theBuilding),playerId)
         if(vo[GetPlayerId(p)])then
-        call IssueImmediateOrderById(u,qD)
-        call IssueImmediateOrderById(u,qD)
+        call IssueImmediateOrderById(theBuilding,trainsUnits)
+        call IssueImmediateOrderById(theBuilding,trainsUnits)
         endif
-        if(GetUnitTypeId(u)=='h056')then
-            call IssueImmediateOrderById(u,$D027A)
+        if(GetUnitTypeId(theBuilding)=='h056')then
+            call IssueImmediateOrderById(theBuilding,$D027A)
             call TriggerSleepAction(.5)
-            call IssueTargetOrderById(u,$D0279,GroupPickRandomUnit(ix))
+            call IssueTargetOrderById(theBuilding,$D0279,GroupPickRandomUnit(ix))
         endif
     else
-        set tX=GetUnitTypeId(u)
-        if(tX=='h001')then
-        call NB(u)
-        call GroupAddUnit(ra,u)
-        elseif(tX=='h05G')then
-        call cB(u)
-        elseif(tX=='h059')then
-        call eB(p)
-        elseif(tX=='h063')then
-        call qb(p)
-        elseif(tX=='h02D')then
-        call TimerStart(cv,6.,true,function mE)
-        elseif(tX=='h00G')then
-        call UnitAddAbility(u,'A008')
-        elseif(tX=='h061')then
-        call pb(u)
-        elseif(tX=='h056' or tX=='h03L' or tX=='h01W' or tX=='h01X' or tX=='h05R')then
-        call IssueImmediateOrderById(u,$D027A)
-        call TriggerSleepAction(.5)
-        call IssueTargetOrderById(u,$D0279,GroupPickRandomUnit(ix))
-        elseif(tX=='h09T')then
-        call UnitAddAbility(u,'A09S')
-        call UnitAddAbility(u,'A09P')
-        call UnitAddAbility(u,'A09V')
-        call GroupAddUnit(Va,u)
-        elseif(tX=='h01O')then
-        call UnitAddAbility(u,'A01V')
-        elseif(tX=='h008')then
-        set tX=GetPlayerId(p)
-        set IncomeMultiplier[tX]=IncomeMultiplier[tX]+.24/ IncomeMultiplier[tX]
+        // special buildings
+        set buildingPV=GetUnitTypeId(theBuilding)
+        if(buildingPV=='h001')then // artillery
+            call ArtilleryAttack(theBuilding)
+            call GroupAddUnit(ra,theBuilding)
+        elseif(buildingPV=='h05G')then // Heroic Statue
+            call StartHeroStatueRecord(theBuilding)
+        elseif(buildingPV=='h059')then
+            call eB(p)
+        elseif(buildingPV=='h063')then
+            call qb(p)
+        elseif(buildingPV=='h02D')then // ancient tree
+            call TimerStart(cv,6.,true,function AncientTreeTransform)
+        elseif(buildingPV=='h00G')then // coral statue
+            // add rune of restoration
+            call UnitAddAbility(theBuilding,'A008')
+        elseif(buildingPV=='h061')then
+            call pb(theBuilding)
+        elseif(buildingPV=='h056' or buildingPV=='h03L' or buildingPV=='h01W' or buildingPV=='h01X' or buildingPV=='h05R')then
+            call IssueImmediateOrderById(theBuilding,$D027A)
+            call TriggerSleepAction(.5)
+            call IssueTargetOrderById(theBuilding,$D0279,GroupPickRandomUnit(ix))
+        elseif(buildingPV=='h09T')then
+            call UnitAddAbility(theBuilding,'A09S')
+            call UnitAddAbility(theBuilding,'A09P')
+            call UnitAddAbility(theBuilding,'A09V')
+            call GroupAddUnit(Va,theBuilding)
+        elseif(buildingPV=='h01O')then
+            call UnitAddAbility(theBuilding,'A01V')
+        elseif(buildingPV=='h008')then
+            set buildingPV=GetPlayerId(p)
+            set IncomeMultiplier[buildingPV]=IncomeMultiplier[buildingPV]+.24/ IncomeMultiplier[buildingPV]
         endif
     endif
-    set u=null
+    set theBuilding=null
     set p=null
 endfunction
 function sD takes nothing returns nothing
@@ -9905,7 +9906,7 @@ function sD takes nothing returns nothing
     set u=null
 endfunction
 function tD takes nothing returns nothing
-    call zX(GetTriggerUnit())
+    call EvaluteRegisteredAttach(GetTriggerUnit())
 endfunction
 function uD takes nothing returns boolean
     local unit u=GetTriggerUnit()
@@ -10142,7 +10143,7 @@ local integer uX=GetTrainedUnitType()
 if(GetUnitAbilityLevel(u,'A07J')>0)then
 set u=LN(u)
 endif
-call BN(u,j)
+call WhenUnitTrained(u,j)
 set u=null
 call TriggerSleepAction(.05)
 call IssueImmediateOrderById(j,uX)
@@ -10434,10 +10435,10 @@ function main takes nothing returns nothing
     call TriggerAddCondition(WorkerLeaveCastleTrigger,Condition(function BuilderLeaveCastleCond))
 
     // what is this?
-    set Yn=CreateTrigger()
-    call TriggerRegisterAnyUnitEventBJ(Yn,EVENT_PLAYER_UNIT_CONSTRUCT_FINISH)
-    call TriggerRegisterAnyUnitEventBJ(Yn,EVENT_PLAYER_UNIT_UPGRADE_FINISH)
-    call TriggerAddAction(Yn,function PD)
+    set PlayerBuildTrigger=CreateTrigger()
+    call TriggerRegisterAnyUnitEventBJ(PlayerBuildTrigger,EVENT_PLAYER_UNIT_CONSTRUCT_FINISH)
+    call TriggerRegisterAnyUnitEventBJ(PlayerBuildTrigger,EVENT_PLAYER_UNIT_UPGRADE_FINISH)
+    call TriggerAddAction(PlayerBuildTrigger,function PlayerDoneBuildinAction)
 
     set zn=CreateTrigger()
     call TriggerRegisterAnyUnitEventBJ(zn,EVENT_PLAYER_UNIT_UPGRADE_START)
