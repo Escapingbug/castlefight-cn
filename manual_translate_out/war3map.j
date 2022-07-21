@@ -1,4 +1,7 @@
 globals
+
+real array g_incomeForUnlockAirs
+
 group o
 boolexpr V
 string array E
@@ -442,6 +445,35 @@ native GetUpgradeLevel takes integer id returns integer
 native GetUnitBuildTime takes integer unitid returns integer
 native GetUnitWoodCost takes integer unitid returns integer
 native GetUnitGoldCost takes integer unitid returns integer
+
+// modifications!
+// playerId -- player id of current income change
+// incremental -- the incremental income (how much to add to current income)
+ function OnIncomeAirUnitHandle takes integer playerId, real incremental returns nothing
+     local real currentIncome = Ai[playerId]
+     if (g_incomeForUnlockAirs[playerId] <= 0.01) then
+        // first time recording..
+         set g_incomeForUnlockAirs[playerId] = currentIncome * 3.
+     elseif (currentIncome + incremental >= g_incomeForUnlockAirs[playerId]) then
+        // Air units:
+        // human h015
+        // elemental h04A
+        // mech h05J
+        // nightelf h00B
+        // nature h027 Emerald Dragon Roost
+        // orc h02P
+        // elf h06Y
+        // north h03I
+        // undead h01S
+        // chaos h009
+        // Naga h01Y
+        // sand n02K
+        // All above added the requirements to h06C (farm, in original game)
+        // Now set tech "Farm" will allow air units to be built.
+        call SetPlayerTechResearched(Player(playerId), 'h06C', 1)
+     endif
+endfunction
+
 function DV takes location fV,real FV,real gV returns location
 return Location(GetLocationX(fV)+FV*Cos(gV*bj_DEGTORAD),GetLocationY(fV)+FV*Sin(gV*bj_DEGTORAD))
 endfunction
@@ -4222,6 +4254,11 @@ function zI takes integer dE,unit u returns nothing
 local integer tX=GetHandleId(u)
 local real iv=ne[GetUnitPointValue(u)]
 local real ZI=LoadReal(rx,'incm',tX)
+
+// modification!
+call OnIncomeAirUnitHandle(dE, iv)
+
+
 set Ai[dE]=Ai[dE]+(iv)
 if(ZI==null)then
 set ZI=.0
@@ -9171,7 +9208,7 @@ endif
 endif
 endfunction
 function zd takes nothing returns nothing
-call TriggerAddAction(Nn,function ud)
+    call TriggerAddAction(Nn,function ud)
 endfunction
 function wd takes nothing returns nothing
 local timer Zd
